@@ -1,0 +1,40 @@
+Error importing GPy.
+ If trying to run parrot-optimize, make sure to use `pip install idptools-parrot[optimize]`
+Namespace(data_file='../output/kinetics_parrot_input.tsv', output_network='../output/parrot_kinetics', datatype='sequence', classes=1, hidden_size=10, num_layers=1, learning_rate=0.001, batch=32, epochs=100, split='', stop='iter', setFractions=[0.7, 0.15, 0.15], encode='onehot', excludeSeqID=False, probabilistic_classification=False, include_figs=True, ignore_metrics=False, forceCPU=False, gpu_id=None, ignore_warnings=False, save_splits=False, verbose=False, silent=False)
+
+#############################################
+WARNING: Duplicate sequences detected in dataset.
+
+Duplicated sequences:
+Duplicate found: LTALTSPSLFDGSPDFDTFDISPNFGHSDLENPDTWFSLF
+Duplicate found: STDSTPMFEYENLEDNSKEWTSLFDNDIPVTTDDVSLADK
+
+This may cause overfitting or overestimation of performance.
+
+#############################################
+
+
+#############################################
+WARNING: Dataset has large variance
+
+Data standard deviation: 8.89
+
+This may decrease training efficiency.
+Consider standardizing your dataset.
+
+#############################################
+
+
+#############################################
+WARNING: Dataset is skewed.
+
+
+This may cause model bias.
+
+#############################################
+
+
+PARROT with user-specified parameters
+-------------------------------------
+Validation set loss per epoch:
+Epoch 0	Loss 2.9929
