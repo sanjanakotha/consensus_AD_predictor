@@ -398,7 +398,7 @@ def AggregateTilesIntoPredictedADs(inputfilename, Sequences_to_Test_DF,TEMPindx,
 
     return CandidateADsToTest
 
-# # +
+# +
 # Function to not combine the Predicted Tiles, just return tiles of predicted ADs--look for overlapping tiles
 def TilesOfPredictedADs(inputfilename, Sequences_to_Test_DF, TEMPindx, exportfilename):
     print("Returning tiles that have not been aggregated!")
@@ -413,7 +413,7 @@ def TilesOfPredictedADs(inputfilename, Sequences_to_Test_DF, TEMPindx, exportfil
 #         start, end = min(tempDF.StartPosition)+1,max(tempDF.EndPosition)
 #         starts.append(start)
 #         ends.append(end)
-# region lengths.append(end-start)
+#         regionlengths.append(end-start)
 #         genenames.append(gene)
 #         RegionType.append('Prediction')
 
@@ -649,4 +649,3 @@ def compare_to_random(Nrepeats=1,
 #     make_predictions(inputfilename="'../data/LambertTFs.fasta", slope=1,lower_corner_c=-13,lower_corner_h=7,upper_corner_c=-9,upper_corner_h=10,composition=["W","F","Y","L"],window_size=39,window_spacing=1)
 
 
-# endregion
