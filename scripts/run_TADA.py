@@ -77,19 +77,24 @@ pickle.dump(features_scaled, open(output_dir + '/features_scaled.pkl', 'wb'))
 # Make TADA classification predictions
 tada_preds = tada_predict(loaded_features=features_scaled)
 
+all_sequences = []
+all_centers = []
+all_preds = []
+
 # Use indices of tiles to retrieve predictions for each sequence
 for seq, val in tada_out.items():
     preds = tada_preds[val]
     centers = np.arange(len(preds)) + 40/2
-    tada_out[seq] = (centers, preds)
+    
+    all_sequences.append(seq)
+    all_centers.append(centers)
+    all_preds.append(preds)
 
-# Save predicted values to a csv file
-with open(output_dir + '/TADA_preds.csv', 'w') as f:
-    w = csv.writer(f)
-    w.writerow(['sequence', 'tada_centers', 'tada_preds'])
-    for r in recs:
-        sequence = str(r.seq)
-        tada_centers, tada_preds = tada_out[sequence]
-        tada_preds = re.sub(r'\s+', ',', str(tada_preds))
-        tada_centers = re.sub(r'\s+', ',', str(tada_centers))
-        w.writerow([sequence, tada_centers, tada_preds])
+data = list(zip(all_sequences, all_centers, all_preds))
+data = pd.DataFrame(data)
+data.columns = ["sequence", "tada_centers", "tada_preds"]
+
+data["tada_centers"] = data["tada_centers"].apply(lambda x: ','.join(map(str, x)))
+data["tada_preds"] = data["tada_preds"].apply(lambda x: ','.join(map(str, x)))
+
+data.to_csv(output_dir + "/TADA_preds.csv")

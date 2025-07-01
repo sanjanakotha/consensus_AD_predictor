@@ -2,7 +2,7 @@
 #SBATCH --job-name=TADA_PA_fix_human
 #SBATCH --account=ac_stallerlab
 #SBATCH --partition=savio3
-#SBATCH --time=72:00:00
+#SBATCH --time=24:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=sanjana.kotha@berkeley.edu
 

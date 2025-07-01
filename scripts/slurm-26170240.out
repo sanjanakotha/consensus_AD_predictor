@@ -1,39 +1,0 @@
-2025-06-23 14:28:25.342252: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
-  return self.fget.__get__(instance, owner)()
-2025-06-23 14:30:35.995457: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-mkdir: cannot create directory ‘/global/scratch/projects/fc_mvslab/OpenProjects/Sanjana/consensus_AD_predictor/output/tada_test’: File exists
-0
-[2K	Model created
-[2K	Weights loaded
-Model: "sequential"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- conv1d (Conv1D)             (None, 35, 100)           8500      
-                                                                 
- dropout (Dropout)           (None, 35, 100)           0         
-                                                                 
- conv1d_1 (Conv1D)           (None, 34, 100)           20100     
-                                                                 
- dropout_1 (Dropout)         (None, 34, 100)           0         
-                                                                 
- attention (attention)       (None, 34, 100)           134       
-                                                                 
- bidirectional (Bidirectiona  (None, 34, 200)          160800    
- l)                                                              
-                                                                 
- bidirectional_1 (Bidirectio  (None, 200)              240800    
- nal)                                                            
-                                                                 
- dense (Dense)               (None, 2)                 402       
-                                                                 
-=================================================================
-Total params: 430,736
-Trainable params: 430,736
-Non-trainable params: 0
-_________________________________________________________________
-Model summary: None
- 1/12 [=>............................] - ETA: 16s 5/12 [===========>..................] - ETA: 0s  9/12 [=====================>........] - ETA: 0s12/12 [==============================] - 2s 13ms/step
