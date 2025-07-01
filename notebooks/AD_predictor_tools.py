@@ -79,16 +79,19 @@ def makeTilingDF(inputfilename,window_size = 39, window_spacing = 1,AAs = ['W','
 
         return ProteomeDF
 
-def makeTilingDF_fromDF(inputDF, window_size = 39, window_spacing = 1, AAs = ['W','F','Y','M','L','Q'], col_name = "Sequence"):
+def makeTilingDF_fromDF(inputDF, window_size = 39, window_spacing = 1, AAs = ['W','F','Y','M','L','Q'], col_name = "Sequence", add_gene_id = True):
     import random
     import os
     
-    inputDF["GeneID"]=[">sp|"+str(a)+"|"+str(b)+"|"+str(c)+"|"+str(d)
-                   for a,b,c,d in zip(inputDF["uniprotID"],
-                                        inputDF["GeneName"],
-                                        inputDF["Start"],
-                                        inputDF["End"])]
-
+    if add_gene_id:
+        inputDF["GeneID"]=[">sp|"+str(a)+"|"+str(b)+"|"+str(c)+"|"+str(d)
+                    for a,b,c,d in zip(inputDF["uniprotID"],
+                                            inputDF["GeneName"],
+                                            inputDF["Start"],
+                                            inputDF["End"])]
+    else:
+        inputDF["GeneID"] = inputDF["uniprotID"]
+        
     inputDF_dict=pd.Series(inputDF[col_name].values,index=inputDF.GeneID).to_dict()
 
     inputfilename = '../data/temp'+ str(random.getrandbits(128)) + '.fasta'
