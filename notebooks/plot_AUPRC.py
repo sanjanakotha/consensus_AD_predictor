@@ -50,6 +50,7 @@ def add_overlap_status(df, domain_list, col_type, min_overlap, col_name_suffix =
     # Calculate interval overlap
     # If there is overlap of at least min_overlap then there is sufficient overlap
     df_with_annots = pd.merge(df, domain_list, on = "uniprotID")
+    display(df_with_annots)
     df_with_annots["overlap_length"] =  df_with_annots[['End', 'annot_End']].min(axis=1) - df_with_annots[['Start', 'annot_Start']].max(axis=1)
     df_with_annots[col_type+ "_suffic_overlap"] = df_with_annots["overlap_length"] >= min_overlap
     #display(df_with_annots)
@@ -111,7 +112,7 @@ def formatting(ax=None):
     ax.set_aspect('equal', adjustable='box')
     sns.despine(ax=ax)
 
-def plot_prc(df, pred_name, color="b", active_col_name="active", ax=None):
+def plot_prc(df, pred_name, color="b", active_col_name="active", ax=None, subtract_prevalence=True):
     precision, recall, thresholds = precision_recall_curve(df[active_col_name], 
                                                            df[pred_name])
     if ax is None:
@@ -122,9 +123,12 @@ def plot_prc(df, pred_name, color="b", active_col_name="active", ax=None):
     ax.set_ylabel("Precision")
     formatting(ax)
 
-    return auc(recall, precision) - sum(df[active_col_name]) / len(df)
+    if subtract_prevalence:
+        return auc(recall, precision) - sum(df[active_col_name]) / len(df)
+    else:
+        return auc(recall, precision)
 
-def plot_roc(df, pred_name, color="b", first=True, text=True, active_col_name="active", ax=None, custom_threshold=None):
+def plot_roc(df, pred_name, color="b", first=True, text=True, active_col_name="active", ax=None, custom_threshold=None, return_threshold=False):
     fpr, tpr, thresholds_roc = roc_curve(df[active_col_name], df[pred_name])
     if ax is None:
         ax = plt.gca()
@@ -143,7 +147,6 @@ def plot_roc(df, pred_name, color="b", first=True, text=True, active_col_name="a
     best_threshold = thresholds_roc[best_idx]
     best_fpr = fpr[best_idx]
     best_tpr = tpr[best_idx]
-    print("Best threshold for " + pred_name + ":" + str(best_threshold))
 
     # Plot the best threshold point on ROC
     ax.plot(best_fpr, best_tpr, 'o', color=color, markersize=10)
@@ -173,8 +176,12 @@ def plot_roc(df, pred_name, color="b", first=True, text=True, active_col_name="a
     # print(f"Best threshold for {pred_name} (F1 score): {best_threshold:.4f}")
     # print(f"Best F1 score for {pred_name}: {f1_scores[best_idx]:.4f}")
     formatting(ax)
-    return auroc
-
+    if return_threshold:
+        return auroc, best_threshold
+    else:
+        print("Best threshold for " + pred_name + ":" + str(best_threshold))
+        return auroc
+    
 def add_custom_legend(color_dict, ax, bbox_to_anchor=(1, 1)):
     custom_lines = [Line2D([0], [0], markersize=2, color=c, lw=4) for c in color_dict.values()]
     ax.legend(custom_lines, color_dict.keys(), bbox_to_anchor=bbox_to_anchor, frameon=False, fontsize='x-small', handlelength=0.5)
