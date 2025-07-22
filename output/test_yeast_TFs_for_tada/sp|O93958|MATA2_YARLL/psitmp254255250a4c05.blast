@@ -1,0 +1,103 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (291 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O93958|MATA2_YARLL Mating-type protein A2 OS=Yarrowia lipolyt...   605   e-172
+sp|Q96MC4|C295L_HUMAN CEP295 N-terminal-like protein OS=Homo sap...    37   0.15 
+sp|P25042|ROX1_YEAST Repressor ROX1 OS=Saccharomyces cerevisiae ...    36   0.33 
+sp|B0DWM8|YTM1_LACBS Ribosome biogenesis protein YTM1 OS=Laccari...    32   7.4  
+
+[blastpgp] WARNING:  [000.000]  posPurgeMatches: Due to purging near identical sequences, only the query is used to construct the position-specific score matrix
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|O93958|MATA2_YARLL Mating-type protein A2 OS=Yarrowia lipolyt...   620   e-177
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q96MC4|C295L_HUMAN CEP295 N-terminal-like protein OS=Homo sap...    41   0.010
+sp|P25042|ROX1_YEAST Repressor ROX1 OS=Saccharomyces cerevisiae ...    36   0.33 
+sp|Q71U11|MATA2_CANAL Mating-type-like protein A2 OS=Candida alb...    33   2.7  
+sp|B0DWM8|YTM1_LACBS Ribosome biogenesis protein YTM1 OS=Laccari...    32   4.2  
+sp|A2AF47|DOC11_MOUSE Dedicator of cytokinesis protein 11 OS=Mus...    32   7.1  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.318    0.136    0.409 
+
+Lambda     K      H
+   0.267   0.0417    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 254,605,555
+Number of Sequences: 569516
+Number of extensions: 11421408
+Number of successful extensions: 25550
+Number of sequences better than 10.0: 11
+Number of HSP's better than 10.0 without gapping: 4
+Number of HSP's successfully gapped in prelim test: 20
+Number of HSP's that attempted gapping in prelim test: 25510
+Number of HSP's gapped (non-prelim): 47
+length of query: 291
+length of database: 205,866,895
+effective HSP length: 117
+effective length of query: 174
+effective length of database: 139,233,523
+effective search space: 24226633002
+effective search space used: 24226633002
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.7 bits)
+S2: 70 (31.5 bits)
