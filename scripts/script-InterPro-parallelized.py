@@ -11,6 +11,11 @@ LINE_LENGTH = 80
 MAX_WORKERS = 5  # Adjust based on system/network capacity
 
 def fetch_sequences(ipr_id):
+    filename = f"../output/interpro/{ipr_id}.fasta"
+    if os.path.exists(filename):
+        print(f"[⏩] Skipped {ipr_id} (already exists at {filename})")
+        return
+
     BASE_URL = f"https://www.ebi.ac.uk:443/interpro/api/protein/reviewed/entry/InterPro/{ipr_id}/?page_size=200&extra_fields=sequence"
     context = ssl._create_unverified_context()
 
@@ -73,7 +78,7 @@ def fetch_sequences(ipr_id):
             sleep(1)
 
     # Save to file
-    filename = f"../output/interpro/{ipr_id}.fasta"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         f.write("\n".join(output_lines) + "\n")
     print(f"[✓] Saved {ipr_id} to {filename}")
