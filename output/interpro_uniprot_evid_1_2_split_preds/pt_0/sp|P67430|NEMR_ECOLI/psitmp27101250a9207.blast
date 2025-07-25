@@ -1,0 +1,925 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (199 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P67430|NEMR_ECOLI HTH-type transcriptional repressor NemR OS=...   414   e-115
+sp|P67431|NEMR_ECOL6 HTH-type transcriptional repressor NemR OS=...   414   e-115
+sp|Q9RAJ1|DHAR_MYCSX HTH-type transcriptional repressor DhaR OS=...    92   3e-18
+sp|Q3J6K8|ACUR_CERS4 Transcriptional regulator AcuR OS=Cereibact...    82   2e-15
+sp|P42097|YPB3_LACLL Uncharacterized HTH-type transcriptional re...    60   1e-08
+sp|P42105|YXAF_BACSU Uncharacterized HTH-type transcriptional re...    55   4e-07
+sp|P40950|YUXN_BACSU Uncharacterized HTH-type transcriptional re...    50   2e-05
+sp|O34619|LMRA_BACSU HTH-type transcriptional regulator LmrA OS=...    47   1e-04
+sp|Q9RMY4|Y6555_BACAN Uncharacterized HTH-type transcriptional r...    46   2e-04
+sp|P9WMC1|ETHR_MYCTU HTH-type transcriptional regulator EthR OS=...    42   0.002
+sp|P9WMC0|ETHR_MYCTO HTH-type transcriptional regulator EthR OS=...    42   0.002
+sp|Q7TVI1|ETHR_MYCBO HTH-type transcriptional regulator EthR OS=...    42   0.002
+sp|P9WME1|Y196_MYCTU Uncharacterized HTH-type transcriptional re...    42   0.002
+sp|P9WME0|Y196_MYCTO Uncharacterized HTH-type transcriptional re...    42   0.002
+sp|Q88FX7|NICS_PSEPK HTH-type transcriptional repressor NicS OS=...    40   0.010
+sp|P96701|YDGC_BACSU Uncharacterized HTH-type transcriptional re...    39   0.030
+sp|P75952|COMR_ECOLI HTH-type transcriptional repressor ComR OS=...    38   0.037
+sp|A0R666|ETHR_MYCS2 HTH-type transcriptional regulator EthR OS=...    38   0.045
+sp|P0ACT1|ACRR_SHIFL HTH-type transcriptional regulator AcrR OS=...    38   0.056
+sp|P0ACS9|ACRR_ECOLI HTH-type transcriptional regulator AcrR OS=...    38   0.056
+sp|P0ACT0|ACRR_ECOL6 HTH-type transcriptional regulator AcrR OS=...    38   0.056
+sp|P9WMD5|Y1255_MYCTU Uncharacterized HTH-type transcriptional r...    38   0.060
+sp|P9WMD4|Y1255_MYCTO Uncharacterized HTH-type transcriptional r...    38   0.060
+sp|P0A0N5|QACR_STAHA HTH-type transcriptional regulator QacR OS=...    37   0.075
+sp|P0A0N4|QACR_STAAU HTH-type transcriptional regulator QacR OS=...    37   0.075
+sp|P0A0N3|QACR_STAAM HTH-type transcriptional regulator QacR OS=...    37   0.075
+sp|O31500|YERO_BACSU Uncharacterized HTH-type transcriptional re...    37   0.091
+sp|P39897|MTRR_NEIGO HTH-type transcriptional regulator MtrR OS=...    37   0.12 
+sp|P28815|TETC_ECOLX Transposon Tn10 TetC protein OS=Escherichia...    37   0.13 
+sp|C5A0R2|FABR_ECOBW HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|A7ML90|FABR_CROS8 HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|B1JQ48|FABR_YERPY HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|Q66G60|FABR_YERPS HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|A4TRG3|FABR_YERPP HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|Q1CNP3|FABR_YERPN HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|A9R6N6|FABR_YERPG HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|Q7CL09|FABR_YERPE HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|B2JZF5|FABR_YERPB HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|Q1CBU4|FABR_YERPA HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|A7FD11|FABR_YERP3 HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|A1JI38|FABR_YERE8 HTH-type transcriptional repressor FabR OS=...    36   0.14 
+sp|P95251|MCE3R_MYCTU Transcriptional repressor Mce3R OS=Mycobac...    36   0.16 
+sp|Q3YV13|FABR_SHISS HTH-type transcriptional repressor FabR OS=...    36   0.17 
+sp|Q31U25|FABR_SHIBS HTH-type transcriptional repressor FabR OS=...    36   0.17 
+sp|B2TWF8|FABR_SHIB3 HTH-type transcriptional repressor FabR OS=...    36   0.17 
+sp|A8A771|FABR_ECOHS HTH-type transcriptional repressor FabR OS=...    36   0.17 
+sp|P0ACU5|FABR_ECOLI HTH-type transcriptional repressor FabR OS=...    36   0.17 
+sp|P0ACU6|FABR_SHIFL HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|Q0SY28|FABR_SHIF8 HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|Q32AE3|FABR_SHIDS HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|B1XBX4|FABR_ECODH HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|Q7A964|FABR_ECO57 HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|A7ZUI3|FABR_ECO24 HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|Q1R3U4|FABR_ECOUT HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|Q8FB90|FABR_ECOL6 HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|Q0TA93|FABR_ECOL5 HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|A1AIE5|FABR_ECOK1 HTH-type transcriptional repressor FabR OS=...    36   0.18 
+sp|B5BJN7|FABR_SALPK HTH-type transcriptional repressor FabR OS=...    36   0.20 
+sp|Q5PK70|FABR_SALPA HTH-type transcriptional repressor FabR OS=...    36   0.20 
+sp|P43506|BM3R1_PRIMG HTH-type transcriptional repressor Bm3R1 O...    36   0.21 
+sp|A9MHG9|FABR_SALAR HTH-type transcriptional repressor FabR OS=...    36   0.21 
+sp|Q7CPB8|FABR_SALTY HTH-type transcriptional repressor FabR OS=...    36   0.21 
+sp|Q8XGD6|FABR_SALTI HTH-type transcriptional repressor FabR OS=...    36   0.21 
+sp|C0Q479|FABR_SALPC HTH-type transcriptional repressor FabR OS=...    36   0.21 
+sp|Q57H90|FABR_SALCH HTH-type transcriptional repressor FabR OS=...    36   0.21 
+sp|A6TGE7|FABR_KLEP7 HTH-type transcriptional repressor FabR OS=...    36   0.22 
+sp|A8AKV8|FABR_CITK8 HTH-type transcriptional repressor FabR OS=...    36   0.22 
+sp|P39601|YWCC_BACSU Uncharacterized HTH-type transcriptional re...    36   0.23 
+sp|Q9ZN78|AFRP_STRGR A-factor receptor protein OS=Streptomyces g...    35   0.26 
+sp|P0ACT9|UIDR_SHIFL HTH-type transcriptional regulator UidR OS=...    35   0.36 
+sp|P0ACT6|UIDR_ECOLI HTH-type transcriptional regulator UidR OS=...    35   0.36 
+sp|P0ACT7|UIDR_ECOL6 HTH-type transcriptional regulator UidR OS=...    35   0.36 
+sp|P0ACT8|UIDR_ECO57 HTH-type transcriptional regulator UidR OS=...    35   0.36 
+sp|Q8G2M8|BEPR_BRUSU HTH-type transcriptional repressor BepR OS=...    35   0.39 
+sp|O07001|YVDT_BACSU Uncharacterized HTH-type transcriptional re...    35   0.50 
+sp|A0R4Z6|KSTR2_MYCS2 HTH-type transcriptional repressor KstR2 O...    34   0.72 
+sp|P38620|KPR2_YEAST Ribose-phosphate pyrophosphokinase 2 OS=Sac...    34   0.74 
+sp|O34970|YTTP_BACSU Probable HTH-type transcriptional regulator...    33   1.7  
+sp|Q0S7V2|KSTR2_RHOJR HTH-type transcriptional repressor KstR2 O...    32   2.2  
+sp|P19769|INSK_ECOLI Putative transposase InsK for insertion seq...    32   2.2  
+sp|O16658|S35A3_CAEEL UDP-N-acetylglucosamine/UDP-N-acetylgalact...    32   2.5  
+sp|Q94ID2|IPT5_ARATH Adenylate isopentenyltransferase 5, chlorop...    32   2.6  
+sp|Q79ZV4|ICAR_STAAW Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|Q6G609|ICAR_STAAS Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|Q6GDD9|ICAR_STAAR Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|Q7A352|ICAR_STAAN Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|Q7A2K5|ICAR_STAAM Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|A6QKF4|ICAR_STAAE Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|Q5HCN2|ICAR_STAAC Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|Q9RQQ0|ICAR_STAA8 Biofilm operon icaADBC HTH-type negative tr...    32   2.9  
+sp|Q9AIU0|TTGR_PSEPT HTH-type transcriptional regulator TtgR OS=...    32   3.0  
+sp|P94548|FADR_BACSU Fatty acid metabolism regulator protein OS=...    32   3.2  
+sp|Q88N29|TTGR_PSEPK Probable HTH-type transcriptional regulator...    32   3.2  
+sp|Q9KJC4|ARPR_PSEPU Probable HTH-type transcriptional regulator...    32   3.2  
+sp|P0ACU4|RUTR_SHIFL HTH-type transcriptional regulator RutR OS=...    31   7.0  
+sp|P0ACU2|RUTR_ECOLI HTH-type transcriptional regulator RutR OS=...    31   7.0  
+sp|P0ACU3|RUTR_ECOL6 HTH-type transcriptional regulator RutR OS=...    31   7.0  
+sp|Q8X4Z7|RUTR_ECO57 HTH-type transcriptional regulator RutR OS=...    31   7.1  
+sp|O34381|PKSA_BACSU HTH-type transcriptional regulator PksA OS=...    30   7.6  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P67430|NEMR_ECOLI HTH-type transcriptional repressor NemR OS=...   278   2e-74
+sp|P67431|NEMR_ECOL6 HTH-type transcriptional repressor NemR OS=...   278   2e-74
+sp|Q9RAJ1|DHAR_MYCSX HTH-type transcriptional repressor DhaR OS=...   225   1e-58
+sp|Q3J6K8|ACUR_CERS4 Transcriptional regulator AcuR OS=Cereibact...   213   8e-55
+sp|Q9RMY4|Y6555_BACAN Uncharacterized HTH-type transcriptional r...   168   4e-41
+sp|P42097|YPB3_LACLL Uncharacterized HTH-type transcriptional re...   154   3e-37
+sp|O34619|LMRA_BACSU HTH-type transcriptional regulator LmrA OS=...   152   2e-36
+sp|P42105|YXAF_BACSU Uncharacterized HTH-type transcriptional re...   150   8e-36
+sp|P40950|YUXN_BACSU Uncharacterized HTH-type transcriptional re...   109   1e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|P9WME1|Y196_MYCTU Uncharacterized HTH-type transcriptional re...    83   2e-15
+sp|P9WME0|Y196_MYCTO Uncharacterized HTH-type transcriptional re...    83   2e-15
+sp|O31500|YERO_BACSU Uncharacterized HTH-type transcriptional re...    76   1e-13
+sp|P75952|COMR_ECOLI HTH-type transcriptional repressor ComR OS=...    71   5e-12
+sp|P39897|MTRR_NEIGO HTH-type transcriptional regulator MtrR OS=...    71   5e-12
+sp|P9WMB9|KSTR2_MYCTU HTH-type transcriptional repressor KstR2 O...    67   9e-11
+sp|P9WMB8|KSTR2_MYCTO HTH-type transcriptional repressor KstR2 O...    67   9e-11
+sp|P0ACT1|ACRR_SHIFL HTH-type transcriptional regulator AcrR OS=...    65   4e-10
+sp|P0ACS9|ACRR_ECOLI HTH-type transcriptional regulator AcrR OS=...    65   4e-10
+sp|P0ACT0|ACRR_ECOL6 HTH-type transcriptional regulator AcrR OS=...    65   4e-10
+sp|P94548|FADR_BACSU Fatty acid metabolism regulator protein OS=...    65   4e-10
+sp|Q7WY76|YEZE_BACSU Uncharacterized HTH-type transcriptional re...    64   5e-10
+sp|P0A0N5|QACR_STAHA HTH-type transcriptional regulator QacR OS=...    64   8e-10
+sp|P0A0N4|QACR_STAAU HTH-type transcriptional regulator QacR OS=...    64   8e-10
+sp|P0A0N3|QACR_STAAM HTH-type transcriptional regulator QacR OS=...    64   8e-10
+sp|A0R4Z6|KSTR2_MYCS2 HTH-type transcriptional repressor KstR2 O...    64   8e-10
+sp|P43506|BM3R1_PRIMG HTH-type transcriptional repressor Bm3R1 O...    62   2e-09
+sp|Q0S7V2|KSTR2_RHOJR HTH-type transcriptional repressor KstR2 O...    61   4e-09
+sp|Q9ZN78|AFRP_STRGR A-factor receptor protein OS=Streptomyces g...    61   4e-09
+sp|A0R666|ETHR_MYCS2 HTH-type transcriptional regulator EthR OS=...    61   6e-09
+sp|P32398|YHGD_BACSU Uncharacterized HTH-type transcriptional re...    60   1e-08
+sp|Q88N29|TTGR_PSEPK Probable HTH-type transcriptional regulator...    59   2e-08
+sp|Q9KJC4|ARPR_PSEPU Probable HTH-type transcriptional regulator...    59   2e-08
+sp|Q9AIU0|TTGR_PSEPT HTH-type transcriptional regulator TtgR OS=...    59   3e-08
+sp|Q8GLC6|ICAR_STAEP Biofilm operon icaADBC HTH-type negative tr...    59   3e-08
+sp|Q5HKQ1|ICAR_STAEQ Biofilm operon icaADBC HTH-type negative tr...    58   3e-08
+sp|O34970|YTTP_BACSU Probable HTH-type transcriptional regulator...    58   4e-08
+sp|Q79ZV4|ICAR_STAAW Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|Q6G609|ICAR_STAAS Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|Q6GDD9|ICAR_STAAR Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|Q7A352|ICAR_STAAN Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|Q7A2K5|ICAR_STAAM Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|A6QKF4|ICAR_STAAE Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|Q5HCN2|ICAR_STAAC Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|Q9RQQ0|ICAR_STAA8 Biofilm operon icaADBC HTH-type negative tr...    58   5e-08
+sp|Q8FTA6|ACNR_COREF HTH-type transcriptional repressor AcnR OS=...    57   8e-08
+sp|P0C068|MEPR_PSEPU Probable HTH-type transcriptional regulator...    56   1e-07
+sp|Q8NQ97|ACNR_CORGL HTH-type transcriptional repressor AcnR OS=...    56   1e-07
+sp|P39601|YWCC_BACSU Uncharacterized HTH-type transcriptional re...    56   1e-07
+sp|P95251|MCE3R_MYCTU Transcriptional repressor Mce3R OS=Mycobac...    56   2e-07
+sp|P94423|YCNC_BACSU Uncharacterized HTH-type transcriptional re...    55   3e-07
+sp|P39885|TCMR_STRGA HTH-type transcriptional regulator TcmR OS=...    55   3e-07
+sp|Q8X4Z7|RUTR_ECO57 HTH-type transcriptional regulator RutR OS=...    55   4e-07
+sp|P0ACU4|RUTR_SHIFL HTH-type transcriptional regulator RutR OS=...    54   5e-07
+sp|P0ACU2|RUTR_ECOLI HTH-type transcriptional regulator RutR OS=...    54   5e-07
+sp|P0ACU3|RUTR_ECOL6 HTH-type transcriptional regulator RutR OS=...    54   5e-07
+sp|P28815|TETC_ECOLX Transposon Tn10 TetC protein OS=Escherichia...    54   5e-07
+sp|O31560|YFIR_BACSU Uncharacterized HTH-type transcriptional re...    54   6e-07
+sp|A1U6F3|SLMA_MARN8 Nucleoid occlusion factor SlmA OS=Marinobac...    54   1e-06
+sp|P0ACT9|UIDR_SHIFL HTH-type transcriptional regulator UidR OS=...    53   1e-06
+sp|P0ACT6|UIDR_ECOLI HTH-type transcriptional regulator UidR OS=...    53   1e-06
+sp|P0ACT7|UIDR_ECOL6 HTH-type transcriptional regulator UidR OS=...    53   1e-06
+sp|P0ACT8|UIDR_ECO57 HTH-type transcriptional regulator UidR OS=...    53   1e-06
+sp|Q8G2M8|BEPR_BRUSU HTH-type transcriptional repressor BepR OS=...    53   1e-06
+sp|P96701|YDGC_BACSU Uncharacterized HTH-type transcriptional re...    53   1e-06
+sp|A6VSX5|SLMA_MARMS Nucleoid occlusion factor SlmA OS=Marinomon...    52   2e-06
+sp|O07001|YVDT_BACSU Uncharacterized HTH-type transcriptional re...    52   2e-06
+sp|B7VHK0|SLMA_VIBA3 Nucleoid occlusion factor SlmA OS=Vibrio at...    52   3e-06
+sp|Q2FV42|Y2897_STAA8 HTH-type transcriptional regulator SAOUHSC...    52   3e-06
+sp|Q5HCX3|Y2593_STAAC HTH-type transcriptional regulator SACOL25...    52   3e-06
+sp|Q2FDS9|Y2515_STAA3 HTH-type transcriptional regulator SAUSA30...    52   3e-06
+sp|Q99R60|Y2578_STAAM HTH-type transcriptional regulator SAV2578...    52   3e-06
+sp|Q79ZX9|Y2498_STAAW HTH-type transcriptional regulator MW2498 ...    52   3e-06
+sp|Q6G696|Y2464_STAAS HTH-type transcriptional regulator SAS2464...    52   3e-06
+sp|Q7A3C7|Y2364_STAAN HTH-type transcriptional regulator SA2364 ...    52   3e-06
+sp|P75811|RCDA_ECOLI HTH-type transcriptional regulator RcdA OS=...    52   3e-06
+sp|Q0S868|KSTR_RHOJR HTH-type transcriptional repressor KstR OS=...    52   3e-06
+sp|P9WMD5|Y1255_MYCTU Uncharacterized HTH-type transcriptional r...    52   3e-06
+sp|P9WMD4|Y1255_MYCTO Uncharacterized HTH-type transcriptional r...    52   3e-06
+sp|Q6GDM3|Y2658_STAAR HTH-type transcriptional regulator SAR2658...    52   4e-06
+sp|P0ACT2|ENVR_ECOLI Probable acrEF/envCD operon repressor OS=Es...    51   4e-06
+sp|P0ACT3|ENVR_ECO57 Probable acrEF/envCD operon repressor OS=Es...    51   4e-06
+sp|P96856|KSTR_MYCTU HTH-type transcriptional repressor KstR OS=...    51   4e-06
+sp|C5B9D1|SLMA_EDWI9 Nucleoid occlusion factor SlmA OS=Edwardsie...    51   5e-06
+sp|B1JQ48|FABR_YERPY HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|Q66G60|FABR_YERPS HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|A4TRG3|FABR_YERPP HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|Q1CNP3|FABR_YERPN HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|A9R6N6|FABR_YERPG HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|Q7CL09|FABR_YERPE HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|B2JZF5|FABR_YERPB HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|Q1CBU4|FABR_YERPA HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|A7FD11|FABR_YERP3 HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|P0ACU5|FABR_ECOLI HTH-type transcriptional repressor FabR OS=...    51   7e-06
+sp|Q9R9T9|SRPR_PSEPU HTH-type transcriptional regulator SrpR OS=...    50   9e-06
+sp|Q88FX7|NICS_PSEPK HTH-type transcriptional repressor NicS OS=...    50   1e-05
+sp|Q9CLQ9|SLMA_PASMU Nucleoid occlusion factor SlmA OS=Pasteurel...    50   1e-05
+sp|Q1R3U4|FABR_ECOUT HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q8FB90|FABR_ECOL6 HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q0TA93|FABR_ECOL5 HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|A1AIE5|FABR_ECOK1 HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q65R67|SLMA_MANSM Nucleoid occlusion factor SlmA OS=Mannheimi...    50   1e-05
+sp|O33453|CYMR_PSEPU HTH-type transcriptional regulator CymR OS=...    50   1e-05
+sp|P0ACU6|FABR_SHIFL HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q0SY28|FABR_SHIF8 HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q32AE3|FABR_SHIDS HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|B1XBX4|FABR_ECODH HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q7A964|FABR_ECO57 HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|A7ZUI3|FABR_ECO24 HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q2YWD0|Y2452_STAAB HTH-type transcriptional regulator SAB2452...    50   1e-05
+sp|Q3YV13|FABR_SHISS HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|Q31U25|FABR_SHIBS HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|B2TWF8|FABR_SHIB3 HTH-type transcriptional repressor FabR OS=...    50   1e-05
+sp|A8A771|FABR_ECOHS HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|P9WMB7|MFTR_MYCTU Putative mycofactocin biosynthesis transcri...    49   2e-05
+sp|P9WMB6|MFTR_MYCTO Putative mycofactocin biosynthesis transcri...    49   2e-05
+sp|P9WMC3|HTHR_MYCTU HTH-type transcriptional repressor Rv3405c ...    49   2e-05
+sp|P9WMC2|HTHR_MYCTO HTH-type transcriptional regulator MT3513 O...    49   2e-05
+sp|P67443|HTHR_MYCBO HTH-type transcriptional regulator Mb3439c ...    49   2e-05
+sp|A7ML90|FABR_CROS8 HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|A6TGE7|FABR_KLEP7 HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|A9MHG9|FABR_SALAR HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|A8AKV8|FABR_CITK8 HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|Q0HZU6|SLMA_SHESR Nucleoid occlusion factor SlmA OS=Shewanell...    49   2e-05
+sp|Q0HE53|SLMA_SHESM Nucleoid occlusion factor SlmA OS=Shewanell...    49   2e-05
+sp|Q7CPB8|FABR_SALTY HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|Q8XGD6|FABR_SALTI HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|C0Q479|FABR_SALPC HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|Q57H90|FABR_SALCH HTH-type transcriptional repressor FabR OS=...    49   2e-05
+sp|A0R528|KSTR_MYCS2 HTH-type transcriptional repressor KstR OS=...    49   2e-05
+sp|A1JI38|FABR_YERE8 HTH-type transcriptional repressor FabR OS=...    49   3e-05
+sp|Q8E9L9|SLMA_SHEON Nucleoid occlusion factor SlmA OS=Shewanell...    49   3e-05
+sp|O34381|PKSA_BACSU HTH-type transcriptional regulator PksA OS=...    49   3e-05
+sp|P9WMC1|ETHR_MYCTU HTH-type transcriptional regulator EthR OS=...    49   3e-05
+sp|P9WMC0|ETHR_MYCTO HTH-type transcriptional regulator EthR OS=...    49   3e-05
+sp|Q7TVI1|ETHR_MYCBO HTH-type transcriptional regulator EthR OS=...    49   3e-05
+sp|A9KY01|SLMA_SHEB9 Nucleoid occlusion factor SlmA OS=Shewanell...    49   3e-05
+sp|A6WIA3|SLMA_SHEB8 Nucleoid occlusion factor SlmA OS=Shewanell...    49   3e-05
+sp|A3CZJ3|SLMA_SHEB5 Nucleoid occlusion factor SlmA OS=Shewanell...    49   3e-05
+sp|B8E4J2|SLMA_SHEB2 Nucleoid occlusion factor SlmA OS=Shewanell...    49   3e-05
+sp|B5BJN7|FABR_SALPK HTH-type transcriptional repressor FabR OS=...    49   3e-05
+sp|Q5PK70|FABR_SALPA HTH-type transcriptional repressor FabR OS=...    49   3e-05
+sp|P29280|SLMA_HAEIN Nucleoid occlusion factor SlmA OS=Haemophil...    49   3e-05
+sp|A5UI96|SLMA_HAEIG Nucleoid occlusion factor SlmA OS=Haemophil...    49   3e-05
+sp|A5UDB3|SLMA_HAEIE Nucleoid occlusion factor SlmA OS=Haemophil...    49   3e-05
+sp|Q4QLV2|SLMA_HAEI8 Nucleoid occlusion factor SlmA OS=Haemophil...    49   3e-05
+sp|B5FFF4|SLMA_ALIFM Nucleoid occlusion factor SlmA OS=Aliivibri...    48   3e-05
+sp|Q5E8M7|SLMA_ALIF1 Nucleoid occlusion factor SlmA OS=Aliivibri...    48   3e-05
+sp|Q6NH62|ACNR_CORDI HTH-type transcriptional repressor AcnR OS=...    48   3e-05
+sp|Q6LVN6|SLMA_PHOPR Nucleoid occlusion factor SlmA OS=Photobact...    48   4e-05
+sp|O08335|FATR_BACSU HTH-type transcriptional repressor FatR OS=...    48   4e-05
+sp|P39334|BDCR_ECOLI HTH-type transcriptional repressor BdcR OS=...    48   4e-05
+sp|C5A0R2|FABR_ECOBW HTH-type transcriptional repressor FabR OS=...    48   5e-05
+sp|A0L1S2|SLMA_SHESA Nucleoid occlusion factor SlmA OS=Shewanell...    48   5e-05
+sp|A7MSP5|SLMA_VIBC1 Nucleoid occlusion factor SlmA OS=Vibrio ca...    48   5e-05
+sp|Q87T90|SLMA_VIBPA Nucleoid occlusion factor SlmA OS=Vibrio pa...    47   6e-05
+sp|P44757|Y570_HAEIN Uncharacterized HTH-type transcriptional re...    47   7e-05
+sp|A1REU1|SLMA_SHESW Nucleoid occlusion factor SlmA OS=Shewanell...    47   8e-05
+sp|A4Y2K8|SLMA_SHEPC Nucleoid occlusion factor SlmA OS=Shewanell...    47   8e-05
+sp|Q9KVD2|SLMA_VIBCH Nucleoid occlusion factor SlmA OS=Vibrio ch...    47   9e-05
+sp|Q6GKL1|Y097_STAAR HTH-type transcriptional regulator SAR0097 ...    47   9e-05
+sp|P67437|Y1581_MYCBO Uncharacterized HTH-type transcriptional r...    47   9e-05
+sp|P9WMD1|Y1556_MYCTU Uncharacterized HTH-type transcriptional r...    47   9e-05
+sp|P9WMD0|Y1556_MYCTO Uncharacterized HTH-type transcriptional r...    47   9e-05
+sp|Q93PU7|TTGW_PSEPT Uncharacterized HTH-type transcriptional re...    47   1e-04
+sp|Q7MPT0|SLMA_VIBVY Nucleoid occlusion factor SlmA OS=Vibrio vu...    47   1e-04
+sp|Q8DDX7|SLMA_VIBVU Nucleoid occlusion factor SlmA OS=Vibrio vu...    47   1e-04
+sp|B1KL08|SLMA_SHEWM Nucleoid occlusion factor SlmA OS=Shewanell...    47   1e-04
+sp|Q07WF8|SLMA_SHEFN Nucleoid occlusion factor SlmA OS=Shewanell...    46   2e-04
+sp|P96676|YDES_BACSU Uncharacterized HTH-type transcriptional re...    46   2e-04
+sp|O34643|YVKB_BACSU Uncharacterized HTH-type transcriptional re...    45   3e-04
+sp|B0BTZ2|SLMA_ACTPJ Nucleoid occlusion factor SlmA OS=Actinobac...    45   4e-04
+sp|B3H337|SLMA_ACTP7 Nucleoid occlusion factor SlmA OS=Actinobac...    45   4e-04
+sp|A3N3Q5|SLMA_ACTP2 Nucleoid occlusion factor SlmA OS=Actinobac...    45   4e-04
+sp|C6DIC4|SLMA_PECCP Nucleoid occlusion factor SlmA OS=Pectobact...    45   4e-04
+sp|Q6DAW0|SLMA_PECAS Nucleoid occlusion factor SlmA OS=Pectobact...    45   4e-04
+sp|B8F853|SLMA_GLAP5 Nucleoid occlusion factor SlmA OS=Glaessere...    44   5e-04
+sp|Q5QZB7|SLMA_IDILO Nucleoid occlusion factor SlmA OS=Idiomarin...    44   6e-04
+sp|A1S2C9|SLMA_SHEAM Nucleoid occlusion factor SlmA OS=Shewanell...    44   6e-04
+sp|A8FQ72|SLMA_SHESH Nucleoid occlusion factor SlmA OS=Shewanell...    44   6e-04
+sp|Q7VN48|SLMA_HAEDU Nucleoid occlusion factor SlmA OS=Haemophil...    44   7e-04
+sp|O69786|BETI_RHIME HTH-type transcriptional regulator BetI OS=...    44   0.001
+sp|Q7MY26|SLMA_PHOLL Nucleoid occlusion factor SlmA OS=Photorhab...    44   0.001
+sp|P44923|Y893_HAEIN Uncharacterized HTH-type transcriptional re...    43   0.001
+sp|Q4JVM3|ACNR_CORJK HTH-type transcriptional repressor AcnR OS=...    43   0.001
+sp|B2VF78|SLMA_ERWT9 Nucleoid occlusion factor SlmA OS=Erwinia t...    43   0.002
+sp|B4SHW1|BETI_STRM5 HTH-type transcriptional regulator BetI OS=...    43   0.002
+sp|O53165|ACNR_MYCTU HTH-type transcriptional repressor Rv1474c ...    43   0.002
+sp|A1JHW9|SLMA_YERE8 Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|B1JQX6|SLMA_YERPY Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|Q66GD9|SLMA_YERPS Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|A4TSE0|SLMA_YERPP Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|Q1CCZ9|SLMA_YERPN Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|A9R671|SLMA_YERPG Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|Q8ZJP6|SLMA_YERPE Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|B2JYN0|SLMA_YERPB Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|Q1C264|SLMA_YERPA Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|A7FCT1|SLMA_YERP3 Nucleoid occlusion factor SlmA OS=Yersinia ...    42   0.002
+sp|A3QIQ2|SLMA_SHELP Nucleoid occlusion factor SlmA OS=Shewanell...    42   0.002
+sp|Q9CIV9|DHAS_LACLA HTH-type dhaKLM operon transcriptional acti...    42   0.002
+sp|B8CM26|SLMA_SHEPW Nucleoid occlusion factor SlmA OS=Shewanell...    42   0.002
+sp|A8H9B3|SLMA_SHEPA Nucleoid occlusion factor SlmA OS=Shewanell...    42   0.003
+sp|A8GLE8|SLMA_SERP5 Nucleoid occlusion factor SlmA OS=Serratia ...    42   0.003
+sp|Q8Z2H4|SLMA_SALTI Nucleoid occlusion factor SlmA OS=Salmonell...    42   0.003
+sp|B0TQK8|SLMA_SHEHH Nucleoid occlusion factor SlmA OS=Shewanell...    42   0.003
+sp|A9MKN4|SLMA_SALAR Nucleoid occlusion factor SlmA OS=Salmonell...    42   0.003
+sp|Q2NQT9|SLMA_SODGM Nucleoid occlusion factor SlmA OS=Sodalis g...    42   0.003
+sp|B1MM06|TETR_MYCA9 DNA-binding transcriptional repressor TetR ...    42   0.003
+sp|B5BI15|SLMA_SALPK Nucleoid occlusion factor SlmA OS=Salmonell...    42   0.003
+sp|Q5PC27|SLMA_SALPA Nucleoid occlusion factor SlmA OS=Salmonell...    42   0.003
+sp|A8ARM8|SLMA_CITK8 Nucleoid occlusion factor SlmA OS=Citrobact...    42   0.004
+sp|B7LVK2|SLMA_ESCF3 Nucleoid occlusion factor SlmA OS=Escherich...    42   0.004
+sp|Q8FC86|SLMA_ECOL6 Nucleoid occlusion factor SlmA OS=Escherich...    42   0.004
+sp|Q0TBG8|SLMA_ECOL5 Nucleoid occlusion factor SlmA OS=Escherich...    42   0.004
+sp|B7N282|SLMA_ECO81 Nucleoid occlusion factor SlmA OS=Escherich...    42   0.004
+sp|B7UM47|SLMA_ECO27 Nucleoid occlusion factor SlmA OS=Escherich...    42   0.004
+sp|B4F0W5|SLMA_PROMH Nucleoid occlusion factor SlmA OS=Proteus m...    41   0.004
+sp|A6TFN2|SLMA_KLEP7 Nucleoid occlusion factor SlmA OS=Klebsiell...    41   0.004
+sp|Q8ZL46|SLMA_SALTY Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|B4TZY2|SLMA_SALSV Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|C0Q1X3|SLMA_SALPC Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|A9MVN6|SLMA_SALPB Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|B4SXE2|SLMA_SALNS Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|B4T9C5|SLMA_SALHS Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|B5RGE6|SLMA_SALG2 Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|B5R5G5|SLMA_SALEP Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|B5FM64|SLMA_SALDC Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|Q57IA1|SLMA_SALCH Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|B5EXE5|SLMA_SALA4 Nucleoid occlusion factor SlmA OS=Salmonell...    41   0.006
+sp|P0C094|SLMA_SHIFL Nucleoid occlusion factor SlmA OS=Shigella ...    41   0.007
+sp|Q0SYG8|SLMA_SHIF8 Nucleoid occlusion factor SlmA OS=Shigella ...    41   0.007
+sp|B2TTV5|SLMA_SHIB3 Nucleoid occlusion factor SlmA OS=Shigella ...    41   0.007
+sp|B6I3L8|SLMA_ECOSE Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|B7NEU5|SLMA_ECOLU Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|P0C093|SLMA_ECOLI Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|B1IYV9|SLMA_ECOLC Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|A8A6A3|SLMA_ECOHS Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|B1X975|SLMA_ECODH Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|C4ZXN3|SLMA_ECOBW Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|B7M4C6|SLMA_ECO8A Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|B5YWD9|SLMA_ECO5E Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|Q8X580|SLMA_ECO57 Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|B7L761|SLMA_ECO55 Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|A7ZTJ2|SLMA_ECO24 Nucleoid occlusion factor SlmA OS=Escherich...    41   0.007
+sp|P22645|YDH1_XANAU Uncharacterized HTH-type transcriptional re...    41   0.008
+sp|Q12SF8|SLMA_SHEDO Nucleoid occlusion factor SlmA OS=Shewanell...    41   0.008
+sp|B1LK78|SLMA_ECOSM Nucleoid occlusion factor SlmA OS=Escherich...    41   0.008
+sp|A1AHH2|SLMA_ECOK1 Nucleoid occlusion factor SlmA OS=Escherich...    41   0.008
+sp|B7NQ02|SLMA_ECO7I Nucleoid occlusion factor SlmA OS=Escherich...    41   0.008
+sp|B7MFK2|SLMA_ECO45 Nucleoid occlusion factor SlmA OS=Escherich...    41   0.008
+sp|P46330|YXBF_BACSU Uncharacterized HTH-type transcriptional re...    40   0.010
+sp|B5XTG2|SLMA_KLEP3 Nucleoid occlusion factor SlmA OS=Klebsiell...    40   0.010
+sp|Q48AG4|SLMA_COLP3 Nucleoid occlusion factor SlmA OS=Colwellia...    39   0.015
+sp|P03039|TETR3_ECOLX Tetracycline repressor protein class C OS=...    39   0.016
+sp|A4W508|SLMA_ENT38 Nucleoid occlusion factor SlmA OS=Enterobac...    39   0.018
+sp|Q2T6C8|BETI_BURTA HTH-type transcriptional regulator BetI OS=...    39   0.019
+sp|A6X2G6|BETI_BRUA4 HTH-type transcriptional regulator BetI OS=...    39   0.023
+sp|A7MQB0|SLMA_CROS8 Nucleoid occlusion factor SlmA OS=Cronobact...    39   0.026
+sp|Q8YFY3|BETI_BRUME HTH-type transcriptional regulator BetI OS=...    39   0.029
+sp|C0RHQ4|BETI_BRUMB HTH-type transcriptional regulator BetI OS=...    39   0.029
+sp|P67439|Y1846_MYCBO Uncharacterized HTH-type transcriptional r...    39   0.031
+sp|P9WMC9|Y1816_MYCTU Uncharacterized HTH-type transcriptional r...    39   0.031
+sp|P9WMC8|Y1816_MYCTO Uncharacterized HTH-type transcriptional r...    39   0.031
+sp|B0CKN5|BETI_BRUSI HTH-type transcriptional regulator BetI OS=...    39   0.033
+sp|Q8G1Z7|BETI_BRUSU HTH-type transcriptional regulator BetI OS=...    38   0.038
+sp|A9M9H9|BETI_BRUC2 HTH-type transcriptional regulator BetI OS=...    38   0.039
+sp|Q57EH9|BETI_BRUAB HTH-type transcriptional regulator BetI OS=...    38   0.040
+sp|Q2YMS6|BETI_BRUA2 HTH-type transcriptional regulator BetI OS=...    38   0.040
+sp|Q1QXD9|BETI1_CHRSD HTH-type transcriptional regulator BetI 1 ...    38   0.042
+sp|F2G1U7|SLMA_ALTMD Nucleoid occlusion factor SlmA OS=Alteromon...    38   0.055
+sp|Q12019|MDN1_YEAST Midasin OS=Saccharomyces cerevisiae (strain...    37   0.059
+sp|B2JS87|BETI_PARP8 HTH-type transcriptional regulator BetI OS=...    37   0.065
+sp|P03038|TETR1_ECOLX Tetracycline repressor protein class A fro...    37   0.072
+sp|O86312|RAAS_MYCTU HTH-type transcriptional regulatory protein...    37   0.093
+sp|P04483|TETR2_ECOLX Tetracycline repressor protein class B fro...    36   0.13 
+sp|P51562|TETR8_PHODP Tetracycline repressor protein class H OS=...    36   0.20 
+sp|P0ACT5|TETR4_SALOR Tetracycline repressor protein class D OS=...    36   0.20 
+sp|P0ACT4|TETR4_ECOLX Tetracycline repressor protein class D OS=...    36   0.20 
+sp|Q9YF02|IF2A_AERPE Translation initiation factor 2 subunit alp...    35   0.34 
+sp|Q87H51|BETI_VIBPA HTH-type transcriptional regulator BetI OS=...    35   0.37 
+sp|P9WMD9|Y472_MYCTU Uncharacterized HTH-type transcriptional re...    35   0.45 
+sp|P9WMD8|Y472_MYCTO Uncharacterized HTH-type transcriptional re...    35   0.45 
+sp|P67441|Y2936_MYCBO Uncharacterized HTH-type transcriptional r...    34   0.52 
+sp|P9WMC7|Y2912_MYCTU Uncharacterized HTH-type transcriptional r...    34   0.52 
+sp|P9WMC6|Y2912_MYCTO Uncharacterized HTH-type transcriptional r...    34   0.52 
+sp|Q9ZMM2|HTPG_HELPJ Chaperone protein HtpG OS=Helicobacter pylo...    34   0.57 
+sp|A7N212|BETI_VIBC1 HTH-type transcriptional regulator BetI OS=...    34   0.65 
+sp|Q985M2|BETI_RHILO HTH-type transcriptional regulator BetI OS=...    34   0.75 
+sp|A0PWG2|Y4761_MYCUA Putative S-adenosyl-L-methionine-dependent...    34   1.0  
+sp|B2HLS6|Y358_MYCMM Putative S-adenosyl-L-methionine-dependent ...    34   1.0  
+sp|Q04729|YFUM2_GEOSE Uncharacterized 30.6 kDa protein in fumA 3...    33   1.1  
+sp|Q821S4|MUDD_CHLCV Bifunctional enzyme MurC/Ddl OS=Chlamydia c...    33   1.2  
+sp|O53789|Y681_MYCTU Uncharacterized HTH-type transcriptional re...    33   1.3  
+sp|Q8TVE9|GGR1_METKA Digeranylgeranylglycerophospholipid reducta...    33   1.3  
+sp|Q1CUU4|HTPG_HELPH Chaperone protein HtpG OS=Helicobacter pylo...    33   1.4  
+sp|P51561|TETR8_PASMD Tetracycline repressor protein class H OS=...    33   1.6  
+sp|P51560|TETR7_VIBAN Tetracycline repressor protein class G OS=...    33   1.7  
+sp|Q17VU7|HTPG_HELAH Chaperone protein HtpG OS=Helicobacter acin...    32   2.0  
+sp|B7VQ27|BETI_VIBA3 HTH-type transcriptional regulator BetI OS=...    32   2.0  
+sp|P67435|Y1388_MYCBO Uncharacterized HTH-type transcriptional r...    32   2.9  
+sp|P9WMD3|CHLER_MYCTU HTH-type transcriptional repressor Rv1353c...    32   2.9  
+sp|P9WMD2|CHLER_MYCTO HTH-type transcriptional repressor MT1396 ...    32   2.9  
+sp|P56116|HTPG_HELPY Chaperone protein HtpG OS=Helicobacter pylo...    32   2.9  
+sp|Q23223|MTR4_CAEEL mRNA transport homolog 4 OS=Caenorhabditis ...    32   3.5  
+sp|Q9Z9X0|GATB_HALH5 Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    31   6.7  
+sp|P0ACU1|CECR_SHIFL HTH-type transcriptional dual regulator Cec...    31   7.2  
+sp|P0ACU0|CECR_ECOLI HTH-type transcriptional dual regulator Cec...    31   7.2  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P67430|NEMR_ECOLI HTH-type transcriptional repressor NemR OS=...   181   4e-45
+sp|P67431|NEMR_ECOL6 HTH-type transcriptional repressor NemR OS=...   181   4e-45
+sp|Q9RAJ1|DHAR_MYCSX HTH-type transcriptional repressor DhaR OS=...   151   4e-36
+sp|Q3J6K8|ACUR_CERS4 Transcriptional regulator AcuR OS=Cereibact...   146   8e-35
+sp|Q6LVN6|SLMA_PHOPR Nucleoid occlusion factor SlmA OS=Photobact...   140   7e-33
+sp|Q8E9L9|SLMA_SHEON Nucleoid occlusion factor SlmA OS=Shewanell...   136   8e-32
+sp|Q0HZU6|SLMA_SHESR Nucleoid occlusion factor SlmA OS=Shewanell...   136   1e-31
+sp|Q0HE53|SLMA_SHESM Nucleoid occlusion factor SlmA OS=Shewanell...   136   1e-31
+sp|A9KY01|SLMA_SHEB9 Nucleoid occlusion factor SlmA OS=Shewanell...   136   1e-31
+sp|A6WIA3|SLMA_SHEB8 Nucleoid occlusion factor SlmA OS=Shewanell...   136   1e-31
+sp|A3CZJ3|SLMA_SHEB5 Nucleoid occlusion factor SlmA OS=Shewanell...   136   1e-31
+sp|B8E4J2|SLMA_SHEB2 Nucleoid occlusion factor SlmA OS=Shewanell...   136   1e-31
+sp|A0L1S2|SLMA_SHESA Nucleoid occlusion factor SlmA OS=Shewanell...   135   2e-31
+sp|B1KL08|SLMA_SHEWM Nucleoid occlusion factor SlmA OS=Shewanell...   135   2e-31
+sp|B5FFF4|SLMA_ALIFM Nucleoid occlusion factor SlmA OS=Aliivibri...   135   2e-31
+sp|Q5E8M7|SLMA_ALIF1 Nucleoid occlusion factor SlmA OS=Aliivibri...   135   2e-31
+sp|B7VHK0|SLMA_VIBA3 Nucleoid occlusion factor SlmA OS=Vibrio at...   135   2e-31
+sp|Q65R67|SLMA_MANSM Nucleoid occlusion factor SlmA OS=Mannheimi...   135   2e-31
+sp|B0BTZ2|SLMA_ACTPJ Nucleoid occlusion factor SlmA OS=Actinobac...   134   3e-31
+sp|B3H337|SLMA_ACTP7 Nucleoid occlusion factor SlmA OS=Actinobac...   134   3e-31
+sp|A3N3Q5|SLMA_ACTP2 Nucleoid occlusion factor SlmA OS=Actinobac...   134   3e-31
+sp|Q07WF8|SLMA_SHEFN Nucleoid occlusion factor SlmA OS=Shewanell...   134   5e-31
+sp|C5B9D1|SLMA_EDWI9 Nucleoid occlusion factor SlmA OS=Edwardsie...   134   5e-31
+sp|A1REU1|SLMA_SHESW Nucleoid occlusion factor SlmA OS=Shewanell...   133   6e-31
+sp|A4Y2K8|SLMA_SHEPC Nucleoid occlusion factor SlmA OS=Shewanell...   133   6e-31
+sp|Q9KVD2|SLMA_VIBCH Nucleoid occlusion factor SlmA OS=Vibrio ch...   133   6e-31
+sp|Q7VN48|SLMA_HAEDU Nucleoid occlusion factor SlmA OS=Haemophil...   133   7e-31
+sp|P42105|YXAF_BACSU Uncharacterized HTH-type transcriptional re...   132   2e-30
+sp|Q7MY26|SLMA_PHOLL Nucleoid occlusion factor SlmA OS=Photorhab...   131   2e-30
+sp|A7MSP5|SLMA_VIBC1 Nucleoid occlusion factor SlmA OS=Vibrio ca...   131   2e-30
+sp|Q7MPT0|SLMA_VIBVY Nucleoid occlusion factor SlmA OS=Vibrio vu...   131   4e-30
+sp|Q8DDX7|SLMA_VIBVU Nucleoid occlusion factor SlmA OS=Vibrio vu...   131   4e-30
+sp|Q87T90|SLMA_VIBPA Nucleoid occlusion factor SlmA OS=Vibrio pa...   130   5e-30
+sp|Q6DAW0|SLMA_PECAS Nucleoid occlusion factor SlmA OS=Pectobact...   130   6e-30
+sp|A8FQ72|SLMA_SHESH Nucleoid occlusion factor SlmA OS=Shewanell...   130   8e-30
+sp|C6DIC4|SLMA_PECCP Nucleoid occlusion factor SlmA OS=Pectobact...   129   1e-29
+sp|P42097|YPB3_LACLL Uncharacterized HTH-type transcriptional re...   129   1e-29
+sp|P29280|SLMA_HAEIN Nucleoid occlusion factor SlmA OS=Haemophil...   129   2e-29
+sp|A5UI96|SLMA_HAEIG Nucleoid occlusion factor SlmA OS=Haemophil...   129   2e-29
+sp|A5UDB3|SLMA_HAEIE Nucleoid occlusion factor SlmA OS=Haemophil...   129   2e-29
+sp|Q4QLV2|SLMA_HAEI8 Nucleoid occlusion factor SlmA OS=Haemophil...   129   2e-29
+sp|A6VSX5|SLMA_MARMS Nucleoid occlusion factor SlmA OS=Marinomon...   128   3e-29
+sp|O34619|LMRA_BACSU HTH-type transcriptional regulator LmrA OS=...   127   4e-29
+sp|Q9CLQ9|SLMA_PASMU Nucleoid occlusion factor SlmA OS=Pasteurel...   127   4e-29
+sp|A1S2C9|SLMA_SHEAM Nucleoid occlusion factor SlmA OS=Shewanell...   127   6e-29
+sp|B8F853|SLMA_GLAP5 Nucleoid occlusion factor SlmA OS=Glaessere...   126   8e-29
+sp|Q9RMY4|Y6555_BACAN Uncharacterized HTH-type transcriptional r...   126   8e-29
+sp|P75952|COMR_ECOLI HTH-type transcriptional repressor ComR OS=...   126   1e-28
+sp|Q5QZB7|SLMA_IDILO Nucleoid occlusion factor SlmA OS=Idiomarin...   124   4e-28
+sp|A1U6F3|SLMA_MARN8 Nucleoid occlusion factor SlmA OS=Marinobac...   121   4e-27
+sp|Q8FTA6|ACNR_COREF HTH-type transcriptional repressor AcnR OS=...   117   6e-26
+sp|Q8NQ97|ACNR_CORGL HTH-type transcriptional repressor AcnR OS=...   116   7e-26
+sp|P39897|MTRR_NEIGO HTH-type transcriptional regulator MtrR OS=...   113   9e-25
+sp|Q6NH62|ACNR_CORDI HTH-type transcriptional repressor AcnR OS=...   113   1e-24
+sp|P9WMB9|KSTR2_MYCTU HTH-type transcriptional repressor KstR2 O...   109   1e-23
+sp|P9WMB8|KSTR2_MYCTO HTH-type transcriptional repressor KstR2 O...   109   1e-23
+sp|Q8G2M8|BEPR_BRUSU HTH-type transcriptional repressor BepR OS=...   107   5e-23
+sp|A0R4Z6|KSTR2_MYCS2 HTH-type transcriptional repressor KstR2 O...   107   6e-23
+sp|P39601|YWCC_BACSU Uncharacterized HTH-type transcriptional re...   107   7e-23
+sp|Q7WY76|YEZE_BACSU Uncharacterized HTH-type transcriptional re...   106   1e-22
+sp|Q88N29|TTGR_PSEPK Probable HTH-type transcriptional regulator...   105   2e-22
+sp|Q9KJC4|ARPR_PSEPU Probable HTH-type transcriptional regulator...   105   2e-22
+sp|Q9AIU0|TTGR_PSEPT HTH-type transcriptional regulator TtgR OS=...   104   3e-22
+sp|P0ACT1|ACRR_SHIFL HTH-type transcriptional regulator AcrR OS=...   104   6e-22
+sp|P0ACS9|ACRR_ECOLI HTH-type transcriptional regulator AcrR OS=...   104   6e-22
+sp|P0ACT0|ACRR_ECOL6 HTH-type transcriptional regulator AcrR OS=...   104   6e-22
+sp|P0C068|MEPR_PSEPU Probable HTH-type transcriptional regulator...   103   7e-22
+sp|O07001|YVDT_BACSU Uncharacterized HTH-type transcriptional re...   101   3e-21
+sp|Q0S7V2|KSTR2_RHOJR HTH-type transcriptional repressor KstR2 O...   101   4e-21
+sp|O31500|YERO_BACSU Uncharacterized HTH-type transcriptional re...   101   4e-21
+sp|O31560|YFIR_BACSU Uncharacterized HTH-type transcriptional re...   100   9e-21
+sp|P43506|BM3R1_PRIMG HTH-type transcriptional repressor Bm3R1 O...    99   1e-20
+sp|A0R666|ETHR_MYCS2 HTH-type transcriptional regulator EthR OS=...   100   1e-20
+sp|P94548|FADR_BACSU Fatty acid metabolism regulator protein OS=...    98   3e-20
+sp|Q8X4Z7|RUTR_ECO57 HTH-type transcriptional regulator RutR OS=...    98   5e-20
+sp|P0ACU4|RUTR_SHIFL HTH-type transcriptional regulator RutR OS=...    97   8e-20
+sp|P0ACU2|RUTR_ECOLI HTH-type transcriptional regulator RutR OS=...    97   8e-20
+sp|P0ACU3|RUTR_ECOL6 HTH-type transcriptional regulator RutR OS=...    97   8e-20
+sp|P0ACT9|UIDR_SHIFL HTH-type transcriptional regulator UidR OS=...    96   2e-19
+sp|P0ACT6|UIDR_ECOLI HTH-type transcriptional regulator UidR OS=...    96   2e-19
+sp|P0ACT7|UIDR_ECOL6 HTH-type transcriptional regulator UidR OS=...    96   2e-19
+sp|P0ACT8|UIDR_ECO57 HTH-type transcriptional regulator UidR OS=...    96   2e-19
+sp|P32398|YHGD_BACSU Uncharacterized HTH-type transcriptional re...    95   2e-19
+sp|Q9ZN78|AFRP_STRGR A-factor receptor protein OS=Streptomyces g...    95   3e-19
+sp|O34381|PKSA_BACSU HTH-type transcriptional regulator PksA OS=...    95   3e-19
+sp|P67437|Y1581_MYCBO Uncharacterized HTH-type transcriptional r...    94   6e-19
+sp|P9WMD1|Y1556_MYCTU Uncharacterized HTH-type transcriptional r...    94   6e-19
+sp|P9WMD0|Y1556_MYCTO Uncharacterized HTH-type transcriptional r...    94   6e-19
+sp|P96701|YDGC_BACSU Uncharacterized HTH-type transcriptional re...    92   2e-18
+sp|P40950|YUXN_BACSU Uncharacterized HTH-type transcriptional re...    92   3e-18
+sp|P0ACU5|FABR_ECOLI HTH-type transcriptional repressor FabR OS=...    91   4e-18
+sp|P9WME1|Y196_MYCTU Uncharacterized HTH-type transcriptional re...    89   2e-17
+sp|P9WME0|Y196_MYCTO Uncharacterized HTH-type transcriptional re...    89   2e-17
+sp|P96856|KSTR_MYCTU HTH-type transcriptional repressor KstR OS=...    89   3e-17
+sp|Q3YV13|FABR_SHISS HTH-type transcriptional repressor FabR OS=...    89   3e-17
+sp|Q31U25|FABR_SHIBS HTH-type transcriptional repressor FabR OS=...    89   3e-17
+sp|B2TWF8|FABR_SHIB3 HTH-type transcriptional repressor FabR OS=...    89   3e-17
+sp|Q1R3U4|FABR_ECOUT HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|Q8FB90|FABR_ECOL6 HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|Q0TA93|FABR_ECOL5 HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|A1AIE5|FABR_ECOK1 HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|A7ML90|FABR_CROS8 HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|P0ACU6|FABR_SHIFL HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|Q0SY28|FABR_SHIF8 HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|Q32AE3|FABR_SHIDS HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|B1XBX4|FABR_ECODH HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|Q7A964|FABR_ECO57 HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|A7ZUI3|FABR_ECO24 HTH-type transcriptional repressor FabR OS=...    88   3e-17
+sp|A8A771|FABR_ECOHS HTH-type transcriptional repressor FabR OS=...    88   4e-17
+sp|A6TGE7|FABR_KLEP7 HTH-type transcriptional repressor FabR OS=...    88   4e-17
+sp|P0A0N5|QACR_STAHA HTH-type transcriptional regulator QacR OS=...    88   5e-17
+sp|P0A0N4|QACR_STAAU HTH-type transcriptional regulator QacR OS=...    88   5e-17
+sp|P0A0N3|QACR_STAAM HTH-type transcriptional regulator QacR OS=...    88   5e-17
+sp|A0R528|KSTR_MYCS2 HTH-type transcriptional repressor KstR OS=...    88   5e-17
+sp|P96676|YDES_BACSU Uncharacterized HTH-type transcriptional re...    88   6e-17
+sp|Q7CPB8|FABR_SALTY HTH-type transcriptional repressor FabR OS=...    87   6e-17
+sp|Q8XGD6|FABR_SALTI HTH-type transcriptional repressor FabR OS=...    87   6e-17
+sp|C0Q479|FABR_SALPC HTH-type transcriptional repressor FabR OS=...    87   6e-17
+sp|Q57H90|FABR_SALCH HTH-type transcriptional repressor FabR OS=...    87   6e-17
+sp|A9MHG9|FABR_SALAR HTH-type transcriptional repressor FabR OS=...    87   6e-17
+sp|A8AKV8|FABR_CITK8 HTH-type transcriptional repressor FabR OS=...    87   6e-17
+sp|P9WMC1|ETHR_MYCTU HTH-type transcriptional regulator EthR OS=...    87   7e-17
+sp|P9WMC0|ETHR_MYCTO HTH-type transcriptional regulator EthR OS=...    87   7e-17
+sp|Q7TVI1|ETHR_MYCBO HTH-type transcriptional regulator EthR OS=...    87   7e-17
+sp|B5BJN7|FABR_SALPK HTH-type transcriptional repressor FabR OS=...    87   9e-17
+sp|Q5PK70|FABR_SALPA HTH-type transcriptional repressor FabR OS=...    87   9e-17
+sp|O34970|YTTP_BACSU Probable HTH-type transcriptional regulator...    87   1e-16
+sp|P95251|MCE3R_MYCTU Transcriptional repressor Mce3R OS=Mycobac...    86   1e-16
+sp|Q9R9T9|SRPR_PSEPU HTH-type transcriptional regulator SrpR OS=...    86   2e-16
+sp|Q0S868|KSTR_RHOJR HTH-type transcriptional repressor KstR OS=...    85   2e-16
+sp|A1JI38|FABR_YERE8 HTH-type transcriptional repressor FabR OS=...    85   3e-16
+sp|Q2FV42|Y2897_STAA8 HTH-type transcriptional regulator SAOUHSC...    85   3e-16
+sp|Q5HCX3|Y2593_STAAC HTH-type transcriptional regulator SACOL25...    85   3e-16
+sp|Q2FDS9|Y2515_STAA3 HTH-type transcriptional regulator SAUSA30...    85   3e-16
+sp|O33453|CYMR_PSEPU HTH-type transcriptional regulator CymR OS=...    85   4e-16
+sp|P75811|RCDA_ECOLI HTH-type transcriptional regulator RcdA OS=...    85   5e-16
+sp|B1JQ48|FABR_YERPY HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|Q66G60|FABR_YERPS HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|A4TRG3|FABR_YERPP HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|Q1CNP3|FABR_YERPN HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|A9R6N6|FABR_YERPG HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|Q7CL09|FABR_YERPE HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|B2JZF5|FABR_YERPB HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|Q1CBU4|FABR_YERPA HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|A7FD11|FABR_YERP3 HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|P44757|Y570_HAEIN Uncharacterized HTH-type transcriptional re...    85   5e-16
+sp|C5A0R2|FABR_ECOBW HTH-type transcriptional repressor FabR OS=...    85   5e-16
+sp|Q99R60|Y2578_STAAM HTH-type transcriptional regulator SAV2578...    84   5e-16
+sp|Q79ZX9|Y2498_STAAW HTH-type transcriptional regulator MW2498 ...    84   5e-16
+sp|Q6G696|Y2464_STAAS HTH-type transcriptional regulator SAS2464...    84   5e-16
+sp|Q7A3C7|Y2364_STAAN HTH-type transcriptional regulator SA2364 ...    84   5e-16
+sp|O69786|BETI_RHIME HTH-type transcriptional regulator BetI OS=...    83   9e-16
+sp|Q6GDM3|Y2658_STAAR HTH-type transcriptional regulator SAR2658...    83   1e-15
+sp|Q79ZV4|ICAR_STAAW Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|Q6G609|ICAR_STAAS Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|Q6GDD9|ICAR_STAAR Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|Q7A352|ICAR_STAAN Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|Q7A2K5|ICAR_STAAM Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|A6QKF4|ICAR_STAAE Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|Q5HCN2|ICAR_STAAC Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|Q9RQQ0|ICAR_STAA8 Biofilm operon icaADBC HTH-type negative tr...    83   2e-15
+sp|O08335|FATR_BACSU HTH-type transcriptional repressor FatR OS=...    82   2e-15
+sp|P9WMB7|MFTR_MYCTU Putative mycofactocin biosynthesis transcri...    82   2e-15
+sp|P9WMB6|MFTR_MYCTO Putative mycofactocin biosynthesis transcri...    82   2e-15
+sp|Q5HKQ1|ICAR_STAEQ Biofilm operon icaADBC HTH-type negative tr...    82   2e-15
+sp|P0ACT2|ENVR_ECOLI Probable acrEF/envCD operon repressor OS=Es...    82   3e-15
+sp|P0ACT3|ENVR_ECO57 Probable acrEF/envCD operon repressor OS=Es...    82   3e-15
+sp|Q8GLC6|ICAR_STAEP Biofilm operon icaADBC HTH-type negative tr...    81   5e-15
+sp|Q2YWD0|Y2452_STAAB HTH-type transcriptional regulator SAB2452...    81   6e-15
+sp|Q88FX7|NICS_PSEPK HTH-type transcriptional repressor NicS OS=...    81   7e-15
+sp|P94423|YCNC_BACSU Uncharacterized HTH-type transcriptional re...    79   2e-14
+sp|Q6GKL1|Y097_STAAR HTH-type transcriptional regulator SAR0097 ...    78   5e-14
+sp|P28815|TETC_ECOLX Transposon Tn10 TetC protein OS=Escherichia...    77   6e-14
+sp|O34643|YVKB_BACSU Uncharacterized HTH-type transcriptional re...    76   2e-13
+sp|P39885|TCMR_STRGA HTH-type transcriptional regulator TcmR OS=...    75   3e-13
+sp|P39334|BDCR_ECOLI HTH-type transcriptional repressor BdcR OS=...    75   3e-13
+sp|Q93PU7|TTGW_PSEPT Uncharacterized HTH-type transcriptional re...    75   4e-13
+sp|P9WMC3|HTHR_MYCTU HTH-type transcriptional repressor Rv3405c ...    67   9e-11
+sp|P9WMC2|HTHR_MYCTO HTH-type transcriptional regulator MT3513 O...    67   9e-11
+sp|P67443|HTHR_MYCBO HTH-type transcriptional regulator Mb3439c ...    67   9e-11
+sp|P9WMD5|Y1255_MYCTU Uncharacterized HTH-type transcriptional r...    67   9e-11
+sp|P9WMD4|Y1255_MYCTO Uncharacterized HTH-type transcriptional r...    67   9e-11
+
+Sequences not found previously or not previously below threshold:
+
+sp|B1JQX6|SLMA_YERPY Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|Q66GD9|SLMA_YERPS Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|A4TSE0|SLMA_YERPP Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|Q1CCZ9|SLMA_YERPN Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|A9R671|SLMA_YERPG Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|Q8ZJP6|SLMA_YERPE Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|B2JYN0|SLMA_YERPB Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|Q1C264|SLMA_YERPA Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|A7FCT1|SLMA_YERP3 Nucleoid occlusion factor SlmA OS=Yersinia ...   130   6e-30
+sp|A1JHW9|SLMA_YERE8 Nucleoid occlusion factor SlmA OS=Yersinia ...   129   9e-30
+sp|B0TQK8|SLMA_SHEHH Nucleoid occlusion factor SlmA OS=Shewanell...   129   1e-29
+sp|A8H9B3|SLMA_SHEPA Nucleoid occlusion factor SlmA OS=Shewanell...   129   1e-29
+sp|A8GLE8|SLMA_SERP5 Nucleoid occlusion factor SlmA OS=Serratia ...   129   1e-29
+sp|F2G1U7|SLMA_ALTMD Nucleoid occlusion factor SlmA OS=Alteromon...   129   2e-29
+sp|A3QIQ2|SLMA_SHELP Nucleoid occlusion factor SlmA OS=Shewanell...   129   2e-29
+sp|B2VF78|SLMA_ERWT9 Nucleoid occlusion factor SlmA OS=Erwinia t...   127   5e-29
+sp|Q48AG4|SLMA_COLP3 Nucleoid occlusion factor SlmA OS=Colwellia...   127   6e-29
+sp|A4W508|SLMA_ENT38 Nucleoid occlusion factor SlmA OS=Enterobac...   126   8e-29
+sp|B8CM26|SLMA_SHEPW Nucleoid occlusion factor SlmA OS=Shewanell...   126   9e-29
+sp|Q2NQT9|SLMA_SODGM Nucleoid occlusion factor SlmA OS=Sodalis g...   125   2e-28
+sp|Q8ZL46|SLMA_SALTY Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B4TZY2|SLMA_SALSV Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B5BI15|SLMA_SALPK Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|C0Q1X3|SLMA_SALPC Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|A9MVN6|SLMA_SALPB Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|Q5PC27|SLMA_SALPA Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B4SXE2|SLMA_SALNS Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B4T9C5|SLMA_SALHS Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B5RGE6|SLMA_SALG2 Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B5R5G5|SLMA_SALEP Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B5FM64|SLMA_SALDC Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|Q57IA1|SLMA_SALCH Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B5EXE5|SLMA_SALA4 Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|B5XTG2|SLMA_KLEP3 Nucleoid occlusion factor SlmA OS=Klebsiell...   124   3e-28
+sp|A6TFN2|SLMA_KLEP7 Nucleoid occlusion factor SlmA OS=Klebsiell...   124   3e-28
+sp|Q8Z2H4|SLMA_SALTI Nucleoid occlusion factor SlmA OS=Salmonell...   124   3e-28
+sp|P0C094|SLMA_SHIFL Nucleoid occlusion factor SlmA OS=Shigella ...   124   4e-28
+sp|Q0SYG8|SLMA_SHIF8 Nucleoid occlusion factor SlmA OS=Shigella ...   124   4e-28
+sp|B2TTV5|SLMA_SHIB3 Nucleoid occlusion factor SlmA OS=Shigella ...   124   4e-28
+sp|B7LVK2|SLMA_ESCF3 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B6I3L8|SLMA_ECOSE Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B7NEU5|SLMA_ECOLU Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|P0C093|SLMA_ECOLI Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B1IYV9|SLMA_ECOLC Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|Q8FC86|SLMA_ECOL6 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|Q0TBG8|SLMA_ECOL5 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|A8A6A3|SLMA_ECOHS Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B1X975|SLMA_ECODH Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|C4ZXN3|SLMA_ECOBW Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B7M4C6|SLMA_ECO8A Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B7N282|SLMA_ECO81 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B5YWD9|SLMA_ECO5E Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|Q8X580|SLMA_ECO57 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B7L761|SLMA_ECO55 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|B7UM47|SLMA_ECO27 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|A7ZTJ2|SLMA_ECO24 Nucleoid occlusion factor SlmA OS=Escherich...   124   4e-28
+sp|A7MQB0|SLMA_CROS8 Nucleoid occlusion factor SlmA OS=Cronobact...   123   7e-28
+sp|A9MKN4|SLMA_SALAR Nucleoid occlusion factor SlmA OS=Salmonell...   123   7e-28
+sp|A8ARM8|SLMA_CITK8 Nucleoid occlusion factor SlmA OS=Citrobact...   123   7e-28
+sp|B1LK78|SLMA_ECOSM Nucleoid occlusion factor SlmA OS=Escherich...   123   7e-28
+sp|A1AHH2|SLMA_ECOK1 Nucleoid occlusion factor SlmA OS=Escherich...   123   7e-28
+sp|B7NQ02|SLMA_ECO7I Nucleoid occlusion factor SlmA OS=Escherich...   123   7e-28
+sp|B7MFK2|SLMA_ECO45 Nucleoid occlusion factor SlmA OS=Escherich...   123   7e-28
+sp|Q12SF8|SLMA_SHEDO Nucleoid occlusion factor SlmA OS=Shewanell...   123   7e-28
+sp|B4F0W5|SLMA_PROMH Nucleoid occlusion factor SlmA OS=Proteus m...   121   2e-27
+sp|O53165|ACNR_MYCTU HTH-type transcriptional repressor Rv1474c ...    91   4e-18
+sp|Q4JVM3|ACNR_CORJK HTH-type transcriptional repressor AcnR OS=...    85   5e-16
+sp|A9AN01|BETI_BURM1 HTH-type transcriptional regulator BetI OS=...    76   1e-13
+sp|A8GBX7|BETI_SERP5 HTH-type transcriptional regulator BetI OS=...    76   2e-13
+sp|B4EHJ0|BETI_BURCJ HTH-type transcriptional regulator BetI OS=...    76   2e-13
+sp|Q1QXD9|BETI1_CHRSD HTH-type transcriptional regulator BetI 1 ...    76   2e-13
+sp|Q1BQE0|BETI_BURO1 HTH-type transcriptional regulator BetI OS=...    76   2e-13
+sp|B1K709|BETI_BURO0 HTH-type transcriptional regulator BetI OS=...    76   2e-13
+sp|A0B2F5|BETI_BURCH HTH-type transcriptional regulator BetI OS=...    76   2e-13
+sp|Q0B713|BETI_BURCM HTH-type transcriptional regulator BetI OS=...    76   2e-13
+sp|B1Z032|BETI_BURA4 HTH-type transcriptional regulator BetI OS=...    76   2e-13
+sp|Q39A42|BETI_BURL3 HTH-type transcriptional regulator BetI OS=...    75   3e-13
+sp|Q57EH9|BETI_BRUAB HTH-type transcriptional regulator BetI OS=...    75   4e-13
+sp|Q2YMS6|BETI_BRUA2 HTH-type transcriptional regulator BetI OS=...    75   4e-13
+sp|Q8YFY3|BETI_BRUME HTH-type transcriptional regulator BetI OS=...    75   5e-13
+sp|C0RHQ4|BETI_BRUMB HTH-type transcriptional regulator BetI OS=...    75   5e-13
+sp|B0CKN5|BETI_BRUSI HTH-type transcriptional regulator BetI OS=...    74   5e-13
+sp|A4JJG4|BETI_BURVG HTH-type transcriptional regulator BetI OS=...    74   6e-13
+sp|A6X2G6|BETI_BRUA4 HTH-type transcriptional regulator BetI OS=...    74   9e-13
+sp|A9M9H9|BETI_BRUC2 HTH-type transcriptional regulator BetI OS=...    73   1e-12
+sp|Q8G1Z7|BETI_BRUSU HTH-type transcriptional regulator BetI OS=...    73   1e-12
+sp|C6DKY6|BETI_PECCP HTH-type transcriptional regulator BetI OS=...    73   1e-12
+sp|Q66D52|BETI_YERPS HTH-type transcriptional regulator BetI OS=...    72   2e-12
+sp|A4TNP0|BETI_YERPP HTH-type transcriptional regulator BetI OS=...    72   2e-12
+sp|Q1CFR9|BETI_YERPN HTH-type transcriptional regulator BetI OS=...    72   2e-12
+sp|Q8ZGV8|BETI_YERPE HTH-type transcriptional regulator BetI OS=...    72   2e-12
+sp|B2K8U6|BETI_YERPB HTH-type transcriptional regulator BetI OS=...    72   2e-12
+sp|Q1C930|BETI_YERPA HTH-type transcriptional regulator BetI OS=...    72   2e-12
+sp|A7FKL4|BETI_YERP3 HTH-type transcriptional regulator BetI OS=...    72   2e-12
+sp|Q6D6E1|BETI_PECAS HTH-type transcriptional regulator BetI OS=...    72   3e-12
+sp|Q2T6C8|BETI_BURTA HTH-type transcriptional regulator BetI OS=...    72   3e-12
+sp|B4SHW1|BETI_STRM5 HTH-type transcriptional regulator BetI OS=...    72   3e-12
+sp|B2JS87|BETI_PARP8 HTH-type transcriptional regulator BetI OS=...    71   4e-12
+sp|Q62CH6|BETI_BURMA HTH-type transcriptional regulator BetI OS=...    71   8e-12
+sp|B5Y006|BETI_KLEP3 HTH-type transcriptional regulator BetI OS=...    70   1e-11
+sp|Q63KK9|BETI_BURPS HTH-type transcriptional regulator BetI OS=...    70   2e-11
+sp|A3NKP7|BETI_BURP6 HTH-type transcriptional regulator BetI OS=...    70   2e-11
+sp|Q3JLL9|BETI_BURP1 HTH-type transcriptional regulator BetI OS=...    70   2e-11
+sp|A3P6A9|BETI_BURP0 HTH-type transcriptional regulator BetI OS=...    70   2e-11
+sp|A2RWD7|BETI_BURM9 HTH-type transcriptional regulator BetI OS=...    70   2e-11
+sp|A3MEC5|BETI_BURM7 HTH-type transcriptional regulator BetI OS=...    70   2e-11
+sp|B1LIJ9|BETI_ECOSM HTH-type transcriptional regulator BetI OS=...    69   2e-11
+sp|B5Z1R2|BETI_ECO5E HTH-type transcriptional regulator BetI OS=...    69   2e-11
+sp|Q8X6C3|BETI_ECO57 HTH-type transcriptional regulator BetI OS=...    69   2e-11
+sp|B6I093|BETI_ECOSE HTH-type transcriptional regulator BetI OS=...    68   3e-11
+sp|B7M2V7|BETI_ECO8A HTH-type transcriptional regulator BetI OS=...    68   3e-11
+sp|Q8FKI7|BETI_ECOL6 HTH-type transcriptional regulator BetI OS=...    68   3e-11
+sp|B7UJG6|BETI_ECO27 HTH-type transcriptional regulator BetI OS=...    68   3e-11
+sp|B7NK49|BETI_ECO7I HTH-type transcriptional regulator BetI OS=...    68   3e-11
+sp|B7N8L5|BETI_ECOLU HTH-type transcriptional regulator BetI OS=...    68   3e-11
+sp|P21308|LUXR_VIBHA HTH-type transcriptional regulator LuxR OS=...    68   4e-11
+sp|A7MFA6|BETI_CROS8 HTH-type transcriptional regulator BetI OS=...    68   4e-11
+sp|Q0T7M8|BETI_SHIF8 HTH-type transcriptional regulator BetI OS=...    68   4e-11
+sp|A7ZWV6|BETI_ECOHS HTH-type transcriptional regulator BetI OS=...    68   4e-11
+sp|B7L442|BETI_ECO55 HTH-type transcriptional regulator BetI OS=...    68   4e-11
+sp|A7ZI52|BETI_ECO24 HTH-type transcriptional regulator BetI OS=...    68   4e-11
+sp|B4EX96|BETI_PROMH HTH-type transcriptional regulator BetI OS=...    68   4e-11
+sp|Q9L4K2|BETI2_CHRSD HTH-type transcriptional regulator BetI 2 ...    68   5e-11
+sp|Q8UH57|BETI_AGRFC HTH-type transcriptional regulator BetI OS=...    68   6e-11
+sp|Q0TKV9|BETI_ECOL5 HTH-type transcriptional regulator BetI OS=...    67   8e-11
+sp|P17446|BETI_ECOLI HTH-type transcriptional regulator BetI OS=...    67   8e-11
+sp|B1J0W4|BETI_ECOLC HTH-type transcriptional regulator BetI OS=...    67   8e-11
+sp|B1XET8|BETI_ECODH HTH-type transcriptional regulator BetI OS=...    67   8e-11
+sp|Q985M2|BETI_RHILO HTH-type transcriptional regulator BetI OS=...    66   1e-10
+sp|Q1RFM1|BETI_ECOUT HTH-type transcriptional regulator BetI OS=...    65   4e-10
+sp|B7MCD2|BETI_ECO45 HTH-type transcriptional regulator BetI OS=...    65   4e-10
+sp|Q3K5H5|BETI_PSEPF HTH-type transcriptional regulator BetI OS=...    64   6e-10
+sp|A7N212|BETI_VIBC1 HTH-type transcriptional regulator BetI OS=...    64   7e-10
+sp|P0ACU9|YJDC_SHIFL HTH-type transcriptional regulator YjdC OS=...    63   1e-09
+sp|P0ACU7|YJDC_ECOLI HTH-type transcriptional regulator YjdC OS=...    63   1e-09
+sp|P0ACU8|YJDC_ECOL6 HTH-type transcriptional regulator YjdC OS=...    63   1e-09
+sp|C3K3D1|BETI_PSEFS HTH-type transcriptional regulator BetI OS=...    62   2e-09
+sp|B7VQ27|BETI_VIBA3 HTH-type transcriptional regulator BetI OS=...    62   3e-09
+sp|Q4ZM61|BETI_PSEU2 HTH-type transcriptional regulator BetI OS=...    61   4e-09
+sp|Q48CM5|BETI_PSE14 HTH-type transcriptional regulator BetI OS=...    61   4e-09
+sp|B2TCK0|BETI_PARPJ HTH-type transcriptional regulator BetI OS=...    61   4e-09
+sp|Q4K4K9|BETI_PSEF5 HTH-type transcriptional regulator BetI OS=...    61   5e-09
+sp|Q88AF0|BETI_PSESM HTH-type transcriptional regulator BetI OS=...    61   5e-09
+sp|Q87H51|BETI_VIBPA HTH-type transcriptional regulator BetI OS=...    61   6e-09
+sp|O32228|YVAF_BACSU Uncharacterized HTH-type transcriptional re...    61   6e-09
+sp|A4XPI7|BETI_PSEMY HTH-type transcriptional regulator BetI OS=...    60   9e-09
+sp|Q13NG5|BETI_PARXL HTH-type transcriptional regulator BetI OS=...    60   9e-09
+sp|P9WMC5|Y2250_MYCTU Uncharacterized HTH-type transcriptional r...    60   1e-08
+sp|P9WMC4|Y2250_MYCTO Uncharacterized HTH-type transcriptional r...    60   1e-08
+sp|O86312|RAAS_MYCTU HTH-type transcriptional regulatory protein...    60   1e-08
+sp|Q7VEN0|Y2274_MYCBO Uncharacterized HTH-type transcriptional r...    60   1e-08
+sp|A0A0E4AFE3|AQDR_RHOER HTH-type transcriptional regulator AqdR...    60   1e-08
+sp|Q8D3K4|BETI_VIBVU HTH-type transcriptional regulator BetI OS=...    59   1e-08
+sp|Q9ADP7|HTHR_STRCO HTH-type transcriptional repressor SCO4008 ...    59   1e-08
+sp|Q7MF14|BETI_VIBVY HTH-type transcriptional regulator BetI OS=...    59   1e-08
+sp|B1MM06|TETR_MYCA9 DNA-binding transcriptional repressor TetR ...    59   2e-08
+sp|Q9HTJ0|BETI_PSEAE HTH-type transcriptional regulator BetI OS=...    58   4e-08
+sp|Q02DY8|BETI_PSEAB HTH-type transcriptional regulator BetI OS=...    58   4e-08
+sp|B7V5R5|BETI_PSEA8 HTH-type transcriptional regulator BetI OS=...    58   4e-08
+sp|A6VEI5|BETI_PSEA7 HTH-type transcriptional regulator BetI OS=...    58   4e-08
+sp|P03038|TETR1_ECOLX Tetracycline repressor protein class A fro...    57   8e-08
+sp|P46330|YXBF_BACSU Uncharacterized HTH-type transcriptional re...    56   1e-07
+sp|P03039|TETR3_ECOLX Tetracycline repressor protein class C OS=...    56   2e-07
+sp|P44923|Y893_HAEIN Uncharacterized HTH-type transcriptional re...    55   3e-07
+sp|P9WMD9|Y472_MYCTU Uncharacterized HTH-type transcriptional re...    55   3e-07
+sp|P9WMD8|Y472_MYCTO Uncharacterized HTH-type transcriptional re...    55   3e-07
+sp|P51562|TETR8_PHODP Tetracycline repressor protein class H OS=...    55   3e-07
+sp|P0ACT5|TETR4_SALOR Tetracycline repressor protein class D OS=...    55   3e-07
+sp|P0ACT4|TETR4_ECOLX Tetracycline repressor protein class D OS=...    55   3e-07
+sp|P22645|YDH1_XANAU Uncharacterized HTH-type transcriptional re...    55   4e-07
+sp|P0ACU1|CECR_SHIFL HTH-type transcriptional dual regulator Cec...    54   7e-07
+sp|P0ACU0|CECR_ECOLI HTH-type transcriptional dual regulator Cec...    54   7e-07
+sp|P04483|TETR2_ECOLX Tetracycline repressor protein class B fro...    53   1e-06
+sp|P51561|TETR8_PASMD Tetracycline repressor protein class H OS=...    52   3e-06
+sp|P51560|TETR7_VIBAN Tetracycline repressor protein class G OS=...    52   3e-06
+sp|P32265|NFXB_PSEAE HTH-type transcriptional regulator NfxB OS=...    51   4e-06
+sp|P67433|Y790_MYCBO Uncharacterized HTH-type transcriptional re...    51   5e-06
+sp|P9WMD7|Y767_MYCTU Uncharacterized HTH-type transcriptional re...    51   5e-06
+sp|P9WMD6|Y767_MYCTO Uncharacterized HTH-type transcriptional re...    51   5e-06
+sp|P67441|Y2936_MYCBO Uncharacterized HTH-type transcriptional r...    51   5e-06
+sp|P9WMC7|Y2912_MYCTU Uncharacterized HTH-type transcriptional r...    51   5e-06
+sp|P9WMC6|Y2912_MYCTO Uncharacterized HTH-type transcriptional r...    51   5e-06
+sp|P67439|Y1846_MYCBO Uncharacterized HTH-type transcriptional r...    50   8e-06
+sp|P9WMC9|Y1816_MYCTU Uncharacterized HTH-type transcriptional r...    50   8e-06
+sp|P9WMC8|Y1816_MYCTO Uncharacterized HTH-type transcriptional r...    50   8e-06
+sp|P67435|Y1388_MYCBO Uncharacterized HTH-type transcriptional r...    50   9e-06
+sp|P9WMD3|CHLER_MYCTU HTH-type transcriptional repressor Rv1353c...    50   9e-06
+sp|P9WMD2|CHLER_MYCTO HTH-type transcriptional repressor MT1396 ...    50   9e-06
+sp|O53789|Y681_MYCTU Uncharacterized HTH-type transcriptional re...    48   4e-05
+sp|Q9CIV9|DHAS_LACLA HTH-type dhaKLM operon transcriptional acti...    47   9e-05
+sp|A0R5K4|LFRR_MYCS2 HTH-type transcriptional repressor LfrR OS=...    44   5e-04
+sp|O34892|YOBS_BACSU Uncharacterized HTH-type transcriptional re...    43   0.001
+sp|Q9R012|PLK2_RAT Serine/threonine-protein kinase PLK2 OS=Rattu...    39   0.022
+sp|Q5R4L1|PLK2_PONAB Serine/threonine-protein kinase PLK2 OS=Pon...    39   0.022
+sp|P53351|PLK2_MOUSE Serine/threonine-protein kinase PLK2 OS=Mus...    39   0.022
+sp|Q9NYY3|PLK2_HUMAN Serine/threonine-protein kinase PLK2 OS=Hom...    39   0.023
+sp|Q88HH7|PTXS_PSEPK HTH-type transcriptional regulator PtxS OS=...    38   0.047
+sp|G3XD97|PTXS_PSEAE HTH-type transcriptional regulator PtxS OS=...    37   0.095
+sp|Q1DKD8|DOT1_COCIM Histone-lysine N-methyltransferase, H3 lysi...    36   0.18 
+sp|A0A167V873|PTXS_PSEDL HTH-type transcriptional regulator PtxS...    36   0.25 
+sp|Q47Z40|SYQ_COLP3 Glutamine--tRNA ligase OS=Colwellia psychrer...    35   0.33 
+sp|Q07L96|GATB_RHOP5 Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    35   0.34 
+sp|Q15TT6|SYQ_PSEA6 Glutamine--tRNA ligase OS=Pseudoalteromonas ...    34   0.81 
+sp|Q63663|GBP2_RAT Guanylate-binding protein 2 OS=Rattus norvegi...    34   0.89 
+sp|Q4FLQ8|GATB_PELUB Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    34   1.0  
+sp|Q82T56|GATB_NITEU Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    33   1.4  
+sp|Q19546|WRN_CAEEL ATP-dependent helicase wrn-1 OS=Caenorhabdit...    33   1.4  
+sp|Q5HTR7|GATB_CAMJR Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    33   1.5  
+sp|P39343|IDNR_ECOLI HTH-type transcriptional regulator IdnR OS=...    33   1.7  
+sp|A1W0I1|GATB_CAMJJ Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    33   1.9  
+sp|Q2G4F6|GATB_NOVAD Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    33   1.9  
+sp|Q54XP6|IF2P_DICDI Eukaryotic translation initiation factor 5B...    33   2.2  
+sp|D4B2L8|PDI_ARTBC Protein disulfide-isomerase OS=Arthroderma b...    32   2.4  
+sp|Q7VP68|OTC_HAEDU Ornithine carbamoyltransferase OS=Haemophilu...    32   2.4  
+sp|B2VBN3|SYQ_ERWT9 Glutamine--tRNA ligase OS=Erwinia tasmaniens...    32   2.6  
+sp|P0DJH0|ANGR_VIBAN Anguibactin system regulator OS=Vibrio angu...    32   3.0  
+sp|Q6W4T3|ANGR_VIBA7 Anguibactin system regulator OS=Vibrio angu...    32   3.0  
+sp|A8GB43|SYQ_SERP5 Glutamine--tRNA ligase OS=Serratia proteamac...    32   3.4  
+sp|A8FMQ3|GATB_CAMJ8 Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    32   3.5  
+sp|Q9ZIX8|OTCC_AVIPA Ornithine carbamoyltransferase, catabolic O...    32   3.5  
+sp|Q8EG26|SYQ_SHEON Glutamine--tRNA ligase OS=Shewanella oneiden...    32   3.8  
+sp|P95651|HEMN_CERS5 Oxygen-independent coproporphyrinogen III o...    31   4.1  
+sp|Q9PN98|GATB_CAMJE Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    31   4.4  
+sp|Q8DZK1|REX_STRA5 Redox-sensing transcriptional repressor Rex ...    31   4.4  
+sp|Q3K0Z7|REX_STRA1 Redox-sensing transcriptional repressor Rex ...    31   4.4  
+sp|Q51649|T408_BURM1 Putative transposase for insertion sequence...    31   4.7  
+sp|Q8E565|REX_STRA3 Redox-sensing transcriptional repressor Rex ...    31   4.9  
+sp|Q15UM1|SYM_PSEA6 Methionine--tRNA ligase OS=Pseudoalteromonas...    31   5.7  
+sp|P0A4T2|MALR_STRR6 HTH-type transcriptional regulator MalR OS=...    31   6.2  
+sp|P0A4T1|MALR_STRPN HTH-type transcriptional regulator MalR OS=...    31   6.2  
+sp|Q9CR08|RPP29_MOUSE Ribonuclease P protein subunit p29 OS=Mus ...    31   6.6  
+sp|Q7MZ18|OTC_PHOLL Ornithine carbamoyltransferase OS=Photorhabd...    31   6.9  
+sp|A4YHH8|Y1725_METS5 Putative HTH-type transcriptional regulato...    31   7.4  
+sp|Q1G9N0|Y1351_LACDA UPF0735 ACT domain-containing protein Ldb1...    31   8.1  
+sp|Q049T6|Y1260_LACDB UPF0735 ACT domain-containing protein LBUL...    31   8.1  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.305    0.118    0.259 
+
+Lambda     K      H
+   0.267   0.0363    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 149,877,476
+Number of Sequences: 569516
+Number of extensions: 4611546
+Number of successful extensions: 17457
+Number of sequences better than 10.0: 449
+Number of HSP's better than 10.0 without gapping: 707
+Number of HSP's successfully gapped in prelim test: 155
+Number of HSP's that attempted gapping in prelim test: 16519
+Number of HSP's gapped (non-prelim): 891
+length of query: 199
+length of database: 205,866,895
+effective HSP length: 112
+effective length of query: 87
+effective length of database: 142,081,103
+effective search space: 12361055961
+effective search space used: 12361055961
+T: 11
+A: 40
+X1: 16 ( 7.0 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.1 bits)
+S2: 66 (30.2 bits)

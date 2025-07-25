@@ -1,0 +1,121 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (507 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9XWR1|FLH1_CAEEL FLYWCH transcription factor 1 OS=Caenorhabd...  1061   0.0  
+sp|Q18225|FLH2_CAEEL FLYWCH transcription factor 2 OS=Caenorhabd...    94   4e-18
+sp|Q9XWQ6|FLH3_CAEEL FLYWCH transcription factor 3 OS=Caenorhabd...    61   2e-08
+sp|M1WCE9|PIG20_CLAP2 Transcriptional regulator CPUR_05421 OS=Cl...    37   0.42 
+sp|Q9NZM4|BICRA_HUMAN BRD4-interacting chromatin-remodeling comp...    36   0.85 
+sp|B8FZ33|ATPE_DESHD ATP synthase epsilon chain OS=Desulfitobact...    33   4.8  
+sp|P0C0N8|MYC_AVIME Viral myc transforming protein OS=Avian retr...    32   9.7  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q9XWR1|FLH1_CAEEL FLYWCH transcription factor 1 OS=Caenorhabd...   939   0.0  
+sp|Q18225|FLH2_CAEEL FLYWCH transcription factor 2 OS=Caenorhabd...   332   3e-90
+sp|Q9XWQ6|FLH3_CAEEL FLYWCH transcription factor 3 OS=Caenorhabd...   139   4e-32
+
+Sequences not found previously or not previously below threshold:
+
+sp|M1WCE9|PIG20_CLAP2 Transcriptional regulator CPUR_05421 OS=Cl...    44   0.004
+sp|P0CO98|EAF1_CRYNJ Chromatin modification-related protein EAF1...    38   0.16 
+sp|P0CO99|EAF1_CRYNB Chromatin modification-related protein EAF1...    38   0.16 
+sp|Q9NZM4|BICRA_HUMAN BRD4-interacting chromatin-remodeling comp...    38   0.19 
+sp|Q9UT19|METE_SCHPO Probable 5-methyltetrahydropteroyltriglutam...    38   0.20 
+sp|A9JPE1|ATMD_ASPFL Indole diterpene prenyltransferase atmD OS=...    38   0.21 
+sp|P97840|LEG9_RAT Galectin-9 OS=Rattus norvegicus OX=10116 GN=L...    37   0.30 
+sp|Q8QZQ8|261R_IIV6 Uncharacterized protein 261R OS=Invertebrate...    37   0.48 
+sp|P0C0N8|MYC_AVIME Viral myc transforming protein OS=Avian retr...    36   0.57 
+sp|P0C0N9|MYC_AVIMH Viral myc transforming protein OS=Avian retr...    36   0.75 
+sp|Q9JI55|PLEC_CRIGR Plectin (Fragment) OS=Cricetulus griseus OX...    35   1.7  
+sp|P12523|MYC_AVIOK Viral myc transforming protein OS=Avian retr...    35   1.8  
+sp|P01109|MYC_CHICK Myc proto-oncogene protein OS=Gallus gallus ...    34   2.2  
+sp|P10395|MYC_AVIM2 Viral myc transforming protein OS=Avian myel...    34   2.4  
+sp|C5E4H7|SPC42_ZYGRC Spindle pole body component SPC42 OS=Zygos...    34   3.9  
+sp|Q501D2|IQD30_ARATH Protein IQ-DOMAIN 30 OS=Arabidopsis thalia...    33   4.6  
+sp|Q7PC79|XPOT_ARATH Exportin-T OS=Arabidopsis thaliana OX=3702 ...    33   6.9  
+sp|O94619|ADN2_SCHPO Adhesion defective protein 2 OS=Schizosacch...    32   8.6  
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    32   8.7  
+sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 GN=...    32   9.4  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.310    0.125    0.337 
+
+Lambda     K      H
+   0.267   0.0387    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 362,608,913
+Number of Sequences: 569516
+Number of extensions: 14266478
+Number of successful extensions: 91744
+Number of sequences better than 10.0: 161
+Number of HSP's better than 10.0 without gapping: 74
+Number of HSP's successfully gapped in prelim test: 257
+Number of HSP's that attempted gapping in prelim test: 88041
+Number of HSP's gapped (non-prelim): 2867
+length of query: 507
+length of database: 205,866,895
+effective HSP length: 122
+effective length of query: 385
+effective length of database: 136,385,943
+effective search space: 52508588055
+effective search space used: 52508588055
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.3 bits)
+S2: 72 (32.4 bits)

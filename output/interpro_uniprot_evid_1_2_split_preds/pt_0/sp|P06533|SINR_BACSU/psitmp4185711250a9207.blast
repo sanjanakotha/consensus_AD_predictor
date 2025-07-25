@@ -1,0 +1,608 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (111 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P06533|SINR_BACSU HTH-type transcriptional regulator SinR OS=...   225   6e-59
+sp|P22753|SINR_BACLI HTH-type transcriptional regulator SinR OS=...   209   3e-54
+sp|P71049|SLRR_BACSU HTH-type transcriptional regulator SlrR OS=...    85   1e-16
+sp|P06153|RPC_BPPH1 Immunity repressor protein OS=Bacillus phage...    56   7e-08
+sp|C1CYP4|DDROC_DEIDV HTH-type transcriptional regulator DdrOC O...    51   2e-06
+sp|P77626|SUTR_ECOLI HTH-type transcriptional regulator SutR OS=...    51   2e-06
+sp|C1D3U5|DDROP_DEIDV HTH-type transcriptional regulator DdrOP3 ...    49   1e-05
+sp|P96631|IMMR_BACSU HTH-type transcriptional regulator ImmR OS=...    47   4e-05
+sp|P9WMH9|Y474_MYCTU Uncharacterized HTH-type transcriptional re...    45   1e-04
+sp|P9WMH8|Y474_MYCTO Uncharacterized HTH-type transcriptional re...    45   1e-04
+sp|P55409|Y4DJ_SINFN Uncharacterized HTH-type transcriptional re...    42   0.001
+sp|O31943|YONR_BACSU SPbeta prophage-derived uncharacterized HTH...    40   0.005
+sp|O31417|YAZB_BACSU Uncharacterized HTH-type transcriptional re...    40   0.006
+sp|P13772|IMMF_BPPH1 ImmF control region 10 kDa protein OS=Bacil...    38   0.016
+sp|Q8FHF3|HIPB_ECOL6 Antitoxin HipB OS=Escherichia coli O6:H1 (s...    38   0.019
+sp|P9WMI1|RAMB_MYCTU HTH-type transcriptional regulator RamB OS=...    37   0.038
+sp|P9WMI0|RAMB_MYCTO HTH-type transcriptional regulator RamB OS=...    37   0.038
+sp|A0QVU1|CLGR_MYCS2 Transcriptional regulator ClgR OS=Mycolicib...    36   0.065
+sp|O28481|Y1793_ARCFU Uncharacterized HTH-type transcriptional r...    36   0.068
+sp|P23939|CEBA_BACAM Control protein C.BamHI OS=Bacillus amyloli...    36   0.095
+sp|P23873|HIPB_ECOLI Antitoxin HipB OS=Escherichia coli (strain ...    35   0.11 
+sp|O34647|YOBD_BACSU Uncharacterized HTH-type transcriptional re...    35   0.14 
+sp|Q58564|Y1164_METJA Putative HTH-type transcriptional regulato...    35   0.17 
+sp|Q15Q16|FTSW_PSEA6 Probable peptidoglycan glycosyltransferase ...    34   0.26 
+sp|P9WMH7|CLGR_MYCTU Transcriptional regulator ClgR OS=Mycobacte...    34   0.27 
+sp|P9WMH6|CLGR_MYCTO Transcriptional regulator ClgR OS=Mycobacte...    34   0.27 
+sp|P14307|YSMA_SERMA Control protein C.SmaI OS=Serratia marcesce...    33   0.42 
+sp|P16117|RPC1_BP434 Repressor protein CI (Fragment) OS=Enteroba...    33   0.44 
+sp|Q8NTD8|RAMB_CORGL HTH-type transcriptional regulator RamB OS=...    33   0.47 
+sp|O27383|Y1328_METTH Uncharacterized HTH-type transcriptional r...    33   0.52 
+sp|Q9V1R0|Y367_PYRAB Putative HTH-type transcriptional regulator...    33   0.61 
+sp|C5A6F6|Y1316_THEGJ Putative HTH-type transcriptional regulato...    32   0.88 
+sp|O28646|Y1627_ARCFU Uncharacterized HTH-type transcriptional r...    32   0.92 
+sp|Q6MLR5|RNC_BDEBA Ribonuclease 3 OS=Bdellovibrio bacteriovorus...    32   1.2  
+sp|P45902|YQAE_BACSU Uncharacterized HTH-type transcriptional re...    32   1.5  
+sp|O59472|Y1808_PYRHO Putative HTH-type transcriptional regulato...    32   1.6  
+sp|O34791|YOPO_BACSU SPbeta prophage-derived uncharacterized HTH...    32   1.7  
+sp|Q07683|ANSR_BACSU HTH-type transcriptional regulator AnsR OS=...    31   1.9  
+sp|Q8TZX4|Y1851_PYRFU Putative HTH-type transcriptional regulato...    31   2.4  
+sp|A8GH40|ACCD_SERP5 Acetyl-coenzyme A carboxylase carboxyl tran...    31   2.7  
+sp|Q2SZG9|ZAPD_BURTA Cell division protein ZapD OS=Burkholderia ...    31   2.8  
+sp|A5CVI8|ATPA_VESOH ATP synthase subunit alpha OS=Vesicomyosoci...    31   2.9  
+sp|P22755|SINI_BACLI Protein SinI OS=Bacillus licheniformis OX=1...    31   3.1  
+sp|Q63QL1|ZAPD_BURPS Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|A3NDU9|ZAPD_BURP6 Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|Q3JNF2|ZAPD_BURP1 Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|A3NZK0|ZAPD_BURP0 Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|A1V0Q3|ZAPD_BURMS Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|Q62GU2|ZAPD_BURMA Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|A2S5S9|ZAPD_BURM9 Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|A3MR78|ZAPD_BURM7 Cell division protein ZapD OS=Burkholderia ...    30   3.4  
+sp|Q9U2G5|MRP7_CAEEL Multidrug resistance protein mrp-7 OS=Caeno...    30   3.4  
+sp|Q5JF28|Y539_THEKO Putative HTH-type transcriptional regulator...    30   4.3  
+sp|Q0W4J4|Y1526_METAR Putative HTH-type transcriptional regulato...    30   5.5  
+sp|O32236|RGHR_BACSU HTH-type transcriptional repressor RghR OS=...    30   6.1  
+sp|A6USD6|Y1514_METVS Putative HTH-type transcriptional regulato...    29   7.2  
+sp|P24518|NADR_SALTY Trifunctional NAD biosynthesis/regulator pr...    29   8.3  
+sp|P27278|NADR_ECOLI Trifunctional NAD biosynthesis/regulator pr...    29   8.3  
+sp|Q31RF1|ATPA_SYNE7 ATP synthase subunit alpha OS=Synechococcus...    29   8.6  
+sp|P08449|ATPA_SYNP6 ATP synthase subunit alpha OS=Synechococcus...    29   9.0  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P06533|SINR_BACSU HTH-type transcriptional regulator SinR OS=...   138   9e-33
+sp|P22753|SINR_BACLI HTH-type transcriptional regulator SinR OS=...   137   2e-32
+sp|P71049|SLRR_BACSU HTH-type transcriptional regulator SlrR OS=...   108   1e-23
+sp|C1D3U5|DDROP_DEIDV HTH-type transcriptional regulator DdrOP3 ...    98   2e-20
+sp|C1CYP4|DDROC_DEIDV HTH-type transcriptional regulator DdrOC O...    94   3e-19
+sp|P9WMH9|Y474_MYCTU Uncharacterized HTH-type transcriptional re...    85   2e-16
+sp|P9WMH8|Y474_MYCTO Uncharacterized HTH-type transcriptional re...    85   2e-16
+sp|P77626|SUTR_ECOLI HTH-type transcriptional regulator SutR OS=...    83   5e-16
+sp|P96631|IMMR_BACSU HTH-type transcriptional regulator ImmR OS=...    70   4e-12
+sp|P06153|RPC_BPPH1 Immunity repressor protein OS=Bacillus phage...    61   2e-09
+
+Sequences not found previously or not previously below threshold:
+
+sp|P0A9U7|PUUR_SHIFL HTH-type transcriptional regulator PuuR OS=...    57   3e-08
+sp|P0A9U6|PUUR_ECOLI HTH-type transcriptional regulator PuuR OS=...    57   3e-08
+sp|Q6F9U5|CPIR_ACIAD Competence pilus inhibition repressor OS=Ac...    53   5e-07
+sp|O31943|YONR_BACSU SPbeta prophage-derived uncharacterized HTH...    52   8e-07
+sp|P13772|IMMF_BPPH1 ImmF control region 10 kDa protein OS=Bacil...    51   2e-06
+sp|O31417|YAZB_BACSU Uncharacterized HTH-type transcriptional re...    51   2e-06
+sp|P55409|Y4DJ_SINFN Uncharacterized HTH-type transcriptional re...    51   3e-06
+sp|O32237|RGHRB_BACSU Uncharacterized HTH-type transcriptional r...    50   4e-06
+sp|P9WMI1|RAMB_MYCTU HTH-type transcriptional regulator RamB OS=...    50   4e-06
+sp|P9WMI0|RAMB_MYCTO HTH-type transcriptional regulator RamB OS=...    50   4e-06
+sp|O34647|YOBD_BACSU Uncharacterized HTH-type transcriptional re...    49   7e-06
+sp|P23789|XRE_BACSU HTH-type transcriptional regulator Xre OS=Ba...    49   1e-05
+sp|O06581|PRPR_MYCTU HTH-type transcriptional regulator PrpR OS=...    47   3e-05
+sp|O32236|RGHR_BACSU HTH-type transcriptional repressor RghR OS=...    47   4e-05
+sp|Q8NTD8|RAMB_CORGL HTH-type transcriptional regulator RamB OS=...    47   4e-05
+sp|A0QVU1|CLGR_MYCS2 Transcriptional regulator ClgR OS=Mycolicib...    47   4e-05
+sp|P9WMI3|Y023_MYCTU Uncharacterized HTH-type transcriptional re...    47   5e-05
+sp|P9WMI2|Y023_MYCTO Uncharacterized HTH-type transcriptional re...    47   5e-05
+sp|P67705|Y023_MYCBO Uncharacterized HTH-type transcriptional re...    47   5e-05
+sp|P9WMH7|CLGR_MYCTU Transcriptional regulator ClgR OS=Mycobacte...    46   6e-05
+sp|P9WMH6|CLGR_MYCTO Transcriptional regulator ClgR OS=Mycobacte...    46   6e-05
+sp|P23939|CEBA_BACAM Control protein C.BamHI OS=Bacillus amyloli...    46   7e-05
+sp|Q07683|ANSR_BACSU HTH-type transcriptional regulator AnsR OS=...    45   2e-04
+sp|P14307|YSMA_SERMA Control protein C.SmaI OS=Serratia marcesce...    44   2e-04
+sp|P69202|RPC2_BPP22 Repressor protein C2 OS=Salmonella phage P2...    44   3e-04
+sp|Q3J4E6|PCCR_CERS4 Propionyl-CoA carboxylase regulator OS=Cere...    43   7e-04
+sp|P15017|DNU4_RHORU Uncharacterized transcriptional regulator i...    42   0.001
+sp|Q5WNW9|BCRR_ENTFL HTH-type transcriptional activator BcrR OS=...    42   0.001
+sp|P9WJB7|ESPR_MYCTU Nucleoid-associated protein EspR OS=Mycobac...    42   0.001
+sp|P9WJB6|ESPR_MYCTO Nucleoid-associated protein EspR OS=Mycobac...    42   0.001
+sp|Q58564|Y1164_METJA Putative HTH-type transcriptional regulato...    42   0.001
+sp|Q83BT6|Y1416_COXBU Uncharacterized HTH-type transcriptional r...    41   0.002
+sp|Q97QZ2|PEZA_STRPN Antitoxin PezA OS=Streptococcus pneumoniae ...    41   0.003
+sp|Q5JF28|Y539_THEKO Putative HTH-type transcriptional regulator...    41   0.003
+sp|Q18FU6|Y3058_HALWD Putative HTH-type transcriptional regulato...    40   0.006
+sp|B9LS33|Y273_HALLT Putative HTH-type transcriptional regulator...    39   0.006
+sp|P16117|RPC1_BP434 Repressor protein CI (Fragment) OS=Enteroba...    39   0.007
+sp|O28481|Y1793_ARCFU Uncharacterized HTH-type transcriptional r...    39   0.009
+sp|P24518|NADR_SALTY Trifunctional NAD biosynthesis/regulator pr...    39   0.009
+sp|Q2FTM0|Y2548_METHJ Putative HTH-type transcriptional regulato...    39   0.011
+sp|P55411|Y4DL_SINFN Uncharacterized HTH-type transcriptional re...    39   0.011
+sp|P27278|NADR_ECOLI Trifunctional NAD biosynthesis/regulator pr...    39   0.014
+sp|Q0W4J4|Y1526_METAR Putative HTH-type transcriptional regulato...    38   0.016
+sp|Q57720|Y272_METJA Uncharacterized HTH-type transcriptional re...    38   0.017
+sp|Q8FHF3|HIPB_ECOL6 Antitoxin HipB OS=Escherichia coli O6:H1 (s...    38   0.019
+sp|Q58006|Y586_METJA Uncharacterized HTH-type transcriptional re...    38   0.020
+sp|Q6LZF1|Y678_METMP Putative HTH-type transcriptional regulator...    38   0.021
+sp|A3CY20|Y2347_METMJ Putative HTH-type transcriptional regulato...    38   0.022
+sp|O30257|Y2414_ARCFU Uncharacterized HTH-type transcriptional r...    37   0.025
+sp|Q9V1R0|Y367_PYRAB Putative HTH-type transcriptional regulator...    37   0.028
+sp|Q8TZX4|Y1851_PYRFU Putative HTH-type transcriptional regulato...    37   0.032
+sp|O59472|Y1808_PYRHO Putative HTH-type transcriptional regulato...    37   0.034
+sp|P44030|Y659_HAEIN Uncharacterized HTH-type transcriptional re...    37   0.041
+sp|Q37906|RPC1_BPD3 Repressor protein CI OS=Pseudomonas phage D3...    37   0.043
+sp|O27383|Y1328_METTH Uncharacterized HTH-type transcriptional r...    37   0.048
+sp|Q58940|Y1545_METJA Uncharacterized HTH-type transcriptional r...    37   0.049
+sp|Q8CJ52|PROM2_RAT Prominin-2 OS=Rattus norvegicus OX=10116 GN=...    36   0.058
+sp|Q6BXQ8|MBF1_DEBHA Multiprotein-bridging factor 1 OS=Debaryomy...    36   0.066
+sp|O27048|Y967_METTH Putative HTH-type transcriptional regulator...    36   0.076
+sp|A4FYC1|Y898_METM5 Putative HTH-type transcriptional regulator...    36   0.093
+sp|A9A7A8|Y210_METM6 Putative HTH-type transcriptional regulator...    36   0.094
+sp|A6VJY2|Y1702_METM7 Putative HTH-type transcriptional regulato...    36   0.094
+sp|C5A6F6|Y1316_THEGJ Putative HTH-type transcriptional regulato...    36   0.097
+sp|Q57949|Y529_METJA Uncharacterized HTH-type transcriptional re...    36   0.10 
+sp|Q92GC8|Y1195_RICCN Uncharacterized HTH-type transcriptional r...    36   0.10 
+sp|P23873|HIPB_ECOLI Antitoxin HipB OS=Escherichia coli (strain ...    35   0.12 
+sp|P0C5S2|Y410_RHIME Uncharacterized HTH-type transcriptional re...    35   0.13 
+sp|A6U5H5|Y045_SINMW Uncharacterized HTH-type transcriptional re...    35   0.13 
+sp|Q971W0|Y1268_SULTO Putative HTH-type transcriptional regulato...    35   0.17 
+sp|Q5A940|MBF1_CANAL Multiprotein-bridging factor 1 OS=Candida a...    35   0.18 
+sp|Q8TG23|MBF1_YARLI Putative multi-protein-binding factor 1 OS=...    35   0.19 
+sp|O28487|Y1787_ARCFU Putative HTH-type transcriptional regulato...    34   0.22 
+sp|O28646|Y1627_ARCFU Uncharacterized HTH-type transcriptional r...    34   0.22 
+sp|A7I4Q7|Y195_METB6 Putative HTH-type transcriptional regulator...    34   0.23 
+sp|A2SPT1|Y160_METLZ Putative HTH-type transcriptional regulator...    34   0.24 
+sp|Q6L1L0|Y557_PICTO Putative HTH-type transcriptional regulator...    34   0.26 
+sp|P55681|Y4WC_SINFN Uncharacterized HTH-type transcriptional re...    34   0.34 
+sp|O34419|RSTR_VIBCH Cryptic phage CTXphi transcriptional repres...    34   0.35 
+sp|P55565|Y4MF_SINFN Uncharacterized HTH-type transcriptional re...    34   0.44 
+sp|Q9YDZ1|Y778_AERPE Putative HTH-type transcriptional regulator...    33   0.47 
+sp|C0H3X9|YGZD_BACSU Uncharacterized HTH-type transcriptional re...    33   0.52 
+sp|Q9ZCH6|Y766_RICPR Uncharacterized HTH-type transcriptional re...    33   0.56 
+sp|P06966|DICA_ECOLI HTH-type transcriptional regulator DicA OS=...    33   0.57 
+sp|Q8ZWT6|Y1627_PYRAE Putative HTH-type transcriptional regulato...    33   0.58 
+sp|B8GI76|Y031_METPE Putative HTH-type transcriptional regulator...    33   0.63 
+sp|B0R731|Y3946_HALS3 Putative HTH-type transcriptional regulato...    33   0.63 
+sp|Q9HNG7|Y2112_HALSA Putative HTH-type transcriptional regulato...    33   0.63 
+sp|Q5UZI1|Y2519_HALMA Putative HTH-type transcriptional regulato...    33   0.64 
+sp|A8GHW6|RODZ_SERP5 Cytoskeleton protein RodZ OS=Serratia prote...    32   0.78 
+sp|O34791|YOPO_BACSU SPbeta prophage-derived uncharacterized HTH...    32   0.82 
+sp|B2VE88|RODZ_ERWT9 Cytoskeleton protein RodZ OS=Erwinia tasman...    32   0.90 
+sp|Q9ZD50|Y497_RICPR Uncharacterized HTH-type transcriptional re...    32   0.93 
+sp|O53467|HIGA2_MYCTU Putative antitoxin HigA2 OS=Mycobacterium ...    32   0.96 
+sp|Q92HV3|Y668_RICCN Uncharacterized HTH-type transcriptional re...    32   1.1  
+sp|Q1CK92|RODZ_YERPN Cytoskeleton protein RodZ OS=Yersinia pesti...    32   1.1  
+sp|A9R803|RODZ_YERPG Cytoskeleton protein RodZ OS=Yersinia pesti...    32   1.1  
+sp|Q7CJM7|RODZ_YERPE Cytoskeleton protein RodZ OS=Yersinia pesti...    32   1.1  
+sp|Q1C5I7|RODZ_YERPA Cytoskeleton protein RodZ OS=Yersinia pesti...    32   1.1  
+sp|A4TMT8|RODZ_YERPP Cytoskeleton protein RodZ OS=Yersinia pesti...    32   1.2  
+sp|Q667Z8|RODZ_YERPS Cytoskeleton protein RodZ OS=Yersinia pseud...    32   1.3  
+sp|B2K9Q1|RODZ_YERPB Cytoskeleton protein RodZ OS=Yersinia pseud...    32   1.3  
+sp|A7FFY8|RODZ_YERP3 Cytoskeleton protein RodZ OS=Yersinia pseud...    32   1.3  
+sp|B1JS04|RODZ_YERPY Cytoskeleton protein RodZ OS=Yersinia pseud...    32   1.3  
+sp|Q38834|R13L4_ARATH Disease resistance RPP13-like protein 4 OS...    32   1.3  
+sp|O94700|MBF1_SCHPO Multiprotein-bridging factor 1 OS=Schizosac...    32   1.4  
+sp|O60869|EDF1_HUMAN Endothelial differentiation-related factor ...    32   1.4  
+sp|Q3T0V7|EDF1_BOVIN Endothelial differentiation-related factor ...    32   1.4  
+sp|A5UKD0|Y453_METS3 Putative HTH-type transcriptional regulator...    32   1.6  
+sp|P12254|RPSK_BACSU RNA polymerase sigma-K factor OS=Bacillus s...    32   1.6  
+sp|Q6FJN0|MBF1_CANGA Multiprotein-bridging factor 1 OS=Candida g...    32   1.7  
+sp|Q6D275|RODZ_PECAS Cytoskeleton protein RodZ OS=Pectobacterium...    31   1.8  
+sp|Q06553|PRTR_PSEAE HTH-type transcriptional regulator PrtR OS=...    31   1.9  
+sp|Q97ZH1|Y942_SACS2 Putative HTH-type transcriptional regulator...    31   2.5  
+sp|Q5ZMC0|EDF1_CHICK Endothelial differentiation-related factor ...    31   2.5  
+sp|C3MPR6|Y1371_SULIL Putative HTH-type transcriptional regulato...    31   2.6  
+sp|C3N5E2|Y1334_SULIA Putative HTH-type transcriptional regulato...    31   2.6  
+sp|C3MYR0|Y1284_SULIM Putative HTH-type transcriptional regulato...    31   2.6  
+sp|C4KH08|Y1268_SULIK Putative HTH-type transcriptional regulato...    31   2.6  
+sp|O14467|MBF1_YEAST Multiprotein-bridging factor 1 OS=Saccharom...    31   2.6  
+sp|C3NHQ7|Y1579_SULIN Putative HTH-type transcriptional regulato...    31   2.8  
+sp|C3NDZ6|Y1269_SULIY Putative HTH-type transcriptional regulato...    31   2.8  
+sp|Q752P7|MBF1_ASHGO Multiprotein-bridging factor 1 OS=Ashbya go...    31   2.9  
+sp|Q31XX4|RODZ_SHIBS Cytoskeleton protein RodZ OS=Shigella boydi...    31   2.9  
+sp|A7MGV6|RODZ_CROS8 Cytoskeleton protein RodZ OS=Cronobacter sa...    31   2.9  
+sp|Q32D46|RODZ_SHIDS Cytoskeleton protein RodZ OS=Shigella dysen...    31   3.0  
+sp|Q1R8L7|RODZ_ECOUT Cytoskeleton protein RodZ OS=Escherichia co...    31   3.0  
+sp|Q8FF56|RODZ_ECOL6 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.0  
+sp|A1AE54|RODZ_ECOK1 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.0  
+sp|B7MI01|RODZ_ECO45 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.0  
+sp|B7UGW2|RODZ_ECO27 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.0  
+sp|Q3YZ36|RODZ_SHISS Cytoskeleton protein RodZ OS=Shigella sonne...    31   3.0  
+sp|Q83QK7|RODZ_SHIFL Cytoskeleton protein RodZ OS=Shigella flexn...    31   3.0  
+sp|Q0T203|RODZ_SHIF8 Cytoskeleton protein RodZ OS=Shigella flexn...    31   3.0  
+sp|B7MYF1|RODZ_ECO81 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.1  
+sp|Q6CIP4|MBF1_KLULA Multiprotein-bridging factor 1 OS=Kluyverom...    31   3.2  
+sp|P69736|EDF1_RAT Endothelial differentiation-related factor 1 ...    31   3.2  
+sp|Q9JMG1|EDF1_MOUSE Endothelial differentiation-related factor ...    31   3.2  
+sp|B1LNH1|RODZ_ECOSM Cytoskeleton protein RodZ OS=Escherichia co...    31   3.2  
+sp|Q0TEW9|RODZ_ECOL5 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.2  
+sp|B7NRG6|RODZ_ECO7I Cytoskeleton protein RodZ OS=Escherichia co...    31   3.3  
+sp|B5RCZ3|RODZ_SALG2 Cytoskeleton protein RodZ OS=Salmonella gal...    31   3.4  
+sp|B5Z0Y5|RODZ_ECO5E Cytoskeleton protein RodZ OS=Escherichia co...    31   3.5  
+sp|Q7ABM8|RODZ_ECO57 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.5  
+sp|B2TXU1|RODZ_SHIB3 Cytoskeleton protein RodZ OS=Shigella boydi...    31   3.5  
+sp|B6I588|RODZ_ECOSE Cytoskeleton protein RodZ OS=Escherichia co...    31   3.5  
+sp|B1IWE5|RODZ_ECOLC Cytoskeleton protein RodZ OS=Escherichia co...    31   3.5  
+sp|A8A322|RODZ_ECOHS Cytoskeleton protein RodZ OS=Escherichia co...    31   3.5  
+sp|A7ZPV9|RODZ_ECO24 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.5  
+sp|Q2NF79|Y1143_METST Putative HTH-type transcriptional regulato...    31   3.6  
+sp|B7N6A4|RODZ_ECOLU Cytoskeleton protein RodZ OS=Escherichia co...    31   3.6  
+sp|B7M7M0|RODZ_ECO8A Cytoskeleton protein RodZ OS=Escherichia co...    31   3.6  
+sp|B7LDA8|RODZ_ECO55 Cytoskeleton protein RodZ OS=Escherichia co...    31   3.6  
+sp|P27434|RODZ_ECOLI Cytoskeleton protein RodZ OS=Escherichia co...    31   3.8  
+sp|B1XAZ1|RODZ_ECODH Cytoskeleton protein RodZ OS=Escherichia co...    31   3.8  
+sp|C4ZX91|RODZ_ECOBW Cytoskeleton protein RodZ OS=Escherichia co...    31   3.8  
+sp|B5R583|RODZ_SALEP Cytoskeleton protein RodZ OS=Salmonella ent...    30   4.3  
+sp|B5FR64|RODZ_SALDC Cytoskeleton protein RodZ OS=Salmonella dub...    30   4.3  
+sp|Q97C11|Y294_THEVO Putative HTH-type transcriptional regulator...    30   4.4  
+sp|Q8ZN53|RODZ_SALTY Cytoskeleton protein RodZ OS=Salmonella typ...    30   4.5  
+sp|B5BAY4|RODZ_SALPK Cytoskeleton protein RodZ OS=Salmonella par...    30   4.5  
+sp|A9N200|RODZ_SALPB Cytoskeleton protein RodZ OS=Salmonella par...    30   4.5  
+sp|Q5PNI3|RODZ_SALPA Cytoskeleton protein RodZ OS=Salmonella par...    30   4.5  
+sp|B5F199|RODZ_SALA4 Cytoskeleton protein RodZ OS=Salmonella ago...    30   4.5  
+sp|B4T0Q0|RODZ_SALNS Cytoskeleton protein RodZ OS=Salmonella new...    30   4.7  
+sp|B4TR96|RODZ_SALSV Cytoskeleton protein RodZ OS=Salmonella sch...    30   4.7  
+sp|C0PYM9|RODZ_SALPC Cytoskeleton protein RodZ OS=Salmonella par...    30   4.9  
+sp|B4TD94|RODZ_SALHS Cytoskeleton protein RodZ OS=Salmonella hei...    30   4.9  
+sp|Q57LI5|RODZ_SALCH Cytoskeleton protein RodZ OS=Salmonella cho...    30   4.9  
+sp|Q8Z4P3|RODZ_SALTI Cytoskeleton protein RodZ OS=Salmonella typ...    30   4.9  
+sp|O53333|HIGA3_MYCTU Putative antitoxin HigA3 OS=Mycobacterium ...    30   5.8  
+sp|A9MHL4|RODZ_SALAR Cytoskeleton protein RodZ OS=Salmonella ari...    30   5.8  
+sp|Q53IP3|MBF1_GIBFU Multiprotein-bridging factor 1 OS=Gibberell...    30   6.5  
+sp|Q4J946|Y1344_SULAC Putative HTH-type transcriptional regulato...    29   7.2  
+sp|Q5B8Y4|MBF1_EMENI Multiprotein-bridging factor 1 OS=Emericell...    29   8.0  
+sp|P22755|SINI_BACLI Protein SinI OS=Bacillus licheniformis OX=1...    29   8.9  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P06533|SINR_BACSU HTH-type transcriptional regulator SinR OS=...   120   4e-27
+sp|P22753|SINR_BACLI HTH-type transcriptional regulator SinR OS=...   120   4e-27
+sp|O32237|RGHRB_BACSU Uncharacterized HTH-type transcriptional r...    93   5e-19
+sp|C1D3U5|DDROP_DEIDV HTH-type transcriptional regulator DdrOP3 ...    93   5e-19
+sp|O32236|RGHR_BACSU HTH-type transcriptional repressor RghR OS=...    93   5e-19
+sp|O31943|YONR_BACSU SPbeta prophage-derived uncharacterized HTH...    92   1e-18
+sp|C1CYP4|DDROC_DEIDV HTH-type transcriptional regulator DdrOC O...    91   2e-18
+sp|P23789|XRE_BACSU HTH-type transcriptional regulator Xre OS=Ba...    91   3e-18
+sp|P71049|SLRR_BACSU HTH-type transcriptional regulator SlrR OS=...    90   5e-18
+sp|Q6F9U5|CPIR_ACIAD Competence pilus inhibition repressor OS=Ac...    85   2e-16
+sp|O06581|PRPR_MYCTU HTH-type transcriptional regulator PrpR OS=...    80   4e-15
+sp|Q07683|ANSR_BACSU HTH-type transcriptional regulator AnsR OS=...    80   5e-15
+sp|P15017|DNU4_RHORU Uncharacterized transcriptional regulator i...    77   4e-14
+sp|P9WMI1|RAMB_MYCTU HTH-type transcriptional regulator RamB OS=...    73   6e-13
+sp|P9WMI0|RAMB_MYCTO HTH-type transcriptional regulator RamB OS=...    73   6e-13
+sp|P9WMH9|Y474_MYCTU Uncharacterized HTH-type transcriptional re...    73   6e-13
+sp|P9WMH8|Y474_MYCTO Uncharacterized HTH-type transcriptional re...    73   6e-13
+sp|P77626|SUTR_ECOLI HTH-type transcriptional regulator SutR OS=...    72   9e-13
+sp|P13772|IMMF_BPPH1 ImmF control region 10 kDa protein OS=Bacil...    72   1e-12
+sp|Q5WNW9|BCRR_ENTFL HTH-type transcriptional activator BcrR OS=...    71   2e-12
+sp|P69202|RPC2_BPP22 Repressor protein C2 OS=Salmonella phage P2...    71   3e-12
+sp|Q8NTD8|RAMB_CORGL HTH-type transcriptional regulator RamB OS=...    70   4e-12
+sp|P0A9U7|PUUR_SHIFL HTH-type transcriptional regulator PuuR OS=...    70   4e-12
+sp|P0A9U6|PUUR_ECOLI HTH-type transcriptional regulator PuuR OS=...    70   4e-12
+sp|O34647|YOBD_BACSU Uncharacterized HTH-type transcriptional re...    69   8e-12
+sp|A0QVU1|CLGR_MYCS2 Transcriptional regulator ClgR OS=Mycolicib...    68   2e-11
+sp|P55409|Y4DJ_SINFN Uncharacterized HTH-type transcriptional re...    67   4e-11
+sp|P14307|YSMA_SERMA Control protein C.SmaI OS=Serratia marcesce...    65   2e-10
+sp|P96631|IMMR_BACSU HTH-type transcriptional regulator ImmR OS=...    64   3e-10
+sp|O31417|YAZB_BACSU Uncharacterized HTH-type transcriptional re...    64   4e-10
+sp|P23939|CEBA_BACAM Control protein C.BamHI OS=Bacillus amyloli...    63   6e-10
+sp|Q3J4E6|PCCR_CERS4 Propionyl-CoA carboxylase regulator OS=Cere...    63   6e-10
+sp|P9WMH7|CLGR_MYCTU Transcriptional regulator ClgR OS=Mycobacte...    61   2e-09
+sp|P9WMH6|CLGR_MYCTO Transcriptional regulator ClgR OS=Mycobacte...    61   2e-09
+sp|P06153|RPC_BPPH1 Immunity repressor protein OS=Bacillus phage...    61   2e-09
+sp|P9WMI3|Y023_MYCTU Uncharacterized HTH-type transcriptional re...    59   1e-08
+sp|P9WMI2|Y023_MYCTO Uncharacterized HTH-type transcriptional re...    59   1e-08
+sp|P67705|Y023_MYCBO Uncharacterized HTH-type transcriptional re...    59   1e-08
+
+Sequences not found previously or not previously below threshold:
+
+sp|P45902|YQAE_BACSU Uncharacterized HTH-type transcriptional re...    57   4e-08
+sp|Q97QZ2|PEZA_STRPN Antitoxin PezA OS=Streptococcus pneumoniae ...    55   1e-07
+sp|P06966|DICA_ECOLI HTH-type transcriptional regulator DicA OS=...    53   4e-07
+sp|P0C5S2|Y410_RHIME Uncharacterized HTH-type transcriptional re...    53   5e-07
+sp|A6U5H5|Y045_SINMW Uncharacterized HTH-type transcriptional re...    53   5e-07
+sp|P43640|MUNC_MYCSP Control protein C.MunI OS=Mycoplasma sp. OX...    53   5e-07
+sp|Q57720|Y272_METJA Uncharacterized HTH-type transcriptional re...    52   2e-06
+sp|P16117|RPC1_BP434 Repressor protein CI (Fragment) OS=Enteroba...    52   2e-06
+sp|O85264|RSTR_VIBCL Cryptic phage CTXphi transcriptional repres...    50   4e-06
+sp|P55681|Y4WC_SINFN Uncharacterized HTH-type transcriptional re...    50   6e-06
+sp|Q0W4J4|Y1526_METAR Putative HTH-type transcriptional regulato...    49   9e-06
+sp|O34419|RSTR_VIBCH Cryptic phage CTXphi transcriptional repres...    49   1e-05
+sp|P45903|YQAF_BACSU Uncharacterized HTH-type transcriptional re...    48   2e-05
+sp|B9LS33|Y273_HALLT Putative HTH-type transcriptional regulator...    47   3e-05
+sp|A3CY20|Y2347_METMJ Putative HTH-type transcriptional regulato...    47   4e-05
+sp|P55411|Y4DL_SINFN Uncharacterized HTH-type transcriptional re...    46   6e-05
+sp|O28481|Y1793_ARCFU Uncharacterized HTH-type transcriptional r...    46   9e-05
+sp|Q47587|RDGA_PECCC HTH-type transcriptional regulator RdgA OS=...    45   9e-05
+sp|Q58940|Y1545_METJA Uncharacterized HTH-type transcriptional r...    45   1e-04
+sp|Q8TZX4|Y1851_PYRFU Putative HTH-type transcriptional regulato...    45   1e-04
+sp|Q37906|RPC1_BPD3 Repressor protein CI OS=Pseudomonas phage D3...    45   1e-04
+sp|Q58564|Y1164_METJA Putative HTH-type transcriptional regulato...    45   1e-04
+sp|Q9ZD50|Y497_RICPR Uncharacterized HTH-type transcriptional re...    45   1e-04
+sp|Q2FTM0|Y2548_METHJ Putative HTH-type transcriptional regulato...    45   2e-04
+sp|Q92HV3|Y668_RICCN Uncharacterized HTH-type transcriptional re...    45   2e-04
+sp|Q58815|GLMS_METJA Glutamine--fructose-6-phosphate aminotransf...    45   2e-04
+sp|P55360|Y4AM_SINFN Uncharacterized HTH-type transcriptional re...    45   2e-04
+sp|A6USD6|Y1514_METVS Putative HTH-type transcriptional regulato...    45   2e-04
+sp|Q58006|Y586_METJA Uncharacterized HTH-type transcriptional re...    45   2e-04
+sp|Q6LZF1|Y678_METMP Putative HTH-type transcriptional regulator...    44   2e-04
+sp|Q9V1R0|Y367_PYRAB Putative HTH-type transcriptional regulator...    44   2e-04
+sp|Q6BXQ8|MBF1_DEBHA Multiprotein-bridging factor 1 OS=Debaryomy...    44   2e-04
+sp|Q5JF28|Y539_THEKO Putative HTH-type transcriptional regulator...    44   2e-04
+sp|O30257|Y2414_ARCFU Uncharacterized HTH-type transcriptional r...    44   2e-04
+sp|A7I4Q7|Y195_METB6 Putative HTH-type transcriptional regulator...    44   2e-04
+sp|O27048|Y967_METTH Putative HTH-type transcriptional regulator...    44   3e-04
+sp|B8GI76|Y031_METPE Putative HTH-type transcriptional regulator...    44   3e-04
+sp|Q9YDZ1|Y778_AERPE Putative HTH-type transcriptional regulator...    44   3e-04
+sp|Q8FHF3|HIPB_ECOL6 Antitoxin HipB OS=Escherichia coli O6:H1 (s...    44   3e-04
+sp|A4FYC1|Y898_METM5 Putative HTH-type transcriptional regulator...    44   3e-04
+sp|A6VJY2|Y1702_METM7 Putative HTH-type transcriptional regulato...    44   3e-04
+sp|O27383|Y1328_METTH Uncharacterized HTH-type transcriptional r...    44   4e-04
+sp|A9A7A8|Y210_METM6 Putative HTH-type transcriptional regulator...    44   4e-04
+sp|O59472|Y1808_PYRHO Putative HTH-type transcriptional regulato...    44   4e-04
+sp|B0R731|Y3946_HALS3 Putative HTH-type transcriptional regulato...    44   4e-04
+sp|Q9HNG7|Y2112_HALSA Putative HTH-type transcriptional regulato...    44   4e-04
+sp|Q18FU6|Y3058_HALWD Putative HTH-type transcriptional regulato...    43   5e-04
+sp|O28646|Y1627_ARCFU Uncharacterized HTH-type transcriptional r...    43   7e-04
+sp|A2SPT1|Y160_METLZ Putative HTH-type transcriptional regulator...    43   7e-04
+sp|C0H3X9|YGZD_BACSU Uncharacterized HTH-type transcriptional re...    43   7e-04
+sp|Q06553|PRTR_PSEAE HTH-type transcriptional regulator PrtR OS=...    43   7e-04
+sp|P24518|NADR_SALTY Trifunctional NAD biosynthesis/regulator pr...    42   8e-04
+sp|P34879|MTS2_SHISO Type II methyltransferase M.SsoII OS=Shigel...    42   8e-04
+sp|Q5A940|MBF1_CANAL Multiprotein-bridging factor 1 OS=Candida a...    42   8e-04
+sp|P9WJB7|ESPR_MYCTU Nucleoid-associated protein EspR OS=Mycobac...    42   8e-04
+sp|P9WJB6|ESPR_MYCTO Nucleoid-associated protein EspR OS=Mycobac...    42   8e-04
+sp|B2VE88|RODZ_ERWT9 Cytoskeleton protein RodZ OS=Erwinia tasman...    42   9e-04
+sp|P23737|MTS9_STAAU Type II methyltransferase M.Sau96I OS=Staph...    42   0.001
+sp|Q6L1L0|Y557_PICTO Putative HTH-type transcriptional regulator...    42   0.001
+sp|P14819|RPC1_BPPH8 Repressor protein CI OS=Enterobacteria phag...    42   0.001
+sp|P27278|NADR_ECOLI Trifunctional NAD biosynthesis/regulator pr...    42   0.001
+sp|C5A6F6|Y1316_THEGJ Putative HTH-type transcriptional regulato...    42   0.001
+sp|Q8TG23|MBF1_YARLI Putative multi-protein-binding factor 1 OS=...    41   0.002
+sp|Q57949|Y529_METJA Uncharacterized HTH-type transcriptional re...    41   0.002
+sp|Q83BT6|Y1416_COXBU Uncharacterized HTH-type transcriptional r...    41   0.002
+sp|Q3ISY4|Y1320_NATPD Putative HTH-type transcriptional regulato...    41   0.003
+sp|P23873|HIPB_ECOLI Antitoxin HipB OS=Escherichia coli (strain ...    41   0.003
+sp|Q12V29|Y1811_METBU Putative HTH-type transcriptional regulato...    40   0.003
+sp|Q6FJN0|MBF1_CANGA Multiprotein-bridging factor 1 OS=Candida g...    40   0.003
+sp|Q8TK90|Y3524_METAC Putative HTH-type transcriptional regulato...    40   0.004
+sp|Q2NF79|Y1143_METST Putative HTH-type transcriptional regulato...    40   0.004
+sp|B1JS04|RODZ_YERPY Cytoskeleton protein RodZ OS=Yersinia pseud...    40   0.005
+sp|Q667Z8|RODZ_YERPS Cytoskeleton protein RodZ OS=Yersinia pseud...    40   0.005
+sp|A4TMT8|RODZ_YERPP Cytoskeleton protein RodZ OS=Yersinia pesti...    40   0.005
+sp|Q1CK92|RODZ_YERPN Cytoskeleton protein RodZ OS=Yersinia pesti...    40   0.005
+sp|A9R803|RODZ_YERPG Cytoskeleton protein RodZ OS=Yersinia pesti...    40   0.005
+sp|Q7CJM7|RODZ_YERPE Cytoskeleton protein RodZ OS=Yersinia pesti...    40   0.005
+sp|B2K9Q1|RODZ_YERPB Cytoskeleton protein RodZ OS=Yersinia pseud...    40   0.005
+sp|Q1C5I7|RODZ_YERPA Cytoskeleton protein RodZ OS=Yersinia pesti...    40   0.005
+sp|A7FFY8|RODZ_YERP3 Cytoskeleton protein RodZ OS=Yersinia pseud...    40   0.005
+sp|O53467|HIGA2_MYCTU Putative antitoxin HigA2 OS=Mycobacterium ...    40   0.005
+sp|Q752P7|MBF1_ASHGO Multiprotein-bridging factor 1 OS=Ashbya go...    40   0.005
+sp|O14467|MBF1_YEAST Multiprotein-bridging factor 1 OS=Saccharom...    40   0.005
+sp|Q46A50|Y2318_METBF Putative HTH-type transcriptional regulato...    40   0.005
+sp|O28487|Y1787_ARCFU Putative HTH-type transcriptional regulato...    40   0.006
+sp|A8GHW6|RODZ_SERP5 Cytoskeleton protein RodZ OS=Serratia prote...    40   0.006
+sp|Q8PZP8|Y444_METMA Putative HTH-type transcriptional regulator...    40   0.006
+sp|Q5UZI1|Y2519_HALMA Putative HTH-type transcriptional regulato...    40   0.006
+sp|P03036|RCRO_BP434 Regulatory protein cro OS=Enterobacteria ph...    39   0.007
+sp|Q6CIP4|MBF1_KLULA Multiprotein-bridging factor 1 OS=Kluyverom...    39   0.007
+sp|P55565|Y4MF_SINFN Uncharacterized HTH-type transcriptional re...    39   0.007
+sp|A7MGV6|RODZ_CROS8 Cytoskeleton protein RodZ OS=Cronobacter sa...    39   0.009
+sp|A1JKS1|RODZ_YERE8 Cytoskeleton protein RodZ OS=Yersinia enter...    39   0.009
+sp|Q9HIH6|Y1363_THEAC Putative HTH-type transcriptional regulato...    39   0.009
+sp|O60869|EDF1_HUMAN Endothelial differentiation-related factor ...    39   0.009
+sp|Q3T0V7|EDF1_BOVIN Endothelial differentiation-related factor ...    39   0.009
+sp|Q8ZWT6|Y1627_PYRAE Putative HTH-type transcriptional regulato...    39   0.011
+sp|Q6D275|RODZ_PECAS Cytoskeleton protein RodZ OS=Pectobacterium...    39   0.011
+sp|Q971W0|Y1268_SULTO Putative HTH-type transcriptional regulato...    39   0.013
+sp|A5UKD0|Y453_METS3 Putative HTH-type transcriptional regulator...    39   0.014
+sp|A4YHH8|Y1725_METS5 Putative HTH-type transcriptional regulato...    38   0.016
+sp|B5XNL4|RODZ_KLEP3 Cytoskeleton protein RodZ OS=Klebsiella pne...    38   0.018
+sp|P69736|EDF1_RAT Endothelial differentiation-related factor 1 ...    38   0.018
+sp|Q9JMG1|EDF1_MOUSE Endothelial differentiation-related factor ...    38   0.018
+sp|O94700|MBF1_SCHPO Multiprotein-bridging factor 1 OS=Schizosac...    38   0.018
+sp|P03034|RPC1_LAMBD Repressor protein cI OS=Escherichia phage l...    38   0.018
+sp|O34791|YOPO_BACSU SPbeta prophage-derived uncharacterized HTH...    38   0.019
+sp|P44030|Y659_HAEIN Uncharacterized HTH-type transcriptional re...    38   0.022
+sp|Q5ZMC0|EDF1_CHICK Endothelial differentiation-related factor ...    38   0.022
+sp|A6TCD5|RODZ_KLEP7 Cytoskeleton protein RodZ OS=Klebsiella pne...    38   0.022
+sp|C3MPR6|Y1371_SULIL Putative HTH-type transcriptional regulato...    38   0.024
+sp|Q97ZH1|Y942_SACS2 Putative HTH-type transcriptional regulator...    37   0.026
+sp|C3N5E2|Y1334_SULIA Putative HTH-type transcriptional regulato...    37   0.026
+sp|C3MYR0|Y1284_SULIM Putative HTH-type transcriptional regulato...    37   0.026
+sp|C4KH08|Y1268_SULIK Putative HTH-type transcriptional regulato...    37   0.026
+sp|C3NHQ7|Y1579_SULIN Putative HTH-type transcriptional regulato...    37   0.026
+sp|C3NDZ6|Y1269_SULIY Putative HTH-type transcriptional regulato...    37   0.026
+sp|P14327|VSH7_DICDI Vegetative-specific protein H7 OS=Dictyoste...    37   0.028
+sp|P04132|RPC_BPP2 Repressor protein C OS=Escherichia phage P2 O...    37   0.031
+sp|B5RCZ3|RODZ_SALG2 Cytoskeleton protein RodZ OS=Salmonella gal...    37   0.032
+sp|Q97C11|Y294_THEVO Putative HTH-type transcriptional regulator...    37   0.038
+sp|Q1R8L7|RODZ_ECOUT Cytoskeleton protein RodZ OS=Escherichia co...    37   0.038
+sp|Q8FF56|RODZ_ECOL6 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.038
+sp|A1AE54|RODZ_ECOK1 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.038
+sp|B7MI01|RODZ_ECO45 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.038
+sp|B7UGW2|RODZ_ECO27 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.038
+sp|B5R583|RODZ_SALEP Cytoskeleton protein RodZ OS=Salmonella ent...    37   0.039
+sp|B5FR64|RODZ_SALDC Cytoskeleton protein RodZ OS=Salmonella dub...    37   0.039
+sp|B1LNH1|RODZ_ECOSM Cytoskeleton protein RodZ OS=Escherichia co...    37   0.040
+sp|Q31XX4|RODZ_SHIBS Cytoskeleton protein RodZ OS=Shigella boydi...    37   0.040
+sp|Q0TEW9|RODZ_ECOL5 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.040
+sp|Q32D46|RODZ_SHIDS Cytoskeleton protein RodZ OS=Shigella dysen...    37   0.040
+sp|B7MYF1|RODZ_ECO81 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.040
+sp|P44207|Y1476_HAEIN Uncharacterized HTH-type transcriptional r...    37   0.041
+sp|Q8ZN53|RODZ_SALTY Cytoskeleton protein RodZ OS=Salmonella typ...    37   0.041
+sp|B5BAY4|RODZ_SALPK Cytoskeleton protein RodZ OS=Salmonella par...    37   0.041
+sp|A9N200|RODZ_SALPB Cytoskeleton protein RodZ OS=Salmonella par...    37   0.041
+sp|Q5PNI3|RODZ_SALPA Cytoskeleton protein RodZ OS=Salmonella par...    37   0.041
+sp|B5F199|RODZ_SALA4 Cytoskeleton protein RodZ OS=Salmonella ago...    37   0.041
+sp|Q3YZ36|RODZ_SHISS Cytoskeleton protein RodZ OS=Shigella sonne...    37   0.042
+sp|Q83QK7|RODZ_SHIFL Cytoskeleton protein RodZ OS=Shigella flexn...    37   0.042
+sp|Q0T203|RODZ_SHIF8 Cytoskeleton protein RodZ OS=Shigella flexn...    37   0.042
+sp|B7NRG6|RODZ_ECO7I Cytoskeleton protein RodZ OS=Escherichia co...    37   0.042
+sp|B4T0Q0|RODZ_SALNS Cytoskeleton protein RodZ OS=Salmonella new...    37   0.042
+sp|C0PYM9|RODZ_SALPC Cytoskeleton protein RodZ OS=Salmonella par...    37   0.046
+sp|B4TD94|RODZ_SALHS Cytoskeleton protein RodZ OS=Salmonella hei...    37   0.046
+sp|Q57LI5|RODZ_SALCH Cytoskeleton protein RodZ OS=Salmonella cho...    37   0.046
+sp|B4TR96|RODZ_SALSV Cytoskeleton protein RodZ OS=Salmonella sch...    37   0.047
+sp|Q8Z4P3|RODZ_SALTI Cytoskeleton protein RodZ OS=Salmonella typ...    37   0.047
+sp|B5Z0Y5|RODZ_ECO5E Cytoskeleton protein RodZ OS=Escherichia co...    37   0.050
+sp|Q7ABM8|RODZ_ECO57 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.050
+sp|Q4J946|Y1344_SULAC Putative HTH-type transcriptional regulato...    37   0.050
+sp|B2TXU1|RODZ_SHIB3 Cytoskeleton protein RodZ OS=Shigella boydi...    37   0.052
+sp|B6I588|RODZ_ECOSE Cytoskeleton protein RodZ OS=Escherichia co...    37   0.052
+sp|B1IWE5|RODZ_ECOLC Cytoskeleton protein RodZ OS=Escherichia co...    37   0.052
+sp|A8A322|RODZ_ECOHS Cytoskeleton protein RodZ OS=Escherichia co...    37   0.052
+sp|B7N6A4|RODZ_ECOLU Cytoskeleton protein RodZ OS=Escherichia co...    37   0.053
+sp|B7M7M0|RODZ_ECO8A Cytoskeleton protein RodZ OS=Escherichia co...    37   0.053
+sp|B7LDA8|RODZ_ECO55 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.053
+sp|A7ZPV9|RODZ_ECO24 Cytoskeleton protein RodZ OS=Escherichia co...    37   0.053
+sp|P27434|RODZ_ECOLI Cytoskeleton protein RodZ OS=Escherichia co...    36   0.057
+sp|B1XAZ1|RODZ_ECODH Cytoskeleton protein RodZ OS=Escherichia co...    36   0.057
+sp|C4ZX91|RODZ_ECOBW Cytoskeleton protein RodZ OS=Escherichia co...    36   0.057
+sp|A4WD94|RODZ_ENT38 Cytoskeleton protein RodZ OS=Enterobacter s...    36   0.060
+sp|A9MHL4|RODZ_SALAR Cytoskeleton protein RodZ OS=Salmonella ari...    36   0.066
+sp|Q8EIX4|HIPB_SHEON Antitoxin HipB OS=Shewanella oneidensis (st...    36   0.078
+sp|P12254|RPSK_BACSU RNA polymerase sigma-K factor OS=Bacillus s...    36   0.087
+sp|Q5B8Y4|MBF1_EMENI Multiprotein-bridging factor 1 OS=Emericell...    35   0.11 
+sp|Q79S39|TRSX_VIBCL HTH-type transcriptional regulator for conj...    35   0.11 
+sp|Q8GJK1|TRME_SHEPU HTH-type transcriptional regulator for conj...    35   0.11 
+sp|Q79RI9|TR96_PRORE HTH-type transcriptional regulator for conj...    35   0.11 
+sp|Q6PBY3|EDF1_DANRE Endothelial differentiation-related factor ...    35   0.13 
+sp|Q871W6|MBF1_NEUCR Multiprotein-bridging factor 1 OS=Neurospor...    35   0.13 
+sp|Q4WX89|MBF1_ASPFU Multiprotein-bridging factor 1 OS=Aspergill...    35   0.14 
+sp|B7LKC2|RODZ_ESCF3 Cytoskeleton protein RodZ OS=Escherichia fe...    35   0.15 
+sp|Q9SJI8|MBF1A_ARATH Multiprotein-bridging factor 1a OS=Arabido...    35   0.15 
+sp|Q5UR40|YR559_MIMIV Uncharacterized HTH-type transcriptional r...    35   0.15 
+sp|A8AD70|RODZ_CITK8 Cytoskeleton protein RodZ OS=Citrobacter ko...    35   0.16 
+sp|P9WJA7|HIGA1_MYCTU Antitoxin HigA1 OS=Mycobacterium tuberculo...    35   0.17 
+sp|P9WJA6|HIGA1_MYCTO Antitoxin HigA1 OS=Mycobacterium tuberculo...    35   0.17 
+sp|Q9LV58|MBF1C_ARATH Multiprotein-bridging factor 1c OS=Arabido...    35   0.18 
+sp|Q6GPQ6|EDF1_XENLA Endothelial differentiation-related factor ...    34   0.22 
+sp|Q9LXT3|MBF1B_ARATH Multiprotein-bridging factor 1b OS=Arabido...    34   0.25 
+sp|O53333|HIGA3_MYCTU Putative antitoxin HigA3 OS=Mycobacterium ...    34   0.32 
+sp|Q53IP3|MBF1_GIBFU Multiprotein-bridging factor 1 OS=Gibberell...    34   0.34 
+sp|Q5V5E2|Y199_HALMA Putative transcriptional regulatory protein...    34   0.41 
+sp|A6UR76|Y1098_METVS Putative transcriptional regulatory protei...    34   0.44 
+sp|Q57637|Y173_METJA Putative transcriptional regulatory protein...    34   0.44 
+sp|P34877|MTSA_LACLC Type II methyltransferase M1.ScrFI OS=Lacto...    33   0.50 
+sp|Q46561|VAPZ_DICNO Virulence-associated protein A' OS=Dichelob...    33   0.55 
+sp|Q46864|MQSA_ECOLI Antitoxin MqsA OS=Escherichia coli (strain ...    33   0.60 
+sp|O32235|YVZC_BACSU Uncharacterized HTH-type transcriptional re...    33   0.63 
+sp|P11408|MTM1_MORSP Type II methyltransferase M.MspI OS=Moraxel...    33   0.73 
+sp|Q5JHP2|RFCS_THEKO Replication factor C small subunit OS=Therm...    33   0.79 
+sp|Q57065|Y367_HAEIN Uncharacterized protein HI_0367 OS=Haemophi...    32   1.1  
+sp|P33657|RPSE_CLOAB RNA polymerase sigma-E factor OS=Clostridiu...    32   1.3  
+sp|Q9KMG4|HIGA1_VIBCH Antitoxin HigA-1 OS=Vibrio cholerae seroty...    32   1.3  
+sp|A4WGV3|RFCL_PYRAR Replication factor C large subunit OS=Pyrob...    32   1.5  
+sp|P56200|T2CX_CITFR Type II restriction enzyme Cfr10I OS=Citrob...    32   1.5  
+sp|P0A9V5|YIAG_ECOLI Uncharacterized HTH-type transcriptional re...    31   1.9  
+sp|P0A9V6|YIAG_ECOL6 Uncharacterized HTH-type transcriptional re...    31   1.9  
+sp|P0A9V7|YIAG_ECO57 Uncharacterized HTH-type transcriptional re...    31   1.9  
+sp|Q9V2G4|RFCS_PYRAB Replication factor C small subunit OS=Pyroc...    31   2.0  
+sp|Q9TYT0|HMBX1_CAEEL Homeobox-containing protein 1 OS=Caenorhab...    31   2.1  
+sp|Q46560|VAPI_DICNO Virulence-associated protein I OS=Dicheloba...    31   2.4  
+sp|P62181|RP28_BACTK RNA polymerase sigma-28 factor OS=Bacillus ...    31   2.6  
+sp|P62180|RP28_BACCR RNA polymerase sigma-28 factor OS=Bacillus ...    31   2.6  
+sp|P62182|RP28_BACAN RNA polymerase sigma-28 factor OS=Bacillus ...    31   2.6  
+sp|B8ICE5|DNLJ_METNO DNA ligase OS=Methylobacterium nodulans (st...    31   2.6  
+sp|P45904|YQAG_BACSU Uncharacterized HTH-type transcriptional re...    31   2.6  
+sp|Q6M132|Y086_METMP Putative transcriptional regulatory protein...    31   3.0  
+sp|P62179|RP35_BACTK RNA polymerase sigma-35 factor OS=Bacillus ...    30   3.2  
+sp|P62178|RP35_BACCR RNA polymerase sigma-35 factor OS=Bacillus ...    30   3.2  
+sp|P62177|RP35_BACAN RNA polymerase sigma-35 factor OS=Bacillus ...    30   3.2  
+sp|A0A167V873|PTXS_PSEDL HTH-type transcriptional regulator PtxS...    30   4.2  
+sp|Q5Z380|GLUQ_NOCFA Glutamyl-Q tRNA(Asp) synthetase OS=Nocardia...    30   5.3  
+sp|Q5JHH2|Y2151_THEKO Putative transcriptional regulatory protei...    30   6.3  
+sp|P0CO30|MBF1_CRYNJ Multiprotein-bridging factor 1 OS=Cryptococ...    30   6.5  
+sp|P0CO31|MBF1_CRYNB Multiprotein-bridging factor 1 OS=Cryptococ...    30   6.5  
+sp|P43130|NPRA_GEOSE Transcriptional activator NprA OS=Geobacill...    29   8.7  
+sp|P06222|RPSE_BACSU RNA polymerase sigma-E factor OS=Bacillus s...    29   9.4  
+sp|Q8TUT0|VATB_METKA V-type ATP synthase beta chain OS=Methanopy...    29   9.8  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.306    0.130    0.297 
+
+Lambda     K      H
+   0.267   0.0396    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 86,933,910
+Number of Sequences: 569516
+Number of extensions: 2492307
+Number of successful extensions: 9207
+Number of sequences better than 10.0: 267
+Number of HSP's better than 10.0 without gapping: 394
+Number of HSP's successfully gapped in prelim test: 152
+Number of HSP's that attempted gapping in prelim test: 8762
+Number of HSP's gapped (non-prelim): 549
+length of query: 111
+length of database: 205,866,895
+effective HSP length: 79
+effective length of query: 32
+effective length of database: 160,875,131
+effective search space: 5148004192
+effective search space used: 5148004192
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.5 bits)
+S2: 64 (29.3 bits)

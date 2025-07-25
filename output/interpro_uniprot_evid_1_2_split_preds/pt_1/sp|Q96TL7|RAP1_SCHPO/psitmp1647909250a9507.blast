@@ -1,0 +1,123 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (693 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q96TL7|RAP1_SCHPO DNA-binding protein rap1 OS=Schizosaccharom...  1432   0.0  
+sp|P11938|RAP1_YEAST DNA-binding protein RAP1 OS=Saccharomyces c...    38   0.25 
+sp|Q8QVU9|POL2_CNSV RNA2 polyprotein OS=Cycas necrotic stunt vir...    38   0.32 
+sp|Q6MTF5|TIG_MYCMS Trigger factor OS=Mycoplasma mycoides subsp....    34   5.5  
+sp|C3N323|Y2683_SULIA UPF0248 protein M1627_2683 OS=Sulfolobus i...    33   8.6  
+sp|C3MT45|Y2629_SULIM UPF0248 protein M1425_2629 OS=Sulfolobus i...    33   8.6  
+sp|C4KEU3|Y2614_SULIK UPF0248 protein M164_2614 OS=Sulfolobus is...    33   8.6  
+
+[blastpgp] WARNING:  [000.000]  posPurgeMatches: Due to purging near identical sequences, only the query is used to construct the position-specific score matrix
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q96TL7|RAP1_SCHPO DNA-binding protein rap1 OS=Schizosaccharom...  1426   0.0  
+
+Sequences not found previously or not previously below threshold:
+
+sp|P11938|RAP1_YEAST DNA-binding protein RAP1 OS=Saccharomyces c...    41   0.029
+sp|P97868|RBBP6_MOUSE E3 ubiquitin-protein ligase RBBP6 OS=Mus m...    41   0.029
+sp|Q7Z6E9|RBBP6_HUMAN E3 ubiquitin-protein ligase RBBP6 OS=Homo ...    41   0.040
+sp|Q707Y8|MTAL2_PICAN Mating-type protein ALPHA2 OS=Pichia angus...    37   0.67 
+sp|Q17390|CUL2_CAEEL Cullin-2 OS=Caenorhabditis elegans OX=6239 ...    37   0.68 
+sp|Q6MTF5|TIG_MYCMS Trigger factor OS=Mycoplasma mycoides subsp....    36   0.96 
+sp|O05974|DPO3A_RICPR DNA polymerase III subunit alpha OS=Ricket...    36   1.0  
+sp|A1DNW0|ATG9_NEOFI Autophagy-related protein 9 OS=Neosartorya ...    36   1.3  
+sp|Q24311|CUL1_DROME Cullin homolog 1 OS=Drosophila melanogaster...    35   1.5  
+sp|Q8NWQ6|EBH_STAAW Extracellular matrix-binding protein ebh OS=...    35   1.7  
+sp|Q6VMQ6|MCAF1_HUMAN Activating transcription factor 7-interact...    35   1.8  
+sp|C3N323|Y2683_SULIA UPF0248 protein M1627_2683 OS=Sulfolobus i...    35   1.9  
+sp|C3MT45|Y2629_SULIM UPF0248 protein M1425_2629 OS=Sulfolobus i...    35   1.9  
+sp|C4KEU3|Y2614_SULIK UPF0248 protein M164_2614 OS=Sulfolobus is...    35   1.9  
+sp|Q9UVN9|MRE11_COPC7 Double-strand break repair protein MRE11 O...    35   2.4  
+sp|A5DFC2|UTP25_PICGU U3 small nucleolar RNA-associated protein ...    35   2.5  
+sp|P43844|GLYA_HAEIN Serine hydroxymethyltransferase OS=Haemophi...    34   3.4  
+sp|A5UI33|GLYA_HAEIG Serine hydroxymethyltransferase OS=Haemophi...    34   3.4  
+sp|A5UDI4|GLYA_HAEIE Serine hydroxymethyltransferase OS=Haemophi...    34   3.4  
+sp|Q4QM19|GLYA_HAEI8 Serine hydroxymethyltransferase OS=Haemophi...    34   3.4  
+sp|Q18490|TOST1_CAEEL Protein tost-1 OS=Caenorhabditis elegans O...    34   4.7  
+sp|Q6DD45|ZCHC8_XENLA Zinc finger CCHC domain-containing protein...    34   6.7  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.313    0.130    0.365 
+
+Lambda     K      H
+   0.267   0.0402    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 538,996,281
+Number of Sequences: 569516
+Number of extensions: 22916310
+Number of successful extensions: 57085
+Number of sequences better than 10.0: 88
+Number of HSP's better than 10.0 without gapping: 15
+Number of HSP's successfully gapped in prelim test: 245
+Number of HSP's that attempted gapping in prelim test: 56575
+Number of HSP's gapped (non-prelim): 741
+length of query: 693
+length of database: 205,866,895
+effective HSP length: 125
+effective length of query: 568
+effective length of database: 134,677,395
+effective search space: 76496760360
+effective search space used: 76496760360
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.9 bits)
+S2: 74 (33.1 bits)

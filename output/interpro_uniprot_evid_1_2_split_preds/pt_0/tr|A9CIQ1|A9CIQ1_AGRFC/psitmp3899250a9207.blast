@@ -1,0 +1,101 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (95 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9KMA5|HIGA2_VIBCH Antitoxin HigA-2 OS=Vibrio cholerae seroty...    39   0.014
+sp|P14327|VSH7_DICDI Vegetative-specific protein H7 OS=Dictyoste...    29   7.8  
+sp|A4IFW2|PTPRF_DANRE Receptor-type tyrosine-protein phosphatase...    29   9.5  
+
+[blastpgp] WARNING:  [000.000]  posPurgeMatches: Due to purging near identical sequences, only the query is used to construct the position-specific score matrix
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9KMA5|HIGA2_VIBCH Antitoxin HigA-2 OS=Vibrio cholerae seroty...    39   0.007
+sp|A4IFW2|PTPRF_DANRE Receptor-type tyrosine-protein phosphatase...    32   1.1  
+sp|A2A8L5|PTPRF_MOUSE Receptor-type tyrosine-protein phosphatase...    32   1.3  
+sp|Q64604|PTPRF_RAT Receptor-type tyrosine-protein phosphatase F...    32   1.4  
+sp|P14327|VSH7_DICDI Vegetative-specific protein H7 OS=Dictyoste...    30   3.4  
+sp|A1JKS1|RODZ_YERE8 Cytoskeleton protein RodZ OS=Yersinia enter...    30   6.0  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.313    0.130    0.371 
+
+Lambda     K      H
+   0.267   0.0401    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 74,123,977
+Number of Sequences: 569516
+Number of extensions: 2517370
+Number of successful extensions: 4629
+Number of sequences better than 10.0: 6
+Number of HSP's better than 10.0 without gapping: 3
+Number of HSP's successfully gapped in prelim test: 20
+Number of HSP's that attempted gapping in prelim test: 4626
+Number of HSP's gapped (non-prelim): 23
+length of query: 95
+length of database: 205,866,895
+effective HSP length: 65
+effective length of query: 30
+effective length of database: 168,848,355
+effective search space: 5065450650
+effective search space used: 5065450650
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.9 bits)
+S2: 64 (29.3 bits)

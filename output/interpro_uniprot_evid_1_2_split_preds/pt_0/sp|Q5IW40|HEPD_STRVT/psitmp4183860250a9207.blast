@@ -1,0 +1,115 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (443 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q5IW40|HEPD_STRVT 2-hydroxyethylphosphonate dioxygenase OS=St...   897   0.0  
+sp|A9A1T2|MPNS_NITMS Methylphosphonate synthase OS=Nitrosopumilu...    42   0.010
+sp|A9KT72|PEPT_LACP7 Peptidase T OS=Lachnoclostridium phytoferme...    33   3.5  
+sp|Q3SVD4|MUTS_NITWN DNA mismatch repair protein MutS OS=Nitroba...    33   3.5  
+sp|A6UF86|EX7L_SINMW Exodeoxyribonuclease 7 large subunit OS=Sin...    32   7.3  
+sp|P61670|MUTS_RHOPA DNA mismatch repair protein MutS OS=Rhodops...    32   9.0  
+sp|O88427|CAC1H_MOUSE Voltage-dependent T-type calcium channel s...    32   9.8  
+
+[blastpgp] WARNING:  [000.000]  posPurgeMatches: Due to purging near identical sequences, only the query is used to construct the position-specific score matrix
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q5IW40|HEPD_STRVT 2-hydroxyethylphosphonate dioxygenase OS=St...   937   0.0  
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9EQ60|CAC1H_RAT Voltage-dependent T-type calcium channel sub...    42   0.014
+sp|A6UF86|EX7L_SINMW Exodeoxyribonuclease 7 large subunit OS=Sin...    40   0.027
+sp|A9A1T2|MPNS_NITMS Methylphosphonate synthase OS=Nitrosopumilu...    40   0.038
+sp|O88427|CAC1H_MOUSE Voltage-dependent T-type calcium channel s...    40   0.053
+sp|Q3SVD4|MUTS_NITWN DNA mismatch repair protein MutS OS=Nitroba...    38   0.22 
+sp|Q92SR7|EX7L_RHIME Exodeoxyribonuclease 7 large subunit OS=Rhi...    37   0.22 
+sp|P61670|MUTS_RHOPA DNA mismatch repair protein MutS OS=Rhodops...    36   0.51 
+sp|Q7W7F4|EX7L_BORPA Exodeoxyribonuclease 7 large subunit OS=Bor...    35   1.8  
+sp|Q7WKU2|EX7L_BORBR Exodeoxyribonuclease 7 large subunit OS=Bor...    35   1.8  
+sp|Q88QS0|ESTP_PSEPK Esterase EstP OS=Pseudomonas putida (strain...    34   3.0  
+sp|Q2NUJ6|BIOF_SODGM 8-amino-7-oxononanoate synthase OS=Sodalis ...    34   3.8  
+sp|Q7VVB6|EX7L_BORPE Exodeoxyribonuclease 7 large subunit OS=Bor...    34   4.0  
+sp|A9KT72|PEPT_LACP7 Peptidase T OS=Lachnoclostridium phytoferme...    33   4.5  
+sp|A1D145|PGLR_NEOFI Probable endopolygalacturonase NFIA_008150 ...    32   7.8  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.316    0.133    0.412 
+
+Lambda     K      H
+   0.267   0.0407    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 387,236,899
+Number of Sequences: 569516
+Number of extensions: 17686413
+Number of successful extensions: 41489
+Number of sequences better than 10.0: 15
+Number of HSP's better than 10.0 without gapping: 9
+Number of HSP's successfully gapped in prelim test: 20
+Number of HSP's that attempted gapping in prelim test: 41474
+Number of HSP's gapped (non-prelim): 33
+length of query: 443
+length of database: 205,866,895
+effective HSP length: 121
+effective length of query: 322
+effective length of database: 136,955,459
+effective search space: 44099657798
+effective search space used: 44099657798
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.6 bits)
+S2: 72 (32.4 bits)

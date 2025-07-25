@@ -1,0 +1,121 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (224 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O31936|YOPB_BACSU Putative antitoxin YopB OS=Bacillus subtili...    38   0.076
+sp|A1SXA4|GLK_PSYIN Glucokinase OS=Psychromonas ingrahamii (stra...    36   0.23 
+sp|A1CQH8|UTP25_ASPCL U3 small nucleolar RNA-associated protein ...    33   1.7  
+sp|Q8TFH5|YIK9_SCHPO Meiotically up-regulated protein PB17E12.09...    31   7.0  
+
+[blastpgp] WARNING:  [000.000]  posPurgeMatches: Due to purging near identical sequences, only the query is used to construct the position-specific score matrix
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+Sequences not found previously or not previously below threshold:
+
+sp|O31936|YOPB_BACSU Putative antitoxin YopB OS=Bacillus subtili...    39   0.022
+sp|Q54FQ1|PKS31_DICDI Probable polyketide synthase 31 OS=Dictyos...    35   0.35 
+sp|A9BIC0|RLMN_PETMO Probable dual-specificity RNA methyltransfe...    34   0.69 
+sp|Q54G30|PKS27_DICDI Probable polyketide synthase 27 OS=Dictyos...    34   0.77 
+sp|B0G170|PKS28_DICDI Probable polyketide synthase 28 OS=Dictyos...    34   0.83 
+sp|Q5HVY9|RPOB_CAMJR DNA-directed RNA polymerase subunit beta OS...    33   1.2  
+sp|A1VYJ4|RPOB_CAMJJ DNA-directed RNA polymerase subunit beta OS...    33   1.2  
+sp|Q46124|RPOB_CAMJE DNA-directed RNA polymerase subunit beta OS...    33   1.2  
+sp|A8FKR3|RPOB_CAMJ8 DNA-directed RNA polymerase subunit beta OS...    33   1.2  
+sp|Q58318|Y908_METJA Uncharacterized protein MJ0908 OS=Methanoca...    33   1.2  
+sp|Q4QR82|RASF6_RAT Ras association domain-containing protein 6 ...    33   1.4  
+sp|Q54FQ3|PKS29_DICDI Probable polyketide synthase 29 OS=Dictyos...    33   2.0  
+sp|Q54FP8|PKS32_DICDI Probable polyketide synthase 32 OS=Dictyos...    33   2.0  
+sp|Q54FQ2|PKS30_DICDI Probable polyketide synthase 30 OS=Dictyos...    33   2.0  
+sp|Q54FN2|PKS34_DICDI Probable polyketide synthase 34 OS=Dictyos...    33   2.0  
+sp|Q54FN7|PKS33_DICDI Probable polyketide synthase 33 OS=Dictyos...    33   2.3  
+sp|Q54FD2|PKS38_DICDI Probable polyketide synthase 38 OS=Dictyos...    33   2.5  
+sp|Q8RGX1|COAD_FUSNN Phosphopantetheine adenylyltransferase OS=F...    32   2.8  
+sp|A1CQH8|UTP25_ASPCL U3 small nucleolar RNA-associated protein ...    32   4.2  
+sp|H2DH21|C7A29_PANGI Cytochrome P450 CYP72A219 OS=Panax ginseng...    32   4.6  
+sp|C7P8V7|MFND_METFA Tyramine--L-glutamate ligase OS=Methanocald...    32   5.1  
+sp|A2AL36|CNTRL_MOUSE Centriolin OS=Mus musculus OX=10090 GN=Cnt...    31   5.7  
+sp|Q54S08|DPOA2_DICDI DNA polymerase alpha subunit B OS=Dictyost...    31   6.2  
+sp|Q6MSF0|GPMI_MYCMS 2,3-bisphosphoglycerate-independent phospho...    31   6.9  
+sp|Q8TFH5|YIK9_SCHPO Meiotically up-regulated protein PB17E12.09...    31   7.2  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.317    0.135    0.368 
+
+Lambda     K      H
+   0.267   0.0419    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 162,159,243
+Number of Sequences: 569516
+Number of extensions: 6721014
+Number of successful extensions: 21733
+Number of sequences better than 10.0: 35
+Number of HSP's better than 10.0 without gapping: 7
+Number of HSP's successfully gapped in prelim test: 98
+Number of HSP's that attempted gapping in prelim test: 21699
+Number of HSP's gapped (non-prelim): 125
+length of query: 224
+length of database: 205,866,895
+effective HSP length: 114
+effective length of query: 110
+effective length of database: 140,942,071
+effective search space: 15503627810
+effective search space used: 15503627810
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.6 bits)
+S2: 68 (30.8 bits)

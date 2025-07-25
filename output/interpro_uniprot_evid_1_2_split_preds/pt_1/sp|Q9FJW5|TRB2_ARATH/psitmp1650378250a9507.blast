@@ -1,0 +1,995 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (299 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9FJW5|TRB2_ARATH Telomere repeat-binding factor 2 OS=Arabido...   610   e-174
+sp|Q9M2X3|TRB3_ARATH Telomere repeat-binding factor 3 OS=Arabido...   313   9e-85
+sp|Q8VWK4|TRB1_ARATH Telomere repeat-binding factor 1 OS=Arabido...   190   1e-47
+sp|C0HIA3|SMH6_MAIZE Single myb histone 6 OS=Zea mays OX=4577 GN...   176   2e-43
+sp|Q6WS85|SMH1_MAIZE Single myb histone 1 OS=Zea mays OX=4577 GN...   172   3e-42
+sp|B4FT40|SMH2_MAIZE Single myb histone 2 OS=Zea mays OX=4577 GN...   163   2e-39
+sp|Q6WLH3|SMH5_MAIZE Single myb histone 5 OS=Zea mays OX=4577 GN...   157   9e-38
+sp|Q8W119|SMH4_MAIZE Single myb histone 4 OS=Zea mays OX=4577 GN...   127   1e-28
+sp|Q6WLH4|SMH3_MAIZE Single myb histone 3 OS=Zea mays OX=4577 GN...   122   4e-27
+sp|F4IEY4|TRB5_ARATH Telomere repeat-binding factor 5 OS=Arabido...   117   1e-25
+sp|F4I7L1|TRB4_ARATH Telomere repeat-binding factor 4 OS=Arabido...   115   4e-25
+sp|P23444|H1_MAIZE Histone H1 OS=Zea mays OX=4577 PE=2 SV=2            50   2e-05
+sp|Q6C9I6|TAY1_YARLI telomere-associated protein 1 OS=Yarrowia l...    48   9e-05
+sp|Q9PU53|TERF2_CHICK Telomeric repeat-binding factor 2 OS=Gallu...    48   9e-05
+sp|P70371|TERF1_MOUSE Telomeric repeat-binding factor 1 OS=Mus m...    47   1e-04
+sp|Q15554|TERF2_HUMAN Telomeric repeat-binding factor 2 OS=Homo ...    45   7e-04
+sp|P52551|MYBB_XENLA Myb-related protein B OS=Xenopus laevis OX=...    45   9e-04
+sp|Q10274|TEB1_SCHPO Telobox protein 1 OS=Schizosaccharomyces po...    45   0.001
+sp|P54274|TERF1_HUMAN Telomeric repeat-binding factor 1 OS=Homo ...    44   0.001
+sp|O55036|TERF1_CRIGR Telomeric repeat-binding factor 1 (Fragmen...    44   0.001
+sp|P26569|H12_ARATH Histone H1.2 OS=Arabidopsis thaliana OX=3702...    44   0.001
+sp|O35144|TERF2_MOUSE Telomeric repeat-binding factor 2 OS=Mus m...    42   0.006
+sp|P40267|H1_SOLPN Histone H1 OS=Solanum pennellii OX=28526 PE=2...    39   0.037
+sp|P81392|MYB06_ANTMA Myb-related protein 306 OS=Antirrhinum maj...    39   0.059
+sp|Q9M347|TRP6_ARATH Telomere repeat-binding protein 6 OS=Arabid...    39   0.067
+sp|Q43386|HMGYA_ARATH HMG-Y-related protein A OS=Arabidopsis tha...    39   0.072
+sp|P27806|H1_WHEAT Histone H1 OS=Triticum aestivum OX=4565 PE=2 ...    38   0.090
+sp|Q7XBH4|MYB4_ORYSJ Transcription factor MYB4 OS=Oryza sativa s...    38   0.13 
+sp|Q9SN78|MYB94_ARATH Transcription factor MYB94 OS=Arabidopsis ...    37   0.17 
+sp|B3VTV7|MYB60_VITVI Transcription factor MYB60 OS=Vitis vinife...    37   0.19 
+sp|Q24JK1|MYB96_ARATH Transcription factor MYB96 OS=Arabidopsis ...    37   0.21 
+sp|Q8GYP5|MYB60_ARATH Transcription factor MYB60 OS=Arabidopsis ...    37   0.21 
+sp|P06144|H1_LYTPI Late histone H1 OS=Lytechinus pictus OX=7653 ...    37   0.27 
+sp|O49782|MYB51_ARATH Transcription factor MYB51 OS=Arabidopsis ...    36   0.30 
+sp|P22845|H10A_XENLA Histone H1.0-A OS=Xenopus laevis OX=8355 GN...    36   0.32 
+sp|O14139|HRP3_SCHPO Chromodomain helicase hrp3 OS=Schizosacchar...    36   0.32 
+sp|Q9M2D9|MYB17_ARATH Transcription factor MYB17 OS=Arabidopsis ...    36   0.35 
+sp|K7TLS0|MYB69_MAIZE MYB transcription factor 69 OS=Zea mays OX...    36   0.36 
+sp|P15870|H1D_STRPU Histone H1-delta OS=Strongylocentrotus purpu...    36   0.38 
+sp|Q9FYS5|HMGYA_MAIZE HMG-Y-related protein A OS=Zea mays OX=457...    36   0.47 
+sp|Q9LXF1|MYB16_ARATH Transcription factor MYB16 OS=Arabidopsis ...    35   0.53 
+sp|P26568|H11_ARATH Histone H1.1 OS=Arabidopsis thaliana OX=3702...    35   0.59 
+sp|Q9LTC4|MYB15_ARATH Transcription factor MYB15 OS=Arabidopsis ...    35   0.62 
+sp|Q9SCU7|MYB30_ARATH Transcription factor MYB30 OS=Arabidopsis ...    35   0.63 
+sp|Q6E434|TRF1_SCHPO Telomeric DNA-binding factor trf1 OS=Schizo...    35   0.86 
+sp|O64399|MYB34_ARATH Transcription factor MYB34 OS=Arabidopsis ...    35   0.86 
+sp|Q9LDR8|MY102_ARATH Transcription factor MYB102 OS=Arabidopsis...    35   0.87 
+sp|P37218|H1_SOLLC Histone H1 OS=Solanum lycopersicum OX=4081 PE...    35   0.88 
+sp|Q9S9Z2|MYB93_ARATH Transcription factor MYB93 OS=Arabidopsis ...    35   0.91 
+sp|Q08759|MYB_XENLA Transcriptional activator Myb OS=Xenopus lae...    35   0.95 
+sp|Q9C9C8|MY122_ARATH Transcription factor MYB122 OS=Arabidopsis...    35   1.0  
+sp|Q9S775|PKL_ARATH CHD3-type chromatin-remodeling factor PICKLE...    34   1.1  
+sp|P01103|MYB_CHICK Transcriptional activator Myb OS=Gallus gall...    34   1.2  
+sp|Q6NVM0|H10_XENTR Histone H1.0 OS=Xenopus tropicalis OX=8364 G...    34   1.2  
+sp|Q9SNB9|TRP2_ARATH Telomere repeat-binding protein 2 OS=Arabid...    34   1.2  
+sp|Q9LVW4|MY118_ARATH Transcription factor MYB118 OS=Arabidopsis...    34   1.2  
+sp|Q9M0Y5|MYB74_ARATH Transcription factor MYB74 OS=Arabidopsis ...    34   1.2  
+sp|Q9LE63|MY106_ARATH Transcription factor MYB106 OS=Arabidopsis...    34   1.2  
+sp|P51960|MYBA_MOUSE Myb-related protein A OS=Mus musculus OX=10...    34   1.3  
+sp|P10243|MYBA_HUMAN Myb-related protein A OS=Homo sapiens OX=96...    34   1.4  
+sp|Q9LL45|TBP1_ORYSJ Telomere-binding protein 1 OS=Oryza sativa ...    34   1.4  
+sp|Q8L7L8|TRP1_ARATH Telomere repeat-binding protein 1 OS=Arabid...    34   1.4  
+sp|O97159|CHDM_DROME Chromodomain-helicase-DNA-binding protein M...    34   1.5  
+sp|Q6R0E3|TRP5_ARATH Telomere repeat-binding protein 5 OS=Arabid...    34   1.7  
+sp|Q6P4S2|SHIP1_XENLA Phosphatidylinositol 3,4,5-trisphosphate 5...    34   1.8  
+sp|P27900|GL1_ARATH Trichome differentiation protein GL1 OS=Arab...    33   1.9  
+sp|Q9S7B2|RS2_MAIZE Protein rough sheath 2 OS=Zea mays OX=4577 G...    33   2.0  
+sp|Q947R4|GL1_ARALY Trichome differentiation protein GL1 OS=Arab...    33   2.2  
+sp|Q9FFY9|TRP4_ARATH Telomere repeat-binding protein 4 OS=Arabid...    33   2.3  
+sp|P08283|H1_PEA Histone H1 OS=Pisum sativum OX=3888 PE=2 SV=1         33   2.3  
+sp|P10242|MYB_HUMAN Transcriptional activator Myb OS=Homo sapien...    33   2.3  
+sp|P46200|MYB_BOVIN Transcriptional activator Myb OS=Bos taurus ...    33   2.5  
+sp|P06876|MYB_MOUSE Transcriptional activator Myb OS=Mus musculu...    33   2.6  
+sp|Q9UUI6|RTF_SCHPO Replication termination factor 1 OS=Schizosa...    33   3.1  
+sp|Q9M5W4|H1_EUPES Histone H1 OS=Euphorbia esula OX=3993 PE=2 SV=1     33   3.7  
+sp|Q08865|H12_VOLCA Histone H1-II OS=Volvox carteri OX=3067 GN=H...    33   3.7  
+sp|Q9C7B1|TRP3_ARATH Telomere repeat-binding protein 3 OS=Arabid...    33   3.8  
+sp|Q826F6|DNAK2_STRAW Chaperone protein dnaK2 OS=Streptomyces av...    32   4.2  
+sp|Q9US25|HRP1_SCHPO Chromodomain helicase hrp1 OS=Schizosacchar...    32   4.2  
+sp|P32657|CHD1_YEAST Chromo domain-containing protein 1 OS=Sacch...    32   4.5  
+sp|E9PZM4|CHD2_MOUSE Chromodomain-helicase-DNA-binding protein 2...    32   4.7  
+sp|O14647|CHD2_HUMAN Chromodomain-helicase-DNA-binding protein 2...    32   4.7  
+sp|Q64WS3|GCST_BACFR Aminomethyltransferase OS=Bacteroides fragi...    32   5.2  
+sp|Q5LFT6|GCST_BACFN Aminomethyltransferase OS=Bacteroides fragi...    32   5.2  
+sp|F4KBP5|CHR4_ARATH Protein CHROMATIN REMODELING 4 OS=Arabidops...    32   5.7  
+sp|Q9XHV0|MYB80_ARATH Transcription factor MYB80 OS=Arabidopsis ...    32   5.9  
+sp|A9X4T1|CHD1_BOMMO Chromodomain-helicase-DNA-binding protein 1...    32   6.1  
+sp|Q9UV33|H1_ASCIM Histone H1 OS=Ascobolus immersus OX=5191 PE=3...    32   6.4  
+sp|F4JSU0|MYB87_ARATH Transcription factor MYB87 OS=Arabidopsis ...    32   6.6  
+sp|Q9SBF3|MYB92_ARATH Transcription factor MYB92 OS=Arabidopsis ...    32   6.9  
+sp|P10290|MYBC_MAIZE Anthocyanin regulatory C1 protein OS=Zea ma...    32   6.9  
+sp|B4U769|RS13_HYDS0 30S ribosomal protein S13 OS=Hydrogenobacul...    32   7.4  
+sp|B0G0Y5|MYBAA_DICDI Myb-like protein AA OS=Dictyostelium disco...    32   7.6  
+sp|A0A2R6S148|MYB1_ACTCC Transcription factor MYB1 OS=Actinidia ...    32   8.9  
+sp|P15869|H1B_STRPU Histone H1-beta, late embryonic OS=Strongylo...    31   9.1  
+sp|Q5AHJ5|TBF1_CANAL Transcription factor TBF1 OS=Candida albica...    31   9.6  
+sp|Q97EK3|RS13_CLOAB 30S ribosomal protein S13 OS=Clostridium ac...    31   9.8  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q9FJW5|TRB2_ARATH Telomere repeat-binding factor 2 OS=Arabido...   392   e-108
+sp|Q9M2X3|TRB3_ARATH Telomere repeat-binding factor 3 OS=Arabido...   298   6e-80
+sp|C0HIA3|SMH6_MAIZE Single myb histone 6 OS=Zea mays OX=4577 GN...   291   6e-78
+sp|Q8VWK4|TRB1_ARATH Telomere repeat-binding factor 1 OS=Arabido...   275   3e-73
+sp|Q6WLH4|SMH3_MAIZE Single myb histone 3 OS=Zea mays OX=4577 GN...   266   2e-70
+sp|B4FT40|SMH2_MAIZE Single myb histone 2 OS=Zea mays OX=4577 GN...   257   9e-68
+sp|Q6WLH3|SMH5_MAIZE Single myb histone 5 OS=Zea mays OX=4577 GN...   254   5e-67
+sp|Q6WS85|SMH1_MAIZE Single myb histone 1 OS=Zea mays OX=4577 GN...   248   4e-65
+sp|Q8W119|SMH4_MAIZE Single myb histone 4 OS=Zea mays OX=4577 GN...   243   1e-63
+sp|F4IEY4|TRB5_ARATH Telomere repeat-binding factor 5 OS=Arabido...   241   5e-63
+sp|F4I7L1|TRB4_ARATH Telomere repeat-binding factor 4 OS=Arabido...   223   1e-57
+sp|P70371|TERF1_MOUSE Telomeric repeat-binding factor 1 OS=Mus m...    80   3e-14
+sp|Q6C9I6|TAY1_YARLI telomere-associated protein 1 OS=Yarrowia l...    78   6e-14
+sp|Q15554|TERF2_HUMAN Telomeric repeat-binding factor 2 OS=Homo ...    75   5e-13
+sp|Q10274|TEB1_SCHPO Telobox protein 1 OS=Schizosaccharomyces po...    75   1e-12
+sp|Q9PU53|TERF2_CHICK Telomeric repeat-binding factor 2 OS=Gallu...    73   2e-12
+sp|P23444|H1_MAIZE Histone H1 OS=Zea mays OX=4577 PE=2 SV=2            72   6e-12
+sp|P52551|MYBB_XENLA Myb-related protein B OS=Xenopus laevis OX=...    68   6e-11
+
+Sequences not found previously or not previously below threshold:
+
+sp|O55036|TERF1_CRIGR Telomeric repeat-binding factor 1 (Fragmen...    74   1e-12
+sp|P54274|TERF1_HUMAN Telomeric repeat-binding factor 1 OS=Homo ...    74   2e-12
+sp|O35144|TERF2_MOUSE Telomeric repeat-binding factor 2 OS=Mus m...    72   8e-12
+sp|P27806|H1_WHEAT Histone H1 OS=Triticum aestivum OX=4565 PE=2 ...    67   1e-10
+sp|Q43386|HMGYA_ARATH HMG-Y-related protein A OS=Arabidopsis tha...    59   6e-08
+sp|P26569|H12_ARATH Histone H1.2 OS=Arabidopsis thaliana OX=3702...    57   1e-07
+sp|Q02457|TBF1_YEAST Protein TBF1 OS=Saccharomyces cerevisiae (s...    57   2e-07
+sp|P40267|H1_SOLPN Histone H1 OS=Solanum pennellii OX=28526 PE=2...    57   2e-07
+sp|Q03237|MYBB_CHICK Myb-related protein B OS=Gallus gallus OX=9...    51   1e-05
+sp|Q8S9H7|DIV_ANTMA Transcription factor DIVARICATA OS=Antirrhin...    50   2e-05
+sp|P08283|H1_PEA Histone H1 OS=Pisum sativum OX=3888 PE=2 SV=1         50   2e-05
+sp|Q08759|MYB_XENLA Transcriptional activator Myb OS=Xenopus lae...    50   2e-05
+sp|Q9FYS5|HMGYA_MAIZE HMG-Y-related protein A OS=Zea mays OX=457...    50   3e-05
+sp|P01103|MYB_CHICK Transcriptional activator Myb OS=Gallus gall...    49   4e-05
+sp|P48972|MYBB_MOUSE Myb-related protein B OS=Mus musculus OX=10...    49   5e-05
+sp|Q9M347|TRP6_ARATH Telomere repeat-binding protein 6 OS=Arabid...    48   6e-05
+sp|P46200|MYB_BOVIN Transcriptional activator Myb OS=Bos taurus ...    48   6e-05
+sp|P10244|MYBB_HUMAN Myb-related protein B OS=Homo sapiens OX=96...    48   6e-05
+sp|P10242|MYB_HUMAN Transcriptional activator Myb OS=Homo sapien...    48   8e-05
+sp|P06876|MYB_MOUSE Transcriptional activator Myb OS=Mus musculu...    48   8e-05
+sp|P10243|MYBA_HUMAN Myb-related protein A OS=Homo sapiens OX=96...    48   9e-05
+sp|Q9M5W4|H1_EUPES Histone H1 OS=Euphorbia esula OX=3993 PE=2 SV=1     48   1e-04
+sp|P51960|MYBA_MOUSE Myb-related protein A OS=Mus musculus OX=10...    48   1e-04
+sp|P54671|H1_DICDI Histone H1 OS=Dictyostelium discoideum OX=446...    47   1e-04
+sp|Q7XBH4|MYB4_ORYSJ Transcription factor MYB4 OS=Oryza sativa s...    47   1e-04
+sp|P81392|MYB06_ANTMA Myb-related protein 306 OS=Antirrhinum maj...    47   2e-04
+sp|P37218|H1_SOLLC Histone H1 OS=Solanum lycopersicum OX=4081 PE...    47   2e-04
+sp|Q9LDR8|MY102_ARATH Transcription factor MYB102 OS=Arabidopsis...    47   2e-04
+sp|Q24JK1|MYB96_ARATH Transcription factor MYB96 OS=Arabidopsis ...    47   2e-04
+sp|Q38850|MYB5_ARATH Transcription repressor MYB5 OS=Arabidopsis...    47   2e-04
+sp|Q9SN78|MYB94_ARATH Transcription factor MYB94 OS=Arabidopsis ...    47   2e-04
+sp|P15870|H1D_STRPU Histone H1-delta OS=Strongylocentrotus purpu...    46   3e-04
+sp|Q54NA6|MYBL_DICDI Myb-like protein L OS=Dictyostelium discoid...    46   3e-04
+sp|A0A2R6S148|MYB1_ACTCC Transcription factor MYB1 OS=Actinidia ...    46   3e-04
+sp|Q9M0J5|MYB41_ARATH Transcription factor MYB41 OS=Arabidopsis ...    46   4e-04
+sp|Q6E434|TRF1_SCHPO Telomeric DNA-binding factor trf1 OS=Schizo...    46   4e-04
+sp|B3VTV7|MYB60_VITVI Transcription factor MYB60 OS=Vitis vinife...    46   4e-04
+sp|P52550|MYBA_CHICK Myb-related protein A OS=Gallus gallus OX=9...    46   4e-04
+sp|Q8BRB7|KAT6B_MOUSE Histone acetyltransferase KAT6B OS=Mus mus...    46   4e-04
+sp|Q8GYP5|MYB60_ARATH Transcription factor MYB60 OS=Arabidopsis ...    46   5e-04
+sp|Q9SCU7|MYB30_ARATH Transcription factor MYB30 OS=Arabidopsis ...    46   5e-04
+sp|P10290|MYBC_MAIZE Anthocyanin regulatory C1 protein OS=Zea ma...    46   5e-04
+sp|P26568|H11_ARATH Histone H1.1 OS=Arabidopsis thaliana OX=3702...    45   5e-04
+sp|Q9UUI6|RTF_SCHPO Replication termination factor 1 OS=Schizosa...    45   5e-04
+sp|Q05935|MYBA_XENLA Myb-related protein A OS=Xenopus laevis OX=...    45   6e-04
+sp|Q00423|HMGYA_SOYBN HMG-Y-related protein A OS=Glycine max OX=...    45   7e-04
+sp|O80883|MB101_ARATH Transcription factor MYB101 OS=Arabidopsis...    45   7e-04
+sp|Q9S9Z2|MYB93_ARATH Transcription factor MYB93 OS=Arabidopsis ...    45   8e-04
+sp|Q9M2D9|MYB17_ARATH Transcription factor MYB17 OS=Arabidopsis ...    45   8e-04
+sp|K7TLS0|MYB69_MAIZE MYB transcription factor 69 OS=Zea mays OX...    45   8e-04
+sp|Q9M0Y5|MYB74_ARATH Transcription factor MYB74 OS=Arabidopsis ...    45   9e-04
+sp|Q6R032|MB3R5_ARATH Transcription factor MYB3R-5 OS=Arabidopsi...    45   0.001
+sp|Q9C9C8|MY122_ARATH Transcription factor MYB122 OS=Arabidopsis...    45   0.001
+sp|O49782|MYB51_ARATH Transcription factor MYB51 OS=Arabidopsis ...    45   0.001
+sp|Q9S773|MYB97_ARATH Transcription factor MYB97 OS=Arabidopsis ...    45   0.001
+sp|P22035|BAS1_YEAST Myb-like DNA-binding protein BAS1 OS=Saccha...    45   0.001
+sp|O23160|MYB73_ARATH Transcription factor MYB73 OS=Arabidopsis ...    44   0.001
+sp|Q9LVS0|KUA1_ARATH Transcription factor KUA1 OS=Arabidopsis th...    44   0.001
+sp|Q8WML3|KAT6B_MACFA Histone acetyltransferase KAT6B OS=Macaca ...    44   0.001
+sp|F4KBP5|CHR4_ARATH Protein CHROMATIN REMODELING 4 OS=Arabidops...    44   0.001
+sp|B0G0Y5|MYBAA_DICDI Myb-like protein AA OS=Dictyostelium disco...    44   0.001
+sp|Q9FIM4|MY119_ARATH Transcription factor MYB119 OS=Arabidopsis...    44   0.001
+sp|Q9LSI7|MYB35_ARATH Transcription factor MYB35 OS=Arabidopsis ...    44   0.002
+sp|Q0JHU7|MB3R2_ORYSJ Transcription factor MYB3R-2 OS=Oryza sati...    44   0.002
+sp|Q08865|H12_VOLCA Histone H1-II OS=Volvox carteri OX=3067 GN=H...    44   0.002
+sp|Q9LVW4|MY118_ARATH Transcription factor MYB118 OS=Arabidopsis...    43   0.002
+sp|Q0JIC2|GAMYB_ORYSJ Transcription factor GAMYB OS=Oryza sativa...    43   0.002
+sp|Q8WYB5|KAT6B_HUMAN Histone acetyltransferase KAT6B OS=Homo sa...    43   0.002
+sp|A2WW87|GAM1_ORYSI Transcription factor GAMYB OS=Oryza sativa ...    43   0.002
+sp|Q9S7G7|MB3R1_ARATH Transcription factor MYB3R-1 OS=Arabidopsi...    43   0.002
+sp|Q9UV33|H1_ASCIM Histone H1 OS=Ascobolus immersus OX=5191 PE=3...    43   0.003
+sp|Q6K1S6|MYB30_ORYSJ Transcription factor MYB30 OS=Oryza sativa...    43   0.003
+sp|Q9ZTC3|MYB90_ARATH Transcription factor MYB90 OS=Arabidopsis ...    43   0.003
+sp|P20027|MYB3_HORVU Myb-related protein Hv33 OS=Hordeum vulgare...    43   0.004
+sp|P34127|MYBA_DICDI Myb-like protein A OS=Dictyostelium discoid...    43   0.004
+sp|Q96276|MYB23_ARATH Transcription factor MYB23 OS=Arabidopsis ...    43   0.004
+sp|Q9LL45|TBP1_ORYSJ Telomere-binding protein 1 OS=Oryza sativa ...    43   0.004
+sp|Q1LX29|TERB1_DANRE Telomere repeats-binding bouquet formation...    43   0.004
+sp|M1ETK3|MYB1W_BETVU Transcription factor MYB1 OS=Beta vulgaris...    42   0.004
+sp|M1ETA5|MYB1R_BETVU Transcription factor MYB1 OS=Beta vulgaris...    42   0.004
+sp|Q9LXF1|MYB16_ARATH Transcription factor MYB16 OS=Arabidopsis ...    42   0.004
+sp|Q5AHJ5|TBF1_CANAL Transcription factor TBF1 OS=Candida albica...    42   0.005
+sp|Q9FFY9|TRP4_ARATH Telomere repeat-binding protein 4 OS=Arabid...    42   0.005
+sp|Q08864|H11_VOLCA Histone H1-I OS=Volvox carteri OX=3067 GN=H1...    42   0.005
+sp|Q9LTF7|MYB82_ARATH Transcription factor MYB82 OS=Arabidopsis ...    42   0.005
+sp|Q9FR97|MYB65_ARATH Transcription factor MYB65 OS=Arabidopsis ...    42   0.005
+sp|Q94FL9|MB3R4_ARATH Transcription factor MYB3R-4 OS=Arabidopsi...    42   0.005
+sp|Q9SBF3|MYB92_ARATH Transcription factor MYB92 OS=Arabidopsis ...    42   0.005
+sp|Q4G2I2|MYBY1_SORBI Transcription factor Y1 OS=Sorghum bicolor...    42   0.005
+sp|Q9FNV9|MY113_ARATH Transcription factor MYB113 OS=Arabidopsis...    42   0.005
+sp|A0A1U8QIH0|CICD_EMENI Transcription factor cicD OS=Emericella...    42   0.005
+sp|P22845|H10A_XENLA Histone H1.0-A OS=Xenopus laevis OX=8355 GN...    42   0.005
+sp|Q9LZK4|MYB11_ARATH Transcription factor MYB11 OS=Arabidopsis ...    42   0.006
+sp|Q05950|REB1_KLULA DNA-binding protein REB1 OS=Kluyveromyces l...    42   0.006
+sp|Q9SNB9|TRP2_ARATH Telomere repeat-binding protein 2 OS=Arabid...    42   0.006
+sp|Q9SPN3|MB3R2_ARATH Transcription factor MYB3R-2 OS=Arabidopsi...    42   0.007
+sp|Q8BP86|SNPC4_MOUSE snRNA-activating protein complex subunit 4...    42   0.007
+sp|Q9FE25|MYB75_ARATH Transcription factor MYB75 OS=Arabidopsis ...    42   0.007
+sp|O64399|MYB34_ARATH Transcription factor MYB34 OS=Arabidopsis ...    42   0.007
+sp|Q6NVM0|H10_XENTR Histone H1.0 OS=Xenopus tropicalis OX=8364 G...    41   0.008
+sp|Q9FDW1|MYB44_ARATH Transcription factor MYB44 OS=Arabidopsis ...    41   0.008
+sp|Q947R4|GL1_ARALY Trichome differentiation protein GL1 OS=Arab...    41   0.008
+sp|Q9FNV8|MY114_ARATH Transcription factor MYB114 OS=Arabidopsis...    41   0.008
+sp|Q9XHV0|MYB80_ARATH Transcription factor MYB80 OS=Arabidopsis ...    41   0.008
+sp|P01104|MYB_AVIMB Transforming protein Myb OS=Avian myeloblast...    41   0.008
+sp|Q9C7B1|TRP3_ARATH Telomere repeat-binding protein 3 OS=Arabid...    41   0.008
+sp|Q9S7L2|MYB98_ARATH Transcription factor MYB98 OS=Arabidopsis ...    41   0.009
+sp|Q9SEI0|WER_ARATH Transcription factor WER OS=Arabidopsis thal...    41   0.009
+sp|P27900|GL1_ARATH Trichome differentiation protein GL1 OS=Arab...    41   0.009
+sp|Q9FGY3|MYB78_ARATH Transcription factor MYB78 OS=Arabidopsis ...    41   0.010
+sp|Q9FJ07|MY111_ARATH Transcription factor MYB111 OS=Arabidopsis...    41   0.011
+sp|Q9LTC4|MYB15_ARATH Transcription factor MYB15 OS=Arabidopsis ...    41   0.012
+sp|P32657|CHD1_YEAST Chromo domain-containing protein 1 OS=Sacch...    41   0.012
+sp|Q9LE63|MY106_ARATH Transcription factor MYB106 OS=Arabidopsis...    41   0.012
+sp|K7UPS5|MYB42_MAIZE Myb transcription factor 42 OS=Zea mays OX...    41   0.015
+sp|Q1PDP9|MY115_ARATH Transcription factor MYB115 OS=Arabidopsis...    41   0.015
+sp|P10771|H24_CAEEL Histone 24 OS=Caenorhabditis elegans OX=6239...    41   0.015
+sp|Q9SN12|MYB77_ARATH Transcription factor MYB77 OS=Arabidopsis ...    41   0.015
+sp|Q9SJX8|MYB14_ARATH Transcription factor MYB14 OS=Arabidopsis ...    40   0.017
+sp|Q8L7L8|TRP1_ARATH Telomere repeat-binding protein 1 OS=Arabid...    40   0.017
+sp|Q6R0E3|TRP5_ARATH Telomere repeat-binding protein 5 OS=Arabid...    40   0.019
+sp|Q8GWP0|MYB39_ARATH Transcription factor MYB39 OS=Arabidopsis ...    40   0.019
+sp|O22264|MYB12_ARATH Transcription factor MYB12 OS=Arabidopsis ...    40   0.020
+sp|A9X4T1|CHD1_BOMMO Chromodomain-helicase-DNA-binding protein 1...    40   0.020
+sp|Q94FL7|MY120_ARATH Transcription factor MYB120 OS=Arabidopsis...    40   0.024
+sp|Q9S9K9|MYB3_ARATH Transcription factor MYB3 OS=Arabidopsis th...    40   0.024
+sp|Q5SXM2|SNPC4_HUMAN snRNA-activating protein complex subunit 4...    40   0.025
+sp|Q7XC57|MYBS3_ORYSJ Transcription factor MYBS3 OS=Oryza sativa...    40   0.025
+sp|P91868|SNPC4_CAEEL snRNA-activating protein complex subunit 4...    40   0.028
+sp|P20025|MYB38_MAIZE Myb-related protein Zm38 OS=Zea mays OX=45...    40   0.029
+sp|Q8I8V0|TAD2B_DROME Transcriptional adapter 2B OS=Drosophila m...    40   0.030
+sp|Q9P6H9|REB1_SCHPO DNA-binding protein reb1 OS=Schizosaccharom...    40   0.030
+sp|Q12457|NSI1_YEAST RNA polymerase I termination factor OS=Sacc...    40   0.033
+sp|Q9US25|HRP1_SCHPO Chromodomain helicase hrp1 OS=Schizosacchar...    40   0.033
+sp|P06144|H1_LYTPI Late histone H1 OS=Lytechinus pictus OX=7653 ...    40   0.034
+sp|P81393|MYB08_ANTMA Myb-related protein 308 OS=Antirrhinum maj...    40   0.034
+sp|Q18336|H1X_CAEEL Histone H1.X OS=Caenorhabditis elegans OX=62...    39   0.037
+sp|Q503N9|TAD2B_DANRE Transcriptional adapter 2-beta OS=Danio re...    39   0.037
+sp|Q9FY60|MYB64_ARATH Transcription factor MYB64 OS=Arabidopsis ...    39   0.038
+sp|F1B281|EBIII_PETHY MYB-like transcription factor 4 OS=Petunia...    39   0.039
+sp|P20026|MYB1_HORVU Myb-related protein Hv1 OS=Hordeum vulgare ...    39   0.039
+sp|Q8H1P9|MB3R3_ARATH Transcription factor MYB3R-3 OS=Arabidopsi...    39   0.040
+sp|B4FNX4|MYB31_MAIZE MYB31 transcription factor31 OS=Zea mays O...    39   0.040
+sp|Q7XQN1|MYB80_ORYSJ Transcription factor MYB80 OS=Oryza sativa...    39   0.041
+sp|Q9SZP1|MYB4_ARATH Transcription repressor MYB4 OS=Arabidopsis...    39   0.041
+sp|Q9FLR1|MYB29_ARATH Transcription factor MYB29 OS=Arabidopsis ...    39   0.042
+sp|Q8W1W6|MYB33_ARATH Transcription factor MYB33 OS=Arabidopsis ...    39   0.046
+sp|P21895|H1_CHITH Histone H1 OS=Chironomus thummi thummi OX=715...    39   0.046
+sp|A0A2R6PN00|MY123_ACTCC Transcription factor MYB123 OS=Actinid...    39   0.047
+sp|Q9SDS8|MYB8_ARATH Transcription factor MYB8 OS=Arabidopsis th...    39   0.049
+sp|P27898|MYBP_MAIZE Myb-related protein P OS=Zea mays OX=4577 G...    39   0.049
+sp|Q6R0C4|MYB52_ARATH Transcription factor MYB52 OS=Arabidopsis ...    39   0.051
+sp|P20024|MYB1_MAIZE Myb-related protein Zm1 OS=Zea mays OX=4577...    39   0.056
+sp|Q99284|H1S_SPHGR Histone H1, sperm (Fragments) OS=Sphaerechin...    39   0.056
+sp|P40265|H13_GLYBA Histone H1-III OS=Glyptotendipes barbipes OX...    39   0.056
+sp|P81396|MYB40_ANTMA Myb-related protein 340 OS=Antirrhinum maj...    39   0.059
+sp|P40276|H1B_CHITE Histone H1B OS=Chironomus tentans OX=7153 PE...    39   0.059
+sp|P22844|H10B_XENLA Histone H1.0-B OS=Xenopus laevis OX=8355 GN...    39   0.059
+sp|Q54TN2|MYBC_DICDI Myb-like protein C OS=Dictyostelium discoid...    39   0.061
+sp|Q75C22|H1_ASHGO Histone H1 OS=Ashbya gossypii (strain ATCC 10...    38   0.062
+sp|F4JSU0|MYB87_ARATH Transcription factor MYB87 OS=Arabidopsis ...    38   0.064
+sp|Q0JB89|MYB58_ORYSJ Probable transcription factor MYB58 OS=Ory...    38   0.068
+sp|Q9S7B2|RS2_MAIZE Protein rough sheath 2 OS=Zea mays OX=4577 G...    38   0.070
+sp|P21538|REB1_YEAST DNA-binding protein REB1 OS=Saccharomyces c...    38   0.075
+sp|Q869R9|MYBJ_DICDI Myb-like protein J OS=Dictyostelium discoid...    38   0.078
+sp|Q9FX36|MYB54_ARATH Transcription factor MYB54 OS=Arabidopsis ...    38   0.078
+sp|Q42379|MYB7_ARATH Transcription factor MYB7 OS=Arabidopsis th...    38   0.084
+sp|P53551|H1_YEAST Histone H1 OS=Saccharomyces cerevisiae (strai...    38   0.084
+sp|Q9SEZ4|MY105_ARATH Transcription factor MYB105 OS=Arabidopsis...    38   0.090
+sp|Q38851|MYB6_ARATH Transcription repressor MYB6 OS=Arabidopsis...    38   0.091
+sp|Q8IEF6|MYB1_PLAF7 Myb1 protein OS=Plasmodium falciparum (isol...    38   0.091
+sp|F4IUG9|MYO13_ARATH Myosin-13 OS=Arabidopsis thaliana OX=3702 ...    38   0.098
+sp|Q8TDI0|CHD5_HUMAN Chromodomain-helicase-DNA-binding protein 5...    38   0.099
+sp|Q9SPG5|MYB76_ARATH Transcription factor MYB76 OS=Arabidopsis ...    38   0.10 
+sp|Q9FKF9|M5162_ARATH Probable transcription factor At5g61620 OS...    38   0.10 
+sp|O14646|CHD1_HUMAN Chromodomain-helicase-DNA-binding protein 1...    38   0.10 
+sp|Q54FL0|MYBO_DICDI Myb-like protein O OS=Dictyostelium discoid...    38   0.11 
+sp|E9PZM4|CHD2_MOUSE Chromodomain-helicase-DNA-binding protein 2...    38   0.11 
+sp|Q94FL6|MY124_ARATH Transcription factor MYB124 OS=Arabidopsis...    38   0.11 
+sp|Q8LH59|MYBS1_ORYSJ Transcription factor MYBS1 OS=Oryza sativa...    38   0.11 
+sp|B8A9B2|MYBS1_ORYSI Transcription factor MYBS1 OS=Oryza sativa...    38   0.11 
+sp|Q5NBM8|CSA_ORYSJ Transcription factor CSA OS=Oryza sativa sub...    38   0.12 
+sp|Q94IB1|RS2_ORYSJ Protein rough sheath 2 homolog OS=Oryza sati...    38   0.12 
+sp|P40275|H1A_CHITE Histone H1A OS=Chironomus tentans OX=7153 PE...    38   0.12 
+sp|A0A6S6AAU0|G432_FUSSX Myb-like transcription factor OS=Fusari...    38   0.12 
+sp|Q9SGU3|MYB72_ARATH Transcription factor MYB72 OS=Arabidopsis ...    38   0.13 
+sp|Q9FJA2|TT2_ARATH Transcription factor TT2 OS=Arabidopsis thal...    38   0.13 
+sp|O49608|MYB32_ARATH Transcription factor MYB32 OS=Arabidopsis ...    38   0.13 
+sp|Q9LQX5|MY117_ARATH Transcription factor MYB117 OS=Arabidopsis...    38   0.13 
+sp|D3ZD32|CHD5_RAT Chromodomain-helicase-DNA-binding protein 5 O...    37   0.14 
+sp|P43278|H10_RAT Histone H1.0 OS=Rattus norvegicus OX=10116 GN=...    37   0.14 
+sp|A2A8L1|CHD5_MOUSE Chromodomain-helicase-DNA-binding protein 5...    37   0.14 
+sp|Q54Z40|MYBH_DICDI Myb-like protein H OS=Dictyostelium discoid...    37   0.15 
+sp|Q14839|CHD4_HUMAN Chromodomain-helicase-DNA-binding protein 4...    37   0.15 
+sp|Q55GK3|MYBM_DICDI Myb-like protein M OS=Dictyostelium discoid...    37   0.15 
+sp|Q10MB4|MYB2_ORYSJ Transcription factor MYB2 OS=Oryza sativa s...    37   0.15 
+sp|Q6PDQ2|CHD4_MOUSE Chromodomain-helicase-DNA-binding protein 4...    37   0.16 
+sp|P81395|MYB30_ANTMA Myb-related protein 330 OS=Antirrhinum maj...    37   0.16 
+sp|Q6FUG1|CEF1_CANGA Pre-mRNA-splicing factor CEF1 OS=Candida gl...    37   0.16 
+sp|Q5APG6|CEF1_CANAL Pre-mRNA-splicing factor CEF1 OS=Candida al...    37   0.16 
+sp|A0A4D6Q4S0|MYB2_CROXC Transcription factor MYB1 OS=Crocosmia ...    37   0.17 
+sp|Q9SPG2|MYB28_ARATH Transcription factor MYB28 OS=Arabidopsis ...    37   0.17 
+sp|O14139|HRP3_SCHPO Chromodomain helicase hrp3 OS=Schizosacchar...    37   0.17 
+sp|P17930|VP87_NPVOP Capsid protein p87 OS=Orgyia pseudotsugata ...    37   0.18 
+sp|A0A4D6QCQ2|MYB3_CROXC Transcription factor MYB3 OS=Crocosmia ...    37   0.19 
+sp|P40277|H1C_CHITE Histone H1C OS=Chironomus tentans OX=7153 PE...    37   0.20 
+sp|A1VE93|RS13_DESVV 30S ribosomal protein S13 OS=Desulfovibrio ...    37   0.20 
+sp|Q72CF7|RS13_DESVH 30S ribosomal protein S13 OS=Desulfovibrio ...    37   0.20 
+sp|Q9FJP2|MYB53_ARATH Transcription factor MYB53 OS=Arabidopsis ...    37   0.20 
+sp|Q54CT1|MYBN_DICDI Myb-like protein N OS=Dictyostelium discoid...    37   0.21 
+sp|O15816|MYBB_DICDI Myb-like protein B OS=Dictyostelium discoid...    37   0.21 
+sp|A0A4D6Q5I0|MYB4_CROXC Transcription factor MYB4 OS=Crocosmia ...    37   0.22 
+sp|Q0IIJ2|H10_BOVIN Histone H1.0 OS=Bos taurus OX=9913 GN=H1-0 P...    37   0.23 
+sp|B2ITN3|RS13_NOSP7 30S ribosomal protein S13 OS=Nostoc punctif...    37   0.23 
+sp|Q9LDE1|MY108_ARATH Transcription factor MYB108 OS=Arabidopsis...    36   0.24 
+sp|Q8BZ21|KAT6A_MOUSE Histone acetyltransferase KAT6A OS=Mus mus...    36   0.24 
+sp|Q08DU9|HP1B3_BOVIN Heterochromatin protein 1-binding protein ...    36   0.25 
+sp|Q9FNN6|SRM1_ARATH Transcription factor SRM1 OS=Arabidopsis th...    36   0.26 
+sp|O80931|AS1_ARATH Transcription factor AS1 OS=Arabidopsis thal...    36   0.26 
+sp|P07305|H10_HUMAN Histone H1.0 OS=Homo sapiens OX=9606 GN=H1-0...    36   0.27 
+sp|A0A178VEK7|DUO1_ARATH Transcription factor DUO1 OS=Arabidopsi...    36   0.27 
+sp|B5XHV3|IF2_STRPZ Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|Q1J5B4|IF2_STRPF Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|P0DB85|IF2_STRPQ Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|Q48RU8|IF2_STRPM Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|Q1JFG4|IF2_STRPD Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|Q1JKH1|IF2_STRPC Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|Q1JAC1|IF2_STRPB Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|Q5XAH1|IF2_STRP6 Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|P0DB84|IF2_STRP3 Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|Q99YG1|IF2_STRP1 Translation initiation factor IF-2 OS=Strept...    36   0.28 
+sp|P21990|FLAB1_TREPA Flagellin FlaB1 OS=Treponema pallidum (str...    36   0.29 
+sp|Q7XC51|MYBS2_ORYSJ Transcription factor MYBS2 OS=Oryza sativa...    36   0.29 
+sp|B8BI93|MYBS2_ORYSI Transcription factor MYBS2 OS=Oryza sativa...    36   0.29 
+sp|A2RD01|IF2_STRPG Translation initiation factor IF-2 OS=Strept...    36   0.29 
+sp|Q99281|H11E_PARAN Histone H1.1, embryonic (Fragments) OS=Pare...    36   0.29 
+sp|O97159|CHDM_DROME Chromodomain-helicase-DNA-binding protein M...    36   0.30 
+sp|Q8NZU7|IF2_STRP8 Translation initiation factor IF-2 OS=Strept...    36   0.31 
+sp|O14647|CHD2_HUMAN Chromodomain-helicase-DNA-binding protein 2...    36   0.33 
+sp|P39964|CEF1_SCHPO Pre-mRNA-splicing factor cdc5 OS=Schizosacc...    36   0.34 
+sp|O13493|MYB1_NEUCR Myb-like DNA-binding protein myb-1 OS=Neuro...    36   0.37 
+sp|Q5SSJ5|HP1B3_HUMAN Heterochromatin protein 1-binding protein ...    36   0.37 
+sp|Q4WHG0|CEF1_ASPFU Pre-mRNA-splicing factor cef1 OS=Aspergillu...    36   0.44 
+sp|P40201|CHD1_MOUSE Chromodomain-helicase-DNA-binding protein 1...    36   0.45 
+sp|A7SD85|CDC5L_NEMVE Cell division cycle 5-related protein OS=N...    36   0.45 
+sp|Q5NVN9|H10_PONAB Histone H1.0 OS=Pongo abelii OX=9601 GN=H1-0...    36   0.47 
+sp|P81391|MYB05_ANTMA Myb-related protein 305 OS=Antirrhinum maj...    36   0.48 
+sp|Q9S775|PKL_ARATH CHD3-type chromatin-remodeling factor PICKLE...    36   0.49 
+sp|P0CO95|CEF1_CRYNB Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    36   0.52 
+sp|Q5RAT5|LSM12_PONAB Protein LSM12 OS=Pongo abelii OX=9601 GN=L...    35   0.53 
+sp|Q9D0R8|LSM12_MOUSE Protein LSM12 OS=Mus musculus OX=10090 GN=...    35   0.53 
+sp|Q3MHD2|LSM12_HUMAN Protein LSM12 OS=Homo sapiens OX=9606 GN=L...    35   0.53 
+sp|Q0VCF9|LSM12_BOVIN Protein LSM12 OS=Bos taurus OX=9913 GN=LSM...    35   0.53 
+sp|Q7SAF6|CEF1_NEUCR Pre-mRNA-splicing factor cef-1 OS=Neurospor...    35   0.54 
+sp|P0CO94|CEF1_CRYNJ Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    35   0.54 
+sp|G5EBZ4|LE418_CAEEL Protein let-418 OS=Caenorhabditis elegans ...    35   0.55 
+sp|J9VW97|LIV4_CRYNH DNA-binding protein LIV4 OS=Cryptococcus ne...    35   0.58 
+sp|Q30Z65|RS13_OLEA2 30S ribosomal protein S13 OS=Oleidesulfovib...    35   0.58 
+sp|P35060|H1_TIGCA Histone H1 OS=Tigriopus californicus OX=6832 ...    35   0.58 
+sp|Q9SPG9|MYB24_ARATH Transcription factor MYB24 OS=Arabidopsis ...    35   0.59 
+sp|F4IRB4|MYB88_ARATH Transcription factor MYB88 OS=Arabidopsis ...    35   0.60 
+sp|Q2QZJ8|JAMYB_ORYSJ Transcription factor JAMYB OS=Oryza sativa...    35   0.60 
+sp|Q2KJC1|CDC5L_BOVIN Cell division cycle 5-like protein OS=Bos ...    35   0.62 
+sp|Q99459|CDC5L_HUMAN Cell division cycle 5-like protein OS=Homo...    35   0.63 
+sp|Q4P652|CEF1_USTMA Pre-mRNA-splicing factor CEF1 OS=Ustilago m...    35   0.64 
+sp|C8VBH3|CEF1_EMENI Pre-mRNA-splicing factor cef1 OS=Emericella...    35   0.68 
+sp|P15796|H12_CAEEL Histone H1.2 OS=Caenorhabditis elegans OX=62...    35   0.70 
+sp|O08837|CDC5L_RAT Cell division cycle 5-like protein OS=Rattus...    35   0.71 
+sp|Q5RBN9|TAD2B_PONAB Transcriptional adapter 2-beta OS=Pongo ab...    35   0.74 
+sp|Q86TJ2|TAD2B_HUMAN Transcriptional adapter 2-beta OS=Homo sap...    35   0.74 
+sp|Q6A068|CDC5L_MOUSE Cell division cycle 5-like protein OS=Mus ...    35   0.74 
+sp|Q52G60|CEF1_MAGO7 Pre-mRNA-splicing factor CEF1 OS=Magnaporth...    35   0.74 
+sp|Q6R053|MYB56_ARATH Transcription factor MYB56 OS=Arabidopsis ...    35   0.76 
+sp|P10922|H10_MOUSE Histone H1.0 OS=Mus musculus OX=10090 GN=H1-...    35   0.77 
+sp|B0JY40|RS13_MICAN 30S ribosomal protein S13 OS=Microcystis ae...    35   0.78 
+sp|P04197|MYB_DROME Myb protein OS=Drosophila melanogaster OX=72...    35   0.79 
+sp|P27203|H1L5_ENSMI Histone H1-like protein EM5 (Fragment) OS=E...    35   0.80 
+sp|Q6CU65|CEF1_KLULA Pre-mRNA-splicing factor CEF1 OS=Kluyveromy...    35   0.81 
+sp|Q2V9B0|MY1R1_SOLTU Transcription factor MYB1R1 OS=Solanum tub...    35   0.81 
+sp|Q9ATB4|TAD2B_ARATH Transcriptional adapter ADA2b OS=Arabidops...    35   0.86 
+sp|P82898|H1A_OLILU Histone H1A (Fragment) OS=Olisthodiscus lute...    35   0.88 
+sp|O04192|MYB25_ARATH Transcription factor MYB25 OS=Arabidopsis ...    35   0.89 
+sp|P92948|CDC5L_ARATH Cell division cycle 5-like protein OS=Arab...    35   0.89 
+sp|E0CJS3|EOBII_PETHY MYB-like transcription factor EOBII OS=Pet...    35   0.91 
+sp|B1WQT3|RS13_CROS5 30S ribosomal protein S13 OS=Crocosphaera s...    35   0.93 
+sp|Q5F3F2|MYSM1_CHICK Histone H2A deubiquitinase MYSM1 OS=Gallus...    35   0.99 
+sp|Q3MF99|RS13_TRIV2 30S ribosomal protein S13 OS=Trichormus var...    35   1.0  
+sp|Q8YPK1|RS13_NOSS1 30S ribosomal protein S13 OS=Nostoc sp. (st...    35   1.0  
+sp|F4JTF6|CHR7_ARATH CHD3-type chromatin-remodeling factor CHR7 ...    35   1.0  
+sp|Q54WZ0|CDC5L_DICDI Cell division cycle 5-like protein OS=Dict...    35   1.0  
+sp|P81394|MYB15_ANTMA Myb-related protein 315 OS=Antirrhinum maj...    35   1.1  
+sp|Q6C8F5|CEF1_YARLI Pre-mRNA-splicing factor CEF1 OS=Yarrowia l...    35   1.1  
+sp|Q69Z66|MYSM1_MOUSE Deubiquitinase MYSM1 OS=Mus musculus OX=10...    34   1.2  
+sp|L7R9Z0|EOBI_PETHY MYB-like transcription factor EOBI OS=Petun...    34   1.2  
+sp|I1S4N7|BECN1_GIBZE Vacuolar protein sorting-associated protei...    34   1.2  
+sp|P40263|H11_GLYBA Histone H1-I OS=Glyptotendipes barbipes OX=3...    34   1.3  
+sp|O13127|FLOT1_CARAU Flotillin-1 OS=Carassius auratus OX=7957 G...    34   1.3  
+sp|P15869|H1B_STRPU Histone H1-beta, late embryonic OS=Strongylo...    34   1.3  
+sp|P40278|H1E_CHITE Histone H1E OS=Chironomus tentans OX=7153 PE...    34   1.3  
+sp|O75955|FLOT1_HUMAN Flotillin-1 OS=Homo sapiens OX=9606 GN=FLO...    34   1.4  
+sp|P40266|H11_GLYSA Histone H1-I OS=Glyptotendipes salinus OX=33...    34   1.5  
+sp|O16277|H16_CAEEL Putative histone H1.6 OS=Caenorhabditis eleg...    34   1.5  
+sp|Q9Z1E1|FLOT1_RAT Flotillin-1 OS=Rattus norvegicus OX=10116 GN...    34   1.5  
+sp|P19375|H1E_STRPU Histone H1, early embryonic OS=Strongylocent...    34   1.6  
+sp|O01833|H15_CAEEL Histone H1.5 OS=Caenorhabditis elegans OX=62...    34   1.7  
+sp|Q6NRB5|TAD2B_XENLA Transcriptional adapter 2-beta OS=Xenopus ...    34   1.7  
+sp|Q12873|CHD3_HUMAN Chromodomain-helicase-DNA-binding protein 3...    34   1.7  
+sp|Q9P8F8|H1_EMENI Histone H1 OS=Emericella nidulans (strain FGS...    34   1.8  
+sp|Q7KU24|CHD1_DROME Chromodomain-helicase-DNA-binding protein 1...    34   1.9  
+sp|B7VJH7|IF2_VIBA3 Translation initiation factor IF-2 OS=Vibrio...    33   2.0  
+sp|B6ZLK2|CHD1_CHICK Chromodomain-helicase-DNA-binding protein 1...    33   2.0  
+sp|Q08DN8|FLOT1_BOVIN Flotillin-1 OS=Bos taurus OX=9913 GN=FLOT1...    33   2.0  
+sp|Q19743|H13_CAEEL Histone H1.3 OS=Caenorhabditis elegans OX=62...    33   2.3  
+sp|O08917|FLOT1_MOUSE Flotillin-1 OS=Mus musculus OX=10090 GN=Fl...    33   2.3  
+sp|P40262|H1E_CHIPA Histone H1E OS=Chironomus pallidivittatus OX...    33   2.4  
+sp|Q5ZML5|LSM12_CHICK Protein LSM12 OS=Gallus gallus OX=9031 GN=...    33   2.5  
+sp|P15868|H1_PSAMI Histone H1 (Fragment) OS=Psammechinus miliari...    33   2.6  
+sp|Q03654|CEF1_YEAST Pre-mRNA-splicing factor CEF1 OS=Saccharomy...    33   2.7  
+sp|Q6FJX6|H1_CANGA Histone H1 OS=Candida glabrata (strain ATCC 2...    33   2.7  
+sp|Q3TEA8|HP1B3_MOUSE Heterochromatin protein 1-binding protein ...    33   2.8  
+sp|Q54HP1|MYBQ_DICDI Myb-like protein Q OS=Dictyostelium discoid...    33   2.8  
+sp|Q07134|H1O_CHITH Histone H1, orphon OS=Chironomus thummi thum...    33   3.1  
+sp|P40264|H12_GLYBA Histone H1-II OS=Glyptotendipes barbipes OX=...    33   3.3  
+sp|Q8IZA3|H18_HUMAN Histone H1.8 OS=Homo sapiens OX=9606 GN=H1-8...    33   3.3  
+sp|Q10370|HMGYB_SOYBN HMG-Y-related protein B (Fragment) OS=Glyc...    33   3.7  
+sp|B3H5A8|RVE7_ARATH Protein REVEILLE 7 OS=Arabidopsis thaliana ...    33   3.9  
+sp|Q60974|NCOR1_MOUSE Nuclear receptor corepressor 1 OS=Mus musc...    33   4.0  
+sp|Q6P747|HP1B3_RAT Heterochromatin protein 1-binding protein 3 ...    33   4.3  
+sp|Q7YR41|FLOT1_PANTR Flotillin-1 OS=Pan troglodytes OX=9598 GN=...    32   4.4  
+sp|Q5TM70|FLOT1_MACMU Flotillin-1 OS=Macaca mulatta OX=9544 GN=F...    32   4.4  
+sp|P02259|H5_CHICK Histone H5 OS=Gallus gallus OX=9031 PE=1 SV=2       32   4.8  
+sp|F4J2J6|RVE7L_ARATH Protein REVEILLE 7-like OS=Arabidopsis tha...    32   4.9  
+sp|Q5RBL4|FLOT1_PONAB Flotillin-1 OS=Pongo abelii OX=9601 GN=FLO...    32   4.9  
+sp|Q8PUY4|RAD50_METMA DNA double-strand break repair Rad50 ATPas...    32   5.2  
+sp|Q5B0C0|HSP7M_EMENI Iron-sulfur cluster biogenesis chaperone, ...    32   5.9  
+sp|B7KI09|RS13_GLOC7 30S ribosomal protein S13 OS=Gloeothece cit...    32   6.6  
+sp|P06513|H5_CAIMO Histone H5 OS=Cairina moschata OX=8855 PE=2 SV=2    32   7.3  
+sp|Q7MYY7|IF2_PHOLL Translation initiation factor IF-2 OS=Photor...    32   7.5  
+sp|Q08GK9|HSPL_MULSU Protamine-like protein OS=Mullus surmuletus...    31   7.9  
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...    31   9.3  
+sp|O35231|KIFC3_MOUSE Kinesin-like protein KIFC3 OS=Mus musculus...    31   9.5  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q9FJW5|TRB2_ARATH Telomere repeat-binding factor 2 OS=Arabido...   324   4e-88
+sp|Q9M2X3|TRB3_ARATH Telomere repeat-binding factor 3 OS=Arabido...   253   1e-66
+sp|C0HIA3|SMH6_MAIZE Single myb histone 6 OS=Zea mays OX=4577 GN...   249   2e-65
+sp|Q6WLH4|SMH3_MAIZE Single myb histone 3 OS=Zea mays OX=4577 GN...   234   5e-61
+sp|Q6WLH3|SMH5_MAIZE Single myb histone 5 OS=Zea mays OX=4577 GN...   229   3e-59
+sp|Q8VWK4|TRB1_ARATH Telomere repeat-binding factor 1 OS=Arabido...   228   4e-59
+sp|B4FT40|SMH2_MAIZE Single myb histone 2 OS=Zea mays OX=4577 GN...   226   2e-58
+sp|Q8W119|SMH4_MAIZE Single myb histone 4 OS=Zea mays OX=4577 GN...   220   1e-56
+sp|F4IEY4|TRB5_ARATH Telomere repeat-binding factor 5 OS=Arabido...   214   7e-55
+sp|F4I7L1|TRB4_ARATH Telomere repeat-binding factor 4 OS=Arabido...   213   2e-54
+sp|Q6WS85|SMH1_MAIZE Single myb histone 1 OS=Zea mays OX=4577 GN...   206   2e-52
+sp|Q8BRB7|KAT6B_MOUSE Histone acetyltransferase KAT6B OS=Mus mus...   119   3e-26
+sp|Q43386|HMGYA_ARATH HMG-Y-related protein A OS=Arabidopsis tha...   109   2e-23
+sp|Q02457|TBF1_YEAST Protein TBF1 OS=Saccharomyces cerevisiae (s...    95   5e-19
+sp|Q9FYS5|HMGYA_MAIZE HMG-Y-related protein A OS=Zea mays OX=457...    91   9e-18
+sp|Q9S9Z2|MYB93_ARATH Transcription factor MYB93 OS=Arabidopsis ...    87   2e-16
+sp|Q8S9H7|DIV_ANTMA Transcription factor DIVARICATA OS=Antirrhin...    87   2e-16
+sp|Q9LDR8|MY102_ARATH Transcription factor MYB102 OS=Arabidopsis...    86   4e-16
+sp|P40267|H1_SOLPN Histone H1 OS=Solanum pennellii OX=28526 PE=2...    85   5e-16
+sp|Q24JK1|MYB96_ARATH Transcription factor MYB96 OS=Arabidopsis ...    85   9e-16
+sp|Q9M0Y5|MYB74_ARATH Transcription factor MYB74 OS=Arabidopsis ...    84   2e-15
+sp|Q9SN78|MYB94_ARATH Transcription factor MYB94 OS=Arabidopsis ...    83   2e-15
+sp|P52551|MYBB_XENLA Myb-related protein B OS=Xenopus laevis OX=...    83   3e-15
+sp|Q8GYP5|MYB60_ARATH Transcription factor MYB60 OS=Arabidopsis ...    82   5e-15
+sp|P81392|MYB06_ANTMA Myb-related protein 306 OS=Antirrhinum maj...    82   8e-15
+sp|Q9M0J5|MYB41_ARATH Transcription factor MYB41 OS=Arabidopsis ...    82   8e-15
+sp|B3VTV7|MYB60_VITVI Transcription factor MYB60 OS=Vitis vinife...    81   9e-15
+sp|Q7XBH4|MYB4_ORYSJ Transcription factor MYB4 OS=Oryza sativa s...    81   1e-14
+sp|Q00423|HMGYA_SOYBN HMG-Y-related protein A OS=Glycine max OX=...    81   1e-14
+sp|Q9SCU7|MYB30_ARATH Transcription factor MYB30 OS=Arabidopsis ...    80   2e-14
+sp|Q38850|MYB5_ARATH Transcription repressor MYB5 OS=Arabidopsis...    80   2e-14
+sp|Q08759|MYB_XENLA Transcriptional activator Myb OS=Xenopus lae...    80   3e-14
+sp|Q03237|MYBB_CHICK Myb-related protein B OS=Gallus gallus OX=9...    79   5e-14
+sp|P01103|MYB_CHICK Transcriptional activator Myb OS=Gallus gall...    79   5e-14
+sp|P46200|MYB_BOVIN Transcriptional activator Myb OS=Bos taurus ...    78   6e-14
+sp|Q9M2D9|MYB17_ARATH Transcription factor MYB17 OS=Arabidopsis ...    78   6e-14
+sp|P70371|TERF1_MOUSE Telomeric repeat-binding factor 1 OS=Mus m...    78   7e-14
+sp|P10242|MYB_HUMAN Transcriptional activator Myb OS=Homo sapien...    78   9e-14
+sp|P06876|MYB_MOUSE Transcriptional activator Myb OS=Mus musculu...    77   1e-13
+sp|P54671|H1_DICDI Histone H1 OS=Dictyostelium discoideum OX=446...    77   1e-13
+sp|K7TLS0|MYB69_MAIZE MYB transcription factor 69 OS=Zea mays OX...    77   1e-13
+sp|O55036|TERF1_CRIGR Telomeric repeat-binding factor 1 (Fragmen...    77   2e-13
+sp|O80883|MB101_ARATH Transcription factor MYB101 OS=Arabidopsis...    77   2e-13
+sp|P27806|H1_WHEAT Histone H1 OS=Triticum aestivum OX=4565 PE=2 ...    77   2e-13
+sp|P54274|TERF1_HUMAN Telomeric repeat-binding factor 1 OS=Homo ...    77   2e-13
+sp|P10243|MYBA_HUMAN Myb-related protein A OS=Homo sapiens OX=96...    77   2e-13
+sp|A0A2R6S148|MYB1_ACTCC Transcription factor MYB1 OS=Actinidia ...    77   3e-13
+sp|P51960|MYBA_MOUSE Myb-related protein A OS=Mus musculus OX=10...    76   3e-13
+sp|P52550|MYBA_CHICK Myb-related protein A OS=Gallus gallus OX=9...    76   3e-13
+sp|P23444|H1_MAIZE Histone H1 OS=Zea mays OX=4577 PE=2 SV=2            75   5e-13
+sp|P15870|H1D_STRPU Histone H1-delta OS=Strongylocentrotus purpu...    75   5e-13
+sp|P48972|MYBB_MOUSE Myb-related protein B OS=Mus musculus OX=10...    75   7e-13
+sp|P10290|MYBC_MAIZE Anthocyanin regulatory C1 protein OS=Zea ma...    74   1e-12
+sp|Q54NA6|MYBL_DICDI Myb-like protein L OS=Dictyostelium discoid...    74   1e-12
+sp|P10244|MYBB_HUMAN Myb-related protein B OS=Homo sapiens OX=96...    74   2e-12
+sp|Q05935|MYBA_XENLA Myb-related protein A OS=Xenopus laevis OX=...    71   1e-11
+sp|Q6C9I6|TAY1_YARLI telomere-associated protein 1 OS=Yarrowia l...    70   2e-11
+sp|Q9M347|TRP6_ARATH Telomere repeat-binding protein 6 OS=Arabid...    70   2e-11
+sp|Q15554|TERF2_HUMAN Telomeric repeat-binding factor 2 OS=Homo ...    70   3e-11
+sp|P26569|H12_ARATH Histone H1.2 OS=Arabidopsis thaliana OX=3702...    69   5e-11
+sp|Q9UUI6|RTF_SCHPO Replication termination factor 1 OS=Schizosa...    68   6e-11
+sp|Q6R032|MB3R5_ARATH Transcription factor MYB3R-5 OS=Arabidopsi...    68   9e-11
+sp|O35144|TERF2_MOUSE Telomeric repeat-binding factor 2 OS=Mus m...    68   1e-10
+sp|Q10274|TEB1_SCHPO Telobox protein 1 OS=Schizosaccharomyces po...    67   1e-10
+sp|Q9PU53|TERF2_CHICK Telomeric repeat-binding factor 2 OS=Gallu...    67   1e-10
+sp|P08283|H1_PEA Histone H1 OS=Pisum sativum OX=3888 PE=2 SV=1         65   8e-10
+sp|Q6E434|TRF1_SCHPO Telomeric DNA-binding factor trf1 OS=Schizo...    61   1e-08
+sp|P26568|H11_ARATH Histone H1.1 OS=Arabidopsis thaliana OX=3702...    61   1e-08
+sp|P37218|H1_SOLLC Histone H1 OS=Solanum lycopersicum OX=4081 PE...    59   4e-08
+sp|Q9M5W4|H1_EUPES Histone H1 OS=Euphorbia esula OX=3993 PE=2 SV=1     59   5e-08
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8WML3|KAT6B_MACFA Histone acetyltransferase KAT6B OS=Macaca ...   107   9e-23
+sp|Q8WYB5|KAT6B_HUMAN Histone acetyltransferase KAT6B OS=Homo sa...   106   2e-22
+sp|Q9SBF3|MYB92_ARATH Transcription factor MYB92 OS=Arabidopsis ...    82   5e-15
+sp|Q9LXF1|MYB16_ARATH Transcription factor MYB16 OS=Arabidopsis ...    80   2e-14
+sp|Q9XHV0|MYB80_ARATH Transcription factor MYB80 OS=Arabidopsis ...    79   4e-14
+sp|Q9SJX8|MYB14_ARATH Transcription factor MYB14 OS=Arabidopsis ...    79   4e-14
+sp|Q9LE63|MY106_ARATH Transcription factor MYB106 OS=Arabidopsis...    79   5e-14
+sp|O49782|MYB51_ARATH Transcription factor MYB51 OS=Arabidopsis ...    78   7e-14
+sp|Q9C9C8|MY122_ARATH Transcription factor MYB122 OS=Arabidopsis...    78   9e-14
+sp|Q6K1S6|MYB30_ORYSJ Transcription factor MYB30 OS=Oryza sativa...    77   2e-13
+sp|Q9LTC4|MYB15_ARATH Transcription factor MYB15 OS=Arabidopsis ...    76   3e-13
+sp|Q9FJP2|MYB53_ARATH Transcription factor MYB53 OS=Arabidopsis ...    75   5e-13
+sp|Q9FJ07|MY111_ARATH Transcription factor MYB111 OS=Arabidopsis...    75   5e-13
+sp|Q9FLR1|MYB29_ARATH Transcription factor MYB29 OS=Arabidopsis ...    75   6e-13
+sp|Q4G2I2|MYBY1_SORBI Transcription factor Y1 OS=Sorghum bicolor...    75   7e-13
+sp|Q9LZK4|MYB11_ARATH Transcription factor MYB11 OS=Arabidopsis ...    75   8e-13
+sp|Q9LSI7|MYB35_ARATH Transcription factor MYB35 OS=Arabidopsis ...    75   9e-13
+sp|O64399|MYB34_ARATH Transcription factor MYB34 OS=Arabidopsis ...    75   9e-13
+sp|Q8GWP0|MYB39_ARATH Transcription factor MYB39 OS=Arabidopsis ...    75   9e-13
+sp|Q0JIC2|GAMYB_ORYSJ Transcription factor GAMYB OS=Oryza sativa...    74   1e-12
+sp|Q9S9K9|MYB3_ARATH Transcription factor MYB3 OS=Arabidopsis th...    74   1e-12
+sp|A2WW87|GAM1_ORYSI Transcription factor GAMYB OS=Oryza sativa ...    74   1e-12
+sp|P81393|MYB08_ANTMA Myb-related protein 308 OS=Antirrhinum maj...    74   2e-12
+sp|O22264|MYB12_ARATH Transcription factor MYB12 OS=Arabidopsis ...    74   2e-12
+sp|Q9SPG2|MYB28_ARATH Transcription factor MYB28 OS=Arabidopsis ...    73   2e-12
+sp|Q9SPG5|MYB76_ARATH Transcription factor MYB76 OS=Arabidopsis ...    73   3e-12
+sp|Q7XQN1|MYB80_ORYSJ Transcription factor MYB80 OS=Oryza sativa...    73   4e-12
+sp|Q9FR97|MYB65_ARATH Transcription factor MYB65 OS=Arabidopsis ...    72   5e-12
+sp|Q9SDS8|MYB8_ARATH Transcription factor MYB8 OS=Arabidopsis th...    72   5e-12
+sp|P20024|MYB1_MAIZE Myb-related protein Zm1 OS=Zea mays OX=4577...    72   7e-12
+sp|Q9LNC9|MYB13_ARATH Transcription factor MYB13 OS=Arabidopsis ...    72   8e-12
+sp|Q9ZTC3|MYB90_ARATH Transcription factor MYB90 OS=Arabidopsis ...    72   8e-12
+sp|Q38851|MYB6_ARATH Transcription repressor MYB6 OS=Arabidopsis...    71   9e-12
+sp|Q9FNV9|MY113_ARATH Transcription factor MYB113 OS=Arabidopsis...    71   1e-11
+sp|Q96276|MYB23_ARATH Transcription factor MYB23 OS=Arabidopsis ...    71   1e-11
+sp|P20025|MYB38_MAIZE Myb-related protein Zm38 OS=Zea mays OX=45...    71   1e-11
+sp|Q9SEI0|WER_ARATH Transcription factor WER OS=Arabidopsis thal...    71   1e-11
+sp|O49608|MYB32_ARATH Transcription factor MYB32 OS=Arabidopsis ...    70   1e-11
+sp|Q9SZP1|MYB4_ARATH Transcription repressor MYB4 OS=Arabidopsis...    70   2e-11
+sp|F4JSU0|MYB87_ARATH Transcription factor MYB87 OS=Arabidopsis ...    70   3e-11
+sp|Q9FE25|MYB75_ARATH Transcription factor MYB75 OS=Arabidopsis ...    70   3e-11
+sp|K7UPS5|MYB42_MAIZE Myb transcription factor 42 OS=Zea mays OX...    70   3e-11
+sp|Q94FL7|MY120_ARATH Transcription factor MYB120 OS=Arabidopsis...    69   3e-11
+sp|A0A4D6Q4S0|MYB2_CROXC Transcription factor MYB1 OS=Crocosmia ...    69   4e-11
+sp|Q8W1W6|MYB33_ARATH Transcription factor MYB33 OS=Arabidopsis ...    69   4e-11
+sp|Q9S773|MYB97_ARATH Transcription factor MYB97 OS=Arabidopsis ...    69   4e-11
+sp|F1B281|EBIII_PETHY MYB-like transcription factor 4 OS=Petunia...    69   4e-11
+sp|Q9SGU3|MYB72_ARATH Transcription factor MYB72 OS=Arabidopsis ...    69   4e-11
+sp|P20026|MYB1_HORVU Myb-related protein Hv1 OS=Hordeum vulgare ...    69   4e-11
+sp|Q42379|MYB7_ARATH Transcription factor MYB7 OS=Arabidopsis th...    69   4e-11
+sp|P81394|MYB15_ANTMA Myb-related protein 315 OS=Antirrhinum maj...    69   5e-11
+sp|P81395|MYB30_ANTMA Myb-related protein 330 OS=Antirrhinum maj...    69   5e-11
+sp|Q9FGY3|MYB78_ARATH Transcription factor MYB78 OS=Arabidopsis ...    68   6e-11
+sp|B4FNX4|MYB31_MAIZE MYB31 transcription factor31 OS=Zea mays O...    68   9e-11
+sp|Q9SPG3|MYB26_ARATH Transcription factor MYB26 OS=Arabidopsis ...    68   9e-11
+sp|P27900|GL1_ARATH Trichome differentiation protein GL1 OS=Arab...    68   1e-10
+sp|Q947R4|GL1_ARALY Trichome differentiation protein GL1 OS=Arab...    68   1e-10
+sp|Q9FKL2|MYB36_ARATH Transcription factor MYB36 OS=Arabidopsis ...    68   1e-10
+sp|Q50EX6|ODO1_PETHY MYB-like transcription factor ODO1 OS=Petun...    68   1e-10
+sp|P27898|MYBP_MAIZE Myb-related protein P OS=Zea mays OX=4577 G...    68   1e-10
+sp|Q9FJA2|TT2_ARATH Transcription factor TT2 OS=Arabidopsis thal...    68   1e-10
+sp|Q9SJL7|RAX2_ARATH Transcription factor RAX2 OS=Arabidopsis th...    68   1e-10
+sp|Q8LPH6|MYB86_ARATH Transcription factor MYB86 OS=Arabidopsis ...    68   1e-10
+sp|A0A4D6Q411|MYB1_CROXC Transcription factor MYB1 OS=Crocosmia ...    67   2e-10
+sp|M1ETK3|MYB1W_BETVU Transcription factor MYB1 OS=Beta vulgaris...    67   2e-10
+sp|Q9S7G7|MB3R1_ARATH Transcription factor MYB3R-1 OS=Arabidopsi...    67   2e-10
+sp|M1ETA5|MYB1R_BETVU Transcription factor MYB1 OS=Beta vulgaris...    67   2e-10
+sp|A0A4D6Q5I0|MYB4_CROXC Transcription factor MYB4 OS=Crocosmia ...    67   2e-10
+sp|A0A4D6QCQ2|MYB3_CROXC Transcription factor MYB3 OS=Crocosmia ...    67   2e-10
+sp|Q9FG68|RAX1_ARATH Transcription factor RAX1 OS=Arabidopsis th...    67   2e-10
+sp|Q9S7L2|MYB98_ARATH Transcription factor MYB98 OS=Arabidopsis ...    67   2e-10
+sp|Q8BZ21|KAT6A_MOUSE Histone acetyltransferase KAT6A OS=Mus mus...    67   2e-10
+sp|Q94FL9|MB3R4_ARATH Transcription factor MYB3R-4 OS=Arabidopsi...    67   3e-10
+sp|Q9FNV8|MY114_ARATH Transcription factor MYB114 OS=Arabidopsis...    66   3e-10
+sp|Q9LDE1|MY108_ARATH Transcription factor MYB108 OS=Arabidopsis...    66   3e-10
+sp|Q0JHU7|MB3R2_ORYSJ Transcription factor MYB3R-2 OS=Oryza sati...    66   3e-10
+sp|O23160|MYB73_ARATH Transcription factor MYB73 OS=Arabidopsis ...    66   3e-10
+sp|Q9C7U7|MYB20_ARATH Transcription factor MYB20 OS=Arabidopsis ...    66   4e-10
+sp|Q10MB4|MYB2_ORYSJ Transcription factor MYB2 OS=Oryza sativa s...    66   4e-10
+sp|Q6R0A6|MYB63_ARATH Transcription factor MYB63 OS=Arabidopsis ...    65   5e-10
+sp|P20027|MYB3_HORVU Myb-related protein Hv33 OS=Hordeum vulgare...    65   6e-10
+sp|Q9LTF7|MYB82_ARATH Transcription factor MYB82 OS=Arabidopsis ...    65   6e-10
+sp|A0A2R6PN00|MY123_ACTCC Transcription factor MYB123 OS=Actinid...    65   6e-10
+sp|Q2QZJ8|JAMYB_ORYSJ Transcription factor JAMYB OS=Oryza sativa...    65   7e-10
+sp|P81396|MYB40_ANTMA Myb-related protein 340 OS=Antirrhinum maj...    65   8e-10
+sp|Q9LTV4|MYB10_ARATH Transcription factor MYB10 OS=Arabidopsis ...    65   1e-09
+sp|P81391|MYB05_ANTMA Myb-related protein 305 OS=Antirrhinum maj...    65   1e-09
+sp|Q5TKR9|KAT6A_RAT Histone acetyltransferase KAT6A OS=Rattus no...    64   1e-09
+sp|Q9M2Y9|RAX3_ARATH Transcription factor RAX3 OS=Arabidopsis th...    64   1e-09
+sp|P01104|MYB_AVIMB Transforming protein Myb OS=Avian myeloblast...    64   1e-09
+sp|Q9LVW4|MY118_ARATH Transcription factor MYB118 OS=Arabidopsis...    64   1e-09
+sp|Q9SPG9|MYB24_ARATH Transcription factor MYB24 OS=Arabidopsis ...    64   2e-09
+sp|P34127|MYBA_DICDI Myb-like protein A OS=Dictyostelium discoid...    63   2e-09
+sp|Q4JL76|MYBA2_ORYSJ Myb-related protein MYBAS2 OS=Oryza sativa...    63   2e-09
+sp|P80073|MYB2_PHYPA Myb-related protein Pp2 OS=Physcomitrium pa...    63   2e-09
+sp|Q9LVS0|KUA1_ARATH Transcription factor KUA1 OS=Arabidopsis th...    63   2e-09
+sp|Q9LXV2|MYB46_ARATH Transcription factor MYB46 OS=Arabidopsis ...    63   4e-09
+sp|Q9C9G7|MYB62_ARATH Transcription factor MYB62 OS=Arabidopsis ...    63   4e-09
+sp|Q9LK95|MYB21_ARATH Transcription factor MYB21 OS=Arabidopsis ...    62   4e-09
+sp|E0CJS3|EOBII_PETHY MYB-like transcription factor EOBII OS=Pet...    62   4e-09
+sp|Q92794|KAT6A_HUMAN Histone acetyltransferase KAT6A OS=Homo sa...    62   4e-09
+sp|Q8VZQ2|MYB61_ARATH Transcription factor MYB61 OS=Arabidopsis ...    62   5e-09
+sp|Q9SSA1|MYB57_ARATH Transcription factor MYB57 OS=Arabidopsis ...    62   7e-09
+sp|Q8H1P9|MB3R3_ARATH Transcription factor MYB3R-3 OS=Arabidopsi...    62   7e-09
+sp|Q9C6U1|MYB83_ARATH Transcription factor MYB83 OS=Arabidopsis ...    62   8e-09
+sp|Q9SN12|MYB77_ARATH Transcription factor MYB77 OS=Arabidopsis ...    62   8e-09
+sp|Q53NK6|MYBA1_ORYSJ Myb-related protein MYBAS1 OS=Oryza sativa...    62   8e-09
+sp|Q9FFY9|TRP4_ARATH Telomere repeat-binding protein 4 OS=Arabid...    62   8e-09
+sp|Q9LL45|TBP1_ORYSJ Telomere-binding protein 1 OS=Oryza sativa ...    62   9e-09
+sp|Q0JB89|MYB58_ORYSJ Probable transcription factor MYB58 OS=Ory...    61   9e-09
+sp|Q9FDW1|MYB44_ARATH Transcription factor MYB44 OS=Arabidopsis ...    61   1e-08
+sp|Q9LX82|MYB48_ARATH Transcription factor MYB48 OS=Arabidopsis ...    61   1e-08
+sp|L7R9Z0|EOBI_PETHY MYB-like transcription factor EOBI OS=Petun...    61   1e-08
+sp|Q9SA47|MYB58_ARATH Transcription factor MYB58 OS=Arabidopsis ...    60   2e-08
+sp|Q10370|HMGYB_SOYBN HMG-Y-related protein B (Fragment) OS=Glyc...    60   2e-08
+sp|P10771|H24_CAEEL Histone 24 OS=Caenorhabditis elegans OX=6239...    60   2e-08
+sp|Q9C7B1|TRP3_ARATH Telomere repeat-binding protein 3 OS=Arabid...    60   2e-08
+sp|Q9SNB9|TRP2_ARATH Telomere repeat-binding protein 2 OS=Arabid...    60   2e-08
+sp|A0A178VEK7|DUO1_ARATH Transcription factor DUO1 OS=Arabidopsi...    60   3e-08
+sp|Q8L7L8|TRP1_ARATH Telomere repeat-binding protein 1 OS=Arabid...    60   3e-08
+sp|Q7XC57|MYBS3_ORYSJ Transcription factor MYBS3 OS=Oryza sativa...    59   4e-08
+sp|Q9FIM4|MY119_ARATH Transcription factor MYB119 OS=Arabidopsis...    59   5e-08
+sp|B0G0Y5|MYBAA_DICDI Myb-like protein AA OS=Dictyostelium disco...    59   5e-08
+sp|Q9FKF9|M5162_ARATH Probable transcription factor At5g61620 OS...    58   6e-08
+sp|Q9FX36|MYB54_ARATH Transcription factor MYB54 OS=Arabidopsis ...    58   6e-08
+sp|Q1PDP9|MY115_ARATH Transcription factor MYB115 OS=Arabidopsis...    58   9e-08
+sp|Q4JL84|MYB59_ARATH Transcription factor MYB59 OS=Arabidopsis ...    58   9e-08
+sp|Q9SPN3|MB3R2_ARATH Transcription factor MYB3R-2 OS=Arabidopsi...    58   1e-07
+sp|Q8LH59|MYBS1_ORYSJ Transcription factor MYBS1 OS=Oryza sativa...    58   1e-07
+sp|B8A9B2|MYBS1_ORYSI Transcription factor MYBS1 OS=Oryza sativa...    58   1e-07
+sp|Q6R0C4|MYB52_ARATH Transcription factor MYB52 OS=Arabidopsis ...    58   1e-07
+sp|Q42575|MYB1_ARATH Transcription factor MYB1 OS=Arabidopsis th...    57   1e-07
+sp|Q05950|REB1_KLULA DNA-binding protein REB1 OS=Kluyveromyces l...    57   2e-07
+sp|Q6R0E3|TRP5_ARATH Telomere repeat-binding protein 5 OS=Arabid...    57   2e-07
+sp|Q9UV33|H1_ASCIM Histone H1 OS=Ascobolus immersus OX=5191 PE=3...    56   3e-07
+sp|P22035|BAS1_YEAST Myb-like DNA-binding protein BAS1 OS=Saccha...    56   4e-07
+sp|P91868|SNPC4_CAEEL snRNA-activating protein complex subunit 4...    56   4e-07
+sp|Q9FY60|MYB64_ARATH Transcription factor MYB64 OS=Arabidopsis ...    56   4e-07
+sp|Q08865|H12_VOLCA Histone H1-II OS=Volvox carteri OX=3067 GN=H...    56   4e-07
+sp|P06144|H1_LYTPI Late histone H1 OS=Lytechinus pictus OX=7653 ...    55   5e-07
+sp|Q9SEZ4|MY105_ARATH Transcription factor MYB105 OS=Arabidopsis...    55   5e-07
+sp|Q5NBM8|CSA_ORYSJ Transcription factor CSA OS=Oryza sativa sub...    55   7e-07
+sp|Q9LQX5|MY117_ARATH Transcription factor MYB117 OS=Arabidopsis...    55   9e-07
+sp|Q9FNN6|SRM1_ARATH Transcription factor SRM1 OS=Arabidopsis th...    54   1e-06
+sp|Q869R9|MYBJ_DICDI Myb-like protein J OS=Dictyostelium discoid...    54   1e-06
+sp|Q54TN2|MYBC_DICDI Myb-like protein C OS=Dictyostelium discoid...    54   2e-06
+sp|Q9M0K4|LAF1_ARATH Transcription factor LAF1 OS=Arabidopsis th...    54   2e-06
+sp|Q0CRP6|AZPA6_ASPTN Transcriptional regulator ATEG_03638 OS=As...    53   2e-06
+sp|P22845|H10A_XENLA Histone H1.0-A OS=Xenopus laevis OX=8355 GN...    53   3e-06
+sp|P04197|MYB_DROME Myb protein OS=Drosophila melanogaster OX=72...    53   4e-06
+sp|Q6R053|MYB56_ARATH Transcription factor MYB56 OS=Arabidopsis ...    53   4e-06
+sp|Q54CT1|MYBN_DICDI Myb-like protein N OS=Dictyostelium discoid...    53   4e-06
+sp|Q2V9B0|MY1R1_SOLTU Transcription factor MYB1R1 OS=Solanum tub...    53   4e-06
+sp|Q9SCP1|MYB27_ARATH Transcription factor MYB27 OS=Arabidopsis ...    52   4e-06
+sp|Q7XC51|MYBS2_ORYSJ Transcription factor MYBS2 OS=Oryza sativa...    52   4e-06
+sp|B8BI93|MYBS2_ORYSI Transcription factor MYBS2 OS=Oryza sativa...    52   4e-06
+sp|Q18336|H1X_CAEEL Histone H1.X OS=Caenorhabditis elegans OX=62...    52   7e-06
+sp|O04192|MYB25_ARATH Transcription factor MYB25 OS=Arabidopsis ...    52   7e-06
+sp|O13493|MYB1_NEUCR Myb-like DNA-binding protein myb-1 OS=Neuro...    52   7e-06
+sp|Q12457|NSI1_YEAST RNA polymerase I termination factor OS=Sacc...    52   8e-06
+sp|P43278|H10_RAT Histone H1.0 OS=Rattus norvegicus OX=10116 GN=...    52   9e-06
+sp|Q5SXM2|SNPC4_HUMAN snRNA-activating protein complex subunit 4...    51   1e-05
+sp|Q6NVM0|H10_XENTR Histone H1.0 OS=Xenopus tropicalis OX=8364 G...    51   1e-05
+sp|P40277|H1C_CHITE Histone H1C OS=Chironomus tentans OX=7153 PE...    51   1e-05
+sp|A0A6S6AAU0|G432_FUSSX Myb-like transcription factor OS=Fusari...    51   1e-05
+sp|Q8BP86|SNPC4_MOUSE snRNA-activating protein complex subunit 4...    51   1e-05
+sp|Q54HP1|MYBQ_DICDI Myb-like protein Q OS=Dictyostelium discoid...    51   1e-05
+sp|P21538|REB1_YEAST DNA-binding protein REB1 OS=Saccharomyces c...    51   1e-05
+sp|Q9SM27|MY104_ARATH Transcription factor MYB104 OS=Arabidopsis...    51   1e-05
+sp|P82898|H1A_OLILU Histone H1A (Fragment) OS=Olisthodiscus lute...    50   2e-05
+sp|P40276|H1B_CHITE Histone H1B OS=Chironomus tentans OX=7153 PE...    50   2e-05
+sp|Q9P6H9|REB1_SCHPO DNA-binding protein reb1 OS=Schizosaccharom...    50   2e-05
+sp|Q8I8V0|TAD2B_DROME Transcriptional adapter 2B OS=Drosophila m...    50   2e-05
+sp|A0A1U8QVN4|BASR_EMENI Myb-like transcriptional regulator basR...    50   2e-05
+sp|P21895|H1_CHITH Histone H1 OS=Chironomus thummi thummi OX=715...    50   3e-05
+sp|P22844|H10B_XENLA Histone H1.0-B OS=Xenopus laevis OX=8355 GN...    50   3e-05
+sp|P40265|H13_GLYBA Histone H1-III OS=Glyptotendipes barbipes OX...    50   3e-05
+sp|P53551|H1_YEAST Histone H1 OS=Saccharomyces cerevisiae (strai...    49   4e-05
+sp|Q94IB1|RS2_ORYSJ Protein rough sheath 2 homolog OS=Oryza sati...    49   5e-05
+sp|Q08864|H11_VOLCA Histone H1-I OS=Volvox carteri OX=3067 GN=H1...    49   5e-05
+sp|Q5AHJ5|TBF1_CANAL Transcription factor TBF1 OS=Candida albica...    49   6e-05
+sp|Q0IIJ2|H10_BOVIN Histone H1.0 OS=Bos taurus OX=9913 GN=H1-0 P...    48   6e-05
+sp|Q9S7B2|RS2_MAIZE Protein rough sheath 2 OS=Zea mays OX=4577 G...    48   1e-04
+sp|Q55GK3|MYBM_DICDI Myb-like protein M OS=Dictyostelium discoid...    48   1e-04
+sp|Q94FL6|MY124_ARATH Transcription factor MYB124 OS=Arabidopsis...    48   1e-04
+sp|O16277|H16_CAEEL Putative histone H1.6 OS=Caenorhabditis eleg...    48   1e-04
+sp|Q7TPQ3|SHPRH_MOUSE E3 ubiquitin-protein ligase SHPRH OS=Mus m...    48   1e-04
+sp|P35060|H1_TIGCA Histone H1 OS=Tigriopus californicus OX=6832 ...    48   1e-04
+sp|Q503N9|TAD2B_DANRE Transcriptional adapter 2-beta OS=Danio re...    47   1e-04
+sp|B3H5A8|RVE7_ARATH Protein REVEILLE 7 OS=Arabidopsis thaliana ...    47   1e-04
+sp|P15796|H12_CAEEL Histone H1.2 OS=Caenorhabditis elegans OX=62...    47   1e-04
+sp|O80931|AS1_ARATH Transcription factor AS1 OS=Arabidopsis thal...    47   2e-04
+sp|F4J2J6|RVE7L_ARATH Protein REVEILLE 7-like OS=Arabidopsis tha...    47   2e-04
+sp|O15816|MYBB_DICDI Myb-like protein B OS=Dictyostelium discoid...    46   2e-04
+sp|P07305|H10_HUMAN Histone H1.0 OS=Homo sapiens OX=9606 GN=H1-0...    46   2e-04
+sp|P19375|H1E_STRPU Histone H1, early embryonic OS=Strongylocent...    46   2e-04
+sp|A0A1U8QIH0|CICD_EMENI Transcription factor cicD OS=Emericella...    46   3e-04
+sp|Q19743|H13_CAEEL Histone H1.3 OS=Caenorhabditis elegans OX=62...    46   4e-04
+sp|Q99281|H11E_PARAN Histone H1.1, embryonic (Fragments) OS=Pare...    46   4e-04
+sp|Q4P652|CEF1_USTMA Pre-mRNA-splicing factor CEF1 OS=Ustilago m...    46   4e-04
+sp|Q54Z40|MYBH_DICDI Myb-like protein H OS=Dictyostelium discoid...    46   4e-04
+sp|Q54FL0|MYBO_DICDI Myb-like protein O OS=Dictyostelium discoid...    46   4e-04
+sp|S8GIB3|BFD1_TOXGM Bradyzoite-formation deficient protein 1 OS...    46   5e-04
+sp|Q8IEF6|MYB1_PLAF7 Myb1 protein OS=Plasmodium falciparum (isol...    45   5e-04
+sp|Q5NVN9|H10_PONAB Histone H1.0 OS=Pongo abelii OX=9601 GN=H1-0...    45   5e-04
+sp|P15869|H1B_STRPU Histone H1-beta, late embryonic OS=Strongylo...    45   5e-04
+sp|Q4WHG0|CEF1_ASPFU Pre-mRNA-splicing factor cef1 OS=Aspergillu...    45   6e-04
+sp|F4IRB4|MYB88_ARATH Transcription factor MYB88 OS=Arabidopsis ...    45   7e-04
+sp|P40275|H1A_CHITE Histone H1A OS=Chironomus tentans OX=7153 PE...    45   7e-04
+sp|P40266|H11_GLYSA Histone H1-I OS=Glyptotendipes salinus OX=33...    45   8e-04
+sp|Q6NRB5|TAD2B_XENLA Transcriptional adapter 2-beta OS=Xenopus ...    45   8e-04
+sp|Q9Y222|DMTF1_HUMAN Cyclin-D-binding Myb-like transcription fa...    45   9e-04
+sp|P32657|CHD1_YEAST Chromo domain-containing protein 1 OS=Sacch...    45   0.001
+sp|P40278|H1E_CHITE Histone H1E OS=Chironomus tentans OX=7153 PE...    45   0.001
+sp|Q7SAF6|CEF1_NEUCR Pre-mRNA-splicing factor cef-1 OS=Neurospor...    45   0.001
+sp|O01833|H15_CAEEL Histone H1.5 OS=Caenorhabditis elegans OX=62...    44   0.001
+sp|P40263|H11_GLYBA Histone H1-I OS=Glyptotendipes barbipes OX=3...    44   0.001
+sp|Q5RBN9|TAD2B_PONAB Transcriptional adapter 2-beta OS=Pongo ab...    44   0.001
+sp|Q86TJ2|TAD2B_HUMAN Transcriptional adapter 2-beta OS=Homo sap...    44   0.001
+sp|P40262|H1E_CHIPA Histone H1E OS=Chironomus pallidivittatus OX...    44   0.001
+sp|Q5APG6|CEF1_CANAL Pre-mRNA-splicing factor CEF1 OS=Candida al...    44   0.002
+sp|Q8J0U2|H1_NEUCR Histone H1 OS=Neurospora crassa (strain ATCC ...    44   0.002
+sp|Q75C22|H1_ASHGO Histone H1 OS=Ashbya gossypii (strain ATCC 10...    44   0.002
+sp|Q9ATB4|TAD2B_ARATH Transcriptional adapter ADA2b OS=Arabidops...    44   0.002
+sp|P82899|H1B_OLILU Histone H1B (Fragment) OS=Olisthodiscus lute...    44   0.002
+sp|P40264|H12_GLYBA Histone H1-II OS=Glyptotendipes barbipes OX=...    44   0.002
+sp|P06895|H1B_PLADU Histone H1B, sperm OS=Platynereis dumerilii ...    43   0.002
+sp|P0CO98|EAF1_CRYNJ Chromatin modification-related protein EAF1...    43   0.002
+sp|P0CO99|EAF1_CRYNB Chromatin modification-related protein EAF1...    43   0.002
+sp|P02258|H5_ANSAN Histone H5 OS=Anser anser anser OX=8844 PE=1 ...    43   0.002
+sp|Q99459|CDC5L_HUMAN Cell division cycle 5-like protein OS=Homo...    43   0.002
+sp|Q2KJC1|CDC5L_BOVIN Cell division cycle 5-like protein OS=Bos ...    43   0.002
+sp|J9VW97|LIV4_CRYNH DNA-binding protein LIV4 OS=Cryptococcus ne...    43   0.003
+sp|P10922|H10_MOUSE Histone H1.0 OS=Mus musculus OX=10090 GN=H1-...    43   0.003
+sp|O08837|CDC5L_RAT Cell division cycle 5-like protein OS=Rattus...    43   0.003
+sp|Q07134|H1O_CHITH Histone H1, orphon OS=Chironomus thummi thum...    43   0.003
+sp|P06513|H5_CAIMO Histone H5 OS=Cairina moschata OX=8855 PE=2 SV=2    43   0.003
+sp|P39964|CEF1_SCHPO Pre-mRNA-splicing factor cdc5 OS=Schizosacc...    43   0.003
+sp|Q6A068|CDC5L_MOUSE Cell division cycle 5-like protein OS=Mus ...    43   0.003
+sp|Q03654|CEF1_YEAST Pre-mRNA-splicing factor CEF1 OS=Saccharomy...    43   0.004
+sp|Q9P8F8|H1_EMENI Histone H1 OS=Emericella nidulans (strain FGS...    43   0.004
+sp|P87233|PHF1_SCHPO SWM histone demethylase complex subunit phf...    42   0.004
+sp|Q756C3|CEF1_ASHGO Pre-mRNA-splicing factor CEF1 OS=Ashbya gos...    42   0.004
+sp|C8VBH3|CEF1_EMENI Pre-mRNA-splicing factor cef1 OS=Emericella...    42   0.005
+sp|Q6CU65|CEF1_KLULA Pre-mRNA-splicing factor CEF1 OS=Kluyveromy...    42   0.005
+sp|P27203|H1L5_ENSMI Histone H1-like protein EM5 (Fragment) OS=E...    42   0.005
+sp|Q16760|DGKD_HUMAN Diacylglycerol kinase delta OS=Homo sapiens...    42   0.006
+sp|P0CO94|CEF1_CRYNJ Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    42   0.006
+sp|Q6C8F5|CEF1_YARLI Pre-mRNA-splicing factor CEF1 OS=Yarrowia l...    42   0.006
+sp|Q6FUG1|CEF1_CANGA Pre-mRNA-splicing factor CEF1 OS=Candida gl...    42   0.007
+sp|E9PZM4|CHD2_MOUSE Chromodomain-helicase-DNA-binding protein 2...    42   0.007
+sp|P0CO95|CEF1_CRYNB Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    42   0.007
+sp|A7SD85|CDC5L_NEMVE Cell division cycle 5-related protein OS=N...    42   0.007
+sp|Q9FX53|TGT1_ARATH Trihelix transcription factor GT-1 OS=Arabi...    41   0.008
+sp|Q149N8|SHPRH_HUMAN E3 ubiquitin-protein ligase SHPRH OS=Homo ...    41   0.008
+sp|O14646|CHD1_HUMAN Chromodomain-helicase-DNA-binding protein 1...    41   0.008
+sp|P02259|H5_CHICK Histone H5 OS=Gallus gallus OX=9031 PE=1 SV=2       41   0.008
+sp|O17536|H14_CAEEL Histone H1.4 OS=Caenorhabditis elegans OX=62...    41   0.009
+sp|A0A0G3VTN5|LHY_PETHY Protein LATE ELONGATED HYPOCOTYL OS=Petu...    41   0.009
+sp|Q5F3F2|MYSM1_CHICK Histone H2A deubiquitinase MYSM1 OS=Gallus...    41   0.009
+sp|F4KBP5|CHR4_ARATH Protein CHROMATIN REMODELING 4 OS=Arabidops...    41   0.009
+sp|Q5ZJF3|TAD2A_CHICK Transcriptional adapter 2-alpha OS=Gallus ...    41   0.011
+sp|Q8CE22|DMTF1_MOUSE Cyclin-D-binding Myb-like transcription fa...    41   0.011
+sp|Q66HG1|DMTF1_RAT Cyclin-D-binding Myb-like transcription fact...    41   0.012
+sp|P06894|H1A_PLADU Histone H1A, sperm OS=Platynereis dumerilii ...    41   0.014
+sp|O14647|CHD2_HUMAN Chromodomain-helicase-DNA-binding protein 2...    41   0.014
+sp|P92948|CDC5L_ARATH Cell division cycle 5-like protein OS=Arab...    41   0.015
+sp|Q54HX6|MYBI_DICDI Myb-like protein I OS=Dictyostelium discoid...    41   0.015
+sp|Q6DG03|DMTF1_DANRE Cyclin-D-binding Myb-like transcription fa...    40   0.018
+sp|P07796|H1G_STRPU Histone H1-gamma, late OS=Strongylocentrotus...    40   0.019
+sp|Q08DU9|HP1B3_BOVIN Heterochromatin protein 1-binding protein ...    40   0.020
+sp|O01761|UNC89_CAEEL Muscle M-line assembly protein unc-89 OS=C...    40   0.020
+sp|Q52G60|CEF1_MAGO7 Pre-mRNA-splicing factor CEF1 OS=Magnaporth...    40   0.020
+sp|Q99284|H1S_SPHGR Histone H1, sperm (Fragments) OS=Sphaerechin...    40   0.021
+sp|Q6FJX6|H1_CANGA Histone H1 OS=Candida glabrata (strain ATCC 2...    40   0.023
+sp|P15868|H1_PSAMI Histone H1 (Fragment) OS=Psammechinus miliari...    40   0.024
+sp|F4JTF6|CHR7_ARATH CHD3-type chromatin-remodeling factor CHR7 ...    40   0.024
+sp|Q1LX29|TERB1_DANRE Telomere repeats-binding bouquet formation...    40   0.028
+sp|F4IV99|CHR5_ARATH Protein CHROMATIN REMODELING 5 OS=Arabidops...    39   0.039
+sp|Q8NA31|TERB1_HUMAN Telomere repeats-binding bouquet formation...    39   0.040
+sp|Q9S775|PKL_ARATH CHD3-type chromatin-remodeling factor PICKLE...    39   0.045
+sp|Q6BLT3|CEF1_DEBHA Pre-mRNA-splicing factor CEF1 OS=Debaryomyc...    39   0.051
+sp|Q54WZ0|CDC5L_DICDI Cell division cycle 5-like protein OS=Dict...    39   0.054
+sp|Q08GK9|HSPL_MULSU Protamine-like protein OS=Mullus surmuletus...    39   0.055
+sp|Q5SSJ5|HP1B3_HUMAN Heterochromatin protein 1-binding protein ...    39   0.058
+sp|P79005|TAZ1_SCHPO Telomere length regulator taz1 OS=Schizosac...    38   0.063
+sp|P40201|CHD1_MOUSE Chromodomain-helicase-DNA-binding protein 1...    38   0.064
+sp|Q6P747|HP1B3_RAT Heterochromatin protein 1-binding protein 3 ...    38   0.064
+sp|Q9US25|HRP1_SCHPO Chromodomain helicase hrp1 OS=Schizosacchar...    38   0.070
+sp|Q94972|H13_DROVI Histone H1.3 OS=Drosophila virilis OX=7244 G...    38   0.079
+sp|Q92522|H1X_HUMAN Histone H1.10 OS=Homo sapiens OX=9606 GN=H1-...    38   0.081
+sp|Q5VVJ2|MYSM1_HUMAN Deubiquitinase MYSM1 OS=Homo sapiens OX=96...    38   0.091
+sp|Q3TEA8|HP1B3_MOUSE Heterochromatin protein 1-binding protein ...    38   0.10 
+sp|Q86QI0|H1L2_OSTED Sperm-specific H1/protamine-like protein ty...    38   0.11 
+sp|Q6AYE3|TAD2A_RAT Transcriptional adapter 2-alpha OS=Rattus no...    38   0.11 
+sp|Q86HX9|MYBK_DICDI Myb-like protein K OS=Dictyostelium discoid...    38   0.12 
+sp|A9X4T1|CHD1_BOMMO Chromodomain-helicase-DNA-binding protein 1...    38   0.12 
+sp|Q5RGA4|MYSM1_DANRE Histone H2A deubiquitinase MYSM1 OS=Danio ...    37   0.15 
+sp|P11938|RAP1_YEAST DNA-binding protein RAP1 OS=Saccharomyces c...    37   0.15 
+sp|Q8IZA3|H18_HUMAN Histone H1.8 OS=Homo sapiens OX=9606 GN=H1-8...    37   0.16 
+sp|P17268|H1_DROHY Histone H1 OS=Drosophila hydei OX=7224 GN=His...    37   0.17 
+sp|P40059|DOT6_YEAST Transcriptional regulatory protein DOT6 OS=...    37   0.19 
+sp|Q5I012|S38AA_MOUSE Putative sodium-coupled neutral amino acid...    37   0.19 
+sp|Q69Z66|MYSM1_MOUSE Deubiquitinase MYSM1 OS=Mus musculus OX=10...    37   0.21 
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...    37   0.21 
+sp|Q8VIK3|H18_MOUSE Histone H1.8 OS=Mus musculus OX=10090 GN=H1....    37   0.22 
+sp|P08096|TOP2_SCHPO DNA topoisomerase 2 OS=Schizosaccharomyces ...    36   0.27 
+sp|Q60974|NCOR1_MOUSE Nuclear receptor corepressor 1 OS=Mus musc...    36   0.29 
+sp|O14139|HRP3_SCHPO Chromodomain helicase hrp3 OS=Schizosacchar...    36   0.30 
+sp|P02257|H1_ECHCR Histone H1, gonadal (Fragment) OS=Echinolampa...    36   0.32 
+sp|Q4IB96|AEF1_GIBZE Chromatin modification-related protein EAF1...    36   0.32 
+sp|Q6KAQ7|ZZZ3_MOUSE ZZ-type zinc finger-containing protein 3 OS...    36   0.33 
+sp|P92973|CCA1_ARATH Protein CCA1 OS=Arabidopsis thaliana OX=370...    36   0.34 
+sp|Q9QZZ4|MYO15_MOUSE Unconventional myosin-XV OS=Mus musculus O...    36   0.36 
+sp|Q24704|H11_DROVI Histone H1.1 OS=Drosophila virilis OX=7244 G...    36   0.37 
+sp|F4K5X6|RVE2_ARATH Protein REVEILLE 2 OS=Arabidopsis thaliana ...    36   0.37 
+sp|Q8IYH5|ZZZ3_HUMAN ZZ-type zinc finger-containing protein 3 OS...    36   0.39 
+sp|Q12873|CHD3_HUMAN Chromodomain-helicase-DNA-binding protein 3...    36   0.41 
+sp|Q14839|CHD4_HUMAN Chromodomain-helicase-DNA-binding protein 4...    36   0.41 
+sp|F4KGY6|RVE1_ARATH Protein REVEILLE 1 OS=Arabidopsis thaliana ...    36   0.44 
+sp|Q0JCC3|SWI3A_ORYSJ SWI/SNF complex subunit SWI3A homolog OS=O...    36   0.45 
+sp|Q94555|H12_DROVI Histone H1.2 OS=Drosophila virilis OX=7244 G...    36   0.47 
+sp|Q6PDQ2|CHD4_MOUSE Chromodomain-helicase-DNA-binding protein 4...    36   0.48 
+sp|Q7SBU6|EAF1_NEUCR Chromatin modification-related protein eaf-...    36   0.50 
+sp|Q8CHV6|TAD2A_MOUSE Transcriptional adapter 2-alpha OS=Mus mus...    36   0.51 
+sp|Q8LK56|DME_ARATH Transcriptional activator DEMETER OS=Arabido...    35   0.57 
+sp|I1S4N7|BECN1_GIBZE Vacuolar protein sorting-associated protei...    35   0.60 
+sp|Q54K19|MYBD_DICDI Myb-like protein D OS=Dictyostelium discoid...    35   0.63 
+sp|Q4P209|EAF11_USTMA Chromatin modification-related protein EAF...    35   0.65 
+sp|P34219|TOD6_YEAST Transcriptional regulatory protein TOD6 OS=...    35   0.66 
+sp|Q3HNG7|H18_BOVIN Histone H1.8 OS=Bos taurus OX=9913 GN=H1-8 P...    35   0.67 
+sp|P15205|MAP1B_RAT Microtubule-associated protein 1B OS=Rattus ...    35   0.68 
+sp|Q6R0H1|LHY_ARATH Protein LHY OS=Arabidopsis thaliana OX=3702 ...    35   0.68 
+sp|P02255|H1_DROME Histone H1 OS=Drosophila melanogaster OX=7227...    35   0.76 
+sp|Q1EB38|DBP10_COCIM ATP-dependent RNA helicase DBP10 OS=Coccid...    35   0.77 
+sp|Q9WU42|NCOR2_MOUSE Nuclear receptor corepressor 2 OS=Mus musc...    35   1.00 
+sp|B6ZLK2|CHD1_CHICK Chromodomain-helicase-DNA-binding protein 1...    35   1.00 
+sp|Q7KU24|CHD1_DROME Chromodomain-helicase-DNA-binding protein 1...    35   1.1  
+sp|Q5B4Q8|EAF1_EMENI Chromatin modification-related protein eaf1...    35   1.1  
+sp|A1VE93|RS13_DESVV 30S ribosomal protein S13 OS=Desulfovibrio ...    35   1.1  
+sp|Q72CF7|RS13_DESVH 30S ribosomal protein S13 OS=Desulfovibrio ...    35   1.1  
+sp|Q86QH9|H1L1_OSTED Sperm-specific H1/protamine-like protein ty...    34   1.2  
+sp|P02256|H1_PARAN Histone H1, gonadal OS=Parechinus angulosus O...    34   1.2  
+sp|Q8CG73|FTM_MOUSE Protein fantom OS=Mus musculus OX=10090 GN=R...    34   1.4  
+sp|O43102|CBF5_ASPFU H/ACA ribonucleoprotein complex subunit cbf...    34   1.4  
+sp|Q5ZM33|HP1B3_CHICK Heterochromatin protein 1-binding protein ...    34   1.4  
+sp|B6ENE2|IF2_ALISL Translation initiation factor IF-2 OS=Aliivi...    34   1.8  
+sp|P06786|TOP2_YEAST DNA topoisomerase 2 OS=Saccharomyces cerevi...    34   1.8  
+sp|Q4QRD7|F110B_DANRE Protein FAM110B OS=Danio rerio OX=7955 GN=...    33   2.2  
+sp|Q96L91|EP400_HUMAN E1A-binding protein p400 OS=Homo sapiens O...    33   2.3  
+sp|Q4WP03|EAF1_ASPFU Chromatin modification-related protein eaf1...    33   2.6  
+sp|A9BCI5|IF2_PROM4 Translation initiation factor IF-2 OS=Prochl...    33   2.6  
+sp|Q9NHE5|CAPS_DROME Calcium-dependent secretion activator OS=Dr...    33   3.0  
+sp|B4U769|RS13_HYDS0 30S ribosomal protein S13 OS=Hydrogenobacul...    33   3.0  
+sp|Q8NJM2|DBP10_ASPFU ATP-dependent RNA helicase dbp10 OS=Asperg...    33   3.1  
+sp|Q4JF29|TCAM1_BOVIN TIR domain-containing adapter molecule 1 O...    33   3.5  
+sp|B9FMJ3|KN13A_ORYSJ Kinesin-like protein KIN-13A OS=Oryza sati...    33   4.0  
+sp|B7VJH7|IF2_VIBA3 Translation initiation factor IF-2 OS=Vibrio...    32   5.6  
+sp|P06350|H1_ONCMY Histone H1 OS=Oncorhynchus mykiss OX=8022 PE=...    32   6.1  
+sp|Q8CHI8|EP400_MOUSE E1A-binding protein p400 OS=Mus musculus O...    32   6.2  
+sp|Q9P2K3|RCOR3_HUMAN REST corepressor 3 OS=Homo sapiens OX=9606...    32   6.6  
+sp|Q3IJ53|IF2_PSET1 Translation initiation factor IF-2 OS=Pseudo...    32   7.0  
+sp|Q6P2Y3|DNJC2_XENTR DnaJ homolog subfamily C member 2 OS=Xenop...    31   8.1  
+sp|P16401|H15_HUMAN Histone H1.5 OS=Homo sapiens OX=9606 GN=H1-5...    31   8.2  
+sp|Q6C7K8|EAF1_YARLI Chromatin modification-related protein EAF1...    31   8.2  
+sp|B0JY40|RS13_MICAN 30S ribosomal protein S13 OS=Microcystis ae...    31   10.0 
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.296    0.110    0.262 
+
+Lambda     K      H
+   0.267   0.0338    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 214,372,530
+Number of Sequences: 569516
+Number of extensions: 6783847
+Number of successful extensions: 33199
+Number of sequences better than 10.0: 872
+Number of HSP's better than 10.0 without gapping: 908
+Number of HSP's successfully gapped in prelim test: 784
+Number of HSP's that attempted gapping in prelim test: 28707
+Number of HSP's gapped (non-prelim): 4046
+length of query: 299
+length of database: 205,866,895
+effective HSP length: 117
+effective length of query: 182
+effective length of database: 139,233,523
+effective search space: 25340501186
+effective search space used: 25340501186
+T: 11
+A: 40
+X1: 16 ( 6.8 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.1 bits)
+S2: 69 (31.5 bits)

@@ -1,0 +1,978 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (900 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q20733|SAEG1_CAEEL Suppressor of activated egl-4 protein 1 OS...  1884   0.0  
+sp|Q4R2Z8|ZN541_MACFA Zinc finger protein 541 (Fragment) OS=Maca...   112   1e-23
+sp|Q9H0D2|ZN541_HUMAN Zinc finger protein 541 OS=Homo sapiens OX...   108   2e-22
+sp|Q0GGX2|ZN541_MOUSE Zinc finger protein 541 OS=Mus musculus OX...   106   1e-21
+sp|Q8BXJ2|TREF1_MOUSE Transcriptional-regulating factor 1 OS=Mus...    88   4e-16
+sp|Q96PN7|TREF1_HUMAN Transcriptional-regulating factor 1 OS=Hom...    83   1e-14
+sp|Q6PJG2|MDEAS_HUMAN Mitotic deacetylase-associated SANT domain...    73   1e-11
+sp|Q18919|RCORB_CAEEL REST corepressor spr-1 OS=Caenorhabditis e...    54   7e-06
+sp|Q3UHF3|MIER3_MOUSE Mesoderm induction early response protein ...    49   2e-04
+sp|Q90WN5|RCOR1_XENLA REST corepressor 1 OS=Xenopus laevis OX=83...    47   7e-04
+sp|Q59E36|RCOR_DROME REST corepressor OS=Drosophila melanogaster...    47   7e-04
+sp|Q6PGA0|RCOR3_MOUSE REST corepressor 3 OS=Mus musculus OX=1009...    46   0.001
+sp|Q4R3R9|MIER3_MACFA Mesoderm induction early response protein ...    46   0.002
+sp|Q7Z3K6|MIER3_HUMAN Mesoderm induction early response protein ...    45   0.003
+sp|Q6P116|RCOR2_DANRE REST corepressor 2 OS=Danio rerio OX=7955 ...    45   0.003
+sp|Q80TZ9|RERE_MOUSE Arginine-glutamic acid dipeptide repeats pr...    45   0.004
+sp|Q9UKL0|RCOR1_HUMAN REST corepressor 1 OS=Homo sapiens OX=9606...    45   0.004
+sp|Q62901|RERE_RAT Arginine-glutamic acid dipeptide repeats prot...    45   0.004
+sp|Q8CFE3|RCOR1_MOUSE REST corepressor 1 OS=Mus musculus OX=1009...    44   0.004
+sp|Q9P2R6|RERE_HUMAN Arginine-glutamic acid dipeptide repeats pr...    44   0.004
+sp|Q6NRZ0|RCOR2_XENLA REST corepressor 2 OS=Xenopus laevis OX=83...    44   0.007
+sp|Q5ZJ40|RCOR3_CHICK REST corepressor 3 OS=Gallus gallus OX=903...    44   0.007
+sp|Q9P2K3|RCOR3_HUMAN REST corepressor 3 OS=Homo sapiens OX=9606...    44   0.008
+sp|Q7T105|MIER1_XENLA Mesoderm induction early response protein ...    44   0.008
+sp|Q60974|NCOR1_MOUSE Nuclear receptor corepressor 1 OS=Mus musc...    44   0.009
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...    44   0.009
+sp|Q9Y618|NCOR2_HUMAN Nuclear receptor corepressor 2 OS=Homo sap...    43   0.011
+sp|Q5UAK0|MIER1_MOUSE Mesoderm induction early response protein ...    43   0.016
+sp|Q8N108|MIER1_HUMAN Mesoderm induction early response protein ...    42   0.018
+sp|Q5REE1|MIER1_PONAB Mesoderm induction early response protein ...    42   0.018
+sp|Q9WU42|NCOR2_MOUSE Nuclear receptor corepressor 2 OS=Mus musc...    42   0.020
+sp|Q5ZKT9|MIER1_CHICK Mesoderm induction early response protein ...    42   0.022
+sp|Q9R190|MTA2_MOUSE Metastasis-associated protein MTA2 OS=Mus m...    42   0.028
+sp|Q09228|EGL27_CAEEL Egg-laying defective protein 27 OS=Caenorh...    42   0.029
+sp|O94776|MTA2_HUMAN Metastasis-associated protein MTA2 OS=Homo ...    42   0.029
+sp|Q8C796|RCOR2_MOUSE REST corepressor 2 OS=Mus musculus OX=1009...    42   0.030
+sp|Q8IZ40|RCOR2_HUMAN REST corepressor 2 OS=Homo sapiens OX=9606...    42   0.035
+sp|Q5FWT8|RCOR2_RAT REST corepressor 2 OS=Rattus norvegicus OX=1...    41   0.038
+sp|Q8N344|MIER2_HUMAN Mesoderm induction early response protein ...    40   0.11 
+sp|Q4KKX4|NCOR1_XENTR Nuclear receptor corepressor 1 OS=Xenopus ...    39   0.15 
+sp|Q3U3N0|MIER2_MOUSE Mesoderm induction early response protein ...    39   0.16 
+sp|Q10369|YDBJ_SCHPO Uncharacterized protein C22E12.19 OS=Schizo...    39   0.23 
+sp|A5PJX4|MIER2_BOVIN Mesoderm induction early response protein ...    38   0.32 
+sp|Q924K8|MTA3_MOUSE Metastasis-associated protein MTA3 OS=Mus m...    37   0.60 
+sp|A6QL72|MTA3_BOVIN Metastasis-associated protein MTA3 OS=Bos t...    37   0.62 
+sp|Q9BTC8|MTA3_HUMAN Metastasis-associated protein MTA3 OS=Homo ...    37   0.64 
+sp|Q95Y41|RCORA_CAEEL REST corepressor rcor-1 OS=Caenorhabditis ...    37   0.88 
+sp|F6NSX9|Z687B_DANRE Zinc finger protein 687b OS=Danio rerio OX...    37   0.90 
+sp|Q13330|MTA1_HUMAN Metastasis-associated protein MTA1 OS=Homo ...    37   0.99 
+sp|Q8K4B0|MTA1_MOUSE Metastasis-associated protein MTA1 OS=Mus m...    37   1.1  
+sp|Q62599|MTA1_RAT Metastasis-associated protein MTA1 OS=Rattus ...    37   1.1  
+sp|Q8QG78|NCOR1_XENLA Nuclear receptor corepressor 1 OS=Xenopus ...    36   1.4  
+sp|Q55DP9|MYBP_DICDI Myb-like protein P OS=Dictyostelium discoid...    36   1.7  
+sp|Q8NI51|CTCFL_HUMAN Transcriptional repressor CTCFL OS=Homo sa...    35   2.1  
+sp|Q5T1R4|ZEP3_HUMAN Transcription factor HIVEP3 OS=Homo sapiens...    35   2.2  
+sp|P31660|PRPC_ECOLI 2-methylcitrate synthase OS=Escherichia col...    35   2.5  
+sp|Q6ZMS7|ZN783_HUMAN Zinc finger protein 783 OS=Homo sapiens OX...    35   3.5  
+sp|Q9SIJ0|ZAT2_ARATH Zinc finger protein ZAT2 OS=Arabidopsis tha...    35   4.1  
+sp|Q56063|PRPC_SALTY 2-methylcitrate synthase OS=Salmonella typh...    35   4.2  
+sp|A2A884|ZEP3_MOUSE Transcription factor HIVEP3 OS=Mus musculus...    34   5.6  
+sp|O60315|ZEB2_HUMAN Zinc finger E-box-binding homeobox 2 OS=Hom...    34   5.7  
+sp|P36197|ZEB1_CHICK Zinc finger E-box-binding homeobox 1 OS=Gal...    34   5.8  
+sp|Q9R0G7|ZEB2_MOUSE Zinc finger E-box-binding homeobox 2 OS=Mus...    34   5.9  
+sp|Q60542|ZEB1_MESAU Zinc finger E-box-binding homeobox 1 OS=Mes...    34   6.1  
+sp|Q64318|ZEB1_MOUSE Zinc finger E-box-binding homeobox 1 OS=Mus...    34   6.2  
+sp|P37275|ZEB1_HUMAN Zinc finger E-box-binding homeobox 1 OS=Hom...    34   6.5  
+sp|Q62947|ZEB1_RAT Zinc finger E-box-binding homeobox 1 OS=Rattu...    34   6.8  
+sp|P33748|MSN2_YEAST Zinc finger protein MSN2 OS=Saccharomyces c...    34   7.0  
+sp|Q90850|HIC1_CHICK Hypermethylated in cancer 1 protein (Fragme...    34   7.0  
+sp|O14753|OVOL1_HUMAN Putative transcription factor Ovo-like 1 O...    33   7.8  
+sp|Q873Y3|PACC_CANDC pH-response transcription factor pacC/RIM10...    33   8.9  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q20733|SAEG1_CAEEL Suppressor of activated egl-4 protein 1 OS...  1575   0.0  
+sp|Q4R2Z8|ZN541_MACFA Zinc finger protein 541 (Fragment) OS=Maca...   333   4e-90
+sp|Q9H0D2|ZN541_HUMAN Zinc finger protein 541 OS=Homo sapiens OX...   332   7e-90
+sp|Q0GGX2|ZN541_MOUSE Zinc finger protein 541 OS=Mus musculus OX...   326   7e-88
+sp|Q8BXJ2|TREF1_MOUSE Transcriptional-regulating factor 1 OS=Mus...   234   2e-60
+sp|Q96PN7|TREF1_HUMAN Transcriptional-regulating factor 1 OS=Hom...   232   9e-60
+sp|Q3UHF3|MIER3_MOUSE Mesoderm induction early response protein ...   198   1e-49
+sp|Q6PJG2|MDEAS_HUMAN Mitotic deacetylase-associated SANT domain...   176   1e-42
+sp|Q18919|RCORB_CAEEL REST corepressor spr-1 OS=Caenorhabditis e...   160   8e-38
+sp|Q59E36|RCOR_DROME REST corepressor OS=Drosophila melanogaster...   158   2e-37
+sp|Q90WN5|RCOR1_XENLA REST corepressor 1 OS=Xenopus laevis OX=83...   153   9e-36
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q4R3R9|MIER3_MACFA Mesoderm induction early response protein ...   188   3e-46
+sp|Q7Z3K6|MIER3_HUMAN Mesoderm induction early response protein ...   184   3e-45
+sp|Q6P116|RCOR2_DANRE REST corepressor 2 OS=Danio rerio OX=7955 ...   137   3e-31
+sp|Q8CFE3|RCOR1_MOUSE REST corepressor 1 OS=Mus musculus OX=1009...   136   7e-31
+sp|Q5ZJ40|RCOR3_CHICK REST corepressor 3 OS=Gallus gallus OX=903...   135   2e-30
+sp|Q9UKL0|RCOR1_HUMAN REST corepressor 1 OS=Homo sapiens OX=9606...   134   4e-30
+sp|Q9P2K3|RCOR3_HUMAN REST corepressor 3 OS=Homo sapiens OX=9606...   134   4e-30
+sp|Q6PGA0|RCOR3_MOUSE REST corepressor 3 OS=Mus musculus OX=1009...   129   1e-28
+sp|Q8IZ40|RCOR2_HUMAN REST corepressor 2 OS=Homo sapiens OX=9606...   128   2e-28
+sp|Q5FWT8|RCOR2_RAT REST corepressor 2 OS=Rattus norvegicus OX=1...   126   7e-28
+sp|Q7T105|MIER1_XENLA Mesoderm induction early response protein ...   126   9e-28
+sp|Q8C796|RCOR2_MOUSE REST corepressor 2 OS=Mus musculus OX=1009...   126   1e-27
+sp|Q5REE1|MIER1_PONAB Mesoderm induction early response protein ...   126   1e-27
+sp|Q8N108|MIER1_HUMAN Mesoderm induction early response protein ...   126   1e-27
+sp|Q5ZKT9|MIER1_CHICK Mesoderm induction early response protein ...   124   2e-27
+sp|Q5UAK0|MIER1_MOUSE Mesoderm induction early response protein ...   124   3e-27
+sp|Q6NRZ0|RCOR2_XENLA REST corepressor 2 OS=Xenopus laevis OX=83...   124   3e-27
+sp|Q8N344|MIER2_HUMAN Mesoderm induction early response protein ...   124   5e-27
+sp|Q3U3N0|MIER2_MOUSE Mesoderm induction early response protein ...   115   2e-24
+sp|A5PJX4|MIER2_BOVIN Mesoderm induction early response protein ...   113   6e-24
+sp|Q95Y41|RCORA_CAEEL REST corepressor rcor-1 OS=Caenorhabditis ...    88   5e-16
+sp|Q9BTC8|MTA3_HUMAN Metastasis-associated protein MTA3 OS=Homo ...    77   5e-13
+sp|Q13330|MTA1_HUMAN Metastasis-associated protein MTA1 OS=Homo ...    75   2e-12
+sp|Q62599|MTA1_RAT Metastasis-associated protein MTA1 OS=Rattus ...    75   4e-12
+sp|Q8K4B0|MTA1_MOUSE Metastasis-associated protein MTA1 OS=Mus m...    74   5e-12
+sp|Q09228|EGL27_CAEEL Egg-laying defective protein 27 OS=Caenorh...    74   7e-12
+sp|O94776|MTA2_HUMAN Metastasis-associated protein MTA2 OS=Homo ...    73   8e-12
+sp|Q9R190|MTA2_MOUSE Metastasis-associated protein MTA2 OS=Mus m...    73   1e-11
+sp|Q924K8|MTA3_MOUSE Metastasis-associated protein MTA3 OS=Mus m...    73   1e-11
+sp|A6QL72|MTA3_BOVIN Metastasis-associated protein MTA3 OS=Bos t...    72   2e-11
+sp|Q80TZ9|RERE_MOUSE Arginine-glutamic acid dipeptide repeats pr...    69   2e-10
+sp|Q62901|RERE_RAT Arginine-glutamic acid dipeptide repeats prot...    69   2e-10
+sp|Q9P2R6|RERE_HUMAN Arginine-glutamic acid dipeptide repeats pr...    68   4e-10
+sp|Q9WU42|NCOR2_MOUSE Nuclear receptor corepressor 2 OS=Mus musc...    55   2e-06
+sp|Q4KKX4|NCOR1_XENTR Nuclear receptor corepressor 1 OS=Xenopus ...    55   2e-06
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...    54   5e-06
+sp|Q9Y618|NCOR2_HUMAN Nuclear receptor corepressor 2 OS=Homo sap...    53   9e-06
+sp|Q60974|NCOR1_MOUSE Nuclear receptor corepressor 1 OS=Mus musc...    53   1e-05
+sp|Q55DP9|MYBP_DICDI Myb-like protein P OS=Dictyostelium discoid...    52   2e-05
+sp|Q8QG78|NCOR1_XENLA Nuclear receptor corepressor 1 OS=Xenopus ...    51   6e-05
+sp|Q10369|YDBJ_SCHPO Uncharacterized protein C22E12.19 OS=Schizo...    49   2e-04
+sp|Q69Z66|MYSM1_MOUSE Deubiquitinase MYSM1 OS=Mus musculus OX=10...    48   4e-04
+sp|P53127|SNT2_YEAST E3 ubiquitin-protein ligase SNT2 OS=Sacchar...    48   4e-04
+sp|Q92BQ2|SYGB_LISIN Glycine--tRNA ligase beta subunit OS=Lister...    46   0.001
+sp|A0AIQ9|SYGB_LISW6 Glycine--tRNA ligase beta subunit OS=Lister...    46   0.002
+sp|Q71ZL2|SYGB_LISMF Glycine--tRNA ligase beta subunit OS=Lister...    45   0.003
+sp|C1KVA5|SYGB_LISMC Glycine--tRNA ligase beta subunit OS=Lister...    45   0.003
+sp|Q8NI51|CTCFL_HUMAN Transcriptional repressor CTCFL OS=Homo sa...    44   0.004
+sp|Q5VVJ2|MYSM1_HUMAN Deubiquitinase MYSM1 OS=Homo sapiens OX=96...    44   0.005
+sp|Q8Y754|SYGB_LISMO Glycine--tRNA ligase beta subunit OS=Lister...    44   0.006
+sp|B8DE53|SYGB_LISMH Glycine--tRNA ligase beta subunit OS=Lister...    44   0.006
+sp|P34333|NCOR1_CAEEL Nuclear receptor corepressor 1 OS=Caenorha...    44   0.007
+sp|A1L1R6|ZN423_DANRE Zinc finger protein 423 OS=Danio rerio OX=...    43   0.010
+sp|Q5F3F2|MYSM1_CHICK Histone H2A deubiquitinase MYSM1 OS=Gallus...    42   0.026
+sp|G3X9G7|ZN809_MOUSE Zinc finger protein 809 OS=Mus musculus OX...    42   0.029
+sp|A0JMR6|MYSM1_XENLA Histone H2A deubiquitinase MYSM1 OS=Xenopu...    41   0.036
+sp|Q9LJX4|PUM5_ARATH Pumilio homolog 5 OS=Arabidopsis thaliana O...    41   0.038
+sp|Q6ZMS7|ZN783_HUMAN Zinc finger protein 783 OS=Homo sapiens OX...    41   0.039
+sp|A2RRD8|ZN320_HUMAN Zinc finger protein 320 OS=Homo sapiens OX...    41   0.048
+sp|P37708|NCAP_RINDL Nucleoprotein OS=Rinderpest virus (strain L...    41   0.051
+sp|Q9P243|ZFAT_HUMAN Zinc finger protein ZFAT OS=Homo sapiens OX...    41   0.057
+sp|Q91ZR5|CTSR1_MOUSE Cation channel sperm-associated protein 1 ...    41   0.059
+sp|A6NJL1|ZSA5B_HUMAN Zinc finger and SCAN domain-containing pro...    40   0.10 
+sp|Q2KIN0|ZCHC7_BOVIN Zinc finger CCHC domain-containing protein...    40   0.11 
+sp|Q4IL82|INO80_GIBZE Chromatin-remodeling ATPase INO80 OS=Gibbe...    40   0.11 
+sp|A7MBI1|ZFP69_BOVIN Zinc finger protein 69 homolog OS=Bos taur...    39   0.12 
+sp|P18733|ZG66_XENLA Gastrula zinc finger protein XlCGF66.1 (Fra...    39   0.13 
+sp|Q7TS63|ZFAT_MOUSE Zinc finger protein ZFAT OS=Mus musculus OX...    39   0.13 
+sp|Q6CLE0|SEC24_KLULA Protein transport protein SEC24 OS=Kluyver...    39   0.13 
+sp|Q5RGA4|MYSM1_DANRE Histone H2A deubiquitinase MYSM1 OS=Danio ...    39   0.15 
+sp|Q49AA0|ZFP69_HUMAN Zinc finger protein 69 homolog OS=Homo sap...    39   0.16 
+sp|Q62947|ZEB1_RAT Zinc finger E-box-binding homeobox 1 OS=Rattu...    39   0.16 
+sp|Q99612|KLF6_HUMAN Krueppel-like factor 6 OS=Homo sapiens OX=9...    39   0.26 
+sp|D4HA34|FTSH_CUTAS ATP-dependent zinc metalloprotease FtsH OS=...    38   0.29 
+sp|Q96RY5|CRML_HUMAN Protein cramped-like OS=Homo sapiens OX=960...    38   0.30 
+sp|Q8CC12|CDAN1_MOUSE Codanin-1 OS=Mus musculus OX=10090 GN=Cdan...    38   0.35 
+sp|Q9NZL3|ZN224_HUMAN Zinc finger protein 224 OS=Homo sapiens OX...    38   0.39 
+sp|Q01778|HUNB_MUSDO Protein hunchback OS=Musca domestica OX=737...    38   0.39 
+sp|P35074|RPB1_CAEBR DNA-directed RNA polymerase II subunit RPB1...    38   0.40 
+sp|Q32SG6|HIRA_MAIZE Protein HIRA OS=Zea mays OX=4577 PE=1 SV=1        38   0.40 
+sp|Q9HA90|EFCC1_HUMAN EF-hand and coiled-coil domain-containing ...    38   0.40 
+sp|Q8MR37|KLFL_DROME Krueppel-like factor luna OS=Drosophila mel...    38   0.41 
+sp|A2A5K6|ZN335_MOUSE Zinc finger protein 335 OS=Mus musculus OX...    38   0.43 
+sp|Q9H4Z2|ZN335_HUMAN Zinc finger protein 335 OS=Homo sapiens OX...    38   0.44 
+sp|O75467|Z324A_HUMAN Zinc finger protein 324A OS=Homo sapiens O...    38   0.46 
+sp|P85977|ZNFP_CHLAE Zinc finger protein (Fragment) OS=Chloroceb...    38   0.47 
+sp|Q7TSH3|ZN516_MOUSE Zinc finger protein 516 OS=Mus musculus OX...    38   0.49 
+sp|A2A3V1|AK17B_MOUSE A-kinase anchor protein 17B OS=Mus musculu...    38   0.50 
+sp|G3V893|ZN335_RAT Zinc finger protein 335 OS=Rattus norvegicus...    38   0.51 
+sp|Q84JT7|ARID1_ARATH AT-rich interactive domain-containing prot...    38   0.54 
+sp|Q4R8H2|DNJC2_MACFA DnaJ homolog subfamily C member 2 OS=Macac...    38   0.55 
+sp|Q99JB0|KLF7_MOUSE Krueppel-like factor 7 OS=Mus musculus OX=1...    38   0.57 
+sp|Q9M1G5|NDC80_ARATH Kinetochore protein NDC80 homolog OS=Arabi...    38   0.58 
+sp|Q99543|DNJC2_HUMAN DnaJ homolog subfamily C member 2 OS=Homo ...    38   0.58 
+sp|P18716|ZG28_XENLA Gastrula zinc finger protein XlCGF28.1 (Fra...    37   0.60 
+sp|P40568|DSN1_YEAST Kinetochore-associated protein DSN1 OS=Sacc...    37   0.61 
+sp|Q8WTR7|ZN473_HUMAN Zinc finger protein 473 OS=Homo sapiens OX...    37   0.61 
+sp|Q9H7R5|ZN665_HUMAN Zinc finger protein 665 OS=Homo sapiens OX...    37   0.62 
+sp|Q8NDM7|CFA43_HUMAN Cilia- and flagella-associated protein 43 ...    37   0.62 
+sp|Q04053|SNX41_YEAST Sorting nexin-41 OS=Saccharomyces cerevisi...    37   0.66 
+sp|O08584|KLF6_MOUSE Krueppel-like factor 6 OS=Mus musculus OX=1...    37   0.66 
+sp|Q9LVW4|MY118_ARATH Transcription factor MYB118 OS=Arabidopsis...    37   0.69 
+sp|P52739|ZN131_HUMAN Zinc finger protein 131 OS=Homo sapiens OX...    37   0.70 
+sp|Q8LJT8|TKI1_ARATH TSL-kinase interacting protein 1 OS=Arabido...    37   0.70 
+sp|O14753|OVOL1_HUMAN Putative transcription factor Ovo-like 1 O...    37   0.74 
+sp|O75840|KLF7_HUMAN Krueppel-like factor 7 OS=Homo sapiens OX=9...    37   0.78 
+sp|P10925|ZFY1_MOUSE Zinc finger Y-chromosomal protein 1 OS=Mus ...    37   0.80 
+sp|Q92618|ZN516_HUMAN Zinc finger protein 516 OS=Homo sapiens OX...    37   0.80 
+sp|Q9SIJ0|ZAT2_ARATH Zinc finger protein ZAT2 OS=Arabidopsis tha...    37   0.80 
+sp|Q54Z40|MYBH_DICDI Myb-like protein H OS=Dictyostelium discoid...    37   0.82 
+sp|Q03281|HEH2_YEAST Inner nuclear membrane protein HEH2 OS=Sacc...    37   0.83 
+sp|Q60542|ZEB1_MESAU Zinc finger E-box-binding homeobox 1 OS=Mes...    37   0.88 
+sp|Q5CZA5|ZN805_HUMAN Zinc finger protein 805 OS=Homo sapiens OX...    37   0.89 
+sp|P16356|RPB1_CAEEL DNA-directed RNA polymerase II subunit RPB1...    37   0.91 
+sp|Q00722|PLCB2_HUMAN 1-phosphatidylinositol 4,5-bisphosphate ph...    37   0.93 
+sp|F6NSX9|Z687B_DANRE Zinc finger protein 687b OS=Danio rerio OX...    37   0.95 
+sp|Q64318|ZEB1_MOUSE Zinc finger E-box-binding homeobox 1 OS=Mus...    37   0.97 
+sp|Q9L7Q2|ZMPB_STRPN Zinc metalloprotease ZmpB OS=Streptococcus ...    37   0.98 
+sp|Q8NJS1|ATG26_LEPMC Sterol 3-beta-glucosyltransferase OS=Lepto...    36   1.0  
+sp|O35819|KLF6_RAT Krueppel-like factor 6 OS=Rattus norvegicus O...    36   1.1  
+sp|Q9QY31|SNAI3_MOUSE Zinc finger protein SNAI3 OS=Mus musculus ...    36   1.1  
+sp|Q6PG95|CRML_MOUSE Protein cramped-like OS=Mus musculus OX=100...    36   1.1  
+sp|Q86VK4|ZN410_HUMAN Zinc finger protein 410 OS=Homo sapiens OX...    36   1.1  
+sp|Q9HDY1|ASE1_SCHPO Anaphase spindle elongation protein 1 OS=Sc...    36   1.2  
+sp|P20662|ZFY2_MOUSE Zinc finger Y-chromosomal protein 2 OS=Mus ...    36   1.2  
+sp|Q505G8|ZN827_MOUSE Zinc finger protein 827 OS=Mus musculus OX...    36   1.2  
+sp|Q8NCP5|ZBT44_HUMAN Zinc finger and BTB domain-containing prot...    36   1.2  
+sp|Q8BKX7|ZN410_MOUSE Zinc finger protein 410 OS=Mus musculus OX...    36   1.3  
+sp|Q3B725|ZBT24_RAT Zinc finger and BTB domain-containing protei...    36   1.3  
+sp|Q9XI07|SWI3C_ARATH SWI/SNF complex subunit SWI3C OS=Arabidops...    36   1.3  
+sp|Q91VW9|ZKSC3_MOUSE Zinc finger protein with KRAB and SCAN dom...    36   1.3  
+sp|Q8K3J5|ZN131_MOUSE Zinc finger protein 131 OS=Mus musculus OX...    36   1.4  
+sp|A1YFX5|ZSCA4_PANPA Zinc finger and SCAN domain-containing pro...    36   1.4  
+sp|B6EUA9|PR40A_ARATH Pre-mRNA-processing protein 40A OS=Arabido...    36   1.4  
+sp|Q54QC0|MYBU_DICDI Myb-like protein U OS=Dictyostelium discoid...    36   1.5  
+sp|Q9BE73|ZN827_MACFA Zinc finger protein 827 OS=Macaca fascicul...    36   1.5  
+sp|Q8NAM6|ZSCA4_HUMAN Zinc finger and SCAN domain-containing pro...    36   1.6  
+sp|Q7XPY1|SPL8_ORYSJ Squamosa promoter-binding-like protein 8 OS...    36   1.6  
+sp|O15015|ZN646_HUMAN Zinc finger protein 646 OS=Homo sapiens OX...    36   1.6  
+sp|Q3URU2|PEG3_MOUSE Paternally-expressed gene 3 protein OS=Mus ...    36   1.7  
+sp|A2T7G6|ZSCA4_PONPY Zinc finger and SCAN domain-containing pro...    36   1.7  
+sp|P13462|VIRD2_AGRRH T-DNA border endonuclease VirD2 OS=Agrobac...    36   1.8  
+sp|P37275|ZEB1_HUMAN Zinc finger E-box-binding homeobox 1 OS=Hom...    36   1.9  
+sp|P08045|XFIN_XENLA Zinc finger protein Xfin OS=Xenopus laevis ...    36   1.9  
+sp|P16952|SSPB_STRGN Agglutinin receptor OS=Streptococcus gordon...    36   1.9  
+sp|Q17R98|ZN827_HUMAN Zinc finger protein 827 OS=Homo sapiens OX...    36   2.0  
+sp|P46678|TFC5_YEAST Transcription factor TFIIIB component B'' O...    36   2.0  
+sp|Q01KM7|SPL8_ORYSI Squamosa promoter-binding-like protein 8 OS...    36   2.0  
+sp|Q39092|ZAT1_ARATH Zinc finger protein ZAT1 OS=Arabidopsis tha...    36   2.1  
+sp|G5EDE1|GFI1H_CAEEL Zinc finger protein GFI1 homolog pag-3 OS=...    36   2.1  
+sp|B6QHK6|MIC60_TALMQ MICOS complex subunit mic60 OS=Talaromyces...    36   2.1  
+sp|B3QQI2|IF2_CHLP8 Translation initiation factor IF-2 OS=Chloro...    36   2.1  
+sp|Q9Y6X9|MORC2_HUMAN ATPase MORC2 OS=Homo sapiens OX=9606 GN=MO...    36   2.2  
+sp|Q7TMK6|HOOK2_MOUSE Protein Hook homolog 2 OS=Mus musculus OX=...    36   2.2  
+sp|O13788|SSR1_SCHPO SWI/SNF and RSC complexes subunit ssr1 OS=S...    36   2.2  
+sp|P18752|ZO72_XENLA Oocyte zinc finger protein XlCOF7.2 (Fragme...    35   2.5  
+sp|Q3UH06|RREB1_MOUSE Ras-responsive element-binding protein 1 O...    35   2.5  
+sp|O14014|RGA3_SCHPO Probable Rho-type GTPase-activating protein...    35   2.5  
+sp|Q96GS4|BORC6_HUMAN BLOC-1-related complex subunit 6 OS=Homo s...    35   2.6  
+sp|P18750|ZO61_XENLA Oocyte zinc finger protein XlCOF6.1 (Fragme...    35   2.6  
+sp|Q8BXX2|ZBT49_MOUSE Zinc finger and BTB domain-containing prot...    35   2.6  
+sp|B2KFW1|ZSC20_MOUSE Zinc finger and SCAN domain-containing pro...    35   2.7  
+sp|Q61329|ZFHX3_MOUSE Zinc finger homeobox protein 3 OS=Mus musc...    35   2.7  
+sp|Q6FQY1|STB5_CANGA Negative regulator of pleiotropic drug resi...    35   2.7  
+sp|D3ZA12|CHD6_RAT Chromodomain-helicase-DNA-binding protein 6 O...    35   2.7  
+sp|Q8TF45|ZN418_HUMAN Zinc finger protein 418 OS=Homo sapiens OX...    35   2.8  
+sp|Q8MX88|CRM_DROSE Protein cramped OS=Drosophila sechellia OX=7...    35   2.8  
+sp|Q07139|ECT2_MOUSE Protein ECT2 OS=Mus musculus OX=10090 GN=Ec...    35   2.9  
+sp|Q19A41|KLF14_MOUSE Krueppel-like factor 14 OS=Mus musculus OX...    35   3.0  
+sp|Q0JCC3|SWI3A_ORYSJ SWI/SNF complex subunit SWI3A homolog OS=O...    35   3.0  
+sp|Q84JG2|SWI3B_ARATH SWI/SNF complex subunit SWI3B OS=Arabidops...    35   3.1  
+sp|Q9VQ56|ERM_DROME Fez family zinc finger protein erm OS=Drosop...    35   3.1  
+sp|Q6P9A3|ZN549_HUMAN Zinc finger protein 549 OS=Homo sapiens OX...    35   3.2  
+sp|Q5RAU9|ZN131_PONAB Zinc finger protein 131 OS=Pongo abelii OX...    35   3.2  
+sp|Q90850|HIC1_CHICK Hypermethylated in cancer 1 protein (Fragme...    35   3.3  
+sp|Q9H609|ZN576_HUMAN Zinc finger protein 576 OS=Homo sapiens OX...    35   3.5  
+sp|Q8R2V3|ZN445_MOUSE Zinc finger protein 445 OS=Mus musculus OX...    35   3.5  
+sp|Q8R0A2|ZBT44_MOUSE Zinc finger and BTB domain-containing prot...    35   3.6  
+sp|Q9LG97|SL1_ORYSJ Zinc finger protein STAMENLESS 1 OS=Oryza sa...    35   3.7  
+sp|Q95QI7|DAF3_CAEEL Smad protein daf-3 OS=Caenorhabditis elegan...    35   3.8  
+sp|Q9WTJ2|OVOL1_MOUSE Putative transcription factor Ovo-like 1 O...    35   3.9  
+sp|Q8IVC4|ZN584_HUMAN Zinc finger protein 584 OS=Homo sapiens OX...    34   3.9  
+sp|Q5AHG6|SCH9_CANAL Serine/threonine-protein kinase SCH9 OS=Can...    34   4.0  
+sp|Q92766|RREB1_HUMAN Ras-responsive element-binding protein 1 O...    34   4.1  
+sp|H2KYH4|HAM2_CAEEL Zinc finger protein ham-2 OS=Caenorhabditis...    34   4.1  
+sp|Q9C0K0|BC11B_HUMAN B-cell lymphoma/leukemia 11B OS=Homo sapie...    34   4.1  
+sp|G5E869|ZN142_MOUSE Zinc finger protein 142 OS=Mus musculus OX...    34   4.1  
+sp|Q13127|REST_HUMAN RE1-silencing transcription factor OS=Homo ...    34   4.1  
+sp|Q9H582|ZN644_HUMAN Zinc finger protein 644 OS=Homo sapiens OX...    34   4.2  
+sp|Q13233|M3K1_HUMAN Mitogen-activated protein kinase kinase kin...    34   4.2  
+sp|O15816|MYBB_DICDI Myb-like protein B OS=Dictyostelium discoid...    34   4.4  
+sp|Q9C6I8|NOG1_ARATH Nucleolar GTP-binding protein 1 OS=Arabidop...    34   4.4  
+sp|Q1Q883|MURD_PSYCK UDP-N-acetylmuramoylalanine--D-glutamate li...    34   4.5  
+sp|Q4FQ21|MURD_PSYA2 UDP-N-acetylmuramoylalanine--D-glutamate li...    34   4.5  
+sp|Q3SWU4|ZBT44_RAT Zinc finger and BTB domain-containing protei...    34   4.6  
+sp|Q7S8C4|LONM_NEUCR Lon protease homolog, mitochondrial OS=Neur...    34   4.9  
+sp|A2A761|ZFP69_MOUSE Zinc finger protein 69 OS=Mus musculus OX=...    34   4.9  
+sp|P34531|CLP1H_CAEEL CAP-Gly domain-containing linker protein 1...    34   5.1  
+sp|P0C7X2|ZN688_HUMAN Zinc finger protein 688 OS=Homo sapiens OX...    34   5.2  
+sp|Q9NX65|ZSC32_HUMAN Zinc finger and SCAN domain-containing pro...    34   5.4  
+sp|P15619|SRYC_DROME Serendipity locus protein H-1 OS=Drosophila...    34   5.4  
+sp|Q9FKA9|LATE_ARATH Protein LATE FLOWERING OS=Arabidopsis thali...    34   5.5  
+sp|P41182|BCL6_HUMAN B-cell lymphoma 6 protein OS=Homo sapiens O...    34   5.8  
+sp|Q6AW86|Z324B_HUMAN Zinc finger protein 324B OS=Homo sapiens O...    34   5.8  
+sp|Q95K52|ZN283_MACFA Zinc finger protein 283 OS=Macaca fascicul...    34   6.0  
+sp|Q9UL36|ZN236_HUMAN Zinc finger protein 236 OS=Homo sapiens OX...    34   6.0  
+sp|Q0P4X6|ZBT44_XENTR Zinc finger and BTB domain-containing prot...    34   6.1  
+sp|Q6DJT9|PLAG1_HUMAN Zinc finger protein PLAG1 OS=Homo sapiens ...    34   6.2  
+sp|Q5T1R4|ZEP3_HUMAN Transcription factor HIVEP3 OS=Homo sapiens...    34   6.3  
+sp|Q90625|ZBT17_CHICK Zinc finger and BTB domain-containing prot...    34   6.5  
+sp|Q8BGV5|ZNF8_MOUSE Zinc finger protein 8 OS=Mus musculus OX=10...    34   6.7  
+sp|Q5U2T6|PLAG1_RAT Zinc finger protein PLAG1 OS=Rattus norvegic...    34   6.9  
+sp|Q54YB7|MYBF_DICDI Myb-like protein F OS=Dictyostelium discoid...    34   6.9  
+sp|P80192|M3K9_HUMAN Mitogen-activated protein kinase kinase kin...    34   6.9  
+sp|A1Z9R4|ZN423_DROME Zinc finger protein 423 homolog OS=Drosoph...    34   7.0  
+sp|Q7M6Z5|KIF27_RAT Kinesin-like protein KIF27 OS=Rattus norvegi...    34   7.3  
+sp|Q6A332|ALY3_ARATH Protein ALWAYS EARLY 3 OS=Arabidopsis thali...    34   7.4  
+sp|Q9ER74|SALL1_MOUSE Sal-like protein 1 OS=Mus musculus OX=1009...    34   7.5  
+sp|Q9QYE0|PLAG1_MOUSE Zinc finger protein PLAG1 OS=Mus musculus ...    34   7.6  
+sp|Q96EG3|ZN837_HUMAN Zinc finger protein 837 OS=Homo sapiens OX...    34   7.8  
+sp|Q5RBQ3|ZN549_PONAB Zinc finger protein 549 OS=Pongo abelii OX...    34   7.8  
+sp|Q6NUD7|ZN521_XENLA Zinc finger protein 521 OS=Xenopus laevis ...    34   7.8  
+sp|Q5ZM39|BCL6_CHICK B-cell lymphoma 6 protein homolog OS=Gallus...    34   8.0  
+sp|P34303|ZTF30_CAEEL Zinc finger transcription factor family pr...    34   8.1  
+sp|Q6CQA1|MS116_KLULA ATP-dependent RNA helicase MSS116, mitocho...    34   8.2  
+sp|Q9Y4X4|KLF12_HUMAN Krueppel-like factor 12 OS=Homo sapiens OX...    34   8.4  
+sp|P0CG00|ZSA5D_HUMAN Putative zinc finger and SCAN domain-conta...    33   8.7  
+sp|Q9M4U5|HDT2_MAIZE Histone deacetylase HDT2 OS=Zea mays OX=457...    33   8.7  
+sp|Q8BI67|ZN473_MOUSE Zinc finger protein 473 homolog OS=Mus mus...    33   8.8  
+sp|Q60980|KLF3_MOUSE Krueppel-like factor 3 OS=Mus musculus OX=1...    33   8.9  
+sp|O54963|REST_RAT RE1-silencing transcription factor OS=Rattus ...    33   9.2  
+sp|Q2KJC1|CDC5L_BOVIN Cell division cycle 5-like protein OS=Bos ...    33   9.2  
+sp|Q99PV8|BC11B_MOUSE B-cell lymphoma/leukemia 11B OS=Mus muscul...    33   9.2  
+sp|Q29RK0|ZN574_BOVIN Zinc finger protein 574 OS=Bos taurus OX=9...    33   9.4  
+sp|Q59SN6|CRZ2_CANAL Transcriptional regulator CRZ2 OS=Candida a...    33   9.5  
+sp|B8MJK3|MIC60_TALSN MICOS complex subunit MIC60 OS=Talaromyces...    33   9.6  
+sp|Q99459|CDC5L_HUMAN Cell division cycle 5-like protein OS=Homo...    33   9.7  
+sp|Q58NQ5|PLAG1_CHICK Zinc finger protein PLAG1 OS=Gallus gallus...    33   9.8  
+sp|Q5EXX3|ZBT38_RAT Zinc finger and BTB domain-containing protei...    33   9.9  
+sp|O08837|CDC5L_RAT Cell division cycle 5-like protein OS=Rattus...    33   10.0 
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q20733|SAEG1_CAEEL Suppressor of activated egl-4 protein 1 OS...  1337   0.0  
+sp|Q4R2Z8|ZN541_MACFA Zinc finger protein 541 (Fragment) OS=Maca...   262   1e-68
+sp|Q90WN5|RCOR1_XENLA REST corepressor 1 OS=Xenopus laevis OX=83...   259   9e-68
+sp|Q0GGX2|ZN541_MOUSE Zinc finger protein 541 OS=Mus musculus OX...   257   4e-67
+sp|Q9H0D2|ZN541_HUMAN Zinc finger protein 541 OS=Homo sapiens OX...   257   4e-67
+sp|Q8BXJ2|TREF1_MOUSE Transcriptional-regulating factor 1 OS=Mus...   236   7e-61
+sp|Q96PN7|TREF1_HUMAN Transcriptional-regulating factor 1 OS=Hom...   235   9e-61
+sp|Q8CFE3|RCOR1_MOUSE REST corepressor 1 OS=Mus musculus OX=1009...   230   4e-59
+sp|Q9UKL0|RCOR1_HUMAN REST corepressor 1 OS=Homo sapiens OX=9606...   226   6e-58
+sp|Q8IZ40|RCOR2_HUMAN REST corepressor 2 OS=Homo sapiens OX=9606...   222   1e-56
+sp|Q5FWT8|RCOR2_RAT REST corepressor 2 OS=Rattus norvegicus OX=1...   221   3e-56
+sp|Q8C796|RCOR2_MOUSE REST corepressor 2 OS=Mus musculus OX=1009...   220   5e-56
+sp|Q6P116|RCOR2_DANRE REST corepressor 2 OS=Danio rerio OX=7955 ...   218   2e-55
+sp|Q6NRZ0|RCOR2_XENLA REST corepressor 2 OS=Xenopus laevis OX=83...   213   5e-54
+sp|Q8N344|MIER2_HUMAN Mesoderm induction early response protein ...   210   5e-53
+sp|Q9BTC8|MTA3_HUMAN Metastasis-associated protein MTA3 OS=Homo ...   204   2e-51
+sp|Q59E36|RCOR_DROME REST corepressor OS=Drosophila melanogaster...   202   9e-51
+sp|Q3UHF3|MIER3_MOUSE Mesoderm induction early response protein ...   202   9e-51
+sp|Q4R3R9|MIER3_MACFA Mesoderm induction early response protein ...   201   2e-50
+sp|Q9P2K3|RCOR3_HUMAN REST corepressor 3 OS=Homo sapiens OX=9606...   200   3e-50
+sp|A5PJX4|MIER2_BOVIN Mesoderm induction early response protein ...   200   4e-50
+sp|Q7Z3K6|MIER3_HUMAN Mesoderm induction early response protein ...   200   6e-50
+sp|Q7T105|MIER1_XENLA Mesoderm induction early response protein ...   195   1e-48
+sp|A6QL72|MTA3_BOVIN Metastasis-associated protein MTA3 OS=Bos t...   194   2e-48
+sp|Q924K8|MTA3_MOUSE Metastasis-associated protein MTA3 OS=Mus m...   194   3e-48
+sp|Q6PJG2|MDEAS_HUMAN Mitotic deacetylase-associated SANT domain...   188   1e-46
+sp|Q5REE1|MIER1_PONAB Mesoderm induction early response protein ...   187   4e-46
+sp|Q8N108|MIER1_HUMAN Mesoderm induction early response protein ...   187   4e-46
+sp|Q5ZKT9|MIER1_CHICK Mesoderm induction early response protein ...   186   6e-46
+sp|Q5UAK0|MIER1_MOUSE Mesoderm induction early response protein ...   184   3e-45
+sp|Q3U3N0|MIER2_MOUSE Mesoderm induction early response protein ...   184   3e-45
+sp|Q5ZJ40|RCOR3_CHICK REST corepressor 3 OS=Gallus gallus OX=903...   181   3e-44
+sp|Q13330|MTA1_HUMAN Metastasis-associated protein MTA1 OS=Homo ...   177   3e-43
+sp|Q8K4B0|MTA1_MOUSE Metastasis-associated protein MTA1 OS=Mus m...   173   4e-42
+sp|Q62599|MTA1_RAT Metastasis-associated protein MTA1 OS=Rattus ...   173   5e-42
+sp|Q6PGA0|RCOR3_MOUSE REST corepressor 3 OS=Mus musculus OX=1009...   172   2e-41
+sp|P53127|SNT2_YEAST E3 ubiquitin-protein ligase SNT2 OS=Sacchar...   170   6e-41
+sp|Q9R190|MTA2_MOUSE Metastasis-associated protein MTA2 OS=Mus m...   168   1e-40
+sp|Q18919|RCORB_CAEEL REST corepressor spr-1 OS=Caenorhabditis e...   168   2e-40
+sp|O94776|MTA2_HUMAN Metastasis-associated protein MTA2 OS=Homo ...   168   2e-40
+sp|Q69Z66|MYSM1_MOUSE Deubiquitinase MYSM1 OS=Mus musculus OX=10...   160   4e-38
+sp|Q09228|EGL27_CAEEL Egg-laying defective protein 27 OS=Caenorh...   153   5e-36
+sp|Q95Y41|RCORA_CAEEL REST corepressor rcor-1 OS=Caenorhabditis ...   136   7e-31
+sp|Q80TZ9|RERE_MOUSE Arginine-glutamic acid dipeptide repeats pr...   125   1e-27
+sp|Q62901|RERE_RAT Arginine-glutamic acid dipeptide repeats prot...   125   2e-27
+sp|Q9P2R6|RERE_HUMAN Arginine-glutamic acid dipeptide repeats pr...   124   3e-27
+sp|Q9WU42|NCOR2_MOUSE Nuclear receptor corepressor 2 OS=Mus musc...   118   3e-25
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...   116   7e-25
+sp|Q60974|NCOR1_MOUSE Nuclear receptor corepressor 1 OS=Mus musc...   113   6e-24
+sp|Q9Y618|NCOR2_HUMAN Nuclear receptor corepressor 2 OS=Homo sap...    97   7e-19
+sp|Q10369|YDBJ_SCHPO Uncharacterized protein C22E12.19 OS=Schizo...    90   9e-17
+sp|Q4KKX4|NCOR1_XENTR Nuclear receptor corepressor 1 OS=Xenopus ...    81   6e-14
+sp|Q8QG78|NCOR1_XENLA Nuclear receptor corepressor 1 OS=Xenopus ...    80   1e-13
+sp|Q55DP9|MYBP_DICDI Myb-like protein P OS=Dictyostelium discoid...    69   2e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5VVJ2|MYSM1_HUMAN Deubiquitinase MYSM1 OS=Homo sapiens OX=96...   105   3e-21
+sp|Q5F3F2|MYSM1_CHICK Histone H2A deubiquitinase MYSM1 OS=Gallus...    86   1e-15
+sp|A0JMR6|MYSM1_XENLA Histone H2A deubiquitinase MYSM1 OS=Xenopu...    64   6e-09
+sp|Q5RGA4|MYSM1_DANRE Histone H2A deubiquitinase MYSM1 OS=Danio ...    58   3e-07
+sp|F4KGY6|RVE1_ARATH Protein REVEILLE 1 OS=Arabidopsis thaliana ...    58   5e-07
+sp|Q9LDD4|ARID2_ARATH AT-rich interactive domain-containing prot...    57   6e-07
+sp|P34333|NCOR1_CAEEL Nuclear receptor corepressor 1 OS=Caenorha...    54   5e-06
+sp|Q6R0H1|LHY_ARATH Protein LHY OS=Arabidopsis thaliana OX=3702 ...    52   3e-05
+sp|B3H5A8|RVE7_ARATH Protein REVEILLE 7 OS=Arabidopsis thaliana ...    51   3e-05
+sp|Q6R0G4|RVE4_ARATH Protein REVEILLE 4 OS=Arabidopsis thaliana ...    51   4e-05
+sp|Q9FY60|MYB64_ARATH Transcription factor MYB64 OS=Arabidopsis ...    50   8e-05
+sp|Q8RWU3|RVE8_ARATH Protein REVEILLE 8 OS=Arabidopsis thaliana ...    50   1e-04
+sp|P25357|SNT1_YEAST Probable DNA-binding protein SNT1 OS=Saccha...    50   1e-04
+sp|Q7TS63|ZFAT_MOUSE Zinc finger protein ZFAT OS=Mus musculus OX...    49   1e-04
+sp|Q84JG2|SWI3B_ARATH SWI/SNF complex subunit SWI3B OS=Arabidops...    49   2e-04
+sp|C0SVG5|RVE5_ARATH Protein REVEILLE 5 OS=Arabidopsis thaliana ...    49   2e-04
+sp|Q2KJC1|CDC5L_BOVIN Cell division cycle 5-like protein OS=Bos ...    48   3e-04
+sp|Q84JT7|ARID1_ARATH AT-rich interactive domain-containing prot...    48   3e-04
+sp|Q99459|CDC5L_HUMAN Cell division cycle 5-like protein OS=Homo...    48   4e-04
+sp|Q6R0H0|RVE3_ARATH Protein REVEILLE 3 OS=Arabidopsis thaliana ...    48   4e-04
+sp|Q9FIM4|MY119_ARATH Transcription factor MYB119 OS=Arabidopsis...    48   5e-04
+sp|O08837|CDC5L_RAT Cell division cycle 5-like protein OS=Rattus...    48   5e-04
+sp|Q6A068|CDC5L_MOUSE Cell division cycle 5-like protein OS=Mus ...    48   5e-04
+sp|Q9XI07|SWI3C_ARATH SWI/SNF complex subunit SWI3C OS=Arabidops...    48   5e-04
+sp|G3X9G7|ZN809_MOUSE Zinc finger protein 809 OS=Mus musculus OX...    47   7e-04
+sp|Q54IF9|MYBG_DICDI Myb-like protein G OS=Dictyostelium discoid...    47   7e-04
+sp|F4K5X6|RVE2_ARATH Protein REVEILLE 2 OS=Arabidopsis thaliana ...    47   8e-04
+sp|Q8VY05|SWI3D_ARATH SWI/SNF complex subunit SWI3D OS=Arabidops...    47   9e-04
+sp|A7SD85|CDC5L_NEMVE Cell division cycle 5-related protein OS=N...    47   9e-04
+sp|Q0JCC3|SWI3A_ORYSJ SWI/SNF complex subunit SWI3A homolog OS=O...    46   0.001
+sp|F4J2J6|RVE7L_ARATH Protein REVEILLE 7-like OS=Arabidopsis tha...    46   0.001
+sp|P92948|CDC5L_ARATH Cell division cycle 5-like protein OS=Arab...    46   0.001
+sp|P92973|CCA1_ARATH Protein CCA1 OS=Arabidopsis thaliana OX=370...    46   0.001
+sp|Q8LJT8|TKI1_ARATH TSL-kinase interacting protein 1 OS=Arabido...    46   0.001
+sp|Q4R8H2|DNJC2_MACFA DnaJ homolog subfamily C member 2 OS=Macac...    46   0.002
+sp|Q99543|DNJC2_HUMAN DnaJ homolog subfamily C member 2 OS=Homo ...    46   0.002
+sp|P0CO94|CEF1_CRYNJ Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    46   0.002
+sp|Q9P243|ZFAT_HUMAN Zinc finger protein ZFAT OS=Homo sapiens OX...    45   0.003
+sp|P0CO95|CEF1_CRYNB Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    45   0.003
+sp|O13788|SSR1_SCHPO SWI/SNF and RSC complexes subunit ssr1 OS=S...    45   0.003
+sp|Q6A332|ALY3_ARATH Protein ALWAYS EARLY 3 OS=Arabidopsis thali...    44   0.005
+sp|Q7TQ20|DNJC2_RAT DnaJ homolog subfamily C member 2 OS=Rattus ...    44   0.005
+sp|Q61712|DNJC1_MOUSE DnaJ homolog subfamily C member 1 OS=Mus m...    44   0.005
+sp|Q8H0W3|RVE6_ARATH Protein REVEILLE 6 OS=Arabidopsis thaliana ...    44   0.006
+sp|P54103|DNJC2_MOUSE DnaJ homolog subfamily C member 2 OS=Mus m...    44   0.007
+sp|Q1RMH9|DNJC2_BOVIN DnaJ homolog subfamily C member 2 OS=Bos t...    44   0.007
+sp|Q6P2Y3|DNJC2_XENTR DnaJ homolog subfamily C member 2 OS=Xenop...    44   0.008
+sp|P10242|MYB_HUMAN Transcriptional activator Myb OS=Homo sapien...    43   0.008
+sp|Q642B9|ZNF18_RAT Zinc finger protein 18 OS=Rattus norvegicus ...    43   0.008
+sp|O01761|UNC89_CAEEL Muscle M-line assembly protein unc-89 OS=C...    43   0.008
+sp|P46200|MYB_BOVIN Transcriptional activator Myb OS=Bos taurus ...    43   0.008
+sp|Q8CC12|CDAN1_MOUSE Codanin-1 OS=Mus musculus OX=10090 GN=Cdan...    43   0.011
+sp|Q9ATB4|TAD2B_ARATH Transcriptional adapter ADA2b OS=Arabidops...    43   0.012
+sp|O14013|RRN5_SCHPO RNA polymerase I-specific transcription ini...    43   0.012
+sp|Q9ERG0|LIMA1_MOUSE LIM domain and actin-binding protein 1 OS=...    43   0.013
+sp|O94481|TFC5_SCHPO Transcription factor TFIIIB component B'' O...    43   0.014
+sp|Q53KK6|SWI3C_ORYSJ SWI/SNF complex subunit SWI3C homolog OS=O...    43   0.015
+sp|Q810A1|ZNF18_MOUSE Zinc finger protein 18 OS=Mus musculus OX=...    43   0.015
+sp|Q03237|MYBB_CHICK Myb-related protein B OS=Gallus gallus OX=9...    43   0.016
+sp|Q9FKF9|M5162_ARATH Probable transcription factor At5g61620 OS...    43   0.017
+sp|Q9SFD5|TAD2A_ARATH Transcriptional adapter ADA2a OS=Arabidops...    43   0.018
+sp|Q54QC0|MYBU_DICDI Myb-like protein U OS=Dictyostelium discoid...    43   0.018
+sp|P39964|CEF1_SCHPO Pre-mRNA-splicing factor cdc5 OS=Schizosacc...    42   0.018
+sp|O23160|MYB73_ARATH Transcription factor MYB73 OS=Arabidopsis ...    42   0.019
+sp|Q54YB7|MYBF_DICDI Myb-like protein F OS=Dictyostelium discoid...    42   0.021
+sp|Q4P652|CEF1_USTMA Pre-mRNA-splicing factor CEF1 OS=Ustilago m...    42   0.021
+sp|Q96RY5|CRML_HUMAN Protein cramped-like OS=Homo sapiens OX=960...    42   0.022
+sp|Q9VNP5|BOYB_DROME Putative ATP-dependent RNA helicase BoYb OS...    42   0.023
+sp|P52550|MYBA_CHICK Myb-related protein A OS=Gallus gallus OX=9...    42   0.024
+sp|Q6ZMS7|ZN783_HUMAN Zinc finger protein 783 OS=Homo sapiens OX...    42   0.024
+sp|A0A0G3VTN5|LHY_PETHY Protein LATE ELONGATED HYPOCOTYL OS=Petu...    42   0.025
+sp|Q6NV66|ZN646_MOUSE Zinc finger protein 646 OS=Mus musculus OX...    42   0.025
+sp|Q54Z40|MYBH_DICDI Myb-like protein H OS=Dictyostelium discoid...    42   0.026
+sp|Q80YY7|ZN618_MOUSE Zinc finger protein 618 OS=Mus musculus OX...    42   0.027
+sp|Q75LL6|TADA2_ORYSJ Transcriptional adapter ADA2 OS=Oryza sati...    42   0.028
+sp|Q7M7X5|IF2_WOLSU Translation initiation factor IF-2 OS=Woline...    42   0.028
+sp|J9VW97|LIV4_CRYNH DNA-binding protein LIV4 OS=Cryptococcus ne...    42   0.028
+sp|O08575|EYA2_MOUSE Eyes absent homolog 2 OS=Mus musculus OX=10...    42   0.029
+sp|Q9LVW4|MY118_ARATH Transcription factor MYB118 OS=Arabidopsis...    42   0.030
+sp|Q9FNN6|SRM1_ARATH Transcription factor SRM1 OS=Arabidopsis th...    41   0.031
+sp|A0A0P0XBU0|CCA1_ORYSJ Protein CCA1 OS=Oryza sativa subsp. jap...    41   0.032
+sp|P17029|ZKSC1_HUMAN Zinc finger protein with KRAB and SCAN dom...    41   0.033
+sp|O15816|MYBB_DICDI Myb-like protein B OS=Dictyostelium discoid...    41   0.036
+sp|P34454|YMA9_CAEEL Uncharacterized protein F54F2.9 OS=Caenorha...    41   0.039
+sp|Q8MX88|CRM_DROSE Protein cramped OS=Drosophila sechellia OX=7...    41   0.040
+sp|Q8L611|SC31B_ARATH Protein transport protein SEC31 homolog B ...    41   0.041
+sp|A0A6S6AAU0|G432_FUSSX Myb-like transcription factor OS=Fusari...    41   0.042
+sp|Q1A173|RADL6_ARATH Protein RADIALIS-like 6 OS=Arabidopsis tha...    41   0.043
+sp|P0C7X2|ZN688_HUMAN Zinc finger protein 688 OS=Homo sapiens OX...    41   0.043
+sp|P18733|ZG66_XENLA Gastrula zinc finger protein XlCGF66.1 (Fra...    41   0.044
+sp|Q8VDP3|MICA1_MOUSE [F-actin]-monooxygenase MICAL1 OS=Mus musc...    41   0.044
+sp|P0CG00|ZSA5D_HUMAN Putative zinc finger and SCAN domain-conta...    41   0.045
+sp|Q90625|ZBT17_CHICK Zinc finger and BTB domain-containing prot...    41   0.046
+sp|Q6PG95|CRML_MOUSE Protein cramped-like OS=Mus musculus OX=100...    41   0.049
+sp|Q96NJ6|ZFP3_HUMAN Zinc finger protein 3 homolog OS=Homo sapie...    41   0.052
+sp|Q96JB3|HIC2_HUMAN Hypermethylated in cancer 2 protein OS=Homo...    41   0.052
+sp|P46678|TFC5_YEAST Transcription factor TFIIIB component B'' O...    41   0.053
+sp|P06876|MYB_MOUSE Transcriptional activator Myb OS=Mus musculu...    41   0.054
+sp|Q8S9H7|DIV_ANTMA Transcription factor DIVARICATA OS=Antirrhin...    41   0.056
+sp|Q5A310|ISW2_CANAL ISWI chromatin-remodeling complex ATPase IS...    41   0.057
+sp|Q90W33|HIC2_DANRE Hypermethylated in cancer 2 protein OS=Dani...    41   0.057
+sp|Q1DUF9|INO80_COCIM Chromatin-remodeling ATPase INO80 OS=Cocci...    41   0.058
+sp|Q8C8R3|ANK2_MOUSE Ankyrin-2 OS=Mus musculus OX=10090 GN=Ank2 ...    41   0.059
+sp|Q8TA94|ZN563_HUMAN Zinc finger protein 563 OS=Homo sapiens OX...    41   0.060
+sp|Q8BXX2|ZBT49_MOUSE Zinc finger and BTB domain-containing prot...    41   0.063
+sp|Q4WTV7|INO80_ASPFU Chromatin-remodeling ATPase INO80 OS=Asper...    41   0.065
+sp|Q8AYC1|MRTFB_XENLA Myocardin-related transcription factor B O...    41   0.067
+sp|Q5R670|ZKSC1_PONAB Zinc finger protein with KRAB and SCAN dom...    40   0.071
+sp|Q9VZ08|RME6_DROME Receptor-mediated endocytosis protein 6 hom...    40   0.071
+sp|O14470|SSR2_SCHPO SWI/SNF and RSC complexes subunit ssr2 OS=S...    40   0.074
+sp|Q9DRA1|RDRP_BOTVF RNA replication protein OS=Botrytis virus F...    40   0.076
+sp|A3KFM7|CHD6_MOUSE Chromodomain-helicase-DNA-binding protein 6...    40   0.081
+sp|Q17Q32|ENOPH_AEDAE Enolase-phosphatase E1 OS=Aedes aegypti OX...    40   0.084
+sp|P18753|ZO84_XENLA Oocyte zinc finger protein XlCOF8.4 (Fragme...    40   0.084
+sp|Q2H0S9|STU1_CHAGB Protein STU1 OS=Chaetomium globosum (strain...    40   0.086
+sp|P01103|MYB_CHICK Transcriptional activator Myb OS=Gallus gall...    40   0.086
+sp|Q6CLE0|SEC24_KLULA Protein transport protein SEC24 OS=Kluyver...    40   0.092
+sp|P51960|MYBA_MOUSE Myb-related protein A OS=Mus musculus OX=10...    40   0.095
+sp|A6NJL1|ZSA5B_HUMAN Zinc finger and SCAN domain-containing pro...    40   0.097
+sp|O76906|CRM_DROME Protein cramped OS=Drosophila melanogaster O...    40   0.100
+sp|Q96KC8|DNJC1_HUMAN DnaJ homolog subfamily C member 1 OS=Homo ...    40   0.10 
+sp|Q5RBX0|ZNF7_PONAB Zinc finger protein 7 OS=Pongo abelii OX=96...    40   0.10 
+sp|P10243|MYBA_HUMAN Myb-related protein A OS=Homo sapiens OX=96...    40   0.10 
+sp|P17097|ZNF7_HUMAN Zinc finger protein 7 OS=Homo sapiens OX=96...    40   0.11 
+sp|P48972|MYBB_MOUSE Myb-related protein B OS=Mus musculus OX=10...    40   0.11 
+sp|Q8BRH4|KMT2C_MOUSE Histone-lysine N-methyltransferase 2C OS=M...    40   0.12 
+sp|Q9QYX7|PCLO_MOUSE Protein piccolo OS=Mus musculus OX=10090 GN...    40   0.12 
+sp|P01104|MYB_AVIMB Transforming protein Myb OS=Avian myeloblast...    40   0.12 
+sp|D3ZA12|CHD6_RAT Chromodomain-helicase-DNA-binding protein 6 O...    40   0.13 
+sp|A2ASS6|TITIN_MOUSE Titin OS=Mus musculus OX=10090 GN=Ttn PE=1...    40   0.13 
+sp|Q92618|ZN516_HUMAN Zinc finger protein 516 OS=Homo sapiens OX...    40   0.13 
+sp|P10244|MYBB_HUMAN Myb-related protein B OS=Homo sapiens OX=96...    40   0.13 
+sp|Q9VGW1|CAD86_DROME Cadherin-86C OS=Drosophila melanogaster OX...    40   0.14 
+sp|Q9W5U2|CHI10_DROME Probable chitinase 10 OS=Drosophila melano...    40   0.14 
+sp|Q3U3I9|ZN865_MOUSE Zinc finger protein 865 OS=Mus musculus OX...    40   0.15 
+sp|P70351|EZH1_MOUSE Histone-lysine N-methyltransferase EZH1 OS=...    39   0.15 
+sp|Q8WZ42|TITIN_HUMAN Titin OS=Homo sapiens OX=9606 GN=TTN PE=1 ...    39   0.16 
+sp|Q9ERA5|SMC4_MICAR Structural maintenance of chromosomes prote...    39   0.16 
+sp|Q86VK4|ZN410_HUMAN Zinc finger protein 410 OS=Homo sapiens OX...    39   0.17 
+sp|Q07889|SOS1_HUMAN Son of sevenless homolog 1 OS=Homo sapiens ...    39   0.17 
+sp|O60765|Z354A_HUMAN Zinc finger protein 354A OS=Homo sapiens O...    39   0.18 
+sp|Q62245|SOS1_MOUSE Son of sevenless homolog 1 OS=Mus musculus ...    39   0.18 
+sp|Q9JLZ6|HIC2_MOUSE Hypermethylated in cancer 2 protein OS=Mus ...    39   0.18 
+sp|Q11107|LIN13_CAEEL Zinc finger protein lin-13 OS=Caenorhabdit...    39   0.18 
+sp|Q6C8F5|CEF1_YARLI Pre-mRNA-splicing factor CEF1 OS=Yarrowia l...    39   0.19 
+sp|Q8TF39|ZN483_HUMAN Zinc finger protein 483 OS=Homo sapiens OX...    39   0.19 
+sp|P52551|MYBB_XENLA Myb-related protein B OS=Xenopus laevis OX=...    39   0.19 
+sp|Q9NW07|ZN358_HUMAN Zinc finger protein 358 OS=Homo sapiens OX...    39   0.20 
+sp|L7R9Z0|EOBI_PETHY MYB-like transcription factor EOBI OS=Petun...    39   0.20 
+sp|Q6A333|ALY2_ARATH Protein ALWAYS EARLY 2 OS=Arabidopsis thali...    39   0.20 
+sp|A7MBI1|ZFP69_BOVIN Zinc finger protein 69 homolog OS=Bos taur...    39   0.20 
+sp|Q5T7W0|ZN618_HUMAN Zinc finger protein 618 OS=Homo sapiens OX...    39   0.21 
+sp|Q9ULX6|AKP8L_HUMAN A-kinase anchor protein 8-like OS=Homo sap...    39   0.21 
+sp|Q9S9K9|MYB3_ARATH Transcription factor MYB3 OS=Arabidopsis th...    39   0.21 
+sp|Q8S4P4|EZ3_MAIZE Histone-lysine N-methyltransferase EZ3 OS=Ze...    39   0.21 
+sp|P81393|MYB08_ANTMA Myb-related protein 308 OS=Antirrhinum maj...    39   0.22 
+sp|O82368|Y2988_ARATH Uncharacterized protein At2g29880 OS=Arabi...    39   0.22 
+sp|Q6NWJ4|DNJC2_DANRE DnaJ homolog subfamily C member 2 OS=Danio...    39   0.23 
+sp|F4JZY1|CIP1_ARATH COP1-interactive protein 1 OS=Arabidopsis t...    39   0.23 
+sp|Q6R032|MB3R5_ARATH Transcription factor MYB3R-5 OS=Arabidopsi...    39   0.23 
+sp|Q4V8R6|E4F1_DANRE Transcription factor E4F1 OS=Danio rerio OX...    39   0.23 
+sp|Q147U1|ZN846_HUMAN Zinc finger protein 846 OS=Homo sapiens OX...    39   0.24 
+sp|Q42575|MYB1_ARATH Transcription factor MYB1 OS=Arabidopsis th...    39   0.24 
+sp|Q61329|ZFHX3_MOUSE Zinc finger homeobox protein 3 OS=Mus musc...    39   0.24 
+sp|Q8NI51|CTCFL_HUMAN Transcriptional repressor CTCFL OS=Homo sa...    39   0.25 
+sp|Q9GZU2|PEG3_HUMAN Paternally-expressed gene 3 protein OS=Homo...    38   0.26 
+sp|Q8LH59|MYBS1_ORYSJ Transcription factor MYBS1 OS=Oryza sativa...    38   0.27 
+sp|B8A9B2|MYBS1_ORYSI Transcription factor MYBS1 OS=Oryza sativa...    38   0.27 
+sp|Q96LW1|Z354B_HUMAN Zinc finger protein 354B OS=Homo sapiens O...    38   0.27 
+sp|Q9H7X3|ZN696_HUMAN Zinc finger protein 696 OS=Homo sapiens OX...    38   0.27 
+sp|O89019|INVS_MOUSE Inversin OS=Mus musculus OX=10090 GN=Invs P...    38   0.27 
+sp|P49610|STRH_STRPN Beta-N-acetylhexosaminidase OS=Streptococcu...    38   0.28 
+sp|Q9NUA8|ZBT40_HUMAN Zinc finger and BTB domain-containing prot...    38   0.28 
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    38   0.28 
+sp|Q61751|Z354A_MOUSE Zinc finger protein 354A OS=Mus musculus O...    38   0.29 
+sp|Q9S7L2|MYB98_ARATH Transcription factor MYB98 OS=Arabidopsis ...    38   0.29 
+sp|E9PYI1|ZN568_MOUSE Zinc finger protein 568 OS=Mus musculus OX...    38   0.29 
+sp|P03209|BRLF1_EBVB9 Replication and transcription activator OS...    38   0.30 
+sp|P04197|MYB_DROME Myb protein OS=Drosophila melanogaster OX=72...    38   0.30 
+sp|Q9Y222|DMTF1_HUMAN Cyclin-D-binding Myb-like transcription fa...    38   0.31 
+sp|O43296|ZN264_HUMAN Zinc finger protein 264 OS=Homo sapiens OX...    38   0.31 
+sp|Q94FL9|MB3R4_ARATH Transcription factor MYB3R-4 OS=Arabidopsi...    38   0.31 
+sp|Q7TSH9|ZN184_MOUSE Zinc finger protein 184 OS=Mus musculus OX...    38   0.32 
+sp|P81392|MYB06_ANTMA Myb-related protein 306 OS=Antirrhinum maj...    38   0.33 
+sp|Q90610|NEO1_CHICK Neogenin (Fragment) OS=Gallus gallus OX=903...    38   0.33 
+sp|O88553|ZFP37_RAT Zinc finger protein 37 OS=Rattus norvegicus ...    38   0.34 
+sp|Q8NAP3|ZBT38_HUMAN Zinc finger and BTB domain-containing prot...    38   0.34 
+sp|Q96H86|ZN764_HUMAN Zinc finger protein 764 OS=Homo sapiens OX...    38   0.35 
+sp|Q0JHU7|MB3R2_ORYSJ Transcription factor MYB3R-2 OS=Oryza sati...    38   0.35 
+sp|A7E2Z2|EZH1_BOVIN Histone-lysine N-methyltransferase EZH1 OS=...    38   0.35 
+sp|Q5RDS6|EZH1_PONAB Histone-lysine N-methyltransferase EZH1 OS=...    38   0.36 
+sp|Q9Y2A4|ZN443_HUMAN Zinc finger protein 443 OS=Homo sapiens OX...    38   0.36 
+sp|Q9WUK6|ZBT18_MOUSE Zinc finger and BTB domain-containing prot...    38   0.36 
+sp|Q9SIJ0|ZAT2_ARATH Zinc finger protein ZAT2 OS=Arabidopsis tha...    38   0.36 
+sp|Q8S4P5|EZ2_MAIZE Histone-lysine N-methyltransferase EZ2 OS=Ze...    38   0.37 
+sp|Q7XC51|MYBS2_ORYSJ Transcription factor MYBS2 OS=Oryza sativa...    38   0.38 
+sp|B8BI93|MYBS2_ORYSI Transcription factor MYBS2 OS=Oryza sativa...    38   0.38 
+sp|P10073|ZSC22_HUMAN Zinc finger and SCAN domain-containing pro...    38   0.39 
+sp|Q8N9F8|ZN454_HUMAN Zinc finger protein 454 OS=Homo sapiens OX...    38   0.39 
+sp|Q99592|ZBT18_HUMAN Zinc finger and BTB domain-containing prot...    38   0.40 
+sp|Q92800|EZH1_HUMAN Histone-lysine N-methyltransferase EZH1 OS=...    38   0.40 
+sp|P52740|ZN132_HUMAN Zinc finger protein 132 OS=Homo sapiens OX...    38   0.42 
+sp|Q7ZXQ9|DBNLA_XENLA Drebrin-like protein A OS=Xenopus laevis O...    38   0.43 
+sp|P17022|ZNF18_HUMAN Zinc finger protein 18 OS=Homo sapiens OX=...    38   0.44 
+sp|O14014|RGA3_SCHPO Probable Rho-type GTPase-activating protein...    38   0.44 
+sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain I...    38   0.44 
+sp|A1YGK6|PEG3_PANPA Paternally-expressed gene 3 protein OS=Pan ...    38   0.45 
+sp|Q869R9|MYBJ_DICDI Myb-like protein J OS=Dictyostelium discoid...    38   0.45 
+sp|A0JN76|ZBT18_BOVIN Zinc finger and BTB domain-containing prot...    38   0.45 
+sp|A2T7F2|PEG3_PANTR Paternally-expressed gene 3 protein OS=Pan ...    38   0.47 
+sp|Q9NX65|ZSC32_HUMAN Zinc finger and SCAN domain-containing pro...    38   0.47 
+sp|Q8IXM2|BAP18_HUMAN Chromatin complexes subunit BAP18 OS=Homo ...    38   0.48 
+sp|O75346|ZN253_HUMAN Zinc finger protein 253 OS=Homo sapiens OX...    38   0.50 
+sp|Q9UL36|ZN236_HUMAN Zinc finger protein 236 OS=Homo sapiens OX...    38   0.51 
+sp|B2KFW1|ZSC20_MOUSE Zinc finger and SCAN domain-containing pro...    38   0.54 
+sp|Q9UII5|ZN107_HUMAN Zinc finger protein 107 OS=Homo sapiens OX...    38   0.54 
+sp|Q54HX6|MYBI_DICDI Myb-like protein I OS=Dictyostelium discoid...    38   0.54 
+sp|P49796|RGS3_HUMAN Regulator of G-protein signaling 3 OS=Homo ...    38   0.55 
+sp|Q01778|HUNB_MUSDO Protein hunchback OS=Musca domestica OX=737...    38   0.55 
+sp|Q9JKY3|ZBT18_RAT Zinc finger and BTB domain-containing protei...    38   0.56 
+sp|B4FNX4|MYB31_MAIZE MYB31 transcription factor31 OS=Zea mays O...    38   0.56 
+sp|Q6NNN0|RADL3_ARATH Protein RADIALIS-like 3 OS=Arabidopsis tha...    37   0.59 
+sp|Q0CRP6|AZPA6_ASPTN Transcriptional regulator ATEG_03638 OS=As...    37   0.59 
+sp|P27898|MYBP_MAIZE Myb-related protein P OS=Zea mays OX=4577 G...    37   0.61 
+sp|O08954|SNAI2_RAT Zinc finger protein SNAI2 OS=Rattus norvegic...    37   0.61 
+sp|F1LR10|LIMA1_RAT LIM domain and actin-binding protein 1 OS=Ra...    37   0.61 
+sp|Q8CE22|DMTF1_MOUSE Cyclin-D-binding Myb-like transcription fa...    37   0.61 
+sp|Q8TF32|ZN431_HUMAN Zinc finger protein 431 OS=Homo sapiens OX...    37   0.62 
+sp|K7ZP88|ATAA_ACIS5 Trimeric autotransporter adhesin AtaA OS=Ac...    37   0.63 
+sp|Q9UC06|ZNF70_HUMAN Zinc finger protein 70 OS=Homo sapiens OX=...    37   0.64 
+sp|F1SPM8|AAK1_PIG AP2-associated protein kinase 1 OS=Sus scrofa...    37   0.65 
+sp|Q86HX9|MYBK_DICDI Myb-like protein K OS=Dictyostelium discoid...    37   0.67 
+sp|Q1LUA6|TRIO_DANRE Triple functional domain protein OS=Danio r...    37   0.69 
+sp|Q9SZP1|MYB4_ARATH Transcription repressor MYB4 OS=Arabidopsis...    37   0.70 
+sp|Q29RK0|ZN574_BOVIN Zinc finger protein 574 OS=Bos taurus OX=9...    37   0.71 
+sp|Q9HAH1|ZN556_HUMAN Zinc finger protein 556 OS=Homo sapiens OX...    37   0.71 
+sp|B6MUN4|MYSM1_BRAFL Histone H2A deubiquitinase MYSM1 OS=Branch...    37   0.71 
+sp|Q8BKX7|ZN410_MOUSE Zinc finger protein 410 OS=Mus musculus OX...    37   0.73 
+sp|A1YG88|ZNF16_PANPA Zinc finger protein 16 OS=Pan paniscus OX=...    37   0.74 
+sp|A1YFW6|ZN449_PANPA Zinc finger protein 449 OS=Pan paniscus OX...    37   0.74 
+sp|A1YFC1|PEG3_GORGO Paternally-expressed gene 3 protein OS=Gori...    37   0.74 
+sp|P81394|MYB15_ANTMA Myb-related protein 315 OS=Antirrhinum maj...    37   0.74 
+sp|Q05935|MYBA_XENLA Myb-related protein A OS=Xenopus laevis OX=...    37   0.75 
+sp|A2T6W2|ZN449_PANTR Zinc finger protein 449 OS=Pan troglodytes...    37   0.76 
+sp|G3V893|ZN335_RAT Zinc finger protein 335 OS=Rattus norvegicus...    37   0.76 
+sp|Q8NCP5|ZBT44_HUMAN Zinc finger and BTB domain-containing prot...    37   0.77 
+sp|Q6P1D7|SLX4_MOUSE Structure-specific endonuclease subunit SLX...    37   0.78 
+sp|Q8NDI1|EHBP1_HUMAN EH domain-binding protein 1 OS=Homo sapien...    37   0.78 
+sp|Q5R4P8|ZN574_PONAB Zinc finger protein 574 OS=Pongo abelii OX...    37   0.79 
+sp|A2A5K6|ZN335_MOUSE Zinc finger protein 335 OS=Mus musculus OX...    37   0.81 
+sp|Q15928|ZN141_HUMAN Zinc finger protein 141 OS=Homo sapiens OX...    37   0.82 
+sp|Q6A085|ZN629_MOUSE Zinc finger protein 629 OS=Mus musculus OX...    37   0.82 
+sp|Q9Z1D9|ZN394_MOUSE Zinc finger protein 394 OS=Mus musculus OX...    37   0.82 
+sp|P38144|ISW1_YEAST ISWI chromatin-remodeling complex ATPase IS...    37   0.82 
+sp|Q6DG03|DMTF1_DANRE Cyclin-D-binding Myb-like transcription fa...    37   0.82 
+sp|C5DPB7|UTP25_ZYGRC U3 small nucleolar RNA-associated protein ...    37   0.83 
+sp|Q4R8S8|ZN574_MACFA Zinc finger protein 574 OS=Macaca fascicul...    37   0.86 
+sp|Q5EAC5|ZN410_BOVIN Zinc finger protein 410 OS=Bos taurus OX=9...    37   0.87 
+sp|Q5EXX3|ZBT38_RAT Zinc finger and BTB domain-containing protei...    37   0.89 
+sp|Q2M2I8|AAK1_HUMAN AP2-associated protein kinase 1 OS=Homo sap...    37   0.89 
+sp|Q02975|Z354A_RAT Zinc finger protein 354A OS=Rattus norvegicu...    37   0.90 
+sp|Q7SAM0|BST1_NEUCR GPI inositol-deacylase OS=Neurospora crassa...    37   0.90 
+sp|Q99612|KLF6_HUMAN Krueppel-like factor 6 OS=Homo sapiens OX=9...    37   0.92 
+sp|Q7MY03|FDHE_PHOLL Protein FdhE homolog OS=Photorhabdus laumon...    37   0.96 
+sp|E0CJS3|EOBII_PETHY MYB-like transcription factor EOBII OS=Pet...    37   0.96 
+sp|Q3SWU4|ZBT44_RAT Zinc finger and BTB domain-containing protei...    37   0.97 
+sp|Q5REI6|ZN791_PONAB Zinc finger protein 791 OS=Pongo abelii OX...    36   0.98 
+sp|O65312|MEDEA_ARATH Histone-lysine N-methyltransferase MEDEA O...    36   0.98 
+sp|Q29RZ4|ZNF2_BOVIN Zinc finger protein 2 OS=Bos taurus OX=9913...    36   0.99 
+sp|Q7S9L2|STU1_NEUCR Protein stu-1 OS=Neurospora crassa (strain ...    36   0.99 
+sp|Q9DAU9|ZN654_MOUSE Zinc finger protein 654 OS=Mus musculus OX...    36   1.0  
+sp|P40568|DSN1_YEAST Kinetochore-associated protein DSN1 OS=Sacc...    36   1.0  
+sp|Q91VW9|ZKSC3_MOUSE Zinc finger protein with KRAB and SCAN dom...    36   1.0  
+sp|Q9ULM2|ZN490_HUMAN Zinc finger protein 490 OS=Homo sapiens OX...    36   1.1  
+sp|A1L1R6|ZN423_DANRE Zinc finger protein 423 OS=Danio rerio OX=...    36   1.1  
+sp|O15015|ZN646_HUMAN Zinc finger protein 646 OS=Homo sapiens OX...    36   1.1  
+sp|Q9H4Z2|ZN335_HUMAN Zinc finger protein 335 OS=Homo sapiens OX...    36   1.1  
+sp|Q6P9G9|ZN449_HUMAN Zinc finger protein 449 OS=Homo sapiens OX...    36   1.1  
+sp|Q09822|CDC15_SCHPO Cell division control protein 15 OS=Schizo...    36   1.1  
+sp|Q55GK3|MYBM_DICDI Myb-like protein M OS=Dictyostelium discoid...    36   1.1  
+sp|Q7TSH3|ZN516_MOUSE Zinc finger protein 516 OS=Mus musculus OX...    36   1.1  
+sp|A1YEQ3|ZN449_GORGO Zinc finger protein 449 OS=Gorilla gorilla...    36   1.1  
+sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator SN...    36   1.1  
+sp|M1ETK3|MYB1W_BETVU Transcription factor MYB1 OS=Beta vulgaris...    36   1.1  
+sp|Q008X5|R1A_WBV24 Replicase polyprotein 1a OS=White bream viru...    36   1.1  
+sp|I1RN14|NPS2_GIBZE Nonribosomal peptide synthetase 2 OS=Gibber...    36   1.2  
+sp|Q8H1P9|MB3R3_ARATH Transcription factor MYB3R-3 OS=Arabidopsi...    36   1.2  
+sp|Q14584|ZN266_HUMAN Zinc finger protein 266 OS=Homo sapiens OX...    36   1.2  
+sp|A6QLU5|ZN184_BOVIN Zinc finger protein 184 OS=Bos taurus OX=9...    36   1.2  
+sp|Q8BIQ3|ZNF2_MOUSE Zinc finger protein 2 OS=Mus musculus OX=10...    36   1.2  
+sp|Q96MU6|ZN778_HUMAN Zinc finger protein 778 OS=Homo sapiens OX...    36   1.2  
+sp|Q6ZN55|ZN574_HUMAN Zinc finger protein 574 OS=Homo sapiens OX...    36   1.2  
+sp|Q008X6|R1AB_WBV24 Replicase polyprotein 1ab OS=White bream vi...    36   1.2  
+sp|P91868|SNPC4_CAEEL snRNA-activating protein complex subunit 4...    36   1.3  
+sp|Q54K19|MYBD_DICDI Myb-like protein D OS=Dictyostelium discoid...    36   1.3  
+sp|Q99676|ZN184_HUMAN Zinc finger protein 184 OS=Homo sapiens OX...    36   1.3  
+sp|Q7XC57|MYBS3_ORYSJ Transcription factor MYBS3 OS=Oryza sativa...    36   1.3  
+sp|Q571C7|BDP1_MOUSE Transcription factor TFIIIB component B'' h...    36   1.3  
+sp|Q9SCP1|MYB27_ARATH Transcription factor MYB27 OS=Arabidopsis ...    36   1.3  
+sp|P38968|SEC31_YEAST Protein transport protein SEC31 OS=Sacchar...    36   1.4  
+sp|Q08759|MYB_XENLA Transcriptional activator Myb OS=Xenopus lae...    36   1.4  
+sp|P0A3K7|IF2_STRAG Translation initiation factor IF-2 OS=Strept...    36   1.4  
+sp|P0A3K6|IF2_STRA3 Translation initiation factor IF-2 OS=Strept...    36   1.4  
+sp|Q3K302|IF2_STRA1 Translation initiation factor IF-2 OS=Strept...    36   1.4  
+sp|Q02983|RRN5_YEAST RNA polymerase I-specific transcription ini...    36   1.4  
+sp|Q66HG1|DMTF1_RAT Cyclin-D-binding Myb-like transcription fact...    36   1.4  
+sp|Q54TN2|MYBC_DICDI Myb-like protein C OS=Dictyostelium discoid...    36   1.4  
+sp|Q86VH2|KIF27_HUMAN Kinesin-like protein KIF27 OS=Homo sapiens...    36   1.4  
+sp|Q8BI99|ZN879_MOUSE Zinc finger protein 879 OS=Mus musculus OX...    36   1.4  
+sp|Q9S7G7|MB3R1_ARATH Transcription factor MYB3R-1 OS=Arabidopsi...    36   1.4  
+sp|A2A761|ZFP69_MOUSE Zinc finger protein 69 OS=Mus musculus OX=...    36   1.4  
+sp|Q8E1H3|IF2_STRA5 Translation initiation factor IF-2 OS=Strept...    36   1.4  
+sp|Q32M78|ZN699_HUMAN Zinc finger protein 699 OS=Homo sapiens OX...    36   1.5  
+sp|Q8N8Y5|ZFP41_HUMAN Zinc finger protein 41 homolog OS=Homo sap...    36   1.5  
+sp|O60320|EREP2_HUMAN Protein ENTREP2 OS=Homo sapiens OX=9606 GN...    36   1.5  
+sp|Q8BQ33|TICRR_MOUSE Treslin OS=Mus musculus OX=10090 GN=Ticrr ...    36   1.5  
+sp|O80931|AS1_ARATH Transcription factor AS1 OS=Arabidopsis thal...    36   1.5  
+sp|Q9NZ20|PA2G3_HUMAN Group 3 secretory phospholipase A2 OS=Homo...    36   1.5  
+sp|Q94FL6|MY124_ARATH Transcription factor MYB124 OS=Arabidopsis...    36   1.5  
+sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 GN=...    36   1.6  
+sp|Q3UH06|RREB1_MOUSE Ras-responsive element-binding protein 1 O...    36   1.6  
+sp|Q9S773|MYB97_ARATH Transcription factor MYB97 OS=Arabidopsis ...    36   1.6  
+sp|Q9QXS1|PLEC_MOUSE Plectin OS=Mus musculus OX=10090 GN=Plec PE...    36   1.6  
+sp|Q4JL84|MYB59_ARATH Transcription factor MYB59 OS=Arabidopsis ...    36   1.6  
+sp|Q9CQA3|SDHB_MOUSE Succinate dehydrogenase [ubiquinone] iron-s...    36   1.7  
+sp|Q9SSA1|MYB57_ARATH Transcription factor MYB57 OS=Arabidopsis ...    36   1.7  
+sp|O43309|ZSC12_HUMAN Zinc finger and SCAN domain-containing pro...    36   1.7  
+sp|Q58FS3|RAD_ANTMA Transcription factor RADIALIS OS=Antirrhinum...    36   1.7  
+sp|Q8BP86|SNPC4_MOUSE snRNA-activating protein complex subunit 4...    36   1.7  
+sp|D2HQI1|ZSCA4_AILME Zinc finger and SCAN domain-containing pro...    36   1.7  
+sp|E9Q8G5|ZFOI1_MOUSE Zinc finger protein OBI1 OS=Mus musculus O...    36   1.7  
+sp|O94855|SC24D_HUMAN Protein transport protein Sec24D OS=Homo s...    36   1.7  
+sp|Q1G3C4|RADL4_ARATH Protein RADIALIS-like 4 OS=Arabidopsis tha...    36   1.7  
+sp|Q9Y4B5|MTCL1_HUMAN Microtubule cross-linking factor 1 OS=Homo...    36   1.7  
+sp|Q9BRP0|OVOL2_HUMAN Transcription factor Ovo-like 2 OS=Homo sa...    36   1.8  
+sp|Q0JB89|MYB58_ORYSJ Probable transcription factor MYB58 OS=Ory...    36   1.8  
+sp|A7KBS4|ZSC4D_MOUSE Zinc finger and SCAN domain containing pro...    36   1.8  
+sp|Q9FG68|RAX1_ARATH Transcription factor RAX1 OS=Arabidopsis th...    36   1.8  
+sp|Q9BSG1|ZNF2_HUMAN Zinc finger protein 2 OS=Homo sapiens OX=96...    36   1.8  
+sp|Q8VZQ2|MYB61_ARATH Transcription factor MYB61 OS=Arabidopsis ...    36   1.8  
+sp|O54963|REST_RAT RE1-silencing transcription factor OS=Rattus ...    36   1.9  
+sp|Q54NA6|MYBL_DICDI Myb-like protein L OS=Dictyostelium discoid...    36   1.9  
+sp|Q6DEZ2|F120A_XENTR Constitutive coactivator of PPAR-gamma-lik...    36   1.9  
+sp|Q96EQ9|PRDM9_MOUSE Histone-lysine N-methyltransferase PRDM9 O...    36   2.0  
+sp|M1ETA5|MYB1R_BETVU Transcription factor MYB1 OS=Beta vulgaris...    36   2.0  
+sp|Q5FWU5|ZN513_RAT Zinc finger protein 513 OS=Rattus norvegicus...    36   2.0  
+sp|Q9C9C8|MY122_ARATH Transcription factor MYB122 OS=Arabidopsis...    36   2.0  
+sp|Q767L8|MDC1_PIG Mediator of DNA damage checkpoint protein 1 O...    36   2.0  
+sp|Q504L7|ZN574_RAT Zinc finger protein 574 OS=Rattus norvegicus...    36   2.0  
+sp|F4JVB8|RADL1_ARATH Protein RADIALIS-like 1 OS=Arabidopsis tha...    36   2.0  
+sp|Q9BE73|ZN827_MACFA Zinc finger protein 827 OS=Macaca fascicul...    36   2.0  
+sp|Q32LD1|BAP18_BOVIN Chromatin complexes subunit BAP18 OS=Bos t...    36   2.1  
+sp|Q505G8|ZN827_MOUSE Zinc finger protein 827 OS=Mus musculus OX...    36   2.1  
+sp|Q8R0A2|ZBT44_MOUSE Zinc finger and BTB domain-containing prot...    36   2.1  
+sp|Q80YP6|ZIK1_MOUSE Zinc finger protein interacting with ribonu...    36   2.1  
+sp|A2T759|ZNF16_PANTR Zinc finger protein 16 OS=Pan troglodytes ...    36   2.1  
+sp|A0A2R6PN00|MY123_ACTCC Transcription factor MYB123 OS=Actinid...    36   2.1  
+sp|Q9LQX5|MY117_ARATH Transcription factor MYB117 OS=Arabidopsis...    36   2.1  
+sp|F6NSX9|Z687B_DANRE Zinc finger protein 687b OS=Danio rerio OX...    36   2.2  
+sp|E6ZGB4|PHF2_DICLA Lysine-specific demethylase phf2 OS=Dicentr...    36   2.2  
+sp|Q15973|ZN124_HUMAN Zinc finger protein 124 OS=Homo sapiens OX...    35   2.2  
+sp|Q966L8|CHE1_CAEEL Transcription factor che-1 OS=Caenorhabditi...    35   2.2  
+sp|P28908|TNR8_HUMAN Tumor necrosis factor receptor superfamily ...    35   2.2  
+sp|A0A5E4M3Q4|SYD9_CAEEL Zinc finger protein syd-9 OS=Caenorhabd...    35   2.2  
+sp|Q2TB10|ZN800_HUMAN Zinc finger protein 800 OS=Homo sapiens OX...    35   2.3  
+sp|Q9FKA9|LATE_ARATH Protein LATE FLOWERING OS=Arabidopsis thali...    35   2.3  
+sp|Q9LVS0|KUA1_ARATH Transcription factor KUA1 OS=Arabidopsis th...    35   2.3  
+sp|P18751|ZO71_XENLA Oocyte zinc finger protein XlCOF7.1 (Fragme...    35   2.3  
+sp|Q92766|RREB1_HUMAN Ras-responsive element-binding protein 1 O...    35   2.3  
+sp|Q9LX82|MYB48_ARATH Transcription factor MYB48 OS=Arabidopsis ...    35   2.3  
+sp|Q8N8E2|ZN513_HUMAN Zinc finger protein 513 OS=Homo sapiens OX...    35   2.3  
+sp|Q8BY46|ZN574_MOUSE Zinc finger protein 574 OS=Mus musculus OX...    35   2.4  
+sp|P22035|BAS1_YEAST Myb-like DNA-binding protein BAS1 OS=Saccha...    35   2.4  
+sp|B3QQI2|IF2_CHLP8 Translation initiation factor IF-2 OS=Chloro...    35   2.4  
+sp|Q9H0M5|ZN700_HUMAN Zinc finger protein 700 OS=Homo sapiens OX...    35   2.4  
+sp|Q5SXM2|SNPC4_HUMAN snRNA-activating protein complex subunit 4...    35   2.4  
+sp|Q6PD29|ZN513_MOUSE Zinc finger protein 513 OS=Mus musculus OX...    35   2.4  
+sp|P07248|ADR1_YEAST Regulatory protein ADR1 OS=Saccharomyces ce...    35   2.5  
+sp|Q13127|REST_HUMAN RE1-silencing transcription factor OS=Homo ...    35   2.5  
+sp|Q9C9G7|MYB62_ARATH Transcription factor MYB62 OS=Arabidopsis ...    35   2.5  
+sp|Q9UJL9|ZF69B_HUMAN Zinc finger protein 69 homolog B OS=Homo s...    35   2.6  
+sp|Q13459|MYO9B_HUMAN Unconventional myosin-IXb OS=Homo sapiens ...    35   2.6  
+sp|Q9NR99|MXRA5_HUMAN Matrix-remodeling-associated protein 5 OS=...    35   2.6  
+sp|Q6FMJ3|MYO3_CANGA Myosin-3 OS=Candida glabrata (strain ATCC 2...    35   2.6  
+sp|Q9SA47|MYB58_ARATH Transcription factor MYB58 OS=Arabidopsis ...    35   2.6  
+sp|Q9UHK0|NUFP1_HUMAN FMR1-interacting protein NUFIP1 OS=Homo sa...    35   2.6  
+sp|Q13105|ZBT17_HUMAN Zinc finger and BTB domain-containing prot...    35   2.7  
+sp|Q6J6I6|ZN566_PANTR Zinc finger protein 566 OS=Pan troglodytes...    35   2.7  
+sp|Q96K62|ZBT45_HUMAN Zinc finger and BTB domain-containing prot...    35   2.7  
+sp|O95785|WIZ_HUMAN Protein Wiz OS=Homo sapiens OX=9606 GN=WIZ P...    35   2.7  
+sp|Q13112|CAF1B_HUMAN Chromatin assembly factor 1 subunit B OS=H...    35   2.8  
+sp|P17020|ZNF16_HUMAN Zinc finger protein 16 OS=Homo sapiens OX=...    35   2.8  
+sp|Q10199|IMP2_SCHPO Septation protein imp2 OS=Schizosaccharomyc...    35   2.8  
+sp|Q9JMC2|INSM2_MOUSE Insulinoma-associated protein 2 OS=Mus mus...    35   2.9  
+sp|B6EUA9|PR40A_ARATH Pre-mRNA-processing protein 40A OS=Arabido...    35   2.9  
+sp|Q6NRH7|CIPC_XENLA CLOCK-interacting pacemaker OS=Xenopus laev...    35   2.9  
+sp|Q9H582|ZN644_HUMAN Zinc finger protein 644 OS=Homo sapiens OX...    35   2.9  
+sp|Q8ILP3|P113_PLAF7 Surface protein P113 OS=Plasmodium falcipar...    35   2.9  
+sp|P18714|ZG20_XENLA Gastrula zinc finger protein xFG20-1 OS=Xen...    35   3.0  
+sp|Q9NSD4|ZN275_HUMAN Zinc finger protein 275 OS=Homo sapiens OX...    35   3.0  
+sp|Q6XDT6|IKZF_MYXGL Ikaros family zinc finger protein OS=Myxine...    35   3.1  
+sp|P30427|PLEC_RAT Plectin OS=Rattus norvegicus OX=10116 GN=Plec...    35   3.1  
+sp|Q9DCT6|BAP18_MOUSE Chromatin complexes subunit BAP18 OS=Mus m...    35   3.2  
+sp|P21913|SDHB_RAT Succinate dehydrogenase [ubiquinone] iron-sul...    35   3.2  
+sp|Q9SQU4|C3H34_ARATH Zinc finger CCCH domain-containing protein...    35   3.2  
+sp|Q17R98|ZN827_HUMAN Zinc finger protein 827 OS=Homo sapiens OX...    35   3.3  
+sp|P32591|SWI3_YEAST SWI/SNF complex subunit SWI3 OS=Saccharomyc...    35   3.5  
+sp|Q8BLB0|ZFP3_MOUSE Zinc finger protein 3 OS=Mus musculus OX=10...    35   3.6  
+sp|Q5AHG6|SCH9_CANAL Serine/threonine-protein kinase SCH9 OS=Can...    35   3.6  
+sp|Q2V9B0|MY1R1_SOLTU Transcription factor MYB1R1 OS=Solanum tub...    35   3.6  
+sp|Q6NZJ6|IF4G1_MOUSE Eukaryotic translation initiation factor 4...    35   3.6  
+sp|Q9W6K2|EXO1_XENLA Exonuclease 1 OS=Xenopus laevis OX=8355 GN=...    35   3.6  
+sp|Q9BYN7|ZN341_HUMAN Zinc finger protein 341 OS=Homo sapiens OX...    35   3.7  
+sp|Q17308|TRA1_CAEBR Sex-determining transformer protein 1 OS=Ca...    35   3.7  
+sp|Q9VQ56|ERM_DROME Fez family zinc finger protein erm OS=Drosop...    35   3.7  
+sp|P41877|ISW1_CAEEL Chromatin-remodeling complex ATPase chain i...    35   3.8  
+sp|Q90850|HIC1_CHICK Hypermethylated in cancer 1 protein (Fragme...    35   3.8  
+sp|Q5RJR4|ZN467_RAT Zinc finger protein 467 OS=Rattus norvegicus...    35   3.8  
+sp|Q9U3V5|TIPT_DROME Protein tiptop OS=Drosophila melanogaster O...    35   3.8  
+sp|Q6GNJ8|VPS72_XENLA Vacuolar protein sorting-associated protei...    35   3.9  
+sp|Q54CT1|MYBN_DICDI Myb-like protein N OS=Dictyostelium discoid...    35   3.9  
+sp|Q9FDW1|MYB44_ARATH Transcription factor MYB44 OS=Arabidopsis ...    35   3.9  
+sp|Q969W8|ZN566_HUMAN Zinc finger protein 566 OS=Homo sapiens OX...    35   4.0  
+sp|Q52KB5|ZBT24_DANRE Zinc finger and BTB domain-containing prot...    35   4.0  
+sp|Q6KAQ7|ZZZ3_MOUSE ZZ-type zinc finger-containing protein 3 OS...    35   4.0  
+sp|Q32KN0|ZN572_BOVIN Zinc finger protein 572 OS=Bos taurus OX=9...    35   4.0  
+sp|Q9XSR1|ZN252_CANLF Zinc finger protein 252 OS=Canis lupus fam...    35   4.0  
+sp|Q8C827|ZFP62_MOUSE Zinc finger protein 62 OS=Mus musculus OX=...    35   4.1  
+sp|Q9JJN2|ZFHX4_MOUSE Zinc finger homeobox protein 4 OS=Mus musc...    35   4.1  
+sp|Q9SEZ4|MY105_ARATH Transcription factor MYB105 OS=Arabidopsis...    35   4.3  
+sp|A7KAM4|ATG13_PENRW Autophagy-related protein 13 OS=Penicilliu...    35   4.3  
+sp|P18752|ZO72_XENLA Oocyte zinc finger protein XlCOF7.2 (Fragme...    35   4.3  
+sp|Q0P4X6|ZBT44_XENTR Zinc finger and BTB domain-containing prot...    35   4.3  
+sp|P07313|MYLK2_RABIT Myosin light chain kinase 2, skeletal/card...    35   4.4  
+sp|Q8NDM7|CFA43_HUMAN Cilia- and flagella-associated protein 43 ...    35   4.4  
+sp|Q38850|MYB5_ARATH Transcription repressor MYB5 OS=Arabidopsis...    35   4.4  
+sp|Q5TYW1|ZN658_HUMAN Zinc finger protein 658 OS=Homo sapiens OX...    35   4.5  
+sp|Q8S2T0|GRIP_ARATH Protein GRIP OS=Arabidopsis thaliana OX=370...    35   4.7  
+sp|Q08427|EGR2_XENLA Early growth response protein 2 OS=Xenopus ...    35   4.7  
+sp|Q9H609|ZN576_HUMAN Zinc finger protein 576 OS=Homo sapiens OX...    34   4.9  
+sp|Q9ASQ2|MAMYB_ARATH Transcription factor MAMYB OS=Arabidopsis ...    34   4.9  
+sp|Q4V348|Z658B_HUMAN Zinc finger protein 658B OS=Homo sapiens O...    34   5.0  
+sp|Q9R0L7|AKP8L_MOUSE A-kinase anchor protein 8-like OS=Mus musc...    34   5.1  
+sp|Q8CG47|SMC4_MOUSE Structural maintenance of chromosomes prote...    34   5.2  
+sp|Q3UHJ0|AAK1_MOUSE AP2-associated protein kinase 1 OS=Mus musc...    34   5.2  
+sp|Q9UEG4|ZN629_HUMAN Zinc finger protein 629 OS=Homo sapiens OX...    34   5.2  
+sp|Q5AL16|STP2_CANAL Transcriptional regulator STP2 OS=Candida a...    34   5.2  
+sp|Q99102|MUC4_HUMAN Mucin-4 OS=Homo sapiens OX=9606 GN=MUC4 PE=...    34   5.2  
+sp|Q08773|ISW2_YEAST ISWI chromatin-remodeling complex ATPase IS...    34   5.2  
+sp|Q9Y6Q3|ZFP37_HUMAN Zinc finger protein 37 homolog OS=Homo sap...    34   5.4  
+sp|Q9SPG2|MYB28_ARATH Transcription factor MYB28 OS=Arabidopsis ...    34   5.4  
+sp|O57415|RREB1_CHICK Ras-responsive element-binding protein 1 O...    34   5.4  
+sp|Q4JL76|MYBA2_ORYSJ Myb-related protein MYBAS2 OS=Oryza sativa...    34   5.4  
+sp|Q07231|ZSC21_MOUSE Zinc finger and SCAN domain-containing pro...    34   5.5  
+sp|Q13360|ZN177_HUMAN Zinc finger protein 177 OS=Homo sapiens OX...    34   5.5  
+sp|Q99590|SCAFB_HUMAN Protein SCAF11 OS=Homo sapiens OX=9606 GN=...    34   5.6  
+sp|Q9BE45|IKBZ_BOVIN NF-kappa-B inhibitor zeta OS=Bos taurus OX=...    34   5.6  
+sp|A4RF61|HSE1_MAGO7 Class E vacuolar protein-sorting machinery ...    34   5.6  
+sp|Q16587|ZNF74_HUMAN Zinc finger protein 74 OS=Homo sapiens OX=...    34   5.7  
+sp|Q8ZQD5|FTSK_SALTY DNA translocase FtsK OS=Salmonella typhimur...    34   5.8  
+sp|O15027|SC16A_HUMAN Protein transport protein Sec16A OS=Homo s...    34   5.9  
+sp|Q8W475|SWI3A_ARATH SWI/SNF complex subunit SWI3A OS=Arabidops...    34   5.9  
+sp|Q756C3|CEF1_ASHGO Pre-mRNA-splicing factor CEF1 OS=Ashbya gos...    34   5.9  
+sp|Q96IT1|ZN496_HUMAN Zinc finger protein 496 OS=Homo sapiens OX...    34   6.0  
+sp|Q62947|ZEB1_RAT Zinc finger E-box-binding homeobox 1 OS=Rattu...    34   6.0  
+sp|P46865|KINL_LEICH Kinesin-like protein K39 (Fragment) OS=Leis...    34   6.0  
+sp|P19382|SNAI1_XENLA Protein snail homolog Sna OS=Xenopus laevi...    34   6.1  
+sp|C9JN71|ZN878_HUMAN Zinc finger protein 878 OS=Homo sapiens OX...    34   6.7  
+sp|P0CW18|PRS56_HUMAN Serine protease 56 OS=Homo sapiens OX=9606...    34   7.0  
+sp|O49608|MYB32_ARATH Transcription factor MYB32 OS=Arabidopsis ...    34   7.0  
+sp|P34400|MIG10_CAEEL Abnormal cell migration protein 10 OS=Caen...    34   7.0  
+sp|Q8JZL0|ZN467_MOUSE Zinc finger protein 467 OS=Mus musculus OX...    34   7.3  
+sp|Q9SN12|MYB77_ARATH Transcription factor MYB77 OS=Arabidopsis ...    34   7.3  
+sp|Q6NXK2|ZN532_MOUSE Zinc finger protein 532 OS=Mus musculus OX...    34   7.4  
+sp|O49782|MYB51_ARATH Transcription factor MYB51 OS=Arabidopsis ...    34   7.4  
+sp|A0A125S9M4|LMN1_HYPEX Lamin-1 OS=Hypsibius exemplaris OX=2072...    34   7.4  
+sp|Q9PU36|PCLO_CHICK Protein piccolo (Fragment) OS=Gallus gallus...    34   7.5  
+sp|A8AUS0|SSPA_STRGC Streptococcal surface protein A OS=Streptoc...    34   7.7  
+sp|P41182|BCL6_HUMAN B-cell lymphoma 6 protein OS=Homo sapiens O...    34   7.7  
+sp|Q8BXS7|GP152_MOUSE Probable G-protein coupled receptor 152 OS...    34   7.8  
+sp|P0C1X8|AAK1_RAT AP2-associated protein kinase 1 OS=Rattus nor...    34   7.8  
+sp|Q567C6|ZN367_DANRE Zinc finger protein 367 OS=Danio rerio OX=...    34   8.0  
+sp|Q7ZXH3|TAB3_XENLA Mitogen-activated protein kinase kinase kin...    34   8.0  
+sp|A4IFM7|MYLK2_BOVIN Myosin light chain kinase 2, skeletal/card...    34   8.0  
+sp|Q0VEE6|ZN800_MOUSE Zinc finger protein 800 OS=Mus musculus OX...    34   8.1  
+sp|Q9UJQ4|SALL4_HUMAN Sal-like protein 4 OS=Homo sapiens OX=9606...    34   8.2  
+sp|P23504|SPAP_STRMU Cell surface antigen I/II OS=Streptococcus ...    34   8.2  
+sp|O18735|ERBB2_CANLF Receptor tyrosine-protein kinase erbB-2 OS...    33   8.4  
+sp|Q8N1G0|ZN687_HUMAN Zinc finger protein 687 OS=Homo sapiens OX...    33   8.6  
+sp|Q96EG3|ZN837_HUMAN Zinc finger protein 837 OS=Homo sapiens OX...    33   8.7  
+sp|A2T712|ZSC21_PANTR Zinc finger and SCAN domain-containing pro...    33   8.9  
+sp|Q62255|SALL3_MOUSE Sal-like protein 3 OS=Mus musculus OX=1009...    33   8.9  
+sp|P11657|PAC_STRMG Major cell-surface adhesin PAc OS=Streptococ...    33   8.9  
+sp|A1L253|F149B_DANRE Protein FAM149B1 OS=Danio rerio OX=7955 GN...    33   8.9  
+sp|Q9PU53|TERF2_CHICK Telomeric repeat-binding factor 2 OS=Gallu...    33   8.9  
+sp|Q5FWL4|EST2A_XENLA Extended synaptotagmin-2-A OS=Xenopus laev...    33   9.2  
+sp|P46504|YLX8_CAEEL Uncharacterized protein F23F12.8 OS=Caenorh...    33   9.5  
+sp|Q15149|PLEC_HUMAN Plectin OS=Homo sapiens OX=9606 GN=PLEC PE=...    33   9.9  
+sp|P81391|MYB05_ANTMA Myb-related protein 305 OS=Antirrhinum maj...    33   9.9  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.302    0.113    0.299 
+
+Lambda     K      H
+   0.267   0.0354    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 918,497,547
+Number of Sequences: 569516
+Number of extensions: 36662428
+Number of successful extensions: 161517
+Number of sequences better than 10.0: 2290
+Number of HSP's better than 10.0 without gapping: 714
+Number of HSP's successfully gapped in prelim test: 3084
+Number of HSP's that attempted gapping in prelim test: 141327
+Number of HSP's gapped (non-prelim): 19315
+length of query: 900
+length of database: 205,866,895
+effective HSP length: 127
+effective length of query: 773
+effective length of database: 133,538,363
+effective search space: 103225154599
+effective search space used: 103225154599
+T: 11
+A: 40
+X1: 16 ( 7.0 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.4 bits)
+S2: 74 (33.3 bits)

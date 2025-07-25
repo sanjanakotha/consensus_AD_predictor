@@ -1,0 +1,834 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (527 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O13788|SSR1_SCHPO SWI/SNF and RSC complexes subunit ssr1 OS=S...  1090   0.0  
+sp|O14470|SSR2_SCHPO SWI/SNF and RSC complexes subunit ssr2 OS=S...   256   3e-67
+sp|P43609|RSC8_YEAST Chromatin structure-remodeling complex prot...   233   4e-60
+sp|P32591|SWI3_YEAST SWI/SNF complex subunit SWI3 OS=Saccharomyc...   205   9e-52
+sp|Q6PDG5|SMRC2_MOUSE SWI/SNF complex subunit SMARCC2 OS=Mus mus...   197   2e-49
+sp|Q8TAQ2|SMRC2_HUMAN SWI/SNF complex subunit SMARCC2 OS=Homo sa...   196   3e-49
+sp|Q92922|SMRC1_HUMAN SWI/SNF complex subunit SMARCC1 OS=Homo sa...   192   6e-48
+sp|P97496|SMRC1_MOUSE SWI/SNF complex subunit SMARCC1 OS=Mus mus...   190   3e-47
+sp|Q9XI07|SWI3C_ARATH SWI/SNF complex subunit SWI3C OS=Arabidops...   145   9e-34
+sp|Q53KK6|SWI3C_ORYSJ SWI/SNF complex subunit SWI3C homolog OS=O...   132   5e-30
+sp|Q8W475|SWI3A_ARATH SWI/SNF complex subunit SWI3A OS=Arabidops...   128   1e-28
+sp|Q0JCC3|SWI3A_ORYSJ SWI/SNF complex subunit SWI3A homolog OS=O...   115   8e-25
+sp|Q8VY05|SWI3D_ARATH SWI/SNF complex subunit SWI3D OS=Arabidops...   100   5e-20
+sp|Q84JG2|SWI3B_ARATH SWI/SNF complex subunit SWI3B OS=Arabidops...    88   2e-16
+sp|Q5RGA4|MYSM1_DANRE Histone H2A deubiquitinase MYSM1 OS=Danio ...    61   2e-08
+sp|Q69Z66|MYSM1_MOUSE Deubiquitinase MYSM1 OS=Mus musculus OX=10...    59   1e-07
+sp|B6MUN4|MYSM1_BRAFL Histone H2A deubiquitinase MYSM1 OS=Branch...    58   2e-07
+sp|Q54J55|MYBX_DICDI Myb-like protein X OS=Dictyostelium discoid...    57   3e-07
+sp|Q5VVJ2|MYSM1_HUMAN Deubiquitinase MYSM1 OS=Homo sapiens OX=96...    57   5e-07
+sp|Q5F3F2|MYSM1_CHICK Histone H2A deubiquitinase MYSM1 OS=Gallus...    55   1e-06
+sp|A0JMR6|MYSM1_XENLA Histone H2A deubiquitinase MYSM1 OS=Xenopu...    50   3e-05
+sp|Q54Z40|MYBH_DICDI Myb-like protein H OS=Dictyostelium discoid...    49   9e-05
+sp|Q75LL6|TADA2_ORYSJ Transcriptional adapter ADA2 OS=Oryza sati...    48   3e-04
+sp|Q9ATB4|TAD2B_ARATH Transcriptional adapter ADA2b OS=Arabidops...    47   3e-04
+sp|Q59WH0|ADA2_CANAL Transcriptional adapter 2 OS=Candida albica...    44   0.003
+sp|Q9SFD5|TAD2A_ARATH Transcriptional adapter ADA2a OS=Arabidops...    42   0.013
+sp|Q6UUV9|CRTC1_HUMAN CREB-regulated transcription coactivator 1...    39   0.100
+sp|Q6ZQ88|KDM1A_MOUSE Lysine-specific histone demethylase 1A OS=...    39   0.13 
+sp|A0A6S6AAU0|G432_FUSSX Myb-like transcription factor OS=Fusari...    38   0.16 
+sp|O60341|KDM1A_HUMAN Lysine-specific histone demethylase 1A OS=...    38   0.17 
+sp|Q6AYE3|TAD2A_RAT Transcriptional adapter 2-alpha OS=Rattus no...    38   0.22 
+sp|O75478|TAD2A_HUMAN Transcriptional adapter 2-alpha OS=Homo sa...    38   0.27 
+sp|Q3SZP8|TAD2A_BOVIN Transcriptional adapter 2-alpha OS=Bos tau...    37   0.32 
+sp|Q8CHV6|TAD2A_MOUSE Transcriptional adapter 2-alpha OS=Mus mus...    37   0.36 
+sp|Q8I8V0|TAD2B_DROME Transcriptional adapter 2B OS=Drosophila m...    36   0.72 
+sp|Q5ZJF3|TAD2A_CHICK Transcriptional adapter 2-alpha OS=Gallus ...    35   1.1  
+sp|Q9VW97|LSDA_DROME Possible lysine-specific histone demethylas...    35   2.2  
+sp|Q6A332|ALY3_ARATH Protein ALWAYS EARLY 3 OS=Arabidopsis thali...    35   2.2  
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...    34   2.5  
+sp|Q1C786|SLYA_YERPA Transcriptional regulator SlyA OS=Yersinia ...    34   2.7  
+sp|P91868|SNPC4_CAEEL snRNA-activating protein complex subunit 4...    34   3.4  
+sp|Q9P7J7|ADA2_SCHPO Transcriptional adapter 2 OS=Schizosaccharo...    34   3.4  
+sp|B2A865|ACCDA_NATTJ Acetyl-coenzyme A carboxylase carboxyl tra...    34   3.6  
+sp|Q157S1|CRTC1_RAT CREB-regulated transcription coactivator 1 O...    33   5.0  
+sp|Q94FL6|MY124_ARATH Transcription factor MYB124 OS=Arabidopsis...    33   5.6  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|O13788|SSR1_SCHPO SWI/SNF and RSC complexes subunit ssr1 OS=S...   692   0.0  
+sp|O14470|SSR2_SCHPO SWI/SNF and RSC complexes subunit ssr2 OS=S...   509   e-143
+sp|Q53KK6|SWI3C_ORYSJ SWI/SNF complex subunit SWI3C homolog OS=O...   444   e-124
+sp|Q9XI07|SWI3C_ARATH SWI/SNF complex subunit SWI3C OS=Arabidops...   417   e-115
+sp|P32591|SWI3_YEAST SWI/SNF complex subunit SWI3 OS=Saccharomyc...   388   e-107
+sp|P43609|RSC8_YEAST Chromatin structure-remodeling complex prot...   349   2e-95
+sp|Q8W475|SWI3A_ARATH SWI/SNF complex subunit SWI3A OS=Arabidops...   276   3e-73
+sp|P97496|SMRC1_MOUSE SWI/SNF complex subunit SMARCC1 OS=Mus mus...   274   1e-72
+sp|Q8TAQ2|SMRC2_HUMAN SWI/SNF complex subunit SMARCC2 OS=Homo sa...   264   1e-69
+sp|Q6PDG5|SMRC2_MOUSE SWI/SNF complex subunit SMARCC2 OS=Mus mus...   262   7e-69
+sp|Q84JG2|SWI3B_ARATH SWI/SNF complex subunit SWI3B OS=Arabidops...   261   1e-68
+sp|Q92922|SMRC1_HUMAN SWI/SNF complex subunit SMARCC1 OS=Homo sa...   253   2e-66
+sp|Q8VY05|SWI3D_ARATH SWI/SNF complex subunit SWI3D OS=Arabidops...   250   2e-65
+sp|Q0JCC3|SWI3A_ORYSJ SWI/SNF complex subunit SWI3A homolog OS=O...   240   3e-62
+sp|Q54J55|MYBX_DICDI Myb-like protein X OS=Dictyostelium discoid...   147   2e-34
+sp|Q5RGA4|MYSM1_DANRE Histone H2A deubiquitinase MYSM1 OS=Danio ...   131   1e-29
+sp|Q69Z66|MYSM1_MOUSE Deubiquitinase MYSM1 OS=Mus musculus OX=10...   130   2e-29
+sp|Q5VVJ2|MYSM1_HUMAN Deubiquitinase MYSM1 OS=Homo sapiens OX=96...   129   7e-29
+sp|Q5F3F2|MYSM1_CHICK Histone H2A deubiquitinase MYSM1 OS=Gallus...   128   8e-29
+sp|A0JMR6|MYSM1_XENLA Histone H2A deubiquitinase MYSM1 OS=Xenopu...   124   2e-27
+sp|B6MUN4|MYSM1_BRAFL Histone H2A deubiquitinase MYSM1 OS=Branch...   118   9e-26
+sp|Q54Z40|MYBH_DICDI Myb-like protein H OS=Dictyostelium discoid...   104   1e-21
+sp|Q75LL6|TADA2_ORYSJ Transcriptional adapter ADA2 OS=Oryza sati...   101   2e-20
+sp|Q9ATB4|TAD2B_ARATH Transcriptional adapter ADA2b OS=Arabidops...    97   5e-19
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9SFD5|TAD2A_ARATH Transcriptional adapter ADA2a OS=Arabidops...    99   8e-20
+sp|Q59WH0|ADA2_CANAL Transcriptional adapter 2 OS=Candida albica...    83   7e-15
+sp|Q5RBN9|TAD2B_PONAB Transcriptional adapter 2-beta OS=Pongo ab...    81   2e-14
+sp|Q86TJ2|TAD2B_HUMAN Transcriptional adapter 2-beta OS=Homo sap...    81   2e-14
+sp|Q9P7J7|ADA2_SCHPO Transcriptional adapter 2 OS=Schizosaccharo...    78   1e-13
+sp|Q6NRB5|TAD2B_XENLA Transcriptional adapter 2-beta OS=Xenopus ...    78   2e-13
+sp|Q02336|ADA2_YEAST Transcriptional adapter 2 OS=Saccharomyces ...    76   5e-13
+sp|Q5ZJF3|TAD2A_CHICK Transcriptional adapter 2-alpha OS=Gallus ...    72   1e-11
+sp|Q503N9|TAD2B_DANRE Transcriptional adapter 2-beta OS=Danio re...    70   4e-11
+sp|Q8I8V0|TAD2B_DROME Transcriptional adapter 2B OS=Drosophila m...    70   5e-11
+sp|Q6AYE3|TAD2A_RAT Transcriptional adapter 2-alpha OS=Rattus no...    69   1e-10
+sp|O75478|TAD2A_HUMAN Transcriptional adapter 2-alpha OS=Homo sa...    68   1e-10
+sp|Q3SZP8|TAD2A_BOVIN Transcriptional adapter 2-alpha OS=Bos tau...    68   2e-10
+sp|Q8CHV6|TAD2A_MOUSE Transcriptional adapter 2-alpha OS=Mus mus...    68   2e-10
+sp|Q6ZQ88|KDM1A_MOUSE Lysine-specific histone demethylase 1A OS=...    57   3e-07
+sp|O60341|KDM1A_HUMAN Lysine-specific histone demethylase 1A OS=...    57   5e-07
+sp|Q7KSD8|TAD2A_DROME Transcriptional adapter 2A OS=Drosophila m...    55   2e-06
+sp|Q9VW97|LSDA_DROME Possible lysine-specific histone demethylas...    53   5e-06
+sp|Q9XWP6|KDM1A_CAEEL Lysine-specific histone demethylase 1 OS=C...    48   2e-04
+sp|Q6YYZ1|LDL2_ORYSJ Lysine-specific histone demethylase 1 homol...    48   2e-04
+sp|Q96KC8|DNJC1_HUMAN DnaJ homolog subfamily C member 1 OS=Homo ...    47   4e-04
+sp|Q9LID0|LDL2_ARATH Lysine-specific histone demethylase 1 homol...    46   0.001
+sp|Q61712|DNJC1_MOUSE DnaJ homolog subfamily C member 1 OS=Mus m...    45   0.001
+sp|Q6ZTR7|CBAR2_HUMAN CBY1-interacting BAR domain-containing pro...    45   0.001
+sp|Q60974|NCOR1_MOUSE Nuclear receptor corepressor 1 OS=Mus musc...    45   0.002
+sp|Q9WU42|NCOR2_MOUSE Nuclear receptor corepressor 2 OS=Mus musc...    45   0.002
+sp|A0A6S6AAU0|G432_FUSSX Myb-like transcription factor OS=Fusari...    45   0.002
+sp|Q0CRP6|AZPA6_ASPTN Transcriptional regulator ATEG_03638 OS=As...    44   0.003
+sp|Q54IF9|MYBG_DICDI Myb-like protein G OS=Dictyostelium discoid...    43   0.005
+sp|B3H5A8|RVE7_ARATH Protein REVEILLE 7 OS=Arabidopsis thaliana ...    43   0.007
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...    42   0.010
+sp|Q9Y618|NCOR2_HUMAN Nuclear receptor corepressor 2 OS=Homo sap...    42   0.010
+sp|F4J2J6|RVE7L_ARATH Protein REVEILLE 7-like OS=Arabidopsis tha...    42   0.011
+sp|Q6NRZ0|RCOR2_XENLA REST corepressor 2 OS=Xenopus laevis OX=83...    42   0.011
+sp|Q8NCU4|CC191_HUMAN Coiled-coil domain-containing protein 191 ...    42   0.012
+sp|Q54CT1|MYBN_DICDI Myb-like protein N OS=Dictyostelium discoid...    42   0.012
+sp|P91868|SNPC4_CAEEL snRNA-activating protein complex subunit 4...    42   0.012
+sp|Q9P792|YN8B_SCHPO ZZ-type zinc finger-containing protein P35G...    42   0.014
+sp|Q8RWU3|RVE8_ARATH Protein REVEILLE 8 OS=Arabidopsis thaliana ...    42   0.014
+sp|A0A0G3VTN5|LHY_PETHY Protein LATE ELONGATED HYPOCOTYL OS=Petu...    41   0.018
+sp|F4KGY6|RVE1_ARATH Protein REVEILLE 1 OS=Arabidopsis thaliana ...    41   0.018
+sp|C0SVG5|RVE5_ARATH Protein REVEILLE 5 OS=Arabidopsis thaliana ...    41   0.019
+sp|Q869R9|MYBJ_DICDI Myb-like protein J OS=Dictyostelium discoid...    41   0.021
+sp|Q6R0H1|LHY_ARATH Protein LHY OS=Arabidopsis thaliana OX=3702 ...    41   0.024
+sp|Q6NWJ4|DNJC2_DANRE DnaJ homolog subfamily C member 2 OS=Danio...    41   0.026
+sp|Q6R0H0|RVE3_ARATH Protein REVEILLE 3 OS=Arabidopsis thaliana ...    41   0.026
+sp|Q5SXM2|SNPC4_HUMAN snRNA-activating protein complex subunit 4...    41   0.031
+sp|Q54TN2|MYBC_DICDI Myb-like protein C OS=Dictyostelium discoid...    41   0.032
+sp|F4JLS1|LDL3_ARATH Lysine-specific histone demethylase 1 homol...    41   0.033
+sp|Q6P116|RCOR2_DANRE REST corepressor 2 OS=Danio rerio OX=7955 ...    41   0.036
+sp|Q6R0G4|RVE4_ARATH Protein REVEILLE 4 OS=Arabidopsis thaliana ...    40   0.040
+sp|P22035|BAS1_YEAST Myb-like DNA-binding protein BAS1 OS=Saccha...    40   0.044
+sp|A0A0P0XBU0|CCA1_ORYSJ Protein CCA1 OS=Oryza sativa subsp. jap...    40   0.046
+sp|F4K5X6|RVE2_ARATH Protein REVEILLE 2 OS=Arabidopsis thaliana ...    40   0.048
+sp|P54103|DNJC2_MOUSE DnaJ homolog subfamily C member 2 OS=Mus m...    40   0.051
+sp|Q8BP86|SNPC4_MOUSE snRNA-activating protein complex subunit 4...    40   0.064
+sp|P34454|YMA9_CAEEL Uncharacterized protein F54F2.9 OS=Caenorha...    40   0.071
+sp|Q6P2Y3|DNJC2_XENTR DnaJ homolog subfamily C member 2 OS=Xenop...    40   0.071
+sp|Q4R8H2|DNJC2_MACFA DnaJ homolog subfamily C member 2 OS=Macac...    40   0.077
+sp|Q99543|DNJC2_HUMAN DnaJ homolog subfamily C member 2 OS=Homo ...    40   0.077
+sp|A2CI98|DYTN_MOUSE Dystrotelin OS=Mus musculus OX=10090 GN=Dyt...    39   0.083
+sp|Q8CFE3|RCOR1_MOUSE REST corepressor 1 OS=Mus musculus OX=1009...    39   0.085
+sp|Q9FY60|MYB64_ARATH Transcription factor MYB64 OS=Arabidopsis ...    39   0.085
+sp|Q7TQ20|DNJC2_RAT DnaJ homolog subfamily C member 2 OS=Rattus ...    39   0.086
+sp|Q1RMH9|DNJC2_BOVIN DnaJ homolog subfamily C member 2 OS=Bos t...    39   0.086
+sp|Q9P2K3|RCOR3_HUMAN REST corepressor 3 OS=Homo sapiens OX=9606...    39   0.087
+sp|Q6R032|MB3R5_ARATH Transcription factor MYB3R-5 OS=Arabidopsi...    39   0.095
+sp|P92973|CCA1_ARATH Protein CCA1 OS=Arabidopsis thaliana OX=370...    39   0.095
+sp|O43149|ZZEF1_HUMAN Zinc finger ZZ-type and EF-hand domain-con...    39   0.12 
+sp|Q6A332|ALY3_ARATH Protein ALWAYS EARLY 3 OS=Arabidopsis thali...    39   0.12 
+sp|Q54NA6|MYBL_DICDI Myb-like protein L OS=Dictyostelium discoid...    38   0.14 
+sp|Q05935|MYBA_XENLA Myb-related protein A OS=Xenopus laevis OX=...    38   0.14 
+sp|Q5SSH7|ZZEF1_MOUSE Zinc finger ZZ-type and EF-hand domain-con...    38   0.14 
+sp|Q9UKL0|RCOR1_HUMAN REST corepressor 1 OS=Homo sapiens OX=9606...    38   0.14 
+sp|Q8H0W3|RVE6_ARATH Protein REVEILLE 6 OS=Arabidopsis thaliana ...    38   0.15 
+sp|O15816|MYBB_DICDI Myb-like protein B OS=Dictyostelium discoid...    38   0.16 
+sp|P34127|MYBA_DICDI Myb-like protein A OS=Dictyostelium discoid...    38   0.17 
+sp|O96064|MYSP_MYTGA Paramyosin OS=Mytilus galloprovincialis OX=...    38   0.17 
+sp|P01104|MYB_AVIMB Transforming protein Myb OS=Avian myeloblast...    38   0.18 
+sp|Q96CN5|LRC45_HUMAN Leucine-rich repeat-containing protein 45 ...    38   0.18 
+sp|P48972|MYBB_MOUSE Myb-related protein B OS=Mus musculus OX=10...    38   0.20 
+sp|Q9Y802|LSD1_SCHPO Lysine-specific histone demethylase 1 OS=Sc...    38   0.20 
+sp|Q03237|MYBB_CHICK Myb-related protein B OS=Gallus gallus OX=9...    38   0.21 
+sp|P10244|MYBB_HUMAN Myb-related protein B OS=Homo sapiens OX=96...    38   0.22 
+sp|Q66HG1|DMTF1_RAT Cyclin-D-binding Myb-like transcription fact...    38   0.22 
+sp|Q8CE22|DMTF1_MOUSE Cyclin-D-binding Myb-like transcription fa...    38   0.22 
+sp|Q9Y048|DTN1_CAEEL Dystrobrevin-1 OS=Caenorhabditis elegans OX...    38   0.22 
+sp|Q9Y222|DMTF1_HUMAN Cyclin-D-binding Myb-like transcription fa...    38   0.26 
+sp|P52550|MYBA_CHICK Myb-related protein A OS=Gallus gallus OX=9...    38   0.27 
+sp|Q9FNN6|SRM1_ARATH Transcription factor SRM1 OS=Arabidopsis th...    38   0.27 
+sp|F4JY84|TCX7_ARATH Protein tesmin/TSO1-like CXC 7 OS=Arabidops...    38   0.28 
+sp|B9G2A8|BIG_ORYSJ Auxin transport protein BIG OS=Oryza sativa ...    38   0.28 
+sp|Q8S9H7|DIV_ANTMA Transcription factor DIVARICATA OS=Antirrhin...    38   0.29 
+sp|Q6DG03|DMTF1_DANRE Cyclin-D-binding Myb-like transcription fa...    38   0.29 
+sp|Q55DP9|MYBP_DICDI Myb-like protein P OS=Dictyostelium discoid...    37   0.31 
+sp|P10243|MYBA_HUMAN Myb-related protein A OS=Homo sapiens OX=96...    37   0.31 
+sp|P51960|MYBA_MOUSE Myb-related protein A OS=Mus musculus OX=10...    37   0.32 
+sp|Q890Q5|KAD_CLOTE Adenylate kinase OS=Clostridium tetani (stra...    37   0.33 
+sp|Q60LV4|MYO3_CAEBR Myosin-3 OS=Caenorhabditis briggsae OX=6238...    37   0.34 
+sp|Q90WN5|RCOR1_XENLA REST corepressor 1 OS=Xenopus laevis OX=83...    37   0.38 
+sp|P25357|SNT1_YEAST Probable DNA-binding protein SNT1 OS=Saccha...    37   0.39 
+sp|Q0JHU7|MB3R2_ORYSJ Transcription factor MYB3R-2 OS=Oryza sati...    37   0.40 
+sp|Q55GK3|MYBM_DICDI Myb-like protein M OS=Dictyostelium discoid...    37   0.41 
+sp|Q9P6H9|REB1_SCHPO DNA-binding protein reb1 OS=Schizosaccharom...    37   0.45 
+sp|A1Z9E2|LIN54_DROME Protein lin-54 homolog OS=Drosophila melan...    37   0.47 
+sp|Q9S7G7|MB3R1_ARATH Transcription factor MYB3R-1 OS=Arabidopsi...    37   0.50 
+sp|Q94FL9|MB3R4_ARATH Transcription factor MYB3R-4 OS=Arabidopsi...    37   0.50 
+sp|Q95KD7|CC191_MACFA Coiled-coil domain-containing protein 191 ...    36   0.53 
+sp|Q14596|NBR1_HUMAN Next to BRCA1 gene 1 protein OS=Homo sapien...    36   0.53 
+sp|Q9SB64|NBR1_ARATH Protein NBR1 homolog OS=Arabidopsis thalian...    36   0.57 
+sp|P06876|MYB_MOUSE Transcriptional activator Myb OS=Mus musculu...    36   0.58 
+sp|P37913|DNLI1_MOUSE DNA ligase 1 OS=Mus musculus OX=10090 GN=L...    36   0.58 
+sp|P04197|MYB_DROME Myb protein OS=Drosophila melanogaster OX=72...    36   0.59 
+sp|Q4WHG0|CEF1_ASPFU Pre-mRNA-splicing factor cef1 OS=Aspergillu...    36   0.60 
+sp|Q7XUR2|LDL3_ORYSJ Lysine-specific histone demethylase 1 homol...    36   0.63 
+sp|Q01H90|LDL3_ORYSI Lysine-specific histone demethylase 1 homol...    36   0.63 
+sp|Q5RC94|NBR1_PONAB Next to BRCA1 gene 1 protein OS=Pongo abeli...    36   0.69 
+sp|P01103|MYB_CHICK Transcriptional activator Myb OS=Gallus gall...    36   0.70 
+sp|Q06337|EAF1_YEAST Chromatin modification-related protein EAF1...    36   0.74 
+sp|Q501R9|NBR1_RAT Next to BRCA1 gene 1 protein OS=Rattus norveg...    36   0.75 
+sp|O31710|YKNX_BACSU Putative efflux system component YknX OS=Ba...    36   0.77 
+sp|Q6P0N0|M18BP_HUMAN Mis18-binding protein 1 OS=Homo sapiens OX...    36   0.77 
+sp|Q54YB7|MYBF_DICDI Myb-like protein F OS=Dictyostelium discoid...    36   0.79 
+sp|Q9LHB1|FDM3_ARATH Factor of DNA methylation 3 OS=Arabidopsis ...    36   0.79 
+sp|Q9SSA1|MYB57_ARATH Transcription factor MYB57 OS=Arabidopsis ...    36   0.80 
+sp|Q8CIM1|LRC45_MOUSE Leucine-rich repeat-containing protein 45 ...    36   0.80 
+sp|P0CO94|CEF1_CRYNJ Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    36   0.80 
+sp|P05661|MYSA_DROME Myosin heavy chain, muscle OS=Drosophila me...    36   0.81 
+sp|P10242|MYB_HUMAN Transcriptional activator Myb OS=Homo sapien...    36   0.87 
+sp|P46200|MYB_BOVIN Transcriptional activator Myb OS=Bos taurus ...    36   0.87 
+sp|Q80WQ8|M18BP_MOUSE Mis18-binding protein 1 OS=Mus musculus OX...    36   0.89 
+sp|Q9LG11|HAC4_ARATH Histone acetyltransferase HAC4 OS=Arabidops...    36   0.90 
+sp|Q54QG5|Y3893_DICDI Probable E3 ubiquitin-protein ligase DDB_G...    36   0.91 
+sp|A2CJ06|DYTN_HUMAN Dystrotelin OS=Homo sapiens OX=9606 GN=DYTN...    36   0.97 
+sp|Q94FL6|MY124_ARATH Transcription factor MYB124 OS=Arabidopsis...    36   0.98 
+sp|P34664|YOY6_CAEEL Uncharacterized protein ZK652.6 OS=Caenorha...    36   1.0  
+sp|P97432|NBR1_MOUSE Next to BRCA1 gene 1 protein OS=Mus musculu...    36   1.1  
+sp|Q5FWT8|RCOR2_RAT REST corepressor 2 OS=Rattus norvegicus OX=1...    35   1.2  
+sp|Q8C796|RCOR2_MOUSE REST corepressor 2 OS=Mus musculus OX=1009...    35   1.2  
+sp|Q5FC64|ZDHCS_CAEEL Palmitoyltransferase spe-10 OS=Caenorhabdi...    35   1.2  
+sp|Q8IZ40|RCOR2_HUMAN REST corepressor 2 OS=Homo sapiens OX=9606...    35   1.2  
+sp|M1ETK3|MYB1W_BETVU Transcription factor MYB1 OS=Beta vulgaris...    35   1.2  
+sp|P84060|DTNB_RAT Dystrobrevin beta OS=Rattus norvegicus OX=101...    35   1.3  
+sp|M1ETA5|MYB1R_BETVU Transcription factor MYB1 OS=Beta vulgaris...    35   1.3  
+sp|Q54WZ0|CDC5L_DICDI Cell division cycle 5-like protein OS=Dict...    35   1.3  
+sp|Q9Y4J8|DTNA_HUMAN Dystrobrevin alpha OS=Homo sapiens OX=9606 ...    35   1.3  
+sp|A0A1U8QVN4|BASR_EMENI Myb-like transcriptional regulator basR...    35   1.4  
+sp|Q9D2N4|DTNA_MOUSE Dystrobrevin alpha OS=Mus musculus OX=10090...    35   1.4  
+sp|A8MLG1|KAD_ALKOO Adenylate kinase OS=Alkaliphilus oremlandii ...    35   1.5  
+sp|Q7TNF8|RIMB1_MOUSE Peripheral-type benzodiazepine receptor-as...    35   1.5  
+sp|P12844|MYO3_CAEEL Myosin-3 OS=Caenorhabditis elegans OX=6239 ...    35   1.6  
+sp|O60941|DTNB_HUMAN Dystrobrevin beta OS=Homo sapiens OX=9606 G...    35   1.6  
+sp|Q6C8F5|CEF1_YARLI Pre-mRNA-splicing factor CEF1 OS=Yarrowia l...    35   1.6  
+sp|Q95RX5|KCMF1_DROME E3 ubiquitin-protein ligase Kcmf1 OS=Droso...    35   1.6  
+sp|Q7Z6P3|RAB44_HUMAN Ras-related protein Rab-44 OS=Homo sapiens...    35   1.7  
+sp|J9VW97|LIV4_CRYNH DNA-binding protein LIV4 OS=Cryptococcus ne...    35   1.8  
+sp|P35140|KAD_BACLD Adenylate kinase OS=Bacillus licheniformis (...    35   1.8  
+sp|Q8VDC1|FYCO1_MOUSE FYVE and coiled-coil domain-containing pro...    35   1.9  
+sp|B2V693|MUTS2_SULSY Endonuclease MutS2 OS=Sulfurihydrogenibium...    35   2.0  
+sp|C8VBH3|CEF1_EMENI Pre-mRNA-splicing factor cef1 OS=Emericella...    35   2.0  
+sp|Q08759|MYB_XENLA Transcriptional activator Myb OS=Xenopus lae...    35   2.0  
+sp|P0CO95|CEF1_CRYNB Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    35   2.0  
+sp|P70351|EZH1_MOUSE Histone-lysine N-methyltransferase EZH1 OS=...    35   2.2  
+sp|P52551|MYBB_XENLA Myb-related protein B OS=Xenopus laevis OX=...    35   2.2  
+sp|F4IRB4|MYB88_ARATH Transcription factor MYB88 OS=Arabidopsis ...    35   2.3  
+sp|F4IL57|KN14I_ARATH Kinesin-like protein KIN-14I OS=Arabidopsi...    35   2.4  
+sp|Q74ZA4|ETT1_ASHGO Enhancer of translation termination 1 OS=As...    35   2.5  
+sp|Q5APG6|CEF1_CANAL Pre-mRNA-splicing factor CEF1 OS=Candida al...    35   2.6  
+sp|O13493|MYB1_NEUCR Myb-like DNA-binding protein myb-1 OS=Neuro...    34   2.8  
+sp|Q9LQX5|MY117_ARATH Transcription factor MYB117 OS=Arabidopsis...    34   2.8  
+sp|Q96PN7|TREF1_HUMAN Transcriptional-regulating factor 1 OS=Hom...    34   3.0  
+sp|Q8BXJ2|TREF1_MOUSE Transcriptional-regulating factor 1 OS=Mus...    34   3.0  
+sp|P34638|CCNA1_CAEEL G2/mitotic-specific cyclin-A1 OS=Caenorhab...    34   3.1  
+sp|Q7SAF6|CEF1_NEUCR Pre-mRNA-splicing factor cef-1 OS=Neurospor...    34   3.3  
+sp|G5ECU7|JUN_CAEEL Transcription factor jun-1 OS=Caenorhabditis...    34   3.4  
+sp|Q96JF6|ZN594_HUMAN Zinc finger protein 594 OS=Homo sapiens OX...    34   3.4  
+sp|Q9LVW4|MY118_ARATH Transcription factor MYB118 OS=Arabidopsis...    34   3.9  
+sp|Q5ZKM0|DTBP1_CHICK Dysbindin OS=Gallus gallus OX=9031 GN=DTNB...    34   4.3  
+sp|Q6FUG1|CEF1_CANGA Pre-mRNA-splicing factor CEF1 OS=Candida gl...    33   4.6  
+sp|O08837|CDC5L_RAT Cell division cycle 5-like protein OS=Rattus...    33   4.7  
+sp|Q6A068|CDC5L_MOUSE Cell division cycle 5-like protein OS=Mus ...    33   4.8  
+sp|A7E2Z2|EZH1_BOVIN Histone-lysine N-methyltransferase EZH1 OS=...    33   5.0  
+sp|Q2KJC1|CDC5L_BOVIN Cell division cycle 5-like protein OS=Bos ...    33   5.0  
+sp|Q99459|CDC5L_HUMAN Cell division cycle 5-like protein OS=Homo...    33   5.1  
+sp|Q86UE8|TLK2_HUMAN Serine/threonine-protein kinase tousled-lik...    33   5.3  
+sp|Q7S8V3|NST1_NEUCR Stress response protein nst1 OS=Neurospora ...    33   6.2  
+sp|Q5RDS6|EZH1_PONAB Histone-lysine N-methyltransferase EZH1 OS=...    33   6.6  
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    33   6.7  
+sp|Q92800|EZH1_HUMAN Histone-lysine N-methyltransferase EZH1 OS=...    33   6.9  
+sp|Q8GV05|TRY_ARATH Transcription factor TRY OS=Arabidopsis thal...    33   7.0  
+sp|Q6PJG2|MDEAS_HUMAN Mitotic deacetylase-associated SANT domain...    33   7.1  
+sp|Q9FIM4|MY119_ARATH Transcription factor MYB119 OS=Arabidopsis...    33   7.3  
+sp|Q6Z690|LDL1_ORYSJ Lysine-specific histone demethylase 1 homol...    33   7.3  
+sp|Q4WEY8|HACA_ASPFU Transcriptional regulator of the unfolded p...    33   7.3  
+sp|Q8VDS7|CE57L_MOUSE Centrosomal protein CEP57L1 OS=Mus musculu...    33   7.5  
+sp|P92948|CDC5L_ARATH Cell division cycle 5-like protein OS=Arab...    33   8.9  
+sp|E1X022|SMC_HALMS Chromosome partition protein Smc OS=Halobact...    33   9.1  
+sp|Q6VGS5|DAPLE_MOUSE Protein Daple OS=Mus musculus OX=10090 GN=...    33   9.1  
+sp|Q9ASQ2|MAMYB_ARATH Transcription factor MAMYB OS=Arabidopsis ...    32   9.9  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|O13788|SSR1_SCHPO SWI/SNF and RSC complexes subunit ssr1 OS=S...   551   e-156
+sp|O14470|SSR2_SCHPO SWI/SNF and RSC complexes subunit ssr2 OS=S...   432   e-120
+sp|Q53KK6|SWI3C_ORYSJ SWI/SNF complex subunit SWI3C homolog OS=O...   383   e-105
+sp|Q9XI07|SWI3C_ARATH SWI/SNF complex subunit SWI3C OS=Arabidops...   382   e-105
+sp|P43609|RSC8_YEAST Chromatin structure-remodeling complex prot...   354   8e-97
+sp|Q92922|SMRC1_HUMAN SWI/SNF complex subunit SMARCC1 OS=Homo sa...   328   7e-89
+sp|P97496|SMRC1_MOUSE SWI/SNF complex subunit SMARCC1 OS=Mus mus...   324   1e-87
+sp|P32591|SWI3_YEAST SWI/SNF complex subunit SWI3 OS=Saccharomyc...   314   1e-84
+sp|Q6PDG5|SMRC2_MOUSE SWI/SNF complex subunit SMARCC2 OS=Mus mus...   274   1e-72
+sp|Q8VY05|SWI3D_ARATH SWI/SNF complex subunit SWI3D OS=Arabidops...   272   6e-72
+sp|Q84JG2|SWI3B_ARATH SWI/SNF complex subunit SWI3B OS=Arabidops...   271   7e-72
+sp|Q8W475|SWI3A_ARATH SWI/SNF complex subunit SWI3A OS=Arabidops...   270   3e-71
+sp|Q8TAQ2|SMRC2_HUMAN SWI/SNF complex subunit SMARCC2 OS=Homo sa...   268   8e-71
+sp|Q9SFD5|TAD2A_ARATH Transcriptional adapter ADA2a OS=Arabidops...   231   1e-59
+sp|Q9ATB4|TAD2B_ARATH Transcriptional adapter ADA2b OS=Arabidops...   223   4e-57
+sp|Q0JCC3|SWI3A_ORYSJ SWI/SNF complex subunit SWI3A homolog OS=O...   221   9e-57
+sp|Q6AYE3|TAD2A_RAT Transcriptional adapter 2-alpha OS=Rattus no...   212   5e-54
+sp|Q8CHV6|TAD2A_MOUSE Transcriptional adapter 2-alpha OS=Mus mus...   212   7e-54
+sp|O75478|TAD2A_HUMAN Transcriptional adapter 2-alpha OS=Homo sa...   209   4e-53
+sp|Q3SZP8|TAD2A_BOVIN Transcriptional adapter 2-alpha OS=Bos tau...   208   8e-53
+sp|Q02336|ADA2_YEAST Transcriptional adapter 2 OS=Saccharomyces ...   206   6e-52
+sp|Q5RBN9|TAD2B_PONAB Transcriptional adapter 2-beta OS=Pongo ab...   202   4e-51
+sp|Q86TJ2|TAD2B_HUMAN Transcriptional adapter 2-beta OS=Homo sap...   202   4e-51
+sp|Q6NRB5|TAD2B_XENLA Transcriptional adapter 2-beta OS=Xenopus ...   201   2e-50
+sp|Q5ZJF3|TAD2A_CHICK Transcriptional adapter 2-alpha OS=Gallus ...   197   2e-49
+sp|Q75LL6|TADA2_ORYSJ Transcriptional adapter ADA2 OS=Oryza sati...   175   8e-43
+sp|Q503N9|TAD2B_DANRE Transcriptional adapter 2-beta OS=Danio re...   170   2e-41
+sp|Q6YYZ1|LDL2_ORYSJ Lysine-specific histone demethylase 1 homol...   166   4e-40
+sp|Q9P7J7|ADA2_SCHPO Transcriptional adapter 2 OS=Schizosaccharo...   162   6e-39
+sp|Q59WH0|ADA2_CANAL Transcriptional adapter 2 OS=Candida albica...   161   1e-38
+sp|Q5F3F2|MYSM1_CHICK Histone H2A deubiquitinase MYSM1 OS=Gallus...   142   8e-33
+sp|A0JMR6|MYSM1_XENLA Histone H2A deubiquitinase MYSM1 OS=Xenopu...   139   5e-32
+sp|Q69Z66|MYSM1_MOUSE Deubiquitinase MYSM1 OS=Mus musculus OX=10...   139   6e-32
+sp|Q5RGA4|MYSM1_DANRE Histone H2A deubiquitinase MYSM1 OS=Danio ...   135   7e-31
+sp|Q54J55|MYBX_DICDI Myb-like protein X OS=Dictyostelium discoid...   133   4e-30
+sp|B6MUN4|MYSM1_BRAFL Histone H2A deubiquitinase MYSM1 OS=Branch...   129   6e-29
+sp|Q5VVJ2|MYSM1_HUMAN Deubiquitinase MYSM1 OS=Homo sapiens OX=96...   119   6e-26
+sp|Q9LID0|LDL2_ARATH Lysine-specific histone demethylase 1 homol...   116   6e-25
+sp|Q8I8V0|TAD2B_DROME Transcriptional adapter 2B OS=Drosophila m...   115   1e-24
+sp|Q7KSD8|TAD2A_DROME Transcriptional adapter 2A OS=Drosophila m...   107   2e-22
+sp|Q6ZQ88|KDM1A_MOUSE Lysine-specific histone demethylase 1A OS=...    97   4e-19
+sp|O60341|KDM1A_HUMAN Lysine-specific histone demethylase 1A OS=...    96   7e-19
+sp|Q54Z40|MYBH_DICDI Myb-like protein H OS=Dictyostelium discoid...    94   2e-18
+sp|Q9VW97|LSDA_DROME Possible lysine-specific histone demethylas...    91   3e-17
+sp|Q9XWP6|KDM1A_CAEEL Lysine-specific histone demethylase 1 OS=C...    77   4e-13
+sp|Q96KC8|DNJC1_HUMAN DnaJ homolog subfamily C member 1 OS=Homo ...    74   4e-12
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8VXV7|LDL1_ARATH Lysine-specific histone demethylase 1 homol...    86   9e-16
+sp|Q61712|DNJC1_MOUSE DnaJ homolog subfamily C member 1 OS=Mus m...    67   3e-10
+sp|Q9CAE3|FLD_ARATH Protein FLOWERING LOCUS D OS=Arabidopsis tha...    66   7e-10
+sp|Q6Z690|LDL1_ORYSJ Lysine-specific histone demethylase 1 homol...    60   3e-08
+sp|O75376|NCOR1_HUMAN Nuclear receptor corepressor 1 OS=Homo sap...    59   9e-08
+sp|Q60974|NCOR1_MOUSE Nuclear receptor corepressor 1 OS=Mus musc...    56   8e-07
+sp|Q01H90|LDL3_ORYSI Lysine-specific histone demethylase 1 homol...    55   1e-06
+sp|Q7XUR2|LDL3_ORYSJ Lysine-specific histone demethylase 1 homol...    55   1e-06
+sp|Q0CRP6|AZPA6_ASPTN Transcriptional regulator ATEG_03638 OS=As...    51   3e-05
+sp|F4JLS1|LDL3_ARATH Lysine-specific histone demethylase 1 homol...    50   6e-05
+sp|A0A6S6AAU0|G432_FUSSX Myb-like transcription factor OS=Fusari...    49   8e-05
+sp|Q9P792|YN8B_SCHPO ZZ-type zinc finger-containing protein P35G...    49   1e-04
+sp|Q869R9|MYBJ_DICDI Myb-like protein J OS=Dictyostelium discoid...    48   2e-04
+sp|Q9WU42|NCOR2_MOUSE Nuclear receptor corepressor 2 OS=Mus musc...    47   3e-04
+sp|Q9Y048|DTN1_CAEEL Dystrobrevin-1 OS=Caenorhabditis elegans OX...    47   4e-04
+sp|O43149|ZZEF1_HUMAN Zinc finger ZZ-type and EF-hand domain-con...    47   4e-04
+sp|Q0JHU7|MB3R2_ORYSJ Transcription factor MYB3R-2 OS=Oryza sati...    47   4e-04
+sp|Q9Y802|LSD1_SCHPO Lysine-specific histone demethylase 1 OS=Sc...    47   5e-04
+sp|Q8LJT8|TKI1_ARATH TSL-kinase interacting protein 1 OS=Arabido...    47   5e-04
+sp|Q6NWJ4|DNJC2_DANRE DnaJ homolog subfamily C member 2 OS=Danio...    47   5e-04
+sp|Q6P2Y3|DNJC2_XENTR DnaJ homolog subfamily C member 2 OS=Xenop...    46   6e-04
+sp|Q5SSH7|ZZEF1_MOUSE Zinc finger ZZ-type and EF-hand domain-con...    46   8e-04
+sp|O60941|DTNB_HUMAN Dystrobrevin beta OS=Homo sapiens OX=9606 G...    46   8e-04
+sp|Q99543|DNJC2_HUMAN DnaJ homolog subfamily C member 2 OS=Homo ...    46   0.001
+sp|Q4R8H2|DNJC2_MACFA DnaJ homolog subfamily C member 2 OS=Macac...    46   0.001
+sp|Q9P2K3|RCOR3_HUMAN REST corepressor 3 OS=Homo sapiens OX=9606...    45   0.001
+sp|P22035|BAS1_YEAST Myb-like DNA-binding protein BAS1 OS=Saccha...    45   0.001
+sp|Q1RMH9|DNJC2_BOVIN DnaJ homolog subfamily C member 2 OS=Bos t...    45   0.001
+sp|P91868|SNPC4_CAEEL snRNA-activating protein complex subunit 4...    45   0.001
+sp|Q54YV4|LONM1_DICDI Lon protease homolog, mitochondrial 1 OS=D...    45   0.001
+sp|Q9Y618|NCOR2_HUMAN Nuclear receptor corepressor 2 OS=Homo sap...    45   0.001
+sp|Q2QLF8|CTTB2_CALJA Cortactin-binding protein 2 OS=Callithrix ...    45   0.002
+sp|P54103|DNJC2_MOUSE DnaJ homolog subfamily C member 2 OS=Mus m...    45   0.002
+sp|Q6NRZ0|RCOR2_XENLA REST corepressor 2 OS=Xenopus laevis OX=83...    44   0.002
+sp|Q6R0H1|LHY_ARATH Protein LHY OS=Arabidopsis thaliana OX=3702 ...    44   0.003
+sp|Q6FUG1|CEF1_CANGA Pre-mRNA-splicing factor CEF1 OS=Candida gl...    44   0.003
+sp|B9G2A8|BIG_ORYSJ Auxin transport protein BIG OS=Oryza sativa ...    44   0.003
+sp|A2CI97|DYTN_DANRE Dystrotelin OS=Danio rerio OX=7955 GN=dytn ...    44   0.003
+sp|P45481|CBP_MOUSE Histone lysine acetyltransferase CREBBP OS=M...    44   0.003
+sp|Q21988|KDM1B_CAEEL Lysine-specific histone demethylase 1B hom...    44   0.003
+sp|Q6JHU9|CBP_RAT Histone lysine acetyltransferase CREBBP OS=Rat...    44   0.003
+sp|Q54TN2|MYBC_DICDI Myb-like protein C OS=Dictyostelium discoid...    44   0.004
+sp|A0A1U8QVN4|BASR_EMENI Myb-like transcriptional regulator basR...    44   0.004
+sp|Q7TQ20|DNJC2_RAT DnaJ homolog subfamily C member 2 OS=Rattus ...    44   0.004
+sp|Q54IF9|MYBG_DICDI Myb-like protein G OS=Dictyostelium discoid...    44   0.004
+sp|A2CI98|DYTN_MOUSE Dystrotelin OS=Mus musculus OX=10090 GN=Dyt...    44   0.004
+sp|Q6GPB6|KCMF1_XENLA E3 ubiquitin-protein ligase KCMF1 OS=Xenop...    44   0.005
+sp|Q9FNN6|SRM1_ARATH Transcription factor SRM1 OS=Arabidopsis th...    44   0.005
+sp|Q54CT1|MYBN_DICDI Myb-like protein N OS=Dictyostelium discoid...    43   0.005
+sp|Q95RX5|KCMF1_DROME E3 ubiquitin-protein ligase Kcmf1 OS=Droso...    43   0.006
+sp|B2RWS6|EP300_MOUSE Histone acetyltransferase p300 OS=Mus musc...    43   0.006
+sp|O13493|MYB1_NEUCR Myb-like DNA-binding protein myb-1 OS=Neuro...    43   0.006
+sp|B3H5A8|RVE7_ARATH Protein REVEILLE 7 OS=Arabidopsis thaliana ...    43   0.007
+sp|Q9P0J7|KCMF1_HUMAN E3 ubiquitin-protein ligase KCMF1 OS=Homo ...    43   0.007
+sp|P97432|NBR1_MOUSE Next to BRCA1 gene 1 protein OS=Mus musculu...    43   0.007
+sp|P25357|SNT1_YEAST Probable DNA-binding protein SNT1 OS=Saccha...    43   0.007
+sp|P34127|MYBA_DICDI Myb-like protein A OS=Dictyostelium discoid...    43   0.007
+sp|Q80UY2|KCMF1_MOUSE E3 ubiquitin-protein ligase KCMF1 OS=Mus m...    43   0.007
+sp|Q1LZE1|KCMF1_BOVIN E3 ubiquitin-protein ligase KCMF1 OS=Bos t...    43   0.007
+sp|Q2IBF7|CTTB2_GORGO Cortactin-binding protein 2 OS=Gorilla gor...    43   0.007
+sp|Q8WZ74|CTTB2_HUMAN Cortactin-binding protein 2 OS=Homo sapien...    43   0.007
+sp|Q9SN12|MYB77_ARATH Transcription factor MYB77 OS=Arabidopsis ...    43   0.008
+sp|Q2QLB3|CTTB2_PLEMO Cortactin-binding protein 2 OS=Plecturoceb...    43   0.008
+sp|A0M8S4|CTTB2_PAPAN Cortactin-binding protein 2 OS=Papio anubi...    43   0.008
+sp|A2CJ06|DYTN_HUMAN Dystrotelin OS=Homo sapiens OX=9606 GN=DYTN...    42   0.009
+sp|Q2IBA2|CTTB2_CHLAE Cortactin-binding protein 2 OS=Chlorocebus...    42   0.009
+sp|B0THS2|PNP_HELMI Polyribonucleotide nucleotidyltransferase OS...    42   0.009
+sp|Q8RWU3|RVE8_ARATH Protein REVEILLE 8 OS=Arabidopsis thaliana ...    42   0.009
+sp|Q07DY4|CTTB2_COLGU Cortactin-binding protein 2 OS=Colobus gue...    42   0.009
+sp|Q8NEG5|ZSWM2_HUMAN E3 ubiquitin-protein ligase ZSWIM2 OS=Homo...    42   0.009
+sp|Q99459|CDC5L_HUMAN Cell division cycle 5-like protein OS=Homo...    42   0.009
+sp|Q92793|CBP_HUMAN CREB-binding protein OS=Homo sapiens OX=9606...    42   0.009
+sp|Q2IBD4|CTTB2_RAT Cortactin-binding protein 2 OS=Rattus norveg...    42   0.009
+sp|Q501R9|NBR1_RAT Next to BRCA1 gene 1 protein OS=Rattus norveg...    42   0.009
+sp|Q4WHG0|CEF1_ASPFU Pre-mRNA-splicing factor cef1 OS=Aspergillu...    42   0.010
+sp|Q9Y4J8|DTNA_HUMAN Dystrobrevin alpha OS=Homo sapiens OX=9606 ...    42   0.011
+sp|Q2KJC1|CDC5L_BOVIN Cell division cycle 5-like protein OS=Bos ...    42   0.011
+sp|O08837|CDC5L_RAT Cell division cycle 5-like protein OS=Rattus...    42   0.011
+sp|A0A0G3VTN5|LHY_PETHY Protein LATE ELONGATED HYPOCOTYL OS=Petu...    42   0.012
+sp|Q2IBE6|CTTB2_PONAB Cortactin-binding protein 2 OS=Pongo abeli...    42   0.012
+sp|F4J2J6|RVE7L_ARATH Protein REVEILLE 7-like OS=Arabidopsis tha...    42   0.012
+sp|Q09YG9|CTTB2_SAIBB Cortactin-binding protein 2 OS=Saimiri bol...    42   0.012
+sp|Q6A068|CDC5L_MOUSE Cell division cycle 5-like protein OS=Mus ...    42   0.012
+sp|Q6R053|MYB56_ARATH Transcription factor MYB56 OS=Arabidopsis ...    42   0.013
+sp|Q7T321|KCMF1_DANRE E3 ubiquitin-protein ligase KCMF1 OS=Danio...    42   0.013
+sp|Q2QL82|CTTB2_MICMU Cortactin-binding protein 2 OS=Microcebus ...    42   0.013
+sp|Q8S9H7|DIV_ANTMA Transcription factor DIVARICATA OS=Antirrhin...    42   0.014
+sp|Q09YK4|CTTB2_ATEGE Cortactin-binding protein 2 OS=Ateles geof...    42   0.014
+sp|Q6R0H0|RVE3_ARATH Protein REVEILLE 3 OS=Arabidopsis thaliana ...    42   0.014
+sp|P34454|YMA9_CAEEL Uncharacterized protein F54F2.9 OS=Caenorha...    42   0.014
+sp|Q5RC94|NBR1_PONAB Next to BRCA1 gene 1 protein OS=Pongo abeli...    42   0.015
+sp|Q58FS3|RAD_ANTMA Transcription factor RADIALIS OS=Antirrhinum...    42   0.015
+sp|Q6R032|MB3R5_ARATH Transcription factor MYB3R-5 OS=Arabidopsi...    42   0.015
+sp|Q09472|EP300_HUMAN Histone acetyltransferase p300 OS=Homo sap...    42   0.016
+sp|P01104|MYB_AVIMB Transforming protein Myb OS=Avian myeloblast...    42   0.017
+sp|C0SVG5|RVE5_ARATH Protein REVEILLE 5 OS=Arabidopsis thaliana ...    41   0.019
+sp|Q2IBF8|CTTB2_EULMM Cortactin-binding protein 2 OS=Eulemur mac...    41   0.019
+sp|Q14596|NBR1_HUMAN Next to BRCA1 gene 1 protein OS=Homo sapien...    41   0.020
+sp|Q9S7D9|ACCR1_ARATH Serine/threonine-protein kinase-like prote...    41   0.021
+sp|A0A0P0XBU0|CCA1_ORYSJ Protein CCA1 OS=Oryza sativa subsp. jap...    41   0.022
+sp|Q9S7G7|MB3R1_ARATH Transcription factor MYB3R-1 OS=Arabidopsi...    41   0.022
+sp|Q54NA6|MYBL_DICDI Myb-like protein L OS=Dictyostelium discoid...    41   0.023
+sp|Q07E41|CTTB2_DASNO Cortactin-binding protein 2 OS=Dasypus nov...    41   0.023
+sp|Q91Z80|LIPA4_RAT Liprin-alpha-4 (Fragment) OS=Rattus norvegic...    41   0.023
+sp|Q8BP86|SNPC4_MOUSE snRNA-activating protein complex subunit 4...    41   0.024
+sp|O15816|MYBB_DICDI Myb-like protein B OS=Dictyostelium discoid...    41   0.024
+sp|Q4U2R1|HERC2_MOUSE E3 ubiquitin-protein ligase HERC2 OS=Mus m...    41   0.024
+sp|Q6C8F5|CEF1_YARLI Pre-mRNA-splicing factor CEF1 OS=Yarrowia l...    41   0.026
+sp|Q6P116|RCOR2_DANRE REST corepressor 2 OS=Danio rerio OX=7955 ...    41   0.027
+sp|Q9SRU2|BIG_ARATH Auxin transport protein BIG OS=Arabidopsis t...    41   0.027
+sp|Q5SXM2|SNPC4_HUMAN snRNA-activating protein complex subunit 4...    41   0.028
+sp|Q9UKL0|RCOR1_HUMAN REST corepressor 1 OS=Homo sapiens OX=9606...    41   0.028
+sp|Q94FL9|MB3R4_ARATH Transcription factor MYB3R-4 OS=Arabidopsi...    41   0.028
+sp|Q6R0G4|RVE4_ARATH Protein REVEILLE 4 OS=Arabidopsis thaliana ...    41   0.029
+sp|Q24629|REF2P_DROSI Protein ref(2)P OS=Drosophila simulans OX=...    41   0.029
+sp|Q07DX4|CTTB2_NOMLE Cortactin-binding protein 2 OS=Nomascus le...    41   0.030
+sp|Q90WN5|RCOR1_XENLA REST corepressor 1 OS=Xenopus laevis OX=83...    41   0.031
+sp|P92973|CCA1_ARATH Protein CCA1 OS=Arabidopsis thaliana OX=370...    41   0.032
+sp|Q8CFE3|RCOR1_MOUSE REST corepressor 1 OS=Mus musculus OX=1009...    41   0.032
+sp|P84060|DTNB_RAT Dystrobrevin beta OS=Rattus norvegicus OX=101...    40   0.034
+sp|F4KGY6|RVE1_ARATH Protein REVEILLE 1 OS=Arabidopsis thaliana ...    40   0.034
+sp|Q6NNN0|RADL3_ARATH Protein RADIALIS-like 3 OS=Arabidopsis tha...    40   0.034
+sp|P34664|YOY6_CAEEL Uncharacterized protein ZK652.6 OS=Caenorha...    40   0.035
+sp|P14199|REF2P_DROME Protein ref(2)P OS=Drosophila melanogaster...    40   0.036
+sp|O70585|DTNB_MOUSE Dystrobrevin beta OS=Mus musculus OX=10090 ...    40   0.036
+sp|Q9D9X6|ZSWM2_MOUSE E3 ubiquitin-protein ligase Zswim2 OS=Mus ...    40   0.037
+sp|O93309|SMC3_XENLA Structural maintenance of chromosomes prote...    40   0.042
+sp|Q13501|SQSTM_HUMAN Sequestosome-1 OS=Homo sapiens OX=9606 GN=...    40   0.042
+sp|P33176|KINH_HUMAN Kinesin-1 heavy chain OS=Homo sapiens OX=96...    40   0.044
+sp|Q10135|LSD2_SCHPO Lysine-specific histone demethylase 2 OS=Sc...    40   0.045
+sp|Q5RBA5|SQSTM_PONAB Sequestosome-1 OS=Pongo abelii OX=9601 GN=...    40   0.046
+sp|A7NJM0|RPOC_ROSCS DNA-directed RNA polymerase subunit beta' O...    40   0.046
+sp|Q9D2N4|DTNA_MOUSE Dystrobrevin alpha OS=Mus musculus OX=10090...    40   0.046
+sp|Q07DV1|CTTB2_AOTNA Cortactin-binding protein 2 OS=Aotus nancy...    40   0.047
+sp|P10243|MYBA_HUMAN Myb-related protein A OS=Homo sapiens OX=96...    40   0.048
+sp|O75145|LIPA3_HUMAN Liprin-alpha-3 OS=Homo sapiens OX=9606 GN=...    40   0.050
+sp|Q61768|KINH_MOUSE Kinesin-1 heavy chain OS=Mus musculus OX=10...    40   0.051
+sp|Q91Z79|LIPA3_RAT Liprin-alpha-3 OS=Rattus norvegicus OX=10116...    40   0.052
+sp|P60469|LIPA3_MOUSE Liprin-alpha-3 OS=Mus musculus OX=10090 GN...    40   0.052
+sp|Q804S5|MIB1_DANRE E3 ubiquitin-protein ligase mib1 OS=Danio r...    40   0.054
+sp|O95714|HERC2_HUMAN E3 ubiquitin-protein ligase HERC2 OS=Homo ...    40   0.055
+sp|P51960|MYBA_MOUSE Myb-related protein A OS=Mus musculus OX=10...    40   0.057
+sp|Q6AS16|LON1_DESPS Lon protease 1 OS=Desulfotalea psychrophila...    40   0.059
+sp|Q80SY4|MIB1_MOUSE E3 ubiquitin-protein ligase MIB1 OS=Mus mus...    40   0.060
+sp|Q86YT6|MIB1_HUMAN E3 ubiquitin-protein ligase MIB1 OS=Homo sa...    40   0.060
+sp|F4K5X6|RVE2_ARATH Protein REVEILLE 2 OS=Arabidopsis thaliana ...    40   0.061
+sp|Q2PQA9|KINH_RAT Kinesin-1 heavy chain OS=Rattus norvegicus OX...    40   0.061
+sp|O13335|NDE1_NEUCR Nuclear distribution protein nudE homolog 1...    40   0.062
+sp|Q8C796|RCOR2_MOUSE REST corepressor 2 OS=Mus musculus OX=1009...    40   0.063
+sp|Q64337|SQSTM_MOUSE Sequestosome-1 OS=Mus musculus OX=10090 GN...    40   0.064
+sp|A4R8N4|PAN1_MAGO7 Actin cytoskeleton-regulatory complex prote...    40   0.070
+sp|Q6P0N0|M18BP_HUMAN Mis18-binding protein 1 OS=Homo sapiens OX...    40   0.070
+sp|Q8H0W3|RVE6_ARATH Protein REVEILLE 6 OS=Arabidopsis thaliana ...    39   0.072
+sp|Q5FWT8|RCOR2_RAT REST corepressor 2 OS=Rattus norvegicus OX=1...    39   0.075
+sp|Q8IZ40|RCOR2_HUMAN REST corepressor 2 OS=Homo sapiens OX=9606...    39   0.079
+sp|Q6GNY1|MIB1_XENLA E3 ubiquitin-protein ligase mib1 OS=Xenopus...    39   0.081
+sp|Q54QG5|Y3893_DICDI Probable E3 ubiquitin-protein ligase DDB_G...    39   0.082
+sp|Q9FFH1|RLT2_ARATH Homeobox-DDT domain protein RLT2 OS=Arabido...    39   0.084
+sp|Q5ZIJ9|MIB2_CHICK E3 ubiquitin-protein ligase MIB2 OS=Gallus ...    39   0.084
+sp|P54735|SPKD_SYNY3 Serine/threonine-protein kinase D OS=Synech...    39   0.086
+sp|P06876|MYB_MOUSE Transcriptional activator Myb OS=Mus musculu...    39   0.089
+sp|F4JVB8|RADL1_ARATH Protein RADIALIS-like 1 OS=Arabidopsis tha...    39   0.090
+sp|Q96AX9|MIB2_HUMAN E3 ubiquitin-protein ligase MIB2 OS=Homo sa...    39   0.092
+sp|P01103|MYB_CHICK Transcriptional activator Myb OS=Gallus gall...    39   0.092
+sp|Q10MB4|MYB2_ORYSJ Transcription factor MYB2 OS=Oryza sativa s...    39   0.094
+sp|Q3IJ53|IF2_PSET1 Translation initiation factor IF-2 OS=Pseudo...    39   0.096
+sp|Q20748|ATAD3_CAEEL ATPase family AAA domain-containing protei...    39   0.096
+sp|Q2QZJ8|JAMYB_ORYSJ Transcription factor JAMYB OS=Oryza sativa...    39   0.098
+sp|Q6R0C4|MYB52_ARATH Transcription factor MYB52 OS=Arabidopsis ...    39   0.100
+sp|P52550|MYBA_CHICK Myb-related protein A OS=Gallus gallus OX=9...    39   0.10 
+sp|Q6A331|ALY1_ARATH Protein ALWAYS EARLY 1 OS=Arabidopsis thali...    39   0.10 
+sp|Q05935|MYBA_XENLA Myb-related protein A OS=Xenopus laevis OX=...    39   0.11 
+sp|O97594|SMC3_BOVIN Structural maintenance of chromosomes prote...    39   0.11 
+sp|Q80WQ8|M18BP_MOUSE Mis18-binding protein 1 OS=Mus musculus OX...    39   0.11 
+sp|Q53NK6|MYBA1_ORYSJ Myb-related protein MYBAS1 OS=Oryza sativa...    39   0.11 
+sp|Q94FL6|MY124_ARATH Transcription factor MYB124 OS=Arabidopsis...    39   0.11 
+sp|Q66HG1|DMTF1_RAT Cyclin-D-binding Myb-like transcription fact...    39   0.11 
+sp|Q8CE22|DMTF1_MOUSE Cyclin-D-binding Myb-like transcription fa...    39   0.12 
+sp|Q5R4K5|SMC3_PONAB Structural maintenance of chromosomes prote...    39   0.12 
+sp|Q9UQE7|SMC3_HUMAN Structural maintenance of chromosomes prote...    39   0.12 
+sp|Q9CW03|SMC3_MOUSE Structural maintenance of chromosomes prote...    39   0.12 
+sp|Q03237|MYBB_CHICK Myb-related protein B OS=Gallus gallus OX=9...    39   0.12 
+sp|P46200|MYB_BOVIN Transcriptional activator Myb OS=Bos taurus ...    39   0.12 
+sp|P10242|MYB_HUMAN Transcriptional activator Myb OS=Homo sapien...    39   0.12 
+sp|Q7YU29|DMDE_DROME Dystrophin, isoform E OS=Drosophila melanog...    39   0.13 
+sp|Q68LP1|MIB2_RAT E3 ubiquitin-protein ligase MIB2 OS=Rattus no...    39   0.13 
+sp|Q8R516|MIB2_MOUSE E3 ubiquitin-protein ligase MIB2 OS=Mus mus...    39   0.13 
+sp|B7VJH7|IF2_VIBA3 Translation initiation factor IF-2 OS=Vibrio...    39   0.13 
+sp|P0CO94|CEF1_CRYNJ Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    39   0.13 
+sp|Q03654|CEF1_YEAST Pre-mRNA-splicing factor CEF1 OS=Saccharomy...    39   0.14 
+sp|M1ETK3|MYB1W_BETVU Transcription factor MYB1 OS=Beta vulgaris...    39   0.14 
+sp|Q5APG6|CEF1_CANAL Pre-mRNA-splicing factor CEF1 OS=Candida al...    39   0.15 
+sp|Q54YB7|MYBF_DICDI Myb-like protein F OS=Dictyostelium discoid...    39   0.15 
+sp|P48972|MYBB_MOUSE Myb-related protein B OS=Mus musculus OX=10...    39   0.15 
+sp|P10244|MYBB_HUMAN Myb-related protein B OS=Homo sapiens OX=96...    39   0.15 
+sp|Q9Y222|DMTF1_HUMAN Cyclin-D-binding Myb-like transcription fa...    39   0.15 
+sp|M1ETA5|MYB1R_BETVU Transcription factor MYB1 OS=Beta vulgaris...    39   0.16 
+sp|O08623|SQSTM_RAT Sequestosome-1 OS=Rattus norvegicus OX=10116...    39   0.16 
+sp|P97690|SMC3_RAT Structural maintenance of chromosomes protein...    38   0.16 
+sp|A0A1U8QIH0|CICD_EMENI Transcription factor cicD OS=Emericella...    38   0.16 
+sp|C8VBH3|CEF1_EMENI Pre-mRNA-splicing factor cef1 OS=Emericella...    38   0.16 
+sp|F4IRB4|MYB88_ARATH Transcription factor MYB88 OS=Arabidopsis ...    38   0.17 
+sp|Q9P6H9|REB1_SCHPO DNA-binding protein reb1 OS=Schizosaccharom...    38   0.17 
+sp|Q15149|PLEC_HUMAN Plectin OS=Homo sapiens OX=9606 GN=PLEC PE=...    38   0.17 
+sp|Q9SPG2|MYB28_ARATH Transcription factor MYB28 OS=Arabidopsis ...    38   0.18 
+sp|Q0KI50|DMDD_DROME Dystrophin, isoform D OS=Drosophila melanog...    38   0.18 
+sp|Q9LK95|MYB21_ARATH Transcription factor MYB21 OS=Arabidopsis ...    38   0.18 
+sp|Q8N108|MIER1_HUMAN Mesoderm induction early response protein ...    38   0.18 
+sp|O23160|MYB73_ARATH Transcription factor MYB73 OS=Arabidopsis ...    38   0.18 
+sp|Q6DG03|DMTF1_DANRE Cyclin-D-binding Myb-like transcription fa...    38   0.19 
+sp|A5USR6|RPOC_ROSS1 DNA-directed RNA polymerase subunit beta' O...    38   0.19 
+sp|Q9SSA1|MYB57_ARATH Transcription factor MYB57 OS=Arabidopsis ...    38   0.19 
+sp|Q9FY60|MYB64_ARATH Transcription factor MYB64 OS=Arabidopsis ...    38   0.20 
+sp|Q5REE1|MIER1_PONAB Mesoderm induction early response protein ...    38   0.20 
+sp|P12844|MYO3_CAEEL Myosin-3 OS=Caenorhabditis elegans OX=6239 ...    38   0.20 
+sp|Q4JL84|MYB59_ARATH Transcription factor MYB59 OS=Arabidopsis ...    38   0.21 
+sp|P11046|LAMB1_DROME Laminin subunit beta-1 OS=Drosophila melan...    38   0.23 
+sp|P05661|MYSA_DROME Myosin heavy chain, muscle OS=Drosophila me...    38   0.24 
+sp|Q9LVW4|MY118_ARATH Transcription factor MYB118 OS=Arabidopsis...    38   0.24 
+sp|Q9LX82|MYB48_ARATH Transcription factor MYB48 OS=Arabidopsis ...    38   0.24 
+sp|Q1MTN9|RLF2_SCHPO Chromatin assembly factor 1 subunit rlf2 OS...    38   0.25 
+sp|Q9VDW3|DMDB_DROME Dystrophin, isoform B OS=Drosophila melanog...    38   0.25 
+sp|Q42575|MYB1_ARATH Transcription factor MYB1 OS=Arabidopsis th...    38   0.26 
+sp|A0A2R6S148|MYB1_ACTCC Transcription factor MYB1 OS=Actinidia ...    38   0.27 
+sp|Q8QG78|NCOR1_XENLA Nuclear receptor corepressor 1 OS=Xenopus ...    38   0.27 
+sp|P81396|MYB40_ANTMA Myb-related protein 340 OS=Antirrhinum maj...    37   0.28 
+sp|P52551|MYBB_XENLA Myb-related protein B OS=Xenopus laevis OX=...    37   0.28 
+sp|Q9M2D9|MYB17_ARATH Transcription factor MYB17 OS=Arabidopsis ...    37   0.30 
+sp|Q55DP9|MYBP_DICDI Myb-like protein P OS=Dictyostelium discoid...    37   0.31 
+sp|P24733|MYS_ARGIR Myosin heavy chain, striated muscle OS=Argop...    37   0.31 
+sp|Q1A173|RADL6_ARATH Protein RADIALIS-like 6 OS=Arabidopsis tha...    37   0.33 
+sp|Q5UAK0|MIER1_MOUSE Mesoderm induction early response protein ...    37   0.33 
+sp|Q5A119|EAF1_CANAL Chromatin modification-related protein EAF1...    37   0.34 
+sp|Q9FIM4|MY119_ARATH Transcription factor MYB119 OS=Arabidopsis...    37   0.34 
+sp|Q756C3|CEF1_ASHGO Pre-mRNA-splicing factor CEF1 OS=Ashbya gos...    37   0.35 
+sp|E0CJS3|EOBII_PETHY MYB-like transcription factor EOBII OS=Pet...    37   0.37 
+sp|Q6A332|ALY3_ARATH Protein ALWAYS EARLY 3 OS=Arabidopsis thali...    37   0.37 
+sp|Q9VDW6|DMDA_DROME Dystrophin, isoforms A/C/F/G/H OS=Drosophil...    37   0.39 
+sp|Q9R190|MTA2_MOUSE Metastasis-associated protein MTA2 OS=Mus m...    37   0.39 
+sp|O94776|MTA2_HUMAN Metastasis-associated protein MTA2 OS=Homo ...    37   0.40 
+sp|Q9VMA7|TGO1_DROME Transport and Golgi organization protein 1 ...    37   0.40 
+sp|Q7NBF8|HMW2_MYCGA Cytadherence high molecular weight protein ...    37   0.40 
+sp|Q96PN7|TREF1_HUMAN Transcriptional-regulating factor 1 OS=Hom...    37   0.41 
+sp|Q8BXJ2|TREF1_MOUSE Transcriptional-regulating factor 1 OS=Mus...    37   0.41 
+sp|Q9C7U7|MYB20_ARATH Transcription factor MYB20 OS=Arabidopsis ...    37   0.44 
+sp|Q96U60|NDC80_NEUCR Probable kinetochore protein ndc80 OS=Neur...    37   0.45 
+sp|Q08759|MYB_XENLA Transcriptional activator Myb OS=Xenopus lae...    37   0.45 
+sp|Q68FF0|SANBR_MOUSE SANT and BTB domain regulator of class swi...    37   0.46 
+sp|P81391|MYB05_ANTMA Myb-related protein 305 OS=Antirrhinum maj...    37   0.48 
+sp|Q8MQJ9|BRAT_DROME Brain tumor protein OS=Drosophila melanogas...    37   0.51 
+sp|Q9KAC0|MUTS_HALH5 DNA mismatch repair protein MutS OS=Halalka...    37   0.52 
+sp|Q6AXP3|F227B_RAT Protein FAM227B OS=Rattus norvegicus OX=1011...    37   0.52 
+sp|Q54WZ0|CDC5L_DICDI Cell division cycle 5-like protein OS=Dict...    37   0.52 
+sp|Q9S7L2|MYB98_ARATH Transcription factor MYB98 OS=Arabidopsis ...    37   0.58 
+sp|Q9FYH1|HAC2_ARATH Histone acetyltransferase HAC2 OS=Arabidops...    37   0.59 
+sp|L7R9Z0|EOBI_PETHY MYB-like transcription factor EOBI OS=Petun...    37   0.59 
+sp|Q045P1|MUTS2_LACGA Endonuclease MutS2 OS=Lactobacillus gasser...    36   0.63 
+sp|A1A5R8|SANBR_RAT SANT and BTB domain regulator of class switc...    36   0.66 
+sp|Q9Y4I1|MYO5A_HUMAN Unconventional myosin-Va OS=Homo sapiens O...    36   0.69 
+sp|O44757|LIN59_CAEEL Probable histone-lysine N-methyltransferas...    36   0.72 
+sp|A5N245|MUTS2_CLOK5 Endonuclease MutS2 OS=Clostridium kluyveri...    36   0.73 
+sp|B9E5U7|MUTS2_CLOK1 Endonuclease MutS2 OS=Clostridium kluyveri...    36   0.73 
+sp|Q96L93|KI16B_HUMAN Kinesin-like protein KIF16B OS=Homo sapien...    36   0.73 
+sp|Q7T105|MIER1_XENLA Mesoderm induction early response protein ...    36   0.75 
+sp|P81394|MYB15_ANTMA Myb-related protein 315 OS=Antirrhinum maj...    36   0.79 
+sp|P39964|CEF1_SCHPO Pre-mRNA-splicing factor cdc5 OS=Schizosacc...    36   0.79 
+sp|P30427|PLEC_RAT Plectin OS=Rattus norvegicus OX=10116 GN=Plec...    36   0.81 
+sp|Q7XC51|MYBS2_ORYSJ Transcription factor MYBS2 OS=Oryza sativa...    36   0.81 
+sp|B8BI93|MYBS2_ORYSI Transcription factor MYBS2 OS=Oryza sativa...    36   0.81 
+sp|F4I7L1|TRB4_ARATH Telomere repeat-binding factor 4 OS=Arabido...    36   0.81 
+sp|P54785|MOT3_YEAST Transcriptional activator/repressor MOT3 OS...    36   0.82 
+sp|B1AVY7|KI16B_MOUSE Kinesin-like protein KIF16B OS=Mus musculu...    36   0.84 
+sp|Q8BX94|OSBL2_MOUSE Oxysterol-binding protein-related protein ...    36   0.84 
+sp|P04461|MYH7_RABIT Myosin-7 (Fragment) OS=Oryctolagus cuniculu...    36   0.84 
+sp|Q6P9I7|SMC6_XENLA Structural maintenance of chromosomes prote...    36   0.85 
+sp|Q60LV4|MYO3_CAEBR Myosin-3 OS=Caenorhabditis briggsae OX=6238...    36   0.86 
+sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain I...    36   0.87 
+sp|Q06337|EAF1_YEAST Chromatin modification-related protein EAF1...    36   0.88 
+sp|P04197|MYB_DROME Myb protein OS=Drosophila melanogaster OX=72...    36   0.91 
+sp|P28370|SMCA1_HUMAN Probable global transcription activator SN...    36   0.92 
+sp|Q74KU8|MUTS2_LACJO Endonuclease MutS2 OS=Lactobacillus johnso...    36   0.95 
+sp|Q9QXL1|KI21B_MOUSE Kinesin-like protein KIF21B OS=Mus musculu...    36   0.95 
+sp|Q9SEZ4|MY105_ARATH Transcription factor MYB105 OS=Arabidopsis...    36   0.95 
+sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator SN...    36   1.0  
+sp|Q54HX6|MYBI_DICDI Myb-like protein I OS=Dictyostelium discoid...    36   1.0  
+sp|P0CU44|CAHS4_HYPEX Cytosolic-abundant heat soluble protein 77...    36   1.0  
+sp|Q8GW75|RADL5_ARATH Protein RADIALIS-like 5 OS=Arabidopsis tha...    36   1.0  
+sp|O75037|KI21B_HUMAN Kinesin-like protein KIF21B OS=Homo sapien...    36   1.0  
+sp|Q9QXS1|PLEC_MOUSE Plectin OS=Mus musculus OX=10090 GN=Plec PE...    35   1.0  
+sp|Q9M367|BECN1_ARATH Beclin-1-like protein OS=Arabidopsis thali...    35   1.0  
+sp|Q8TFU8|HAC1_EMENI Transcriptional activator hacA OS=Emericell...    35   1.1  
+sp|Q5AG71|HSL1_CANAL Serine/threonine-protein kinase HSL1 OS=Can...    35   1.1  
+sp|Q8H1P9|MB3R3_ARATH Transcription factor MYB3R-3 OS=Arabidopsi...    35   1.1  
+sp|P12883|MYH7_HUMAN Myosin-7 OS=Homo sapiens OX=9606 GN=MYH7 PE...    35   1.1  
+sp|Q9LD55|EIF3A_ARATH Eukaryotic translation initiation factor 3...    35   1.2  
+sp|Q9SPN3|MB3R2_ARATH Transcription factor MYB3R-2 OS=Arabidopsi...    35   1.2  
+sp|Q9T0F3|IAN12_ARATH Immune-associated nucleotide-binding prote...    35   1.2  
+sp|Q59E36|RCOR_DROME REST corepressor OS=Drosophila melanogaster...    35   1.2  
+sp|F1M5N7|KI21B_RAT Kinesin-like protein KIF21B OS=Rattus norveg...    35   1.2  
+sp|Q5ZKT9|MIER1_CHICK Mesoderm induction early response protein ...    35   1.2  
+sp|Q91Z83|MYH7_MOUSE Myosin-7 OS=Mus musculus OX=10090 GN=Myh7 P...    35   1.3  
+sp|Q6TFL3|CC171_HUMAN Coiled-coil domain-containing protein 171 ...    35   1.3  
+sp|P13542|MYH8_MOUSE Myosin-8 OS=Mus musculus OX=10090 GN=Myh8 P...    35   1.3  
+sp|P49824|MYH7_CANLF Myosin-7 OS=Canis lupus familiaris OX=9615 ...    35   1.3  
+sp|Q9ASQ2|MAMYB_ARATH Transcription factor MAMYB OS=Arabidopsis ...    35   1.4  
+sp|Q1XGE2|HAC1_ASPOR Transcriptional activator hacA OS=Aspergill...    35   1.4  
+sp|P0CO98|EAF1_CRYNJ Chromatin modification-related protein EAF1...    35   1.5  
+sp|P0CO99|EAF1_CRYNB Chromatin modification-related protein EAF1...    35   1.5  
+sp|P33332|SEC3_YEAST Exocyst complex component SEC3 OS=Saccharom...    35   1.5  
+sp|Q2QLG9|CTTB2_OTOGA Cortactin-binding protein 2 OS=Otolemur ga...    35   1.5  
+sp|F1QBY1|NIPLB_DANRE Nipped-B-like protein B OS=Danio rerio OX=...    35   1.5  
+sp|Q1RGR1|CLPB_RICBR Chaperone protein ClpB OS=Rickettsia bellii...    35   1.6  
+sp|Q386N1|CFA91_TRYB2 Cilia- and flagella-associated protein 91 ...    35   1.6  
+sp|Q9BTV7|CABL2_HUMAN CDK5 and ABL1 enzyme substrate 2 OS=Homo s...    35   1.6  
+sp|Q8IDX6|RH2A_PLAF7 Reticulocyte-binding protein homolog 2a OS=...    35   1.7  
+sp|Q55GK3|MYBM_DICDI Myb-like protein M OS=Dictyostelium discoid...    35   1.7  
+sp|Q9TW65|DMD_CAEEL Dystrophin-1 OS=Caenorhabditis elegans OX=62...    35   1.7  
+sp|Q86HX9|MYBK_DICDI Myb-like protein K OS=Dictyostelium discoid...    35   1.7  
+sp|Q02457|TBF1_YEAST Protein TBF1 OS=Saccharomyces cerevisiae (s...    35   1.8  
+sp|P0CU43|CAHS3_HYPEX Cytosolic-abundant heat soluble protein 77...    35   1.8  
+sp|Q7SAF6|CEF1_NEUCR Pre-mRNA-splicing factor cef-1 OS=Neurospor...    35   1.8  
+sp|P13540|MYH7_MESAU Myosin-7 OS=Mesocricetus auratus OX=10036 G...    35   1.8  
+sp|Q4KKX4|NCOR1_XENTR Nuclear receptor corepressor 1 OS=Xenopus ...    35   1.8  
+sp|Q8SS35|Y4A0_ENCCU Probable myosin heavy chain ECU04_1000 OS=E...    35   1.9  
+sp|Q9LX73|UFL1_ARATH E3 UFM1-protein ligase 1 homolog OS=Arabido...    35   1.9  
+sp|Q8K1N2|PHLB2_MOUSE Pleckstrin homology-like domain family B m...    35   1.9  
+sp|B1YJY5|MUTS2_EXIS2 Endonuclease MutS2 OS=Exiguobacterium sibi...    35   2.0  
+sp|Q92JK8|CLPB_RICCN Chaperone protein ClpB OS=Rickettsia conori...    35   2.1  
+sp|P12882|MYH1_HUMAN Myosin-1 OS=Homo sapiens OX=9606 GN=MYH1 PE...    35   2.1  
+sp|J9VW97|LIV4_CRYNH DNA-binding protein LIV4 OS=Cryptococcus ne...    35   2.1  
+sp|A0A8M9PQ61|DESPB_DANRE Desmoplakin-B OS=Danio rerio OX=7955 G...    35   2.2  
+sp|F1RKB1|DRC10_PIG Dynein regulatory complex protein 10 OS=Sus ...    35   2.2  
+sp|Q9W252|RAD50_DROME DNA repair protein RAD50 OS=Drosophila mel...    35   2.2  
+sp|Q5XIR6|DRC10_RAT Dynein regulatory complex protein 10 OS=Ratt...    35   2.2  
+sp|Q4UN57|CLPB_RICFE Chaperone protein ClpB OS=Rickettsia felis ...    35   2.2  
+sp|Q3ABU1|MUTS2_CARHZ Endonuclease MutS2 OS=Carboxydothermus hyd...    35   2.2  
+sp|Q8LG05|STKLM_ARATH Transcription factor STKL1 OS=Arabidopsis ...    34   2.4  
+sp|Q1DUF9|INO80_COCIM Chromatin-remodeling ATPase INO80 OS=Cocci...    34   2.4  
+sp|Q8VZI9|ENAP1_ARATH Trihelix transcription factor ENAP1 OS=Ara...    34   2.5  
+sp|Q6CU65|CEF1_KLULA Pre-mRNA-splicing factor CEF1 OS=Kluyveromy...    34   2.5  
+sp|Q4QRL3|CC88B_MOUSE Coiled-coil domain-containing protein 88B ...    34   2.5  
+sp|Q9NXG0|CNTLN_HUMAN Centlein OS=Homo sapiens OX=9606 GN=CNTLN ...    34   2.6  
+sp|P04266|K2C1_XENLA Keratin, type II cytoskeletal I (Fragment) ...    34   2.7  
+sp|Q00737|SUDA_EMENI Chromosome segregation protein sudA OS=Emer...    34   2.8  
+sp|P04265|K2C2_XENLA Keratin, type II cytoskeletal I (Fragment) ...    34   2.9  
+sp|Q9BE39|MYH7_BOVIN Myosin-7 OS=Bos taurus OX=9913 GN=MYH7 PE=1...    34   3.0  
+sp|Q8MJU9|MYH7_HORSE Myosin-7 OS=Equus caballus OX=9796 GN=MYH7 ...    34   3.0  
+sp|Q4WEY8|HACA_ASPFU Transcriptional regulator of the unfolded p...    34   3.0  
+sp|P79293|MYH7_PIG Myosin-7 OS=Sus scrofa OX=9823 GN=MYH7 PE=1 SV=2    34   3.1  
+sp|Q86SQ0|PHLB2_HUMAN Pleckstrin homology-like domain family B m...    34   3.1  
+sp|Q8IXM2|BAP18_HUMAN Chromatin complexes subunit BAP18 OS=Homo ...    34   3.1  
+sp|Q4R2Z8|ZN541_MACFA Zinc finger protein 541 (Fragment) OS=Maca...    34   3.2  
+sp|P0CO95|CEF1_CRYNB Pre-mRNA-splicing factor CEF1 OS=Cryptococc...    34   3.2  
+sp|Q9TV62|MYH4_PIG Myosin-4 OS=Sus scrofa OX=9823 GN=MYH4 PE=2 SV=1    34   3.3  
+sp|Q5SX39|MYH4_MOUSE Myosin-4 OS=Mus musculus OX=10090 GN=Myh4 P...    34   3.3  
+sp|Q29RW1|MYH4_RAT Myosin-4 OS=Rattus norvegicus OX=10116 GN=Myh...    34   3.3  
+sp|Q7TT49|MRCKB_RAT Serine/threonine-protein kinase MRCK beta OS...    34   3.3  
+sp|Q8IUG5|MY18B_HUMAN Unconventional myosin-XVIIIb OS=Homo sapie...    34   3.4  
+sp|Q3V6T2|GRDN_HUMAN Girdin OS=Homo sapiens OX=9606 GN=CCDC88A P...    34   3.4  
+sp|Q0VC16|TGO1_BOVIN Transport and Golgi organization protein 1 ...    34   3.7  
+sp|A1Z9E2|LIN54_DROME Protein lin-54 homolog OS=Drosophila melan...    34   3.8  
+sp|Q9SGT2|PUB58_ARATH Putative U-box domain-containing protein 5...    34   3.9  
+sp|Q6ZMW2|ZN782_HUMAN Zinc finger protein 782 OS=Homo sapiens OX...    34   4.0  
+sp|Q9D180|CFA57_MOUSE Cilia- and flagella-associated protein 57 ...    34   4.0  
+sp|Q9Z0R6|ITSN2_MOUSE Intersectin-2 OS=Mus musculus OX=10090 GN=...    34   4.1  
+sp|Q9ZEA9|CLPB_RICPR Chaperone protein ClpB OS=Rickettsia prowaz...    34   4.1  
+sp|Q5SX40|MYH1_MOUSE Myosin-1 OS=Mus musculus OX=10090 GN=Myh1 P...    34   4.3  
+sp|Q95KD7|CC191_MACFA Coiled-coil domain-containing protein 191 ...    34   4.3  
+sp|Q1G3C4|RADL4_ARATH Protein RADIALIS-like 4 OS=Arabidopsis tha...    34   4.5  
+sp|Q076A6|MYH1_CANLF Myosin-1 OS=Canis lupus familiaris OX=9615 ...    34   4.5  
+sp|P02566|MYO4_CAEEL Myosin-4 OS=Caenorhabditis elegans OX=6239 ...    34   4.5  
+sp|O42296|APOA1_ANAPL Apolipoprotein A-I OS=Anas platyrhynchos O...    34   4.7  
+sp|Q170J7|MOEH_AEDAE Moesin/ezrin/radixin homolog 1 OS=Aedes aeg...    34   4.8  
+sp|Q75JP5|Y2471_DICDI Calponin homology domain-containing protei...    34   4.9  
+sp|Q28641|MYH4_RABIT Myosin-4 OS=Oryctolagus cuniculus OX=9986 G...    34   4.9  
+sp|Q8MJV0|MYH1_HORSE Myosin-1 OS=Equus caballus OX=9796 GN=MYH1 ...    34   4.9  
+sp|Q22908|RASEF_CAEEL Ras and EF-hand domain-containing protein ...    34   5.0  
+sp|Q8NCU4|CC191_HUMAN Coiled-coil domain-containing protein 191 ...    34   5.0  
+sp|Q9H0D2|ZN541_HUMAN Zinc finger protein 541 OS=Homo sapiens OX...    34   5.1  
+sp|Q7Z4S6|KI21A_HUMAN Kinesin-like protein KIF21A OS=Homo sapien...    34   5.1  
+sp|Q9BE40|MYH1_BOVIN Myosin-1 OS=Bos taurus OX=9913 GN=MYH1 PE=2...    34   5.1  
+sp|B0G0Y5|MYBAA_DICDI Myb-like protein AA OS=Dictyostelium disco...    34   5.1  
+sp|Q9JI55|PLEC_CRIGR Plectin (Fragment) OS=Cricetulus griseus OX...    33   5.4  
+sp|P14105|MYH9_CHICK Myosin-9 OS=Gallus gallus OX=9031 GN=MYH9 P...    33   5.4  
+sp|Q076A4|MYH8_CANLF Myosin-8 OS=Canis lupus familiaris OX=9615 ...    33   5.4  
+sp|B7ZRU9|EVI1A_XENLA MDS1 and EVI1 complex locus protein EVI1-A...    33   5.4  
+sp|Q8N7Z5|ANR31_HUMAN Ankyrin repeat domain-containing protein 3...    33   5.5  
+sp|Q9TV61|MYH1_PIG Myosin-1 OS=Sus scrofa OX=9823 GN=MYH1 PE=2 SV=1    33   5.6  
+sp|Q9ASV5|MIC60_ARATH MICOS complex subunit MIC60, mitochondrial...    33   5.6  
+sp|Q6ZSZ5|ARHGI_HUMAN Rho guanine nucleotide exchange factor 18 ...    33   5.6  
+sp|A0LE19|IF2_MAGMM Translation initiation factor IF-2 OS=Magnet...    33   5.6  
+sp|P02564|MYH7_RAT Myosin-7 OS=Rattus norvegicus OX=10116 GN=Myh...    33   6.0  
+sp|Q9D3V1|DRC10_MOUSE Dynein regulatory complex protein 10 OS=Mu...    33   6.0  
+sp|Q6GLV4|UBX1B_XENLA UBX domain-containing protein 1-B OS=Xenop...    33   6.2  
+sp|Q757Y8|SET2_ASHGO Histone-lysine N-methyltransferase, H3 lysi...    33   6.3  
+sp|Q9QXL2|KI21A_MOUSE Kinesin-like protein KIF21A OS=Mus musculu...    33   6.3  
+sp|Q9HK21|SMC_THEAC Chromosome partition protein Smc OS=Thermopl...    33   6.4  
+sp|Q5SNZ0|GRDN_MOUSE Girdin OS=Mus musculus OX=10090 GN=Ccdc88a ...    33   6.4  
+sp|Q5ZIB2|FBF1_CHICK Fas-binding factor 1 homolog OS=Gallus gall...    33   6.4  
+sp|Q9DCT6|BAP18_MOUSE Chromatin complexes subunit BAP18 OS=Mus m...    33   6.5  
+sp|Q8RHT2|RNY_FUSNN Ribonuclease Y OS=Fusobacterium nucleatum su...    33   6.7  
+sp|Q6CNF3|NDC80_KLULA Probable kinetochore protein NDC80 OS=Kluy...    33   7.1  
+sp|Q9UZC8|RAD50_PYRAB DNA double-strand break repair Rad50 ATPas...    33   7.1  
+sp|I1S4N7|BECN1_GIBZE Vacuolar protein sorting-associated protei...    33   7.3  
+sp|Q076A5|MYH4_CANLF Myosin-4 OS=Canis lupus familiaris OX=9615 ...    33   7.4  
+sp|Q7S8V3|NST1_NEUCR Stress response protein nst1 OS=Neurospora ...    33   7.5  
+sp|Q32LD1|BAP18_BOVIN Chromatin complexes subunit BAP18 OS=Bos t...    33   8.0  
+sp|Q52G60|CEF1_MAGO7 Pre-mRNA-splicing factor CEF1 OS=Magnaporth...    33   8.2  
+sp|P21538|REB1_YEAST DNA-binding protein REB1 OS=Saccharomyces c...    33   8.4  
+sp|O29230|RAD50_ARCFU DNA double-strand break repair Rad50 ATPas...    33   8.4  
+sp|A0KVI3|ZIPA_SHESA Cell division protein ZipA OS=Shewanella sp...    33   8.6  
+sp|O08455|YHAN_BACSU Uncharacterized protein YhaN OS=Bacillus su...    33   8.7  
+sp|A6RHW0|SIP5_BOTFB Protein sip5 OS=Botryotinia fuckeliana (str...    33   8.8  
+sp|Q6P9R4|ARHGI_MOUSE Rho guanine nucleotide exchange factor 18 ...    33   8.8  
+sp|F4JQ51|KN7I_ARATH Kinesin-like protein KIN-7I OS=Arabidopsis ...    32   9.1  
+sp|Q8TX03|PAN_METKA Proteasome-activating nucleotidase OS=Methan...    32   9.2  
+sp|Q58G59|KIF7_DANRE Kinesin-like protein kif7 OS=Danio rerio OX...    32   9.5  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.297    0.102    0.235 
+
+Lambda     K      H
+   0.267   0.0314    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 399,332,945
+Number of Sequences: 569516
+Number of extensions: 13768479
+Number of successful extensions: 48859
+Number of sequences better than 10.0: 927
+Number of HSP's better than 10.0 without gapping: 402
+Number of HSP's successfully gapped in prelim test: 951
+Number of HSP's that attempted gapping in prelim test: 47094
+Number of HSP's gapped (non-prelim): 2235
+length of query: 527
+length of database: 205,866,895
+effective HSP length: 123
+effective length of query: 404
+effective length of database: 135,816,427
+effective search space: 54869836508
+effective search space used: 54869836508
+T: 11
+A: 40
+X1: 16 ( 6.9 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.3 bits)
+S2: 72 (32.7 bits)

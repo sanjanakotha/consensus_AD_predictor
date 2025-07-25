@@ -1,0 +1,105 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (78 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q8EIX4|HIPB_SHEON Antitoxin HipB OS=Shewanella oneidensis (st...   159   4e-39
+sp|O27383|Y1328_METTH Uncharacterized HTH-type transcriptional r...    35   0.16 
+sp|Q57720|Y272_METJA Uncharacterized HTH-type transcriptional re...    30   3.9  
+sp|P44453|RSMC_HAEIN Ribosomal RNA small subunit methyltransfera...    30   6.4  
+sp|A5UFI6|RSMC_HAEIG Ribosomal RNA small subunit methyltransfera...    30   6.6  
+
+[blastpgp] WARNING:  [000.000]  posPurgeMatches: Due to purging near identical sequences, only the query is used to construct the position-specific score matrix
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q8EIX4|HIPB_SHEON Antitoxin HipB OS=Shewanella oneidensis (st...   159   7e-39
+
+Sequences not found previously or not previously below threshold:
+
+sp|O27383|Y1328_METTH Uncharacterized HTH-type transcriptional r...    36   0.059
+sp|O28487|Y1787_ARCFU Putative HTH-type transcriptional regulato...    32   0.91 
+sp|Q57720|Y272_METJA Uncharacterized HTH-type transcriptional re...    32   1.7  
+sp|P44453|RSMC_HAEIN Ribosomal RNA small subunit methyltransfera...    30   3.9  
+sp|Q8ZWT6|Y1627_PYRAE Putative HTH-type transcriptional regulato...    30   4.1  
+sp|A5UFI6|RSMC_HAEIG Ribosomal RNA small subunit methyltransfera...    30   4.3  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.316    0.131    0.362 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 50,655,630
+Number of Sequences: 569516
+Number of extensions: 1443151
+Number of successful extensions: 3638
+Number of sequences better than 10.0: 7
+Number of HSP's better than 10.0 without gapping: 6
+Number of HSP's successfully gapped in prelim test: 20
+Number of HSP's that attempted gapping in prelim test: 3632
+Number of HSP's gapped (non-prelim): 26
+length of query: 78
+length of database: 205,866,895
+effective HSP length: 49
+effective length of query: 29
+effective length of database: 177,960,611
+effective search space: 5160857719
+effective search space used: 5160857719
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.6 bits)
+S2: 64 (29.3 bits)

@@ -1,0 +1,1590 @@
+2025-07-25 14:16:25.817768: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+    
+If you wish to use a local installation of psipred, please indicate this,
+    by assigning the path to local_psipred (e.g. local_psipred = "~/psipred/run_psipred")
+
+
+2025-07-25 14:16:31.951488: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+
+MAKING DIRECTORIES
+DONE MAKING DIRECTORIES, 21.61s elapsed
+
+GETTING PSIPRED
+DONE GETTING PSIPRED, 84.14s elapsed
+
+GETTING IUPRED
+DONE GETTING IUPRED, 85.26s elapsed
+
+RUNNING PADDLE
+DONE RUNNING PADDLE, 120.69s elapsed
+
+RUNNING ADPRED
+DONE RUNNING ADPRED, 200.19s elapsed
+
+Global seed set to 0
+RUNNING ADHUNTER
+DONE RUNNING ADHUNTER, 214.87s elapsed
+
+RUNNING TADA
+Traceback (most recent call last):
+  File "/global/scratch/projects/fc_mvslab/OpenProjects/Sanjana/consensus_AD_predictor/scripts/run-all-predictors-faster-tada.py", line 460, in <module>
+    main(args.f, args.o)
+  File "/global/scratch/projects/fc_mvslab/OpenProjects/Sanjana/consensus_AD_predictor/scripts/run-all-predictors-faster-tada.py", line 413, in main
+    with tqdm(total=len(recs)) as pbar:
+NameError: name 'tqdm' is not defined
+Stopping cluster <Cluster(cluster_id='1753478195-2zov', profile='default', controller=<running>, engine_sets=['1753478196'])>
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650a4d0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650b1c0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650b5b0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650b9a0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a64504c0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a6452290>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a660fe20>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a6509510>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63a8160>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63a8550>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650b9a0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650b5b0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650b1c0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a650a4d0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63a9510>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63a9900>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63a9cf0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63aa0e0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63aa4d0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63aa8c0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63aacb0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63ab0a0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63ab490>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63ab880>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63abc70>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f80d0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f84c0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f88b0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f8ca0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f9090>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f9480>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f9870>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63f9c60>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fa050>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fa440>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fa830>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fac20>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fb010>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fb400>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fb7f0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a63fbbe0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a6450040>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x14f7a64504c0>)
+Traceback (most recent call last):
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 694, in <lambda>
+    self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 614, in _handle_events
+    self._handle_send()
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 651, in _handle_send
+    status = self.socket.send_multipart(msg, **kwargs)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 752, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1153, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 329, in zmq.backend.cython._zmq.Frame.__init__
+  File "/global/home/users/sanjanakotha/.conda/envs/sk_allpredictors/lib/python3.10/site-packages/zmq/utils/garbage.py", line 152, in _push_socket
+    raise RuntimeError("zmq gc socket requested during shutdown")
+RuntimeError: zmq gc socket requested during shutdown
+Process 442772 did not exit in 5 seconds after TERM
+slurmstepd: error: *** JOB 26741105 ON n0046.savio3 CANCELLED AT 2025-07-25T14:20:49 ***

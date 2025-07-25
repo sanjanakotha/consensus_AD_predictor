@@ -1,0 +1,541 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (190 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P03013|HIN_SALTY DNA-invertase hin OS=Salmonella typhimurium ...   389   e-108
+sp|Q02869|HIN_SALAE DNA-invertase OS=Salmonella abortus-equi OX=...   383   e-106
+sp|Q38199|GIN_BPD10 Serine recombinase gin OS=Escherichia phage ...   262   1e-69
+sp|P03015|GIN_BPMU Serine recombinase gin OS=Escherichia phage M...   262   1e-69
+sp|P10311|CIN_BPP1 DNA-invertase OS=Escherichia phage P1 OX=2886...   251   2e-66
+sp|P03014|PINE_ECOLI Serine recombinase PinE OS=Escherichia coli...   248   2e-65
+sp|P21703|CIN_BPP7 DNA-invertase OS=Enterobacteria phage P7 OX=1...   247   3e-65
+sp|P19241|BINR_STAAU Transposon Tn552 DNA-invertase BinR OS=Stap...   177   4e-44
+sp|P18358|BINL_STAAU Transposon Tn552 resolvase OS=Staphylococcu...   173   7e-43
+sp|P06693|TNR7_ENTFL Transposon Tn917 resolvase OS=Enterococcus ...   147   3e-35
+sp|P55389|Y4CG_SINFN Probable DNA-invertase y4cG OS=Sinorhizobiu...   130   4e-30
+sp|P18957|UVP1_ECOLX Protein uvp1 OS=Escherichia coli OX=562 GN=...   124   5e-28
+sp|P0C1G3|TNR7_PSEPU Transposons Tn4653 resolvase OS=Pseudomonas...   118   3e-26
+sp|P0C1G2|TNR7_ECOLX Transposons Tn1721 resolvase OS=Escherichia...   118   3e-26
+sp|P04130|TNR2_ECOLX Transposon Tn21 resolvase OS=Escherichia co...   117   5e-26
+sp|P06691|TNR5_PSEAI Transposon Tn501 resolvase OS=Pseudomonas a...   116   9e-26
+sp|P55559|Y4LS_SINFN Integrase-like protein y4lS OS=Sinorhizobiu...   113   1e-24
+sp|P30739|TNPT_PSEPU Resolvase/recombinase OS=Pseudomonas putida...   111   4e-24
+sp|P05823|TNR0_ECOLX Transposon Tn2501 resolvase OS=Escherichia ...   110   6e-24
+sp|P07945|RES_CLOPF Resolvase OS=Clostridium perfringens OX=1502...   110   8e-24
+sp|P0ADI0|PINR_ECOLI Serine recombinase PinR OS=Escherichia coli...   109   1e-23
+sp|P0ADI1|PINR_ECOL6 Putative DNA-invertase from lambdoid propha...   109   1e-23
+sp|P03012|TNR1_ECOLI Transposon gamma-delta resolvase OS=Escheri...   109   1e-23
+sp|P77170|PINQ_ECOLI Serine recombinase PinQ OS=Escherichia coli...   108   2e-23
+sp|P0ADI3|TNR3_KLEPN Transposon Tn3 resolvase OS=Klebsiella pneu...   105   3e-22
+sp|P0ADI2|TNR3_ECOLX Transposon Tn3 resolvase OS=Escherichia col...   105   3e-22
+sp|P21424|TNR4_KLEPN Transposon Tn1331 resolvase OS=Klebsiella p...   103   6e-22
+sp|Q93MD2|RES_CLOPE Resolvase OS=Clostridium perfringens (strain...   103   8e-22
+sp|P13606|RES4_ECOLX R46 site-specific recombinase OS=Escherichi...    98   3e-20
+sp|Q06237|TNR6_ENTFC Transposon Tn1546 resolvase OS=Enterococcus...    87   8e-17
+sp|P20384|BIN3_STAAU Putative transposon Tn552 DNA-invertase bin...    82   2e-15
+sp|O35034|YEFC_BACSU Resolvase homolog YefC OS=Bacillus subtilis...    48   4e-05
+sp|P17867|CISA_BACSU Putative DNA recombinase OS=Bacillus subtil...    47   1e-04
+sp|P22996|PARA4_ECOLX Resolvase OS=Escherichia coli OX=562 GN=pa...    45   3e-04
+sp|Q52563|STBA_PSEUB Resolvase OS=Pseudomonas syringae pv. tomat...    45   4e-04
+sp|B8D093|MCSB_HALOH Protein-arginine kinase OS=Halothermothrix ...    35   0.42 
+sp|Q65HI7|NUSB_BACLD Transcription antitermination protein NusB ...    32   2.7  
+sp|Q09874|YAGB_SCHPO Uncharacterized protein C12G12.11c OS=Schiz...    32   2.9  
+sp|P70539|ACV1C_RAT Activin receptor type-1C OS=Rattus norvegicu...    32   3.4  
+sp|Q8K348|ACV1C_MOUSE Activin receptor type-1C OS=Mus musculus O...    32   3.5  
+sp|E1V8I1|GLTB_HALED Glutamate synthase [NADPH] large chain OS=H...    31   4.8  
+sp|Q66I85|YJU2B_DANRE Probable splicing factor YJU2B OS=Danio re...    31   5.1  
+sp|Q02541|COPS_PSEUB Sensor protein CopS OS=Pseudomonas syringae...    30   9.3  
+sp|O30030|Y209_ARCFU Uncharacterized protein AF_0209 OS=Archaeog...    30   9.8  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P03013|HIN_SALTY DNA-invertase hin OS=Salmonella typhimurium ...   259   7e-69
+sp|Q02869|HIN_SALAE DNA-invertase OS=Salmonella abortus-equi OX=...   259   1e-68
+sp|P03015|GIN_BPMU Serine recombinase gin OS=Escherichia phage M...   244   2e-64
+sp|Q38199|GIN_BPD10 Serine recombinase gin OS=Escherichia phage ...   243   4e-64
+sp|P03014|PINE_ECOLI Serine recombinase PinE OS=Escherichia coli...   243   6e-64
+sp|P19241|BINR_STAAU Transposon Tn552 DNA-invertase BinR OS=Stap...   236   6e-62
+sp|P10311|CIN_BPP1 DNA-invertase OS=Escherichia phage P1 OX=2886...   236   8e-62
+sp|P21703|CIN_BPP7 DNA-invertase OS=Enterobacteria phage P7 OX=1...   236   1e-61
+sp|P18358|BINL_STAAU Transposon Tn552 resolvase OS=Staphylococcu...   232   2e-60
+sp|P18957|UVP1_ECOLX Protein uvp1 OS=Escherichia coli OX=562 GN=...   199   9e-51
+sp|P07945|RES_CLOPF Resolvase OS=Clostridium perfringens OX=1502...   198   2e-50
+sp|P03012|TNR1_ECOLI Transposon gamma-delta resolvase OS=Escheri...   197   3e-50
+sp|P06693|TNR7_ENTFL Transposon Tn917 resolvase OS=Enterococcus ...   192   1e-48
+sp|P0ADI3|TNR3_KLEPN Transposon Tn3 resolvase OS=Klebsiella pneu...   191   3e-48
+sp|P0ADI2|TNR3_ECOLX Transposon Tn3 resolvase OS=Escherichia col...   191   3e-48
+sp|P21424|TNR4_KLEPN Transposon Tn1331 resolvase OS=Klebsiella p...   190   6e-48
+sp|P30739|TNPT_PSEPU Resolvase/recombinase OS=Pseudomonas putida...   190   6e-48
+sp|P55559|Y4LS_SINFN Integrase-like protein y4lS OS=Sinorhizobiu...   189   1e-47
+sp|Q93MD2|RES_CLOPE Resolvase OS=Clostridium perfringens (strain...   189   1e-47
+sp|Q06237|TNR6_ENTFC Transposon Tn1546 resolvase OS=Enterococcus...   189   1e-47
+sp|P0C1G3|TNR7_PSEPU Transposons Tn4653 resolvase OS=Pseudomonas...   185   2e-46
+sp|P0C1G2|TNR7_ECOLX Transposons Tn1721 resolvase OS=Escherichia...   185   2e-46
+sp|P06691|TNR5_PSEAI Transposon Tn501 resolvase OS=Pseudomonas a...   184   3e-46
+sp|P13606|RES4_ECOLX R46 site-specific recombinase OS=Escherichi...   184   3e-46
+sp|P0ADI0|PINR_ECOLI Serine recombinase PinR OS=Escherichia coli...   182   9e-46
+sp|P0ADI1|PINR_ECOL6 Putative DNA-invertase from lambdoid propha...   182   9e-46
+sp|P77170|PINQ_ECOLI Serine recombinase PinQ OS=Escherichia coli...   182   2e-45
+sp|P04130|TNR2_ECOLX Transposon Tn21 resolvase OS=Escherichia co...   182   2e-45
+sp|P20384|BIN3_STAAU Putative transposon Tn552 DNA-invertase bin...   173   7e-43
+sp|P55389|Y4CG_SINFN Probable DNA-invertase y4cG OS=Sinorhizobiu...   171   3e-42
+sp|P05823|TNR0_ECOLX Transposon Tn2501 resolvase OS=Escherichia ...   169   1e-41
+sp|Q52563|STBA_PSEUB Resolvase OS=Pseudomonas syringae pv. tomat...   152   1e-36
+sp|P22996|PARA4_ECOLX Resolvase OS=Escherichia coli OX=562 GN=pa...   143   8e-34
+sp|P17867|CISA_BACSU Putative DNA recombinase OS=Bacillus subtil...   116   1e-25
+sp|O35034|YEFC_BACSU Resolvase homolog YefC OS=Bacillus subtilis...    80   6e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q45057|YNEB_BACSU Resolvase homolog YneB OS=Bacillus subtilis...    63   1e-09
+sp|Q5UPQ7|YR771_MIMIV Putative resolvase R771 OS=Acanthamoeba po...    47   6e-05
+sp|O32006|YOKA_BACSU Resolvase homolog YokA OS=Bacillus subtilis...    46   2e-04
+sp|Q5UPI1|YL103_MIMIV Putative resolvase L103 OS=Acanthamoeba po...    44   5e-04
+sp|Q60329|Y014_METJA Uncharacterized protein MJ0014 OS=Methanoca...    43   0.001
+sp|P77607|YAGL_ECOLI Uncharacterized protein YagL OS=Escherichia...    42   0.002
+sp|Q5UPF4|YR080_MIMIV Putative resolvase R80 OS=Acanthamoeba pol...    42   0.002
+sp|P10427|YIM3_BPPH1 Uncharacterized immunity region protein 3 O...    41   0.005
+sp|P77698|YBCK_ECOLI Uncharacterized protein YbcK OS=Escherichia...    41   0.005
+sp|A4FBA8|RUVB_SACEN Holliday junction branch migration complex ...    40   0.009
+sp|Q5YTE8|RUVB_NOCFA Holliday junction branch migration complex ...    40   0.014
+sp|C1B4D1|RUVB_RHOOB Holliday junction branch migration complex ...    38   0.048
+sp|Q0S1C6|RUVB_RHOJR Holliday junction branch migration complex ...    37   0.082
+sp|Q3UVV9|VWA3A_MOUSE von Willebrand factor A domain-containing ...    37   0.095
+sp|A4TBQ5|RUVB_MYCGI Holliday junction branch migration complex ...    37   0.11 
+sp|Q9KJF1|BBSD_THAAR (2S)-[(R)-hydroxy(phenyl)methyl]succinyl-Co...    37   0.11 
+sp|C0ZAN4|RUVB_BREBN Holliday junction branch migration complex ...    37   0.12 
+sp|Q58179|Y769_METJA Uncharacterized protein MJ0769 OS=Methanoca...    36   0.14 
+sp|Q1B9Q9|RUVB_MYCSS Holliday junction branch migration complex ...    36   0.15 
+sp|A1UFA4|RUVB_MYCSK Holliday junction branch migration complex ...    36   0.15 
+sp|A3PYW5|RUVB_MYCSJ Holliday junction branch migration complex ...    36   0.15 
+sp|Q0AX16|RUVB_SYNWW Holliday junction branch migration complex ...    36   0.18 
+sp|Q49Y79|RUVB_STAS1 Holliday junction branch migration complex ...    35   0.22 
+sp|Q81LG9|RUVB_BACAN Holliday junction branch migration complex ...    35   0.23 
+sp|C3L6U9|RUVB_BACAC Holliday junction branch migration complex ...    35   0.23 
+sp|C3P9A7|RUVB_BACAA Holliday junction branch migration complex ...    35   0.23 
+sp|B7HE54|RUVB_BACC4 Holliday junction branch migration complex ...    35   0.24 
+sp|B7IIT2|RUVB_BACC2 Holliday junction branch migration complex ...    35   0.24 
+sp|A7GTA2|RUVB_BACCN Holliday junction branch migration complex ...    35   0.24 
+sp|A9VIP6|RUVB_BACMK Holliday junction branch migration complex ...    35   0.24 
+sp|A0RJ26|RUVB_BACAH Holliday junction branch migration complex ...    35   0.25 
+sp|C1ESW4|RUVB_BACC3 Holliday junction branch migration complex ...    35   0.25 
+sp|Q6HDA6|RUVB_BACHK Holliday junction branch migration complex ...    35   0.26 
+sp|Q634C4|RUVB_BACCZ Holliday junction branch migration complex ...    35   0.26 
+sp|B9IYZ4|RUVB_BACCQ Holliday junction branch migration complex ...    35   0.26 
+sp|B7HQH9|RUVB_BACC7 Holliday junction branch migration complex ...    35   0.27 
+sp|P61528|RUVB_BACC1 Holliday junction branch migration complex ...    35   0.27 
+sp|A7Z768|RUVB_BACVZ Holliday junction branch migration complex ...    35   0.29 
+sp|Q5KWR0|RUVB_GEOKA Holliday junction branch migration complex ...    35   0.31 
+sp|O14211|RRG9_SCHPO Required for respiratory growth protein 9, ...    35   0.32 
+sp|C5D5E8|RUVB_GEOSW Holliday junction branch migration complex ...    35   0.32 
+sp|Q817W4|RUVB_BACCR Holliday junction branch migration complex ...    35   0.35 
+sp|Q4L6Y6|RUVB_STAHJ Holliday junction branch migration complex ...    35   0.39 
+sp|Q8Y6Z8|RUVB_LISMO Holliday junction branch migration complex ...    35   0.39 
+sp|Q71ZD8|RUVB_LISMF Holliday junction branch migration complex ...    35   0.39 
+sp|C1KVH9|RUVB_LISMC Holliday junction branch migration complex ...    35   0.39 
+sp|O32055|RUVB_BACSU Holliday junction branch migration complex ...    35   0.39 
+sp|A0AIY1|RUVB_LISW6 Holliday junction branch migration complex ...    35   0.40 
+sp|B8DHL6|RUVB_LISMH Holliday junction branch migration complex ...    35   0.40 
+sp|Q92BI2|RUVB_LISIN Holliday junction branch migration complex ...    35   0.40 
+sp|Q823K4|RUVB_CHLCV Holliday junction branch migration complex ...    35   0.40 
+sp|Q8CS91|RUVB_STAES Holliday junction branch migration complex ...    35   0.41 
+sp|Q5HNR0|RUVB_STAEQ Holliday junction branch migration complex ...    35   0.41 
+sp|Q65GP6|RUVB_BACLD Holliday junction branch migration complex ...    35   0.41 
+sp|A0PPD3|RUVB_MYCUA Holliday junction branch migration complex ...    35   0.45 
+sp|A4IRB2|RUVB_GEOTN Holliday junction branch migration complex ...    35   0.46 
+sp|B1YJR1|RUVB_EXIS2 Holliday junction branch migration complex ...    35   0.46 
+sp|B2HN63|RUVB_MYCMM Holliday junction branch migration complex ...    35   0.46 
+sp|C0ZZ48|RUVB_RHOE4 Holliday junction branch migration complex ...    34   0.50 
+sp|Q8FPK5|RUVB_COREF Holliday junction branch migration complex ...    34   0.53 
+sp|Q38YQ9|RUVB_LATSS Holliday junction branch migration complex ...    34   0.56 
+sp|P61530|RUVB_CORDI Holliday junction branch migration complex ...    34   0.58 
+sp|A8FFR2|RUVB_BACP2 Holliday junction branch migration complex ...    34   0.63 
+sp|Q57762|Y314_METJA Uncharacterized protein MJ0314 OS=Methanoca...    34   0.67 
+sp|A4QEN3|RUVB_CORGB Holliday junction branch migration complex ...    34   0.69 
+sp|Q9AE09|RUVB_CORGL Holliday junction branch migration complex ...    34   0.71 
+sp|B9DRS2|DNLJ_STRU0 DNA ligase OS=Streptococcus uberis (strain ...    34   0.71 
+sp|Q4JVD9|RUVB_CORJK Holliday junction branch migration complex ...    34   0.74 
+sp|Q45119|TNPA_BACFG Transposase for insertion sequence element ...    33   0.89 
+sp|A5D3G1|RUVB_PELTS Holliday junction branch migration complex ...    33   1.0  
+sp|B9K9R9|HIS8_THENN Histidinol-phosphate aminotransferase OS=Th...    33   1.1  
+sp|C4L523|RUVB_EXISA Holliday junction branch migration complex ...    33   1.1  
+sp|B1W3G4|RUVB_STRGG Holliday junction branch migration complex ...    33   1.1  
+sp|B9E718|RUVB_MACCJ Holliday junction branch migration complex ...    33   1.2  
+sp|Q2YT89|RUVB_STAAB Holliday junction branch migration complex ...    33   1.3  
+sp|C3PGQ6|RUVB_CORA7 Holliday junction branch migration complex ...    33   1.3  
+sp|P66759|RUVB_STAAW Holliday junction branch migration complex ...    33   1.3  
+sp|Q6G8S8|RUVB_STAAS Holliday junction branch migration complex ...    33   1.3  
+sp|P66758|RUVB_STAAN Holliday junction branch migration complex ...    33   1.3  
+sp|P66757|RUVB_STAAM Holliday junction branch migration complex ...    33   1.3  
+sp|A5ITG5|RUVB_STAA9 Holliday junction branch migration complex ...    33   1.3  
+sp|A6U2A9|RUVB_STAA2 Holliday junction branch migration complex ...    33   1.3  
+sp|A7X357|RUVB_STAA1 Holliday junction branch migration complex ...    33   1.3  
+sp|A8Z2G9|RUVB_STAAT Holliday junction branch migration complex ...    33   1.3  
+sp|Q6GG63|RUVB_STAAR Holliday junction branch migration complex ...    33   1.3  
+sp|A6QHI3|RUVB_STAAE Holliday junction branch migration complex ...    33   1.3  
+sp|Q5HFC2|RUVB_STAAC Holliday junction branch migration complex ...    33   1.3  
+sp|Q2FXT4|RUVB_STAA8 Holliday junction branch migration complex ...    33   1.3  
+sp|Q2FG86|RUVB_STAA3 Holliday junction branch migration complex ...    33   1.3  
+sp|Q9KDI8|RUVB_HALH5 Holliday junction branch migration complex ...    33   1.6  
+sp|Q048Y7|RUVB_LACDB Holliday junction branch migration complex ...    33   1.7  
+sp|Q1G941|RUVB_LACDA Holliday junction branch migration complex ...    33   1.7  
+sp|Q8TX50|RL10_METKA 50S ribosomal protein L10 OS=Methanopyrus k...    32   2.1  
+sp|G3XGC1|MIMR_MYCGD Propane 2-monooxygenase operon transcriptio...    32   2.1  
+sp|Q926A7|Y1255_LISIN Uncharacterized protein Lin1255/Lin1742 OS...    32   2.3  
+sp|Q254B4|RUVB_CHLFF Holliday junction branch migration complex ...    32   2.5  
+sp|B2HE73|KATG_MYCMM Catalase-peroxidase OS=Mycobacterium marinu...    32   2.5  
+sp|O32291|YXNA_BACSU Uncharacterized oxidoreductase YxnA OS=Baci...    32   2.5  
+sp|A1WZ65|RUVB_HALHL Holliday junction branch migration complex ...    32   2.7  
+sp|Q5TP13|MED15_ANOGA Mediator of RNA polymerase II transcriptio...    32   2.8  
+sp|B9KZ09|RUVB_THERP Holliday junction branch migration complex ...    32   3.0  
+sp|Q8EPQ6|RUVB_OCEIH Holliday junction branch migration complex ...    32   3.0  
+sp|Q57368|CORC_HAEIN Magnesium and cobalt efflux protein CorC OS...    32   3.0  
+sp|P39356|YJHU_ECOLI Uncharacterized transcriptional regulator Y...    32   3.2  
+sp|Q24UN7|RUVB_DESHY Holliday junction branch migration complex ...    32   3.2  
+sp|B8FQV5|RUVB_DESHD Holliday junction branch migration complex ...    32   3.2  
+sp|P15025|ISTA_PSEAI Transposase for insertion sequence element ...    32   3.3  
+sp|Q928D5|Y2600_LISIN Uncharacterized protein Lin2600 OS=Listeri...    32   3.4  
+sp|Q03ER0|RUVB_PEDPA Holliday junction branch migration complex ...    32   3.9  
+sp|A8LXW9|RUVB_SALAI Holliday junction branch migration complex ...    31   4.1  
+sp|Q47N43|RUVB_THEFY Holliday junction branch migration complex ...    31   4.4  
+sp|Q7NFE9|CLPB_GLOVI Chaperone protein ClpB OS=Gloeobacter viola...    31   4.4  
+sp|Q9LBV3|BARS1_STRVG A-factor type gamma-butyrolactone 1'-reduc...    31   5.1  
+sp|B9DNE4|RUVB_STACT Holliday junction branch migration complex ...    31   5.5  
+sp|P9WMB7|MFTR_MYCTU Putative mycofactocin biosynthesis transcri...    31   5.5  
+sp|P9WMB6|MFTR_MYCTO Putative mycofactocin biosynthesis transcri...    31   5.5  
+sp|Q51426|RUVB_PSEAE Holliday junction branch migration complex ...    31   5.7  
+sp|Q02IC9|RUVB_PSEAB Holliday junction branch migration complex ...    31   5.7  
+sp|B7UXW5|RUVB_PSEA8 Holliday junction branch migration complex ...    31   5.7  
+sp|A9KP49|RUVB_LACP7 Holliday junction branch migration complex ...    31   5.9  
+sp|A6VA05|RUVB_PSEA7 Holliday junction branch migration complex ...    31   6.1  
+sp|Q7VEN0|Y2274_MYCBO Uncharacterized HTH-type transcriptional r...    31   6.4  
+sp|P9WMC5|Y2250_MYCTU Uncharacterized HTH-type transcriptional r...    31   6.4  
+sp|P9WMC4|Y2250_MYCTO Uncharacterized HTH-type transcriptional r...    31   6.4  
+sp|A4VNA3|RUVB_STUS1 Holliday junction branch migration complex ...    31   6.7  
+sp|C1DRF8|RUVB_AZOVD Holliday junction branch migration complex ...    31   6.8  
+sp|P48604|GRPE_DROME GrpE protein homolog, mitochondrial OS=Dros...    30   7.0  
+sp|A4XRS1|RUVB_PSEMY Holliday junction branch migration complex ...    30   7.1  
+sp|Q8NR12|RBSA_CORGL Ribose import ATP-binding protein RbsA OS=C...    30   8.6  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P03013|HIN_SALTY DNA-invertase hin OS=Salmonella typhimurium ...   238   2e-62
+sp|Q02869|HIN_SALAE DNA-invertase OS=Salmonella abortus-equi OX=...   237   3e-62
+sp|P03014|PINE_ECOLI Serine recombinase PinE OS=Escherichia coli...   232   1e-60
+sp|P03015|GIN_BPMU Serine recombinase gin OS=Escherichia phage M...   230   6e-60
+sp|P19241|BINR_STAAU Transposon Tn552 DNA-invertase BinR OS=Stap...   229   1e-59
+sp|Q38199|GIN_BPD10 Serine recombinase gin OS=Escherichia phage ...   228   2e-59
+sp|P21703|CIN_BPP7 DNA-invertase OS=Enterobacteria phage P7 OX=1...   223   5e-58
+sp|P10311|CIN_BPP1 DNA-invertase OS=Escherichia phage P1 OX=2886...   223   7e-58
+sp|P18358|BINL_STAAU Transposon Tn552 resolvase OS=Staphylococcu...   222   1e-57
+sp|P18957|UVP1_ECOLX Protein uvp1 OS=Escherichia coli OX=562 GN=...   197   4e-50
+sp|P03012|TNR1_ECOLI Transposon gamma-delta resolvase OS=Escheri...   192   1e-48
+sp|P06693|TNR7_ENTFL Transposon Tn917 resolvase OS=Enterococcus ...   192   1e-48
+sp|P07945|RES_CLOPF Resolvase OS=Clostridium perfringens OX=1502...   189   1e-47
+sp|P0ADI0|PINR_ECOLI Serine recombinase PinR OS=Escherichia coli...   185   1e-46
+sp|P0ADI1|PINR_ECOL6 Putative DNA-invertase from lambdoid propha...   185   1e-46
+sp|P77170|PINQ_ECOLI Serine recombinase PinQ OS=Escherichia coli...   185   2e-46
+sp|P0ADI3|TNR3_KLEPN Transposon Tn3 resolvase OS=Klebsiella pneu...   185   2e-46
+sp|P0ADI2|TNR3_ECOLX Transposon Tn3 resolvase OS=Escherichia col...   185   2e-46
+sp|P21424|TNR4_KLEPN Transposon Tn1331 resolvase OS=Klebsiella p...   183   5e-46
+sp|P30739|TNPT_PSEPU Resolvase/recombinase OS=Pseudomonas putida...   183   5e-46
+sp|P55559|Y4LS_SINFN Integrase-like protein y4lS OS=Sinorhizobiu...   182   1e-45
+sp|Q06237|TNR6_ENTFC Transposon Tn1546 resolvase OS=Enterococcus...   182   2e-45
+sp|Q93MD2|RES_CLOPE Resolvase OS=Clostridium perfringens (strain...   181   2e-45
+sp|P13606|RES4_ECOLX R46 site-specific recombinase OS=Escherichi...   178   2e-44
+sp|P0C1G3|TNR7_PSEPU Transposons Tn4653 resolvase OS=Pseudomonas...   178   2e-44
+sp|P0C1G2|TNR7_ECOLX Transposons Tn1721 resolvase OS=Escherichia...   178   2e-44
+sp|P06691|TNR5_PSEAI Transposon Tn501 resolvase OS=Pseudomonas a...   177   3e-44
+sp|P04130|TNR2_ECOLX Transposon Tn21 resolvase OS=Escherichia co...   175   1e-43
+sp|P05823|TNR0_ECOLX Transposon Tn2501 resolvase OS=Escherichia ...   174   4e-43
+sp|P55389|Y4CG_SINFN Probable DNA-invertase y4cG OS=Sinorhizobiu...   166   9e-41
+sp|P20384|BIN3_STAAU Putative transposon Tn552 DNA-invertase bin...   163   7e-40
+sp|Q52563|STBA_PSEUB Resolvase OS=Pseudomonas syringae pv. tomat...   145   2e-34
+sp|P22996|PARA4_ECOLX Resolvase OS=Escherichia coli OX=562 GN=pa...   140   5e-33
+sp|Q45057|YNEB_BACSU Resolvase homolog YneB OS=Bacillus subtilis...   119   1e-26
+sp|P17867|CISA_BACSU Putative DNA recombinase OS=Bacillus subtil...   112   2e-24
+sp|O32006|YOKA_BACSU Resolvase homolog YokA OS=Bacillus subtilis...   102   1e-21
+sp|Q5UPQ7|YR771_MIMIV Putative resolvase R771 OS=Acanthamoeba po...    83   1e-15
+sp|O35034|YEFC_BACSU Resolvase homolog YefC OS=Bacillus subtilis...    78   3e-14
+sp|Q5UPI1|YL103_MIMIV Putative resolvase L103 OS=Acanthamoeba po...    73   1e-12
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5UPF4|YR080_MIMIV Putative resolvase R80 OS=Acanthamoeba pol...    76   2e-13
+sp|Q60329|Y014_METJA Uncharacterized protein MJ0014 OS=Methanoca...    53   1e-06
+sp|P77698|YBCK_ECOLI Uncharacterized protein YbcK OS=Escherichia...    45   3e-04
+sp|P55368|Y4BA_SINFN Uncharacterized protein y4bA/y4pH OS=Sinorh...    43   0.001
+sp|P77607|YAGL_ECOLI Uncharacterized protein YagL OS=Escherichia...    43   0.001
+sp|P10427|YIM3_BPPH1 Uncharacterized immunity region protein 3 O...    41   0.007
+sp|Q5YTE8|RUVB_NOCFA Holliday junction branch migration complex ...    40   0.010
+sp|A4FBA8|RUVB_SACEN Holliday junction branch migration complex ...    40   0.012
+sp|A4TBQ5|RUVB_MYCGI Holliday junction branch migration complex ...    38   0.039
+sp|Q5N0B4|G6PI_SYNP6 Glucose-6-phosphate isomerase OS=Synechococ...    38   0.049
+sp|Q31LL0|G6PI_SYNE7 Glucose-6-phosphate isomerase OS=Synechococ...    38   0.049
+sp|Q4JVD9|RUVB_CORJK Holliday junction branch migration complex ...    37   0.078
+sp|Q0S1C6|RUVB_RHOJR Holliday junction branch migration complex ...    37   0.080
+sp|Q1B9Q9|RUVB_MYCSS Holliday junction branch migration complex ...    37   0.11 
+sp|A1UFA4|RUVB_MYCSK Holliday junction branch migration complex ...    37   0.11 
+sp|A3PYW5|RUVB_MYCSJ Holliday junction branch migration complex ...    37   0.11 
+sp|Q57762|Y314_METJA Uncharacterized protein MJ0314 OS=Methanoca...    37   0.12 
+sp|Q8FPK5|RUVB_COREF Holliday junction branch migration complex ...    37   0.12 
+sp|C1B4D1|RUVB_RHOOB Holliday junction branch migration complex ...    37   0.13 
+sp|A0PPD3|RUVB_MYCUA Holliday junction branch migration complex ...    36   0.13 
+sp|B2HN63|RUVB_MYCMM Holliday junction branch migration complex ...    36   0.14 
+sp|C0ZAN4|RUVB_BREBN Holliday junction branch migration complex ...    36   0.16 
+sp|C0ZZ48|RUVB_RHOE4 Holliday junction branch migration complex ...    36   0.17 
+sp|Q823K4|RUVB_CHLCV Holliday junction branch migration complex ...    36   0.22 
+sp|P61530|RUVB_CORDI Holliday junction branch migration complex ...    35   0.22 
+sp|Q58179|Y769_METJA Uncharacterized protein MJ0769 OS=Methanoca...    35   0.28 
+sp|Q9AE09|RUVB_CORGL Holliday junction branch migration complex ...    35   0.30 
+sp|A4QEN3|RUVB_CORGB Holliday junction branch migration complex ...    35   0.30 
+sp|Q0AX16|RUVB_SYNWW Holliday junction branch migration complex ...    35   0.33 
+sp|Q60976|JERKY_MOUSE Jerky protein OS=Mus musculus OX=10090 GN=...    35   0.36 
+sp|Q0RNU6|RUVB_FRAAA Holliday junction branch migration complex ...    35   0.36 
+sp|O75564|JERKY_HUMAN Jerky protein homolog OS=Homo sapiens OX=9...    35   0.43 
+sp|A7Z768|RUVB_BACVZ Holliday junction branch migration complex ...    35   0.48 
+sp|Q81LG9|RUVB_BACAN Holliday junction branch migration complex ...    34   0.50 
+sp|C3L6U9|RUVB_BACAC Holliday junction branch migration complex ...    34   0.50 
+sp|C3P9A7|RUVB_BACAA Holliday junction branch migration complex ...    34   0.50 
+sp|B7HE54|RUVB_BACC4 Holliday junction branch migration complex ...    34   0.51 
+sp|B7IIT2|RUVB_BACC2 Holliday junction branch migration complex ...    34   0.52 
+sp|C5D5E8|RUVB_GEOSW Holliday junction branch migration complex ...    34   0.55 
+sp|A7GTA2|RUVB_BACCN Holliday junction branch migration complex ...    34   0.55 
+sp|A0AIY1|RUVB_LISW6 Holliday junction branch migration complex ...    34   0.55 
+sp|Q8Y6Z8|RUVB_LISMO Holliday junction branch migration complex ...    34   0.55 
+sp|Q71ZD8|RUVB_LISMF Holliday junction branch migration complex ...    34   0.55 
+sp|C1KVH9|RUVB_LISMC Holliday junction branch migration complex ...    34   0.55 
+sp|Q92BI2|RUVB_LISIN Holliday junction branch migration complex ...    34   0.55 
+sp|A9VIP6|RUVB_BACMK Holliday junction branch migration complex ...    34   0.55 
+sp|C1ESW4|RUVB_BACC3 Holliday junction branch migration complex ...    34   0.55 
+sp|A0RJ26|RUVB_BACAH Holliday junction branch migration complex ...    34   0.55 
+sp|B8DHL6|RUVB_LISMH Holliday junction branch migration complex ...    34   0.56 
+sp|Q6HDA6|RUVB_BACHK Holliday junction branch migration complex ...    34   0.57 
+sp|Q634C4|RUVB_BACCZ Holliday junction branch migration complex ...    34   0.57 
+sp|B9IYZ4|RUVB_BACCQ Holliday junction branch migration complex ...    34   0.57 
+sp|A4X5X3|RUVB_SALTO Holliday junction branch migration complex ...    34   0.58 
+sp|B1YJR1|RUVB_EXIS2 Holliday junction branch migration complex ...    34   0.60 
+sp|B7HQH9|RUVB_BACC7 Holliday junction branch migration complex ...    34   0.61 
+sp|P61528|RUVB_BACC1 Holliday junction branch migration complex ...    34   0.61 
+sp|Q9KJF1|BBSD_THAAR (2S)-[(R)-hydroxy(phenyl)methyl]succinyl-Co...    34   0.61 
+sp|O14211|RRG9_SCHPO Required for respiratory growth protein 9, ...    34   0.61 
+sp|O32055|RUVB_BACSU Holliday junction branch migration complex ...    34   0.63 
+sp|C3PGQ6|RUVB_CORA7 Holliday junction branch migration complex ...    34   0.67 
+sp|Q65GP6|RUVB_BACLD Holliday junction branch migration complex ...    34   0.67 
+sp|A8LXW9|RUVB_SALAI Holliday junction branch migration complex ...    34   0.78 
+sp|A4IRB2|RUVB_GEOTN Holliday junction branch migration complex ...    34   0.78 
+sp|P65046|Y2910_MYCBO Uncharacterized protein Mb2910c OS=Mycobac...    33   0.85 
+sp|P9WL35|Y2886_MYCTU Uncharacterized protein Rv2886c OS=Mycobac...    33   0.85 
+sp|P9WL34|Y2886_MYCTO Uncharacterized protein MT2954 OS=Mycobact...    33   0.85 
+sp|Q6NT04|TIGD7_HUMAN Tigger transposable element-derived protei...    33   0.86 
+sp|B0K2E4|PYRE_THEPX Orotate phosphoribosyltransferase OS=Thermo...    33   0.86 
+sp|B0KA31|PYRE_THEP3 Orotate phosphoribosyltransferase OS=Thermo...    33   0.86 
+sp|A8FFR2|RUVB_BACP2 Holliday junction branch migration complex ...    33   1.0  
+sp|Q8TE49|OTU7A_HUMAN OTU domain-containing protein 7A OS=Homo s...    33   1.0  
+sp|Q4L6Y6|RUVB_STAHJ Holliday junction branch migration complex ...    33   1.0  
+sp|Q5KWR0|RUVB_GEOKA Holliday junction branch migration complex ...    33   1.1  
+sp|Q38YQ9|RUVB_LATSS Holliday junction branch migration complex ...    33   1.1  
+sp|P28614|ACOR_CUPNH Acetoin catabolism regulatory protein OS=Cu...    33   1.2  
+sp|Q3UG20|KMT2E_MOUSE Inactive histone-lysine N-methyltransferas...    33   1.3  
+sp|Q254B4|RUVB_CHLFF Holliday junction branch migration complex ...    33   1.3  
+sp|Q2JD94|RUVB_FRACC Holliday junction branch migration complex ...    33   1.3  
+sp|A5D3G1|RUVB_PELTS Holliday junction branch migration complex ...    33   1.4  
+sp|Q5JI44|NEP1_THEKO Ribosomal RNA small subunit methyltransfera...    33   1.4  
+sp|P9WMD9|Y472_MYCTU Uncharacterized HTH-type transcriptional re...    33   1.4  
+sp|P9WMD8|Y472_MYCTO Uncharacterized HTH-type transcriptional re...    33   1.4  
+sp|Q0G825|PSAP3_CAEEL Transcriptional coregulator psa-3 OS=Caeno...    33   1.4  
+sp|B9E718|RUVB_MACCJ Holliday junction branch migration complex ...    33   1.5  
+sp|Q49Y79|RUVB_STAS1 Holliday junction branch migration complex ...    33   1.6  
+sp|C4L523|RUVB_EXISA Holliday junction branch migration complex ...    33   1.6  
+sp|A1T884|RUVB_MYCVP Holliday junction branch migration complex ...    33   1.7  
+sp|P9WGW1|RUVB_MYCTU Holliday junction branch migration complex ...    33   1.7  
+sp|P9WGW0|RUVB_MYCTO Holliday junction branch migration complex ...    33   1.7  
+sp|A5U5U2|RUVB_MYCTA Holliday junction branch migration complex ...    33   1.7  
+sp|C1AF61|RUVB_MYCBT Holliday junction branch migration complex ...    33   1.7  
+sp|A1KLU0|RUVB_MYCBP Holliday junction branch migration complex ...    33   1.7  
+sp|P66754|RUVB_MYCBO Holliday junction branch migration complex ...    33   1.7  
+sp|Q817W4|RUVB_BACCR Holliday junction branch migration complex ...    33   1.7  
+sp|Q8IZD2|KMT2E_HUMAN Inactive histone-lysine N-methyltransferas...    32   1.9  
+sp|Q5L686|RUVB_CHLAB Holliday junction branch migration complex ...    32   2.1  
+sp|Q8CS91|RUVB_STAES Holliday junction branch migration complex ...    32   2.5  
+sp|Q5HNR0|RUVB_STAEQ Holliday junction branch migration complex ...    32   2.5  
+sp|Q2YT89|RUVB_STAAB Holliday junction branch migration complex ...    32   2.7  
+sp|Q9UVU5|PEX6_PICAN Peroxisomal ATPase PEX6 OS=Pichia angusta O...    32   2.7  
+sp|P66759|RUVB_STAAW Holliday junction branch migration complex ...    32   2.7  
+sp|Q6G8S8|RUVB_STAAS Holliday junction branch migration complex ...    32   2.7  
+sp|P66758|RUVB_STAAN Holliday junction branch migration complex ...    32   2.7  
+sp|P66757|RUVB_STAAM Holliday junction branch migration complex ...    32   2.7  
+sp|A5ITG5|RUVB_STAA9 Holliday junction branch migration complex ...    32   2.7  
+sp|A6U2A9|RUVB_STAA2 Holliday junction branch migration complex ...    32   2.7  
+sp|A7X357|RUVB_STAA1 Holliday junction branch migration complex ...    32   2.7  
+sp|Q47N43|RUVB_THEFY Holliday junction branch migration complex ...    32   2.8  
+sp|A8Z2G9|RUVB_STAAT Holliday junction branch migration complex ...    32   2.8  
+sp|Q6GG63|RUVB_STAAR Holliday junction branch migration complex ...    32   2.8  
+sp|A6QHI3|RUVB_STAAE Holliday junction branch migration complex ...    32   2.8  
+sp|Q5HFC2|RUVB_STAAC Holliday junction branch migration complex ...    32   2.8  
+sp|Q2FXT4|RUVB_STAA8 Holliday junction branch migration complex ...    32   2.8  
+sp|Q2FG86|RUVB_STAA3 Holliday junction branch migration complex ...    32   2.8  
+sp|P61535|RUVB_MYCPA Holliday junction branch migration complex ...    32   2.9  
+sp|A0QIB7|RUVB_MYCA1 Holliday junction branch migration complex ...    32   2.9  
+sp|P54293|ESAR_PANSE Transcriptional activator protein EsaR OS=P...    32   2.9  
+sp|Q0ZIW0|TI214_VITVI Protein TIC 214 OS=Vitis vinifera OX=29760...    32   2.9  
+sp|A0QWH6|RUVB_MYCS2 Holliday junction branch migration complex ...    32   2.9  
+sp|Q9KDI8|RUVB_HALH5 Holliday junction branch migration complex ...    32   3.0  
+sp|O82302|P2C29_ARATH Protein phosphatase 2C 29 OS=Arabidopsis t...    32   3.0  
+sp|B1J0X8|ECPR_ECOLC HTH-type transcriptional regulator EcpR OS=...    32   3.0  
+sp|A7ZI28|ECPR_ECO24 HTH-type transcriptional regulator EcpR OS=...    32   3.0  
+sp|P46589|ADF1_CANAL Adherence factor OS=Candida albicans (strai...    32   3.2  
+sp|Q048Y7|RUVB_LACDB Holliday junction branch migration complex ...    32   3.4  
+sp|Q1G941|RUVB_LACDA Holliday junction branch migration complex ...    32   3.4  
+sp|P9WMB7|MFTR_MYCTU Putative mycofactocin biosynthesis transcri...    32   3.5  
+sp|P9WMB6|MFTR_MYCTO Putative mycofactocin biosynthesis transcri...    32   3.5  
+sp|B1W3G4|RUVB_STRGG Holliday junction branch migration complex ...    32   3.8  
+sp|Q325R5|ECPR_SHIBS HTH-type transcriptional regulator EcpR OS=...    32   4.0  
+sp|B6I082|ECPR_ECOSE HTH-type transcriptional regulator EcpR OS=...    32   4.0  
+sp|A7ZWT2|ECPR_ECOHS HTH-type transcriptional regulator EcpR OS=...    32   4.0  
+sp|B7L425|ECPR_ECO55 HTH-type transcriptional regulator EcpR OS=...    32   4.0  
+sp|P37671|YIAJ_ECOLI DNA-binding transcriptional repressor YiaJ ...    32   4.0  
+sp|P40833|RUVB_MYCLE Holliday junction branch migration complex ...    32   4.1  
+sp|B8ZUI2|RUVB_MYCLB Holliday junction branch migration complex ...    32   4.1  
+sp|B9KZ09|RUVB_THERP Holliday junction branch migration complex ...    31   4.3  
+sp|Q24UN7|RUVB_DESHY Holliday junction branch migration complex ...    31   4.4  
+sp|B8FQV5|RUVB_DESHD Holliday junction branch migration complex ...    31   4.4  
+sp|P71301|ECPR_ECOLI HTH-type transcriptional regulator EcpR OS=...    31   4.6  
+sp|B1XE36|ECPR_ECODH HTH-type transcriptional regulator EcpR OS=...    31   4.6  
+sp|A1WZ65|RUVB_HALHL Holliday junction branch migration complex ...    31   4.8  
+sp|Q51426|RUVB_PSEAE Holliday junction branch migration complex ...    31   4.9  
+sp|Q02IC9|RUVB_PSEAB Holliday junction branch migration complex ...    31   4.9  
+sp|B7UXW5|RUVB_PSEA8 Holliday junction branch migration complex ...    31   4.9  
+sp|A6VA05|RUVB_PSEA7 Holliday junction branch migration complex ...    31   5.2  
+sp|Q7VEN0|Y2274_MYCBO Uncharacterized HTH-type transcriptional r...    31   5.5  
+sp|P03691|VR2B_BPT4 Protein rIIB OS=Enterobacteria phage T4 OX=1...    31   5.5  
+sp|P9WMC5|Y2250_MYCTU Uncharacterized HTH-type transcriptional r...    31   5.6  
+sp|P9WMC4|Y2250_MYCTO Uncharacterized HTH-type transcriptional r...    31   5.6  
+sp|A5WFR0|PIF1_PSYWF ATP-dependent DNA helicase pif1 OS=Psychrob...    31   5.6  
+sp|A7GE89|CARB_CLOBL Carbamoyl-phosphate synthase large chain OS...    31   5.7  
+sp|C1DRF8|RUVB_AZOVD Holliday junction branch migration complex ...    31   5.8  
+sp|A4VNA3|RUVB_STUS1 Holliday junction branch migration complex ...    31   5.9  
+sp|Q59040|PYREL_METJA PyrE-like protein OS=Methanocaldococcus ja...    31   6.3  
+sp|A4XRS1|RUVB_PSEMY Holliday junction branch migration complex ...    31   6.5  
+sp|Q45119|TNPA_BACFG Transposase for insertion sequence element ...    31   6.6  
+sp|B7MP71|ECPR_ECO81 HTH-type transcriptional regulator EcpR OS=...    31   6.6  
+sp|Q839T5|RUVB_ENTFA Holliday junction branch migration complex ...    31   6.7  
+sp|A8KZE6|RUVB_FRASN Holliday junction branch migration complex ...    31   6.9  
+sp|P15025|ISTA_PSEAI Transposase for insertion sequence element ...    30   7.2  
+sp|Q7NG31|FBSB_GLOVI D-fructose 1,6-bisphosphatase class 2/sedoh...    30   7.5  
+sp|B8I442|DER_RUMCH GTPase Der OS=Ruminiclostridium cellulolytic...    30   8.0  
+sp|B9K9R9|HIS8_THENN Histidinol-phosphate aminotransferase OS=Th...    30   8.3  
+sp|B7N8J2|ECPR_ECOLU HTH-type transcriptional regulator EcpR OS=...    30   8.5  
+sp|Q8EPQ6|RUVB_OCEIH Holliday junction branch migration complex ...    30   8.7  
+sp|Q9CFV2|CARB_LACLA Carbamoyl-phosphate synthase large chain OS...    30   9.2  
+sp|P0A195|UVRA_SALTY UvrABC system protein A OS=Salmonella typhi...    30   9.3  
+sp|P0A196|UVRA_SALTI UvrABC system protein A OS=Salmonella typhi...    30   9.3  
+sp|Q5WHR5|RUVB_ALKCK Holliday junction branch migration complex ...    30   9.4  
+sp|B5Z1N3|ECPR_ECO5E HTH-type transcriptional regulator EcpR OS=...    30   9.6  
+sp|Q8X6I1|ECPR_ECO57 HTH-type transcriptional regulator EcpR OS=...    30   9.6  
+sp|Q5XC23|Y905_STRP6 UPF0122 protein M6_Spy0905 OS=Streptococcus...    30   9.7  
+sp|Q1RFQ3|ECPR_ECOUT HTH-type transcriptional regulator EcpR OS=...    30   9.7  
+sp|B1LHW0|ECPR_ECOSM HTH-type transcriptional regulator EcpR OS=...    30   9.7  
+sp|Q8FKL2|ECPR_ECOL6 HTH-type transcriptional regulator EcpR OS=...    30   9.7  
+sp|Q0TKZ0|ECPR_ECOL5 HTH-type transcriptional regulator EcpR OS=...    30   9.7  
+sp|Q9AME2|ECPR_ECOKI HTH-type transcriptional regulator EcpR OS=...    30   9.7  
+sp|A1A7X7|ECPR_ECOK1 HTH-type transcriptional regulator EcpR OS=...    30   9.7  
+sp|B7UJE2|ECPR_ECO27 HTH-type transcriptional regulator EcpR OS=...    30   9.7  
+sp|Q1JBN1|Y975_STRPB UPF0122 protein MGAS2096_Spy0975 OS=Strepto...    30   9.9  
+sp|B5XLN6|Y946_STRPZ UPF0122 protein Spy49_0946c OS=Streptococcu...    30   9.9  
+sp|Q48TF9|Y888_STRPM UPF0122 protein M28_Spy0888 OS=Streptococcu...    30   9.9  
+sp|A2RED5|Y882_STRPG UPF0122 protein SpyM50882 OS=Streptococcus ...    30   9.9  
+sp|P0DG81|Y842_STRPQ UPF0122 protein SPs1042 OS=Streptococcus py...    30   9.9  
+sp|P0DG80|Y842_STRP3 UPF0122 protein SpyM3_0842 OS=Streptococcus...    30   9.9  
+sp|P67253|Y1201_STRP1 UPF0122 protein SPy_1201/M5005_Spy0916 OS=...    30   9.9  
+sp|P67255|Y1152_STRP8 UPF0122 protein spyM18_1152 OS=Streptococc...    30   9.9  
+sp|Q1J6G8|Y1065_STRPF UPF0122 protein MGAS10750_Spy1065 OS=Strep...    30   9.9  
+sp|Q1JGP9|Y1030_STRPD UPF0122 protein MGAS10270_Spy1030 OS=Strep...    30   9.9  
+sp|Q1JLL4|Y1018_STRPC UPF0122 protein MGAS9429_Spy1018 OS=Strept...    30   9.9  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.309    0.138    0.345 
+
+Lambda     K      H
+   0.267   0.0422    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 180,523,277
+Number of Sequences: 569516
+Number of extensions: 5817408
+Number of successful extensions: 30188
+Number of sequences better than 10.0: 336
+Number of HSP's better than 10.0 without gapping: 197
+Number of HSP's successfully gapped in prelim test: 396
+Number of HSP's that attempted gapping in prelim test: 29756
+Number of HSP's gapped (non-prelim): 630
+length of query: 190
+length of database: 205,866,895
+effective HSP length: 111
+effective length of query: 79
+effective length of database: 142,650,619
+effective search space: 11269398901
+effective search space used: 11269398901
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.1 bits)
+S2: 67 (30.4 bits)

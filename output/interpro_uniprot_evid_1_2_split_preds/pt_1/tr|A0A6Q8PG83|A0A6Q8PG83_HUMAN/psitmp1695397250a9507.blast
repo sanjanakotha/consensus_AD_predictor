@@ -1,0 +1,118 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (443 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q96JN0|LCOR_HUMAN Ligand-dependent corepressor OS=Homo sapien...   869   0.0  
+sp|Q6ZPI3|LCOR_MOUSE Ligand-dependent corepressor OS=Mus musculu...   852   0.0  
+sp|Q5ZJK5|LCORL_CHICK Ligand-dependent nuclear receptor corepres...   171   1e-41
+sp|Q3U285|LCORL_MOUSE Ligand-dependent nuclear receptor corepres...   163   3e-39
+sp|Q8N3X6|LCORL_HUMAN Ligand-dependent nuclear receptor corepres...   162   7e-39
+sp|Q95YM8|MBLK1_APIME Mushroom body large-type Kenyon cell-speci...    72   8e-12
+sp|G5EGQ5|MBR1_CAEEL Mblk-1-related factor 1 OS=Caenorhabditis e...    71   2e-11
+sp|P14083|LOV_DROME Protein jim lovell OS=Drosophila melanogaste...    35   0.95 
+sp|A9BHZ7|MNME_PETMO tRNA modification GTPase MnmE OS=Petrotoga ...    34   2.5  
+sp|P75181|Y614_MYCPN Uncharacterized protein MPN_614 OS=Mycoplas...    33   3.5  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q96JN0|LCOR_HUMAN Ligand-dependent corepressor OS=Homo sapien...   610   e-173
+sp|Q6ZPI3|LCOR_MOUSE Ligand-dependent corepressor OS=Mus musculu...   597   e-170
+sp|Q5ZJK5|LCORL_CHICK Ligand-dependent nuclear receptor corepres...   463   e-129
+sp|Q8N3X6|LCORL_HUMAN Ligand-dependent nuclear receptor corepres...   457   e-127
+sp|Q3U285|LCORL_MOUSE Ligand-dependent nuclear receptor corepres...   453   e-126
+sp|G5EGQ5|MBR1_CAEEL Mblk-1-related factor 1 OS=Caenorhabditis e...   107   2e-22
+sp|Q95YM8|MBLK1_APIME Mushroom body large-type Kenyon cell-speci...   104   1e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|P14083|LOV_DROME Protein jim lovell OS=Drosophila melanogaste...    41   0.020
+sp|Q10MW6|DJC27_ORYSJ DnaJ protein ERDJ3A OS=Oryza sativa subsp....    41   0.027
+sp|A7Z7E7|MUTS2_BACVZ Endonuclease MutS2 OS=Bacillus velezensis ...    37   0.30 
+sp|Q9SB63|MOS1_ARATH Protein MODIFIER OF SNC1 1 OS=Arabidopsis t...    36   0.61 
+sp|Q14669|TRIPC_HUMAN E3 ubiquitin-protein ligase TRIP12 OS=Homo...    35   1.5  
+sp|A9BHZ7|MNME_PETMO tRNA modification GTPase MnmE OS=Petrotoga ...    35   1.5  
+sp|Q0Q462|NCAP_BC512 Nucleoprotein OS=Bat coronavirus 512/2005 O...    34   2.1  
+sp|P51834|SMC_BACSU Chromosome partition protein Smc OS=Bacillus...    34   2.7  
+sp|P53814|SMTN_HUMAN Smoothelin OS=Homo sapiens OX=9606 GN=SMTN ...    32   9.0  
+sp|Q9UDY2|ZO2_HUMAN Tight junction protein ZO-2 OS=Homo sapiens ...    32   9.2  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.296    0.113    0.275 
+
+Lambda     K      H
+   0.267   0.0339    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 253,925,878
+Number of Sequences: 569516
+Number of extensions: 9208065
+Number of successful extensions: 28600
+Number of sequences better than 10.0: 39
+Number of HSP's better than 10.0 without gapping: 40
+Number of HSP's successfully gapped in prelim test: 198
+Number of HSP's that attempted gapping in prelim test: 27740
+Number of HSP's gapped (non-prelim): 883
+length of query: 443
+length of database: 205,866,895
+effective HSP length: 121
+effective length of query: 322
+effective length of database: 136,955,459
+effective search space: 44099657798
+effective search space used: 44099657798
+T: 11
+A: 40
+X1: 16 ( 6.8 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.1 bits)
+S2: 71 (32.2 bits)

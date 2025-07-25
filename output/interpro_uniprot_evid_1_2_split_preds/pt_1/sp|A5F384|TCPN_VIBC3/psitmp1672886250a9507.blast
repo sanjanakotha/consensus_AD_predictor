@@ -1,0 +1,866 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (276 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P0C6D6|TCPN_VIBCH TCP pilus virulence regulatory protein OS=V...   551   e-156
+sp|A5F384|TCPN_VIBC3 TCP pilus virulence regulatory protein OS=V...   551   e-156
+sp|Q8FCI7|GADW_ECOL6 HTH-type transcriptional regulator GadW OS=...    65   6e-10
+sp|P05052|APPY_ECOLI HTH-type transcriptional regulator AppY OS=...    65   7e-10
+sp|P43459|PERA_ECO27 Transcriptional activator PerA OS=Escherich...    64   1e-09
+sp|P32326|URER_ECOLX Urease operon transcriptional activator OS=...    63   2e-09
+sp|P58230|GADX_ECO57 HTH-type transcriptional regulator GadX OS=...    63   3e-09
+sp|P63203|GADW_SHIFL HTH-type transcriptional regulator GadW OS=...    63   3e-09
+sp|P63201|GADW_ECOLI HTH-type transcriptional regulator GadW OS=...    63   3e-09
+sp|P63202|GADW_ECO57 HTH-type transcriptional regulator GadW OS=...    63   3e-09
+sp|P23774|FAPR_ECOLX 987P fimbrial operon positive regulatory pr...    63   3e-09
+sp|Q83PR0|GADX_SHIFL HTH-type transcriptional regulator GadX OS=...    62   4e-09
+sp|P37639|GADX_ECOLI HTH-type transcriptional regulator GadX OS=...    62   4e-09
+sp|P0A2T3|VIRF_SHISO Virulence regulon transcriptional activator...    61   8e-09
+sp|P0A2T1|VIRF_SHIFL Virulence regulon transcriptional activator...    61   8e-09
+sp|P0A2T2|VIRF_SHIDY Virulence regulon transcriptional activator...    61   8e-09
+sp|Q8Z4A6|SIRC_SALTI Transcriptional regulator SirC OS=Salmonell...    61   1e-08
+sp|P68912|Y1430_MYCBO Uncharacterized HTH-type transcriptional r...    61   1e-08
+sp|P9WMJ1|Y1395_MYCTU Uncharacterized HTH-type transcriptional r...    61   1e-08
+sp|P9WMJ0|Y1395_MYCTO Uncharacterized HTH-type transcriptional r...    61   1e-08
+sp|P0CL09|SIRC_SALTY Transcriptional regulator sirC OS=Salmonell...    61   1e-08
+sp|E1WAB2|SIRC_SALTS Transcriptional regulator SirC OS=Salmonell...    61   1e-08
+sp|Q8FCI6|GADX_ECOL6 HTH-type transcriptional regulator GadX OS=...    60   2e-08
+sp|Q02458|URER_PROMH Urease operon transcriptional activator OS=...    60   2e-08
+sp|Q9EYV5|GADX_ECO27 HTH-type transcriptional regulator GadX OS=...    60   2e-08
+sp|P16114|RNS_ECOLX Regulatory protein Rns OS=Escherichia coli O...    57   2e-07
+sp|P25393|CFAD_ECOLX CFA/I fimbrial subunit D OS=Escherichia col...    56   3e-07
+sp|P43464|AGGR_ECOLX Transcriptional activator AggR OS=Escherich...    56   4e-07
+sp|P0CL08|HILD_SALTY Transcriptional regulator HilD OS=Salmonell...    55   8e-07
+sp|E1WAC0|HILD_SALTS Transcriptional regulator HilD OS=Salmonell...    55   8e-07
+sp|P33234|ADIY_ECOLI HTH-type transcriptional regulator AdiY OS=...    53   3e-06
+sp|P43460|CSVR_ECOLX HTH-type transcriptional activator CsvR OS=...    52   6e-06
+sp|Q8X4Z9|YDEO_ECO57 HTH-type transcriptional regulator YdeO OS=...    50   2e-05
+sp|Q8FHG0|YDEO_ECOL6 HTH-type transcriptional regulator YdeO OS=...    50   2e-05
+sp|Q83RF4|YDEO_SHIFL HTH-type transcriptional regulator YdeO OS=...    50   2e-05
+sp|P76135|YDEO_ECOLI HTH-type transcriptional regulator YdeO OS=...    49   4e-05
+sp|T2KMF4|PLH4_FORAG Histidine kinase P4 OS=Formosa agariphila (...    49   5e-05
+sp|P10805|ENVY_ECOLI Porin thermoregulatory protein EnvY OS=Esch...    48   7e-05
+sp|B4TPR0|RHAR_SALSV HTH-type transcriptional activator RhaR OS=...    48   7e-05
+sp|Q936F1|YHTH1_STAAU Uncharacterized HTH-type transcriptional r...    46   3e-04
+sp|B5FPP6|RHAR_SALDC HTH-type transcriptional activator RhaR OS=...    46   4e-04
+sp|P32677|YIJO_ECOLI Uncharacterized HTH-type transcriptional re...    45   4e-04
+sp|Q6GD21|Y078_STAAS Uncharacterized HTH-type transcriptional re...    45   6e-04
+sp|Q8NYT6|Y077_STAAW Uncharacterized HTH-type transcriptional re...    45   6e-04
+sp|Q6GKK1|Y107_STAAR Uncharacterized HTH-type transcriptional re...    45   6e-04
+sp|Q99XB1|Y101_STAAM Uncharacterized HTH-type transcriptional re...    45   6e-04
+sp|Q7A882|Y097_STAAN Uncharacterized HTH-type transcriptional re...    45   6e-04
+sp|Q5HJR8|Y084_STAAC Uncharacterized HTH-type transcriptional re...    45   7e-04
+sp|A9MI63|RHAR_SALAR HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|P40865|RHAR_SALTY HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|B5BJG9|RHAR_SALPK HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|A9MZC9|RHAR_SALPB HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|Q5PKG1|RHAR_SALPA HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|B4SZZ4|RHAR_SALNS HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|B5QWY5|RHAR_SALEP HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|B5F0N0|RHAR_SALA4 HTH-type transcriptional activator RhaR OS=...    45   8e-04
+sp|Q8Z2V5|RHAR_SALTI HTH-type transcriptional activator RhaR OS=...    44   0.001
+sp|B4TBY4|RHAR_SALHS HTH-type transcriptional activator RhaR OS=...    44   0.001
+sp|Q57HG7|RHAR_SALCH HTH-type transcriptional activator RhaR OS=...    44   0.001
+sp|O87389|GLXA_RHIME HTH-type transcriptional regulator GlxA OS=...    44   0.001
+sp|A7ZUB7|RHAS_ECO24 HTH-type transcriptional activator RhaS OS=...    44   0.002
+sp|P40408|BTR_BACSU HTH-type transcriptional activator Btr OS=Ba...    43   0.002
+sp|Q1R414|RHAS_ECOUT HTH-type transcriptional activator RhaS OS=...    43   0.003
+sp|B7NFK3|RHAS_ECOLU HTH-type transcriptional activator RhaS OS=...    43   0.003
+sp|A1AI82|RHAS_ECOK1 HTH-type transcriptional activator RhaS OS=...    43   0.003
+sp|B7NUA1|RHAS_ECO7I HTH-type transcriptional activator RhaS OS=...    43   0.003
+sp|B7MI37|RHAS_ECO45 HTH-type transcriptional activator RhaS OS=...    43   0.003
+sp|B5YZ43|RHAS_ECO5E HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q8X897|RHAS_ECO57 HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q83PE0|RHAS_SHIFL HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q0SZ95|RHAS_SHIF8 HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q31U84|RHAS_SHIBS HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|P09377|RHAS_ECOLI HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B1IVH3|RHAS_ECOLC HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|A8A709|RHAS_ECOHS HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B1XB72|RHAS_ECODH HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|C5A073|RHAS_ECOBW HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B7M6V7|RHAS_ECO8A HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B7L9G1|RHAS_ECO55 HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q32A70|RHAS_SHIDS HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B1LMU6|RHAS_ECOSM HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B7N2P7|RHAS_ECO81 HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q8CXW5|RHAS_ECOL6 HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q0TAF8|RHAS_ECOL5 HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B7UNM6|RHAS_ECO27 HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|Q3YV71|RHAS_SHISS HTH-type transcriptional activator RhaS OS=...    42   0.004
+sp|B6I4P8|RHAS_ECOSE HTH-type transcriptional activator RhaS OS=...    42   0.005
+sp|P96660|YDEC_BACSU Uncharacterized HTH-type transcriptional re...    42   0.006
+sp|Q65Q30|RHAR_MANSM HTH-type transcriptional activator RhaR OS=...    42   0.006
+sp|Q66FF1|RHAR_YERPS HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|A4TRS7|RHAR_YERPP HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|Q1CEB6|RHAR_YERPN HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|A9QYR6|RHAR_YERPG HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|Q8ZIZ9|RHAR_YERPE HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|B2K1W6|RHAR_YERPB HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|Q1C0W2|RHAR_YERPA HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|A7FN79|RHAR_YERP3 HTH-type transcriptional activator RhaR OS=...    42   0.007
+sp|B2TVP7|RHAS_SHIB3 HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|B4TBY3|RHAS_SALHS HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|P0A2S9|RHAS_SALTY HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|P0A2T0|RHAS_SALTI HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|C0Q3L4|RHAS_SALPC HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|A9MZC8|RHAS_SALPB HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|B4SZZ3|RHAS_SALNS HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|B5RFC3|RHAS_SALG2 HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|B5QWY4|RHAS_SALEP HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|B5BJG8|RHAS_SALPK HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|Q5PKG2|RHAS_SALPA HTH-type transcriptional activator RhaS OS=...    42   0.007
+sp|B5F0M9|RHAS_SALA4 HTH-type transcriptional activator RhaS OS=...    42   0.008
+sp|B4TPQ9|RHAS_SALSV HTH-type transcriptional activator RhaS OS=...    41   0.008
+sp|B5FPP5|RHAS_SALDC HTH-type transcriptional activator RhaS OS=...    41   0.008
+sp|Q57HG8|RHAS_SALCH HTH-type transcriptional activator RhaS OS=...    41   0.008
+sp|A9MI64|RHAS_SALAR HTH-type transcriptional activator RhaS OS=...    41   0.009
+sp|P0C2V5|VIRF_YEREN Virulence regulon transcriptional activator...    41   0.010
+sp|B1JNC4|RHAR_YERPY HTH-type transcriptional activator RhaR OS=...    41   0.010
+sp|A6TGA9|RHAS_KLEP7 HTH-type transcriptional activator RhaS OS=...    41   0.011
+sp|P54722|YFIF_BACSU Uncharacterized HTH-type transcriptional re...    41   0.013
+sp|Q65Q31|RHAS_MANSM HTH-type transcriptional activator RhaS OS=...    40   0.013
+sp|Q05587|POCR_SALTY Regulatory protein PocR OS=Salmonella typhi...    40   0.016
+sp|A4WG90|RHAR_ENT38 HTH-type transcriptional activator RhaR OS=...    40   0.018
+sp|Q32A71|RHAR_SHIDS HTH-type transcriptional activator RhaR OS=...    40   0.019
+sp|Q1R413|RHAR_ECOUT HTH-type transcriptional activator RhaR OS=...    40   0.021
+sp|A1AI83|RHAR_ECOK1 HTH-type transcriptional activator RhaR OS=...    40   0.021
+sp|Q31U83|RHAR_SHIBS HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|P09378|RHAR_ECOLI HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|Q8FBD7|RHAR_ECOL6 HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|Q0TAF7|RHAR_ECOL5 HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|A8A710|RHAR_ECOHS HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|C5A074|RHAR_ECOBW HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|A7ZUB8|RHAR_ECO24 HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|Q83PD9|RHAR_SHIFL HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|Q0SZ96|RHAR_SHIF8 HTH-type transcriptional activator RhaR OS=...    40   0.022
+sp|Q8X7B3|RHAR_ECO57 HTH-type transcriptional activator RhaR OS=...    40   0.023
+sp|P28808|LCRF_YERPE Thermoregulatory protein LcrF OS=Yersinia p...    40   0.026
+sp|P45043|XYLR_HAEIN Xylose operon regulatory protein OS=Haemoph...    40   0.026
+sp|B5XZ49|RHAS_KLEP3 HTH-type transcriptional activator RhaS OS=...    39   0.039
+sp|B7LVD8|RHAS_ESCF3 HTH-type transcriptional activator RhaS OS=...    39   0.046
+sp|P26993|EXSA_PSEAE HTH-type transcriptional regulator ExsA OS=...    39   0.052
+sp|A6TGB0|RHAR_KLEP7 HTH-type transcriptional activator RhaR OS=...    39   0.052
+sp|A8AL27|RHAS_CITK8 HTH-type transcriptional activator RhaS OS=...    39   0.063
+sp|O31249|ALKR_ACIAD HTH-type transcriptional regulator AlkR OS=...    38   0.070
+sp|C6DJR5|RHAR_PECCP HTH-type transcriptional activator RhaR OS=...    38   0.086
+sp|A1JU91|VIRF_YERE8 Virulence regulon transcriptional activator...    38   0.093
+sp|A4WG91|RHAS_ENT38 HTH-type transcriptional activator RhaS OS=...    38   0.11 
+sp|Q9Z3Q6|RHRA_RHIME Transcriptional activator RhrA OS=Rhizobium...    37   0.11 
+sp|Q9WW32|MTRA_NEIGO HTH-type transcriptional regulator MtrA OS=...    37   0.12 
+sp|Q6DA21|RHAR_PECAS HTH-type transcriptional activator RhaR OS=...    37   0.13 
+sp|P0ACI3|XYLR_ECOLI Xylose operon regulatory protein OS=Escheri...    37   0.15 
+sp|P0ACI4|XYLR_ECOL6 Xylose operon regulatory protein OS=Escheri...    37   0.15 
+sp|P0ACI5|XYLR_ECO57 Xylose operon regulatory protein OS=Escheri...    37   0.15 
+sp|Q47129|FEAR_ECOLI Transcriptional activator FeaR OS=Escherich...    36   0.29 
+sp|O31517|YESN_BACSU Uncharacterized transcriptional regulatory ...    36   0.40 
+sp|P17410|CHBR_ECOLI HTH-type transcriptional regulator ChbR OS=...    35   0.44 
+sp|O31449|YBFI_BACSU Uncharacterized HTH-type transcriptional re...    35   0.44 
+sp|P77396|YPDC_ECOLI Uncharacterized HTH-type transcriptional re...    35   0.45 
+sp|Q04X87|SYH_LEPBL Histidine--tRNA ligase OS=Leptospira borgpet...    35   0.50 
+sp|Q04WC4|SYH_LEPBJ Histidine--tRNA ligase OS=Leptospira borgpet...    35   0.50 
+sp|A7ML57|RHAR_CROS8 HTH-type transcriptional activator RhaR OS=...    35   0.69 
+sp|P45008|Y1052_HAEIN Uncharacterized HTH-type transcriptional r...    35   0.91 
+sp|Q6NI56|RIPA_CORDI HTH-type transcriptional regulator RipA OS=...    35   0.95 
+sp|Q2YV56|HPTR_STAAB Transcriptional regulatory protein HptR OS=...    34   0.99 
+sp|B1Q2A8|NPHR_RHOSO Transcriptional activator NphR OS=Rhodococc...    34   1.5  
+sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Esch...    33   2.0  
+sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Esch...    33   2.0  
+sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Citr...    33   2.2  
+sp|Q00753|MSMR_STRMU Msm operon regulatory protein OS=Streptococ...    33   2.3  
+sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Salm...    33   2.6  
+sp|Q5HKE0|Y2406_STAEQ Uncharacterized response regulatory protei...    33   2.7  
+sp|Q8NYJ9|HPTR_STAAW Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|Q6GCQ3|HPTR_STAAS Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|Q5HJF7|HPTR_STAAC Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|Q2G1E1|HPTR_STAA8 Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|Q2FK47|HPTR_STAA3 Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|Q7A7X9|HPTR_STAAN Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|Q99X00|HPTR_STAAM Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|Q6GK93|HPTR_STAAR Transcriptional regulatory protein HptR OS=...    33   2.8  
+sp|P31449|YIDL_ECOLI Uncharacterized HTH-type transcriptional re...    33   3.1  
+sp|Q8CQE3|Y165_STAES Uncharacterized response regulatory protein...    33   3.2  
+sp|B8D7G3|RNB_BUCAT Exoribonuclease 2 OS=Buchnera aphidicola sub...    32   3.7  
+sp|B8D959|RNB_BUCA5 Exoribonuclease 2 OS=Buchnera aphidicola sub...    32   3.7  
+sp|P57354|RNB_BUCAI Exoribonuclease 2 OS=Buchnera aphidicola sub...    32   3.8  
+sp|P28809|MMSR_PSEAE MmsAB operon regulatory protein OS=Pseudomo...    32   4.5  
+sp|P43461|YCGK_PSEVC Uncharacterized HTH-type transcriptional re...    32   4.6  
+sp|P40331|YISR_BACSU Uncharacterized HTH-type transcriptional re...    32   5.8  
+sp|P26676|L_PI2HT RNA-directed RNA polymerase L OS=Human parainf...    32   7.5  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P0C6D6|TCPN_VIBCH TCP pilus virulence regulatory protein OS=V...   335   3e-91
+sp|A5F384|TCPN_VIBC3 TCP pilus virulence regulatory protein OS=V...   335   3e-91
+sp|Q8FCI7|GADW_ECOL6 HTH-type transcriptional regulator GadW OS=...   213   2e-54
+sp|P63203|GADW_SHIFL HTH-type transcriptional regulator GadW OS=...   211   4e-54
+sp|P63201|GADW_ECOLI HTH-type transcriptional regulator GadW OS=...   211   4e-54
+sp|P63202|GADW_ECO57 HTH-type transcriptional regulator GadW OS=...   211   4e-54
+sp|P43459|PERA_ECO27 Transcriptional activator PerA OS=Escherich...   198   4e-50
+sp|P0A2T3|VIRF_SHISO Virulence regulon transcriptional activator...   181   4e-45
+sp|P0A2T1|VIRF_SHIFL Virulence regulon transcriptional activator...   181   4e-45
+sp|P0A2T2|VIRF_SHIDY Virulence regulon transcriptional activator...   181   4e-45
+sp|Q9EYV5|GADX_ECO27 HTH-type transcriptional regulator GadX OS=...   173   1e-42
+sp|Q8FCI6|GADX_ECOL6 HTH-type transcriptional regulator GadX OS=...   173   1e-42
+sp|P58230|GADX_ECO57 HTH-type transcriptional regulator GadX OS=...   170   1e-41
+sp|Q83PR0|GADX_SHIFL HTH-type transcriptional regulator GadX OS=...   169   2e-41
+sp|P37639|GADX_ECOLI HTH-type transcriptional regulator GadX OS=...   168   4e-41
+sp|P05052|APPY_ECOLI HTH-type transcriptional regulator AppY OS=...   154   1e-36
+sp|P43464|AGGR_ECOLX Transcriptional activator AggR OS=Escherich...   149   2e-35
+sp|P25393|CFAD_ECOLX CFA/I fimbrial subunit D OS=Escherichia col...   145   3e-34
+sp|P16114|RNS_ECOLX Regulatory protein Rns OS=Escherichia coli O...   144   7e-34
+sp|P76135|YDEO_ECOLI HTH-type transcriptional regulator YdeO OS=...   140   1e-32
+sp|P23774|FAPR_ECOLX 987P fimbrial operon positive regulatory pr...   139   2e-32
+sp|Q83RF4|YDEO_SHIFL HTH-type transcriptional regulator YdeO OS=...   139   2e-32
+sp|Q8X4Z9|YDEO_ECO57 HTH-type transcriptional regulator YdeO OS=...   139   2e-32
+sp|P0CL08|HILD_SALTY Transcriptional regulator HilD OS=Salmonell...   139   3e-32
+sp|E1WAC0|HILD_SALTS Transcriptional regulator HilD OS=Salmonell...   139   3e-32
+sp|Q8FHG0|YDEO_ECOL6 HTH-type transcriptional regulator YdeO OS=...   138   4e-32
+sp|P43460|CSVR_ECOLX HTH-type transcriptional activator CsvR OS=...   134   5e-31
+sp|Q02458|URER_PROMH Urease operon transcriptional activator OS=...   133   1e-30
+sp|P33234|ADIY_ECOLI HTH-type transcriptional regulator AdiY OS=...   130   8e-30
+sp|P0CL09|SIRC_SALTY Transcriptional regulator sirC OS=Salmonell...   130   2e-29
+sp|E1WAB2|SIRC_SALTS Transcriptional regulator SirC OS=Salmonell...   130   2e-29
+sp|Q8Z4A6|SIRC_SALTI Transcriptional regulator SirC OS=Salmonell...   129   3e-29
+sp|P32326|URER_ECOLX Urease operon transcriptional activator OS=...   129   4e-29
+sp|P10805|ENVY_ECOLI Porin thermoregulatory protein EnvY OS=Esch...   122   2e-27
+sp|B4TPR0|RHAR_SALSV HTH-type transcriptional activator RhaR OS=...   115   5e-25
+sp|P40865|RHAR_SALTY HTH-type transcriptional activator RhaR OS=...   111   5e-24
+sp|B5BJG9|RHAR_SALPK HTH-type transcriptional activator RhaR OS=...   111   5e-24
+sp|A9MZC9|RHAR_SALPB HTH-type transcriptional activator RhaR OS=...   111   5e-24
+sp|Q5PKG1|RHAR_SALPA HTH-type transcriptional activator RhaR OS=...   111   5e-24
+sp|B4SZZ4|RHAR_SALNS HTH-type transcriptional activator RhaR OS=...   111   5e-24
+sp|B5QWY5|RHAR_SALEP HTH-type transcriptional activator RhaR OS=...   111   5e-24
+sp|A9MI63|RHAR_SALAR HTH-type transcriptional activator RhaR OS=...   111   5e-24
+sp|B5F0N0|RHAR_SALA4 HTH-type transcriptional activator RhaR OS=...   111   7e-24
+sp|B5FPP6|RHAR_SALDC HTH-type transcriptional activator RhaR OS=...   110   1e-23
+sp|P68912|Y1430_MYCBO Uncharacterized HTH-type transcriptional r...   110   2e-23
+sp|P9WMJ1|Y1395_MYCTU Uncharacterized HTH-type transcriptional r...   110   2e-23
+sp|P9WMJ0|Y1395_MYCTO Uncharacterized HTH-type transcriptional r...   110   2e-23
+sp|P32677|YIJO_ECOLI Uncharacterized HTH-type transcriptional re...    88   6e-17
+sp|Q99XB1|Y101_STAAM Uncharacterized HTH-type transcriptional re...    80   2e-14
+sp|Q7A882|Y097_STAAN Uncharacterized HTH-type transcriptional re...    80   2e-14
+sp|Q6GD21|Y078_STAAS Uncharacterized HTH-type transcriptional re...    80   2e-14
+sp|Q8NYT6|Y077_STAAW Uncharacterized HTH-type transcriptional re...    80   2e-14
+sp|Q936F1|YHTH1_STAAU Uncharacterized HTH-type transcriptional r...    80   2e-14
+sp|Q6GKK1|Y107_STAAR Uncharacterized HTH-type transcriptional re...    79   3e-14
+sp|Q5HJR8|Y084_STAAC Uncharacterized HTH-type transcriptional re...    78   7e-14
+sp|T2KMF4|PLH4_FORAG Histidine kinase P4 OS=Formosa agariphila (...    78   8e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8Z2V5|RHAR_SALTI HTH-type transcriptional activator RhaR OS=...   110   8e-24
+sp|B4TBY4|RHAR_SALHS HTH-type transcriptional activator RhaR OS=...   110   8e-24
+sp|Q57HG7|RHAR_SALCH HTH-type transcriptional activator RhaR OS=...   110   8e-24
+sp|Q83PD9|RHAR_SHIFL HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|Q0SZ96|RHAR_SHIF8 HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|Q1R413|RHAR_ECOUT HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|A1AI83|RHAR_ECOK1 HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|P09378|RHAR_ECOLI HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|A8A710|RHAR_ECOHS HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|C5A074|RHAR_ECOBW HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|Q8X7B3|RHAR_ECO57 HTH-type transcriptional activator RhaR OS=...   105   5e-22
+sp|Q32A71|RHAR_SHIDS HTH-type transcriptional activator RhaR OS=...   104   6e-22
+sp|Q31U83|RHAR_SHIBS HTH-type transcriptional activator RhaR OS=...   104   6e-22
+sp|Q8FBD7|RHAR_ECOL6 HTH-type transcriptional activator RhaR OS=...   104   6e-22
+sp|Q0TAF7|RHAR_ECOL5 HTH-type transcriptional activator RhaR OS=...   104   6e-22
+sp|A7ZUB8|RHAR_ECO24 HTH-type transcriptional activator RhaR OS=...   104   6e-22
+sp|A4WG90|RHAR_ENT38 HTH-type transcriptional activator RhaR OS=...   100   1e-20
+sp|Q66FF1|RHAR_YERPS HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|A4TRS7|RHAR_YERPP HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|Q1CEB6|RHAR_YERPN HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|A9QYR6|RHAR_YERPG HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|Q8ZIZ9|RHAR_YERPE HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|B2K1W6|RHAR_YERPB HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|Q1C0W2|RHAR_YERPA HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|A7FN79|RHAR_YERP3 HTH-type transcriptional activator RhaR OS=...    87   1e-16
+sp|A6TGB0|RHAR_KLEP7 HTH-type transcriptional activator RhaR OS=...    87   2e-16
+sp|B1JNC4|RHAR_YERPY HTH-type transcriptional activator RhaR OS=...    85   6e-16
+sp|A7ML57|RHAR_CROS8 HTH-type transcriptional activator RhaR OS=...    84   1e-15
+sp|C6DJR5|RHAR_PECCP HTH-type transcriptional activator RhaR OS=...    82   3e-15
+sp|Q6DA21|RHAR_PECAS HTH-type transcriptional activator RhaR OS=...    81   1e-14
+sp|Q9I1P2|VQSM_PSEAE HTH-type transcriptional regulator VqsM OS=...    80   1e-14
+sp|Q65Q30|RHAR_MANSM HTH-type transcriptional activator RhaR OS=...    80   1e-14
+sp|P77396|YPDC_ECOLI Uncharacterized HTH-type transcriptional re...    80   2e-14
+sp|P77634|YBCM_ECOLI Uncharacterized HTH-type transcriptional re...    79   5e-14
+sp|Q9Z3Q6|RHRA_RHIME Transcriptional activator RhrA OS=Rhizobium...    79   5e-14
+sp|P72171|ORUR_PSEAE Ornithine utilization regulator OS=Pseudomo...    78   1e-13
+sp|Q05587|POCR_SALTY Regulatory protein PocR OS=Salmonella typhi...    75   4e-13
+sp|P9WMJ3|VIRS_MYCTU HTH-type transcriptional regulator VirS OS=...    74   1e-12
+sp|P9WMJ2|VIRS_MYCTO HTH-type transcriptional regulator VirS OS=...    74   1e-12
+sp|O31517|YESN_BACSU Uncharacterized transcriptional regulatory ...    73   3e-12
+sp|B1Q2A8|NPHR_RHOSO Transcriptional activator NphR OS=Rhodococc...    72   3e-12
+sp|P45043|XYLR_HAEIN Xylose operon regulatory protein OS=Haemoph...    72   5e-12
+sp|A7ZUB7|RHAS_ECO24 HTH-type transcriptional activator RhaS OS=...    72   6e-12
+sp|Q3YV71|RHAS_SHISS HTH-type transcriptional activator RhaS OS=...    72   7e-12
+sp|O87389|GLXA_RHIME HTH-type transcriptional regulator GlxA OS=...    71   7e-12
+sp|Q0TAF8|RHAS_ECOL5 HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|B7UNM6|RHAS_ECO27 HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|Q31U84|RHAS_SHIBS HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|P09377|RHAS_ECOLI HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|B1IVH3|RHAS_ECOLC HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|A8A709|RHAS_ECOHS HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|B1XB72|RHAS_ECODH HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|C5A073|RHAS_ECOBW HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|B7M6V7|RHAS_ECO8A HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|B7L9G1|RHAS_ECO55 HTH-type transcriptional activator RhaS OS=...    71   7e-12
+sp|Q32A70|RHAS_SHIDS HTH-type transcriptional activator RhaS OS=...    71   8e-12
+sp|Q83PE0|RHAS_SHIFL HTH-type transcriptional activator RhaS OS=...    71   8e-12
+sp|Q0SZ95|RHAS_SHIF8 HTH-type transcriptional activator RhaS OS=...    71   8e-12
+sp|A6TGA9|RHAS_KLEP7 HTH-type transcriptional activator RhaS OS=...    71   8e-12
+sp|Q8CXW5|RHAS_ECOL6 HTH-type transcriptional activator RhaS OS=...    71   8e-12
+sp|B7N2P7|RHAS_ECO81 HTH-type transcriptional activator RhaS OS=...    71   8e-12
+sp|B1LMU6|RHAS_ECOSM HTH-type transcriptional activator RhaS OS=...    71   8e-12
+sp|Q00753|MSMR_STRMU Msm operon regulatory protein OS=Streptococ...    71   9e-12
+sp|B6I4P8|RHAS_ECOSE HTH-type transcriptional activator RhaS OS=...    71   1e-11
+sp|Q1R414|RHAS_ECOUT HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|B7NFK3|RHAS_ECOLU HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|A1AI82|RHAS_ECOK1 HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|B7NUA1|RHAS_ECO7I HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|B7MI37|RHAS_ECO45 HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|B5XZ49|RHAS_KLEP3 HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|P0ACI3|XYLR_ECOLI Xylose operon regulatory protein OS=Escheri...    70   2e-11
+sp|P0ACI4|XYLR_ECOL6 Xylose operon regulatory protein OS=Escheri...    70   2e-11
+sp|P0ACI5|XYLR_ECO57 Xylose operon regulatory protein OS=Escheri...    70   2e-11
+sp|B5YZ43|RHAS_ECO5E HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|Q8X897|RHAS_ECO57 HTH-type transcriptional activator RhaS OS=...    70   2e-11
+sp|P0A2S9|RHAS_SALTY HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|P0A2T0|RHAS_SALTI HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B4TPQ9|RHAS_SALSV HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B5BJG8|RHAS_SALPK HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|C0Q3L4|RHAS_SALPC HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|A9MZC8|RHAS_SALPB HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|Q5PKG2|RHAS_SALPA HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B4SZZ3|RHAS_SALNS HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B4TBY3|RHAS_SALHS HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B5RFC3|RHAS_SALG2 HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B5QWY4|RHAS_SALEP HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B5FPP5|RHAS_SALDC HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|Q57HG8|RHAS_SALCH HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|A9MI64|RHAS_SALAR HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B5F0M9|RHAS_SALA4 HTH-type transcriptional activator RhaS OS=...    70   3e-11
+sp|B2TVP7|RHAS_SHIB3 HTH-type transcriptional activator RhaS OS=...    69   3e-11
+sp|G3XCU2|ARGR_PSEAE HTH-type transcriptional regulator ArgR OS=...    69   3e-11
+sp|A8AL27|RHAS_CITK8 HTH-type transcriptional activator RhaS OS=...    69   4e-11
+sp|P45008|Y1052_HAEIN Uncharacterized HTH-type transcriptional r...    69   4e-11
+sp|B7LVD8|RHAS_ESCF3 HTH-type transcriptional activator RhaS OS=...    68   7e-11
+sp|Q8NRR3|RIPA_CORGL HTH-type transcriptional regulator RipA OS=...    68   1e-10
+sp|P26993|EXSA_PSEAE HTH-type transcriptional regulator ExsA OS=...    68   1e-10
+sp|O31249|ALKR_ACIAD HTH-type transcriptional regulator AlkR OS=...    67   1e-10
+sp|O33813|LACR_STAXY Lactose operon transcription activator OS=S...    67   1e-10
+sp|P54722|YFIF_BACSU Uncharacterized HTH-type transcriptional re...    67   2e-10
+sp|P31449|YIDL_ECOLI Uncharacterized HTH-type transcriptional re...    66   3e-10
+sp|P0C2V5|VIRF_YEREN Virulence regulon transcriptional activator...    66   3e-10
+sp|A4WG91|RHAS_ENT38 HTH-type transcriptional activator RhaS OS=...    65   4e-10
+sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Esch...    65   4e-10
+sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Esch...    65   4e-10
+sp|Q9WW32|MTRA_NEIGO HTH-type transcriptional regulator MtrA OS=...    65   4e-10
+sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Citr...    65   6e-10
+sp|Q6NI56|RIPA_CORDI HTH-type transcriptional regulator RipA OS=...    64   9e-10
+sp|Q9HTI4|GBDR_PSEAE HTH-type transcriptional regulator GbdR OS=...    64   1e-09
+sp|A0A0H2ZIC3|GBDR_PSEAB HTH-type transcriptional regulator GbdR...    64   1e-09
+sp|P96660|YDEC_BACSU Uncharacterized HTH-type transcriptional re...    64   2e-09
+sp|O32071|YTDP_BACSU Uncharacterized HTH-type transcriptional re...    64   2e-09
+sp|A1JU91|VIRF_YERE8 Virulence regulon transcriptional activator...    64   2e-09
+sp|P28808|LCRF_YERPE Thermoregulatory protein LcrF OS=Yersinia p...    63   2e-09
+sp|Q8FQS2|RIPA_COREF HTH-type transcriptional regulator RipA OS=...    62   4e-09
+sp|Q65Q31|RHAS_MANSM HTH-type transcriptional activator RhaS OS=...    62   4e-09
+sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dick...    62   4e-09
+sp|P40408|BTR_BACSU HTH-type transcriptional activator Btr OS=Ba...    62   5e-09
+sp|P35319|ARACL_STRLI Putative AraC-like transcription regulator...    62   7e-09
+sp|P19219|ADAA_BACSU Bifunctional transcriptional activator/DNA ...    62   7e-09
+sp|Q46855|YQHC_ECOLI Uncharacterized HTH-type transcriptional re...    61   9e-09
+sp|Q84BZ4|ANDR_BURCE Anthranilate 1,2-dioxygenase regulatory pro...    61   1e-08
+sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Salm...    61   1e-08
+sp|O31522|YESS_BACSU HTH-type transcriptional regulator YesS OS=...    61   1e-08
+sp|Q9HTH5|CDHR_PSEAE HTH-type transcriptional regulator CdhR OS=...    60   3e-08
+sp|P17410|CHBR_ECOLI HTH-type transcriptional regulator ChbR OS=...    59   4e-08
+sp|P77379|RCLR_ECOLI RCS-specific HTH-type transcriptional activ...    59   4e-08
+sp|O31449|YBFI_BACSU Uncharacterized HTH-type transcriptional re...    59   5e-08
+sp|P76241|NIMR_ECOLI HTH-type transcriptional regulator NimR OS=...    59   5e-08
+sp|B1JNC5|RHAS_YERPY HTH-type transcriptional activator RhaS OS=...    57   1e-07
+sp|Q66FF2|RHAS_YERPS HTH-type transcriptional activator RhaS OS=...    57   1e-07
+sp|A4TRS8|RHAS_YERPP HTH-type transcriptional activator RhaS OS=...    57   1e-07
+sp|B2K1W5|RHAS_YERPB HTH-type transcriptional activator RhaS OS=...    57   1e-07
+sp|A7FN80|RHAS_YERP3 HTH-type transcriptional activator RhaS OS=...    57   1e-07
+sp|A9QYR8|RHAS_YERPG HTH-type transcriptional activator RhaS OS=...    57   1e-07
+sp|P40883|PCHR_PSEAE Regulatory protein PchR OS=Pseudomonas aeru...    57   2e-07
+sp|Q03320|ARACL_STRAT Putative AraC-like transcription regulator...    57   2e-07
+sp|Q47129|FEAR_ECOLI Transcriptional activator FeaR OS=Escherich...    56   3e-07
+sp|P43465|RAFR_PEDPE Raffinose operon transcriptional regulatory...    56   4e-07
+sp|Q52620|PQRA_PROVU Regulatory protein PqrA OS=Proteus vulgaris...    54   1e-06
+sp|P43461|YCGK_PSEVC Uncharacterized HTH-type transcriptional re...    54   2e-06
+sp|Q1CEB5|RHAS_YERPN HTH-type transcriptional activator RhaS OS=...    54   2e-06
+sp|Q8ZJ00|RHAS_YERPE HTH-type transcriptional activator RhaS OS=...    54   2e-06
+sp|Q1C0W1|RHAS_YERPA HTH-type transcriptional activator RhaS OS=...    54   2e-06
+sp|P96662|YDEE_BACSU Uncharacterized HTH-type transcriptional re...    53   2e-06
+sp|P0ACH8|MELR_ECOLI Melibiose operon regulatory protein OS=Esch...    53   3e-06
+sp|P0ACH9|MELR_ECOL6 Melibiose operon regulatory protein OS=Esch...    53   3e-06
+sp|C6DJR4|RHAS_PECCP HTH-type transcriptional activator RhaS OS=...    52   6e-06
+sp|P40331|YISR_BACSU Uncharacterized HTH-type transcriptional re...    52   6e-06
+sp|Q51872|LUMQ_PHOLE Probable transcriptional regulator LumQ OS=...    50   1e-05
+sp|Q7A7X9|HPTR_STAAN Transcriptional regulatory protein HptR OS=...    50   2e-05
+sp|Q99X00|HPTR_STAAM Transcriptional regulatory protein HptR OS=...    50   2e-05
+sp|P77601|YKGA_ECOLI Putative HTH-type transcriptional regulator...    50   2e-05
+sp|Q8CQE3|Y165_STAES Uncharacterized response regulatory protein...    50   2e-05
+sp|P43463|AARP_PROST HTH-type transcriptional activator AarP OS=...    50   2e-05
+sp|P28809|MMSR_PSEAE MmsAB operon regulatory protein OS=Pseudomo...    50   2e-05
+sp|Q5HKE0|Y2406_STAEQ Uncharacterized response regulatory protei...    50   2e-05
+sp|Q6DA22|RHAS_PECAS HTH-type transcriptional activator RhaS OS=...    49   3e-05
+sp|Q56143|SOXS_SALTY Regulatory protein SoxS OS=Salmonella typhi...    49   4e-05
+sp|Q8NYJ9|HPTR_STAAW Transcriptional regulatory protein HptR OS=...    49   4e-05
+sp|Q6GCQ3|HPTR_STAAS Transcriptional regulatory protein HptR OS=...    49   4e-05
+sp|Q5HJF7|HPTR_STAAC Transcriptional regulatory protein HptR OS=...    49   4e-05
+sp|Q2G1E1|HPTR_STAA8 Transcriptional regulatory protein HptR OS=...    49   4e-05
+sp|Q2FK47|HPTR_STAA3 Transcriptional regulatory protein HptR OS=...    49   4e-05
+sp|Q6GK93|HPTR_STAAR Transcriptional regulatory protein HptR OS=...    49   6e-05
+sp|Q2YV56|HPTR_STAAB Transcriptional regulatory protein HptR OS=...    49   6e-05
+sp|P0A9E2|SOXS_ECOLI Regulatory protein SoxS OS=Escherichia coli...    48   8e-05
+sp|P0A9E3|SOXS_ECOL6 Regulatory protein SoxS OS=Escherichia coli...    48   8e-05
+sp|P0A9E4|SOXS_ECO57 Regulatory protein SoxS OS=Escherichia coli...    48   8e-05
+sp|Q48413|RAMA_KLEPN Transcriptional activator RamA OS=Klebsiell...    47   2e-04
+sp|P55922|RAMA_ENTCL Transcriptional activator RamA OS=Enterobac...    46   3e-04
+sp|P0A2S4|MARA_SALTY Multiple antibiotic resistance protein MarA...    46   4e-04
+sp|P0A2S5|MARA_SALTI Multiple antibiotic resistance protein MarA...    46   4e-04
+sp|P0A2S6|MARA_SALEN Multiple antibiotic resistance protein MarA...    46   4e-04
+sp|P77402|YDIP_ECOLI Uncharacterized HTH-type transcriptional re...    45   4e-04
+sp|P0ACH7|MARA_SHIFL Multiple antibiotic resistance protein MarA...    45   6e-04
+sp|P0ACH5|MARA_ECOLI Multiple antibiotic resistance protein MarA...    45   6e-04
+sp|P0ACH6|MARA_ECO57 Multiple antibiotic resistance protein MarA...    45   6e-04
+sp|O34901|YOBQ_BACSU Uncharacterized HTH-type transcriptional re...    43   0.002
+sp|P0ACI2|ROB_SHIFL Right origin-binding protein OS=Shigella fle...    43   0.003
+sp|P0ACI0|ROB_ECOLI Right origin-binding protein OS=Escherichia ...    43   0.003
+sp|P0ACI1|ROB_ECO57 Right origin-binding protein OS=Escherichia ...    43   0.003
+sp|P43462|THCR_RHOER Probable thc operon regulatory protein OS=R...    42   0.004
+sp|P28816|TETD_ECOLX Transposon Tn10 TetD protein OS=Escherichia...    42   0.005
+sp|Q04710|XYLS1_PSEPU XylDLEGF operon transcriptional activator ...    41   0.011
+sp|P07859|XYLS_PSEPU XylDLEGF operon transcriptional activator O...    40   0.013
+sp|Q04713|XYLS4_PSEPU XylDLEGF operon transcriptional activator ...    40   0.014
+sp|Q05335|XYLS3_PSEPU XylDLEGF operon transcriptional activator ...    40   0.020
+sp|P95283|Y1931_MYCTU HTH-type transcriptional regulator Rv1931c...    39   0.035
+sp|P69343|INVF_SALTY Invasion protein InvF OS=Salmonella typhimu...    39   0.063
+sp|P69342|INVF_SALTI Invasion protein InvF OS=Salmonella typhi O...    39   0.063
+sp|P55449|Y4FK_SINFN Uncharacterized HTH-type transcriptional re...    38   0.085
+sp|O31456|YBFP_BACSU Uncharacterized HTH-type transcriptional re...    37   0.24 
+sp|Q05092|XYLS2_PSEPU XylDLEGF operon transcriptional activator ...    34   1.2  
+sp|Q87B33|PURA_XYLFT Adenylosuccinate synthetase OS=Xylella fast...    33   2.4  
+sp|B2I7V8|PURA_XYLF2 Adenylosuccinate synthetase OS=Xylella fast...    33   2.4  
+sp|Q60B78|SURA_METCA Chaperone SurA OS=Methylococcus capsulatus ...    33   2.5  
+sp|Q2GGK2|PYRB_EHRCR Aspartate carbamoyltransferase OS=Ehrlichia...    33   2.6  
+sp|P26950|CAF1R_YERPE F1 operon positive regulatory protein OS=Y...    32   3.7  
+sp|Q12K61|SURA_SHEDO Chaperone SurA OS=Shewanella denitrificans ...    32   5.4  
+sp|Q8EB95|SURA_SHEON Chaperone SurA OS=Shewanella oneidensis (st...    32   6.0  
+sp|B0U498|PURA_XYLFM Adenylosuccinate synthetase OS=Xylella fast...    32   6.2  
+sp|Q9PG47|PURA_XYLFA Adenylosuccinate synthetase OS=Xylella fast...    32   6.2  
+sp|Q985F6|GLNE_RHILO Bifunctional glutamine synthetase adenylylt...    31   8.3  
+sp|Q57588|T1R1_METJA Putative type I restriction enzyme MjaVIIP ...    31   8.6  
+sp|B3EH28|GCSPA_CHLL2 Probable glycine dehydrogenase (decarboxyl...    31   8.7  
+sp|Q2YBP3|SURA_NITMU Chaperone SurA OS=Nitrosospira multiformis ...    31   8.8  
+sp|A6NC78|GOG8I_HUMAN Putative golgin subfamily A member 8I OS=H...    31   9.7  
+sp|P37727|RAE1_RAT Rab proteins geranylgeranyltransferase compon...    31   9.9  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P0C6D6|TCPN_VIBCH TCP pilus virulence regulatory protein OS=V...   241   4e-63
+sp|A5F384|TCPN_VIBC3 TCP pilus virulence regulatory protein OS=V...   241   4e-63
+sp|P43459|PERA_ECO27 Transcriptional activator PerA OS=Escherich...   195   4e-49
+sp|P43464|AGGR_ECOLX Transcriptional activator AggR OS=Escherich...   172   2e-42
+sp|P25393|CFAD_ECOLX CFA/I fimbrial subunit D OS=Escherichia col...   172   2e-42
+sp|P16114|RNS_ECOLX Regulatory protein Rns OS=Escherichia coli O...   171   8e-42
+sp|O31449|YBFI_BACSU Uncharacterized HTH-type transcriptional re...   166   1e-40
+sp|P43460|CSVR_ECOLX HTH-type transcriptional activator CsvR OS=...   156   1e-37
+sp|P0CL09|SIRC_SALTY Transcriptional regulator sirC OS=Salmonell...   153   1e-36
+sp|E1WAB2|SIRC_SALTS Transcriptional regulator SirC OS=Salmonell...   153   1e-36
+sp|P23774|FAPR_ECOLX 987P fimbrial operon positive regulatory pr...   152   2e-36
+sp|P45008|Y1052_HAEIN Uncharacterized HTH-type transcriptional r...   151   7e-36
+sp|Q8Z4A6|SIRC_SALTI Transcriptional regulator SirC OS=Salmonell...   151   7e-36
+sp|P77379|RCLR_ECOLI RCS-specific HTH-type transcriptional activ...   151   8e-36
+sp|P05052|APPY_ECOLI HTH-type transcriptional regulator AppY OS=...   151   8e-36
+sp|P28809|MMSR_PSEAE MmsAB operon regulatory protein OS=Pseudomo...   148   4e-35
+sp|Q9EYV5|GADX_ECO27 HTH-type transcriptional regulator GadX OS=...   148   4e-35
+sp|Q8FCI6|GADX_ECOL6 HTH-type transcriptional regulator GadX OS=...   148   5e-35
+sp|Q8FCI7|GADW_ECOL6 HTH-type transcriptional regulator GadW OS=...   145   3e-34
+sp|B7LVD8|RHAS_ESCF3 HTH-type transcriptional activator RhaS OS=...   145   4e-34
+sp|A6TGA9|RHAS_KLEP7 HTH-type transcriptional activator RhaS OS=...   144   1e-33
+sp|P58230|GADX_ECO57 HTH-type transcriptional regulator GadX OS=...   143   2e-33
+sp|A8AL27|RHAS_CITK8 HTH-type transcriptional activator RhaS OS=...   143   2e-33
+sp|P63203|GADW_SHIFL HTH-type transcriptional regulator GadW OS=...   143   2e-33
+sp|P63201|GADW_ECOLI HTH-type transcriptional regulator GadW OS=...   143   2e-33
+sp|P63202|GADW_ECO57 HTH-type transcriptional regulator GadW OS=...   143   2e-33
+sp|Q83PR0|GADX_SHIFL HTH-type transcriptional regulator GadX OS=...   142   3e-33
+sp|C6DJR5|RHAR_PECCP HTH-type transcriptional activator RhaR OS=...   142   3e-33
+sp|B5XZ49|RHAS_KLEP3 HTH-type transcriptional activator RhaS OS=...   142   4e-33
+sp|P37639|GADX_ECOLI HTH-type transcriptional regulator GadX OS=...   141   9e-33
+sp|B5F0M9|RHAS_SALA4 HTH-type transcriptional activator RhaS OS=...   140   1e-32
+sp|B5BJG8|RHAS_SALPK HTH-type transcriptional activator RhaS OS=...   140   1e-32
+sp|Q5PKG2|RHAS_SALPA HTH-type transcriptional activator RhaS OS=...   140   1e-32
+sp|B4TPQ9|RHAS_SALSV HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|A4WG91|RHAS_ENT38 HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|P0A2S9|RHAS_SALTY HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|P0A2T0|RHAS_SALTI HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|C0Q3L4|RHAS_SALPC HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|A9MZC8|RHAS_SALPB HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|B4SZZ3|RHAS_SALNS HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|B5RFC3|RHAS_SALG2 HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|B5QWY4|RHAS_SALEP HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|A9MI64|RHAS_SALAR HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|B5FPP5|RHAS_SALDC HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|Q57HG8|RHAS_SALCH HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|B4TBY3|RHAS_SALHS HTH-type transcriptional activator RhaS OS=...   139   2e-32
+sp|B4TPR0|RHAR_SALSV HTH-type transcriptional activator RhaR OS=...   139   3e-32
+sp|Q32A71|RHAR_SHIDS HTH-type transcriptional activator RhaR OS=...   137   6e-32
+sp|A9MI63|RHAR_SALAR HTH-type transcriptional activator RhaR OS=...   137   8e-32
+sp|P40865|RHAR_SALTY HTH-type transcriptional activator RhaR OS=...   137   9e-32
+sp|B5BJG9|RHAR_SALPK HTH-type transcriptional activator RhaR OS=...   137   9e-32
+sp|A9MZC9|RHAR_SALPB HTH-type transcriptional activator RhaR OS=...   137   9e-32
+sp|Q5PKG1|RHAR_SALPA HTH-type transcriptional activator RhaR OS=...   137   9e-32
+sp|B4SZZ4|RHAR_SALNS HTH-type transcriptional activator RhaR OS=...   137   9e-32
+sp|B5QWY5|RHAR_SALEP HTH-type transcriptional activator RhaR OS=...   137   9e-32
+sp|Q8Z2V5|RHAR_SALTI HTH-type transcriptional activator RhaR OS=...   137   1e-31
+sp|B4TBY4|RHAR_SALHS HTH-type transcriptional activator RhaR OS=...   137   1e-31
+sp|B5F0N0|RHAR_SALA4 HTH-type transcriptional activator RhaR OS=...   137   1e-31
+sp|Q8X7B3|RHAR_ECO57 HTH-type transcriptional activator RhaR OS=...   137   1e-31
+sp|P09378|RHAR_ECOLI HTH-type transcriptional activator RhaR OS=...   136   1e-31
+sp|A8A710|RHAR_ECOHS HTH-type transcriptional activator RhaR OS=...   136   1e-31
+sp|C5A074|RHAR_ECOBW HTH-type transcriptional activator RhaR OS=...   136   1e-31
+sp|Q57HG7|RHAR_SALCH HTH-type transcriptional activator RhaR OS=...   136   2e-31
+sp|P77396|YPDC_ECOLI Uncharacterized HTH-type transcriptional re...   136   2e-31
+sp|Q83PD9|RHAR_SHIFL HTH-type transcriptional activator RhaR OS=...   136   2e-31
+sp|Q0SZ96|RHAR_SHIF8 HTH-type transcriptional activator RhaR OS=...   136   2e-31
+sp|B5FPP6|RHAR_SALDC HTH-type transcriptional activator RhaR OS=...   136   2e-31
+sp|Q1R413|RHAR_ECOUT HTH-type transcriptional activator RhaR OS=...   136   2e-31
+sp|A1AI83|RHAR_ECOK1 HTH-type transcriptional activator RhaR OS=...   136   2e-31
+sp|Q31U83|RHAR_SHIBS HTH-type transcriptional activator RhaR OS=...   136   3e-31
+sp|Q8FBD7|RHAR_ECOL6 HTH-type transcriptional activator RhaR OS=...   136   3e-31
+sp|Q0TAF7|RHAR_ECOL5 HTH-type transcriptional activator RhaR OS=...   136   3e-31
+sp|A7ZUB8|RHAR_ECO24 HTH-type transcriptional activator RhaR OS=...   136   3e-31
+sp|Q6DA21|RHAR_PECAS HTH-type transcriptional activator RhaR OS=...   135   4e-31
+sp|A7ZUB7|RHAS_ECO24 HTH-type transcriptional activator RhaS OS=...   134   8e-31
+sp|B7N2P7|RHAS_ECO81 HTH-type transcriptional activator RhaS OS=...   134   9e-31
+sp|Q31U84|RHAS_SHIBS HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|P09377|RHAS_ECOLI HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|B1IVH3|RHAS_ECOLC HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|A8A709|RHAS_ECOHS HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|B1XB72|RHAS_ECODH HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|C5A073|RHAS_ECOBW HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|B7M6V7|RHAS_ECO8A HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|B7L9G1|RHAS_ECO55 HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|Q83PE0|RHAS_SHIFL HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|Q0SZ95|RHAS_SHIF8 HTH-type transcriptional activator RhaS OS=...   134   1e-30
+sp|B6I4P8|RHAS_ECOSE HTH-type transcriptional activator RhaS OS=...   133   1e-30
+sp|A9QYR8|RHAS_YERPG HTH-type transcriptional activator RhaS OS=...   133   1e-30
+sp|Q3YV71|RHAS_SHISS HTH-type transcriptional activator RhaS OS=...   133   1e-30
+sp|B1JNC5|RHAS_YERPY HTH-type transcriptional activator RhaS OS=...   133   2e-30
+sp|Q66FF2|RHAS_YERPS HTH-type transcriptional activator RhaS OS=...   133   2e-30
+sp|A4TRS8|RHAS_YERPP HTH-type transcriptional activator RhaS OS=...   133   2e-30
+sp|B2K1W5|RHAS_YERPB HTH-type transcriptional activator RhaS OS=...   133   2e-30
+sp|A7FN80|RHAS_YERP3 HTH-type transcriptional activator RhaS OS=...   133   2e-30
+sp|Q32A70|RHAS_SHIDS HTH-type transcriptional activator RhaS OS=...   133   2e-30
+sp|P0A2T3|VIRF_SHISO Virulence regulon transcriptional activator...   132   2e-30
+sp|P0A2T1|VIRF_SHIFL Virulence regulon transcriptional activator...   132   2e-30
+sp|P0A2T2|VIRF_SHIDY Virulence regulon transcriptional activator...   132   2e-30
+sp|B5YZ43|RHAS_ECO5E HTH-type transcriptional activator RhaS OS=...   132   2e-30
+sp|Q8X897|RHAS_ECO57 HTH-type transcriptional activator RhaS OS=...   132   2e-30
+sp|Q02458|URER_PROMH Urease operon transcriptional activator OS=...   132   3e-30
+sp|B2TVP7|RHAS_SHIB3 HTH-type transcriptional activator RhaS OS=...   132   3e-30
+sp|B1LMU6|RHAS_ECOSM HTH-type transcriptional activator RhaS OS=...   132   4e-30
+sp|Q1R414|RHAS_ECOUT HTH-type transcriptional activator RhaS OS=...   131   4e-30
+sp|B7NFK3|RHAS_ECOLU HTH-type transcriptional activator RhaS OS=...   131   4e-30
+sp|A1AI82|RHAS_ECOK1 HTH-type transcriptional activator RhaS OS=...   131   4e-30
+sp|B7NUA1|RHAS_ECO7I HTH-type transcriptional activator RhaS OS=...   131   4e-30
+sp|B7MI37|RHAS_ECO45 HTH-type transcriptional activator RhaS OS=...   131   4e-30
+sp|Q0TAF8|RHAS_ECOL5 HTH-type transcriptional activator RhaS OS=...   131   4e-30
+sp|B7UNM6|RHAS_ECO27 HTH-type transcriptional activator RhaS OS=...   131   4e-30
+sp|P33234|ADIY_ECOLI HTH-type transcriptional regulator AdiY OS=...   131   4e-30
+sp|A4WG90|RHAR_ENT38 HTH-type transcriptional activator RhaR OS=...   131   5e-30
+sp|P10805|ENVY_ECOLI Porin thermoregulatory protein EnvY OS=Esch...   130   1e-29
+sp|A6TGB0|RHAR_KLEP7 HTH-type transcriptional activator RhaR OS=...   129   2e-29
+sp|Q8CXW5|RHAS_ECOL6 HTH-type transcriptional activator RhaS OS=...   129   2e-29
+sp|Q1CEB5|RHAS_YERPN HTH-type transcriptional activator RhaS OS=...   129   3e-29
+sp|Q8ZJ00|RHAS_YERPE HTH-type transcriptional activator RhaS OS=...   129   3e-29
+sp|Q1C0W1|RHAS_YERPA HTH-type transcriptional activator RhaS OS=...   129   3e-29
+sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Esch...   128   4e-29
+sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Esch...   128   4e-29
+sp|Q7A7X9|HPTR_STAAN Transcriptional regulatory protein HptR OS=...   127   1e-28
+sp|Q99X00|HPTR_STAAM Transcriptional regulatory protein HptR OS=...   127   1e-28
+sp|O32071|YTDP_BACSU Uncharacterized HTH-type transcriptional re...   127   1e-28
+sp|Q6GK93|HPTR_STAAR Transcriptional regulatory protein HptR OS=...   127   1e-28
+sp|Q8NYJ9|HPTR_STAAW Transcriptional regulatory protein HptR OS=...   126   2e-28
+sp|Q6GCQ3|HPTR_STAAS Transcriptional regulatory protein HptR OS=...   126   2e-28
+sp|Q5HJF7|HPTR_STAAC Transcriptional regulatory protein HptR OS=...   126   2e-28
+sp|Q2G1E1|HPTR_STAA8 Transcriptional regulatory protein HptR OS=...   126   2e-28
+sp|Q2FK47|HPTR_STAA3 Transcriptional regulatory protein HptR OS=...   126   2e-28
+sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Citr...   126   2e-28
+sp|Q2YV56|HPTR_STAAB Transcriptional regulatory protein HptR OS=...   125   3e-28
+sp|Q99XB1|Y101_STAAM Uncharacterized HTH-type transcriptional re...   124   7e-28
+sp|Q7A882|Y097_STAAN Uncharacterized HTH-type transcriptional re...   124   7e-28
+sp|Q6GD21|Y078_STAAS Uncharacterized HTH-type transcriptional re...   124   7e-28
+sp|Q8NYT6|Y077_STAAW Uncharacterized HTH-type transcriptional re...   124   7e-28
+sp|P0C2V5|VIRF_YEREN Virulence regulon transcriptional activator...   124   8e-28
+sp|P28808|LCRF_YERPE Thermoregulatory protein LcrF OS=Yersinia p...   124   8e-28
+sp|Q6GKK1|Y107_STAAR Uncharacterized HTH-type transcriptional re...   124   1e-27
+sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dick...   124   1e-27
+sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Salm...   124   1e-27
+sp|Q5HJR8|Y084_STAAC Uncharacterized HTH-type transcriptional re...   124   1e-27
+sp|Q936F1|YHTH1_STAAU Uncharacterized HTH-type transcriptional r...   123   2e-27
+sp|A1JU91|VIRF_YERE8 Virulence regulon transcriptional activator...   122   3e-27
+sp|P26993|EXSA_PSEAE HTH-type transcriptional regulator ExsA OS=...   122   4e-27
+sp|P0CL08|HILD_SALTY Transcriptional regulator HilD OS=Salmonell...   122   4e-27
+sp|E1WAC0|HILD_SALTS Transcriptional regulator HilD OS=Salmonell...   122   4e-27
+sp|P32326|URER_ECOLX Urease operon transcriptional activator OS=...   121   6e-27
+sp|A7ML57|RHAR_CROS8 HTH-type transcriptional activator RhaR OS=...   121   7e-27
+sp|Q84BZ4|ANDR_BURCE Anthranilate 1,2-dioxygenase regulatory pro...   120   8e-27
+sp|Q66FF1|RHAR_YERPS HTH-type transcriptional activator RhaR OS=...   119   3e-26
+sp|A7FN79|RHAR_YERP3 HTH-type transcriptional activator RhaR OS=...   119   3e-26
+sp|A4TRS7|RHAR_YERPP HTH-type transcriptional activator RhaR OS=...   118   5e-26
+sp|Q1CEB6|RHAR_YERPN HTH-type transcriptional activator RhaR OS=...   118   5e-26
+sp|A9QYR6|RHAR_YERPG HTH-type transcriptional activator RhaR OS=...   118   5e-26
+sp|Q8ZIZ9|RHAR_YERPE HTH-type transcriptional activator RhaR OS=...   118   5e-26
+sp|B2K1W6|RHAR_YERPB HTH-type transcriptional activator RhaR OS=...   118   5e-26
+sp|Q1C0W2|RHAR_YERPA HTH-type transcriptional activator RhaR OS=...   118   5e-26
+sp|Q5HKE0|Y2406_STAEQ Uncharacterized response regulatory protei...   117   8e-26
+sp|P32677|YIJO_ECOLI Uncharacterized HTH-type transcriptional re...   117   9e-26
+sp|Q65Q30|RHAR_MANSM HTH-type transcriptional activator RhaR OS=...   117   9e-26
+sp|Q65Q31|RHAS_MANSM HTH-type transcriptional activator RhaS OS=...   117   1e-25
+sp|Q8CQE3|Y165_STAES Uncharacterized response regulatory protein...   116   2e-25
+sp|Q83RF4|YDEO_SHIFL HTH-type transcriptional regulator YdeO OS=...   116   2e-25
+sp|P76135|YDEO_ECOLI HTH-type transcriptional regulator YdeO OS=...   116   2e-25
+sp|B1Q2A8|NPHR_RHOSO Transcriptional activator NphR OS=Rhodococc...   116   2e-25
+sp|Q8X4Z9|YDEO_ECO57 HTH-type transcriptional regulator YdeO OS=...   115   3e-25
+sp|C6DJR4|RHAS_PECCP HTH-type transcriptional activator RhaS OS=...   115   3e-25
+sp|B1JNC4|RHAR_YERPY HTH-type transcriptional activator RhaR OS=...   115   3e-25
+sp|Q6DA22|RHAS_PECAS HTH-type transcriptional activator RhaS OS=...   115   4e-25
+sp|Q8FHG0|YDEO_ECOL6 HTH-type transcriptional regulator YdeO OS=...   115   4e-25
+sp|O33813|LACR_STAXY Lactose operon transcription activator OS=S...   114   9e-25
+sp|Q9HTI4|GBDR_PSEAE HTH-type transcriptional regulator GbdR OS=...   114   1e-24
+sp|A0A0H2ZIC3|GBDR_PSEAB HTH-type transcriptional regulator GbdR...   114   1e-24
+sp|G3XCU2|ARGR_PSEAE HTH-type transcriptional regulator ArgR OS=...   114   1e-24
+sp|Q05587|POCR_SALTY Regulatory protein PocR OS=Salmonella typhi...   113   2e-24
+sp|P77402|YDIP_ECOLI Uncharacterized HTH-type transcriptional re...   112   3e-24
+sp|Q9Z3Q6|RHRA_RHIME Transcriptional activator RhrA OS=Rhizobium...   112   3e-24
+sp|P35319|ARACL_STRLI Putative AraC-like transcription regulator...   110   8e-24
+sp|Q9WW32|MTRA_NEIGO HTH-type transcriptional regulator MtrA OS=...   110   1e-23
+sp|P43465|RAFR_PEDPE Raffinose operon transcriptional regulatory...   110   2e-23
+sp|O31522|YESS_BACSU HTH-type transcriptional regulator YesS OS=...   110   2e-23
+sp|Q47129|FEAR_ECOLI Transcriptional activator FeaR OS=Escherich...   109   2e-23
+sp|Q00753|MSMR_STRMU Msm operon regulatory protein OS=Streptococ...   109   3e-23
+sp|P19219|ADAA_BACSU Bifunctional transcriptional activator/DNA ...   109   4e-23
+sp|P43463|AARP_PROST HTH-type transcriptional activator AarP OS=...   108   4e-23
+sp|T2KMF4|PLH4_FORAG Histidine kinase P4 OS=Formosa agariphila (...   107   7e-23
+sp|Q03320|ARACL_STRAT Putative AraC-like transcription regulator...   107   7e-23
+sp|Q48413|RAMA_KLEPN Transcriptional activator RamA OS=Klebsiell...   107   1e-22
+sp|O87389|GLXA_RHIME HTH-type transcriptional regulator GlxA OS=...   107   1e-22
+sp|P0ACI3|XYLR_ECOLI Xylose operon regulatory protein OS=Escheri...   105   3e-22
+sp|P0ACI4|XYLR_ECOL6 Xylose operon regulatory protein OS=Escheri...   105   3e-22
+sp|P0ACI5|XYLR_ECO57 Xylose operon regulatory protein OS=Escheri...   105   3e-22
+sp|O31249|ALKR_ACIAD HTH-type transcriptional regulator AlkR OS=...   104   6e-22
+sp|P54722|YFIF_BACSU Uncharacterized HTH-type transcriptional re...   104   1e-21
+sp|P9WMJ3|VIRS_MYCTU HTH-type transcriptional regulator VirS OS=...   104   1e-21
+sp|P9WMJ2|VIRS_MYCTO HTH-type transcriptional regulator VirS OS=...   104   1e-21
+sp|P40408|BTR_BACSU HTH-type transcriptional activator Btr OS=Ba...   104   1e-21
+sp|P55922|RAMA_ENTCL Transcriptional activator RamA OS=Enterobac...   104   1e-21
+sp|P77601|YKGA_ECOLI Putative HTH-type transcriptional regulator...   104   1e-21
+sp|O31517|YESN_BACSU Uncharacterized transcriptional regulatory ...   103   1e-21
+sp|Q46855|YQHC_ECOLI Uncharacterized HTH-type transcriptional re...   103   1e-21
+sp|Q9HTH5|CDHR_PSEAE HTH-type transcriptional regulator CdhR OS=...   102   4e-21
+sp|Q52620|PQRA_PROVU Regulatory protein PqrA OS=Proteus vulgaris...   101   6e-21
+sp|P31449|YIDL_ECOLI Uncharacterized HTH-type transcriptional re...   101   6e-21
+sp|Q56143|SOXS_SALTY Regulatory protein SoxS OS=Salmonella typhi...   101   7e-21
+sp|P40331|YISR_BACSU Uncharacterized HTH-type transcriptional re...   100   8e-21
+sp|P0A9E2|SOXS_ECOLI Regulatory protein SoxS OS=Escherichia coli...   100   1e-20
+sp|P0A9E3|SOXS_ECOL6 Regulatory protein SoxS OS=Escherichia coli...   100   1e-20
+sp|P0A9E4|SOXS_ECO57 Regulatory protein SoxS OS=Escherichia coli...   100   1e-20
+sp|P45043|XYLR_HAEIN Xylose operon regulatory protein OS=Haemoph...   100   1e-20
+sp|P77634|YBCM_ECOLI Uncharacterized HTH-type transcriptional re...   100   1e-20
+sp|Q9I1P2|VQSM_PSEAE HTH-type transcriptional regulator VqsM OS=...   100   2e-20
+sp|Q8NRR3|RIPA_CORGL HTH-type transcriptional regulator RipA OS=...   100   2e-20
+sp|P68912|Y1430_MYCBO Uncharacterized HTH-type transcriptional r...    99   5e-20
+sp|P9WMJ1|Y1395_MYCTU Uncharacterized HTH-type transcriptional r...    99   5e-20
+sp|P9WMJ0|Y1395_MYCTO Uncharacterized HTH-type transcriptional r...    99   5e-20
+sp|P96660|YDEC_BACSU Uncharacterized HTH-type transcriptional re...    98   7e-20
+sp|P72171|ORUR_PSEAE Ornithine utilization regulator OS=Pseudomo...    97   2e-19
+sp|P0ACH8|MELR_ECOLI Melibiose operon regulatory protein OS=Esch...    97   2e-19
+sp|P0ACH9|MELR_ECOL6 Melibiose operon regulatory protein OS=Esch...    97   2e-19
+sp|Q8FQS2|RIPA_COREF HTH-type transcriptional regulator RipA OS=...    96   2e-19
+sp|P0A2S4|MARA_SALTY Multiple antibiotic resistance protein MarA...    95   5e-19
+sp|P0A2S5|MARA_SALTI Multiple antibiotic resistance protein MarA...    95   5e-19
+sp|P0A2S6|MARA_SALEN Multiple antibiotic resistance protein MarA...    95   5e-19
+sp|P40883|PCHR_PSEAE Regulatory protein PchR OS=Pseudomonas aeru...    94   1e-18
+sp|P0ACH7|MARA_SHIFL Multiple antibiotic resistance protein MarA...    94   1e-18
+sp|P0ACH5|MARA_ECOLI Multiple antibiotic resistance protein MarA...    94   1e-18
+sp|P0ACH6|MARA_ECO57 Multiple antibiotic resistance protein MarA...    94   1e-18
+sp|P76241|NIMR_ECOLI HTH-type transcriptional regulator NimR OS=...    91   7e-18
+sp|P96662|YDEE_BACSU Uncharacterized HTH-type transcriptional re...    91   7e-18
+sp|Q6NI56|RIPA_CORDI HTH-type transcriptional regulator RipA OS=...    89   3e-17
+sp|P43461|YCGK_PSEVC Uncharacterized HTH-type transcriptional re...    88   7e-17
+sp|Q51872|LUMQ_PHOLE Probable transcriptional regulator LumQ OS=...    83   3e-15
+sp|P17410|CHBR_ECOLI HTH-type transcriptional regulator ChbR OS=...    76   5e-13
+
+Sequences not found previously or not previously below threshold:
+
+sp|P0ACI2|ROB_SHIFL Right origin-binding protein OS=Shigella fle...    99   3e-20
+sp|P0ACI0|ROB_ECOLI Right origin-binding protein OS=Escherichia ...    99   3e-20
+sp|P0ACI1|ROB_ECO57 Right origin-binding protein OS=Escherichia ...    99   3e-20
+sp|P28816|TETD_ECOLX Transposon Tn10 TetD protein OS=Escherichia...    87   2e-16
+sp|Q04713|XYLS4_PSEPU XylDLEGF operon transcriptional activator ...    81   7e-15
+sp|P95283|Y1931_MYCTU HTH-type transcriptional regulator Rv1931c...    80   2e-14
+sp|O34901|YOBQ_BACSU Uncharacterized HTH-type transcriptional re...    80   2e-14
+sp|P07859|XYLS_PSEPU XylDLEGF operon transcriptional activator O...    80   2e-14
+sp|Q04710|XYLS1_PSEPU XylDLEGF operon transcriptional activator ...    80   2e-14
+sp|Q05335|XYLS3_PSEPU XylDLEGF operon transcriptional activator ...    79   4e-14
+sp|P43462|THCR_RHOER Probable thc operon regulatory protein OS=R...    78   7e-14
+sp|O31456|YBFP_BACSU Uncharacterized HTH-type transcriptional re...    77   1e-13
+sp|P55449|Y4FK_SINFN Uncharacterized HTH-type transcriptional re...    72   4e-12
+sp|Q05092|XYLS2_PSEPU XylDLEGF operon transcriptional activator ...    69   3e-11
+sp|P36547|EUTR_ECOLI HTH-type DNA-binding transcriptional activa...    67   1e-10
+sp|Q9ZFU7|EUTR_SALTY HTH-type DNA-binding transcriptional activa...    66   5e-10
+sp|P26189|ADA_SALTY Regulatory protein ada OS=Salmonella typhimu...    64   1e-09
+sp|P26950|CAF1R_YERPE F1 operon positive regulatory protein OS=Y...    62   4e-09
+sp|P31778|HRPB_RALSO Regulatory protein HrpB OS=Ralstonia solana...    62   6e-09
+sp|P06134|ADA_ECOLI Bifunctional transcriptional activator/DNA r...    61   7e-09
+sp|P9WJW3|ALKA_MYCTU Probable bifunctional transcriptional activ...    49   4e-05
+sp|P9WJW2|ALKA_MYCTO Probable bifunctional transcriptional activ...    49   4e-05
+sp|P69343|INVF_SALTY Invasion protein InvF OS=Salmonella typhimu...    46   3e-04
+sp|P69342|INVF_SALTI Invasion protein InvF OS=Salmonella typhi O...    46   3e-04
+sp|P0A2S8|MXIE_SHISO Transcriptional regulator MxiE OS=Shigella ...    42   0.004
+sp|P0A2S7|MXIE_SHIFL Transcriptional regulator MxiE OS=Shigella ...    42   0.004
+sp|Q985F6|GLNE_RHILO Bifunctional glutamine synthetase adenylylt...    39   0.049
+sp|Q60B78|SURA_METCA Chaperone SurA OS=Methylococcus capsulatus ...    37   0.17 
+sp|Q86ZC1|KINH_BOTFU Kinesin heavy chain OS=Botryotinia fuckelia...    37   0.20 
+sp|Q12K61|SURA_SHEDO Chaperone SurA OS=Shewanella denitrificans ...    36   0.28 
+sp|Q475Q3|SURA_CUPPJ Chaperone SurA OS=Cupriavidus pinatubonensi...    36   0.30 
+sp|Q223E5|SURA_ALBFT Chaperone SurA OS=Albidiferax ferrireducens...    36   0.31 
+sp|Q9RC52|CITT_HALH5 Transcriptional regulatory protein CitT OS=...    36   0.34 
+sp|Q8EB95|SURA_SHEON Chaperone SurA OS=Shewanella oneidensis (st...    35   0.43 
+sp|Q07YK0|SURA_SHEFN Chaperone SurA OS=Shewanella frigidimarina ...    35   0.52 
+sp|Q2HJC0|NGRN_BOVIN Neugrin OS=Bos taurus OX=9913 GN=NGRN PE=2 ...    35   0.55 
+sp|Q7NQB0|SURA_CHRVO Chaperone SurA OS=Chromobacterium violaceum...    35   0.66 
+sp|Q5R7E7|NGRN_PONAB Neugrin OS=Pongo abelii OX=9601 GN=NGRN PE=...    35   0.74 
+sp|Q0HS08|SURA_SHESR Chaperone SurA OS=Shewanella sp. (strain MR...    35   0.88 
+sp|Q0HLT0|SURA_SHESM Chaperone SurA OS=Shewanella sp. (strain MR...    34   0.97 
+sp|O85057|LIHY_GEOSE Limonene hydroxylase OS=Geobacillus stearot...    34   1.2  
+sp|Q99KS2|NGRN_MOUSE Neugrin OS=Mus musculus OX=10090 GN=Ngrn PE...    34   1.5  
+sp|Q0D1J4|EIF3H_ASPTN Eukaryotic translation initiation factor 3...    34   1.6  
+sp|Q9T003|ASMT_ARATH Acetylserotonin O-methyltransferase OS=Arab...    34   1.6  
+sp|Q8UH57|BETI_AGRFC HTH-type transcriptional regulator BetI OS=...    34   1.8  
+sp|Q5E863|SURA_ALIF1 Chaperone SurA OS=Aliivibrio fischeri (stra...    34   1.8  
+sp|Q3T1H2|NGRN_RAT Neugrin OS=Rattus norvegicus OX=10116 GN=Ngrn...    34   1.9  
+sp|A6VSX5|SLMA_MARMS Nucleoid occlusion factor SlmA OS=Marinomon...    33   2.2  
+sp|B2VE96|EX7L_ERWT9 Exodeoxyribonuclease 7 large subunit OS=Erw...    33   2.3  
+sp|Q8Y220|SURA_RALSO Chaperone SurA OS=Ralstonia solanacearum (s...    33   2.4  
+sp|P55790|OMTA_ASPFN Sterigmatocystin 8-O-methyltransferase OS=A...    33   2.7  
+sp|P76138|YNEL_ECOLI Putative HTH-type transcriptional regulator...    33   3.1  
+sp|P77615|YCJW_ECOLI Uncharacterized HTH-type transcriptional re...    33   3.4  
+sp|A4J671|Y2057_DESRM UPF0122 protein Dred_2057 OS=Desulforamulu...    32   3.8  
+sp|Q92R86|GLNE_RHIME Bifunctional glutamine synthetase adenylylt...    32   4.3  
+sp|A8AY34|ADDB_STRGC ATP-dependent helicase/deoxyribonuclease su...    32   4.3  
+sp|A8EYB9|UVRC_RICCK UvrABC system protein C OS=Rickettsia canad...    32   4.8  
+sp|F2G1U7|SLMA_ALTMD Nucleoid occlusion factor SlmA OS=Alteromon...    32   4.9  
+sp|Q4JW20|COAE_CORJK Dephospho-CoA kinase OS=Corynebacterium jei...    32   4.9  
+sp|A8FQ72|SLMA_SHESH Nucleoid occlusion factor SlmA OS=Shewanell...    32   5.8  
+sp|A5DEQ9|SFH5_PICGU Phosphatidylinositol transfer protein SFH5 ...    32   5.9  
+sp|B1KL08|SLMA_SHEWM Nucleoid occlusion factor SlmA OS=Shewanell...    32   6.1  
+sp|Q32K41|SURA_SHIDS Chaperone SurA OS=Shigella dysenteriae sero...    32   6.2  
+sp|A9KY01|SLMA_SHEB9 Nucleoid occlusion factor SlmA OS=Shewanell...    32   7.0  
+sp|A6WIA3|SLMA_SHEB8 Nucleoid occlusion factor SlmA OS=Shewanell...    32   7.0  
+sp|A3CZJ3|SLMA_SHEB5 Nucleoid occlusion factor SlmA OS=Shewanell...    32   7.0  
+sp|B8E4J2|SLMA_SHEB2 Nucleoid occlusion factor SlmA OS=Shewanell...    32   7.0  
+sp|Q6D0E2|SURA_PECAS Chaperone SurA OS=Pectobacterium atroseptic...    31   8.3  
+sp|Q3Z5V6|SURA_SHISS Chaperone SurA OS=Shigella sonnei (strain S...    31   8.6  
+sp|P0ABZ9|SURA_SHIFL Chaperone SurA OS=Shigella flexneri OX=623 ...    31   8.6  
+sp|Q326I0|SURA_SHIBS Chaperone SurA OS=Shigella boydii serotype ...    31   8.6  
+sp|Q15QB3|SURA_PSEA6 Chaperone SurA OS=Pseudoalteromonas atlanti...    31   8.6  
+sp|Q1RGE4|SURA_ECOUT Chaperone SurA OS=Escherichia coli (strain ...    31   8.6  
+sp|P0ABZ6|SURA_ECOLI Chaperone SurA OS=Escherichia coli (strain ...    31   8.6  
+sp|P0ABZ7|SURA_ECOL6 Chaperone SurA OS=Escherichia coli O6:H1 (s...    31   8.6  
+sp|P0ABZ8|SURA_ECO57 Chaperone SurA OS=Escherichia coli O157:H7 ...    31   8.6  
+sp|A3QIQ2|SLMA_SHELP Nucleoid occlusion factor SlmA OS=Shewanell...    31   9.1  
+sp|Q87ST4|SURA_VIBPA Chaperone SurA OS=Vibrio parahaemolyticus s...    31   9.5  
+sp|Q07WF8|SLMA_SHEFN Nucleoid occlusion factor SlmA OS=Shewanell...    31   9.7  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.314    0.130    0.305 
+
+Lambda     K      H
+   0.267   0.0397    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 242,876,694
+Number of Sequences: 569516
+Number of extensions: 9550196
+Number of successful extensions: 33014
+Number of sequences better than 10.0: 442
+Number of HSP's better than 10.0 without gapping: 747
+Number of HSP's successfully gapped in prelim test: 241
+Number of HSP's that attempted gapping in prelim test: 31535
+Number of HSP's gapped (non-prelim): 1215
+length of query: 276
+length of database: 205,866,895
+effective HSP length: 116
+effective length of query: 160
+effective length of database: 139,803,039
+effective search space: 22368486240
+effective search space used: 22368486240
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.5 bits)
+S2: 69 (31.2 bits)
