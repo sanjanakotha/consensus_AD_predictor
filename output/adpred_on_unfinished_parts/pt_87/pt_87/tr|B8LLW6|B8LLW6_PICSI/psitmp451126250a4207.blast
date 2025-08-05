@@ -1,0 +1,861 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (592 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O22056|SIGB_ARATH RNA polymerase sigma factor sigB OS=Arabido...   370   e-101
+sp|P26683|SIGA_NOSS1 RNA polymerase sigma factor SigA OS=Nostoc ...   331   9e-90
+sp|P38023|SIGA1_SYNE7 RNA polymerase sigma factor SigA1 OS=Synec...   311   1e-83
+sp|P52322|SIGA_MICAE RNA polymerase sigma factor SigA OS=Microcy...   305   7e-82
+sp|P74565|SIGA_SYNY3 RNA polymerase sigma factor SigA OS=Synecho...   301   1e-80
+sp|Q9LD95|SIGF_ARATH RNA polymerase sigma factor sigF, chloropla...   288   1e-76
+sp|P0A4J0|SIGA_STRR6 RNA polymerase sigma factor SigA OS=Strepto...   253   2e-66
+sp|P0A4I9|SIGA_STRPN RNA polymerase sigma factor SigA OS=Strepto...   253   2e-66
+sp|P33118|RPSB_CORDI RNA polymerase sigma factor SigB OS=Coryneb...   253   3e-66
+sp|P52329|SIGA_ENTFA RNA polymerase sigma factor SigA OS=Enteroc...   249   5e-65
+sp|O66381|SIGA_HALH5 RNA polymerase sigma factor SigA OS=Halalka...   248   8e-65
+sp|P52331|SIGA_LISMO RNA polymerase sigma factor SigA OS=Listeri...   248   1e-64
+sp|Q99TT5|SIGA_STAAN RNA polymerase sigma factor SigA OS=Staphyl...   248   1e-64
+sp|Q92BQ6|SIGA_LISIN RNA polymerase sigma factor SigA OS=Listeri...   248   1e-64
+sp|Q8CP24|SIGA_STAES RNA polymerase sigma factor SigA OS=Staphyl...   248   1e-64
+sp|Q5HNY7|SIGA_STAEQ RNA polymerase sigma factor SigA OS=Staphyl...   248   1e-64
+sp|P0A0I9|SIGA_STAAW RNA polymerase sigma factor SigA OS=Staphyl...   247   2e-64
+sp|Q6G905|SIGA_STAAS RNA polymerase sigma factor SigA OS=Staphyl...   247   2e-64
+sp|Q6GGD8|SIGA_STAAR RNA polymerase sigma factor SigA OS=Staphyl...   247   2e-64
+sp|P0A0I8|SIGA_STAAM RNA polymerase sigma factor SigA OS=Staphyl...   247   2e-64
+sp|Q5HFJ9|SIGA_STAAC RNA polymerase sigma factor SigA OS=Staphyl...   247   2e-64
+sp|P0A0J0|SIGA_STAA8 RNA polymerase sigma factor SigA OS=Staphyl...   247   2e-64
+sp|P06224|SIGA_BACSU RNA polymerase sigma factor SigA OS=Bacillu...   245   6e-64
+sp|Q31ME3|SIGA2_SYNE7 RNA polymerase sigma factor SigA2 OS=Synec...   245   9e-64
+sp|O33662|SIGA_STRMU RNA polymerase sigma factor SigA OS=Strepto...   244   1e-63
+sp|P18183|SIGA_STRCO RNA polymerase principal sigma factor HrdB ...   244   2e-63
+sp|P9WGI1|SIGA_MYCTU RNA polymerase sigma factor SigA OS=Mycobac...   243   2e-63
+sp|P9WGI0|SIGA_MYCTO RNA polymerase sigma factor SigA OS=Mycobac...   243   2e-63
+sp|P0A603|SIGA_MYCBO RNA polymerase sigma factor SigA OS=Mycobac...   243   2e-63
+sp|P52328|SIGA_BACSP RNA polymerase sigma factor SigA OS=Bacillu...   243   4e-63
+sp|P77994|SIGA_THEMA RNA polymerase sigma factor SigA OS=Thermot...   242   6e-63
+sp|P77951|SIGA_STRGR RNA polymerase sigma factor SigA OS=Strepto...   241   2e-62
+sp|B1VXR4|SIGA_STRGG RNA polymerase principal sigma factor HrdB ...   241   2e-62
+sp|P59117|RPOD_LEPIN RNA polymerase sigma factor RpoD OS=Leptosp...   240   3e-62
+sp|P61540|RPOD_LEPIC RNA polymerase sigma factor RpoD OS=Leptosp...   240   3e-62
+sp|Q04506|SIGA_LACLA RNA polymerase sigma factor SigA OS=Lactoco...   239   4e-62
+sp|P58290|SIGA_LACLC RNA polymerase sigma factor SigA (Fragment)...   238   1e-61
+sp|Q03066|RPSC_NOSS1 RNA polymerase sigma-C factor OS=Nostoc sp....   235   6e-61
+sp|P9WGI5|SIGB_MYCTU RNA polymerase sigma factor SigB OS=Mycobac...   235   9e-61
+sp|P9WGI4|SIGB_MYCTO RNA polymerase sigma factor SigB OS=Mycobac...   235   9e-61
+sp|Q31QG5|SIGA3_SYNE7 RNA polymerase sigma factor SigA3 OS=Synec...   234   1e-60
+sp|Q9Z7F0|SIGA_CHLPN RNA polymerase sigma factor SigA OS=Chlamyd...   234   2e-60
+sp|P18182|HRDA_STRCO RNA polymerase principal sigma factor HrdA ...   233   5e-60
+sp|P56835|SIGA_CHLMU RNA polymerase sigma factor SigA OS=Chlamyd...   233   5e-60
+sp|P18333|SIGA_CHLTR RNA polymerase sigma factor SigA OS=Chlamyd...   232   6e-60
+sp|P26480|RPOD_PSEAE RNA polymerase sigma factor RpoD OS=Pseudom...   232   8e-60
+sp|P52326|RPOD_PSEPH RNA polymerase sigma factor RpoD OS=Pseudom...   231   1e-59
+sp|P27785|SIGA_KITAU RNA polymerase sigma factor SigA OS=Kitasat...   231   1e-59
+sp|P52327|RPOD_PSEPU RNA polymerase sigma factor RpoD OS=Pseudom...   229   6e-59
+sp|Q59996|RPSC_SYNY3 Probable RNA polymerase sigma-C factor OS=S...   228   1e-58
+sp|P52323|RPOD_BORBU RNA polymerase sigma factor RpoD OS=Borreli...   226   4e-58
+sp|O24744|RPOD_SHEVD RNA polymerase sigma factor RpoD OS=Shewane...   226   6e-58
+sp|O83506|RPOD_TREPA RNA polymerase sigma factor RpoD OS=Trepone...   224   1e-57
+sp|P17531|RPOD_MYXXA RNA polymerase sigma factor RpoD OS=Myxococ...   224   1e-57
+sp|D5AQI9|RPOD_RHOCB RNA polymerase sigma factor RpoD OS=Rhodoba...   224   2e-57
+sp|P0A2E3|RPOD_SALTY RNA polymerase sigma factor RpoD OS=Salmone...   224   2e-57
+sp|P0A2E4|RPOD_SALTI RNA polymerase sigma factor RpoD OS=Salmone...   224   2e-57
+sp|P00579|RPOD_ECOLI RNA polymerase sigma factor RpoD OS=Escheri...   223   3e-57
+sp|P0CZ15|RPOD_RHOCA RNA polymerase sigma factor RpoD OS=Rhodoba...   223   3e-57
+sp|P55993|RPOD_HELPY RNA polymerase sigma factor RpoD OS=Helicob...   223   4e-57
+sp|Q59753|RPOD_RHIME RNA polymerase sigma factor RpoD OS=Rhizobi...   222   6e-57
+sp|Q9ZMY3|RPOD_HELPJ RNA polymerase sigma factor RpoD OS=Helicob...   222   8e-57
+sp|Q8PG33|RPOD_XANAC RNA polymerase sigma factor RpoD OS=Xanthom...   222   8e-57
+sp|Q8P4H2|RPOD_XANCP RNA polymerase sigma factor RpoD OS=Xanthom...   222   9e-57
+sp|P57163|RPOD_BUCAI RNA polymerase sigma factor RpoD OS=Buchner...   222   9e-57
+sp|P43766|RPOD_HAEIN RNA polymerase sigma factor RpoD OS=Haemoph...   221   9e-57
+sp|P32001|RPOD_BUCAP RNA polymerase sigma factor RpoD OS=Buchner...   221   9e-57
+sp|Q9EZJ8|SIGA_THEAQ RNA polymerase sigma factor SigA OS=Thermus...   221   1e-56
+sp|Q2K619|RPOD_RHIEC RNA polymerase sigma factor RpoD OS=Rhizobi...   221   1e-56
+sp|P33452|RPOD_AGRFC RNA polymerase sigma factor RpoD OS=Agrobac...   221   1e-56
+sp|P52324|RPOD_CAUVC RNA polymerase sigma factor RpoD OS=Cauloba...   221   2e-56
+sp|P33656|SIGA_CLOAB RNA polymerase sigma factor SigA OS=Clostri...   220   3e-56
+sp|Q89B10|RPOD_BUCBP RNA polymerase sigma factor RpoD OS=Buchner...   218   8e-56
+sp|Q9PDM9|RPOD_XYLFA RNA polymerase sigma factor RpoD OS=Xylella...   218   9e-56
+sp|Q87DT7|RPOD_XYLFT RNA polymerase sigma factor RpoD OS=Xylella...   218   9e-56
+sp|Q72L95|SIGA_THET2 RNA polymerase sigma factor SigA OS=Thermus...   218   9e-56
+sp|P18249|HRDD_STRCO RNA polymerase principal sigma factor HrdD ...   218   1e-55
+sp|Q83BB6|RPOD_COXBU RNA polymerase sigma factor RpoD OS=Coxiell...   216   4e-55
+sp|Q60012|HRDD_STRVF RNA polymerase principal sigma factor HrdD ...   215   1e-54
+sp|O24621|SIGC_ARATH RNA polymerase sigma factor sigC OS=Arabido...   213   3e-54
+sp|Q03065|RPSB_NOSS1 RNA polymerase sigma-B factor OS=Nostoc sp....   212   9e-54
+sp|Q59914|HRDD_STRGR RNA polymerase principal sigma factor HrdD ...   210   2e-53
+sp|P52325|RPOD_NEIGO RNA polymerase sigma factor RpoD OS=Neisser...   210   2e-53
+sp|Q4UJT1|RPOD_RICFE RNA polymerase sigma factor RpoD OS=Rickett...   208   1e-52
+sp|Q92FZ8|RPOD_RICCN RNA polymerase sigma factor RpoD OS=Rickett...   207   1e-52
+sp|Q68VQ5|RPOD_RICTY RNA polymerase sigma factor RpoD OS=Rickett...   207   2e-52
+sp|P33451|RPOD_RICPR RNA polymerase sigma factor RpoD OS=Rickett...   207   2e-52
+sp|Q31QR8|SIGA4_SYNE7 RNA polymerase sigma factor SigA4 OS=Synec...   206   4e-52
+sp|Q1RKH7|RPOD_RICBR RNA polymerase sigma factor RpoD OS=Rickett...   204   1e-51
+sp|P47491|SIGA_MYCGE RNA polymerase sigma factor SigA OS=Mycopla...   201   2e-50
+sp|P78022|SIGA_MYCPN RNA polymerase sigma factor SigA OS=Mycopla...   199   5e-50
+sp|P18184|HRDC_STRCO RNA polymerase principal sigma factor HrdC ...   198   1e-49
+sp|Q9ZSL6|SIGD_ARATH RNA polymerase sigma factor sigD, chloropla...   196   3e-49
+sp|P43344|RPOD_SERMA RNA polymerase sigma factor RpoD (Fragment)...   191   1e-47
+sp|Q0J7T6|SIGA_ORYSJ RNA polymerase sigma factor sigA OS=Oryza s...   184   2e-45
+sp|P0DM81|RPOS_SALTY RNA polymerase sigma factor RpoS OS=Salmone...   180   4e-44
+sp|F5ZTT9|RPOS_SALTU RNA polymerase sigma factor RpoS OS=Salmone...   180   4e-44
+sp|P0A2E6|RPOS_SALTI RNA polymerase sigma factor RpoS OS=Salmone...   180   4e-44
+sp|D0ZVL4|RPOS_SALT1 RNA polymerase sigma factor RpoS OS=Salmone...   180   4e-44
+sp|P0A2E7|RPOS_SALDU RNA polymerase sigma factor RpoS OS=Salmone...   180   4e-44
+sp|P47765|RPOS_YEREN RNA polymerase sigma factor RpoS OS=Yersini...   180   4e-44
+sp|P13445|RPOS_ECOLI RNA polymerase sigma factor RpoS OS=Escheri...   180   4e-44
+sp|P35540|RPOS_SHIFL RNA polymerase sigma factor RpoS OS=Shigell...   179   4e-44
+sp|O51804|RPOS_VIBCH RNA polymerase sigma factor RpoS OS=Vibrio ...   178   1e-43
+sp|P45684|RPOS_PSEAE RNA polymerase sigma factor RpoS OS=Pseudom...   178   1e-43
+sp|O24629|SIGA_ARATH RNA polymerase sigma factor sigA OS=Arabido...   175   1e-42
+sp|Q9KI19|RPOS_COXBU RNA polymerase sigma factor RpoS OS=Coxiell...   174   2e-42
+sp|Q9ZNX9|SIGE_ARATH RNA polymerase sigma factor sigE, chloropla...   156   5e-37
+sp|Q07083|RPSC_MYXXA RNA polymerase sigma-C factor OS=Myxococcus...   104   3e-21
+sp|B8H3C3|RPOH_CAUVN RNA polymerase sigma factor RpoH OS=Cauloba...   100   6e-20
+sp|P0CAW9|RPOH_CAUVC RNA polymerase sigma factor RpoH OS=Cauloba...   100   6e-20
+sp|Q01624|RPSB_STIAD RNA polymerase sigma-B factor OS=Stigmatell...    96   8e-19
+sp|P50507|RPOH_RHIRD RNA polymerase sigma factor RpoH OS=Rhizobi...    94   4e-18
+sp|P19433|RPSB_MYXXA RNA polymerase sigma-B factor OS=Myxococcus...    92   1e-17
+sp|P50512|RPOH_ZYMMO RNA polymerase sigma factor RpoH OS=Zymomon...    91   4e-17
+sp|P19940|RPSG_BACSU RNA polymerase sigma-G factor OS=Bacillus s...    89   8e-17
+sp|P26764|RPSF_BACLI RNA polymerase sigma-F factor OS=Bacillus l...    88   2e-16
+sp|P35145|RPSF_PRIMG RNA polymerase sigma-F factor OS=Priestia m...    86   9e-16
+sp|P44404|RPOH_HAEIN RNA polymerase sigma factor RpoH OS=Haemoph...    84   3e-15
+sp|Q89B27|RPOH_BUCBP RNA polymerase sigma factor RpoH OS=Buchner...    83   5e-15
+sp|P50511|RPOH_VIBCH RNA polymerase sigma factor RpoH OS=Vibrio ...    83   7e-15
+sp|P07860|RPSF_BACSU RNA polymerase sigma-F factor OS=Bacillus s...    81   2e-14
+sp|P50510|RPOH_SERMA RNA polymerase sigma factor RpoH OS=Serrati...    81   3e-14
+sp|P50509|RPOH_PROMI RNA polymerase sigma factor RpoH OS=Proteus...    80   6e-14
+sp|Q8DD54|RPOH_VIBVU RNA polymerase sigma factor RpoH OS=Vibrio ...    78   3e-13
+sp|P33658|RPSG_CLOAB RNA polymerase sigma-G factor OS=Clostridiu...    77   4e-13
+sp|P0AGB3|RPOH_ECOLI RNA polymerase sigma factor RpoH OS=Escheri...    76   8e-13
+sp|P0AGB4|RPOH_ECOL6 RNA polymerase sigma factor RpoH OS=Escheri...    76   8e-13
+sp|P0AGB5|RPOH_ECO57 RNA polymerase sigma factor RpoH OS=Escheri...    76   8e-13
+sp|O05385|RPOH_BUCAI RNA polymerase sigma factor RpoH OS=Buchner...    76   9e-13
+sp|P11539|RPOH_CITFR RNA polymerase sigma factor RpoH OS=Citroba...    75   2e-12
+sp|P50508|RPOH_ENTCL RNA polymerase sigma factor RpoH OS=Enterob...    73   6e-12
+sp|Q8KA76|RPOH_BUCAP RNA polymerase sigma factor RpoH OS=Buchner...    73   9e-12
+sp|P12254|RPSK_BACSU RNA polymerase sigma-K factor OS=Bacillus s...    70   4e-11
+sp|P06574|RPSB_BACSU RNA polymerase sigma-B factor OS=Bacillus s...    69   1e-10
+sp|P37970|RPOF_KITAU RNA polymerase sigma-F factor OS=Kitasatosp...    67   4e-10
+sp|P9WGI3|SIGF_MYCTU RNA polymerase sigma factor SigF OS=Mycobac...    66   1e-09
+sp|P9WGI2|SIGF_MYCTO RNA polymerase sigma factor SigF OS=Mycobac...    66   1e-09
+sp|P06222|RPSE_BACSU RNA polymerase sigma-E factor OS=Bacillus s...    66   1e-09
+sp|P33657|RPSE_CLOAB RNA polymerase sigma-E factor OS=Clostridiu...    65   2e-09
+sp|P37971|RPOF_STRCO RNA polymerase sigma-F factor OS=Streptomyc...    65   2e-09
+sp|P62179|RP35_BACTK RNA polymerase sigma-35 factor OS=Bacillus ...    64   3e-09
+sp|P62178|RP35_BACCR RNA polymerase sigma-35 factor OS=Bacillus ...    64   3e-09
+sp|P62177|RP35_BACAN RNA polymerase sigma-35 factor OS=Bacillus ...    64   3e-09
+sp|P17211|RPSW_STRCO RNA polymerase sigma factor WhiG OS=Strepto...    64   4e-09
+sp|P26768|RPSX_BACTK Putative RNA polymerase sigma-G factor (Fra...    63   9e-09
+sp|P10726|RPSD_BACSU RNA polymerase sigma-D factor OS=Bacillus s...    62   2e-08
+sp|P62181|RP28_BACTK RNA polymerase sigma-28 factor OS=Bacillus ...    61   2e-08
+sp|P62180|RP28_BACCR RNA polymerase sigma-28 factor OS=Bacillus ...    61   2e-08
+sp|P62182|RP28_BACAN RNA polymerase sigma-28 factor OS=Bacillus ...    61   2e-08
+sp|Q9K5J6|RPSB_BACAN RNA polymerase sigma-B factor OS=Bacillus a...    61   2e-08
+sp|P42378|RPOH_PSEAE RNA polymerase sigma factor RpoH OS=Pseudom...    59   2e-07
+sp|P0A2E8|FLIA_SALTY RNA polymerase sigma factor FliA OS=Salmone...    59   2e-07
+sp|P0A2E9|FLIA_SALTI RNA polymerase sigma factor FliA OS=Salmone...    59   2e-07
+sp|P0AEM6|FLIA_ECOLI RNA polymerase sigma factor FliA OS=Escheri...    58   2e-07
+sp|P0AEM7|FLIA_ECOL6 RNA polymerase sigma factor FliA OS=Escheri...    58   2e-07
+sp|P0AEM8|FLIA_ECO57 RNA polymerase sigma factor FliA OS=Escheri...    58   2e-07
+sp|P29248|FLIA_PSEAE RNA polymerase sigma factor FliA OS=Pseudom...    56   9e-07
+sp|P52621|FLIA_YEREN RNA polymerase sigma factor FliA OS=Yersini...    54   4e-06
+sp|P02964|RPSH_BACLI RNA polymerase sigma-H factor OS=Bacillus l...    35   1.3  
+sp|P17869|RPSH_BACSU RNA polymerase sigma-H factor OS=Bacillus s...    35   1.5  
+sp|Q2GDR2|DNLJ_NEOSM DNA ligase OS=Neorickettsia sennetsu (strai...    34   2.8  
+sp|Q9KQH7|FABG_VIBCH 3-oxoacyl-[acyl-carrier-protein] reductase ...    34   3.4  
+sp|P15935|BCNA_CLOPF Bacteriocin UviA OS=Clostridium perfringens...    33   5.3  
+sp|P74856|SSAV_SALTY Secretion system apparatus protein SsaV OS=...    33   6.2  
+sp|D0ZWU0|SSAV_SALT1 Secretion system apparatus protein SsaV OS=...    33   6.2  
+sp|B5FII7|SSAV_SALDC Secretion system apparatus protein SsaV OS=...    33   6.2  
+sp|A0A089FSA4|PRLS_FUNXX Hybrid PKS-NRPS synthetase prlS OS=Fung...    33   8.1  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|O22056|SIGB_ARATH RNA polymerase sigma factor sigB OS=Arabido...   411   e-113
+sp|P26683|SIGA_NOSS1 RNA polymerase sigma factor SigA OS=Nostoc ...   398   e-110
+sp|Q9LD95|SIGF_ARATH RNA polymerase sigma factor sigF, chloropla...   391   e-108
+sp|P38023|SIGA1_SYNE7 RNA polymerase sigma factor SigA1 OS=Synec...   378   e-104
+sp|P77951|SIGA_STRGR RNA polymerase sigma factor SigA OS=Strepto...   374   e-102
+sp|B1VXR4|SIGA_STRGG RNA polymerase principal sigma factor HrdB ...   374   e-102
+sp|Q8CP24|SIGA_STAES RNA polymerase sigma factor SigA OS=Staphyl...   374   e-102
+sp|Q5HNY7|SIGA_STAEQ RNA polymerase sigma factor SigA OS=Staphyl...   374   e-102
+sp|P18183|SIGA_STRCO RNA polymerase principal sigma factor HrdB ...   372   e-102
+sp|O66381|SIGA_HALH5 RNA polymerase sigma factor SigA OS=Halalka...   372   e-102
+sp|P9WGI1|SIGA_MYCTU RNA polymerase sigma factor SigA OS=Mycobac...   372   e-102
+sp|P9WGI0|SIGA_MYCTO RNA polymerase sigma factor SigA OS=Mycobac...   372   e-102
+sp|P0A603|SIGA_MYCBO RNA polymerase sigma factor SigA OS=Mycobac...   372   e-102
+sp|P52328|SIGA_BACSP RNA polymerase sigma factor SigA OS=Bacillu...   370   e-101
+sp|P52322|SIGA_MICAE RNA polymerase sigma factor SigA OS=Microcy...   369   e-101
+sp|Q92BQ6|SIGA_LISIN RNA polymerase sigma factor SigA OS=Listeri...   368   e-101
+sp|P52331|SIGA_LISMO RNA polymerase sigma factor SigA OS=Listeri...   367   e-100
+sp|P52329|SIGA_ENTFA RNA polymerase sigma factor SigA OS=Enteroc...   365   e-100
+sp|P27785|SIGA_KITAU RNA polymerase sigma factor SigA OS=Kitasat...   364   1e-99
+sp|P0A4J0|SIGA_STRR6 RNA polymerase sigma factor SigA OS=Strepto...   363   2e-99
+sp|P0A4I9|SIGA_STRPN RNA polymerase sigma factor SigA OS=Strepto...   363   2e-99
+sp|P18182|HRDA_STRCO RNA polymerase principal sigma factor HrdA ...   363   2e-99
+sp|O33662|SIGA_STRMU RNA polymerase sigma factor SigA OS=Strepto...   362   4e-99
+sp|P74565|SIGA_SYNY3 RNA polymerase sigma factor SigA OS=Synecho...   362   4e-99
+sp|P06224|SIGA_BACSU RNA polymerase sigma factor SigA OS=Bacillu...   362   4e-99
+sp|Q99TT5|SIGA_STAAN RNA polymerase sigma factor SigA OS=Staphyl...   360   1e-98
+sp|P0A0I9|SIGA_STAAW RNA polymerase sigma factor SigA OS=Staphyl...   360   1e-98
+sp|Q6G905|SIGA_STAAS RNA polymerase sigma factor SigA OS=Staphyl...   360   1e-98
+sp|Q6GGD8|SIGA_STAAR RNA polymerase sigma factor SigA OS=Staphyl...   360   1e-98
+sp|P0A0I8|SIGA_STAAM RNA polymerase sigma factor SigA OS=Staphyl...   360   1e-98
+sp|Q5HFJ9|SIGA_STAAC RNA polymerase sigma factor SigA OS=Staphyl...   360   1e-98
+sp|P0A0J0|SIGA_STAA8 RNA polymerase sigma factor SigA OS=Staphyl...   360   1e-98
+sp|Q04506|SIGA_LACLA RNA polymerase sigma factor SigA OS=Lactoco...   357   1e-97
+sp|P58290|SIGA_LACLC RNA polymerase sigma factor SigA (Fragment)...   355   4e-97
+sp|Q8PG33|RPOD_XANAC RNA polymerase sigma factor RpoD OS=Xanthom...   353   2e-96
+sp|Q8P4H2|RPOD_XANCP RNA polymerase sigma factor RpoD OS=Xanthom...   353   2e-96
+sp|O24629|SIGA_ARATH RNA polymerase sigma factor sigA OS=Arabido...   351   1e-95
+sp|P33118|RPSB_CORDI RNA polymerase sigma factor SigB OS=Coryneb...   350   3e-95
+sp|P57163|RPOD_BUCAI RNA polymerase sigma factor RpoD OS=Buchner...   350   3e-95
+sp|P26480|RPOD_PSEAE RNA polymerase sigma factor RpoD OS=Pseudom...   348   9e-95
+sp|O24744|RPOD_SHEVD RNA polymerase sigma factor RpoD OS=Shewane...   347   2e-94
+sp|Q87DT7|RPOD_XYLFT RNA polymerase sigma factor RpoD OS=Xylella...   347   2e-94
+sp|P32001|RPOD_BUCAP RNA polymerase sigma factor RpoD OS=Buchner...   347   2e-94
+sp|Q9PDM9|RPOD_XYLFA RNA polymerase sigma factor RpoD OS=Xylella...   346   3e-94
+sp|P00579|RPOD_ECOLI RNA polymerase sigma factor RpoD OS=Escheri...   346   4e-94
+sp|Q89B10|RPOD_BUCBP RNA polymerase sigma factor RpoD OS=Buchner...   345   5e-94
+sp|P0A2E3|RPOD_SALTY RNA polymerase sigma factor RpoD OS=Salmone...   345   5e-94
+sp|P0A2E4|RPOD_SALTI RNA polymerase sigma factor RpoD OS=Salmone...   345   5e-94
+sp|P52326|RPOD_PSEPH RNA polymerase sigma factor RpoD OS=Pseudom...   344   1e-93
+sp|P43766|RPOD_HAEIN RNA polymerase sigma factor RpoD OS=Haemoph...   344   2e-93
+sp|P9WGI5|SIGB_MYCTU RNA polymerase sigma factor SigB OS=Mycobac...   343   2e-93
+sp|P9WGI4|SIGB_MYCTO RNA polymerase sigma factor SigB OS=Mycobac...   343   2e-93
+sp|Q31QG5|SIGA3_SYNE7 RNA polymerase sigma factor SigA3 OS=Synec...   343   3e-93
+sp|Q83BB6|RPOD_COXBU RNA polymerase sigma factor RpoD OS=Coxiell...   342   4e-93
+sp|P52327|RPOD_PSEPU RNA polymerase sigma factor RpoD OS=Pseudom...   342   4e-93
+sp|Q03065|RPSB_NOSS1 RNA polymerase sigma-B factor OS=Nostoc sp....   341   1e-92
+sp|D5AQI9|RPOD_RHOCB RNA polymerase sigma factor RpoD OS=Rhodoba...   340   2e-92
+sp|P52324|RPOD_CAUVC RNA polymerase sigma factor RpoD OS=Cauloba...   339   4e-92
+sp|P77994|SIGA_THEMA RNA polymerase sigma factor SigA OS=Thermot...   338   6e-92
+sp|Q31ME3|SIGA2_SYNE7 RNA polymerase sigma factor SigA2 OS=Synec...   338   9e-92
+sp|P0CZ15|RPOD_RHOCA RNA polymerase sigma factor RpoD OS=Rhodoba...   336   3e-91
+sp|Q9EZJ8|SIGA_THEAQ RNA polymerase sigma factor SigA OS=Thermus...   336   4e-91
+sp|P59117|RPOD_LEPIN RNA polymerase sigma factor RpoD OS=Leptosp...   335   5e-91
+sp|P61540|RPOD_LEPIC RNA polymerase sigma factor RpoD OS=Leptosp...   335   5e-91
+sp|Q9Z7F0|SIGA_CHLPN RNA polymerase sigma factor SigA OS=Chlamyd...   333   2e-90
+sp|Q03066|RPSC_NOSS1 RNA polymerase sigma-C factor OS=Nostoc sp....   333   4e-90
+sp|P18333|SIGA_CHLTR RNA polymerase sigma factor SigA OS=Chlamyd...   331   9e-90
+sp|P33451|RPOD_RICPR RNA polymerase sigma factor RpoD OS=Rickett...   330   2e-89
+sp|P52325|RPOD_NEIGO RNA polymerase sigma factor RpoD OS=Neisser...   330   3e-89
+sp|P56835|SIGA_CHLMU RNA polymerase sigma factor SigA OS=Chlamyd...   330   3e-89
+sp|Q92FZ8|RPOD_RICCN RNA polymerase sigma factor RpoD OS=Rickett...   330   3e-89
+sp|Q2K619|RPOD_RHIEC RNA polymerase sigma factor RpoD OS=Rhizobi...   329   3e-89
+sp|Q4UJT1|RPOD_RICFE RNA polymerase sigma factor RpoD OS=Rickett...   329   3e-89
+sp|Q68VQ5|RPOD_RICTY RNA polymerase sigma factor RpoD OS=Rickett...   329   3e-89
+sp|Q1RKH7|RPOD_RICBR RNA polymerase sigma factor RpoD OS=Rickett...   328   7e-89
+sp|P33656|SIGA_CLOAB RNA polymerase sigma factor SigA OS=Clostri...   328   1e-88
+sp|P33452|RPOD_AGRFC RNA polymerase sigma factor RpoD OS=Agrobac...   327   1e-88
+sp|Q59753|RPOD_RHIME RNA polymerase sigma factor RpoD OS=Rhizobi...   326   3e-88
+sp|Q59996|RPSC_SYNY3 Probable RNA polymerase sigma-C factor OS=S...   326   4e-88
+sp|P17531|RPOD_MYXXA RNA polymerase sigma factor RpoD OS=Myxococ...   324   1e-87
+sp|P52323|RPOD_BORBU RNA polymerase sigma factor RpoD OS=Borreli...   324   1e-87
+sp|P18249|HRDD_STRCO RNA polymerase principal sigma factor HrdD ...   323   2e-87
+sp|O83506|RPOD_TREPA RNA polymerase sigma factor RpoD OS=Trepone...   321   9e-87
+sp|Q59914|HRDD_STRGR RNA polymerase principal sigma factor HrdD ...   321   1e-86
+sp|Q60012|HRDD_STRVF RNA polymerase principal sigma factor HrdD ...   319   4e-86
+sp|Q72L95|SIGA_THET2 RNA polymerase sigma factor SigA OS=Thermus...   318   1e-85
+sp|P18184|HRDC_STRCO RNA polymerase principal sigma factor HrdC ...   315   8e-85
+sp|Q9ZMY3|RPOD_HELPJ RNA polymerase sigma factor RpoD OS=Helicob...   310   2e-83
+sp|Q0J7T6|SIGA_ORYSJ RNA polymerase sigma factor sigA OS=Oryza s...   310   3e-83
+sp|O24621|SIGC_ARATH RNA polymerase sigma factor sigC OS=Arabido...   308   7e-83
+sp|P55993|RPOD_HELPY RNA polymerase sigma factor RpoD OS=Helicob...   308   1e-82
+sp|Q31QR8|SIGA4_SYNE7 RNA polymerase sigma factor SigA4 OS=Synec...   301   1e-80
+sp|P43344|RPOD_SERMA RNA polymerase sigma factor RpoD (Fragment)...   298   8e-80
+sp|Q9ZNX9|SIGE_ARATH RNA polymerase sigma factor sigE, chloropla...   290   3e-77
+sp|O51804|RPOS_VIBCH RNA polymerase sigma factor RpoS OS=Vibrio ...   276   4e-73
+sp|Q9KI19|RPOS_COXBU RNA polymerase sigma factor RpoS OS=Coxiell...   275   1e-72
+sp|P45684|RPOS_PSEAE RNA polymerase sigma factor RpoS OS=Pseudom...   273   2e-72
+sp|P47491|SIGA_MYCGE RNA polymerase sigma factor SigA OS=Mycopla...   272   6e-72
+sp|Q9ZSL6|SIGD_ARATH RNA polymerase sigma factor sigD, chloropla...   271   8e-72
+sp|P78022|SIGA_MYCPN RNA polymerase sigma factor SigA OS=Mycopla...   271   8e-72
+sp|P35540|RPOS_SHIFL RNA polymerase sigma factor RpoS OS=Shigell...   268   9e-71
+sp|P13445|RPOS_ECOLI RNA polymerase sigma factor RpoS OS=Escheri...   268   9e-71
+sp|P47765|RPOS_YEREN RNA polymerase sigma factor RpoS OS=Yersini...   268   1e-70
+sp|P0DM81|RPOS_SALTY RNA polymerase sigma factor RpoS OS=Salmone...   267   2e-70
+sp|F5ZTT9|RPOS_SALTU RNA polymerase sigma factor RpoS OS=Salmone...   267   2e-70
+sp|P0A2E6|RPOS_SALTI RNA polymerase sigma factor RpoS OS=Salmone...   267   2e-70
+sp|D0ZVL4|RPOS_SALT1 RNA polymerase sigma factor RpoS OS=Salmone...   267   2e-70
+sp|P0A2E7|RPOS_SALDU RNA polymerase sigma factor RpoS OS=Salmone...   267   2e-70
+sp|Q01624|RPSB_STIAD RNA polymerase sigma-B factor OS=Stigmatell...   233   3e-60
+sp|Q07083|RPSC_MYXXA RNA polymerase sigma-C factor OS=Myxococcus...   231   1e-59
+sp|P35145|RPSF_PRIMG RNA polymerase sigma-F factor OS=Priestia m...   229   6e-59
+sp|P0AGB3|RPOH_ECOLI RNA polymerase sigma factor RpoH OS=Escheri...   227   2e-58
+sp|P0AGB4|RPOH_ECOL6 RNA polymerase sigma factor RpoH OS=Escheri...   227   2e-58
+sp|P0AGB5|RPOH_ECO57 RNA polymerase sigma factor RpoH OS=Escheri...   227   2e-58
+sp|P26764|RPSF_BACLI RNA polymerase sigma-F factor OS=Bacillus l...   227   2e-58
+sp|P50511|RPOH_VIBCH RNA polymerase sigma factor RpoH OS=Vibrio ...   227   2e-58
+sp|P07860|RPSF_BACSU RNA polymerase sigma-F factor OS=Bacillus s...   226   3e-58
+sp|P50512|RPOH_ZYMMO RNA polymerase sigma factor RpoH OS=Zymomon...   226   5e-58
+sp|P50510|RPOH_SERMA RNA polymerase sigma factor RpoH OS=Serrati...   224   1e-57
+sp|Q8KA76|RPOH_BUCAP RNA polymerase sigma factor RpoH OS=Buchner...   223   4e-57
+sp|P50509|RPOH_PROMI RNA polymerase sigma factor RpoH OS=Proteus...   223   5e-57
+sp|P19433|RPSB_MYXXA RNA polymerase sigma-B factor OS=Myxococcus...   221   9e-57
+sp|P50508|RPOH_ENTCL RNA polymerase sigma factor RpoH OS=Enterob...   221   2e-56
+sp|Q8DD54|RPOH_VIBVU RNA polymerase sigma factor RpoH OS=Vibrio ...   220   3e-56
+sp|B8H3C3|RPOH_CAUVN RNA polymerase sigma factor RpoH OS=Cauloba...   218   9e-56
+sp|P0CAW9|RPOH_CAUVC RNA polymerase sigma factor RpoH OS=Cauloba...   218   9e-56
+sp|P11539|RPOH_CITFR RNA polymerase sigma factor RpoH OS=Citroba...   218   1e-55
+sp|P33658|RPSG_CLOAB RNA polymerase sigma-G factor OS=Clostridiu...   218   1e-55
+sp|Q89B27|RPOH_BUCBP RNA polymerase sigma factor RpoH OS=Buchner...   217   3e-55
+sp|O05385|RPOH_BUCAI RNA polymerase sigma factor RpoH OS=Buchner...   215   6e-55
+sp|P44404|RPOH_HAEIN RNA polymerase sigma factor RpoH OS=Haemoph...   214   1e-54
+sp|P19940|RPSG_BACSU RNA polymerase sigma-G factor OS=Bacillus s...   214   2e-54
+sp|P12254|RPSK_BACSU RNA polymerase sigma-K factor OS=Bacillus s...   211   1e-53
+sp|P50507|RPOH_RHIRD RNA polymerase sigma factor RpoH OS=Rhizobi...   209   5e-53
+sp|P06574|RPSB_BACSU RNA polymerase sigma-B factor OS=Bacillus s...   201   1e-50
+sp|P37970|RPOF_KITAU RNA polymerase sigma-F factor OS=Kitasatosp...   200   3e-50
+sp|P37971|RPOF_STRCO RNA polymerase sigma-F factor OS=Streptomyc...   200   3e-50
+sp|Q9K5J6|RPSB_BACAN RNA polymerase sigma-B factor OS=Bacillus a...   198   9e-50
+sp|P9WGI3|SIGF_MYCTU RNA polymerase sigma factor SigF OS=Mycobac...   196   5e-49
+sp|P9WGI2|SIGF_MYCTO RNA polymerase sigma factor SigF OS=Mycobac...   196   5e-49
+sp|P42378|RPOH_PSEAE RNA polymerase sigma factor RpoH OS=Pseudom...   185   7e-46
+sp|P17211|RPSW_STRCO RNA polymerase sigma factor WhiG OS=Strepto...   184   2e-45
+sp|P10726|RPSD_BACSU RNA polymerase sigma-D factor OS=Bacillus s...   182   5e-45
+sp|P0A2E8|FLIA_SALTY RNA polymerase sigma factor FliA OS=Salmone...   181   2e-44
+sp|P0A2E9|FLIA_SALTI RNA polymerase sigma factor FliA OS=Salmone...   181   2e-44
+sp|P0AEM6|FLIA_ECOLI RNA polymerase sigma factor FliA OS=Escheri...   181   2e-44
+sp|P0AEM7|FLIA_ECOL6 RNA polymerase sigma factor FliA OS=Escheri...   181   2e-44
+sp|P0AEM8|FLIA_ECO57 RNA polymerase sigma factor FliA OS=Escheri...   181   2e-44
+sp|P33657|RPSE_CLOAB RNA polymerase sigma-E factor OS=Clostridiu...   181   2e-44
+sp|P62179|RP35_BACTK RNA polymerase sigma-35 factor OS=Bacillus ...   179   4e-44
+sp|P62178|RP35_BACCR RNA polymerase sigma-35 factor OS=Bacillus ...   179   4e-44
+sp|P62177|RP35_BACAN RNA polymerase sigma-35 factor OS=Bacillus ...   179   4e-44
+sp|P06222|RPSE_BACSU RNA polymerase sigma-E factor OS=Bacillus s...   179   8e-44
+sp|P29248|FLIA_PSEAE RNA polymerase sigma factor FliA OS=Pseudom...   177   3e-43
+sp|P62181|RP28_BACTK RNA polymerase sigma-28 factor OS=Bacillus ...   177   3e-43
+sp|P62180|RP28_BACCR RNA polymerase sigma-28 factor OS=Bacillus ...   177   3e-43
+sp|P62182|RP28_BACAN RNA polymerase sigma-28 factor OS=Bacillus ...   177   3e-43
+sp|P52621|FLIA_YEREN RNA polymerase sigma factor FliA OS=Yersini...   166   6e-40
+sp|P26768|RPSX_BACTK Putative RNA polymerase sigma-G factor (Fra...   117   2e-25
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q03474|LAFS_VIBPA RNA polymerase sigma factor for flagellar o...   108   1e-22
+sp|P17869|RPSH_BACSU RNA polymerase sigma-H factor OS=Bacillus s...    80   5e-14
+sp|P02964|RPSH_BACLI RNA polymerase sigma-H factor OS=Bacillus l...    79   1e-13
+sp|P15935|BCNA_CLOPF Bacteriocin UviA OS=Clostridium perfringens...    54   5e-06
+sp|O34843|SIGO_BACSU RNA polymerase sigma factor SigO OS=Bacillu...    48   3e-04
+sp|A3DC74|SIGI3_ACET2 RNA polymerase sigma factor SigI3 OS=Aceti...    47   4e-04
+sp|O31654|SIGI_BACSU RNA polymerase sigma factor SigI OS=Bacillu...    47   5e-04
+sp|A3DEX5|SIGI5_ACET2 RNA polymerase sigma factor SigI5 OS=Aceti...    45   0.002
+sp|P0DUB5|TCSR2_PAESO RNA polymerase sigma factor TcsR OS=Paenic...    44   0.005
+sp|A3DC28|SIGI2_ACET2 RNA polymerase sigma factor SigI2 OS=Aceti...    43   0.006
+sp|Q7YSI9|UNC53_CAEEL Adapter protein unc-53 OS=Caenorhabditis e...    43   0.007
+sp|V5T8H7|TCSR1_PAESO RNA polymerase sigma factor TcsR OS=Paenic...    43   0.009
+sp|Q57637|Y173_METJA Putative transcriptional regulatory protein...    43   0.009
+sp|T0CUB8|TCSR3_PAES9 RNA polymerase sigma factor TcsR OS=Paenic...    42   0.014
+sp|A3DCG2|SIGI4_ACET2 RNA polymerase sigma factor SigI4 OS=Aceti...    41   0.022
+sp|P35620|FLHA_BACSU Flagellar biosynthesis protein FlhA OS=Baci...    41   0.026
+sp|Q8U3D3|Y535_PYRFU Putative transcriptional regulatory protein...    40   0.048
+sp|P56811|TFX_METTM DNA-binding protein Tfx OS=Methanothermobact...    40   0.051
+sp|Q82EA9|RPOE_STRAW RNA polymerase sigma-E factor OS=Streptomyc...    40   0.053
+sp|O68887|RPOE_STRAT RNA polymerase sigma-E factor OS=Streptomyc...    40   0.055
+sp|B1W3T1|SHBA_STRGG ECF RNA polymerase sigma factor ShbA OS=Str...    40   0.065
+sp|Q45585|SIGW_BACSU ECF RNA polymerase sigma factor SigW OS=Bac...    40   0.068
+sp|Q5JHH2|Y2151_THEKO Putative transcriptional regulatory protei...    40   0.080
+sp|Q8R4C2|RUFY2_MOUSE RUN and FYVE domain-containing protein 2 O...    39   0.094
+sp|A3DBH0|SIGI1_ACET2 RNA polymerase sigma factor SigI1 OS=Aceti...    39   0.12 
+sp|P38133|RPOE_STRCO RNA polymerase sigma-E factor OS=Streptomyc...    39   0.13 
+sp|P23221|FIXJ_BRADU Transcriptional regulatory protein FixJ OS=...    39   0.13 
+sp|P0DO98|SIGI_BACAN RNA polymerase sigma factor SigI OS=Bacillu...    39   0.14 
+sp|Q9QYE6|GOGA5_MOUSE Golgin subfamily A member 5 OS=Mus musculu...    39   0.15 
+sp|Q0UVG7|EIF3D_PHANO Eukaryotic translation initiation factor 3...    39   0.15 
+sp|A6UR76|Y1098_METVS Putative transcriptional regulatory protei...    39   0.16 
+sp|O27001|TFX_METTH DNA-binding protein Tfx OS=Methanothermobact...    39   0.17 
+sp|Q57789|Y343_METJA Uncharacterized protein MJ0343 OS=Methanoca...    38   0.20 
+sp|A4J671|Y2057_DESRM UPF0122 protein Dred_2057 OS=Desulforamulu...    38   0.20 
+sp|P15215|LAMC1_DROME Laminin subunit gamma-1 OS=Drosophila mela...    38   0.21 
+sp|O58497|Y763_PYRHO Putative transcriptional regulatory protein...    38   0.23 
+sp|O07627|YLAC_BACSU RNA polymerase sigma factor YlaC OS=Bacillu...    38   0.24 
+sp|A3DJP3|SIGI8_ACET2 RNA polymerase sigma factor SigI8 OS=Aceti...    38   0.27 
+sp|Q6M132|Y086_METMP Putative transcriptional regulatory protein...    38   0.28 
+sp|P44969|IGA0_HAEIN Immunoglobulin A1 protease autotransporter ...    38   0.29 
+sp|Q58651|Y1254_METJA Uncharacterized protein MJ1254 OS=Methanoc...    38   0.31 
+sp|Q9UZ54|Y1300_PYRAB Putative transcriptional regulatory protei...    37   0.31 
+sp|A6W1F1|SYA_MARMS Alanine--tRNA ligase OS=Marinomonas sp. (str...    37   0.34 
+sp|Q84M93|MPK17_ARATH Mitogen-activated protein kinase 17 OS=Ara...    37   0.37 
+sp|O05404|SIGV_BACSU RNA polymerase sigma factor SigV OS=Bacillu...    37   0.37 
+sp|A0A089FSA4|PRLS_FUNXX Hybrid PKS-NRPS synthetase prlS OS=Fung...    37   0.40 
+sp|A0AIG2|EX7L_LISW6 Exodeoxyribonuclease 7 large subunit OS=Lis...    37   0.40 
+sp|P35458|DCTN1_CHICK Dynactin subunit 1 OS=Gallus gallus OX=903...    37   0.44 
+sp|Q5R5R4|RUFY2_PONAB RUN and FYVE domain-containing protein 2 O...    37   0.48 
+sp|O66937|MALQ_AQUAE 4-alpha-glucanotransferase OS=Aquifex aeoli...    37   0.51 
+sp|Q8WXA3|RUFY2_HUMAN RUN and FYVE domain-containing protein 2 O...    37   0.54 
+sp|Q5D7J0|TRIM5_COLGU Tripartite motif-containing protein 5 OS=C...    37   0.56 
+sp|Q9BTF0|THUM2_HUMAN THUMP domain-containing protein 2 OS=Homo ...    37   0.63 
+sp|Q1QEK1|G6PI_PSYCK Glucose-6-phosphate isomerase OS=Psychrobac...    36   0.70 
+sp|Q08641|AB140_YEAST tRNA(Thr) (cytosine(32)-N(3))-methyltransf...    36   0.70 
+sp|Q57824|CSA3_METJA CRISPR locus-related putative DNA-binding p...    36   0.77 
+sp|Q12344|GYP5_YEAST GTPase-activating protein GYP5 OS=Saccharom...    36   0.83 
+sp|Q8C8R3|ANK2_MOUSE Ankyrin-2 OS=Mus musculus OX=10090 GN=Ank2 ...    36   0.90 
+sp|A0R2D4|SIGE_MYCS2 ECF RNA polymerase sigma factor SigE OS=Myc...    36   0.91 
+sp|Q9SRQ3|PE191_ARATH Peroxisome biogenesis protein 19-1 OS=Arab...    36   1.0  
+sp|P44790|RPOE_HAEIN ECF RNA polymerase sigma-E factor OS=Haemop...    36   1.0  
+sp|P9WGG5|SIGG_MYCTU ECF RNA polymerase sigma factor SigG OS=Myc...    36   1.1  
+sp|P9WGG4|SIGG_MYCTO ECF RNA polymerase sigma factor SigG OS=Myc...    36   1.1  
+sp|A3LRM6|SNU71_PICST U1 small nuclear ribonucleoprotein compone...    36   1.1  
+sp|Q9C7G1|PUB45_ARATH U-box domain-containing protein 45 OS=Arab...    36   1.2  
+sp|O74298|LYS2_PENCH L-2-aminoadipate reductase large subunit OS...    35   1.3  
+sp|Q5V5E2|Y199_HALMA Putative transcriptional regulatory protein...    35   1.4  
+sp|Q051H0|DGTL1_LEPBL Deoxyguanosinetriphosphate triphosphohydro...    35   1.5  
+sp|Q04T48|DGTL1_LEPBJ Deoxyguanosinetriphosphate triphosphohydro...    35   1.5  
+sp|Q9WZT7|MTAB_THEMA Threonylcarbamoyladenosine tRNA methylthiot...    35   1.5  
+sp|P61350|GATB_METMP Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    35   1.5  
+sp|Q9C035|TRIM5_HUMAN Tripartite motif-containing protein 5 OS=H...    35   1.6  
+sp|P05661|MYSA_DROME Myosin heavy chain, muscle OS=Drosophila me...    35   1.6  
+sp|A0PXA4|PROA_CLONN Gamma-glutamyl phosphate reductase OS=Clost...    35   1.8  
+sp|A4FXX9|GATB_METM5 Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    35   1.8  
+sp|P51343|YCF29_PORPU Probable transcriptional regulator ycf29 O...    35   1.8  
+sp|A8Z414|EBH_STAAT Extracellular matrix-binding protein ebh OS=...    35   1.8  
+sp|Q2FYJ6|EBH_STAA8 Extracellular matrix-binding protein ebh OS=...    35   1.8  
+sp|Q2FH04|EBH_STAA3 Extracellular matrix-binding protein ebh OS=...    35   1.8  
+sp|A0Q2X7|SECA_CLONN Protein translocase subunit SecA OS=Clostri...    35   1.9  
+sp|Q2NB98|LVHTH_ERYLH Light-activated DNA-binding protein EL222 ...    35   1.9  
+sp|Q5HFY8|EBH_STAAC Extracellular matrix-binding protein ebh OS=...    35   1.9  
+sp|A2RRX6|NPAT_XENLA Protein NPAT OS=Xenopus laevis OX=8355 GN=n...    35   1.9  
+sp|Q9K998|DCTR_HALH5 Probable C4-dicarboxylate response regulato...    35   2.0  
+sp|A9AAZ8|GATB_METM6 Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    35   2.0  
+sp|A9F881|LEXA_SORC5 LexA repressor OS=Sorangium cellulosum (str...    35   2.1  
+sp|A6VFN7|GATB_METM7 Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransf...    35   2.1  
+sp|Q473J2|HSCA_CUPPJ Chaperone protein HscA homolog OS=Cupriavid...    35   2.1  
+sp|Q96T51|RUFY1_HUMAN RUN and FYVE domain-containing protein 1 O...    35   2.2  
+sp|Q5D7J1|TRIM5_PANTR Tripartite motif-containing protein 5 OS=P...    35   2.3  
+sp|Q1ACD8|TRIM5_PANPA Tripartite motif-containing protein 5 OS=P...    35   2.3  
+sp|Q5D7I3|TRIM5_ERYPA Tripartite motif-containing protein 5 OS=E...    35   2.3  
+sp|Q756L3|SP110_ASHGO Spindle pole body component 110 OS=Ashbya ...    35   2.3  
+sp|Q3M892|MUTS_TRIV2 DNA mismatch repair protein MutS OS=Trichor...    35   2.5  
+sp|Q5D7J2|TRIM5_PAPAN Tripartite motif-containing protein 5 OS=P...    35   2.5  
+sp|Q5C8U3|TRIM5_CHLTN Tripartite motif-containing protein 5 OS=C...    35   2.5  
+sp|Q9PWR3|PITX2_XENLA Pituitary homeobox 2 OS=Xenopus laevis OX=...    34   2.6  
+sp|Q5D7I9|TRIM5_PYGNE Tripartite motif-containing protein 5 OS=P...    34   2.7  
+sp|B5EA68|LEXA_CITBB LexA repressor OS=Citrifermentans bemidjien...    34   2.7  
+sp|Q720G3|PROA_LISMF Gamma-glutamyl phosphate reductase OS=Liste...    34   2.7  
+sp|Q10301|YD48_SCHPO UPF0652 protein C22H10.08 OS=Schizosaccharo...    34   2.7  
+sp|A7HC61|LEXA_ANADF LexA repressor OS=Anaeromyxobacter sp. (str...    34   2.8  
+sp|O70511|ANK3_RAT Ankyrin-3 OS=Rattus norvegicus OX=10116 GN=An...    34   2.9  
+sp|C1L2G7|PROA_LISMC Gamma-glutamyl phosphate reductase OS=Liste...    34   3.1  
+sp|A4FXY4|COBD_METM5 Probable cobalamin biosynthesis protein Cob...    34   3.1  
+sp|P9WGG9|RPSD_MYCTU ECF RNA polymerase sigma factor SigD OS=Myc...    34   3.2  
+sp|P9WGG8|RPSD_MYCTO ECF RNA polymerase sigma factor SigD OS=Myc...    34   3.2  
+sp|P66812|RPSD_MYCBO ECF RNA polymerase sigma factor SigD OS=Myc...    34   3.2  
+sp|C5DJH6|SP110_LACTC Spindle pole body component 110 OS=Lachanc...    34   3.3  
+sp|Q46791|YGEK_ECOLI Uncharacterized response regulatory protein...    34   3.4  
+sp|P58664|YGEK_ECO57 Uncharacterized response regulatory protein...    34   3.4  
+sp|Q67PE4|Y1464_SYMTH UPF0122 protein STH1464 OS=Symbiobacterium...    34   3.5  
+sp|O87444|CLPB_LEPBY Chaperone protein ClpB OS=Leptolyngbya bory...    34   3.5  
+sp|P35165|SIGX_BACSU ECF RNA polymerase sigma factor SigX OS=Bac...    34   3.7  
+sp|A5ISW6|EBH_STAA9 Extracellular matrix-binding protein ebh OS=...    34   3.8  
+sp|A6U1Q5|EBH_STAA2 Extracellular matrix-binding protein ebh OS=...    34   3.8  
+sp|P46358|RFAY_XANCP Probable RNA polymerase sigma factor RfaY O...    34   3.9  
+sp|Q8NWQ6|EBH_STAAW Extracellular matrix-binding protein ebh OS=...    34   4.1  
+sp|Q0KCG7|HSCA_CUPNH Chaperone protein HscA homolog OS=Cupriavid...    34   4.2  
+sp|Q44583|NCCH_ALCXX RNA polymerase sigma factor NccH OS=Alcalig...    34   4.3  
+sp|C6DZY8|LEXA_GEOSM LexA repressor OS=Geobacter sp. (strain M21...    34   4.4  
+sp|Q587N6|TRIM5_MACFA Tripartite motif-containing protein 5 OS=M...    34   4.5  
+sp|P55368|Y4BA_SINFN Uncharacterized protein y4bA/y4pH OS=Sinorh...    34   4.6  
+sp|Q605V8|LEXA_METCA LexA repressor OS=Methylococcus capsulatus ...    34   4.7  
+sp|P13496|DCTN1_DROME Dynactin subunit 1 OS=Drosophila melanogas...    34   4.7  
+sp|A1CHL3|PRP28_ASPCL Pre-mRNA-splicing ATP-dependent RNA helica...    34   4.8  
+sp|Q2YEN0|TRIM5_MACNE Tripartite motif-containing protein 5 OS=M...    34   4.9  
+sp|P31976|EZRI_BOVIN Ezrin OS=Bos taurus OX=9913 GN=EZR PE=1 SV=2      34   5.1  
+sp|Q1QZP4|DNLJ_CHRSD DNA ligase OS=Chromohalobacter salexigens (...    34   5.1  
+sp|Q8CRT6|PUR8_STAES Adenylosuccinate lyase OS=Staphylococcus ep...    34   5.1  
+sp|Q5HN26|PUR8_STAEQ Adenylosuccinate lyase OS=Staphylococcus ep...    34   5.1  
+sp|Q01484|ANK2_HUMAN Ankyrin-2 OS=Homo sapiens OX=9606 GN=ANK2 P...    34   5.1  
+sp|Q74CA7|EX7L_GEOSL Exodeoxyribonuclease 7 large subunit OS=Geo...    34   5.3  
+sp|Q7X2S8|CLPB_MEIRU Chaperone protein ClpB OS=Meiothermus ruber...    34   5.3  
+sp|Q9HRC7|TFE_HALSA Transcription factor E OS=Halobacterium sali...    34   5.4  
+sp|O45935|KLP19_CAEEL Kinesin-like protein klp-19 OS=Caenorhabdi...    34   5.4  
+sp|Q25BH9|Y016_HIS1I Uncharacterized protein ORF16 OS=His1 virus...    33   5.9  
+sp|Q8BSS9|LIPA2_MOUSE Liprin-alpha-2 OS=Mus musculus OX=10090 GN...    33   6.2  
+sp|Q8PAB5|DNLJ_XANCP DNA ligase OS=Xanthomonas campestris pv. ca...    33   6.4  
+sp|B0RUY2|DNLJ_XANCB DNA ligase OS=Xanthomonas campestris pv. ca...    33   6.4  
+sp|Q4UTB0|DNLJ_XANC8 DNA ligase OS=Xanthomonas campestris pv. ca...    33   6.4  
+sp|B1KWP0|Y1827_CLOBM UPF0122 protein CLK_1827 OS=Clostridium bo...    33   6.4  
+sp|P11470|GERE_BACSU Spore germination protein GerE OS=Bacillus ...    33   6.4  
+sp|P09570|NIFA_AZOVI Nif-specific regulatory protein OS=Azotobac...    33   6.8  
+sp|B3R0J0|RUVB_PHYMT Holliday junction branch migration complex ...    33   6.9  
+sp|Q9F314|TIG_STRCO Trigger factor OS=Streptomyces coelicolor (s...    33   7.0  
+sp|P10362|SCG2_RAT Secretogranin-2 OS=Rattus norvegicus OX=10116...    33   7.0  
+sp|B3E394|UVRC_TRIL1 UvrABC system protein C OS=Trichlorobacter ...    33   7.6  
+sp|Q5ZLY0|PHAX_CHICK Phosphorylated adapter RNA export protein O...    33   7.7  
+sp|Q92585|MAML1_HUMAN Mastermind-like protein 1 OS=Homo sapiens ...    33   8.1  
+sp|Q92CE5|PROA_LISIN Gamma-glutamyl phosphate reductase OS=Liste...    33   8.1  
+sp|O95613|PCNT_HUMAN Pericentrin OS=Homo sapiens OX=9606 GN=PCNT...    33   8.2  
+sp|B4JLX2|SWS_DROGR Neuropathy target esterase sws OS=Drosophila...    33   8.8  
+sp|Q03517|SCG2_MOUSE Secretogranin-2 OS=Mus musculus OX=10090 GN...    33   8.9  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|O22056|SIGB_ARATH RNA polymerase sigma factor sigB OS=Arabido...   540   e-152
+sp|P18183|SIGA_STRCO RNA polymerase principal sigma factor HrdB ...   379   e-104
+sp|P26683|SIGA_NOSS1 RNA polymerase sigma factor SigA OS=Nostoc ...   372   e-102
+sp|P77951|SIGA_STRGR RNA polymerase sigma factor SigA OS=Strepto...   372   e-102
+sp|B1VXR4|SIGA_STRGG RNA polymerase principal sigma factor HrdB ...   372   e-102
+sp|P52329|SIGA_ENTFA RNA polymerase sigma factor SigA OS=Enteroc...   370   e-101
+sp|Q83BB6|RPOD_COXBU RNA polymerase sigma factor RpoD OS=Coxiell...   367   e-100
+sp|P9WGI1|SIGA_MYCTU RNA polymerase sigma factor SigA OS=Mycobac...   366   e-100
+sp|P9WGI0|SIGA_MYCTO RNA polymerase sigma factor SigA OS=Mycobac...   366   e-100
+sp|P0A603|SIGA_MYCBO RNA polymerase sigma factor SigA OS=Mycobac...   366   e-100
+sp|Q8PG33|RPOD_XANAC RNA polymerase sigma factor RpoD OS=Xanthom...   365   e-100
+sp|Q8P4H2|RPOD_XANCP RNA polymerase sigma factor RpoD OS=Xanthom...   364   1e-99
+sp|Q04506|SIGA_LACLA RNA polymerase sigma factor SigA OS=Lactoco...   364   1e-99
+sp|P52328|SIGA_BACSP RNA polymerase sigma factor SigA OS=Bacillu...   363   2e-99
+sp|Q92BQ6|SIGA_LISIN RNA polymerase sigma factor SigA OS=Listeri...   363   2e-99
+sp|P52331|SIGA_LISMO RNA polymerase sigma factor SigA OS=Listeri...   362   4e-99
+sp|P18182|HRDA_STRCO RNA polymerase principal sigma factor HrdA ...   362   4e-99
+sp|P43766|RPOD_HAEIN RNA polymerase sigma factor RpoD OS=Haemoph...   362   7e-99
+sp|P58290|SIGA_LACLC RNA polymerase sigma factor SigA (Fragment)...   361   9e-99
+sp|P38023|SIGA1_SYNE7 RNA polymerase sigma factor SigA1 OS=Synec...   360   2e-98
+sp|P0A4J0|SIGA_STRR6 RNA polymerase sigma factor SigA OS=Strepto...   359   5e-98
+sp|P0A4I9|SIGA_STRPN RNA polymerase sigma factor SigA OS=Strepto...   359   5e-98
+sp|Q87DT7|RPOD_XYLFT RNA polymerase sigma factor RpoD OS=Xylella...   357   1e-97
+sp|P27785|SIGA_KITAU RNA polymerase sigma factor SigA OS=Kitasat...   357   2e-97
+sp|Q9PDM9|RPOD_XYLFA RNA polymerase sigma factor RpoD OS=Xylella...   357   2e-97
+sp|O66381|SIGA_HALH5 RNA polymerase sigma factor SigA OS=Halalka...   356   3e-97
+sp|P06224|SIGA_BACSU RNA polymerase sigma factor SigA OS=Bacillu...   356   3e-97
+sp|Q8CP24|SIGA_STAES RNA polymerase sigma factor SigA OS=Staphyl...   353   3e-96
+sp|Q5HNY7|SIGA_STAEQ RNA polymerase sigma factor SigA OS=Staphyl...   353   3e-96
+sp|O33662|SIGA_STRMU RNA polymerase sigma factor SigA OS=Strepto...   352   4e-96
+sp|P52327|RPOD_PSEPU RNA polymerase sigma factor RpoD OS=Pseudom...   352   6e-96
+sp|Q9LD95|SIGF_ARATH RNA polymerase sigma factor sigF, chloropla...   352   6e-96
+sp|Q99TT5|SIGA_STAAN RNA polymerase sigma factor SigA OS=Staphyl...   350   2e-95
+sp|P0A0I9|SIGA_STAAW RNA polymerase sigma factor SigA OS=Staphyl...   350   2e-95
+sp|Q6G905|SIGA_STAAS RNA polymerase sigma factor SigA OS=Staphyl...   350   2e-95
+sp|Q6GGD8|SIGA_STAAR RNA polymerase sigma factor SigA OS=Staphyl...   350   2e-95
+sp|P0A0I8|SIGA_STAAM RNA polymerase sigma factor SigA OS=Staphyl...   350   2e-95
+sp|Q5HFJ9|SIGA_STAAC RNA polymerase sigma factor SigA OS=Staphyl...   350   2e-95
+sp|P0A0J0|SIGA_STAA8 RNA polymerase sigma factor SigA OS=Staphyl...   350   2e-95
+sp|P26480|RPOD_PSEAE RNA polymerase sigma factor RpoD OS=Pseudom...   350   2e-95
+sp|P52322|SIGA_MICAE RNA polymerase sigma factor SigA OS=Microcy...   349   3e-95
+sp|O24744|RPOD_SHEVD RNA polymerase sigma factor RpoD OS=Shewane...   349   4e-95
+sp|P57163|RPOD_BUCAI RNA polymerase sigma factor RpoD OS=Buchner...   349   4e-95
+sp|P52326|RPOD_PSEPH RNA polymerase sigma factor RpoD OS=Pseudom...   347   1e-94
+sp|P32001|RPOD_BUCAP RNA polymerase sigma factor RpoD OS=Buchner...   347   1e-94
+sp|P00579|RPOD_ECOLI RNA polymerase sigma factor RpoD OS=Escheri...   347   2e-94
+sp|P0A2E3|RPOD_SALTY RNA polymerase sigma factor RpoD OS=Salmone...   346   4e-94
+sp|P0A2E4|RPOD_SALTI RNA polymerase sigma factor RpoD OS=Salmone...   346   4e-94
+sp|Q89B10|RPOD_BUCBP RNA polymerase sigma factor RpoD OS=Buchner...   346   4e-94
+sp|P52324|RPOD_CAUVC RNA polymerase sigma factor RpoD OS=Cauloba...   341   1e-92
+sp|P74565|SIGA_SYNY3 RNA polymerase sigma factor SigA OS=Synecho...   340   2e-92
+sp|P9WGI5|SIGB_MYCTU RNA polymerase sigma factor SigB OS=Mycobac...   337   1e-91
+sp|P9WGI4|SIGB_MYCTO RNA polymerase sigma factor SigB OS=Mycobac...   337   1e-91
+sp|D5AQI9|RPOD_RHOCB RNA polymerase sigma factor RpoD OS=Rhodoba...   337   2e-91
+sp|P52325|RPOD_NEIGO RNA polymerase sigma factor RpoD OS=Neisser...   335   5e-91
+sp|P33118|RPSB_CORDI RNA polymerase sigma factor SigB OS=Coryneb...   335   6e-91
+sp|P0CZ15|RPOD_RHOCA RNA polymerase sigma factor RpoD OS=Rhodoba...   334   1e-90
+sp|P77994|SIGA_THEMA RNA polymerase sigma factor SigA OS=Thermot...   332   4e-90
+sp|Q03065|RPSB_NOSS1 RNA polymerase sigma-B factor OS=Nostoc sp....   332   5e-90
+sp|P59117|RPOD_LEPIN RNA polymerase sigma factor RpoD OS=Leptosp...   331   1e-89
+sp|P61540|RPOD_LEPIC RNA polymerase sigma factor RpoD OS=Leptosp...   331   1e-89
+sp|P33452|RPOD_AGRFC RNA polymerase sigma factor RpoD OS=Agrobac...   329   5e-89
+sp|Q9EZJ8|SIGA_THEAQ RNA polymerase sigma factor SigA OS=Thermus...   329   5e-89
+sp|P33451|RPOD_RICPR RNA polymerase sigma factor RpoD OS=Rickett...   328   1e-88
+sp|Q2K619|RPOD_RHIEC RNA polymerase sigma factor RpoD OS=Rhizobi...   327   1e-88
+sp|Q92FZ8|RPOD_RICCN RNA polymerase sigma factor RpoD OS=Rickett...   327   1e-88
+sp|Q68VQ5|RPOD_RICTY RNA polymerase sigma factor RpoD OS=Rickett...   327   2e-88
+sp|Q59753|RPOD_RHIME RNA polymerase sigma factor RpoD OS=Rhizobi...   327   2e-88
+sp|Q4UJT1|RPOD_RICFE RNA polymerase sigma factor RpoD OS=Rickett...   326   3e-88
+sp|Q31QG5|SIGA3_SYNE7 RNA polymerase sigma factor SigA3 OS=Synec...   326   4e-88
+sp|Q1RKH7|RPOD_RICBR RNA polymerase sigma factor RpoD OS=Rickett...   325   7e-88
+sp|Q03066|RPSC_NOSS1 RNA polymerase sigma-C factor OS=Nostoc sp....   324   1e-87
+sp|P18249|HRDD_STRCO RNA polymerase principal sigma factor HrdD ...   324   2e-87
+sp|Q9Z7F0|SIGA_CHLPN RNA polymerase sigma factor SigA OS=Chlamyd...   323   3e-87
+sp|P33656|SIGA_CLOAB RNA polymerase sigma factor SigA OS=Clostri...   323   3e-87
+sp|P17531|RPOD_MYXXA RNA polymerase sigma factor RpoD OS=Myxococ...   322   7e-87
+sp|Q60012|HRDD_STRVF RNA polymerase principal sigma factor HrdD ...   322   7e-87
+sp|P52323|RPOD_BORBU RNA polymerase sigma factor RpoD OS=Borreli...   321   1e-86
+sp|P18333|SIGA_CHLTR RNA polymerase sigma factor SigA OS=Chlamyd...   320   2e-86
+sp|Q31ME3|SIGA2_SYNE7 RNA polymerase sigma factor SigA2 OS=Synec...   320   2e-86
+sp|O83506|RPOD_TREPA RNA polymerase sigma factor RpoD OS=Trepone...   319   5e-86
+sp|P56835|SIGA_CHLMU RNA polymerase sigma factor SigA OS=Chlamyd...   319   5e-86
+sp|O24629|SIGA_ARATH RNA polymerase sigma factor sigA OS=Arabido...   316   3e-85
+sp|Q59996|RPSC_SYNY3 Probable RNA polymerase sigma-C factor OS=S...   315   6e-85
+sp|Q59914|HRDD_STRGR RNA polymerase principal sigma factor HrdD ...   313   2e-84
+sp|Q72L95|SIGA_THET2 RNA polymerase sigma factor SigA OS=Thermus...   312   4e-84
+sp|P18184|HRDC_STRCO RNA polymerase principal sigma factor HrdC ...   310   3e-83
+sp|O24621|SIGC_ARATH RNA polymerase sigma factor sigC OS=Arabido...   306   3e-82
+sp|Q9ZMY3|RPOD_HELPJ RNA polymerase sigma factor RpoD OS=Helicob...   304   1e-81
+sp|P55993|RPOD_HELPY RNA polymerase sigma factor RpoD OS=Helicob...   301   1e-80
+sp|P43344|RPOD_SERMA RNA polymerase sigma factor RpoD (Fragment)...   299   4e-80
+sp|Q31QR8|SIGA4_SYNE7 RNA polymerase sigma factor SigA4 OS=Synec...   298   7e-80
+sp|Q9ZNX9|SIGE_ARATH RNA polymerase sigma factor sigE, chloropla...   295   7e-79
+sp|Q0J7T6|SIGA_ORYSJ RNA polymerase sigma factor sigA OS=Oryza s...   289   4e-77
+sp|O51804|RPOS_VIBCH RNA polymerase sigma factor RpoS OS=Vibrio ...   283   2e-75
+sp|P47765|RPOS_YEREN RNA polymerase sigma factor RpoS OS=Yersini...   283   2e-75
+sp|P45684|RPOS_PSEAE RNA polymerase sigma factor RpoS OS=Pseudom...   282   8e-75
+sp|Q9ZSL6|SIGD_ARATH RNA polymerase sigma factor sigD, chloropla...   280   2e-74
+sp|P0DM81|RPOS_SALTY RNA polymerase sigma factor RpoS OS=Salmone...   280   3e-74
+sp|F5ZTT9|RPOS_SALTU RNA polymerase sigma factor RpoS OS=Salmone...   280   3e-74
+sp|P0A2E6|RPOS_SALTI RNA polymerase sigma factor RpoS OS=Salmone...   280   3e-74
+sp|D0ZVL4|RPOS_SALT1 RNA polymerase sigma factor RpoS OS=Salmone...   280   3e-74
+sp|P0A2E7|RPOS_SALDU RNA polymerase sigma factor RpoS OS=Salmone...   280   3e-74
+sp|P35540|RPOS_SHIFL RNA polymerase sigma factor RpoS OS=Shigell...   280   3e-74
+sp|P13445|RPOS_ECOLI RNA polymerase sigma factor RpoS OS=Escheri...   279   4e-74
+sp|Q9KI19|RPOS_COXBU RNA polymerase sigma factor RpoS OS=Coxiell...   278   1e-73
+sp|P47491|SIGA_MYCGE RNA polymerase sigma factor SigA OS=Mycopla...   276   4e-73
+sp|P78022|SIGA_MYCPN RNA polymerase sigma factor SigA OS=Mycopla...   274   2e-72
+sp|P0AGB3|RPOH_ECOLI RNA polymerase sigma factor RpoH OS=Escheri...   242   6e-63
+sp|P0AGB4|RPOH_ECOL6 RNA polymerase sigma factor RpoH OS=Escheri...   242   6e-63
+sp|P0AGB5|RPOH_ECO57 RNA polymerase sigma factor RpoH OS=Escheri...   242   6e-63
+sp|Q01624|RPSB_STIAD RNA polymerase sigma-B factor OS=Stigmatell...   237   3e-61
+sp|P50509|RPOH_PROMI RNA polymerase sigma factor RpoH OS=Proteus...   236   3e-61
+sp|P50511|RPOH_VIBCH RNA polymerase sigma factor RpoH OS=Vibrio ...   236   3e-61
+sp|P50510|RPOH_SERMA RNA polymerase sigma factor RpoH OS=Serrati...   236   4e-61
+sp|Q07083|RPSC_MYXXA RNA polymerase sigma-C factor OS=Myxococcus...   234   1e-60
+sp|Q89B27|RPOH_BUCBP RNA polymerase sigma factor RpoH OS=Buchner...   234   2e-60
+sp|Q8DD54|RPOH_VIBVU RNA polymerase sigma factor RpoH OS=Vibrio ...   234   2e-60
+sp|B8H3C3|RPOH_CAUVN RNA polymerase sigma factor RpoH OS=Cauloba...   233   3e-60
+sp|P0CAW9|RPOH_CAUVC RNA polymerase sigma factor RpoH OS=Cauloba...   233   3e-60
+sp|P11539|RPOH_CITFR RNA polymerase sigma factor RpoH OS=Citroba...   233   3e-60
+sp|P50508|RPOH_ENTCL RNA polymerase sigma factor RpoH OS=Enterob...   233   4e-60
+sp|P44404|RPOH_HAEIN RNA polymerase sigma factor RpoH OS=Haemoph...   232   6e-60
+sp|P50512|RPOH_ZYMMO RNA polymerase sigma factor RpoH OS=Zymomon...   232   7e-60
+sp|Q8KA76|RPOH_BUCAP RNA polymerase sigma factor RpoH OS=Buchner...   231   2e-59
+sp|O05385|RPOH_BUCAI RNA polymerase sigma factor RpoH OS=Buchner...   227   2e-58
+sp|P35145|RPSF_PRIMG RNA polymerase sigma-F factor OS=Priestia m...   227   2e-58
+sp|P33658|RPSG_CLOAB RNA polymerase sigma-G factor OS=Clostridiu...   225   6e-58
+sp|P26764|RPSF_BACLI RNA polymerase sigma-F factor OS=Bacillus l...   224   2e-57
+sp|P19433|RPSB_MYXXA RNA polymerase sigma-B factor OS=Myxococcus...   223   4e-57
+sp|P07860|RPSF_BACSU RNA polymerase sigma-F factor OS=Bacillus s...   222   5e-57
+sp|P19940|RPSG_BACSU RNA polymerase sigma-G factor OS=Bacillus s...   221   1e-56
+sp|P50507|RPOH_RHIRD RNA polymerase sigma factor RpoH OS=Rhizobi...   216   3e-55
+sp|P12254|RPSK_BACSU RNA polymerase sigma-K factor OS=Bacillus s...   216   3e-55
+sp|P37971|RPOF_STRCO RNA polymerase sigma-F factor OS=Streptomyc...   215   8e-55
+sp|P37970|RPOF_KITAU RNA polymerase sigma-F factor OS=Kitasatosp...   214   1e-54
+sp|Q9K5J6|RPSB_BACAN RNA polymerase sigma-B factor OS=Bacillus a...   209   5e-53
+sp|P06574|RPSB_BACSU RNA polymerase sigma-B factor OS=Bacillus s...   207   2e-52
+sp|P42378|RPOH_PSEAE RNA polymerase sigma factor RpoH OS=Pseudom...   196   7e-49
+sp|P9WGI3|SIGF_MYCTU RNA polymerase sigma factor SigF OS=Mycobac...   195   8e-49
+sp|P9WGI2|SIGF_MYCTO RNA polymerase sigma factor SigF OS=Mycobac...   195   8e-49
+sp|P17211|RPSW_STRCO RNA polymerase sigma factor WhiG OS=Strepto...   190   2e-47
+sp|P0AEM6|FLIA_ECOLI RNA polymerase sigma factor FliA OS=Escheri...   190   2e-47
+sp|P0AEM7|FLIA_ECOL6 RNA polymerase sigma factor FliA OS=Escheri...   190   2e-47
+sp|P0AEM8|FLIA_ECO57 RNA polymerase sigma factor FliA OS=Escheri...   190   2e-47
+sp|P0A2E8|FLIA_SALTY RNA polymerase sigma factor FliA OS=Salmone...   189   4e-47
+sp|P0A2E9|FLIA_SALTI RNA polymerase sigma factor FliA OS=Salmone...   189   4e-47
+sp|P10726|RPSD_BACSU RNA polymerase sigma-D factor OS=Bacillus s...   188   8e-47
+sp|P33657|RPSE_CLOAB RNA polymerase sigma-E factor OS=Clostridiu...   181   2e-44
+sp|P62179|RP35_BACTK RNA polymerase sigma-35 factor OS=Bacillus ...   177   3e-43
+sp|P62178|RP35_BACCR RNA polymerase sigma-35 factor OS=Bacillus ...   177   3e-43
+sp|P62177|RP35_BACAN RNA polymerase sigma-35 factor OS=Bacillus ...   177   3e-43
+sp|P29248|FLIA_PSEAE RNA polymerase sigma factor FliA OS=Pseudom...   176   5e-43
+sp|P06222|RPSE_BACSU RNA polymerase sigma-E factor OS=Bacillus s...   174   3e-42
+sp|P52621|FLIA_YEREN RNA polymerase sigma factor FliA OS=Yersini...   173   3e-42
+sp|Q03474|LAFS_VIBPA RNA polymerase sigma factor for flagellar o...   163   5e-39
+sp|P62181|RP28_BACTK RNA polymerase sigma-28 factor OS=Bacillus ...   162   8e-39
+sp|P62180|RP28_BACCR RNA polymerase sigma-28 factor OS=Bacillus ...   162   8e-39
+sp|P62182|RP28_BACAN RNA polymerase sigma-28 factor OS=Bacillus ...   162   8e-39
+sp|P17869|RPSH_BACSU RNA polymerase sigma-H factor OS=Bacillus s...   122   6e-27
+sp|P26768|RPSX_BACTK Putative RNA polymerase sigma-G factor (Fra...   121   1e-26
+sp|P02964|RPSH_BACLI RNA polymerase sigma-H factor OS=Bacillus l...   120   3e-26
+sp|A3DC74|SIGI3_ACET2 RNA polymerase sigma factor SigI3 OS=Aceti...   112   7e-24
+sp|O31654|SIGI_BACSU RNA polymerase sigma factor SigI OS=Bacillu...    80   5e-14
+sp|O34843|SIGO_BACSU RNA polymerase sigma factor SigO OS=Bacillu...    74   3e-12
+sp|P15935|BCNA_CLOPF Bacteriocin UviA OS=Clostridium perfringens...    68   2e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|A3DCG2|SIGI4_ACET2 RNA polymerase sigma factor SigI4 OS=Aceti...    67   4e-10
+sp|A3DC28|SIGI2_ACET2 RNA polymerase sigma factor SigI2 OS=Aceti...    64   3e-09
+sp|A3DEX5|SIGI5_ACET2 RNA polymerase sigma factor SigI5 OS=Aceti...    63   9e-09
+sp|P0DO98|SIGI_BACAN RNA polymerase sigma factor SigI OS=Bacillu...    61   2e-08
+sp|A3DBH0|SIGI1_ACET2 RNA polymerase sigma factor SigI1 OS=Aceti...    61   4e-08
+sp|A3DJP3|SIGI8_ACET2 RNA polymerase sigma factor SigI8 OS=Aceti...    55   2e-06
+sp|A3DH98|SIGI6_ACET2 RNA polymerase sigma factor SigI6 OS=Aceti...    51   3e-05
+sp|P44969|IGA0_HAEIN Immunoglobulin A1 protease autotransporter ...    50   7e-05
+sp|V5T8H7|TCSR1_PAESO RNA polymerase sigma factor TcsR OS=Paenic...    49   1e-04
+sp|P0DUB5|TCSR2_PAESO RNA polymerase sigma factor TcsR OS=Paenic...    49   2e-04
+sp|T0CUB8|TCSR3_PAES9 RNA polymerase sigma factor TcsR OS=Paenic...    47   3e-04
+sp|A3DIE4|SIGI7_ACET2 RNA polymerase sigma factor SigI7 OS=Aceti...    46   0.001
+sp|Q57637|Y173_METJA Putative transcriptional regulatory protein...    45   0.002
+sp|O68887|RPOE_STRAT RNA polymerase sigma-E factor OS=Streptomyc...    43   0.008
+sp|Q82EA9|RPOE_STRAW RNA polymerase sigma-E factor OS=Streptomyc...    43   0.008
+sp|P56811|TFX_METTM DNA-binding protein Tfx OS=Methanothermobact...    42   0.011
+sp|Q45585|SIGW_BACSU ECF RNA polymerase sigma factor SigW OS=Bac...    42   0.013
+sp|P38133|RPOE_STRCO RNA polymerase sigma-E factor OS=Streptomyc...    42   0.014
+sp|O27001|TFX_METTH DNA-binding protein Tfx OS=Methanothermobact...    41   0.025
+sp|P44790|RPOE_HAEIN ECF RNA polymerase sigma-E factor OS=Haemop...    41   0.026
+sp|O07627|YLAC_BACSU RNA polymerase sigma factor YlaC OS=Bacillu...    41   0.034
+sp|B1W3T1|SHBA_STRGG ECF RNA polymerase sigma factor ShbA OS=Str...    41   0.035
+sp|Q8U3D3|Y535_PYRFU Putative transcriptional regulatory protein...    40   0.055
+sp|O05404|SIGV_BACSU RNA polymerase sigma factor SigV OS=Bacillu...    40   0.068
+sp|Q5JHH2|Y2151_THEKO Putative transcriptional regulatory protei...    40   0.071
+sp|A6UR76|Y1098_METVS Putative transcriptional regulatory protei...    40   0.071
+sp|Q6M132|Y086_METMP Putative transcriptional regulatory protein...    40   0.073
+sp|Q58651|Y1254_METJA Uncharacterized protein MJ1254 OS=Methanoc...    40   0.076
+sp|P05661|MYSA_DROME Myosin heavy chain, muscle OS=Drosophila me...    39   0.084
+sp|Q5D7J0|TRIM5_COLGU Tripartite motif-containing protein 5 OS=C...    39   0.10 
+sp|P0AGB9|RPOE_SHIFL ECF RNA polymerase sigma-E factor OS=Shigel...    39   0.14 
+sp|P0AGB6|RPOE_ECOLI ECF RNA polymerase sigma-E factor OS=Escher...    39   0.14 
+sp|P0AGB7|RPOE_ECOL6 ECF RNA polymerase sigma-E factor OS=Escher...    39   0.14 
+sp|P0AGB8|RPOE_ECO57 ECF RNA polymerase sigma-E factor OS=Escher...    39   0.14 
+sp|O58497|Y763_PYRHO Putative transcriptional regulatory protein...    39   0.16 
+sp|Q9UZ54|Y1300_PYRAB Putative transcriptional regulatory protei...    39   0.17 
+sp|Q5V5E2|Y199_HALMA Putative transcriptional regulatory protein...    39   0.17 
+sp|A4J671|Y2057_DESRM UPF0122 protein Dred_2057 OS=Desulforamulu...    39   0.18 
+sp|Q9C035|TRIM5_HUMAN Tripartite motif-containing protein 5 OS=H...    38   0.28 
+sp|Q5C8T6|TRIM5_GORGO Tripartite motif-containing protein 5 OS=G...    37   0.33 
+sp|Q5C8U3|TRIM5_CHLTN Tripartite motif-containing protein 5 OS=C...    37   0.34 
+sp|Q1ACD8|TRIM5_PANPA Tripartite motif-containing protein 5 OS=P...    37   0.35 
+sp|Q5D7J1|TRIM5_PANTR Tripartite motif-containing protein 5 OS=P...    37   0.35 
+sp|Q5D7J2|TRIM5_PAPAN Tripartite motif-containing protein 5 OS=P...    37   0.40 
+sp|P0CD63|Y5729_DICDI J domain-containing protein DDB_G0295729 O...    37   0.41 
+sp|Q5D7I3|TRIM5_ERYPA Tripartite motif-containing protein 5 OS=E...    37   0.41 
+sp|Q57824|CSA3_METJA CRISPR locus-related putative DNA-binding p...    37   0.46 
+sp|Q9C5Z1|EIF3B_ARATH Eukaryotic translation initiation factor 3...    37   0.48 
+sp|Q2NB98|LVHTH_ERYLH Light-activated DNA-binding protein EL222 ...    37   0.53 
+sp|Q56YN8|SMC3_ARATH Structural maintenance of chromosomes prote...    37   0.62 
+sp|A9F881|LEXA_SORC5 LexA repressor OS=Sorangium cellulosum (str...    37   0.66 
+sp|Q9CIT0|ENO2_LACLA Enolase 2 OS=Lactococcus lactis subsp. lact...    36   0.68 
+sp|Q2YEM9|TRIM5_PONPY Tripartite motif-containing protein 5 OS=P...    36   0.78 
+sp|Q587N6|TRIM5_MACFA Tripartite motif-containing protein 5 OS=M...    36   0.78 
+sp|Q5D7I9|TRIM5_PYGNE Tripartite motif-containing protein 5 OS=P...    36   0.81 
+sp|Q5C8T8|TRIM5_PONAB Tripartite motif-containing protein 5 OS=P...    36   0.82 
+sp|Q2YEN0|TRIM5_MACNE Tripartite motif-containing protein 5 OS=M...    36   0.92 
+sp|Q44583|NCCH_ALCXX RNA polymerase sigma factor NccH OS=Alcalig...    36   0.92 
+sp|Q2TAF3|EMAL4_XENLA Echinoderm microtubule-associated protein-...    36   0.98 
+sp|O74298|LYS2_PENCH L-2-aminoadipate reductase large subunit OS...    36   1.00 
+sp|A0PXA4|PROA_CLONN Gamma-glutamyl phosphate reductase OS=Clost...    36   1.0  
+sp|Q9JJ50|HGS_RAT Hepatocyte growth factor-regulated tyrosine ki...    36   1.1  
+sp|O75335|LIPA4_HUMAN Liprin-alpha-4 OS=Homo sapiens OX=9606 GN=...    36   1.1  
+sp|P9WGG5|SIGG_MYCTU ECF RNA polymerase sigma factor SigG OS=Myc...    35   1.2  
+sp|P9WGG4|SIGG_MYCTO ECF RNA polymerase sigma factor SigG OS=Myc...    35   1.2  
+sp|Q0PF16|TRIM5_MACMU Tripartite motif-containing protein 5 OS=M...    35   1.2  
+sp|P23221|FIXJ_BRADU Transcriptional regulatory protein FixJ OS=...    35   1.3  
+sp|Q8C8R3|ANK2_MOUSE Ankyrin-2 OS=Mus musculus OX=10090 GN=Ank2 ...    35   1.3  
+sp|Q5C8U4|TRIM5_CHLPG Tripartite motif-containing protein 5 OS=C...    35   1.4  
+sp|Q8R4C2|RUFY2_MOUSE RUN and FYVE domain-containing protein 2 O...    35   1.4  
+sp|Q8RAE5|PROA_CALS4 Gamma-glutamyl phosphate reductase OS=Calda...    35   1.4  
+sp|Q720G3|PROA_LISMF Gamma-glutamyl phosphate reductase OS=Liste...    35   1.5  
+sp|C1L2G7|PROA_LISMC Gamma-glutamyl phosphate reductase OS=Liste...    35   1.5  
+sp|Q587N7|TRIM5_CHLAE Tripartite motif-containing protein 5 OS=C...    35   1.7  
+sp|Q65GR4|SYD_BACLD Aspartate--tRNA ligase OS=Bacillus lichenifo...    35   1.8  
+sp|O31976|YOMI_BACSU SPbeta prophage-derived uncharacterized tra...    35   1.9  
+sp|C5DEL5|SEY1_LACTC Protein SEY1 OS=Lachancea thermotolerans (s...    35   2.4  
+sp|Q3UMG5|LRCH2_MOUSE Leucine-rich repeat and calponin homology ...    35   2.5  
+sp|O64046|TMP_BPSPB Probable tape measure protein OS=Bacillus ph...    35   2.5  
+sp|Q58G59|KIF7_DANRE Kinesin-like protein kif7 OS=Danio rerio OX...    35   2.5  
+sp|P35165|SIGX_BACSU ECF RNA polymerase sigma factor SigX OS=Bac...    34   2.9  
+sp|A2A5X5|KR161_MOUSE Keratin-associated protein 16-1 OS=Mus mus...    34   3.1  
+sp|P30427|PLEC_RAT Plectin OS=Rattus norvegicus OX=10116 GN=Plec...    34   3.5  
+sp|A0KZ94|XNI_SHESA Flap endonuclease Xni OS=Shewanella sp. (str...    34   3.5  
+sp|Q2KN94|CYTSA_TAKRU Cytospin-A OS=Takifugu rubripes OX=31033 G...    34   3.9  
+sp|P10362|SCG2_RAT Secretogranin-2 OS=Rattus norvegicus OX=10116...    34   4.0  
+sp|P9WGG9|RPSD_MYCTU ECF RNA polymerase sigma factor SigD OS=Myc...    34   4.0  
+sp|P9WGG8|RPSD_MYCTO ECF RNA polymerase sigma factor SigD OS=Myc...    34   4.0  
+sp|P66812|RPSD_MYCBO ECF RNA polymerase sigma factor SigD OS=Myc...    34   4.0  
+sp|P13496|DCTN1_DROME Dynactin subunit 1 OS=Drosophila melanogas...    34   4.7  
+sp|A0A0D1DRJ3|UPA2_USTMA PAM2 domain-containing protein UPA2 OS=...    34   5.1  
+sp|P92199|ROCK_CAEEL Rho-associated protein kinase let-502 OS=Ca...    34   5.2  
+sp|Q9JIR0|RIMB1_RAT Peripheral-type benzodiazepine receptor-asso...    34   5.5  
+sp|Q67PE4|Y1464_SYMTH UPF0122 protein STH1464 OS=Symbiobacterium...    33   5.9  
+sp|Q9HRC7|TFE_HALSA Transcription factor E OS=Halobacterium sali...    33   6.1  
+sp|Q9SRQ3|PE191_ARATH Peroxisome biogenesis protein 19-1 OS=Arab...    33   6.5  
+sp|Q7WKR4|SYFB_BORBR Phenylalanine--tRNA ligase beta subunit OS=...    33   6.6  
+sp|Q9QXS1|PLEC_MOUSE Plectin OS=Mus musculus OX=10090 GN=Plec PE...    33   6.6  
+sp|Q7W7C6|SYFB_BORPA Phenylalanine--tRNA ligase beta subunit OS=...    33   6.7  
+sp|F4JKH6|REC2_ARATH Protein REDUCED CHLOROPLAST COVERAGE 2 OS=A...    33   6.7  
+sp|Q756L3|SP110_ASHGO Spindle pole body component 110 OS=Ashbya ...    33   6.8  
+sp|Q15149|PLEC_HUMAN Plectin OS=Homo sapiens OX=9606 GN=PLEC PE=...    33   6.9  
+sp|Q99LI8|HGS_MOUSE Hepatocyte growth factor-regulated tyrosine ...    33   7.4  
+sp|B3E394|UVRC_TRIL1 UvrABC system protein C OS=Trichlorobacter ...    33   7.5  
+sp|P39784|PCF_BACSU Positive control factor OS=Bacillus subtilis...    33   7.8  
+sp|F4HTH8|KTN82_ARATH Katanin p80 WD40 repeat-containing subunit...    33   8.4  
+sp|P44845|NARP_HAEIN Nitrate/nitrite response regulator protein ...    33   8.6  
+sp|Q9BVV6|TALD3_HUMAN Protein TALPID3 OS=Homo sapiens OX=9606 GN...    33   8.9  
+sp|Q5R5R4|RUFY2_PONAB RUN and FYVE domain-containing protein 2 O...    33   9.3  
+sp|Q8WXA3|RUFY2_HUMAN RUN and FYVE domain-containing protein 2 O...    33   9.7  
+sp|Q03517|SCG2_MOUSE Secretogranin-2 OS=Mus musculus OX=10090 GN...    32   9.9  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.307    0.128    0.323 
+
+Lambda     K      H
+   0.267   0.0387    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 563,761,569
+Number of Sequences: 569516
+Number of extensions: 22548388
+Number of successful extensions: 103144
+Number of sequences better than 10.0: 687
+Number of HSP's better than 10.0 without gapping: 578
+Number of HSP's successfully gapped in prelim test: 1074
+Number of HSP's that attempted gapping in prelim test: 100153
+Number of HSP's gapped (non-prelim): 2868
+length of query: 592
+length of database: 205,866,895
+effective HSP length: 124
+effective length of query: 468
+effective length of database: 135,246,911
+effective search space: 63295554348
+effective search space used: 63295554348
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.1 bits)
+S2: 73 (32.8 bits)

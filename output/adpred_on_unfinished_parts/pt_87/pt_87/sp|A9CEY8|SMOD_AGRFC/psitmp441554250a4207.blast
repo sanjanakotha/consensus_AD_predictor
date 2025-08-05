@@ -1,0 +1,1190 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (234 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O34817|NAGR_BACSU HTH-type transcriptional repressor NagR OS=...    69   2e-11
+sp|P13669|MNGR_ECOLI Mannosyl-D-glycerate transport/metabolism s...    65   5e-10
+sp|Q45591|YYDK_BACSU Uncharacterized HTH-type transcriptional re...    60   1e-08
+sp|Q9K492|DASR_STRCO HTH-type transcriptional repressor DasR OS=...    60   2e-08
+sp|Q82IW0|DASR_STRAW HTH-type transcriptional repressor DasR OS=...    59   2e-08
+sp|Q7CR30|PHNR_SALTY Putative transcriptional regulator of 2-ami...    57   1e-07
+sp|P96061|PHNR_SALTI Putative transcriptional regulator of 2-ami...    57   1e-07
+sp|Q5PFQ9|PHNR_SALPA Putative transcriptional regulator of 2-ami...    56   2e-07
+sp|Q57SD4|PHNR_SALCH Putative transcriptional regulator of 2-ami...    56   3e-07
+sp|Q8VV01|DASR_STRGR HTH-type transcriptional repressor DasR OS=...    55   4e-07
+sp|P0ACM8|YEGW_SHIFL Uncharacterized HTH-type transcriptional re...    52   3e-06
+sp|P0ACM5|YEGW_ECOLI Uncharacterized HTH-type transcriptional re...    52   3e-06
+sp|P0ACM6|YEGW_ECOL6 Uncharacterized HTH-type transcriptional re...    52   3e-06
+sp|P0ACM7|YEGW_ECO57 Uncharacterized HTH-type transcriptional re...    52   3e-06
+sp|Q01856|Y3073_CERS4 Uncharacterized HTH-type transcriptional r...    50   1e-05
+sp|O32152|YURK_BACSU Uncharacterized HTH-type transcriptional re...    50   2e-05
+sp|P16684|PHNF_ECOLI Probable transcriptional regulator PhnF OS=...    49   2e-05
+sp|Q9S470|ARAR_GEOSE Arabinose metabolism transcriptional repres...    49   3e-05
+sp|P67740|Y505_MYCBO Uncharacterized HTH-type transcriptional re...    48   6e-05
+sp|P9WMG7|Y494_MYCTU Uncharacterized HTH-type transcriptional re...    48   6e-05
+sp|P9WMG6|Y494_MYCTO Uncharacterized HTH-type transcriptional re...    48   6e-05
+sp|P96711|ARAR_BACSU Arabinose metabolism transcriptional repres...    48   7e-05
+sp|Q9HU78|HUTC_PSEAE Histidine utilization repressor OS=Pseudomo...    47   9e-05
+sp|P22773|HUTC_PSEPU Histidine utilization repressor OS=Pseudomo...    47   1e-04
+sp|P96663|YDEF_BACSU Uncharacterized HTH-type transcriptional re...    47   2e-04
+sp|P49309|MOCR_RHIML Probable rhizopine catabolism regulatory pr...    46   2e-04
+sp|P0ACL9|PDHR_ECOLI Pyruvate dehydrogenase complex repressor OS...    45   5e-04
+sp|P0ACM0|PDHR_ECOL6 Pyruvate dehydrogenase complex repressor OS...    45   5e-04
+sp|P0ACM1|PDHR_ECO57 Pyruvate dehydrogenase complex repressor OS...    45   5e-04
+sp|P0CL10|PDHR_SALTY Pyruvate dehydrogenase complex repressor OS...    45   5e-04
+sp|E1W823|PDHR_SALTS Pyruvate dehydrogenase complex repressor OS...    45   5e-04
+sp|P0A2S3|PDHR_SALTI Pyruvate dehydrogenase complex repressor OS...    45   5e-04
+sp|P39796|TRER_BACSU HTH-type transcriptional regulator TreR OS=...    45   7e-04
+sp|Q9LBW6|RMPR_MYCGS Putative HTH-type transcriptional regulator...    44   0.001
+sp|P54590|YHCF_BACSU Uncharacterized HTH-type transcriptional re...    44   0.001
+sp|P22405|KORA_STRLI Protein KorA OS=Streptomyces lividans OX=19...    43   0.002
+sp|P12380|HUTC_KLEAE Histidine utilization repressor OS=Klebsiel...    42   0.003
+sp|O31459|GAMR_BACSU HTH-type transcriptional repressor GamR OS=...    42   0.006
+sp|Q8X835|FRLR_ECO57 Probable fructoselysine utilization operon ...    42   0.006
+sp|P44487|UXUR_HAEIN Uxu operon regulator OS=Haemophilus influen...    41   0.006
+sp|O31761|YMFC_BACSU Uncharacterized HTH-type transcriptional re...    41   0.007
+sp|P45544|FRLR_ECOLI Probable fructoselysine utilization operon ...    41   0.007
+sp|Q83PX4|FRLR_SHIFL Probable fructoselysine utilization operon ...    41   0.008
+sp|O34712|YTRA_BACSU HTH-type transcriptional repressor YtrA OS=...    39   0.036
+sp|P96681|YDFD_BACSU Uncharacterized HTH-type transcriptional re...    38   0.054
+sp|P0ACL8|LLDR_SHIFL Putative L-lactate dehydrogenase operon reg...    38   0.066
+sp|P0ACL7|LLDR_ECOLI Putative L-lactate dehydrogenase operon reg...    38   0.066
+sp|O86029|Y6150_RHIME Uncharacterized HTH-type transcriptional r...    37   0.095
+sp|Q8NS92|PDXR_CORGL HTH-type pyridoxine biosynthesis transcript...    37   0.11 
+sp|P31453|YIDP_ECOLI Uncharacterized HTH-type transcriptional re...    37   0.14 
+sp|P39161|UXUR_ECOLI Uxu operon transcriptional regulator OS=Esc...    36   0.26 
+sp|Q9X9E0|EXUR_DICCH Exu regulon transcriptional regulator OS=Di...    35   0.40 
+sp|P0ACL5|GLCC_ECOLI Glc operon transcriptional activator OS=Esc...    35   0.41 
+sp|P0ACL6|GLCC_ECOL6 Glc operon transcriptional activator OS=Esc...    35   0.41 
+sp|Q8GAL4|GNTR_PAENI Probable D-xylose utilization operon transc...    34   0.82 
+sp|P67742|Y601_MYCBO Uncharacterized HTH-type transcriptional re...    34   0.83 
+sp|P9WMG5|MCE2R_MYCTU HTH-type transcriptional regulator Mce2R O...    34   0.83 
+sp|P9WMG4|MCE2R_MYCTO HTH-type transcriptional regulator Mce2R O...    34   0.83 
+sp|A9AUH0|HRCA_HERA2 Heat-inducible transcription repressor HrcA...    33   1.7  
+sp|Q796Q6|YISV_BACSU Uncharacterized HTH-type transcriptional re...    33   2.2  
+sp|P77730|YDCR_ECOLI Uncharacterized HTH-type transcriptional re...    33   2.5  
+sp|P42239|YCBG_BACSU Uncharacterized HTH-type transcriptional re...    33   2.7  
+sp|Q8CRJ1|LACR_STAES Lactose phosphotransferase system repressor...    32   2.8  
+sp|Q5HM34|LACR_STAEQ Lactose phosphotransferase system repressor...    32   2.8  
+sp|P0ACL4|EXUR_SHIFL Exu regulon transcriptional regulator OS=Sh...    32   3.2  
+sp|P0ACL2|EXUR_ECOLI Exu regulon transcriptional regulator OS=Es...    32   3.2  
+sp|P0ACL3|EXUR_ECO57 Exu regulon transcriptional regulator OS=Es...    32   3.2  
+sp|O07007|LUTR_BACSU HTH-type transcriptional regulator LutR OS=...    32   3.7  
+sp|D4GYE7|GLPR_HALVD HTH-type transcriptional regulator GlpR OS=...    32   3.9  
+sp|P96669|YDEL_BACSU Uncharacterized HTH-type transcriptional re...    32   5.6  
+sp|P15360|GYLR_STRCO Glycerol operon regulatory protein OS=Strep...    32   5.7  
+sp|P32425|YIN1_STRAM Uncharacterized HTH-type transcriptional re...    31   6.4  
+sp|Q818E7|HRCA_BACCR Heat-inducible transcription repressor HrcA...    31   6.6  
+sp|B7HCU2|HRCA_BACC4 Heat-inducible transcription repressor HrcA...    31   6.6  
+sp|B7IYG9|HRCA_BACC2 Heat-inducible transcription repressor HrcA...    31   6.8  
+sp|Q8X7U4|MNTR_ECO57 Transcriptional regulator MntR OS=Escherich...    31   7.2  
+sp|P0A9F1|MNTR_ECOLI Transcriptional regulator MntR OS=Escherich...    31   7.4  
+sp|P0A9F2|MNTR_ECOL6 Transcriptional regulator MntR OS=Escherich...    31   7.4  
+sp|Q9KBQ0|ARAR_HALH5 Arabinose metabolism transcriptional repres...    31   7.6  
+sp|P0ACN1|YIHL_SHIFL Uncharacterized HTH-type transcriptional re...    31   7.8  
+sp|P0ACM9|YIHL_ECOLI Uncharacterized HTH-type transcriptional re...    31   7.8  
+sp|P0ACN0|YIHL_ECO57 Uncharacterized HTH-type transcriptional re...    31   7.8  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q7CR30|PHNR_SALTY Putative transcriptional regulator of 2-ami...   251   3e-66
+sp|P96061|PHNR_SALTI Putative transcriptional regulator of 2-ami...   251   3e-66
+sp|Q57SD4|PHNR_SALCH Putative transcriptional regulator of 2-ami...   251   4e-66
+sp|Q5PFQ9|PHNR_SALPA Putative transcriptional regulator of 2-ami...   250   6e-66
+sp|O34817|NAGR_BACSU HTH-type transcriptional repressor NagR OS=...   244   3e-64
+sp|Q82IW0|DASR_STRAW HTH-type transcriptional repressor DasR OS=...   225   3e-58
+sp|Q9K492|DASR_STRCO HTH-type transcriptional repressor DasR OS=...   221   3e-57
+sp|Q8VV01|DASR_STRGR HTH-type transcriptional repressor DasR OS=...   216   1e-55
+sp|Q45591|YYDK_BACSU Uncharacterized HTH-type transcriptional re...   208   4e-53
+sp|P13669|MNGR_ECOLI Mannosyl-D-glycerate transport/metabolism s...   182   2e-45
+sp|P39796|TRER_BACSU HTH-type transcriptional regulator TreR OS=...   171   3e-42
+sp|P0ACM8|YEGW_SHIFL Uncharacterized HTH-type transcriptional re...   163   7e-40
+sp|P0ACM5|YEGW_ECOLI Uncharacterized HTH-type transcriptional re...   163   7e-40
+sp|P0ACM6|YEGW_ECOL6 Uncharacterized HTH-type transcriptional re...   163   7e-40
+sp|P0ACM7|YEGW_ECO57 Uncharacterized HTH-type transcriptional re...   163   7e-40
+sp|O32152|YURK_BACSU Uncharacterized HTH-type transcriptional re...   148   2e-35
+sp|P16684|PHNF_ECOLI Probable transcriptional regulator PhnF OS=...   142   2e-33
+sp|P22773|HUTC_PSEPU Histidine utilization repressor OS=Pseudomo...   127   8e-29
+sp|Q9HU78|HUTC_PSEAE Histidine utilization repressor OS=Pseudomo...   120   8e-27
+sp|Q9S470|ARAR_GEOSE Arabinose metabolism transcriptional repres...    99   2e-20
+sp|P96711|ARAR_BACSU Arabinose metabolism transcriptional repres...    99   2e-20
+sp|P49309|MOCR_RHIML Probable rhizopine catabolism regulatory pr...    86   2e-16
+sp|P96663|YDEF_BACSU Uncharacterized HTH-type transcriptional re...    83   1e-15
+sp|P67740|Y505_MYCBO Uncharacterized HTH-type transcriptional re...    80   1e-14
+sp|P9WMG7|Y494_MYCTU Uncharacterized HTH-type transcriptional re...    80   1e-14
+sp|P9WMG6|Y494_MYCTO Uncharacterized HTH-type transcriptional re...    80   1e-14
+sp|Q01856|Y3073_CERS4 Uncharacterized HTH-type transcriptional r...    78   4e-14
+sp|P0CL10|PDHR_SALTY Pyruvate dehydrogenase complex repressor OS...    78   8e-14
+sp|E1W823|PDHR_SALTS Pyruvate dehydrogenase complex repressor OS...    78   8e-14
+sp|P0A2S3|PDHR_SALTI Pyruvate dehydrogenase complex repressor OS...    78   8e-14
+sp|P0ACL9|PDHR_ECOLI Pyruvate dehydrogenase complex repressor OS...    77   1e-13
+sp|P0ACM0|PDHR_ECOL6 Pyruvate dehydrogenase complex repressor OS...    77   1e-13
+sp|P0ACM1|PDHR_ECO57 Pyruvate dehydrogenase complex repressor OS...    77   1e-13
+
+Sequences not found previously or not previously below threshold:
+
+sp|O31459|GAMR_BACSU HTH-type transcriptional repressor GamR OS=...   144   4e-34
+sp|Q8X835|FRLR_ECO57 Probable fructoselysine utilization operon ...   134   5e-31
+sp|Q83PX4|FRLR_SHIFL Probable fructoselysine utilization operon ...   134   5e-31
+sp|P45544|FRLR_ECOLI Probable fructoselysine utilization operon ...   134   5e-31
+sp|O31761|YMFC_BACSU Uncharacterized HTH-type transcriptional re...   128   3e-29
+sp|O05509|GMUR_BACSU HTH-type transcriptional regulator GmuR OS=...   127   7e-29
+sp|P31453|YIDP_ECOLI Uncharacterized HTH-type transcriptional re...   121   7e-27
+sp|P0ACN1|YIHL_SHIFL Uncharacterized HTH-type transcriptional re...   117   5e-26
+sp|P0ACM9|YIHL_ECOLI Uncharacterized HTH-type transcriptional re...   117   5e-26
+sp|P0ACN0|YIHL_ECO57 Uncharacterized HTH-type transcriptional re...   117   5e-26
+sp|P12380|HUTC_KLEAE Histidine utilization repressor OS=Klebsiel...   113   1e-24
+sp|A0QQ72|PHNF_MYCS2 HTH-type transcriptional repressor PhnF OS=...   109   2e-23
+sp|O86029|Y6150_RHIME Uncharacterized HTH-type transcriptional r...   103   1e-21
+sp|Q8ZKR0|AIRSR_SALTY HTH-type transcriptional repressor STM4068...    93   2e-18
+sp|Q9KBQ0|ARAR_HALH5 Arabinose metabolism transcriptional repres...    75   4e-13
+sp|P96681|YDFD_BACSU Uncharacterized HTH-type transcriptional re...    75   4e-13
+sp|Q9X9E0|EXUR_DICCH Exu regulon transcriptional regulator OS=Di...    72   2e-12
+sp|Q04296|Y4628_STRCO Uncharacterized HTH-type transcriptional r...    72   3e-12
+sp|Q796Q6|YISV_BACSU Uncharacterized HTH-type transcriptional re...    72   3e-12
+sp|P0ACL4|EXUR_SHIFL Exu regulon transcriptional regulator OS=Sh...    69   3e-11
+sp|P0ACL2|EXUR_ECOLI Exu regulon transcriptional regulator OS=Es...    69   3e-11
+sp|P0ACL3|EXUR_ECO57 Exu regulon transcriptional regulator OS=Es...    69   3e-11
+sp|O34712|YTRA_BACSU HTH-type transcriptional repressor YtrA OS=...    69   3e-11
+sp|P44487|UXUR_HAEIN Uxu operon regulator OS=Haemophilus influen...    69   3e-11
+sp|P39161|UXUR_ECOLI Uxu operon transcriptional regulator OS=Esc...    69   4e-11
+sp|P22405|KORA_STRLI Protein KorA OS=Streptomyces lividans OX=19...    69   4e-11
+sp|Q8NS92|PDXR_CORGL HTH-type pyridoxine biosynthesis transcript...    69   4e-11
+sp|P0ACL8|LLDR_SHIFL Putative L-lactate dehydrogenase operon reg...    68   5e-11
+sp|P0ACL7|LLDR_ECOLI Putative L-lactate dehydrogenase operon reg...    68   5e-11
+sp|Q7N3Z5|FADR_PHOLL Fatty acid metabolism regulator protein OS=...    68   5e-11
+sp|P96669|YDEL_BACSU Uncharacterized HTH-type transcriptional re...    68   7e-11
+sp|Q7MJP0|FADR_VIBVY Fatty acid metabolism regulator protein OS=...    66   2e-10
+sp|Q8DAG8|FADR_VIBVU Fatty acid metabolism regulator protein OS=...    66   2e-10
+sp|A8GFF9|FADR_SERP5 Fatty acid metabolism regulator protein OS=...    66   2e-10
+sp|C3LNK4|FADR_VIBCM Fatty acid metabolism regulator protein OS=...    66   2e-10
+sp|Q9KQU8|FADR_VIBCH Fatty acid metabolism regulator protein OS=...    66   2e-10
+sp|A5F6Z2|FADR_VIBC3 Fatty acid metabolism regulator protein OS=...    66   2e-10
+sp|Q87N05|FADR_VIBPA Fatty acid metabolism regulator protein OS=...    66   2e-10
+sp|P77730|YDCR_ECOLI Uncharacterized HTH-type transcriptional re...    66   3e-10
+sp|C5B9W3|FADR_EDWI9 Fatty acid metabolism regulator protein OS=...    66   3e-10
+sp|P94426|GABR_BACSU HTH-type transcriptional regulatory protein...    66   3e-10
+sp|P67742|Y601_MYCBO Uncharacterized HTH-type transcriptional re...    65   4e-10
+sp|P9WMG5|MCE2R_MYCTU HTH-type transcriptional regulator Mce2R O...    65   4e-10
+sp|P9WMG4|MCE2R_MYCTO HTH-type transcriptional regulator Mce2R O...    65   4e-10
+sp|P31475|YIEP_ECOLI Uncharacterized HTH-type transcriptional re...    65   4e-10
+sp|A1JQP6|FADR_YERE8 Fatty acid metabolism regulator protein OS=...    65   4e-10
+sp|Q3Z2W1|FADR_SHISS Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|P0A8V9|FADR_SHIFL Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|Q32H29|FADR_SHIDS Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|Q31ZM8|FADR_SHIBS Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B2TZB3|FADR_SHIB3 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|Q9CPJ0|FADR_PASMU Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|Q1RCQ9|FADR_ECOUT Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B1LHY0|FADR_ECOSM Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B6I9P8|FADR_ECOSE Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B7N3Z1|FADR_ECOLU Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|P0A8V6|FADR_ECOLI Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B1IUA5|FADR_ECOLC Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|P0A8V7|FADR_ECOL6 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|Q0TII8|FADR_ECOL5 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|A1AAB0|FADR_ECOK1 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|A7ZZC1|FADR_ECOHS Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B1XA74|FADR_ECODH Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|C4ZTM8|FADR_ECOBW Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B7LXA1|FADR_ECO8A Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B7MTW5|FADR_ECO81 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B7NJF3|FADR_ECO7I Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B5YXL1|FADR_ECO5E Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|P0A8V8|FADR_ECO57 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B7LGU7|FADR_ECO55 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B7MK84|FADR_ECO45 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B7UQ71|FADR_ECO27 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|A7ZKV8|FADR_ECO24 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|C0Q329|FADR_SALPC Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|Q8ZP15|FADR_SALTY Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B4TXX5|FADR_SALSV Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B5BI48|FADR_SALPK Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|A9MVW4|FADR_SALPB Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|Q5PCU3|FADR_SALPA Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B4SUJ7|FADR_SALNS Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B4TKD5|FADR_SALHS Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B5R8Z6|FADR_SALG2 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B5R2W5|FADR_SALEP Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B5FTM9|FADR_SALDC Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|B5F4E2|FADR_SALA4 Fatty acid metabolism regulator protein OS=...    65   5e-10
+sp|A9MP58|FADR_SALAR Fatty acid metabolism regulator protein OS=...    65   6e-10
+sp|B7LSJ7|FADR_ESCF3 Fatty acid metabolism regulator protein OS=...    65   6e-10
+sp|C6DG46|FADR_PECCP Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|B1JLH6|FADR_YERPY Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|Q66AQ8|FADR_YERPS Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|A4TJC6|FADR_YERPP Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|Q1CJ88|FADR_YERPN Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|A9R9D5|FADR_YERPG Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|Q8ZEL9|FADR_YERPE Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|B2K3Q1|FADR_YERPB Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|Q1C7V2|FADR_YERPA Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|A7FI94|FADR_YERP3 Fatty acid metabolism regulator protein OS=...    64   6e-10
+sp|B5XQ79|FADR_KLEP3 Fatty acid metabolism regulator protein OS=...    64   7e-10
+sp|B4EXU3|FADR_PROMH Fatty acid metabolism regulator protein OS=...    64   7e-10
+sp|A6TAW6|FADR_KLEP7 Fatty acid metabolism regulator protein OS=...    64   7e-10
+sp|Q6D4N0|FADR_PECAS Fatty acid metabolism regulator protein OS=...    64   9e-10
+sp|Q8Z685|FADR_SALTI Fatty acid metabolism regulator protein OS=...    64   1e-09
+sp|A4WBF4|FADR_ENT38 Fatty acid metabolism regulator protein OS=...    64   1e-09
+sp|A7MKD4|FADR_CROS8 Fatty acid metabolism regulator protein OS=...    64   1e-09
+sp|P54590|YHCF_BACSU Uncharacterized HTH-type transcriptional re...    63   1e-09
+sp|B2VJ49|FADR_ERWT9 Fatty acid metabolism regulator protein OS=...    63   2e-09
+sp|D5AKX9|TAUR_RHOCB HTH-type transcriptional regulator TauR OS=...    63   2e-09
+sp|Q12NQ7|FADR_SHEDO Fatty acid metabolism regulator protein OS=...    62   3e-09
+sp|A1S6X3|FADR_SHEAM Fatty acid metabolism regulator protein OS=...    62   4e-09
+sp|Q083H2|FADR_SHEFN Fatty acid metabolism regulator protein OS=...    62   4e-09
+sp|B8EAH2|FADR_SHEB2 Fatty acid metabolism regulator protein OS=...    61   6e-09
+sp|A9KY80|FADR_SHEB9 Fatty acid metabolism regulator protein OS=...    61   6e-09
+sp|A6WM75|FADR_SHEB8 Fatty acid metabolism regulator protein OS=...    61   6e-09
+sp|A3D3H2|FADR_SHEB5 Fatty acid metabolism regulator protein OS=...    61   6e-09
+sp|A4Y625|FADR_SHEPC Fatty acid metabolism regulator protein OS=...    61   6e-09
+sp|Q7A875|NORG_STAAN HTH-type transcriptional regulator NorG OS=...    61   7e-09
+sp|Q99XA5|NORG_STAAM HTH-type transcriptional regulator NorG OS=...    61   7e-09
+sp|O07007|LUTR_BACSU HTH-type transcriptional regulator LutR OS=...    61   8e-09
+sp|A0KVP9|FADR_SHESA Fatty acid metabolism regulator protein OS=...    61   9e-09
+sp|Q9LBW6|RMPR_MYCGS Putative HTH-type transcriptional regulator...    61   9e-09
+sp|Q0HW67|FADR_SHESR Fatty acid metabolism regulator protein OS=...    61   1e-08
+sp|Q0HJX1|FADR_SHESM Fatty acid metabolism regulator protein OS=...    61   1e-08
+sp|Q8ED80|FADR_SHEON Fatty acid metabolism regulator protein OS=...    61   1e-08
+sp|B0TRI9|FADR_SHEHH Fatty acid metabolism regulator protein OS=...    60   1e-08
+sp|O05494|YDHC_BACSU Uncharacterized HTH-type transcriptional re...    60   2e-08
+sp|P0ACL5|GLCC_ECOLI Glc operon transcriptional activator OS=Esc...    60   2e-08
+sp|P0ACL6|GLCC_ECOL6 Glc operon transcriptional activator OS=Esc...    60   2e-08
+sp|Q2YUS3|NORG_STAAB HTH-type transcriptional regulator NorG OS=...    60   2e-08
+sp|O07578|YHDI_BACSU Uncharacterized HTH-type transcriptional re...    59   2e-08
+sp|A8H5C1|FADR_SHEPA Fatty acid metabolism regulator protein OS=...    59   3e-08
+sp|P44705|FADR_HAEIN Fatty acid metabolism regulator protein OS=...    59   3e-08
+sp|A5UGT9|FADR_HAEIG Fatty acid metabolism regulator protein OS=...    59   3e-08
+sp|A5UA62|FADR_HAEIE Fatty acid metabolism regulator protein OS=...    59   3e-08
+sp|Q4QNB9|FADR_HAEI8 Fatty acid metabolism regulator protein OS=...    59   3e-08
+sp|P39389|YJIR_ECOLI Uncharacterized HTH-type transcriptional re...    59   4e-08
+sp|Q5HJR1|NORG_STAAC HTH-type transcriptional regulator NorG OS=...    58   5e-08
+sp|Q2G1P1|NORG_STAA8 HTH-type transcriptional regulator NorG OS=...    58   5e-08
+sp|Q2FKF1|NORG_STAA3 HTH-type transcriptional regulator NorG OS=...    58   5e-08
+sp|F8VI19|NANR_SALBC HTH-type transcriptional repressor NanR OS=...    56   2e-07
+sp|P40193|PTSJ_SALTY Vitamin B6 salvage pathway transcriptional ...    56   2e-07
+sp|A9MNY5|NANR_SALAR HTH-type transcriptional repressor NanR OS=...    56   2e-07
+sp|Q08792|YCXD_BACSU Uncharacterized HTH-type transcriptional re...    56   2e-07
+sp|G0E1Z6|NANR_KLEAK HTH-type transcriptional repressor NanR OS=...    56   2e-07
+sp|P67735|NANR_SALTY HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|P67736|NANR_SALTI HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|B5BGP6|NANR_SALPK HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|C0PZN5|NANR_SALPC HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|Q5PJS9|NANR_SALPA HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|B5RET8|NANR_SALG2 HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|B5R0L3|NANR_SALEP HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|Q57JC8|NANR_SALCH HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|B4TWJ1|NANR_SALSV HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|B4T751|NANR_SALNS HTH-type transcriptional repressor NanR OS=...    56   3e-07
+sp|P42239|YCBG_BACSU Uncharacterized HTH-type transcriptional re...    56   3e-07
+sp|A7MJD3|NANR_CROS8 HTH-type transcriptional repressor NanR OS=...    55   4e-07
+sp|Q8FHD1|YDFH_ECOL6 Uncharacterized HTH-type transcriptional re...    54   1e-06
+sp|P0ACM4|YDFH_SHIFL Uncharacterized HTH-type transcriptional re...    54   1e-06
+sp|P0ACM3|YDFH_ECO57 Uncharacterized HTH-type transcriptional re...    54   1e-06
+sp|P0ACM2|RSPR_ECOLI HTH-type transcriptional repressor RspR OS=...    54   1e-06
+sp|A4WF39|NANR_ENT38 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|Q3YX22|NANR_SHISS HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B7UJV9|NANR_ECO27 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B7NDK4|NANR_ECOLU HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B7NKT7|NANR_ECO7I HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B6I1U4|NANR_ECOSE HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|Q8X4W4|NANR_ECO57 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B7LHT2|NANR_ECO55 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|P0A8W1|NANR_SHIFL HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|Q31W95|NANR_SHIBS HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|P0A8W0|NANR_ECOLI HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B1IQQ3|NANR_ECOLC HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B1XHJ9|NANR_ECODH HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|C4ZSW4|NANR_ECOBW HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B7M0T8|NANR_ECO8A HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|Q32BB3|NANR_SHIDS HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|Q1R6B4|NANR_ECOUT HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|Q8FD57|NANR_ECOL6 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|Q0TCP0|NANR_ECOL5 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|A1AGC0|NANR_ECOK1 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B7N0Z9|NANR_ECO81 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|B7MBY8|NANR_ECO45 HTH-type transcriptional repressor NanR OS=...    54   1e-06
+sp|D2TP58|NANR_CITRI HTH-type transcriptional repressor NanR OS=...    53   1e-06
+sp|P31460|DGOR_ECOLI Galactonate operon transcriptional represso...    53   2e-06
+sp|E0T5H9|NANR_EDWTF HTH-type transcriptional repressor NanR OS=...    53   2e-06
+sp|P32425|YIN1_STRAM Uncharacterized HTH-type transcriptional re...    53   2e-06
+sp|Q8GAL4|GNTR_PAENI Probable D-xylose utilization operon transc...    53   2e-06
+sp|P75532|Y239_MYCPN Uncharacterized HTH-type transcriptional re...    44   7e-04
+sp|P46833|GNTR_BACLI Gluconate operon transcriptional repressor ...    44   0.001
+sp|P10585|GNTR_BACSU Gluconate operon transcriptional repressor ...    44   0.001
+sp|P67738|Y044_MYCBO Uncharacterized HTH-type transcriptional re...    43   0.002
+sp|P9WMG9|Y043_MYCTU Uncharacterized HTH-type transcriptional re...    43   0.002
+sp|P9WMG8|Y043_MYCTO Uncharacterized HTH-type transcriptional re...    43   0.002
+sp|P46337|IOLR_BACSU HTH-type transcriptional regulator IolR OS=...    42   0.004
+sp|P39399|LGOR_ECOLI Probable HTH-type transcriptional regulator...    41   0.008
+sp|P54988|NTRA_AMIAI Nta operon transcriptional regulator OS=Ami...    41   0.009
+sp|P70790|YTUX_AGRVI Uncharacterized HTH-type transcriptional re...    40   0.014
+sp|P47347|Y101_MYCGE Uncharacterized HTH-type transcriptional re...    40   0.021
+sp|Q9V2G4|RFCS_PYRAB Replication factor C small subunit OS=Pyroc...    39   0.024
+sp|Q8CRJ1|LACR_STAES Lactose phosphotransferase system repressor...    39   0.027
+sp|Q5HM34|LACR_STAEQ Lactose phosphotransferase system repressor...    39   0.027
+sp|P44780|FUCR_HAEIN L-fucose operon activator OS=Haemophilus in...    39   0.031
+sp|P75978|YMFN_ECOLI Protein YmfN OS=Escherichia coli (strain K1...    38   0.048
+sp|Q314F2|LEXA_OLEA2 LexA repressor OS=Oleidesulfovibrio alasken...    37   0.086
+sp|P0ACK9|FUCR_SHIFL L-fucose operon activator OS=Shigella flexn...    37   0.087
+sp|P0ACK8|FUCR_ECOLI L-fucose operon activator OS=Escherichia co...    37   0.087
+sp|P18816|LACR_LACLL Lactose phosphotransferase system repressor...    37   0.10 
+sp|D4GYE7|GLPR_HALVD HTH-type transcriptional regulator GlpR OS=...    37   0.12 
+sp|P76114|MCBR_ECOLI HTH-type transcriptional regulator McbR OS=...    37   0.15 
+sp|P32144|CSQR_ECOLI HTH-type transcriptional repressor CsqR OS=...    36   0.20 
+sp|Q9UYS2|Y1435_PYRAB Uncharacterized protein PYRAB14350 OS=Pyro...    36   0.26 
+sp|Q51391|GLPR_PSEAE Glycerol-3-phosphate regulon repressor OS=P...    36   0.28 
+sp|Q5JGN9|RIFK_THEKO Riboflavin kinase OS=Thermococcus kodakaren...    36   0.28 
+sp|P0A9F1|MNTR_ECOLI Transcriptional regulator MntR OS=Escherich...    35   0.41 
+sp|P0A9F2|MNTR_ECOL6 Transcriptional regulator MntR OS=Escherich...    35   0.41 
+sp|P0A0P9|LACR_STAAW Lactose phosphotransferase system repressor...    35   0.44 
+sp|Q6G7B8|LACR_STAAS Lactose phosphotransferase system repressor...    35   0.44 
+sp|Q5HE08|LACR_STAAC Lactose phosphotransferase system repressor...    35   0.44 
+sp|P0A0Q0|LACR_STAA8 Lactose phosphotransferase system repressor...    35   0.44 
+sp|Q8X7U4|MNTR_ECO57 Transcriptional regulator MntR OS=Escherich...    35   0.45 
+sp|P67744|LACR_STAAN Lactose phosphotransferase system repressor...    35   0.46 
+sp|P67743|LACR_STAAM Lactose phosphotransferase system repressor...    35   0.46 
+sp|Q6GEN3|LACR_STAAR Lactose phosphotransferase system repressor...    35   0.47 
+sp|P9WMH3|CRPL_MYCTU CRP-like cAMP-activated global transcriptio...    35   0.47 
+sp|P9WMH2|CRPL_MYCTO CRP-like cAMP-activated global transcriptio...    35   0.47 
+sp|B0SHT3|HRCA_LEPBA Heat-inducible transcription repressor HrcA...    35   0.50 
+sp|P94578|YWOH_BACSU Uncharacterized HTH-type transcriptional re...    35   0.50 
+sp|Q9R9M8|AAU3_RHIME Protein aau3 OS=Rhizobium meliloti (strain ...    35   0.57 
+sp|C3N7L2|TFE_SULIY Transcription factor E OS=Sulfolobus islandi...    35   0.59 
+sp|C3NFW2|TFE_SULIN Transcription factor E OS=Sulfolobus islandi...    35   0.59 
+sp|C3MY51|TFE_SULIM Transcription factor E OS=Sulfolobus islandi...    35   0.59 
+sp|C3MRF5|TFE_SULIL Transcription factor E OS=Sulfolobus islandi...    35   0.59 
+sp|C4KIS0|TFE_SULIK Transcription factor E OS=Sulfolobus islandi...    35   0.59 
+sp|C3MZJ0|TFE_SULIA Transcription factor E OS=Sulfolobus islandi...    35   0.59 
+sp|Q980M5|TFE_SACS2 Transcription factor E OS=Saccharolobus solf...    35   0.59 
+sp|Q79VI7|CRPL_CORGL CRP-like cAMP-activated global transcriptio...    35   0.62 
+sp|P94591|GLCR_BACSU HTH-type transcriptional repressor GlcR OS=...    34   0.68 
+sp|P0ACK2|AGAR_ECOLI Putative aga operon transcriptional repress...    34   0.75 
+sp|P0ACK3|AGAR_ECOL6 Putative aga operon transcriptional repress...    34   0.75 
+sp|P0ACK4|AGAR_ECO57 Putative aga operon transcriptional repress...    34   0.75 
+sp|A9AUH0|HRCA_HERA2 Heat-inducible transcription repressor HrcA...    34   0.80 
+sp|A7MX86|NSRR_VIBC1 HTH-type transcriptional repressor NsrR OS=...    34   0.84 
+sp|Q92ET8|GOLR_LISIN HTH-type transcriptional regulator GolR OS=...    34   0.92 
+sp|Q3A3S5|LEXA_SYNC1 LexA repressor OS=Syntrophotalea carbinolic...    34   0.93 
+sp|B5EA68|LEXA_CITBB LexA repressor OS=Citrifermentans bemidjien...    34   1.0  
+sp|Q97I23|LEXA_CLOAB LexA repressor OS=Clostridium acetobutylicu...    34   1.0  
+sp|O58348|Y614_PYRHO Uncharacterized protein PH0614 OS=Pyrococcu...    34   1.1  
+sp|Q8U262|RIFK_PYRFU Riboflavin kinase OS=Pyrococcus furiosus (s...    34   1.2  
+sp|P44978|Y1009_HAEIN Uncharacterized HTH-type transcriptional r...    34   1.2  
+sp|P67710|MNTR_SALTY Transcriptional regulator MntR OS=Salmonell...    34   1.3  
+sp|P67711|MNTR_SALTI Transcriptional regulator MntR OS=Salmonell...    34   1.3  
+sp|P52598|YGBI_ECOLI Uncharacterized HTH-type transcriptional re...    33   1.5  
+sp|Q9UYX4|RIFK_PYRAB Riboflavin kinase OS=Pyrococcus abyssi (str...    33   1.7  
+sp|B3ELV8|END4_CHLPB Probable endonuclease 4 OS=Chlorobium phaeo...    33   1.7  
+sp|O31713|FRUR_BACSU Uncharacterized HTH-type transcriptional re...    33   1.8  
+sp|P32104|ACCR_AGRFC Transcriptional repressor AccR OS=Agrobacte...    33   2.0  
+sp|C6DZY8|LEXA_GEOSM LexA repressor OS=Geobacter sp. (strain M21...    33   2.1  
+sp|B1JJ73|SLYA_YERPY Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|P69989|SLYA_YERPS Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|A4TIR6|SLYA_YERPP Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|Q1CIM0|SLYA_YERPN Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|A9QZA1|SLYA_YERPG Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|P69988|SLYA_YERPE Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|A7FHL4|SLYA_YERP3 Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|Q1C786|SLYA_YERPA Transcriptional regulator SlyA OS=Yersinia ...    33   2.2  
+sp|C6DE26|NSRR_PECCP HTH-type transcriptional repressor NsrR OS=...    33   2.3  
+sp|P15082|SRLR_ECOLI Glucitol operon repressor OS=Escherichia co...    33   2.4  
+sp|Q9S3W0|SLYA_YEREN Transcriptional regulator SlyA OS=Yersinia ...    32   2.8  
+sp|A1JNY1|SLYA_YERE8 Transcriptional regulator SlyA OS=Yersinia ...    32   2.8  
+sp|P77569|MHPR_ECOLI DNA-binding transcriptional activator MhpR ...    32   3.1  
+sp|P26422|LACR_STRMU Lactose phosphotransferase system repressor...    32   3.3  
+sp|A8GDX5|SLYA_SERP5 Transcriptional regulator SlyA OS=Serratia ...    32   3.3  
+sp|P39781|XKDB_BACSU Phage-like element PBSX protein XkdB OS=Bac...    32   3.6  
+sp|B0R4X4|LRPA1_HALS3 HTH-type transcriptional regulator LrpA1 O...    32   3.6  
+sp|C0ZES6|LEXA_BREBN LexA repressor OS=Brevibacillus brevis (str...    32   4.3  
+sp|C5BE36|SLYA_EDWI9 Transcriptional regulator SlyA OS=Edwardsie...    32   4.3  
+sp|Q9X079|A2MG_THEMA Alpha-2-macroglobulin OS=Thermotoga maritim...    32   4.4  
+sp|Q5HEL3|SSPP_STAAC Staphopain A OS=Staphylococcus aureus (stra...    32   4.6  
+sp|Q2G2R8|SSPP_STAA8 Staphopain A OS=Staphylococcus aureus (stra...    32   4.6  
+sp|P0DOW5|LEXA_VERSI LexA repressor OS=Verrucomicrobium spinosum...    32   4.7  
+sp|P72795|HRCA_SYNY3 Heat-inducible transcription repressor HrcA...    32   5.4  
+sp|Q2NT07|SLYA_SODGM Transcriptional regulator SlyA OS=Sodalis g...    32   5.5  
+sp|Q2NR06|UBIC_SODGM Chorismate pyruvate-lyase OS=Sodalis glossi...    31   5.9  
+sp|B5XWN4|SLYA_KLEP3 Transcriptional regulator SlyA OS=Klebsiell...    31   6.1  
+sp|P76034|YCIT_ECOLI Uncharacterized HTH-type transcriptional re...    31   6.2  
+sp|Q8D2L8|SLYA_WIGBR Transcriptional regulator SlyA OS=Wiggleswo...    31   6.2  
+sp|Q5SID7|CRP_THET8 Cyclic AMP receptor protein OS=Thermus therm...    31   6.5  
+sp|Q5WL64|NSRR_ALKCK HTH-type transcriptional regulator NsrR OS=...    31   9.4  
+sp|Q9RC41|NSRR_HALH5 HTH-type transcriptional regulator NsrR OS=...    31   9.9  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|O34817|NAGR_BACSU HTH-type transcriptional repressor NagR OS=...   225   3e-58
+sp|Q57SD4|PHNR_SALCH Putative transcriptional regulator of 2-ami...   199   2e-50
+sp|Q7CR30|PHNR_SALTY Putative transcriptional regulator of 2-ami...   198   4e-50
+sp|P96061|PHNR_SALTI Putative transcriptional regulator of 2-ami...   198   4e-50
+sp|Q5PFQ9|PHNR_SALPA Putative transcriptional regulator of 2-ami...   197   8e-50
+sp|O32152|YURK_BACSU Uncharacterized HTH-type transcriptional re...   187   5e-47
+sp|O31459|GAMR_BACSU HTH-type transcriptional repressor GamR OS=...   187   5e-47
+sp|Q82IW0|DASR_STRAW HTH-type transcriptional repressor DasR OS=...   184   4e-46
+sp|Q8X835|FRLR_ECO57 Probable fructoselysine utilization operon ...   183   1e-45
+sp|Q83PX4|FRLR_SHIFL Probable fructoselysine utilization operon ...   183   2e-45
+sp|P45544|FRLR_ECOLI Probable fructoselysine utilization operon ...   182   2e-45
+sp|P13669|MNGR_ECOLI Mannosyl-D-glycerate transport/metabolism s...   182   2e-45
+sp|O05509|GMUR_BACSU HTH-type transcriptional regulator GmuR OS=...   180   8e-45
+sp|P0ACM8|YEGW_SHIFL Uncharacterized HTH-type transcriptional re...   179   1e-44
+sp|P0ACM5|YEGW_ECOLI Uncharacterized HTH-type transcriptional re...   179   1e-44
+sp|P0ACM6|YEGW_ECOL6 Uncharacterized HTH-type transcriptional re...   179   1e-44
+sp|P0ACM7|YEGW_ECO57 Uncharacterized HTH-type transcriptional re...   179   1e-44
+sp|O31761|YMFC_BACSU Uncharacterized HTH-type transcriptional re...   179   2e-44
+sp|Q8VV01|DASR_STRGR HTH-type transcriptional repressor DasR OS=...   179   2e-44
+sp|Q9K492|DASR_STRCO HTH-type transcriptional repressor DasR OS=...   178   3e-44
+sp|Q45591|YYDK_BACSU Uncharacterized HTH-type transcriptional re...   177   6e-44
+sp|P39796|TRER_BACSU HTH-type transcriptional regulator TreR OS=...   171   6e-42
+sp|P22773|HUTC_PSEPU Histidine utilization repressor OS=Pseudomo...   164   7e-40
+sp|P12380|HUTC_KLEAE Histidine utilization repressor OS=Klebsiel...   159   2e-38
+sp|P0ACN1|YIHL_SHIFL Uncharacterized HTH-type transcriptional re...   159   2e-38
+sp|P0ACM9|YIHL_ECOLI Uncharacterized HTH-type transcriptional re...   159   2e-38
+sp|P0ACN0|YIHL_ECO57 Uncharacterized HTH-type transcriptional re...   159   2e-38
+sp|P31453|YIDP_ECOLI Uncharacterized HTH-type transcriptional re...   158   4e-38
+sp|Q9HU78|HUTC_PSEAE Histidine utilization repressor OS=Pseudomo...   156   1e-37
+sp|P16684|PHNF_ECOLI Probable transcriptional regulator PhnF OS=...   155   3e-37
+sp|A0QQ72|PHNF_MYCS2 HTH-type transcriptional repressor PhnF OS=...   150   7e-36
+sp|O86029|Y6150_RHIME Uncharacterized HTH-type transcriptional r...   146   1e-34
+sp|Q8ZKR0|AIRSR_SALTY HTH-type transcriptional repressor STM4068...   141   4e-33
+sp|Q04296|Y4628_STRCO Uncharacterized HTH-type transcriptional r...   133   1e-30
+sp|P75532|Y239_MYCPN Uncharacterized HTH-type transcriptional re...   128   4e-29
+sp|P31460|DGOR_ECOLI Galactonate operon transcriptional represso...   116   1e-25
+sp|Q9LBW6|RMPR_MYCGS Putative HTH-type transcriptional regulator...   112   3e-24
+sp|P39389|YJIR_ECOLI Uncharacterized HTH-type transcriptional re...   111   6e-24
+sp|P22405|KORA_STRLI Protein KorA OS=Streptomyces lividans OX=19...   111   7e-24
+sp|B8EAH2|FADR_SHEB2 Fatty acid metabolism regulator protein OS=...   110   1e-23
+sp|A3D3H2|FADR_SHEB5 Fatty acid metabolism regulator protein OS=...   109   1e-23
+sp|A9KY80|FADR_SHEB9 Fatty acid metabolism regulator protein OS=...   109   1e-23
+sp|A6WM75|FADR_SHEB8 Fatty acid metabolism regulator protein OS=...   109   1e-23
+sp|A1S6X3|FADR_SHEAM Fatty acid metabolism regulator protein OS=...   109   3e-23
+sp|A4Y625|FADR_SHEPC Fatty acid metabolism regulator protein OS=...   106   1e-22
+sp|Q0HW67|FADR_SHESR Fatty acid metabolism regulator protein OS=...   104   5e-22
+sp|Q0HJX1|FADR_SHESM Fatty acid metabolism regulator protein OS=...   104   5e-22
+sp|A0KVP9|FADR_SHESA Fatty acid metabolism regulator protein OS=...   104   6e-22
+sp|Q12NQ7|FADR_SHEDO Fatty acid metabolism regulator protein OS=...   103   1e-21
+sp|Q8ED80|FADR_SHEON Fatty acid metabolism regulator protein OS=...   103   1e-21
+sp|C6DG46|FADR_PECCP Fatty acid metabolism regulator protein OS=...   103   1e-21
+sp|Q7N3Z5|FADR_PHOLL Fatty acid metabolism regulator protein OS=...   102   2e-21
+sp|A8GFF9|FADR_SERP5 Fatty acid metabolism regulator protein OS=...   102   2e-21
+sp|C5B9W3|FADR_EDWI9 Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|B1JLH6|FADR_YERPY Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|Q66AQ8|FADR_YERPS Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|A4TJC6|FADR_YERPP Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|Q1CJ88|FADR_YERPN Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|A9R9D5|FADR_YERPG Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|Q8ZEL9|FADR_YERPE Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|B2K3Q1|FADR_YERPB Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|Q1C7V2|FADR_YERPA Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|A7FI94|FADR_YERP3 Fatty acid metabolism regulator protein OS=...   102   3e-21
+sp|B0TRI9|FADR_SHEHH Fatty acid metabolism regulator protein OS=...   101   4e-21
+sp|Q6D4N0|FADR_PECAS Fatty acid metabolism regulator protein OS=...   101   5e-21
+sp|A7MKD4|FADR_CROS8 Fatty acid metabolism regulator protein OS=...   100   1e-20
+sp|Q9CPJ0|FADR_PASMU Fatty acid metabolism regulator protein OS=...   100   1e-20
+sp|A1JQP6|FADR_YERE8 Fatty acid metabolism regulator protein OS=...   100   1e-20
+sp|B5XQ79|FADR_KLEP3 Fatty acid metabolism regulator protein OS=...   100   1e-20
+sp|A8H5C1|FADR_SHEPA Fatty acid metabolism regulator protein OS=...   100   2e-20
+sp|A6TAW6|FADR_KLEP7 Fatty acid metabolism regulator protein OS=...    99   2e-20
+sp|C0Q329|FADR_SALPC Fatty acid metabolism regulator protein OS=...    99   4e-20
+sp|Q8ZP15|FADR_SALTY Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B4TXX5|FADR_SALSV Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B5BI48|FADR_SALPK Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|A9MVW4|FADR_SALPB Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|Q5PCU3|FADR_SALPA Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B4SUJ7|FADR_SALNS Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B4TKD5|FADR_SALHS Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B5R8Z6|FADR_SALG2 Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B5R2W5|FADR_SALEP Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B5FTM9|FADR_SALDC Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|B5F4E2|FADR_SALA4 Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|Q083H2|FADR_SHEFN Fatty acid metabolism regulator protein OS=...    98   4e-20
+sp|A9MP58|FADR_SALAR Fatty acid metabolism regulator protein OS=...    98   5e-20
+sp|B4EXU3|FADR_PROMH Fatty acid metabolism regulator protein OS=...    98   5e-20
+sp|Q8NS92|PDXR_CORGL HTH-type pyridoxine biosynthesis transcript...    98   6e-20
+sp|Q8Z685|FADR_SALTI Fatty acid metabolism regulator protein OS=...    98   7e-20
+sp|B2VJ49|FADR_ERWT9 Fatty acid metabolism regulator protein OS=...    98   8e-20
+sp|A4WBF4|FADR_ENT38 Fatty acid metabolism regulator protein OS=...    97   1e-19
+sp|Q3Z2W1|FADR_SHISS Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|P0A8V9|FADR_SHIFL Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|Q32H29|FADR_SHIDS Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|Q31ZM8|FADR_SHIBS Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B2TZB3|FADR_SHIB3 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|Q1RCQ9|FADR_ECOUT Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B1LHY0|FADR_ECOSM Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B6I9P8|FADR_ECOSE Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B7N3Z1|FADR_ECOLU Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|P0A8V6|FADR_ECOLI Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B1IUA5|FADR_ECOLC Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|P0A8V7|FADR_ECOL6 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|Q0TII8|FADR_ECOL5 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|A1AAB0|FADR_ECOK1 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|A7ZZC1|FADR_ECOHS Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B1XA74|FADR_ECODH Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|C4ZTM8|FADR_ECOBW Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B7LXA1|FADR_ECO8A Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B7MTW5|FADR_ECO81 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B7NJF3|FADR_ECO7I Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B5YXL1|FADR_ECO5E Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|P0A8V8|FADR_ECO57 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B7LGU7|FADR_ECO55 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B7MK84|FADR_ECO45 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|B7UQ71|FADR_ECO27 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|A7ZKV8|FADR_ECO24 Fatty acid metabolism regulator protein OS=...    96   2e-19
+sp|P96669|YDEL_BACSU Uncharacterized HTH-type transcriptional re...    96   2e-19
+sp|P96711|ARAR_BACSU Arabinose metabolism transcriptional repres...    94   6e-19
+sp|B7LSJ7|FADR_ESCF3 Fatty acid metabolism regulator protein OS=...    94   6e-19
+sp|Q9S470|ARAR_GEOSE Arabinose metabolism transcriptional repres...    94   1e-18
+sp|Q7MJP0|FADR_VIBVY Fatty acid metabolism regulator protein OS=...    91   5e-18
+sp|Q8DAG8|FADR_VIBVU Fatty acid metabolism regulator protein OS=...    91   5e-18
+sp|C3LNK4|FADR_VIBCM Fatty acid metabolism regulator protein OS=...    91   6e-18
+sp|Q9KQU8|FADR_VIBCH Fatty acid metabolism regulator protein OS=...    91   6e-18
+sp|A5F6Z2|FADR_VIBC3 Fatty acid metabolism regulator protein OS=...    91   6e-18
+sp|P39161|UXUR_ECOLI Uxu operon transcriptional regulator OS=Esc...    91   6e-18
+sp|Q87N05|FADR_VIBPA Fatty acid metabolism regulator protein OS=...    91   7e-18
+sp|P44487|UXUR_HAEIN Uxu operon regulator OS=Haemophilus influen...    89   3e-17
+sp|P96681|YDFD_BACSU Uncharacterized HTH-type transcriptional re...    89   3e-17
+sp|Q796Q6|YISV_BACSU Uncharacterized HTH-type transcriptional re...    89   3e-17
+sp|Q9X9E0|EXUR_DICCH Exu regulon transcriptional regulator OS=Di...    88   4e-17
+sp|O34712|YTRA_BACSU HTH-type transcriptional repressor YtrA OS=...    88   5e-17
+sp|P49309|MOCR_RHIML Probable rhizopine catabolism regulatory pr...    88   6e-17
+sp|P94426|GABR_BACSU HTH-type transcriptional regulatory protein...    87   1e-16
+sp|A5UA62|FADR_HAEIE Fatty acid metabolism regulator protein OS=...    87   1e-16
+sp|P44705|FADR_HAEIN Fatty acid metabolism regulator protein OS=...    86   2e-16
+sp|A5UGT9|FADR_HAEIG Fatty acid metabolism regulator protein OS=...    86   2e-16
+sp|Q4QNB9|FADR_HAEI8 Fatty acid metabolism regulator protein OS=...    86   3e-16
+sp|P0ACL9|PDHR_ECOLI Pyruvate dehydrogenase complex repressor OS...    85   5e-16
+sp|P0ACM0|PDHR_ECOL6 Pyruvate dehydrogenase complex repressor OS...    85   5e-16
+sp|P0ACM1|PDHR_ECO57 Pyruvate dehydrogenase complex repressor OS...    85   5e-16
+sp|P0ACL4|EXUR_SHIFL Exu regulon transcriptional regulator OS=Sh...    84   6e-16
+sp|P0ACL2|EXUR_ECOLI Exu regulon transcriptional regulator OS=Es...    84   6e-16
+sp|P0ACL3|EXUR_ECO57 Exu regulon transcriptional regulator OS=Es...    84   6e-16
+sp|Q01856|Y3073_CERS4 Uncharacterized HTH-type transcriptional r...    84   7e-16
+sp|P0CL10|PDHR_SALTY Pyruvate dehydrogenase complex repressor OS...    84   8e-16
+sp|E1W823|PDHR_SALTS Pyruvate dehydrogenase complex repressor OS...    84   8e-16
+sp|P0A2S3|PDHR_SALTI Pyruvate dehydrogenase complex repressor OS...    84   8e-16
+sp|P77730|YDCR_ECOLI Uncharacterized HTH-type transcriptional re...    84   1e-15
+sp|Q9KBQ0|ARAR_HALH5 Arabinose metabolism transcriptional repres...    82   3e-15
+sp|O07007|LUTR_BACSU HTH-type transcriptional regulator LutR OS=...    81   6e-15
+sp|P96663|YDEF_BACSU Uncharacterized HTH-type transcriptional re...    81   6e-15
+sp|O07578|YHDI_BACSU Uncharacterized HTH-type transcriptional re...    81   7e-15
+sp|P54590|YHCF_BACSU Uncharacterized HTH-type transcriptional re...    81   1e-14
+sp|P31475|YIEP_ECOLI Uncharacterized HTH-type transcriptional re...    80   1e-14
+sp|P0ACL5|GLCC_ECOLI Glc operon transcriptional activator OS=Esc...    79   3e-14
+sp|P0ACL6|GLCC_ECOL6 Glc operon transcriptional activator OS=Esc...    79   3e-14
+sp|P67742|Y601_MYCBO Uncharacterized HTH-type transcriptional re...    79   3e-14
+sp|P9WMG5|MCE2R_MYCTU HTH-type transcriptional regulator Mce2R O...    79   3e-14
+sp|P9WMG4|MCE2R_MYCTO HTH-type transcriptional regulator Mce2R O...    79   3e-14
+sp|P67740|Y505_MYCBO Uncharacterized HTH-type transcriptional re...    78   4e-14
+sp|P9WMG7|Y494_MYCTU Uncharacterized HTH-type transcriptional re...    78   4e-14
+sp|P9WMG6|Y494_MYCTO Uncharacterized HTH-type transcriptional re...    78   4e-14
+sp|O05494|YDHC_BACSU Uncharacterized HTH-type transcriptional re...    76   2e-13
+sp|Q8FHD1|YDFH_ECOL6 Uncharacterized HTH-type transcriptional re...    76   2e-13
+sp|P0ACL8|LLDR_SHIFL Putative L-lactate dehydrogenase operon reg...    76   2e-13
+sp|P0ACL7|LLDR_ECOLI Putative L-lactate dehydrogenase operon reg...    76   2e-13
+sp|P0ACM4|YDFH_SHIFL Uncharacterized HTH-type transcriptional re...    76   3e-13
+sp|P0ACM3|YDFH_ECO57 Uncharacterized HTH-type transcriptional re...    76   3e-13
+sp|P0ACM2|RSPR_ECOLI HTH-type transcriptional repressor RspR OS=...    76   3e-13
+sp|D5AKX9|TAUR_RHOCB HTH-type transcriptional regulator TauR OS=...    74   1e-12
+sp|G0E1Z6|NANR_KLEAK HTH-type transcriptional repressor NanR OS=...    74   1e-12
+sp|Q08792|YCXD_BACSU Uncharacterized HTH-type transcriptional re...    72   3e-12
+sp|P32425|YIN1_STRAM Uncharacterized HTH-type transcriptional re...    72   4e-12
+sp|P42239|YCBG_BACSU Uncharacterized HTH-type transcriptional re...    71   5e-12
+sp|F8VI19|NANR_SALBC HTH-type transcriptional repressor NanR OS=...    71   8e-12
+sp|A4WF39|NANR_ENT38 HTH-type transcriptional repressor NanR OS=...    71   8e-12
+sp|Q3YX22|NANR_SHISS HTH-type transcriptional repressor NanR OS=...    71   8e-12
+sp|Q32BB3|NANR_SHIDS HTH-type transcriptional repressor NanR OS=...    71   9e-12
+sp|P0A8W1|NANR_SHIFL HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|Q31W95|NANR_SHIBS HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|A9MNY5|NANR_SALAR HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|P0A8W0|NANR_ECOLI HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|B1IQQ3|NANR_ECOLC HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|B1XHJ9|NANR_ECODH HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|C4ZSW4|NANR_ECOBW HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|B7M0T8|NANR_ECO8A HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|B7NKT7|NANR_ECO7I HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|B6I1U4|NANR_ECOSE HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|Q8X4W4|NANR_ECO57 HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|B7LHT2|NANR_ECO55 HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|B7NDK4|NANR_ECOLU HTH-type transcriptional repressor NanR OS=...    71   1e-11
+sp|Q1R6B4|NANR_ECOUT HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|Q8FD57|NANR_ECOL6 HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|Q0TCP0|NANR_ECOL5 HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|A1AGC0|NANR_ECOK1 HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B7N0Z9|NANR_ECO81 HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B7MBY8|NANR_ECO45 HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B7UJV9|NANR_ECO27 HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|P67735|NANR_SALTY HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|P67736|NANR_SALTI HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B5BGP6|NANR_SALPK HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|C0PZN5|NANR_SALPC HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|Q5PJS9|NANR_SALPA HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B5RET8|NANR_SALG2 HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B5R0L3|NANR_SALEP HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|Q57JC8|NANR_SALCH HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B4TWJ1|NANR_SALSV HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|B4T751|NANR_SALNS HTH-type transcriptional repressor NanR OS=...    70   1e-11
+sp|D2TP58|NANR_CITRI HTH-type transcriptional repressor NanR OS=...    69   2e-11
+sp|A7MJD3|NANR_CROS8 HTH-type transcriptional repressor NanR OS=...    69   3e-11
+sp|E0T5H9|NANR_EDWTF HTH-type transcriptional repressor NanR OS=...    69   4e-11
+sp|Q2YUS3|NORG_STAAB HTH-type transcriptional regulator NorG OS=...    68   4e-11
+sp|P40193|PTSJ_SALTY Vitamin B6 salvage pathway transcriptional ...    68   5e-11
+sp|Q7A875|NORG_STAAN HTH-type transcriptional regulator NorG OS=...    67   8e-11
+sp|Q99XA5|NORG_STAAM HTH-type transcriptional regulator NorG OS=...    67   8e-11
+sp|Q5HJR1|NORG_STAAC HTH-type transcriptional regulator NorG OS=...    66   2e-10
+sp|Q2G1P1|NORG_STAA8 HTH-type transcriptional regulator NorG OS=...    66   2e-10
+sp|Q2FKF1|NORG_STAA3 HTH-type transcriptional regulator NorG OS=...    66   2e-10
+sp|Q8GAL4|GNTR_PAENI Probable D-xylose utilization operon transc...    66   3e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|P47347|Y101_MYCGE Uncharacterized HTH-type transcriptional re...    82   4e-15
+sp|P70790|YTUX_AGRVI Uncharacterized HTH-type transcriptional re...    56   2e-07
+sp|P10585|GNTR_BACSU Gluconate operon transcriptional repressor ...    54   7e-07
+sp|P46833|GNTR_BACLI Gluconate operon transcriptional repressor ...    51   6e-06
+sp|P37335|BPHR_PARXL Uncharacterized HTH-type transcriptional re...    50   1e-05
+sp|P67738|Y044_MYCBO Uncharacterized HTH-type transcriptional re...    50   2e-05
+sp|P9WMG9|Y043_MYCTU Uncharacterized HTH-type transcriptional re...    50   2e-05
+sp|P9WMG8|Y043_MYCTO Uncharacterized HTH-type transcriptional re...    50   2e-05
+sp|P39399|LGOR_ECOLI Probable HTH-type transcriptional regulator...    49   3e-05
+sp|P54988|NTRA_AMIAI Nta operon transcriptional regulator OS=Ami...    47   1e-04
+sp|P37338|GLAR_ECOLI HTH-type transcriptional repressor GlaR OS=...    47   2e-04
+sp|Q314F2|LEXA_OLEA2 LexA repressor OS=Oleidesulfovibrio alasken...    42   0.003
+sp|Q5L0C3|LEXA_GEOKA LexA repressor OS=Geobacillus kaustophilus ...    41   0.006
+sp|Q3A3S5|LEXA_SYNC1 LexA repressor OS=Syntrophotalea carbinolic...    41   0.006
+sp|P75978|YMFN_ECOLI Protein YmfN OS=Escherichia coli (strain K1...    41   0.007
+sp|A4IMK1|LEXA_GEOTN LexA repressor OS=Geobacillus thermodenitri...    41   0.008
+sp|O34921|YTOI_BACSU Uncharacterized protein YtoI OS=Bacillus su...    41   0.008
+sp|Q97I23|LEXA_CLOAB LexA repressor OS=Clostridium acetobutylicu...    41   0.011
+sp|Q49848|LEXA_MYCLE LexA repressor OS=Mycobacterium leprae (str...    41   0.011
+sp|B8ZQU5|LEXA_MYCLB LexA repressor OS=Mycobacterium leprae (str...    41   0.011
+sp|Q9AGM5|LEXA_CUPNE LexA repressor OS=Cupriavidus necator OX=10...    40   0.013
+sp|Q1LLW6|LEXA_CUPMC LexA repressor OS=Cupriavidus metallidurans...    40   0.013
+sp|B2UAG1|LEXA_RALPJ LexA repressor OS=Ralstonia pickettii (stra...    40   0.014
+sp|P76114|MCBR_ECOLI HTH-type transcriptional regulator McbR OS=...    40   0.015
+sp|Q46ZR1|LEXA_CUPPJ LexA repressor OS=Cupriavidus pinatubonensi...    40   0.017
+sp|P0A9F1|MNTR_ECOLI Transcriptional regulator MntR OS=Escherich...    40   0.018
+sp|P0A9F2|MNTR_ECOL6 Transcriptional regulator MntR OS=Escherich...    40   0.018
+sp|Q8X7U4|MNTR_ECO57 Transcriptional regulator MntR OS=Escherich...    40   0.020
+sp|P0ACK9|FUCR_SHIFL L-fucose operon activator OS=Shigella flexn...    39   0.025
+sp|P0ACK8|FUCR_ECOLI L-fucose operon activator OS=Escherichia co...    39   0.025
+sp|P67710|MNTR_SALTY Transcriptional regulator MntR OS=Salmonell...    39   0.026
+sp|P67711|MNTR_SALTI Transcriptional regulator MntR OS=Salmonell...    39   0.026
+sp|B0SHT3|HRCA_LEPBA Heat-inducible transcription repressor HrcA...    39   0.027
+sp|Q0K9E3|LEXA_CUPNH LexA repressor OS=Cupriavidus necator (stra...    39   0.029
+sp|A0Q0N2|LEXA_CLONN LexA repressor OS=Clostridium novyi (strain...    39   0.029
+sp|C5D9K3|LEXA_GEOSW LexA repressor OS=Geobacillus sp. (strain W...    39   0.029
+sp|Q1BA08|LEXA_MYCSS LexA repressor OS=Mycobacterium sp. (strain...    39   0.031
+sp|A1UF04|LEXA_MYCSK LexA repressor OS=Mycobacterium sp. (strain...    39   0.031
+sp|A3PYG6|LEXA_MYCSJ LexA repressor OS=Mycobacterium sp. (strain...    39   0.031
+sp|P32144|CSQR_ECOLI HTH-type transcriptional repressor CsqR OS=...    39   0.031
+sp|P9WHR7|LEXA_MYCTU LexA repressor OS=Mycobacterium tuberculosi...    39   0.034
+sp|P9WHR6|LEXA_MYCTO LexA repressor OS=Mycobacterium tuberculosi...    39   0.034
+sp|A5U672|LEXA_MYCTA LexA repressor OS=Mycobacterium tuberculosi...    39   0.034
+sp|B3R2P9|LEXA_CUPTR LexA repressor OS=Cupriavidus taiwanensis (...    39   0.034
+sp|A4XL42|LEXA_CALS8 LexA repressor OS=Caldicellulosiruptor sacc...    39   0.036
+sp|Q5JGN9|RIFK_THEKO Riboflavin kinase OS=Thermococcus kodakaren...    39   0.037
+sp|A1T7V4|LEXA_MYCVP LexA repressor OS=Mycolicibacterium vanbaal...    39   0.039
+sp|A3DDH9|LEXA_ACET2 LexA repressor OS=Acetivibrio thermocellus ...    39   0.044
+sp|Q51391|GLPR_PSEAE Glycerol-3-phosphate regulon repressor OS=P...    39   0.045
+sp|Q8CRJ1|LACR_STAES Lactose phosphotransferase system repressor...    39   0.045
+sp|Q5HM34|LACR_STAEQ Lactose phosphotransferase system repressor...    39   0.045
+sp|A5N8J0|LEXA_CLOK5 LexA repressor OS=Clostridium kluyveri (str...    38   0.049
+sp|B9E1Z5|LEXA_CLOK1 LexA repressor OS=Clostridium kluyveri (str...    38   0.049
+sp|P46337|IOLR_BACSU HTH-type transcriptional regulator IolR OS=...    38   0.054
+sp|P67744|LACR_STAAN Lactose phosphotransferase system repressor...    38   0.059
+sp|P67743|LACR_STAAM Lactose phosphotransferase system repressor...    38   0.059
+sp|Q8U262|RIFK_PYRFU Riboflavin kinase OS=Pyrococcus furiosus (s...    38   0.066
+sp|D4GYE7|GLPR_HALVD HTH-type transcriptional regulator GlpR OS=...    37   0.084
+sp|Q6GEN3|LACR_STAAR Lactose phosphotransferase system repressor...    37   0.093
+sp|P0ACK2|AGAR_ECOLI Putative aga operon transcriptional repress...    37   0.10 
+sp|P0ACK3|AGAR_ECOL6 Putative aga operon transcriptional repress...    37   0.10 
+sp|P0ACK4|AGAR_ECO57 Putative aga operon transcriptional repress...    37   0.10 
+sp|C6DE26|NSRR_PECCP HTH-type transcriptional repressor NsrR OS=...    37   0.11 
+sp|C1AFH9|LEXA_MYCBT LexA repressor OS=Mycobacterium bovis (stra...    37   0.11 
+sp|A1KM58|LEXA_MYCBP LexA repressor OS=Mycobacterium bovis (stra...    37   0.11 
+sp|Q7TY15|LEXA_MYCBO LexA repressor OS=Mycobacterium bovis (stra...    37   0.11 
+sp|A0L9E2|LEXA_MAGMM LexA repressor OS=Magnetococcus marinus (st...    37   0.11 
+sp|P59479|LEXA2_PSEPK LexA repressor 2 OS=Pseudomonas putida (st...    37   0.11 
+sp|A2BLW2|TFE_HYPBU Transcription factor E OS=Hyperthermus butyl...    37   0.12 
+sp|P0A0P9|LACR_STAAW Lactose phosphotransferase system repressor...    37   0.12 
+sp|Q6G7B8|LACR_STAAS Lactose phosphotransferase system repressor...    37   0.12 
+sp|Q5HE08|LACR_STAAC Lactose phosphotransferase system repressor...    37   0.12 
+sp|P0A0Q0|LACR_STAA8 Lactose phosphotransferase system repressor...    37   0.12 
+sp|A8ME45|RIFK_CALMQ Riboflavin kinase OS=Caldivirga maquilingen...    37   0.13 
+sp|A0PT76|LEXA_MYCUA LexA repressor OS=Mycobacterium ulcerans (s...    37   0.13 
+sp|B2HLX8|LEXA_MYCMM LexA repressor OS=Mycobacterium marinum (st...    37   0.13 
+sp|Q48AA9|LEXA_COLP3 LexA repressor OS=Colwellia psychrerythraea...    37   0.13 
+sp|A5D2J8|LEXA_PELTS LexA repressor OS=Pelotomaculum thermopropi...    37   0.13 
+sp|A8G8V5|NSRR_SERP5 HTH-type transcriptional repressor NsrR OS=...    37   0.14 
+sp|A6TH94|NSRR_KLEP7 HTH-type transcriptional repressor NsrR OS=...    37   0.14 
+sp|B5Y324|NSRR_KLEP3 HTH-type transcriptional repressor NsrR OS=...    37   0.14 
+sp|B5FBQ6|NSRR_ALIFM HTH-type transcriptional repressor NsrR OS=...    37   0.14 
+sp|Q5E2D6|NSRR_ALIF1 HTH-type transcriptional repressor NsrR OS=...    37   0.14 
+sp|B8FIX5|LEXA_DESAL LexA repressor OS=Desulfatibacillum aliphat...    36   0.18 
+sp|P44780|FUCR_HAEIN L-fucose operon activator OS=Haemophilus in...    36   0.19 
+sp|A4TCN9|LEXA_MYCGI LexA repressor OS=Mycolicibacterium gilvum ...    36   0.20 
+sp|Q93SM0|LEXA_STAAW LexA repressor OS=Staphylococcus aureus (st...    36   0.21 
+sp|Q6G9L9|LEXA_STAAS LexA repressor OS=Staphylococcus aureus (st...    36   0.21 
+sp|Q6GH67|LEXA_STAAR LexA repressor OS=Staphylococcus aureus (st...    36   0.21 
+sp|Q9L4P1|LEXA_STAAC LexA repressor OS=Staphylococcus aureus (st...    36   0.21 
+sp|Q2FYU1|LEXA_STAA8 LexA repressor OS=Staphylococcus aureus (st...    36   0.21 
+sp|Q2FH94|LEXA_STAA3 LexA repressor OS=Staphylococcus aureus (st...    36   0.21 
+sp|A8MFC9|LEXA_ALKOO LexA repressor OS=Alkaliphilus oremlandii (...    36   0.21 
+sp|Q49XD4|LEXA_STAS1 LexA repressor OS=Staphylococcus saprophyti...    36   0.21 
+sp|Q57978|Y558_METJA Uncharacterized protein MJ0558 OS=Methanoca...    36   0.22 
+sp|Q67NM2|LEXA_SYMTH LexA repressor OS=Symbiobacterium thermophi...    36   0.28 
+sp|Q895H6|LEXA_CLOTE LexA repressor OS=Clostridium tetani (strai...    36   0.30 
+sp|Q9UYS2|Y1435_PYRAB Uncharacterized protein PYRAB14350 OS=Pyro...    36   0.30 
+sp|Q9UYX4|RIFK_PYRAB Riboflavin kinase OS=Pyrococcus abyssi (str...    36   0.32 
+sp|B9K9N0|LEXA_THENN LexA repressor OS=Thermotoga neapolitana (s...    36   0.32 
+sp|C4L2T2|LEXA_EXISA LexA repressor OS=Exiguobacterium sp. (stra...    36   0.34 
+sp|Q6D125|NSRR_PECAS HTH-type transcriptional repressor NsrR OS=...    36   0.34 
+sp|Q8CSL5|Y1102_STAES Uncharacterized HTH-type transcriptional r...    36   0.35 
+sp|Q9V2G4|RFCS_PYRAB Replication factor C small subunit OS=Pyroc...    36   0.37 
+sp|O86948|LEXA_THENE LexA repressor OS=Thermotoga neapolitana OX...    36   0.38 
+sp|A0QIQ3|LEXA_MYCA1 LexA repressor OS=Mycobacterium avium (stra...    35   0.40 
+sp|C0ZES6|LEXA_BREBN LexA repressor OS=Brevibacillus brevis (str...    35   0.40 
+sp|A7MX86|NSRR_VIBC1 HTH-type transcriptional repressor NsrR OS=...    35   0.40 
+sp|B2TY53|NSRR_SHIB3 HTH-type transcriptional repressor NsrR OS=...    35   0.41 
+sp|Q65J42|LEXA_BACLD LexA repressor OS=Bacillus licheniformis (s...    35   0.41 
+sp|P61612|LEXA_MYCPA LexA repressor OS=Mycolicibacterium paratub...    35   0.42 
+sp|B7LLW0|NSRR_ESCF3 HTH-type transcriptional repressor NsrR OS=...    35   0.43 
+sp|B6I282|NSRR_ECOSE HTH-type transcriptional repressor NsrR OS=...    35   0.43 
+sp|B1IT28|NSRR_ECOLC HTH-type transcriptional repressor NsrR OS=...    35   0.43 
+sp|A8A7S3|NSRR_ECOHS HTH-type transcriptional repressor NsrR OS=...    35   0.43 
+sp|B7M8T8|NSRR_ECO8A HTH-type transcriptional repressor NsrR OS=...    35   0.43 
+sp|A7ZV48|NSRR_ECO24 HTH-type transcriptional repressor NsrR OS=...    35   0.43 
+sp|Q3YUG5|NSRR_SHISS HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|P0AF66|NSRR_SHIFL HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|Q0SXA4|NSRR_SHIF8 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|Q328F7|NSRR_SHIDS HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|Q31TA8|NSRR_SHIBS HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|Q1R382|NSRR_ECOUT HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B1LQJ8|NSRR_ECOSM HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B7NGB2|NSRR_ECOLU HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|P0AF63|NSRR_ECOLI HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|P0AF64|NSRR_ECOL6 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|Q0T9L5|NSRR_ECOL5 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|A1AJ83|NSRR_ECOK1 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B1XDS9|NSRR_ECODH HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|C4ZR55|NSRR_ECOBW HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B7MSJ6|NSRR_ECO81 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B7NTN4|NSRR_ECO7I HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|P0AF65|NSRR_ECO57 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B7LC37|NSRR_ECO55 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B7MLI3|NSRR_ECO45 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B7UQI7|NSRR_ECO27 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|P65820|LEXA_STAAN LexA repressor OS=Staphylococcus aureus (st...    35   0.44 
+sp|P65819|LEXA_STAAM LexA repressor OS=Staphylococcus aureus (st...    35   0.44 
+sp|Q2YXS8|LEXA_STAAB LexA repressor OS=Staphylococcus aureus (st...    35   0.44 
+sp|A7X1Z4|LEXA_STAA1 LexA repressor OS=Staphylococcus aureus (st...    35   0.44 
+sp|Q8ZKA3|NSRR_SALTY HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B4TSF8|NSRR_SALSV HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B5BKI6|NSRR_SALPK HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|A9N4Z2|NSRR_SALPB HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|Q5PL57|NSRR_SALPA HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B4TFB2|NSRR_SALHS HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B5R9C4|NSRR_SALG2 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B5R0P4|NSRR_SALEP HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|Q57GL3|NSRR_SALCH HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|B5F393|NSRR_SALA4 HTH-type transcriptional repressor NsrR OS=...    35   0.44 
+sp|P39140|DEOR_BACSU Deoxyribonucleoside regulator OS=Bacillus s...    35   0.44 
+sp|Q9R9M8|AAU3_RHIME Protein aau3 OS=Rhizobium meliloti (strain ...    35   0.45 
+sp|Q92C51|LEXA_LISIN LexA repressor OS=Listeria innocua serovar ...    35   0.47 
+sp|A5GWB6|HRCA_SYNR3 Heat-inducible transcription repressor HrcA...    35   0.47 
+sp|B8DG25|LEXA_LISMH LexA repressor OS=Listeria monocytogenes se...    35   0.47 
+sp|Q720B9|LEXA_LISMF LexA repressor OS=Listeria monocytogenes se...    35   0.47 
+sp|C1L2K9|LEXA_LISMC LexA repressor OS=Listeria monocytogenes se...    35   0.47 
+sp|Q0AY82|LEXA_SYNWW LexA repressor OS=Syntrophomonas wolfei sub...    35   0.48 
+sp|P18816|LACR_LACLL Lactose phosphotransferase system repressor...    35   0.48 
+sp|A0AIA3|LEXA_LISW6 LexA repressor OS=Listeria welshimeri serov...    35   0.48 
+sp|Q8Y7H7|LEXA_LISMO LexA repressor OS=Listeria monocytogenes se...    35   0.49 
+sp|Q8XL81|LEXA_CLOPE LexA repressor OS=Clostridium perfringens (...    35   0.51 
+sp|Q0TRD0|LEXA_CLOP1 LexA repressor OS=Clostridium perfringens (...    35   0.55 
+sp|Q5HPK2|LEXA_STAEQ LexA repressor OS=Staphylococcus epidermidi...    35   0.56 
+sp|Q0STQ8|LEXA_CLOPS LexA repressor OS=Clostridium perfringens (...    35   0.56 
+sp|Q4L648|LEXA_STAHJ LexA repressor OS=Staphylococcus haemolytic...    35   0.57 
+sp|B8HG97|LEXA_PSECP LexA repressor OS=Pseudarthrobacter chlorop...    35   0.57 
+sp|P30727|HRCA_CLOAB Heat-inducible transcription repressor HrcA...    35   0.57 
+sp|Q58898|Y1503_METJA Uncharacterized protein MJ1503 OS=Methanoc...    35   0.58 
+sp|A0QVY5|LEXA_MYCS2 LexA repressor OS=Mycolicibacterium smegmat...    35   0.59 
+sp|Q253K3|HRCA_CHLFF Heat-inducible transcription repressor HrcA...    35   0.59 
+sp|P52598|YGBI_ECOLI Uncharacterized HTH-type transcriptional re...    35   0.60 
+sp|Q9RC41|NSRR_HALH5 HTH-type transcriptional regulator NsrR OS=...    35   0.60 
+sp|Q66FA9|NSRR_YERPS HTH-type transcriptional repressor NsrR OS=...    35   0.60 
+sp|Q1CEG1|NSRR_YERPN HTH-type transcriptional repressor NsrR OS=...    35   0.60 
+sp|Q0WJT1|NSRR_YERPE HTH-type transcriptional repressor NsrR OS=...    35   0.60 
+sp|Q1C106|NSRR_YERPA HTH-type transcriptional repressor NsrR OS=...    35   0.60 
+sp|A7FMX3|NSRR_YERP3 HTH-type transcriptional repressor NsrR OS=...    35   0.60 
+sp|P19838|NFKB1_HUMAN Nuclear factor NF-kappa-B p105 subunit OS=...    35   0.61 
+sp|Q9KAD3|LEXA_HALH5 LexA repressor OS=Halalkalibacterium halodu...    35   0.61 
+sp|Q6KIH9|HRCA_MESM1 Heat-inducible transcription repressor HrcA...    35   0.61 
+sp|A4W5R9|NSRR_ENT38 HTH-type transcriptional repressor NsrR OS=...    35   0.63 
+sp|P77569|MHPR_ECOLI DNA-binding transcriptional activator MhpR ...    35   0.63 
+sp|B5EA68|LEXA_CITBB LexA repressor OS=Citrifermentans bemidjien...    35   0.63 
+sp|P36930|GATR_ECOLI Putative galactitol utilization operon repr...    35   0.63 
+sp|P40610|NSRR_VIBPA HTH-type transcriptional repressor NsrR OS=...    35   0.64 
+sp|Q5YT43|LEXA2_NOCFA LexA repressor 2 OS=Nocardia farcinica (st...    35   0.64 
+sp|B2TLZ5|HRCA_CLOBB Heat-inducible transcription repressor HrcA...    35   0.64 
+sp|B2V2I3|HRCA_CLOBA Heat-inducible transcription repressor HrcA...    35   0.64 
+sp|Q92YG5|ARCA2_RHIME Arginine deiminase 2 OS=Rhizobium meliloti...    34   0.69 
+sp|A6QGP1|LEXA_STAAE LexA repressor OS=Staphylococcus aureus (st...    34   0.70 
+sp|Q8PBM1|LEXA1_XANCP LexA repressor 1 OS=Xanthomonas campestris...    34   0.74 
+sp|B0BQ48|LEXA_ACTPJ LexA repressor OS=Actinobacillus pleuropneu...    34   0.76 
+sp|A3N1B4|LEXA_ACTP2 LexA repressor OS=Actinobacillus pleuropneu...    34   0.76 
+sp|C6DKD2|LEXA_PECCP LexA repressor OS=Pectobacterium carotovoru...    34   0.77 
+sp|A1JJG7|SGRR_YERE8 HTH-type transcriptional regulator SgrR OS=...    34   0.78 
+sp|Q04596|LEXA_PECCC LexA repressor OS=Pectobacterium carotovoru...    34   0.81 
+sp|B3GXZ4|LEXA_ACTP7 LexA repressor OS=Actinobacillus pleuropneu...    34   0.83 
+sp|P39781|XKDB_BACSU Phage-like element PBSX protein XkdB OS=Bac...    34   0.85 
+sp|Q049T1|LEXA_LACDB LexA repressor OS=Lactobacillus delbrueckii...    34   0.87 
+sp|Q1G9M5|LEXA_LACDA LexA repressor OS=Lactobacillus delbrueckii...    34   0.87 
+sp|Q92ET8|GOLR_LISIN HTH-type transcriptional regulator GolR OS=...    34   0.89 
+sp|O34994|CCPN_BACSU Transcriptional repressor CcpN OS=Bacillus ...    34   0.91 
+sp|P76034|YCIT_ECOLI Uncharacterized HTH-type transcriptional re...    34   0.92 
+sp|A9AUH0|HRCA_HERA2 Heat-inducible transcription repressor HrcA...    34   0.92 
+sp|B4F272|NSRR_PROMH HTH-type transcriptional repressor NsrR OS=...    34   0.94 
+sp|B9DP69|LEXA_STACT LexA repressor OS=Staphylococcus carnosus (...    34   0.99 
+sp|Q5WG03|LEXA_ALKCK LexA repressor OS=Alkalihalobacillus clausi...    34   1.1  
+sp|P26422|LACR_STRMU Lactose phosphotransferase system repressor...    34   1.1  
+sp|P44978|Y1009_HAEIN Uncharacterized HTH-type transcriptional r...    34   1.1  
+sp|Q3ACC4|LEXA_CARHZ LexA repressor OS=Carboxydothermus hydrogen...    34   1.1  
+sp|P94578|YWOH_BACSU Uncharacterized HTH-type transcriptional re...    34   1.1  
+sp|Q9XHP0|11S2_SESIN 11S globulin seed storage protein 2 OS=Sesa...    34   1.1  
+sp|A8FDP7|LEXA_BACP2 LexA repressor OS=Bacillus pumilus (strain ...    34   1.1  
+sp|A7Z552|LEXA_BACVZ LexA repressor OS=Bacillus velezensis (stra...    34   1.1  
+sp|Q7VVX7|HRCA_BORPE Heat-inducible transcription repressor HrcA...    34   1.2  
+sp|Q7W514|HRCA_BORPA Heat-inducible transcription repressor HrcA...    34   1.2  
+sp|Q7WGH9|HRCA_BORBR Heat-inducible transcription repressor HrcA...    34   1.2  
+sp|C6DZY8|LEXA_GEOSM LexA repressor OS=Geobacter sp. (strain M21...    34   1.2  
+sp|B3ELV8|END4_CHLPB Probable endonuclease 4 OS=Chlorobium phaeo...    34   1.2  
+sp|O52026|ARSR2_HALSA Putative arsenical resistance operon repre...    34   1.2  
+sp|O05261|YULB_BACSU Uncharacterized HTH-type transcriptional re...    34   1.3  
+sp|C5B718|LEXA_EDWI9 LexA repressor OS=Edwardsiella ictaluri (st...    34   1.3  
+sp|Q8Z183|NSRR_SALTI HTH-type transcriptional repressor NsrR OS=...    34   1.3  
+sp|P25799|NFKB1_MOUSE Nuclear factor NF-kappa-B p105 subunit OS=...    34   1.3  
+sp|Q5N3M2|HRCA_SYNP6 Heat-inducible transcription repressor HrcA...    34   1.3  
+sp|Q31QM1|HRCA_SYNE7 Heat-inducible transcription repressor HrcA...    34   1.3  
+sp|Q07R87|SYA_RHOP5 Alanine--tRNA ligase OS=Rhodopseudomonas pal...    34   1.4  
+sp|Q3YUF6|ULAR_SHISS HTH-type transcriptional regulator UlaR OS=...    34   1.4  
+sp|A9F881|LEXA_SORC5 LexA repressor OS=Sorangium cellulosum (str...    34   1.5  
+sp|A4J5P4|LEXA_DESRM LexA repressor OS=Desulforamulus reducens (...    34   1.5  
+sp|P0AAP5|IPRA_ECOLI Inhibitor of hydrogen peroxide resistance O...    34   1.5  
+sp|P0AAP6|IPRA_ECO57 Inhibitor of hydrogen peroxide resistance O...    34   1.5  
+sp|P32104|ACCR_AGRFC Transcriptional repressor AccR OS=Agrobacte...    34   1.5  
+sp|P19654|REPL_BPP1 Replication protein repL OS=Escherichia phag...    33   1.7  
+sp|B5Z2I4|NSRR_ECO5E HTH-type transcriptional repressor NsrR OS=...    33   1.8  
+sp|B7UQK0|ULAR_ECO27 HTH-type transcriptional regulator UlaR OS=...    33   1.8  
+sp|Q8ETG9|NSRR_OCEIH HTH-type transcriptional regulator NsrR OS=...    33   1.9  
+sp|Q31TC2|ULAR_SHIBS HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B2TY64|ULAR_SHIB3 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|Q1R369|ULAR_ECOUT HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B6I296|ULAR_ECOSE HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B7NGC5|ULAR_ECOLU HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|P0A9W0|ULAR_ECOLI HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B1IT15|ULAR_ECOLC HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|P0A9W1|ULAR_ECOL6 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|Q0T9K2|ULAR_ECOL5 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|A1AJ96|ULAR_ECOK1 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|A8A7T7|ULAR_ECOHS HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B1XDU2|ULAR_ECODH HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|C4ZR68|ULAR_ECOBW HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B7M8V1|ULAR_ECO8A HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B7MSL0|ULAR_ECO81 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B5Z2J7|ULAR_ECO5E HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|P0A9W2|ULAR_ECO57 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B7LC45|ULAR_ECO55 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B7MLJ6|ULAR_ECO45 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|A7ZV62|ULAR_ECO24 HTH-type transcriptional regulator UlaR OS=...    33   1.9  
+sp|B9DNK2|HRCA_STACT Heat-inducible transcription repressor HrcA...    33   1.9  
+sp|B3PZA3|HRCA_RHIE6 Heat-inducible transcription repressor HrcA...    33   2.1  
+sp|Q58482|Y1082_METJA Uncharacterized protein MJ1082 OS=Methanoc...    33   2.1  
+sp|Q7CP93|ULAR_SALTY HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|Q8XG96|ULAR_SALTI HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|B4TSH1|ULAR_SALSV HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|B5BKJ9|ULAR_SALPK HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|C0Q6E8|ULAR_SALPC HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|A9N507|ULAR_SALPB HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|Q5PJ50|ULAR_SALPA HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|B4T3E2|ULAR_SALNS HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|B4TFC5|ULAR_SALHS HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|B5R0Q8|ULAR_SALEP HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|B5FS93|ULAR_SALDC HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|Q57GK1|ULAR_SALCH HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|B5F3A7|ULAR_SALA4 HTH-type transcriptional regulator UlaR OS=...    33   2.1  
+sp|Q6LM38|NSRR_PHOPR HTH-type transcriptional repressor NsrR OS=...    33   2.1  
+sp|Q1WUI6|LEXA_LIGS1 LexA repressor OS=Ligilactobacillus salivar...    33   2.1  
+sp|A8YVS7|LEXA_LACH4 LexA repressor OS=Lactobacillus helveticus ...    33   2.2  
+sp|A9MFM3|ULAR_SALAR HTH-type transcriptional regulator UlaR OS=...    33   2.3  
+sp|B1VY37|HRCA_STRGG Heat-inducible transcription repressor HrcA...    33   2.3  
+sp|Q607A3|HRCA_METCA Heat-inducible transcription repressor HrcA...    33   2.4  
+sp|Q824B0|HRCA_CHLCV Heat-inducible transcription repressor HrcA...    33   2.4  
+sp|Q87KN2|LEXA_VIBPA LexA repressor OS=Vibrio parahaemolyticus s...    33   2.4  
+sp|Q1MMD0|HRCA_RHIL3 Heat-inducible transcription repressor HrcA...    33   2.5  
+sp|Q6L0E8|RIFK_PICTO Riboflavin kinase OS=Picrophilus torridus (...    33   2.5  
+sp|P31080|LEXA_BACSU LexA repressor OS=Bacillus subtilis (strain...    33   2.5  
+sp|B0U3K0|HRCA_XYLFM Heat-inducible transcription repressor HrcA...    33   2.5  
+sp|Q9PB03|HRCA_XYLFA Heat-inducible transcription repressor HrcA...    33   2.5  
+sp|Q03B55|LEXA_LACP3 LexA repressor OS=Lacticaseibacillus paraca...    33   2.6  
+sp|B3WC17|LEXA_LACCB LexA repressor OS=Lacticaseibacillus casei ...    33   2.6  
+sp|B6EMP9|NSRR_ALISL HTH-type transcriptional repressor NsrR OS=...    32   2.6  
+sp|Q187P1|LEXA_CLOD6 LexA repressor OS=Clostridioides difficile ...    32   2.6  
+sp|Q3JZL4|CODY_STRA1 Global transcriptional regulator CodY OS=St...    32   2.6  
+sp|Q83P30|ULAR_SHIFL HTH-type transcriptional regulator UlaR OS=...    32   2.8  
+sp|Q0SX94|ULAR_SHIF8 HTH-type transcriptional regulator UlaR OS=...    32   2.8  
+sp|A1JIS1|NSRR_YERE8 HTH-type transcriptional repressor NsrR OS=...    32   2.8  
+sp|P63847|CODY_STRA5 Global transcriptional regulator CodY OS=St...    32   2.8  
+sp|P63846|CODY_STRA3 Global transcriptional regulator CodY OS=St...    32   2.8  
+sp|Q13ZI7|LEXA_PARXL LexA repressor OS=Paraburkholderia xenovora...    32   2.8  
+sp|Q79VI7|CRPL_CORGL CRP-like cAMP-activated global transcriptio...    32   2.9  
+sp|B1HRJ5|LEXA_LYSSC LexA repressor OS=Lysinibacillus sphaericus...    32   3.0  
+sp|P0DA47|CODY_STRPQ Global transcriptional regulator CodY OS=St...    32   3.0  
+sp|P37671|YIAJ_ECOLI DNA-binding transcriptional repressor YiaJ ...    32   3.0  
+sp|B2JK89|LEXA_PARP8 LexA repressor OS=Paraburkholderia phymatum...    32   3.0  
+sp|Q8GH81|HRCA_CHLAB Heat-inducible transcription repressor HrcA...    32   3.1  
+sp|B0R717|LRP_HALS3 HTH-type transcriptional regulator Lrp OS=Ha...    32   3.1  
+sp|B1YE71|LEXA_EXIS2 LexA repressor OS=Exiguobacterium sibiricum...    32   3.1  
+sp|O58348|Y614_PYRHO Uncharacterized protein PH0614 OS=Pyrococcu...    32   3.1  
+sp|Q5SID7|CRP_THET8 Cyclic AMP receptor protein OS=Thermus therm...    32   3.1  
+sp|P0A3I9|HRCA_RHIRD Heat-inducible transcription repressor HrcA...    32   3.2  
+sp|P0A3I8|HRCA_AGRFC Heat-inducible transcription repressor HrcA...    32   3.2  
+sp|Q5WL64|NSRR_ALKCK HTH-type transcriptional regulator NsrR OS=...    32   3.2  
+sp|B2T3L9|LEXA_PARPJ LexA repressor OS=Paraburkholderia phytofir...    32   3.2  
+sp|B9J7U0|HRCA_AGRRK Heat-inducible transcription repressor HrcA...    32   3.2  
+sp|B5XI03|CODY_STRPZ Global transcriptional regulator CodY OS=St...    32   3.2  
+sp|A2RCV3|CODY_STRPG Global transcriptional regulator CodY OS=St...    32   3.2  
+sp|P0A351|CODY_STRP8 Global transcriptional regulator CodY OS=St...    32   3.2  
+sp|Q5XAC3|CODY_STRP6 Global transcriptional regulator CodY OS=St...    32   3.2  
+sp|P0DA46|CODY_STRP3 Global transcriptional regulator CodY OS=St...    32   3.2  
+sp|P0A349|CODY_STRP1 Global transcriptional regulator CodY OS=St...    32   3.2  
+sp|B9DVH6|CODY_STRU0 Global transcriptional regulator CodY OS=St...    32   3.3  
+sp|Q04I02|ADCR_STRP2 Transcriptional regulator AdcR OS=Streptoco...    32   3.4  
+sp|P44784|GLPR_HAEIN Glycerol-3-phosphate regulon repressor OS=H...    32   3.4  
+sp|Q8U067|REG8_PYRFU Uncharacterized HTH-type transcriptional re...    32   3.4  
+sp|Q1J564|CODY_STRPF Global transcriptional regulator CodY OS=St...    32   3.4  
+sp|P34703|SPT6H_CAEEL Suppressor of Ty 6 homolog OS=Caenorhabdit...    32   3.5  
+sp|Q63369|NFKB1_RAT Nuclear factor NF-kappa-B p105 subunit (Frag...    32   3.7  
+sp|Q2NR06|UBIC_SODGM Chorismate pyruvate-lyase OS=Sodalis glossi...    32   3.7  
+sp|A5GAQ4|LEXA_GEOUR LexA repressor OS=Geotalea uraniireducens (...    32   3.7  
+sp|A7N0W6|LEXA_VIBC1 LexA repressor OS=Vibrio campbellii (strain...    32   3.7  
+sp|B5ZMW9|HRCA_RHILW Heat-inducible transcription repressor HrcA...    32   3.8  
+sp|Q0TNS5|HRCA_CLOP1 Heat-inducible transcription repressor HrcA...    32   3.8  
+sp|Q24X76|LEXA_DESHY LexA repressor OS=Desulfitobacterium hafnie...    32   3.8  
+sp|B8FWD3|LEXA_DESHD LexA repressor OS=Desulfitobacterium hafnie...    32   3.8  
+sp|Q92JF7|SCA2_RICCN Putative surface cell antigen sca2 OS=Ricke...    32   3.9  
+sp|Q0A9N9|LEXA_ALKEH LexA repressor OS=Alkalilimnicola ehrlichii...    32   3.9  
+sp|O59041|RS19E_PYRHO 30S ribosomal protein S19e OS=Pyrococcus h...    32   3.9  
+sp|B0R4X4|LRPA1_HALS3 HTH-type transcriptional regulator LrpA1 O...    32   3.9  
+sp|Q8EQM5|LEXA_OCEIH LexA repressor OS=Oceanobacillus iheyensis ...    32   4.0  
+sp|A7GR32|LEXA_BACCN LexA repressor OS=Bacillus cytotoxicus (str...    32   4.0  
+sp|P77721|YDJF_ECOLI Uncharacterized HTH-type transcriptional re...    32   4.1  
+sp|P59388|CODY_STRMU Global transcriptional regulator CodY OS=St...    32   4.1  
+sp|B4U194|CODY_STREM Global transcriptional regulator CodY OS=St...    32   4.1  
+sp|C0MEA0|CODY_STRS7 Global transcriptional regulator CodY OS=St...    32   4.1  
+sp|C0M7E5|CODY_STRE4 Global transcriptional regulator CodY OS=St...    32   4.1  
+sp|Q03J75|CODY_STRTD Global transcriptional regulator CodY OS=St...    32   4.1  
+sp|Q5M305|CODY_STRT2 Global transcriptional regulator CodY OS=St...    32   4.1  
+sp|Q5LYE2|CODY_STRT1 Global transcriptional regulator CodY OS=St...    32   4.1  
+sp|Q8K126|RF1M_MOUSE Peptide chain release factor 1, mitochondri...    32   4.2  
+sp|B7VM94|LEXA_VIBA3 LexA repressor OS=Vibrio atlanticus (strain...    32   4.3  
+sp|Q3L8P3|SCA2_RICS2 Putative surface cell antigen sca2 OS=Ricke...    32   4.4  
+sp|P61607|LEXA_CORDI LexA repressor OS=Corynebacterium diphtheri...    32   4.4  
+sp|C0ZFA5|CODY_BREBN Global transcriptional regulator CodY OS=Br...    32   4.4  
+sp|A5UYW7|HRCA_ROSS1 Heat-inducible transcription repressor HrcA...    32   4.5  
+sp|Q8XIS9|HRCA_CLOPE Heat-inducible transcription repressor HrcA...    32   4.6  
+sp|Q38W54|LEXA_LATSS LexA repressor OS=Latilactobacillus sakei s...    32   4.7  
+sp|Q0SRE1|HRCA_CLOPS Heat-inducible transcription repressor HrcA...    32   4.8  
+sp|Q6HFB0|LEXA_BACHK LexA repressor OS=Bacillus thuringiensis su...    32   4.8  
+sp|Q637D7|LEXA_BACCZ LexA repressor OS=Bacillus cereus (strain Z...    32   4.8  
+sp|Q81A92|LEXA_BACCR LexA repressor OS=Bacillus cereus (strain A...    32   4.8  
+sp|B9IUL2|LEXA_BACCQ LexA repressor OS=Bacillus cereus (strain Q...    32   4.8  
+sp|P61606|LEXA_BACC1 LexA repressor OS=Bacillus cereus (strain A...    32   4.8  
+sp|B7JIC6|LEXA_BACC0 LexA repressor OS=Bacillus cereus (strain A...    32   4.8  
+sp|Q81Y06|LEXA_BACAN LexA repressor OS=Bacillus anthracis OX=139...    32   4.8  
+sp|A0RH75|LEXA_BACAH LexA repressor OS=Bacillus thuringiensis (s...    32   4.8  
+sp|Q4L5V7|CODY_STAHJ Global transcriptional regulator CodY OS=St...    32   4.8  
+sp|E0U174|BIRA_BACSH Bifunctional ligase/repressor BirA OS=Bacil...    32   4.9  
+sp|Q9HJA6|RIFK_THEAC Riboflavin kinase OS=Thermoplasma acidophil...    32   4.9  
+sp|Q6G1C0|RLMN_BARQU Dual-specificity RNA methyltransferase RlmN...    32   5.1  
+sp|Q9L132|NSRR_STRCO HTH-type transcriptional repressor NsrR OS=...    32   5.1  
+sp|Q4JWP8|HRCA_CORJK Heat-inducible transcription repressor HrcA...    32   5.2  
+sp|B7GGC4|CODY_ANOFW Global transcriptional regulator CodY OS=An...    32   5.4  
+sp|F8VQB6|MYO10_MOUSE Unconventional myosin-X OS=Mus musculus OX...    32   5.5  
+sp|A3CVQ3|TFE_METMJ Transcription factor E OS=Methanoculleus mar...    32   5.6  
+sp|P0CI75|BIRA_BACSU Bifunctional ligase/repressor BirA OS=Bacil...    32   5.6  
+sp|Q9CJ45|CODY_LACLA Global transcriptional regulator CodY OS=La...    32   5.7  
+sp|A0AI83|CODY_LISW6 Global transcriptional regulator CodY OS=Li...    31   5.7  
+sp|Q92C72|CODY_LISIN Global transcriptional regulator CodY OS=Li...    31   5.7  
+sp|Q0CCY2|GEDD_ASPTN Geodin cluster transcriptional coactivator ...    31   5.8  
+sp|Q980M5|TFE_SACS2 Transcription factor E OS=Saccharolobus solf...    31   5.8  
+sp|Q032T5|CODY_LACLS Global transcriptional regulator CodY OS=La...    31   5.9  
+sp|A2RHP2|CODY_LACLM Global transcriptional regulator CodY OS=La...    31   6.0  
+sp|B1LQL1|ULAR_ECOSM HTH-type transcriptional regulator UlaR OS=...    31   6.0  
+sp|B7NTP7|ULAR_ECO7I HTH-type transcriptional regulator UlaR OS=...    31   6.0  
+sp|C3NFW2|TFE_SULIN Transcription factor E OS=Sulfolobus islandi...    31   6.0  
+sp|Q8Y7J7|CODY_LISMO Global transcriptional regulator CodY OS=Li...    31   6.0  
+sp|B8DG51|CODY_LISMH Global transcriptional regulator CodY OS=Li...    31   6.0  
+sp|Q720E1|CODY_LISMF Global transcriptional regulator CodY OS=Li...    31   6.0  
+sp|C1L2I8|CODY_LISMC Global transcriptional regulator CodY OS=Li...    31   6.0  
+sp|Q7MYU4|NSRR_PHOLL HTH-type transcriptional repressor NsrR OS=...    31   6.1  
+sp|B9DPG7|CODY_STACT Global transcriptional regulator CodY OS=St...    31   6.1  
+sp|Q49X40|CODY_STAS1 Global transcriptional regulator CodY OS=St...    31   6.2  
+sp|C3N7L2|TFE_SULIY Transcription factor E OS=Sulfolobus islandi...    31   6.2  
+sp|C3MY51|TFE_SULIM Transcription factor E OS=Sulfolobus islandi...    31   6.2  
+sp|C3MRF5|TFE_SULIL Transcription factor E OS=Sulfolobus islandi...    31   6.2  
+sp|C4KIS0|TFE_SULIK Transcription factor E OS=Sulfolobus islandi...    31   6.2  
+sp|C3MZJ0|TFE_SULIA Transcription factor E OS=Sulfolobus islandi...    31   6.2  
+sp|A7NS62|HRCA_ROSCS Heat-inducible transcription repressor HrcA...    31   6.3  
+sp|B1HQV3|CODY_LYSSC Global transcriptional regulator CodY OS=Ly...    31   6.3  
+sp|P42180|REG7_PYRFU HTH-type transcriptional regulator LrpA OS=...    31   6.4  
+sp|A1TBR8|HRCA_MYCVP Heat-inducible transcription repressor HrcA...    31   6.6  
+sp|E0TXE1|BIOW_BACSH 6-carboxyhexanoate--CoA ligase OS=Bacillus ...    31   6.8  
+sp|Q8CPG9|CODY_STAES Global transcriptional regulator CodY OS=St...    31   6.8  
+sp|P9WMH3|CRPL_MYCTU CRP-like cAMP-activated global transcriptio...    31   7.4  
+sp|P9WMH2|CRPL_MYCTO CRP-like cAMP-activated global transcriptio...    31   7.4  
+sp|P63845|CODY_STAAW Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|A8Z3T5|CODY_STAAT Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|Q6G9V8|CODY_STAAS Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|Q6GHI0|CODY_STAAR Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|P63844|CODY_STAAN Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|P63843|CODY_STAAM Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|A6QGF5|CODY_STAAE Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|Q5HGH7|CODY_STAAC Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|A5ISD9|CODY_STAA9 Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|Q2FZ27|CODY_STAA8 Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|Q2FHI3|CODY_STAA3 Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|A6U173|CODY_STAA2 Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|A7X1N2|CODY_STAA1 Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|B9EBD5|CODY_MACCJ Global transcriptional regulator CodY OS=Ma...    31   7.4  
+sp|Q5HPT7|CODY_STAEQ Global transcriptional regulator CodY OS=St...    31   7.4  
+sp|A0JUZ2|LEXA_ARTS2 LexA repressor OS=Arthrobacter sp. (strain ...    31   7.5  
+sp|B8F317|LEXA_GLAP5 LexA repressor OS=Glaesserella parasuis ser...    31   7.6  
+sp|Q92SK1|HRCA_RHIME Heat-inducible transcription repressor HrcA...    31   7.7  
+sp|Q87BS6|HRCA_XYLFT Heat-inducible transcription repressor HrcA...    31   7.8  
+sp|B2I6F8|HRCA_XYLF2 Heat-inducible transcription repressor HrcA...    31   7.8  
+sp|Q9KA28|CODY_HALH5 Global transcriptional regulator CodY OS=Ha...    31   7.8  
+sp|P39779|CODY_BACSU Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|A7GRF8|CODY_BACCN Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|Q6HEY7|CODY_BACHK Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|Q636J8|CODY_BACCZ Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|B9IVB7|CODY_BACCQ Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|B7HLG1|CODY_BACC7 Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|C1EP52|CODY_BACC3 Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|B7JJA6|CODY_BACC0 Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|Q81WK7|CODY_BACAN Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|A0RHK1|CODY_BACAH Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|C3L799|CODY_BACAC Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|C3P5N0|CODY_BACAA Global transcriptional regulator CodY OS=Ba...    31   7.9  
+sp|A1WXU3|LEXA_HALHL LexA repressor OS=Halorhodospira halophila ...    31   8.0  
+sp|A4IM90|CODY_GEOTN Global transcriptional regulator CodY OS=Ge...    31   8.0  
+sp|C5D8W0|CODY_GEOSW Global transcriptional regulator CodY OS=Ge...    31   8.0  
+sp|Q5L0N0|CODY_GEOKA Global transcriptional regulator CodY OS=Ge...    31   8.0  
+sp|Q732P2|CODY_BACC1 Global transcriptional regulator CodY OS=Ba...    31   8.0  
+sp|Q65JN2|CODY_BACLD Global transcriptional regulator CodY OS=Ba...    31   8.1  
+sp|C3MEJ2|HRCA_SINFN Heat-inducible transcription repressor HrcA...    31   8.3  
+sp|C4L618|CODY_EXISA Global transcriptional regulator CodY OS=Ex...    31   8.3  
+sp|A8FD81|CODY_BACP2 Global transcriptional regulator CodY OS=Ba...    31   8.3  
+sp|Q5GX75|LEXA1_XANOR LexA repressor 1 OS=Xanthomonas oryzae pv....    31   8.3  
+sp|A9VT66|CODY_BACMK Global transcriptional regulator CodY OS=Ba...    31   8.6  
+sp|Q2RKX6|HRCA_MOOTA Heat-inducible transcription repressor HrcA...    31   8.6  
+sp|Q819X8|CODY_BACCR Global transcriptional regulator CodY OS=Ba...    31   8.8  
+sp|B7HDV1|CODY_BACC4 Global transcriptional regulator CodY OS=Ba...    31   8.8  
+sp|B7IUI7|CODY_BACC2 Global transcriptional regulator CodY OS=Ba...    31   8.8  
+sp|Q46497|SELB_DESBA Selenocysteine-specific elongation factor O...    31   8.9  
+sp|P94591|GLCR_BACSU HTH-type transcriptional repressor GlcR OS=...    31   9.0  
+sp|O59256|REG7_PYRHO HTH-type transcriptional regulator LrpA OS=...    31   9.1  
+sp|Q5WFQ2|CODY_ALKCK Global transcriptional regulator CodY OS=Al...    31   9.1  
+sp|Q328K6|ULAR_SHIDS HTH-type transcriptional regulator UlaR OS=...    31   9.3  
+sp|A7Z4N7|CODY_BACVZ Global transcriptional regulator CodY OS=Ba...    31   9.3  
+sp|Q8U0P3|REG6_PYRFU HTH-type transcriptional regulator FL11 OS=...    31   9.5  
+sp|Q642B9|ZNF18_RAT Zinc finger protein 18 OS=Rattus norvegicus ...    31   9.6  
+sp|Q9V0G8|RS19E_PYRAB 30S ribosomal protein S19e OS=Pyrococcus a...    31   9.6  
+sp|B0C2W4|HRCA_ACAM1 Heat-inducible transcription repressor HrcA...    31   9.8  
+sp|P59386|CODY_OCEIH Global transcriptional regulator CodY OS=Oc...    31   9.8  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.311    0.126    0.295 
+
+Lambda     K      H
+   0.267   0.0382    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 194,265,374
+Number of Sequences: 569516
+Number of extensions: 6656151
+Number of successful extensions: 27063
+Number of sequences better than 10.0: 806
+Number of HSP's better than 10.0 without gapping: 720
+Number of HSP's successfully gapped in prelim test: 553
+Number of HSP's that attempted gapping in prelim test: 26179
+Number of HSP's gapped (non-prelim): 1280
+length of query: 234
+length of database: 205,866,895
+effective HSP length: 114
+effective length of query: 120
+effective length of database: 140,942,071
+effective search space: 16913048520
+effective search space used: 16913048520
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.4 bits)
+S2: 68 (30.9 bits)

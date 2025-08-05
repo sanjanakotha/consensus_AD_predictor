@@ -1,0 +1,1085 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (312 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O93529|FOXB1_XENLA Forkhead box protein B1 OS=Xenopus laevis ...   164   6e-40
+sp|P33205|FXA4A_XENLA Forkhead box protein A4-A OS=Xenopus laevi...   163   1e-39
+sp|P33206|FXA4B_XENLA Forkhead box protein A4-B OS=Xenopus laevi...   162   2e-39
+sp|P35584|FOXA3_MOUSE Hepatocyte nuclear factor 3-gamma OS=Mus m...   162   2e-39
+sp|Q64732|FOXB1_MOUSE Forkhead box protein B1 OS=Mus musculus OX...   162   2e-39
+sp|Q99853|FOXB1_HUMAN Forkhead box protein B1 OS=Homo sapiens OX...   162   2e-39
+sp|Q6P839|FOXA4_XENTR Forkhead box protein A4 OS=Xenopus tropica...   162   3e-39
+sp|P55318|FOXA3_HUMAN Hepatocyte nuclear factor 3-gamma OS=Homo ...   162   4e-39
+sp|Q3Y598|FOXA3_BOVIN Hepatocyte nuclear factor 3-gamma OS=Bos t...   161   5e-39
+sp|P14734|FKH_DROME Protein fork head OS=Drosophila melanogaster...   161   5e-39
+sp|P32183|FOXA3_RAT Hepatocyte nuclear factor 3-gamma OS=Rattus ...   161   6e-39
+sp|Q64733|FOXB2_MOUSE Forkhead box protein B2 OS=Mus musculus OX...   159   2e-38
+sp|P55317|FOXA1_HUMAN Hepatocyte nuclear factor 3-alpha OS=Homo ...   159   2e-38
+sp|Q5VYV0|FOXB2_HUMAN Forkhead box protein B2 OS=Homo sapiens OX...   159   2e-38
+sp|Q7T1R4|FOXA2_XENTR Forkhead box protein A2 OS=Xenopus tropica...   159   3e-38
+sp|Q91765|FXA2A_XENLA Forkhead box protein A2-A OS=Xenopus laevi...   159   3e-38
+sp|P84961|FXA2B_XENLA Forkhead box protein A2-B OS=Xenopus laevi...   159   3e-38
+sp|P35582|FOXA1_MOUSE Hepatocyte nuclear factor 3-alpha OS=Mus m...   159   4e-38
+sp|Q6LD29|FXA1A_XENLA Forkhead box protein A1-A OS=Xenopus laevi...   158   4e-38
+sp|Q07342|FOXA2_DANRE Forkhead box protein A2 OS=Danio rerio OX=...   158   5e-38
+sp|P32315|FXA1B_XENLA Forkhead box protein A1-B OS=Xenopus laevi...   157   8e-38
+sp|O42097|FOXA2_ORYLA Hepatocyte nuclear factor 3-beta OS=Oryzia...   157   1e-37
+sp|P35583|FOXA2_MOUSE Hepatocyte nuclear factor 3-beta OS=Mus mu...   156   2e-37
+sp|Q17241|SGF1_BOMMO Silk gland factor 1 OS=Bombyx mori OX=7091 ...   156   2e-37
+sp|Q9Y261|FOXA2_HUMAN Hepatocyte nuclear factor 3-beta OS=Homo s...   156   2e-37
+sp|P32028|FD4_DROME Fork head domain-containing protein FD4 OS=D...   155   4e-37
+sp|P23512|FOXA1_RAT Hepatocyte nuclear factor 3-alpha OS=Rattus ...   155   5e-37
+sp|Q8AWH1|FOXA1_XENTR Forkhead box protein A1 OS=Xenopus tropica...   154   6e-37
+sp|Q18694|UN130_CAEEL Forkhead box protein unc-130 OS=Caenorhabd...   153   2e-36
+sp|Q5J3Q5|FOXE1_XENLA Forkhead box protein E1 OS=Xenopus laevis ...   150   1e-35
+sp|P32182|FOXA2_RAT Hepatocyte nuclear factor 3-beta OS=Rattus n...   149   3e-35
+sp|Q8JIT6|FOXB2_XENLA Forkhead box protein B2 OS=Xenopus laevis ...   149   4e-35
+sp|Q17381|PHA4_CAEEL Defective pharyngeal development protein 4 ...   148   5e-35
+sp|Q9PTK2|FOXE4_XENLA Forkhead box protein E4 OS=Xenopus laevis ...   148   6e-35
+sp|P32029|FD5_DROME Fork head domain-containing protein FD5 OS=D...   147   8e-35
+sp|Q9PVY8|FXC2B_XENLA Forkhead box protein C2-B OS=Xenopus laevi...   146   2e-34
+sp|Q6NVT7|FOXC2_XENTR Forkhead box protein C2 OS=Xenopus tropica...   146   2e-34
+sp|Q12952|FOXL1_HUMAN Forkhead box protein L1 OS=Homo sapiens OX...   145   5e-34
+sp|Q9PVZ3|FXC1A_XENLA Forkhead box protein C1-A OS=Xenopus laevi...   144   1e-33
+sp|Q32NP8|FXC1B_XENLA Forkhead box protein C1-B OS=Xenopus laevi...   144   1e-33
+sp|Q64731|FOXL1_MOUSE Forkhead box protein L1 OS=Mus musculus OX...   144   1e-33
+sp|Q02361|FD3_DROME Fork head domain-containing protein FD3 OS=D...   143   1e-33
+sp|Q61850|FOXC2_MOUSE Forkhead box protein C2 OS=Mus musculus OX...   143   2e-33
+sp|Q63246|FOXC2_RAT Forkhead box protein C2 OS=Rattus norvegicus...   143   2e-33
+sp|Q99958|FOXC2_HUMAN Forkhead box protein C2 OS=Homo sapiens OX...   143   2e-33
+sp|Q9PVY9|FXC2A_XENLA Forkhead box protein C2-A OS=Xenopus laevi...   143   2e-33
+sp|Q61572|FOXC1_MOUSE Forkhead box protein C1 OS=Mus musculus OX...   143   2e-33
+sp|Q12948|FOXC1_HUMAN Forkhead box protein C1 OS=Homo sapiens OX...   143   2e-33
+sp|Q12950|FOXD4_HUMAN Forkhead box protein D4 OS=Homo sapiens OX...   142   3e-33
+sp|Q9DE24|FXC1B_DANRE Forkhead box C1-B OS=Danio rerio OX=7955 G...   142   3e-33
+sp|Q9DE25|FXC1A_DANRE Forkhead box C1-A OS=Danio rerio OX=7955 G...   142   3e-33
+sp|Q68F77|FOXC1_XENTR Forkhead box protein C1 OS=Xenopus tropica...   142   4e-33
+sp|Q90WN4|FOXD2_XENLA Forkhead box protein D2 OS=Xenopus laevis ...   140   1e-32
+sp|P32027|CROC_DROME Fork head domain-containing protein crocodi...   140   1e-32
+sp|Q5M7L9|FOXD3_XENTR Forkhead box protein D3 OS=Xenopus tropica...   140   1e-32
+sp|Q9DEN3|FXD3B_XENLA Forkhead box protein D3-B OS=Xenopus laevi...   139   3e-32
+sp|Q9DEN4|FXD3A_XENLA Forkhead box protein D3-A OS=Xenopus laevi...   139   3e-32
+sp|Q6F2E4|FOXD1_XENTR Forkhead box protein D1 OS=Xenopus tropica...   138   4e-32
+sp|O00358|FOXE1_HUMAN Forkhead box protein E1 OS=Homo sapiens OX...   137   8e-32
+sp|Q9PT67|FXD5C_XENLA Forkhead box protein D5-C OS=Xenopus laevi...   137   1e-31
+sp|Q61060|FOXD3_MOUSE Forkhead box protein D3 OS=Mus musculus OX...   137   1e-31
+sp|Q8R2I0|FOXE1_MOUSE Forkhead box protein E1 OS=Mus musculus OX...   137   1e-31
+sp|P34683|LIN31_CAEEL Protein lin-31 OS=Caenorhabditis elegans O...   136   2e-31
+sp|Q9PSY4|FOXD1_XENLA Forkhead box protein D1 OS=Xenopus laevis ...   136   3e-31
+sp|O35392|FOXD2_MOUSE Forkhead box protein D2 OS=Mus musculus OX...   135   5e-31
+sp|Q9UJU5|FOXD3_HUMAN Forkhead box protein D3 OS=Homo sapiens OX...   135   5e-31
+sp|P79772|FOXD3_CHICK Forkhead box protein D3 OS=Gallus gallus O...   135   5e-31
+sp|Q61345|FOXD1_MOUSE Forkhead box protein D1 OS=Mus musculus OX...   134   7e-31
+sp|O60548|FOXD2_HUMAN Forkhead box protein D2 OS=Homo sapiens OX...   134   8e-31
+sp|Q16676|FOXD1_HUMAN Forkhead box protein D1 OS=Homo sapiens OX...   134   9e-31
+sp|Q9PRJ8|FXD5A_XENLA Forkhead box protein D5-A OS=Xenopus laevi...   134   1e-30
+sp|Q98937|FOXD1_CHICK Forkhead box protein D1 OS=Gallus gallus O...   134   1e-30
+sp|Q5WM45|FOXD5_XENTR Forkhead box protein D5 OS=Xenopus tropica...   133   2e-30
+sp|Q13461|FOXE3_HUMAN Forkhead box protein E3 OS=Homo sapiens OX...   133   2e-30
+sp|Q9QY14|FOXE3_MOUSE Forkhead box protein E3 OS=Mus musculus OX...   132   2e-30
+sp|Q63250|FOXE3_RAT Forkhead box protein E3 OS=Rattus norvegicus...   132   3e-30
+sp|Q9PT68|FXD5B_XENLA Forkhead box protein D5-B OS=Xenopus laevi...   132   5e-30
+sp|Q63251|FOXD1_RAT Forkhead box protein D1 (Fragment) OS=Rattus...   131   6e-30
+sp|Q63245|FOXD3_RAT Forkhead box protein D3 (Fragment) OS=Rattus...   131   7e-30
+sp|Q90964|FOXG1_CHICK Forkhead box protein G1 OS=Gallus gallus O...   128   5e-29
+sp|Q60688|FOXD4_MOUSE Forkhead box protein D4 OS=Mus musculus OX...   128   6e-29
+sp|Q02360|FOXL1_DROME Fork head domain-containing protein L1 OS=...   128   6e-29
+sp|P56260|QIN_AVIS3 Transforming protein Qin OS=Avian sarcoma vi...   127   8e-29
+sp|Q9W707|FXF1B_XENLA Forkhead box protein F1-B OS=Xenopus laevi...   127   8e-29
+sp|Q9W706|FXF1A_XENLA Forkhead box protein F1-A OS=Xenopus laevi...   127   8e-29
+sp|Q9NU39|FX4L1_HUMAN Forkhead box protein D4-like 1 OS=Homo sap...   127   2e-28
+sp|Q1A1A1|FOXG1_CERSI Forkhead box protein G1 OS=Ceratotherium s...   127   2e-28
+sp|Q60987|FOXG1_MOUSE Forkhead box protein G1 OS=Mus musculus OX...   127   2e-28
+sp|Q00939|FOXG1_RAT Forkhead box protein G1 OS=Rattus norvegicus...   127   2e-28
+sp|Q1A1A2|FOXG1_EQUQB Forkhead box protein G1 OS=Equus quagga bu...   126   2e-28
+sp|Q1A1A6|FOXG1_CEBCA Forkhead box protein G1 OS=Cebus capucinus...   126   2e-28
+sp|Q9YHC5|FOXG1_XENLA Forkhead box protein G1 OS=Xenopus laevis ...   126   2e-28
+sp|Q1A1A3|FOXG1_EPOGA Forkhead box protein G1 OS=Epomophorus gam...   126   2e-28
+sp|P55316|FOXG1_HUMAN Forkhead box protein G1 OS=Homo sapiens OX...   126   2e-28
+sp|Q1A1A5|FOXG1_CHLPG Forkhead box protein G1 OS=Chlorocebus pyg...   126   2e-28
+sp|Q1A1A4|FOXG1_PIPRU Forkhead box protein G1 OS=Pipistrellus ru...   126   2e-28
+sp|Q5VV16|FX4L5_HUMAN Forkhead box protein D4-like 5 OS=Homo sap...   126   2e-28
+sp|Q3SYB3|FX4L6_HUMAN Forkhead box protein D4-like 6 OS=Homo sap...   126   2e-28
+sp|Q6VB84|FX4L3_HUMAN Forkhead box protein D4-like 3 OS=Homo sap...   126   2e-28
+sp|Q8WXT5|FX4L4_HUMAN Forkhead box protein D4-like 4 OS=Homo sap...   126   2e-28
+sp|Q6P2Z3|FOXI1_XENTR Forkhead box protein I1 OS=Xenopus tropica...   126   2e-28
+sp|Q28BS5|FOXF1_XENTR Forkhead box protein F1 OS=Xenopus tropica...   125   4e-28
+sp|P32031|SLP2_DROME Fork head domain transcription factor slp2 ...   125   4e-28
+sp|Q12946|FOXF1_HUMAN Forkhead box protein F1 OS=Homo sapiens OX...   125   6e-28
+sp|O88470|FOXL2_MOUSE Forkhead box protein L2 OS=Mus musculus OX...   125   6e-28
+sp|Q63249|FOXD4_RAT Forkhead box protein D4 (Fragment) OS=Rattus...   125   6e-28
+sp|Q91904|FXI1A_XENLA Forkhead box protein I1-A OS=Xenopus laevi...   124   8e-28
+sp|Q6VFT6|FOXL2_PIG Forkhead box protein L2 OS=Sus scrofa OX=982...   124   9e-28
+sp|Q7ZYQ0|FXI1E_XENLA Forkhead box protein I1-ema OS=Xenopus lae...   124   9e-28
+sp|Q6VFT5|FOXL2_RABIT Forkhead box protein L2 OS=Oryctolagus cun...   124   9e-28
+sp|Q12951|FOXI1_HUMAN Forkhead box protein I1 OS=Homo sapiens OX...   124   9e-28
+sp|Q63ZH2|FXI2B_XENLA Forkhead box protein I2-B OS=Xenopus laevi...   124   1e-27
+sp|P58012|FOXL2_HUMAN Forkhead box protein L2 OS=Homo sapiens OX...   124   1e-27
+sp|Q4VUF1|FOXL2_ELLLU Forkhead box protein L2 OS=Ellobius lutesc...   124   1e-27
+sp|Q12947|FOXF2_HUMAN Forkhead box protein F2 OS=Homo sapiens OX...   124   1e-27
+sp|Q8MIP2|FOXL2_CAPHI Forkhead box protein L2 OS=Capra hircus OX...   124   1e-27
+sp|A8MTJ6|FOXI3_HUMAN Forkhead box protein I3 OS=Homo sapiens OX...   124   1e-27
+sp|Q6VFT7|FOXL2_BOVIN Forkhead box protein L2 OS=Bos taurus OX=9...   124   1e-27
+sp|Q6P8A3|FXI1E_XENTR Forkhead box protein I1-ema OS=Xenopus tro...   124   1e-27
+sp|Q61080|FOXF1_MOUSE Forkhead box protein F1 OS=Mus musculus OX...   123   2e-27
+sp|Q8JIT5|FXI1C_XENLA Forkhead box protein I1c OS=Xenopus laevis...   123   2e-27
+sp|B5RHS5|FOXI3_CANLF Forkhead box protein I3 OS=Canis lupus fam...   123   2e-27
+sp|A1L1S5|FOXF1_DANRE Forkhead box protein F1 OS=Danio rerio OX=...   122   3e-27
+sp|Q61574|FOXS1_MOUSE Forkhead box protein S1 OS=Mus musculus OX...   122   3e-27
+sp|Q5NDM2|FXI2A_XENLA Forkhead box protein I2-A OS=Xenopus laevi...   122   3e-27
+sp|Q28D67|FXI1C_XENTR Forkhead box protein I1c OS=Xenopus tropic...   122   5e-27
+sp|O54743|FOXF2_MOUSE Forkhead box protein F2 OS=Mus musculus OX...   121   6e-27
+sp|Q91905|FXI1B_XENLA Forkhead box protein I1-B OS=Xenopus laevi...   121   7e-27
+sp|O43638|FOXS1_HUMAN Forkhead box protein S1 OS=Homo sapiens OX...   120   1e-26
+sp|Q28HT3|FOXI2_XENTR Forkhead box protein I2 OS=Xenopus tropica...   120   2e-26
+sp|P32030|SLP1_DROME Fork head domain transcription factor slp1 ...   119   2e-26
+sp|A0A1W2PRP0|FOXL3_HUMAN Forkhead box protein L3 OS=Homo sapien...   118   6e-26
+sp|Q3I5G5|FOXI2_MOUSE Forkhead box protein I2 OS=Mus musculus OX...   117   1e-25
+sp|Q922I5|FOXI1_MOUSE Forkhead box protein I1 OS=Mus musculus OX...   117   1e-25
+sp|Q6ZQN5|FOXI2_HUMAN Forkhead box protein I2 OS=Homo sapiens OX...   117   1e-25
+sp|Q63244|FOXQ1_RAT Forkhead box protein Q1 OS=Rattus norvegicus...   116   2e-25
+sp|O70220|FOXQ1_MOUSE Forkhead box protein Q1 OS=Mus musculus OX...   116   2e-25
+sp|Q8ITI5|FOXG1_MNELE Forkhead box protein G1 OS=Mnemiopsis leid...   116   3e-25
+sp|Q9C009|FOXQ1_HUMAN Forkhead box protein Q1 OS=Homo sapiens OX...   115   5e-25
+sp|Q66IG8|FXJ12_XENTR Forkhead box protein J1.2 OS=Xenopus tropi...   114   1e-24
+sp|Q32NH9|FXJ12_XENLA Forkhead box protein J1.2 OS=Xenopus laevi...   112   3e-24
+sp|A8XJN7|FKH02_CAEBR Forkhead box protein fkh-2 OS=Caenorhabdit...   112   3e-24
+sp|Q63248|FOXI2_RAT Forkhead box protein I2 (Fragment) OS=Rattus...   112   4e-24
+sp|Q22510|FKH02_CAEEL Forkhead box protein fkh-2 OS=Caenorhabdit...   111   8e-24
+sp|Q10924|FKH6_CAEEL Forkhead transcription factor fkh-6 OS=Caen...   109   3e-23
+sp|F1R8Z9|FXJ1B_DANRE Forkhead box protein J1-B OS=Danio rerio O...   108   8e-23
+sp|Q708W1|FXJ1B_XENLA Forkhead box protein J1-B OS=Xenopus laevi...   106   3e-22
+sp|Q5M7N6|FOXJ1_XENTR Forkhead box protein J1 OS=Xenopus tropica...   105   3e-22
+sp|F1QDF8|FXJ1A_DANRE Forkhead box protein J1-A OS=Danio rerio O...   105   4e-22
+sp|Q9UPW0|FOXJ3_HUMAN Forkhead box protein J3 OS=Homo sapiens OX...   105   7e-22
+sp|Q708W2|FXJ1A_XENLA Forkhead box protein J1-A OS=Xenopus laevi...   104   9e-22
+sp|Q8BUR3|FOXJ3_MOUSE Forkhead box protein J3 OS=Mus musculus OX...   104   1e-21
+sp|Q7ZX03|FOXK2_XENLA Forkhead box protein K2 OS=Xenopus laevis ...   103   2e-21
+sp|P42128|FOXK1_MOUSE Forkhead box protein K1 OS=Mus musculus OX...   102   5e-21
+sp|Q92949|FOXJ1_HUMAN Forkhead box protein J1 OS=Homo sapiens OX...   102   5e-21
+sp|Q61660|FOXJ1_MOUSE Forkhead box protein J1 OS=Mus musculus OX...   101   6e-21
+sp|Q63247|FOXJ1_RAT Forkhead box protein J1 OS=Rattus norvegicus...   101   6e-21
+sp|Q3UCQ1|FOXK2_MOUSE Forkhead box protein K2 OS=Mus musculus OX...   100   1e-20
+sp|Q01167|FOXK2_HUMAN Forkhead box protein K2 OS=Homo sapiens OX...   100   1e-20
+sp|P91278|FOXF_CAEEL Forkhead box protein F OS=Caenorhabditis el...   100   2e-20
+sp|P85037|FOXK1_HUMAN Forkhead box protein K1 OS=Homo sapiens OX...    99   5e-20
+sp|O60129|FKH2_SCHPO Fork head protein homolog 2 OS=Schizosaccha...    98   9e-20
+sp|Q5A7S7|FKH2_CANAL Fork-head transcriptional regulator 2 OS=Ca...    97   2e-19
+sp|P25364|HCM1_YEAST Forkhead transcription factor HCM1 OS=Sacch...    95   6e-19
+sp|Q28EM1|FOXJ2_XENTR Forkhead box protein J2 OS=Xenopus tropica...    94   2e-18
+sp|Q9I9E1|FOXH1_DANRE Forkhead box protein H1 OS=Danio rerio OX=...    93   3e-18
+sp|Q68EZ2|FOXJ2_XENLA Forkhead box protein J2 OS=Xenopus laevis ...    92   4e-18
+sp|Q9VS05|FOXF_DROME Forkhead box protein biniou OS=Drosophila m...    92   6e-18
+sp|A2BGM5|FOXN4_DANRE Forkhead box protein N4 OS=Danio rerio OX=...    92   7e-18
+sp|Q3BJS1|FOXN4_XENLA Forkhead box protein N4 OS=Xenopus laevis ...    91   9e-18
+sp|O43058|SEP1_SCHPO Forkhead protein sep1 OS=Schizosaccharomyce...    91   1e-17
+sp|P32314|FOXN2_HUMAN Forkhead box protein N2 OS=Homo sapiens OX...    90   2e-17
+sp|P40466|FKH1_YEAST Fork head protein homolog 1 OS=Saccharomyce...    90   2e-17
+sp|O75593|FOXH1_HUMAN Forkhead box protein H1 OS=Homo sapiens OX...    89   4e-17
+sp|O14270|FHL1_SCHPO Fork head transcription factor 1 OS=Schizos...    87   1e-16
+sp|P41813|FKH2_YEAST Fork head protein homolog 2 OS=Saccharomyce...    87   1e-16
+sp|Q9ES18|FOXJ2_MOUSE Forkhead box protein J2 OS=Mus musculus OX...    87   2e-16
+sp|O15353|FOXN1_HUMAN Forkhead box protein N1 OS=Homo sapiens OX...    87   2e-16
+sp|Q8K3Q3|FOXN4_MOUSE Forkhead box protein N4 OS=Mus musculus OX...    87   2e-16
+sp|Q9P0K8|FOXJ2_HUMAN Forkhead box protein J2 OS=Homo sapiens OX...    87   2e-16
+sp|Q8JIT7|FAST3_XENLA Forkhead activin signal transducer 3 OS=Xe...    86   3e-16
+sp|Q96NZ1|FOXN4_HUMAN Forkhead box protein N4 OS=Homo sapiens OX...    86   4e-16
+sp|Q61575|FOXN1_MOUSE Forkhead box protein N1 OS=Mus musculus OX...    86   4e-16
+sp|O88621|FOXH1_MOUSE Forkhead box protein H1 OS=Mus musculus OX...    86   5e-16
+sp|Q28GC4|FOXH1_XENTR Forkhead box protein H1 OS=Xenopus tropica...    84   1e-15
+sp|Q33BP8|FOXN3_PIG Forkhead box protein N3 OS=Sus scrofa OX=982...    84   1e-15
+sp|Q28G71|FOXN3_XENTR Forkhead box protein N3 OS=Xenopus tropica...    84   1e-15
+sp|O00409|FOXN3_HUMAN Forkhead box protein N3 OS=Homo sapiens OX...    84   1e-15
+sp|Q3BJS3|FOXN3_XENLA Forkhead box protein N3 OS=Xenopus laevis ...    84   1e-15
+sp|Q28F43|FOXN2_XENTR Forkhead box protein N2 OS=Xenopus tropica...    84   2e-15
+sp|Q499D0|FOXN3_MOUSE Forkhead box protein N3 OS=Mus musculus OX...    84   2e-15
+sp|O13606|MEI4_SCHPO Meiosis-specific transcription factor mei4 ...    84   2e-15
+sp|Q66J77|FOXN2_XENLA Forkhead box protein N2 OS=Xenopus laevis ...    82   4e-15
+sp|P70056|FOXH1_XENLA Forkhead box protein H1 OS=Xenopus laevis ...    82   4e-15
+sp|Q4VYS1|FOXP2_XENLA Forkhead box protein P2 OS=Xenopus laevis ...    81   8e-15
+sp|P0CF24|FOXP2_RAT Forkhead box protein P2 OS=Rattus norvegicus...    81   1e-14
+sp|O15409|FOXP2_HUMAN Forkhead box protein P2 OS=Homo sapiens OX...    81   1e-14
+sp|Q8MJA0|FOXP2_PANTR Forkhead box protein P2 OS=Pan troglodytes...    81   1e-14
+sp|Q8HZ00|FOXP2_PANPA Forkhead box protein P2 OS=Pan paniscus OX...    81   1e-14
+sp|Q8MJ97|FOXP2_MACMU Forkhead box protein P2 OS=Macaca mulatta ...    81   1e-14
+sp|Q5QL03|FOXP2_HYLLA Forkhead box protein P2 OS=Hylobates lar O...    81   1e-14
+sp|Q8MJ99|FOXP2_GORGO Forkhead box protein P2 OS=Gorilla gorilla...    81   1e-14
+sp|P58463|FOXP2_MOUSE Forkhead box protein P2 OS=Mus musculus OX...    81   1e-14
+sp|Q8MJ98|FOXP2_PONPY Forkhead box protein P2 OS=Pongo pygmaeus ...    81   1e-14
+sp|Q8IVH2|FOXP4_HUMAN Forkhead box protein P4 OS=Homo sapiens OX...    80   1e-14
+sp|Q9DBY0|FOXP4_MOUSE Forkhead box protein P4 OS=Mus musculus OX...    80   2e-14
+sp|Q9GZ14|PES1_CAEBR Forkhead box protein pes-1 OS=Caenorhabditi...    79   7e-14
+sp|Q4VYR7|FOXP4_XENLA Forkhead box protein P4 OS=Xenopus laevis ...    79   7e-14
+sp|O08696|FOXM1_MOUSE Forkhead box protein M1 OS=Mus musculus OX...    77   2e-13
+sp|A4IFD2|FOXP1_BOVIN Forkhead box protein P1 OS=Bos taurus OX=9...    77   2e-13
+sp|Q5W1J5|FOXP1_XENLA Forkhead box protein P1 OS=Xenopus laevis ...    77   2e-13
+sp|P97691|FOXM1_RAT Forkhead box protein M1 OS=Rattus norvegicus...    77   2e-13
+sp|Q9H334|FOXP1_HUMAN Forkhead box protein P1 OS=Homo sapiens OX...    77   2e-13
+sp|Q08050|FOXM1_HUMAN Forkhead box protein M1 OS=Homo sapiens OX...    77   2e-13
+sp|Q2LE08|FXP1B_DANRE Forkhead box protein P1-B OS=Danio rerio O...    77   2e-13
+sp|Q498D1|FOXP1_RAT Forkhead box protein P1 OS=Rattus norvegicus...    77   2e-13
+sp|Q58NQ4|FOXP1_CHICK Forkhead box protein P1 OS=Gallus gallus O...    77   2e-13
+sp|P58462|FOXP1_MOUSE Forkhead box protein P1 OS=Mus musculus OX...    77   2e-13
+sp|Q5W1J6|FOXM1_XENLA Forkhead box protein M1 OS=Xenopus laevis ...    74   1e-12
+sp|Q21187|FKH9_CAEEL Forkhead transcription factor fkh-9 OS=Caen...    74   1e-12
+sp|Q9BZS1|FOXP3_HUMAN Forkhead box protein P3 OS=Homo sapiens OX...    72   7e-12
+sp|Q6U8D7|FOXP3_MACFA Forkhead box protein P3 OS=Macaca fascicul...    72   7e-12
+sp|Q99JB6|FOXP3_MOUSE Forkhead box protein P3 OS=Mus musculus OX...    71   1e-11
+sp|B3LYS5|FOXO_DROAN Forkhead box protein O OS=Drosophila ananas...    70   2e-11
+sp|A3RK75|FX1AB_DANRE Forkhead box protein O1-B OS=Danio rerio O...    70   2e-11
+sp|B4G4S8|FOXO_DROPE Forkhead box protein O OS=Drosophila persim...    69   6e-11
+sp|Q95V55|FOXO_DROME Forkhead box protein O OS=Drosophila melano...    69   7e-11
+sp|B4HF64|FOXO_DROSE Forkhead box protein O OS=Drosophila sechel...    68   7e-11
+sp|B3P0K6|FOXO_DROER Forkhead box protein O OS=Drosophila erecta...    68   7e-11
+sp|B4PTD3|FOXO_DROYA Forkhead box protein O OS=Drosophila yakuba...    68   8e-11
+sp|Q298W7|FOXO_DROPS Forkhead box protein O OS=Drosophila pseudo...    67   2e-10
+sp|G5EGC9|PES1_CAEEL Forkhead box protein pes-1 OS=Caenorhabditi...    67   2e-10
+sp|B4NFR1|FOXO_DROWI Forkhead box protein O OS=Drosophila willis...    67   2e-10
+sp|P98177|FOXO4_HUMAN Forkhead box protein O4 OS=Homo sapiens OX...    66   4e-10
+sp|Q6EUW1|FOXO3_XENLA Forkhead box protein O3 OS=Xenopus laevis ...    65   5e-10
+sp|Q9WVH3|FOXO4_MOUSE Forkhead box protein O4 OS=Mus musculus OX...    65   5e-10
+sp|Q3UTB7|FOXR1_MOUSE Forkhead box protein R1 OS=Mus musculus OX...    65   8e-10
+sp|E1BPQ1|FOXO1_BOVIN Forkhead box protein O1 OS=Bos taurus OX=9...    64   1e-09
+sp|Q12778|FOXO1_HUMAN Forkhead box protein O1 OS=Homo sapiens OX...    64   1e-09
+sp|Q6PIV2|FOXR1_HUMAN Forkhead box protein R1 OS=Homo sapiens OX...    64   2e-09
+sp|Q66JJ0|FOXO1_XENTR Forkhead box protein O1 OS=Xenopus tropica...    64   2e-09
+sp|Q9R1E0|FOXO1_MOUSE Forkhead box protein O1 OS=Mus musculus OX...    64   2e-09
+sp|G3V7R4|FOXO1_RAT Forkhead box protein O1 OS=Rattus norvegicus...    64   2e-09
+sp|A4L7N3|FOXO1_PIG Forkhead box protein O1 OS=Sus scrofa OX=982...    64   2e-09
+sp|B4KBF6|FOXO_DROMO Forkhead box protein O OS=Drosophila mojave...    64   2e-09
+sp|Q810W5|FOXO1_ICTTR Forkhead box protein O1 OS=Ictidomys tride...    64   2e-09
+sp|B4MB78|FOXO_DROVI Forkhead box protein O OS=Drosophila virili...    64   2e-09
+sp|Q6EUW2|FOXO1_XENLA Forkhead box protein O1 OS=Xenopus laevis ...    64   2e-09
+sp|Q3BJS0|FOXN5_XENLA Forkhead box protein N5 OS=Xenopus laevis ...    64   2e-09
+sp|O16850|FOXO_CAEEL Forkhead box protein O OS=Caenorhabditis el...    63   3e-09
+sp|Q70KY4|FOXO6_MOUSE Forkhead box protein O6 OS=Mus musculus OX...    63   3e-09
+sp|A8MYZ6|FOXO6_HUMAN Forkhead box protein O6 OS=Homo sapiens OX...    63   4e-09
+sp|B4JSC2|FOXO_DROGR Forkhead box protein O OS=Drosophila grimsh...    62   4e-09
+sp|O43524|FOXO3_HUMAN Forkhead box protein O3 OS=Homo sapiens OX...    62   5e-09
+sp|Q28H65|FOXN5_XENTR Forkhead box protein N5 OS=Xenopus tropica...    62   5e-09
+sp|Q9WVH4|FOXO3_MOUSE Forkhead box protein O3 OS=Mus musculus OX...    62   6e-09
+sp|A3RK74|FX1AA_DANRE Forkhead box protein O1-A OS=Danio rerio O...    62   7e-09
+sp|Q3UM89|FOXR2_MOUSE Forkhead box protein R2 OS=Mus musculus OX...    62   8e-09
+sp|Q19802|FKH5_CAEEL Putative forkhead-related transcription fac...    57   1e-07
+sp|P39521|FHL1_YEAST Pre-rRNA-processing protein FHL1 OS=Sacchar...    56   4e-07
+sp|A0A078BQN7|FKH3_CAEEL Forkhead box protein fkh-3 OS=Caenorhab...    55   1e-06
+sp|O17617|FKH4_CAEEL Forkhead box protein fkh-4 OS=Caenorhabditi...    54   1e-06
+sp|Q6PJQ5|FOXR2_HUMAN Forkhead box protein R2 OS=Homo sapiens OX...    47   2e-04
+sp|A0A2Z4LIS9|FXO3B_HUMAN Forkhead box protein O3B OS=Homo sapie...    39   0.073
+sp|Q59ZC8|FHL1_CANAL Fork-head transcriptional regulator FHL1 OS...    35   0.51 
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P33205|FXA4A_XENLA Forkhead box protein A4-A OS=Xenopus laevi...   214   5e-55
+sp|Q9DEN3|FXD3B_XENLA Forkhead box protein D3-B OS=Xenopus laevi...   214   1e-54
+sp|P33206|FXA4B_XENLA Forkhead box protein A4-B OS=Xenopus laevi...   211   5e-54
+sp|Q18694|UN130_CAEEL Forkhead box protein unc-130 OS=Caenorhabd...   209   2e-53
+sp|Q9DEN4|FXD3A_XENLA Forkhead box protein D3-A OS=Xenopus laevi...   209   3e-53
+sp|Q5M7L9|FOXD3_XENTR Forkhead box protein D3 OS=Xenopus tropica...   208   7e-53
+sp|Q6P839|FOXA4_XENTR Forkhead box protein A4 OS=Xenopus tropica...   207   1e-52
+sp|Q12950|FOXD4_HUMAN Forkhead box protein D4 OS=Homo sapiens OX...   206   3e-52
+sp|Q02361|FD3_DROME Fork head domain-containing protein FD3 OS=D...   202   3e-51
+sp|O42097|FOXA2_ORYLA Hepatocyte nuclear factor 3-beta OS=Oryzia...   201   5e-51
+sp|Q12947|FOXF2_HUMAN Forkhead box protein F2 OS=Homo sapiens OX...   201   8e-51
+sp|P55317|FOXA1_HUMAN Hepatocyte nuclear factor 3-alpha OS=Homo ...   199   3e-50
+sp|P35583|FOXA2_MOUSE Hepatocyte nuclear factor 3-beta OS=Mus mu...   198   4e-50
+sp|P35584|FOXA3_MOUSE Hepatocyte nuclear factor 3-gamma OS=Mus m...   198   5e-50
+sp|P35582|FOXA1_MOUSE Hepatocyte nuclear factor 3-alpha OS=Mus m...   197   8e-50
+sp|P23512|FOXA1_RAT Hepatocyte nuclear factor 3-alpha OS=Rattus ...   196   2e-49
+sp|Q28HT3|FOXI2_XENTR Forkhead box protein I2 OS=Xenopus tropica...   196   2e-49
+sp|Q17241|SGF1_BOMMO Silk gland factor 1 OS=Bombyx mori OX=7091 ...   196   2e-49
+sp|P56260|QIN_AVIS3 Transforming protein Qin OS=Avian sarcoma vi...   195   3e-49
+sp|A8XJN7|FKH02_CAEBR Forkhead box protein fkh-2 OS=Caenorhabdit...   195   5e-49
+sp|Q9Y261|FOXA2_HUMAN Hepatocyte nuclear factor 3-beta OS=Homo s...   194   6e-49
+sp|Q07342|FOXA2_DANRE Forkhead box protein A2 OS=Danio rerio OX=...   194   7e-49
+sp|P32183|FOXA3_RAT Hepatocyte nuclear factor 3-gamma OS=Rattus ...   194   7e-49
+sp|Q91765|FXA2A_XENLA Forkhead box protein A2-A OS=Xenopus laevi...   193   1e-48
+sp|Q63ZH2|FXI2B_XENLA Forkhead box protein I2-B OS=Xenopus laevi...   193   2e-48
+sp|Q5NDM2|FXI2A_XENLA Forkhead box protein I2-A OS=Xenopus laevi...   193   2e-48
+sp|Q7T1R4|FOXA2_XENTR Forkhead box protein A2 OS=Xenopus tropica...   193   2e-48
+sp|Q64733|FOXB2_MOUSE Forkhead box protein B2 OS=Mus musculus OX...   193   2e-48
+sp|Q63246|FOXC2_RAT Forkhead box protein C2 OS=Rattus norvegicus...   192   2e-48
+sp|Q90964|FOXG1_CHICK Forkhead box protein G1 OS=Gallus gallus O...   192   3e-48
+sp|Q5VYV0|FOXB2_HUMAN Forkhead box protein B2 OS=Homo sapiens OX...   192   3e-48
+sp|P55318|FOXA3_HUMAN Hepatocyte nuclear factor 3-gamma OS=Homo ...   192   3e-48
+sp|Q64732|FOXB1_MOUSE Forkhead box protein B1 OS=Mus musculus OX...   192   3e-48
+sp|Q99853|FOXB1_HUMAN Forkhead box protein B1 OS=Homo sapiens OX...   192   3e-48
+sp|Q6P2Z3|FOXI1_XENTR Forkhead box protein I1 OS=Xenopus tropica...   191   4e-48
+sp|P32315|FXA1B_XENLA Forkhead box protein A1-B OS=Xenopus laevi...   191   6e-48
+sp|Q3Y598|FOXA3_BOVIN Hepatocyte nuclear factor 3-gamma OS=Bos t...   191   6e-48
+sp|Q6LD29|FXA1A_XENLA Forkhead box protein A1-A OS=Xenopus laevi...   191   7e-48
+sp|Q61850|FOXC2_MOUSE Forkhead box protein C2 OS=Mus musculus OX...   191   9e-48
+sp|Q6ZQN5|FOXI2_HUMAN Forkhead box protein I2 OS=Homo sapiens OX...   191   9e-48
+sp|Q7ZX03|FOXK2_XENLA Forkhead box protein K2 OS=Xenopus laevis ...   190   1e-47
+sp|O93529|FOXB1_XENLA Forkhead box protein B1 OS=Xenopus laevis ...   190   1e-47
+sp|P14734|FKH_DROME Protein fork head OS=Drosophila melanogaster...   189   2e-47
+sp|Q61060|FOXD3_MOUSE Forkhead box protein D3 OS=Mus musculus OX...   189   2e-47
+sp|Q8AWH1|FOXA1_XENTR Forkhead box protein A1 OS=Xenopus tropica...   189   2e-47
+sp|Q9YHC5|FOXG1_XENLA Forkhead box protein G1 OS=Xenopus laevis ...   189   3e-47
+sp|Q64731|FOXL1_MOUSE Forkhead box protein L1 OS=Mus musculus OX...   189   3e-47
+sp|Q1A1A6|FOXG1_CEBCA Forkhead box protein G1 OS=Cebus capucinus...   188   4e-47
+sp|Q1A1A4|FOXG1_PIPRU Forkhead box protein G1 OS=Pipistrellus ru...   188   4e-47
+sp|Q60987|FOXG1_MOUSE Forkhead box protein G1 OS=Mus musculus OX...   188   4e-47
+sp|Q00939|FOXG1_RAT Forkhead box protein G1 OS=Rattus norvegicus...   188   5e-47
+sp|Q12952|FOXL1_HUMAN Forkhead box protein L1 OS=Homo sapiens OX...   188   5e-47
+sp|P84961|FXA2B_XENLA Forkhead box protein A2-B OS=Xenopus laevi...   188   5e-47
+sp|P55316|FOXG1_HUMAN Forkhead box protein G1 OS=Homo sapiens OX...   188   5e-47
+sp|Q1A1A2|FOXG1_EQUQB Forkhead box protein G1 OS=Equus quagga bu...   188   5e-47
+sp|Q1A1A5|FOXG1_CHLPG Forkhead box protein G1 OS=Chlorocebus pyg...   188   5e-47
+sp|Q1A1A3|FOXG1_EPOGA Forkhead box protein G1 OS=Epomophorus gam...   188   5e-47
+sp|Q9NU39|FX4L1_HUMAN Forkhead box protein D4-like 1 OS=Homo sap...   188   6e-47
+sp|Q8JIT5|FXI1C_XENLA Forkhead box protein I1c OS=Xenopus laevis...   188   6e-47
+sp|Q1A1A1|FOXG1_CERSI Forkhead box protein G1 OS=Ceratotherium s...   188   6e-47
+sp|P79772|FOXD3_CHICK Forkhead box protein D3 OS=Gallus gallus O...   188   6e-47
+sp|Q8WXT5|FX4L4_HUMAN Forkhead box protein D4-like 4 OS=Homo sap...   187   9e-47
+sp|Q28D67|FXI1C_XENTR Forkhead box protein I1c OS=Xenopus tropic...   187   9e-47
+sp|Q5VV16|FX4L5_HUMAN Forkhead box protein D4-like 5 OS=Homo sap...   187   9e-47
+sp|Q12951|FOXI1_HUMAN Forkhead box protein I1 OS=Homo sapiens OX...   187   1e-46
+sp|Q99958|FOXC2_HUMAN Forkhead box protein C2 OS=Homo sapiens OX...   187   1e-46
+sp|Q6VB84|FX4L3_HUMAN Forkhead box protein D4-like 3 OS=Homo sap...   187   1e-46
+sp|Q3I5G5|FOXI2_MOUSE Forkhead box protein I2 OS=Mus musculus OX...   187   1e-46
+sp|Q3SYB3|FX4L6_HUMAN Forkhead box protein D4-like 6 OS=Homo sap...   186   1e-46
+sp|P32028|FD4_DROME Fork head domain-containing protein FD4 OS=D...   186   1e-46
+sp|Q6F2E4|FOXD1_XENTR Forkhead box protein D1 OS=Xenopus tropica...   186   2e-46
+sp|Q61572|FOXC1_MOUSE Forkhead box protein C1 OS=Mus musculus OX...   186   2e-46
+sp|O60548|FOXD2_HUMAN Forkhead box protein D2 OS=Homo sapiens OX...   186   2e-46
+sp|Q61345|FOXD1_MOUSE Forkhead box protein D1 OS=Mus musculus OX...   186   2e-46
+sp|Q12948|FOXC1_HUMAN Forkhead box protein C1 OS=Homo sapiens OX...   186   2e-46
+sp|Q9PT67|FXD5C_XENLA Forkhead box protein D5-C OS=Xenopus laevi...   186   3e-46
+sp|P32182|FOXA2_RAT Hepatocyte nuclear factor 3-beta OS=Rattus n...   185   3e-46
+sp|Q01167|FOXK2_HUMAN Forkhead box protein K2 OS=Homo sapiens OX...   185   3e-46
+sp|B5RHS5|FOXI3_CANLF Forkhead box protein I3 OS=Canis lupus fam...   185   4e-46
+sp|A8MTJ6|FOXI3_HUMAN Forkhead box protein I3 OS=Homo sapiens OX...   184   6e-46
+sp|Q9UJU5|FOXD3_HUMAN Forkhead box protein D3 OS=Homo sapiens OX...   184   6e-46
+sp|Q91904|FXI1A_XENLA Forkhead box protein I1-A OS=Xenopus laevi...   184   6e-46
+sp|Q16676|FOXD1_HUMAN Forkhead box protein D1 OS=Homo sapiens OX...   183   1e-45
+sp|Q91905|FXI1B_XENLA Forkhead box protein I1-B OS=Xenopus laevi...   183   1e-45
+sp|Q22510|FKH02_CAEEL Forkhead box protein fkh-2 OS=Caenorhabdit...   183   2e-45
+sp|Q90WN4|FOXD2_XENLA Forkhead box protein D2 OS=Xenopus laevis ...   183   2e-45
+sp|Q17381|PHA4_CAEEL Defective pharyngeal development protein 4 ...   183   2e-45
+sp|O35392|FOXD2_MOUSE Forkhead box protein D2 OS=Mus musculus OX...   183   2e-45
+sp|Q68F77|FOXC1_XENTR Forkhead box protein C1 OS=Xenopus tropica...   183   2e-45
+sp|Q6P8A3|FXI1E_XENTR Forkhead box protein I1-ema OS=Xenopus tro...   183   2e-45
+sp|Q9QY14|FOXE3_MOUSE Forkhead box protein E3 OS=Mus musculus OX...   182   3e-45
+sp|P32027|CROC_DROME Fork head domain-containing protein crocodi...   182   3e-45
+sp|Q3UCQ1|FOXK2_MOUSE Forkhead box protein K2 OS=Mus musculus OX...   182   3e-45
+sp|Q9DE25|FXC1A_DANRE Forkhead box C1-A OS=Danio rerio OX=7955 G...   182   3e-45
+sp|Q32NP8|FXC1B_XENLA Forkhead box protein C1-B OS=Xenopus laevi...   181   4e-45
+sp|Q63251|FOXD1_RAT Forkhead box protein D1 (Fragment) OS=Rattus...   181   5e-45
+sp|Q6NVT7|FOXC2_XENTR Forkhead box protein C2 OS=Xenopus tropica...   181   5e-45
+sp|Q7ZYQ0|FXI1E_XENLA Forkhead box protein I1-ema OS=Xenopus lae...   181   6e-45
+sp|Q9PRJ8|FXD5A_XENLA Forkhead box protein D5-A OS=Xenopus laevi...   181   6e-45
+sp|Q9PVZ3|FXC1A_XENLA Forkhead box protein C1-A OS=Xenopus laevi...   181   7e-45
+sp|Q5WM45|FOXD5_XENTR Forkhead box protein D5 OS=Xenopus tropica...   181   8e-45
+sp|Q63245|FOXD3_RAT Forkhead box protein D3 (Fragment) OS=Rattus...   180   1e-44
+sp|Q60688|FOXD4_MOUSE Forkhead box protein D4 OS=Mus musculus OX...   180   1e-44
+sp|O54743|FOXF2_MOUSE Forkhead box protein F2 OS=Mus musculus OX...   180   1e-44
+sp|P32029|FD5_DROME Fork head domain-containing protein FD5 OS=D...   180   1e-44
+sp|Q9PVY8|FXC2B_XENLA Forkhead box protein C2-B OS=Xenopus laevi...   180   1e-44
+sp|Q66IG8|FXJ12_XENTR Forkhead box protein J1.2 OS=Xenopus tropi...   180   1e-44
+sp|Q98937|FOXD1_CHICK Forkhead box protein D1 OS=Gallus gallus O...   180   1e-44
+sp|Q5M7N6|FOXJ1_XENTR Forkhead box protein J1 OS=Xenopus tropica...   179   2e-44
+sp|Q9PSY4|FOXD1_XENLA Forkhead box protein D1 OS=Xenopus laevis ...   179   2e-44
+sp|Q9PT68|FXD5B_XENLA Forkhead box protein D5-B OS=Xenopus laevi...   179   2e-44
+sp|F1R8Z9|FXJ1B_DANRE Forkhead box protein J1-B OS=Danio rerio O...   179   2e-44
+sp|Q63248|FOXI2_RAT Forkhead box protein I2 (Fragment) OS=Rattus...   179   3e-44
+sp|B4G4S8|FOXO_DROPE Forkhead box protein O OS=Drosophila persim...   179   3e-44
+sp|P42128|FOXK1_MOUSE Forkhead box protein K1 OS=Mus musculus OX...   179   3e-44
+sp|Q9PTK2|FOXE4_XENLA Forkhead box protein E4 OS=Xenopus laevis ...   179   3e-44
+sp|O88470|FOXL2_MOUSE Forkhead box protein L2 OS=Mus musculus OX...   179   3e-44
+sp|Q32NH9|FXJ12_XENLA Forkhead box protein J1.2 OS=Xenopus laevi...   178   4e-44
+sp|Q9DE24|FXC1B_DANRE Forkhead box C1-B OS=Danio rerio OX=7955 G...   178   5e-44
+sp|P85037|FOXK1_HUMAN Forkhead box protein K1 OS=Homo sapiens OX...   178   5e-44
+sp|Q5J3Q5|FOXE1_XENLA Forkhead box protein E1 OS=Xenopus laevis ...   178   5e-44
+sp|O00358|FOXE1_HUMAN Forkhead box protein E1 OS=Homo sapiens OX...   178   6e-44
+sp|Q9PVY9|FXC2A_XENLA Forkhead box protein C2-A OS=Xenopus laevi...   178   7e-44
+sp|Q9W707|FXF1B_XENLA Forkhead box protein F1-B OS=Xenopus laevi...   177   1e-43
+sp|B3LYS5|FOXO_DROAN Forkhead box protein O OS=Drosophila ananas...   176   1e-43
+sp|Q708W1|FXJ1B_XENLA Forkhead box protein J1-B OS=Xenopus laevi...   176   2e-43
+sp|O43638|FOXS1_HUMAN Forkhead box protein S1 OS=Homo sapiens OX...   176   2e-43
+sp|B4HF64|FOXO_DROSE Forkhead box protein O OS=Drosophila sechel...   176   2e-43
+sp|Q708W2|FXJ1A_XENLA Forkhead box protein J1-A OS=Xenopus laevi...   176   2e-43
+sp|Q61080|FOXF1_MOUSE Forkhead box protein F1 OS=Mus musculus OX...   176   2e-43
+sp|Q298W7|FOXO_DROPS Forkhead box protein O OS=Drosophila pseudo...   176   2e-43
+sp|B4PTD3|FOXO_DROYA Forkhead box protein O OS=Drosophila yakuba...   176   3e-43
+sp|Q9W706|FXF1A_XENLA Forkhead box protein F1-A OS=Xenopus laevi...   176   3e-43
+sp|Q61574|FOXS1_MOUSE Forkhead box protein S1 OS=Mus musculus OX...   176   3e-43
+sp|Q95V55|FOXO_DROME Forkhead box protein O OS=Drosophila melano...   176   3e-43
+sp|P32031|SLP2_DROME Fork head domain transcription factor slp2 ...   175   3e-43
+sp|Q63250|FOXE3_RAT Forkhead box protein E3 OS=Rattus norvegicus...   175   3e-43
+sp|Q8JIT6|FOXB2_XENLA Forkhead box protein B2 OS=Xenopus laevis ...   175   3e-43
+sp|B3P0K6|FOXO_DROER Forkhead box protein O OS=Drosophila erecta...   175   4e-43
+sp|Q8R2I0|FOXE1_MOUSE Forkhead box protein E1 OS=Mus musculus OX...   175   5e-43
+sp|Q12946|FOXF1_HUMAN Forkhead box protein F1 OS=Homo sapiens OX...   175   5e-43
+sp|B4JSC2|FOXO_DROGR Forkhead box protein O OS=Drosophila grimsh...   174   5e-43
+sp|Q63247|FOXJ1_RAT Forkhead box protein J1 OS=Rattus norvegicus...   174   8e-43
+sp|Q6VFT6|FOXL2_PIG Forkhead box protein L2 OS=Sus scrofa OX=982...   174   8e-43
+sp|P58012|FOXL2_HUMAN Forkhead box protein L2 OS=Homo sapiens OX...   174   8e-43
+sp|Q28BS5|FOXF1_XENTR Forkhead box protein F1 OS=Xenopus tropica...   174   9e-43
+sp|Q8MIP2|FOXL2_CAPHI Forkhead box protein L2 OS=Capra hircus OX...   174   9e-43
+sp|Q61660|FOXJ1_MOUSE Forkhead box protein J1 OS=Mus musculus OX...   174   1e-42
+sp|Q6VFT5|FOXL2_RABIT Forkhead box protein L2 OS=Oryctolagus cun...   174   1e-42
+sp|B4MB78|FOXO_DROVI Forkhead box protein O OS=Drosophila virili...   174   1e-42
+sp|Q4VUF1|FOXL2_ELLLU Forkhead box protein L2 OS=Ellobius lutesc...   173   1e-42
+sp|Q6VFT7|FOXL2_BOVIN Forkhead box protein L2 OS=Bos taurus OX=9...   173   1e-42
+sp|F1QDF8|FXJ1A_DANRE Forkhead box protein J1-A OS=Danio rerio O...   173   2e-42
+sp|Q92949|FOXJ1_HUMAN Forkhead box protein J1 OS=Homo sapiens OX...   173   2e-42
+sp|B4NFR1|FOXO_DROWI Forkhead box protein O OS=Drosophila willis...   172   3e-42
+sp|Q63249|FOXD4_RAT Forkhead box protein D4 (Fragment) OS=Rattus...   172   3e-42
+sp|Q922I5|FOXI1_MOUSE Forkhead box protein I1 OS=Mus musculus OX...   172   4e-42
+sp|Q8BUR3|FOXJ3_MOUSE Forkhead box protein J3 OS=Mus musculus OX...   171   6e-42
+sp|P91278|FOXF_CAEEL Forkhead box protein F OS=Caenorhabditis el...   171   7e-42
+sp|Q13461|FOXE3_HUMAN Forkhead box protein E3 OS=Homo sapiens OX...   170   1e-41
+sp|P32030|SLP1_DROME Fork head domain transcription factor slp1 ...   170   1e-41
+sp|A1L1S5|FOXF1_DANRE Forkhead box protein F1 OS=Danio rerio OX=...   170   1e-41
+sp|Q9UPW0|FOXJ3_HUMAN Forkhead box protein J3 OS=Homo sapiens OX...   169   2e-41
+sp|B4KBF6|FOXO_DROMO Forkhead box protein O OS=Drosophila mojave...   168   5e-41
+sp|Q8ITI5|FOXG1_MNELE Forkhead box protein G1 OS=Mnemiopsis leid...   166   1e-40
+sp|Q02360|FOXL1_DROME Fork head domain-containing protein L1 OS=...   166   3e-40
+sp|P32314|FOXN2_HUMAN Forkhead box protein N2 OS=Homo sapiens OX...   158   4e-38
+sp|Q5A7S7|FKH2_CANAL Fork-head transcriptional regulator 2 OS=Ca...   158   6e-38
+sp|Q9ES18|FOXJ2_MOUSE Forkhead box protein J2 OS=Mus musculus OX...   156   2e-37
+sp|A0A1W2PRP0|FOXL3_HUMAN Forkhead box protein L3 OS=Homo sapien...   156   3e-37
+sp|P34683|LIN31_CAEEL Protein lin-31 OS=Caenorhabditis elegans O...   156   3e-37
+sp|Q28F43|FOXN2_XENTR Forkhead box protein N2 OS=Xenopus tropica...   156   3e-37
+sp|Q9VS05|FOXF_DROME Forkhead box protein biniou OS=Drosophila m...   155   4e-37
+sp|Q9P0K8|FOXJ2_HUMAN Forkhead box protein J2 OS=Homo sapiens OX...   155   5e-37
+sp|Q10924|FKH6_CAEEL Forkhead transcription factor fkh-6 OS=Caen...   154   6e-37
+sp|Q68EZ2|FOXJ2_XENLA Forkhead box protein J2 OS=Xenopus laevis ...   154   9e-37
+sp|P41813|FKH2_YEAST Fork head protein homolog 2 OS=Saccharomyce...   154   1e-36
+sp|Q28EM1|FOXJ2_XENTR Forkhead box protein J2 OS=Xenopus tropica...   153   2e-36
+sp|Q66J77|FOXN2_XENLA Forkhead box protein N2 OS=Xenopus laevis ...   152   4e-36
+sp|Q63244|FOXQ1_RAT Forkhead box protein Q1 OS=Rattus norvegicus...   152   4e-36
+sp|P40466|FKH1_YEAST Fork head protein homolog 1 OS=Saccharomyce...   151   6e-36
+sp|O70220|FOXQ1_MOUSE Forkhead box protein Q1 OS=Mus musculus OX...   151   7e-36
+sp|Q9C009|FOXQ1_HUMAN Forkhead box protein Q1 OS=Homo sapiens OX...   151   7e-36
+sp|O60129|FKH2_SCHPO Fork head protein homolog 2 OS=Schizosaccha...   150   1e-35
+sp|Q28G71|FOXN3_XENTR Forkhead box protein N3 OS=Xenopus tropica...   150   1e-35
+sp|O00409|FOXN3_HUMAN Forkhead box protein N3 OS=Homo sapiens OX...   149   2e-35
+sp|Q499D0|FOXN3_MOUSE Forkhead box protein N3 OS=Mus musculus OX...   149   2e-35
+sp|O14270|FHL1_SCHPO Fork head transcription factor 1 OS=Schizos...   149   3e-35
+sp|Q3BJS3|FOXN3_XENLA Forkhead box protein N3 OS=Xenopus laevis ...   149   3e-35
+sp|Q33BP8|FOXN3_PIG Forkhead box protein N3 OS=Sus scrofa OX=982...   149   3e-35
+sp|Q3UM89|FOXR2_MOUSE Forkhead box protein R2 OS=Mus musculus OX...   146   3e-34
+sp|O75593|FOXH1_HUMAN Forkhead box protein H1 OS=Homo sapiens OX...   144   9e-34
+sp|O15353|FOXN1_HUMAN Forkhead box protein N1 OS=Homo sapiens OX...   144   1e-33
+sp|Q8K3Q3|FOXN4_MOUSE Forkhead box protein N4 OS=Mus musculus OX...   142   3e-33
+sp|O88621|FOXH1_MOUSE Forkhead box protein H1 OS=Mus musculus OX...   142   3e-33
+sp|A3RK75|FX1AB_DANRE Forkhead box protein O1-B OS=Danio rerio O...   142   4e-33
+sp|A2BGM5|FOXN4_DANRE Forkhead box protein N4 OS=Danio rerio OX=...   141   5e-33
+sp|O43058|SEP1_SCHPO Forkhead protein sep1 OS=Schizosaccharomyce...   141   5e-33
+sp|P25364|HCM1_YEAST Forkhead transcription factor HCM1 OS=Sacch...   140   1e-32
+sp|Q8JIT7|FAST3_XENLA Forkhead activin signal transducer 3 OS=Xe...   139   2e-32
+sp|Q28GC4|FOXH1_XENTR Forkhead box protein H1 OS=Xenopus tropica...   139   3e-32
+sp|Q96NZ1|FOXN4_HUMAN Forkhead box protein N4 OS=Homo sapiens OX...   138   6e-32
+sp|Q3BJS1|FOXN4_XENLA Forkhead box protein N4 OS=Xenopus laevis ...   137   9e-32
+sp|Q9GZ14|PES1_CAEBR Forkhead box protein pes-1 OS=Caenorhabditi...   137   1e-31
+sp|Q9I9E1|FOXH1_DANRE Forkhead box protein H1 OS=Danio rerio OX=...   136   3e-31
+sp|P70056|FOXH1_XENLA Forkhead box protein H1 OS=Xenopus laevis ...   135   4e-31
+sp|Q498D1|FOXP1_RAT Forkhead box protein P1 OS=Rattus norvegicus...   134   9e-31
+sp|O13606|MEI4_SCHPO Meiosis-specific transcription factor mei4 ...   134   1e-30
+sp|Q61575|FOXN1_MOUSE Forkhead box protein N1 OS=Mus musculus OX...   133   1e-30
+sp|Q4VYR7|FOXP4_XENLA Forkhead box protein P4 OS=Xenopus laevis ...   133   2e-30
+sp|A8MYZ6|FOXO6_HUMAN Forkhead box protein O6 OS=Homo sapiens OX...   132   2e-30
+sp|Q70KY4|FOXO6_MOUSE Forkhead box protein O6 OS=Mus musculus OX...   132   2e-30
+sp|P58462|FOXP1_MOUSE Forkhead box protein P1 OS=Mus musculus OX...   132   2e-30
+sp|A3RK74|FX1AA_DANRE Forkhead box protein O1-A OS=Danio rerio O...   131   6e-30
+sp|A4IFD2|FOXP1_BOVIN Forkhead box protein P1 OS=Bos taurus OX=9...   131   9e-30
+sp|Q9WVH4|FOXO3_MOUSE Forkhead box protein O3 OS=Mus musculus OX...   131   9e-30
+sp|Q9H334|FOXP1_HUMAN Forkhead box protein P1 OS=Homo sapiens OX...   131   9e-30
+sp|Q21187|FKH9_CAEEL Forkhead transcription factor fkh-9 OS=Caen...   131   1e-29
+sp|Q58NQ4|FOXP1_CHICK Forkhead box protein P1 OS=Gallus gallus O...   131   1e-29
+sp|Q9WVH3|FOXO4_MOUSE Forkhead box protein O4 OS=Mus musculus OX...   130   1e-29
+sp|Q9DBY0|FOXP4_MOUSE Forkhead box protein P4 OS=Mus musculus OX...   130   1e-29
+sp|Q5W1J6|FOXM1_XENLA Forkhead box protein M1 OS=Xenopus laevis ...   130   2e-29
+sp|Q810W5|FOXO1_ICTTR Forkhead box protein O1 OS=Ictidomys tride...   129   3e-29
+sp|Q8MJ98|FOXP2_PONPY Forkhead box protein P2 OS=Pongo pygmaeus ...   129   3e-29
+sp|Q8MJA0|FOXP2_PANTR Forkhead box protein P2 OS=Pan troglodytes...   129   3e-29
+sp|Q8HZ00|FOXP2_PANPA Forkhead box protein P2 OS=Pan paniscus OX...   129   3e-29
+sp|Q8MJ97|FOXP2_MACMU Forkhead box protein P2 OS=Macaca mulatta ...   129   3e-29
+sp|Q5QL03|FOXP2_HYLLA Forkhead box protein P2 OS=Hylobates lar O...   129   3e-29
+sp|Q8MJ99|FOXP2_GORGO Forkhead box protein P2 OS=Gorilla gorilla...   129   3e-29
+sp|P58463|FOXP2_MOUSE Forkhead box protein P2 OS=Mus musculus OX...   129   3e-29
+sp|A4L7N3|FOXO1_PIG Forkhead box protein O1 OS=Sus scrofa OX=982...   129   3e-29
+sp|O15409|FOXP2_HUMAN Forkhead box protein P2 OS=Homo sapiens OX...   129   3e-29
+sp|Q4VYS1|FOXP2_XENLA Forkhead box protein P2 OS=Xenopus laevis ...   129   3e-29
+sp|P0CF24|FOXP2_RAT Forkhead box protein P2 OS=Rattus norvegicus...   129   3e-29
+sp|Q3UTB7|FOXR1_MOUSE Forkhead box protein R1 OS=Mus musculus OX...   128   4e-29
+sp|Q6EUW1|FOXO3_XENLA Forkhead box protein O3 OS=Xenopus laevis ...   128   4e-29
+sp|P98177|FOXO4_HUMAN Forkhead box protein O4 OS=Homo sapiens OX...   128   5e-29
+sp|O43524|FOXO3_HUMAN Forkhead box protein O3 OS=Homo sapiens OX...   128   5e-29
+sp|Q8IVH2|FOXP4_HUMAN Forkhead box protein P4 OS=Homo sapiens OX...   128   5e-29
+sp|O08696|FOXM1_MOUSE Forkhead box protein M1 OS=Mus musculus OX...   127   1e-28
+sp|P97691|FOXM1_RAT Forkhead box protein M1 OS=Rattus norvegicus...   127   1e-28
+sp|Q5W1J5|FOXP1_XENLA Forkhead box protein P1 OS=Xenopus laevis ...   127   1e-28
+sp|E1BPQ1|FOXO1_BOVIN Forkhead box protein O1 OS=Bos taurus OX=9...   126   2e-28
+sp|O16850|FOXO_CAEEL Forkhead box protein O OS=Caenorhabditis el...   126   2e-28
+sp|Q08050|FOXM1_HUMAN Forkhead box protein M1 OS=Homo sapiens OX...   125   4e-28
+sp|Q2LE08|FXP1B_DANRE Forkhead box protein P1-B OS=Danio rerio O...   125   4e-28
+sp|Q6EUW2|FOXO1_XENLA Forkhead box protein O1 OS=Xenopus laevis ...   125   4e-28
+sp|Q12778|FOXO1_HUMAN Forkhead box protein O1 OS=Homo sapiens OX...   125   5e-28
+sp|G5EGC9|PES1_CAEEL Forkhead box protein pes-1 OS=Caenorhabditi...   125   6e-28
+sp|G3V7R4|FOXO1_RAT Forkhead box protein O1 OS=Rattus norvegicus...   124   7e-28
+sp|Q66JJ0|FOXO1_XENTR Forkhead box protein O1 OS=Xenopus tropica...   124   7e-28
+sp|Q9R1E0|FOXO1_MOUSE Forkhead box protein O1 OS=Mus musculus OX...   124   1e-27
+sp|Q3BJS0|FOXN5_XENLA Forkhead box protein N5 OS=Xenopus laevis ...   122   2e-27
+sp|Q99JB6|FOXP3_MOUSE Forkhead box protein P3 OS=Mus musculus OX...   121   5e-27
+sp|Q6PJQ5|FOXR2_HUMAN Forkhead box protein R2 OS=Homo sapiens OX...   121   5e-27
+sp|Q9BZS1|FOXP3_HUMAN Forkhead box protein P3 OS=Homo sapiens OX...   121   8e-27
+sp|Q6U8D7|FOXP3_MACFA Forkhead box protein P3 OS=Macaca fascicul...   121   9e-27
+sp|Q28H65|FOXN5_XENTR Forkhead box protein N5 OS=Xenopus tropica...   120   2e-26
+sp|Q6PIV2|FOXR1_HUMAN Forkhead box protein R1 OS=Homo sapiens OX...   119   2e-26
+sp|P39521|FHL1_YEAST Pre-rRNA-processing protein FHL1 OS=Sacchar...   114   1e-24
+sp|Q19802|FKH5_CAEEL Putative forkhead-related transcription fac...   106   2e-22
+sp|A0A078BQN7|FKH3_CAEEL Forkhead box protein fkh-3 OS=Caenorhab...   101   6e-21
+sp|O17617|FKH4_CAEEL Forkhead box protein fkh-4 OS=Caenorhabditi...    99   4e-20
+
+Sequences not found previously or not previously below threshold:
+
+sp|A0A2Z4LIS9|FXO3B_HUMAN Forkhead box protein O3B OS=Homo sapie...    67   2e-10
+sp|Q59ZC8|FHL1_CANAL Fork-head transcriptional regulator FHL1 OS...    54   2e-06
+sp|Q54D44|PKS42_DICDI Probable polyketide synthase 42 OS=Dictyos...    37   0.26 
+sp|Q9P370|BUD20_SCHPO Zinc finger protein bud20 OS=Schizosacchar...    37   0.28 
+sp|Q58972|Y1577_METJA Uncharacterized protein MJ1577 OS=Methanoc...    36   0.29 
+sp|Q810L3|CHFR_MOUSE E3 ubiquitin-protein ligase CHFR OS=Mus mus...    36   0.34 
+sp|Q8C7R7|RFX6_MOUSE DNA-binding protein RFX6 OS=Mus musculus OX...    36   0.41 
+sp|P79076|P2OX_TRAVE Pyranose 2-oxidase OS=Trametes versicolor O...    35   0.64 
+sp|Q5UPI5|YL113_MIMIV Uncharacterized protein L113 OS=Acanthamoe...    35   0.85 
+sp|Q6CVA8|HSE1_KLULA Class E vacuolar protein-sorting machinery ...    34   1.2  
+sp|Q14767|LTBP2_HUMAN Latent-transforming growth factor beta-bin...    34   1.4  
+sp|P87233|PHF1_SCHPO SWM histone demethylase complex subunit phf...    34   1.4  
+sp|Q8J136|P2OX_PENSG Pyranose 2-oxidase OS=Peniophora sp. (strai...    34   1.8  
+sp|A0A0F7TN11|AUSR_PENBI Cytochrome P450 monooxygenase ausR OS=P...    33   3.0  
+sp|Q5G234|P2OX_TRAPU Pyranose 2-oxidase OS=Trametes pubescens OX...    32   4.4  
+sp|Q8LPQ9|FPA_ARATH Flowering time control protein FPA OS=Arabid...    32   6.1  
+sp|E9PYL2|PRR12_MOUSE Proline-rich protein 12 OS=Mus musculus OX...    31   9.2  
+sp|Q12766|HMGX3_HUMAN HMG domain-containing protein 3 OS=Homo sa...    31   9.8  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|O42097|FOXA2_ORYLA Hepatocyte nuclear factor 3-beta OS=Oryzia...   242   3e-63
+sp|Q07342|FOXA2_DANRE Forkhead box protein A2 OS=Danio rerio OX=...   229   2e-59
+sp|P35583|FOXA2_MOUSE Hepatocyte nuclear factor 3-beta OS=Mus mu...   219   2e-56
+sp|P33205|FXA4A_XENLA Forkhead box protein A4-A OS=Xenopus laevi...   219   3e-56
+sp|Q91765|FXA2A_XENLA Forkhead box protein A2-A OS=Xenopus laevi...   218   5e-56
+sp|Q7T1R4|FOXA2_XENTR Forkhead box protein A2 OS=Xenopus tropica...   217   1e-55
+sp|Q9Y261|FOXA2_HUMAN Hepatocyte nuclear factor 3-beta OS=Homo s...   214   8e-55
+sp|P33206|FXA4B_XENLA Forkhead box protein A4-B OS=Xenopus laevi...   214   8e-55
+sp|P55317|FOXA1_HUMAN Hepatocyte nuclear factor 3-alpha OS=Homo ...   211   7e-54
+sp|Q02361|FD3_DROME Fork head domain-containing protein FD3 OS=D...   210   1e-53
+sp|Q6P839|FOXA4_XENTR Forkhead box protein A4 OS=Xenopus tropica...   209   2e-53
+sp|P32182|FOXA2_RAT Hepatocyte nuclear factor 3-beta OS=Rattus n...   207   1e-52
+sp|P84961|FXA2B_XENLA Forkhead box protein A2-B OS=Xenopus laevi...   206   2e-52
+sp|P35582|FOXA1_MOUSE Hepatocyte nuclear factor 3-alpha OS=Mus m...   205   3e-52
+sp|Q6LD29|FXA1A_XENLA Forkhead box protein A1-A OS=Xenopus laevi...   202   3e-51
+sp|P23512|FOXA1_RAT Hepatocyte nuclear factor 3-alpha OS=Rattus ...   201   6e-51
+sp|P56260|QIN_AVIS3 Transforming protein Qin OS=Avian sarcoma vi...   201   6e-51
+sp|P32315|FXA1B_XENLA Forkhead box protein A1-B OS=Xenopus laevi...   201   6e-51
+sp|Q28D67|FXI1C_XENTR Forkhead box protein I1c OS=Xenopus tropic...   200   9e-51
+sp|Q8AWH1|FOXA1_XENTR Forkhead box protein A1 OS=Xenopus tropica...   200   1e-50
+sp|Q63246|FOXC2_RAT Forkhead box protein C2 OS=Rattus norvegicus...   199   3e-50
+sp|A1L1S5|FOXF1_DANRE Forkhead box protein F1 OS=Danio rerio OX=...   198   6e-50
+sp|Q61850|FOXC2_MOUSE Forkhead box protein C2 OS=Mus musculus OX...   197   1e-49
+sp|Q63ZH2|FXI2B_XENLA Forkhead box protein I2-B OS=Xenopus laevi...   196   2e-49
+sp|P35584|FOXA3_MOUSE Hepatocyte nuclear factor 3-gamma OS=Mus m...   194   7e-49
+sp|Q99958|FOXC2_HUMAN Forkhead box protein C2 OS=Homo sapiens OX...   194   7e-49
+sp|Q91904|FXI1A_XENLA Forkhead box protein I1-A OS=Xenopus laevi...   193   1e-48
+sp|Q91905|FXI1B_XENLA Forkhead box protein I1-B OS=Xenopus laevi...   193   2e-48
+sp|Q28HT3|FOXI2_XENTR Forkhead box protein I2 OS=Xenopus tropica...   193   2e-48
+sp|Q90964|FOXG1_CHICK Forkhead box protein G1 OS=Gallus gallus O...   192   2e-48
+sp|Q3I5G5|FOXI2_MOUSE Forkhead box protein I2 OS=Mus musculus OX...   192   2e-48
+sp|F1R8Z9|FXJ1B_DANRE Forkhead box protein J1-B OS=Danio rerio O...   192   3e-48
+sp|Q12950|FOXD4_HUMAN Forkhead box protein D4 OS=Homo sapiens OX...   192   3e-48
+sp|Q5NDM2|FXI2A_XENLA Forkhead box protein I2-A OS=Xenopus laevi...   192   3e-48
+sp|Q6NVT7|FOXC2_XENTR Forkhead box protein C2 OS=Xenopus tropica...   192   4e-48
+sp|Q9YHC5|FOXG1_XENLA Forkhead box protein G1 OS=Xenopus laevis ...   192   4e-48
+sp|Q9DE24|FXC1B_DANRE Forkhead box C1-B OS=Danio rerio OX=7955 G...   192   4e-48
+sp|Q5M7L9|FOXD3_XENTR Forkhead box protein D3 OS=Xenopus tropica...   192   4e-48
+sp|Q9DEN3|FXD3B_XENLA Forkhead box protein D3-B OS=Xenopus laevi...   191   6e-48
+sp|P32183|FOXA3_RAT Hepatocyte nuclear factor 3-gamma OS=Rattus ...   190   8e-48
+sp|Q6P2Z3|FOXI1_XENTR Forkhead box protein I1 OS=Xenopus tropica...   190   9e-48
+sp|Q5M7N6|FOXJ1_XENTR Forkhead box protein J1 OS=Xenopus tropica...   190   9e-48
+sp|Q1A1A6|FOXG1_CEBCA Forkhead box protein G1 OS=Cebus capucinus...   190   9e-48
+sp|P55318|FOXA3_HUMAN Hepatocyte nuclear factor 3-gamma OS=Homo ...   190   1e-47
+sp|Q8JIT5|FXI1C_XENLA Forkhead box protein I1c OS=Xenopus laevis...   190   1e-47
+sp|Q3Y598|FOXA3_BOVIN Hepatocyte nuclear factor 3-gamma OS=Bos t...   190   1e-47
+sp|P55316|FOXG1_HUMAN Forkhead box protein G1 OS=Homo sapiens OX...   190   1e-47
+sp|Q1A1A5|FOXG1_CHLPG Forkhead box protein G1 OS=Chlorocebus pyg...   190   1e-47
+sp|Q1A1A3|FOXG1_EPOGA Forkhead box protein G1 OS=Epomophorus gam...   190   2e-47
+sp|Q1A1A2|FOXG1_EQUQB Forkhead box protein G1 OS=Equus quagga bu...   190   2e-47
+sp|Q1A1A4|FOXG1_PIPRU Forkhead box protein G1 OS=Pipistrellus ru...   190   2e-47
+sp|Q1A1A1|FOXG1_CERSI Forkhead box protein G1 OS=Ceratotherium s...   189   2e-47
+sp|Q9PVY8|FXC2B_XENLA Forkhead box protein C2-B OS=Xenopus laevi...   189   2e-47
+sp|Q9PT68|FXD5B_XENLA Forkhead box protein D5-B OS=Xenopus laevi...   189   3e-47
+sp|Q9DEN4|FXD3A_XENLA Forkhead box protein D3-A OS=Xenopus laevi...   188   5e-47
+sp|A8MTJ6|FOXI3_HUMAN Forkhead box protein I3 OS=Homo sapiens OX...   188   5e-47
+sp|Q17241|SGF1_BOMMO Silk gland factor 1 OS=Bombyx mori OX=7091 ...   188   6e-47
+sp|Q60987|FOXG1_MOUSE Forkhead box protein G1 OS=Mus musculus OX...   187   9e-47
+sp|Q00939|FOXG1_RAT Forkhead box protein G1 OS=Rattus norvegicus...   187   9e-47
+sp|Q9PVY9|FXC2A_XENLA Forkhead box protein C2-A OS=Xenopus laevi...   187   1e-46
+sp|Q61060|FOXD3_MOUSE Forkhead box protein D3 OS=Mus musculus OX...   187   1e-46
+sp|Q6ZQN5|FOXI2_HUMAN Forkhead box protein I2 OS=Homo sapiens OX...   187   1e-46
+sp|Q18694|UN130_CAEEL Forkhead box protein unc-130 OS=Caenorhabd...   186   2e-46
+sp|Q9DE25|FXC1A_DANRE Forkhead box C1-A OS=Danio rerio OX=7955 G...   186   2e-46
+sp|Q66IG8|FXJ12_XENTR Forkhead box protein J1.2 OS=Xenopus tropi...   186   2e-46
+sp|Q708W1|FXJ1B_XENLA Forkhead box protein J1-B OS=Xenopus laevi...   186   3e-46
+sp|Q6F2E4|FOXD1_XENTR Forkhead box protein D1 OS=Xenopus tropica...   185   3e-46
+sp|Q64731|FOXL1_MOUSE Forkhead box protein L1 OS=Mus musculus OX...   185   4e-46
+sp|Q7ZX03|FOXK2_XENLA Forkhead box protein K2 OS=Xenopus laevis ...   185   5e-46
+sp|Q12948|FOXC1_HUMAN Forkhead box protein C1 OS=Homo sapiens OX...   184   6e-46
+sp|Q61572|FOXC1_MOUSE Forkhead box protein C1 OS=Mus musculus OX...   184   8e-46
+sp|Q12951|FOXI1_HUMAN Forkhead box protein I1 OS=Homo sapiens OX...   183   1e-45
+sp|Q32NH9|FXJ12_XENLA Forkhead box protein J1.2 OS=Xenopus laevi...   183   1e-45
+sp|B5RHS5|FOXI3_CANLF Forkhead box protein I3 OS=Canis lupus fam...   182   2e-45
+sp|Q9PRJ8|FXD5A_XENLA Forkhead box protein D5-A OS=Xenopus laevi...   182   3e-45
+sp|Q9UJU5|FOXD3_HUMAN Forkhead box protein D3 OS=Homo sapiens OX...   182   4e-45
+sp|Q17381|PHA4_CAEEL Defective pharyngeal development protein 4 ...   182   4e-45
+sp|Q708W2|FXJ1A_XENLA Forkhead box protein J1-A OS=Xenopus laevi...   180   9e-45
+sp|Q5WM45|FOXD5_XENTR Forkhead box protein D5 OS=Xenopus tropica...   180   9e-45
+sp|Q68F77|FOXC1_XENTR Forkhead box protein C1 OS=Xenopus tropica...   180   9e-45
+sp|Q64732|FOXB1_MOUSE Forkhead box protein B1 OS=Mus musculus OX...   180   1e-44
+sp|Q99853|FOXB1_HUMAN Forkhead box protein B1 OS=Homo sapiens OX...   180   1e-44
+sp|Q5VYV0|FOXB2_HUMAN Forkhead box protein B2 OS=Homo sapiens OX...   180   1e-44
+sp|O93529|FOXB1_XENLA Forkhead box protein B1 OS=Xenopus laevis ...   179   2e-44
+sp|Q61080|FOXF1_MOUSE Forkhead box protein F1 OS=Mus musculus OX...   179   3e-44
+sp|Q6P8A3|FXI1E_XENTR Forkhead box protein I1-ema OS=Xenopus tro...   178   3e-44
+sp|O60548|FOXD2_HUMAN Forkhead box protein D2 OS=Homo sapiens OX...   178   3e-44
+sp|Q64733|FOXB2_MOUSE Forkhead box protein B2 OS=Mus musculus OX...   178   4e-44
+sp|P32028|FD4_DROME Fork head domain-containing protein FD4 OS=D...   178   4e-44
+sp|Q61345|FOXD1_MOUSE Forkhead box protein D1 OS=Mus musculus OX...   178   4e-44
+sp|Q32NP8|FXC1B_XENLA Forkhead box protein C1-B OS=Xenopus laevi...   178   6e-44
+sp|Q9PT67|FXD5C_XENLA Forkhead box protein D5-C OS=Xenopus laevi...   177   9e-44
+sp|P32027|CROC_DROME Fork head domain-containing protein crocodi...   177   1e-43
+sp|Q63251|FOXD1_RAT Forkhead box protein D1 (Fragment) OS=Rattus...   177   1e-43
+sp|P14734|FKH_DROME Protein fork head OS=Drosophila melanogaster...   177   1e-43
+sp|Q8WXT5|FX4L4_HUMAN Forkhead box protein D4-like 4 OS=Homo sap...   177   1e-43
+sp|Q63248|FOXI2_RAT Forkhead box protein I2 (Fragment) OS=Rattus...   177   1e-43
+sp|Q92949|FOXJ1_HUMAN Forkhead box protein J1 OS=Homo sapiens OX...   177   1e-43
+sp|Q5VV16|FX4L5_HUMAN Forkhead box protein D4-like 5 OS=Homo sap...   176   2e-43
+sp|Q6VB84|FX4L3_HUMAN Forkhead box protein D4-like 3 OS=Homo sap...   176   2e-43
+sp|Q3SYB3|FX4L6_HUMAN Forkhead box protein D4-like 6 OS=Homo sap...   176   2e-43
+sp|F1QDF8|FXJ1A_DANRE Forkhead box protein J1-A OS=Danio rerio O...   176   2e-43
+sp|Q01167|FOXK2_HUMAN Forkhead box protein K2 OS=Homo sapiens OX...   175   3e-43
+sp|A8XJN7|FKH02_CAEBR Forkhead box protein fkh-2 OS=Caenorhabdit...   175   3e-43
+sp|P79772|FOXD3_CHICK Forkhead box protein D3 OS=Gallus gallus O...   175   3e-43
+sp|Q9W707|FXF1B_XENLA Forkhead box protein F1-B OS=Xenopus laevi...   175   4e-43
+sp|Q61660|FOXJ1_MOUSE Forkhead box protein J1 OS=Mus musculus OX...   175   4e-43
+sp|Q12952|FOXL1_HUMAN Forkhead box protein L1 OS=Homo sapiens OX...   175   4e-43
+sp|Q63245|FOXD3_RAT Forkhead box protein D3 (Fragment) OS=Rattus...   175   5e-43
+sp|O43638|FOXS1_HUMAN Forkhead box protein S1 OS=Homo sapiens OX...   175   5e-43
+sp|Q9PTK2|FOXE4_XENLA Forkhead box protein E4 OS=Xenopus laevis ...   174   9e-43
+sp|Q9PVZ3|FXC1A_XENLA Forkhead box protein C1-A OS=Xenopus laevi...   174   1e-42
+sp|Q9PSY4|FOXD1_XENLA Forkhead box protein D1 OS=Xenopus laevis ...   173   1e-42
+sp|Q9W706|FXF1A_XENLA Forkhead box protein F1-A OS=Xenopus laevi...   173   1e-42
+sp|Q28BS5|FOXF1_XENTR Forkhead box protein F1 OS=Xenopus tropica...   173   1e-42
+sp|Q7ZYQ0|FXI1E_XENLA Forkhead box protein I1-ema OS=Xenopus lae...   173   1e-42
+sp|Q9QY14|FOXE3_MOUSE Forkhead box protein E3 OS=Mus musculus OX...   173   1e-42
+sp|Q22510|FKH02_CAEEL Forkhead box protein fkh-2 OS=Caenorhabdit...   173   2e-42
+sp|Q90WN4|FOXD2_XENLA Forkhead box protein D2 OS=Xenopus laevis ...   173   2e-42
+sp|Q16676|FOXD1_HUMAN Forkhead box protein D1 OS=Homo sapiens OX...   173   2e-42
+sp|Q63247|FOXJ1_RAT Forkhead box protein J1 OS=Rattus norvegicus...   173   2e-42
+sp|O35392|FOXD2_MOUSE Forkhead box protein D2 OS=Mus musculus OX...   173   2e-42
+sp|O00358|FOXE1_HUMAN Forkhead box protein E1 OS=Homo sapiens OX...   172   2e-42
+sp|P32029|FD5_DROME Fork head domain-containing protein FD5 OS=D...   172   2e-42
+sp|B4JSC2|FOXO_DROGR Forkhead box protein O OS=Drosophila grimsh...   172   3e-42
+sp|O88470|FOXL2_MOUSE Forkhead box protein L2 OS=Mus musculus OX...   172   4e-42
+sp|Q9NU39|FX4L1_HUMAN Forkhead box protein D4-like 1 OS=Homo sap...   172   4e-42
+sp|A3RK74|FX1AA_DANRE Forkhead box protein O1-A OS=Danio rerio O...   172   5e-42
+sp|Q12947|FOXF2_HUMAN Forkhead box protein F2 OS=Homo sapiens OX...   171   6e-42
+sp|Q6VFT5|FOXL2_RABIT Forkhead box protein L2 OS=Oryctolagus cun...   171   7e-42
+sp|Q98937|FOXD1_CHICK Forkhead box protein D1 OS=Gallus gallus O...   171   7e-42
+sp|B4G4S8|FOXO_DROPE Forkhead box protein O OS=Drosophila persim...   170   1e-41
+sp|Q3UCQ1|FOXK2_MOUSE Forkhead box protein K2 OS=Mus musculus OX...   170   1e-41
+sp|B4NFR1|FOXO_DROWI Forkhead box protein O OS=Drosophila willis...   170   1e-41
+sp|Q6VFT7|FOXL2_BOVIN Forkhead box protein L2 OS=Bos taurus OX=9...   170   1e-41
+sp|Q6VFT6|FOXL2_PIG Forkhead box protein L2 OS=Sus scrofa OX=982...   170   2e-41
+sp|Q8MIP2|FOXL2_CAPHI Forkhead box protein L2 OS=Capra hircus OX...   170   2e-41
+sp|P58012|FOXL2_HUMAN Forkhead box protein L2 OS=Homo sapiens OX...   169   2e-41
+sp|Q12946|FOXF1_HUMAN Forkhead box protein F1 OS=Homo sapiens OX...   169   2e-41
+sp|B4MB78|FOXO_DROVI Forkhead box protein O OS=Drosophila virili...   169   2e-41
+sp|Q60688|FOXD4_MOUSE Forkhead box protein D4 OS=Mus musculus OX...   169   3e-41
+sp|Q63250|FOXE3_RAT Forkhead box protein E3 OS=Rattus norvegicus...   168   5e-41
+sp|Q61574|FOXS1_MOUSE Forkhead box protein S1 OS=Mus musculus OX...   168   5e-41
+sp|Q8JIT6|FOXB2_XENLA Forkhead box protein B2 OS=Xenopus laevis ...   168   7e-41
+sp|Q4VUF1|FOXL2_ELLLU Forkhead box protein L2 OS=Ellobius lutesc...   167   8e-41
+sp|B4HF64|FOXO_DROSE Forkhead box protein O OS=Drosophila sechel...   167   9e-41
+sp|Q298W7|FOXO_DROPS Forkhead box protein O OS=Drosophila pseudo...   167   1e-40
+sp|B3LYS5|FOXO_DROAN Forkhead box protein O OS=Drosophila ananas...   167   1e-40
+sp|Q95V55|FOXO_DROME Forkhead box protein O OS=Drosophila melano...   167   1e-40
+sp|Q8R2I0|FOXE1_MOUSE Forkhead box protein E1 OS=Mus musculus OX...   167   2e-40
+sp|B4PTD3|FOXO_DROYA Forkhead box protein O OS=Drosophila yakuba...   166   2e-40
+sp|Q922I5|FOXI1_MOUSE Forkhead box protein I1 OS=Mus musculus OX...   166   2e-40
+sp|P32031|SLP2_DROME Fork head domain transcription factor slp2 ...   166   2e-40
+sp|B3P0K6|FOXO_DROER Forkhead box protein O OS=Drosophila erecta...   166   2e-40
+sp|Q02360|FOXL1_DROME Fork head domain-containing protein L1 OS=...   166   2e-40
+sp|Q5J3Q5|FOXE1_XENLA Forkhead box protein E1 OS=Xenopus laevis ...   164   9e-40
+sp|Q63249|FOXD4_RAT Forkhead box protein D4 (Fragment) OS=Rattus...   163   2e-39
+sp|P85037|FOXK1_HUMAN Forkhead box protein K1 OS=Homo sapiens OX...   163   2e-39
+sp|B4KBF6|FOXO_DROMO Forkhead box protein O OS=Drosophila mojave...   162   3e-39
+sp|P42128|FOXK1_MOUSE Forkhead box protein K1 OS=Mus musculus OX...   162   4e-39
+sp|O54743|FOXF2_MOUSE Forkhead box protein F2 OS=Mus musculus OX...   162   4e-39
+sp|P91278|FOXF_CAEEL Forkhead box protein F OS=Caenorhabditis el...   161   7e-39
+sp|P32030|SLP1_DROME Fork head domain transcription factor slp1 ...   160   1e-38
+sp|Q9WVH4|FOXO3_MOUSE Forkhead box protein O3 OS=Mus musculus OX...   160   1e-38
+sp|Q8ITI5|FOXG1_MNELE Forkhead box protein G1 OS=Mnemiopsis leid...   160   1e-38
+sp|O88621|FOXH1_MOUSE Forkhead box protein H1 OS=Mus musculus OX...   160   2e-38
+sp|O43524|FOXO3_HUMAN Forkhead box protein O3 OS=Homo sapiens OX...   158   4e-38
+sp|Q13461|FOXE3_HUMAN Forkhead box protein E3 OS=Homo sapiens OX...   158   5e-38
+sp|A3RK75|FX1AB_DANRE Forkhead box protein O1-B OS=Danio rerio O...   157   1e-37
+sp|Q8BUR3|FOXJ3_MOUSE Forkhead box protein J3 OS=Mus musculus OX...   157   1e-37
+sp|Q9UPW0|FOXJ3_HUMAN Forkhead box protein J3 OS=Homo sapiens OX...   157   1e-37
+sp|A2BGM5|FOXN4_DANRE Forkhead box protein N4 OS=Danio rerio OX=...   156   2e-37
+sp|O60129|FKH2_SCHPO Fork head protein homolog 2 OS=Schizosaccha...   156   3e-37
+sp|P32314|FOXN2_HUMAN Forkhead box protein N2 OS=Homo sapiens OX...   156   3e-37
+sp|Q8K3Q3|FOXN4_MOUSE Forkhead box protein N4 OS=Mus musculus OX...   155   4e-37
+sp|Q9ES18|FOXJ2_MOUSE Forkhead box protein J2 OS=Mus musculus OX...   155   5e-37
+sp|O14270|FHL1_SCHPO Fork head transcription factor 1 OS=Schizos...   154   9e-37
+sp|Q68EZ2|FOXJ2_XENLA Forkhead box protein J2 OS=Xenopus laevis ...   154   9e-37
+sp|Q810W5|FOXO1_ICTTR Forkhead box protein O1 OS=Ictidomys tride...   153   2e-36
+sp|P41813|FKH2_YEAST Fork head protein homolog 2 OS=Saccharomyce...   153   2e-36
+sp|Q9P0K8|FOXJ2_HUMAN Forkhead box protein J2 OS=Homo sapiens OX...   153   2e-36
+sp|P40466|FKH1_YEAST Fork head protein homolog 1 OS=Saccharomyce...   153   2e-36
+sp|Q9VS05|FOXF_DROME Forkhead box protein biniou OS=Drosophila m...   153   2e-36
+sp|Q28EM1|FOXJ2_XENTR Forkhead box protein J2 OS=Xenopus tropica...   153   2e-36
+sp|Q6EUW1|FOXO3_XENLA Forkhead box protein O3 OS=Xenopus laevis ...   152   4e-36
+sp|Q5W1J5|FOXP1_XENLA Forkhead box protein P1 OS=Xenopus laevis ...   152   4e-36
+sp|Q9C009|FOXQ1_HUMAN Forkhead box protein Q1 OS=Homo sapiens OX...   152   5e-36
+sp|A4L7N3|FOXO1_PIG Forkhead box protein O1 OS=Sus scrofa OX=982...   152   5e-36
+sp|Q9WVH3|FOXO4_MOUSE Forkhead box protein O4 OS=Mus musculus OX...   151   6e-36
+sp|O70220|FOXQ1_MOUSE Forkhead box protein Q1 OS=Mus musculus OX...   151   7e-36
+sp|Q3UM89|FOXR2_MOUSE Forkhead box protein R2 OS=Mus musculus OX...   151   8e-36
+sp|E1BPQ1|FOXO1_BOVIN Forkhead box protein O1 OS=Bos taurus OX=9...   151   8e-36
+sp|Q10924|FKH6_CAEEL Forkhead transcription factor fkh-6 OS=Caen...   151   9e-36
+sp|O43058|SEP1_SCHPO Forkhead protein sep1 OS=Schizosaccharomyce...   151   9e-36
+sp|A0A1W2PRP0|FOXL3_HUMAN Forkhead box protein L3 OS=Homo sapien...   150   1e-35
+sp|Q96NZ1|FOXN4_HUMAN Forkhead box protein N4 OS=Homo sapiens OX...   150   1e-35
+sp|Q70KY4|FOXO6_MOUSE Forkhead box protein O6 OS=Mus musculus OX...   150   1e-35
+sp|Q28F43|FOXN2_XENTR Forkhead box protein N2 OS=Xenopus tropica...   150   1e-35
+sp|Q4VYR7|FOXP4_XENLA Forkhead box protein P4 OS=Xenopus laevis ...   150   1e-35
+sp|Q6EUW2|FOXO1_XENLA Forkhead box protein O1 OS=Xenopus laevis ...   150   1e-35
+sp|Q63244|FOXQ1_RAT Forkhead box protein Q1 OS=Rattus norvegicus...   150   1e-35
+sp|Q5A7S7|FKH2_CANAL Fork-head transcriptional regulator 2 OS=Ca...   150   2e-35
+sp|Q28G71|FOXN3_XENTR Forkhead box protein N3 OS=Xenopus tropica...   150   2e-35
+sp|P58462|FOXP1_MOUSE Forkhead box protein P1 OS=Mus musculus OX...   150   2e-35
+sp|Q3BJS3|FOXN3_XENLA Forkhead box protein N3 OS=Xenopus laevis ...   149   3e-35
+sp|Q58NQ4|FOXP1_CHICK Forkhead box protein P1 OS=Gallus gallus O...   148   4e-35
+sp|G3V7R4|FOXO1_RAT Forkhead box protein O1 OS=Rattus norvegicus...   148   4e-35
+sp|Q9R1E0|FOXO1_MOUSE Forkhead box protein O1 OS=Mus musculus OX...   148   6e-35
+sp|Q498D1|FOXP1_RAT Forkhead box protein P1 OS=Rattus norvegicus...   148   6e-35
+sp|Q66J77|FOXN2_XENLA Forkhead box protein N2 OS=Xenopus laevis ...   148   6e-35
+sp|Q66JJ0|FOXO1_XENTR Forkhead box protein O1 OS=Xenopus tropica...   148   7e-35
+sp|O15353|FOXN1_HUMAN Forkhead box protein N1 OS=Homo sapiens OX...   148   7e-35
+sp|Q9H334|FOXP1_HUMAN Forkhead box protein P1 OS=Homo sapiens OX...   148   7e-35
+sp|Q12778|FOXO1_HUMAN Forkhead box protein O1 OS=Homo sapiens OX...   147   1e-34
+sp|A0A078BQN7|FKH3_CAEEL Forkhead box protein fkh-3 OS=Caenorhab...   147   1e-34
+sp|A8MYZ6|FOXO6_HUMAN Forkhead box protein O6 OS=Homo sapiens OX...   145   3e-34
+sp|O00409|FOXN3_HUMAN Forkhead box protein N3 OS=Homo sapiens OX...   145   5e-34
+sp|Q33BP8|FOXN3_PIG Forkhead box protein N3 OS=Sus scrofa OX=982...   145   5e-34
+sp|A4IFD2|FOXP1_BOVIN Forkhead box protein P1 OS=Bos taurus OX=9...   145   6e-34
+sp|O75593|FOXH1_HUMAN Forkhead box protein H1 OS=Homo sapiens OX...   144   7e-34
+sp|P34683|LIN31_CAEEL Protein lin-31 OS=Caenorhabditis elegans O...   144   9e-34
+sp|Q3BJS1|FOXN4_XENLA Forkhead box protein N4 OS=Xenopus laevis ...   144   9e-34
+sp|Q499D0|FOXN3_MOUSE Forkhead box protein N3 OS=Mus musculus OX...   144   9e-34
+sp|P98177|FOXO4_HUMAN Forkhead box protein O4 OS=Homo sapiens OX...   143   2e-33
+sp|Q8MJ98|FOXP2_PONPY Forkhead box protein P2 OS=Pongo pygmaeus ...   142   3e-33
+sp|Q8MJA0|FOXP2_PANTR Forkhead box protein P2 OS=Pan troglodytes...   142   4e-33
+sp|Q8HZ00|FOXP2_PANPA Forkhead box protein P2 OS=Pan paniscus OX...   142   4e-33
+sp|Q8MJ97|FOXP2_MACMU Forkhead box protein P2 OS=Macaca mulatta ...   142   4e-33
+sp|Q5QL03|FOXP2_HYLLA Forkhead box protein P2 OS=Hylobates lar O...   142   4e-33
+sp|Q8MJ99|FOXP2_GORGO Forkhead box protein P2 OS=Gorilla gorilla...   142   4e-33
+sp|P58463|FOXP2_MOUSE Forkhead box protein P2 OS=Mus musculus OX...   142   4e-33
+sp|O15409|FOXP2_HUMAN Forkhead box protein P2 OS=Homo sapiens OX...   142   4e-33
+sp|P0CF24|FOXP2_RAT Forkhead box protein P2 OS=Rattus norvegicus...   142   4e-33
+sp|Q4VYS1|FOXP2_XENLA Forkhead box protein P2 OS=Xenopus laevis ...   141   8e-33
+sp|Q61575|FOXN1_MOUSE Forkhead box protein N1 OS=Mus musculus OX...   139   3e-32
+sp|O16850|FOXO_CAEEL Forkhead box protein O OS=Caenorhabditis el...   138   4e-32
+sp|Q2LE08|FXP1B_DANRE Forkhead box protein P1-B OS=Danio rerio O...   138   6e-32
+sp|Q28GC4|FOXH1_XENTR Forkhead box protein H1 OS=Xenopus tropica...   138   7e-32
+sp|O17617|FKH4_CAEEL Forkhead box protein fkh-4 OS=Caenorhabditi...   137   1e-31
+sp|Q8IVH2|FOXP4_HUMAN Forkhead box protein P4 OS=Homo sapiens OX...   136   2e-31
+sp|Q3UTB7|FOXR1_MOUSE Forkhead box protein R1 OS=Mus musculus OX...   136   3e-31
+sp|P25364|HCM1_YEAST Forkhead transcription factor HCM1 OS=Sacch...   135   3e-31
+sp|O13606|MEI4_SCHPO Meiosis-specific transcription factor mei4 ...   135   4e-31
+sp|Q9DBY0|FOXP4_MOUSE Forkhead box protein P4 OS=Mus musculus OX...   135   4e-31
+sp|Q6PJQ5|FOXR2_HUMAN Forkhead box protein R2 OS=Homo sapiens OX...   133   2e-30
+sp|Q9I9E1|FOXH1_DANRE Forkhead box protein H1 OS=Danio rerio OX=...   131   5e-30
+sp|Q9GZ14|PES1_CAEBR Forkhead box protein pes-1 OS=Caenorhabditi...   131   6e-30
+sp|Q5W1J6|FOXM1_XENLA Forkhead box protein M1 OS=Xenopus laevis ...   131   8e-30
+sp|P70056|FOXH1_XENLA Forkhead box protein H1 OS=Xenopus laevis ...   130   1e-29
+sp|Q21187|FKH9_CAEEL Forkhead transcription factor fkh-9 OS=Caen...   130   2e-29
+sp|Q8JIT7|FAST3_XENLA Forkhead activin signal transducer 3 OS=Xe...   129   3e-29
+sp|O08696|FOXM1_MOUSE Forkhead box protein M1 OS=Mus musculus OX...   125   5e-28
+sp|P97691|FOXM1_RAT Forkhead box protein M1 OS=Rattus norvegicus...   125   6e-28
+sp|G5EGC9|PES1_CAEEL Forkhead box protein pes-1 OS=Caenorhabditi...   125   7e-28
+sp|P39521|FHL1_YEAST Pre-rRNA-processing protein FHL1 OS=Sacchar...   124   1e-27
+sp|Q99JB6|FOXP3_MOUSE Forkhead box protein P3 OS=Mus musculus OX...   123   2e-27
+sp|Q6PIV2|FOXR1_HUMAN Forkhead box protein R1 OS=Homo sapiens OX...   123   2e-27
+sp|Q3BJS0|FOXN5_XENLA Forkhead box protein N5 OS=Xenopus laevis ...   121   8e-27
+sp|Q08050|FOXM1_HUMAN Forkhead box protein M1 OS=Homo sapiens OX...   121   9e-27
+sp|Q9BZS1|FOXP3_HUMAN Forkhead box protein P3 OS=Homo sapiens OX...   120   1e-26
+sp|Q6U8D7|FOXP3_MACFA Forkhead box protein P3 OS=Macaca fascicul...   120   2e-26
+sp|Q28H65|FOXN5_XENTR Forkhead box protein N5 OS=Xenopus tropica...   119   3e-26
+sp|Q59ZC8|FHL1_CANAL Fork-head transcriptional regulator FHL1 OS...   106   3e-22
+sp|Q19802|FKH5_CAEEL Putative forkhead-related transcription fac...   105   7e-22
+sp|A0A2Z4LIS9|FXO3B_HUMAN Forkhead box protein O3B OS=Homo sapie...    76   5e-13
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q16U49|MED14_AEDAE Mediator of RNA polymerase II transcriptio...    44   0.002
+sp|Q1DUF9|INO80_COCIM Chromatin-remodeling ATPase INO80 OS=Cocci...    43   0.005
+sp|O55017|CAC1B_MOUSE Voltage-dependent N-type calcium channel s...    42   0.008
+sp|Q61IR6|MED14_CAEBR Mediator of RNA polymerase II transcriptio...    41   0.015
+sp|Q6CVA8|HSE1_KLULA Class E vacuolar protein-sorting machinery ...    39   0.045
+sp|B0KWR6|SFI1_CALJA Protein SFI1 homolog OS=Callithrix jacchus ...    39   0.059
+sp|Q1ECX4|TLK2_DANRE Serine/threonine-protein kinase tousled-lik...    39   0.061
+sp|Q6C7C0|MYO1_YARLI Myosin-1 OS=Yarrowia lipolytica (strain CLI...    38   0.068
+sp|P0CQ80|DHH1_CRYNJ ATP-dependent RNA helicase DHH1 OS=Cryptoco...    38   0.070
+sp|P0CQ81|DHH1_CRYNB ATP-dependent RNA helicase DHH1 OS=Cryptoco...    38   0.070
+sp|Q38W81|IF2_LATSS Translation initiation factor IF-2 OS=Latila...    38   0.085
+sp|Q9Z5I9|IF2_MYCLE Translation initiation factor IF-2 OS=Mycoba...    38   0.090
+sp|B8ZRT4|IF2_MYCLB Translation initiation factor IF-2 OS=Mycoba...    38   0.090
+sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 GN=...    38   0.092
+sp|O94854|K0754_HUMAN Microtubule-actin cross-linking factor 1, ...    38   0.092
+sp|A0A1L8EYB2|DAAF8_XENLA Dynein axonemal assembly factor 8 OS=X...    38   0.093
+sp|A8PWF6|MYO1_MALGO Myosin-1 OS=Malassezia globosa (strain ATCC...    38   0.095
+sp|Q6H1V1|BEST3_MOUSE Bestrophin-3 OS=Mus musculus OX=10090 GN=B...    38   0.098
+sp|Q9ZH76|DNAA_STRRE Chromosomal replication initiator protein D...    38   0.11 
+sp|Q66JE4|RN146_XENTR E3 ubiquitin-protein ligase rnf146 OS=Xeno...    38   0.13 
+sp|Q7Q6S8|MED14_ANOGA Mediator of RNA polymerase II transcriptio...    38   0.13 
+sp|P0CM45|BRO1_CRYNB Vacuolar protein-sorting protein BRO1 OS=Cr...    37   0.16 
+sp|P0CM44|BRO1_CRYNJ Vacuolar protein-sorting protein BRO1 OS=Cr...    37   0.16 
+sp|C3PE72|DNAA_CORA7 Chromosomal replication initiator protein D...    37   0.16 
+sp|Q32L53|LFG1_BOVIN Protein lifeguard 1 OS=Bos taurus OX=9913 G...    37   0.19 
+sp|P16356|RPB1_CAEEL DNA-directed RNA polymerase II subunit RPB1...    37   0.20 
+sp|Q58972|Y1577_METJA Uncharacterized protein MJ1577 OS=Methanoc...    37   0.24 
+sp|Q9SIV5|C3H19_ARATH Zinc finger CCCH domain-containing protein...    36   0.26 
+sp|Q0CA78|INO80_ASPTN Chromatin-remodeling ATPase INO80 OS=Asper...    36   0.28 
+sp|O43149|ZZEF1_HUMAN Zinc finger ZZ-type and EF-hand domain-con...    36   0.28 
+sp|O60346|PHLP1_HUMAN PH domain leucine-rich repeat-containing p...    36   0.30 
+sp|Q9WTN3|SRBP1_MOUSE Sterol regulatory element-binding protein ...    36   0.34 
+sp|Q80YE4|LMTK1_MOUSE Serine/threonine-protein kinase LMTK1 OS=M...    36   0.36 
+sp|A5DIP0|DHH1_PICGU ATP-dependent RNA helicase DHH1 OS=Meyerozy...    36   0.39 
+sp|Q9P370|BUD20_SCHPO Zinc finger protein bud20 OS=Schizosacchar...    36   0.44 
+sp|D3ZJK7|TBX6_RAT T-box transcription factor TBX6 OS=Rattus nor...    36   0.47 
+sp|C1B313|IF2_RHOOB Translation initiation factor IF-2 OS=Rhodoc...    36   0.48 
+sp|Q0S219|IF2_RHOJR Translation initiation factor IF-2 OS=Rhodoc...    36   0.48 
+sp|P56698|CAC1B_DIPOM Probable voltage-dependent N-type calcium ...    36   0.49 
+sp|A5DB75|SEC31_PICGU Protein transport protein SEC31 OS=Meyeroz...    36   0.50 
+sp|Q09472|EP300_HUMAN Histone acetyltransferase p300 OS=Homo sap...    36   0.53 
+sp|P79076|P2OX_TRAVE Pyranose 2-oxidase OS=Trametes versicolor O...    36   0.54 
+sp|Q60YF6|MED29_CAEBR Mediator of RNA polymerase II transcriptio...    36   0.54 
+sp|O74526|KJ45_SCHPO Probable serine/threonine-protein kinase C7...    36   0.55 
+sp|Q7V5M4|IF2_PROMM Translation initiation factor IF-2 OS=Prochl...    35   0.59 
+sp|G3MY25|TIGD5_BOVIN Tigger transposable element-derived protei...    35   0.60 
+sp|Q3ZBG9|PLS2_BOVIN Phospholipid scramblase 2 OS=Bos taurus OX=...    35   0.65 
+sp|Q0WV90|TPR1_ARATH Topless-related protein 1 OS=Arabidopsis th...    35   0.74 
+sp|A6RW62|NST1_BOTFB Stress response protein nst1 OS=Botryotinia...    35   0.74 
+sp|A1C6X5|SEC31_ASPCL Protein transport protein sec31 OS=Aspergi...    35   0.77 
+sp|P59240|NPHP4_MOUSE Nephrocystin-4 OS=Mus musculus OX=10090 GN...    35   0.78 
+sp|Q7Z4F1|LRP10_HUMAN Low-density lipoprotein receptor-related p...    35   0.82 
+sp|Q9NTX7|RN146_HUMAN E3 ubiquitin-protein ligase RNF146 OS=Homo...    35   0.84 
+sp|Q9UBY0|SL9A2_HUMAN Sodium/hydrogen exchanger 2 OS=Homo sapien...    35   0.86 
+sp|Q5REL3|RN146_PONAB E3 ubiquitin-protein ligase RNF146 OS=Pong...    35   0.88 
+sp|Q2JSB7|IF2_SYNJA Translation initiation factor IF-2 OS=Synech...    35   0.90 
+sp|Q1DLC7|NTE1_COCIM Lysophospholipase NTE1 OS=Coccidioides immi...    35   0.94 
+sp|Q8CFV2|F149A_MOUSE Protein FAM149A OS=Mus musculus OX=10090 G...    35   0.96 
+sp|Q01956|KCNC3_RAT Potassium voltage-gated channel subfamily C ...    35   1.0  
+sp|Q9NQZ3|DAZ1_HUMAN Deleted in azoospermia protein 1 OS=Homo sa...    35   1.1  
+sp|P57796|CABP4_HUMAN Calcium-binding protein 4 OS=Homo sapiens ...    35   1.1  
+sp|B2BNE2|VNS1_AQRVG Non-structural protein 1 OS=Aquareovirus G ...    35   1.2  
+sp|A1CME3|SEC16_ASPCL COPII coat assembly protein sec16 OS=Asper...    35   1.2  
+sp|Q501Q9|MK15_XENLA Mitogen-activated protein kinase 15 OS=Xeno...    35   1.2  
+sp|Q01285|CHS4_NEUCR Chitin synthase 4 OS=Neurospora crassa (str...    35   1.3  
+sp|Q3U2P1|SC24A_MOUSE Protein transport protein Sec24A OS=Mus mu...    34   1.3  
+sp|Q4WJX7|SIDL_ASPFU Acyltransferase sidL OS=Aspergillus fumigat...    34   1.3  
+sp|A3LZ57|SEC16_PICST COPII coat assembly protein SEC16 OS=Schef...    34   1.3  
+sp|Q7S3C4|SPT5_NEUCR Transcription elongation factor spt5 OS=Neu...    34   1.3  
+sp|Q3UN70|MRFL_MOUSE Myelin regulatory factor-like protein OS=Mu...    34   1.3  
+sp|O60244|MED14_HUMAN Mediator of RNA polymerase II transcriptio...    34   1.4  
+sp|P0CO32|IML1_CRYNJ Vacuolar membrane-associated protein IML1 O...    34   1.4  
+sp|P0CO33|IML1_CRYNB Vacuolar membrane-associated protein IML1 O...    34   1.4  
+sp|Q3B8N7|T22D4_RAT Sperm acrosome developmental regulator OS=Ra...    34   1.5  
+sp|Q5F3X8|SC31A_CHICK Protein transport protein Sec31A OS=Gallus...    34   1.5  
+sp|Q8MQ70|HIPK_CAEEL Homeodomain-interacting protein kinase 1 OS...    34   1.5  
+sp|Q95QI7|DAF3_CAEEL Smad protein daf-3 OS=Caenorhabditis elegan...    34   1.5  
+sp|P49880|ECR_AEDAE Ecdysone receptor OS=Aedes aegypti OX=7159 G...    34   1.6  
+sp|P49797|RGS3_RAT Regulator of G-protein signaling 3 OS=Rattus ...    34   1.7  
+sp|Q9PU36|PCLO_CHICK Protein piccolo (Fragment) OS=Gallus gallus...    34   1.7  
+sp|P19835|CEL_HUMAN Bile salt-activated lipase OS=Homo sapiens O...    34   1.7  
+sp|P77173|ZIPA_ECOLI Cell division protein ZipA OS=Escherichia c...    34   1.8  
+sp|B1IX59|ZIPA_ECOLC Cell division protein ZipA OS=Escherichia c...    34   1.8  
+sp|B1XA83|ZIPA_ECODH Cell division protein ZipA OS=Escherichia c...    34   1.8  
+sp|C4ZVU3|ZIPA_ECOBW Cell division protein ZipA OS=Escherichia c...    34   1.8  
+sp|P70327|TBX6_MOUSE T-box transcription factor TBX6 OS=Mus musc...    34   1.8  
+sp|D4A4D7|E2F7_RAT Transcription factor E2F7 OS=Rattus norvegicu...    34   1.8  
+sp|Q9M081|SC24C_ARATH Protein transport protein SEC24 C OS=Arabi...    34   1.9  
+sp|P87253|KPC1_NEUCR Protein kinase C-like OS=Neurospora crassa ...    34   1.9  
+sp|A3GFK8|SEC31_PICST Protein transport protein SEC31 OS=Scheffe...    34   1.9  
+sp|Q6A044|EREP2_MOUSE Protein ENTREP2 OS=Mus musculus OX=10090 G...    34   1.9  
+sp|Q86SG3|DAZ4_HUMAN Deleted in azoospermia protein 4 OS=Homo sa...    33   2.2  
+sp|Q9UJ55|MAGL2_HUMAN MAGE-like protein 2 OS=Homo sapiens OX=960...    33   2.2  
+sp|Q05199|NRG1_CHICK Pro-neuregulin-1, membrane-bound isoform OS...    33   2.4  
+sp|P35074|RPB1_CAEBR DNA-directed RNA polymerase II subunit RPB1...    33   2.5  
+sp|Q7S8V3|NST1_NEUCR Stress response protein nst1 OS=Neurospora ...    33   2.5  
+sp|Q63KV4|DTML_BURPS Dictomallein OS=Burkholderia pseudomallei (...    33   2.6  
+sp|Q3JLY2|DTML_BURP1 Dictomallein OS=Burkholderia pseudomallei (...    33   2.6  
+sp|O74535|CPSFX_SCHPO Cleavage and polyadenylation factor comple...    33   2.6  
+sp|Q12809|KCNH2_HUMAN Potassium voltage-gated channel subfamily ...    33   2.6  
+sp|A3NKA8|DTML_BURP6 Dictomallein OS=Burkholderia pseudomallei (...    33   2.6  
+sp|A3P5X2|DTML_BURP0 Dictomallein OS=Burkholderia pseudomallei (...    33   2.6  
+sp|A1UUS6|DTML_BURMS Dictomallein OS=Burkholderia mallei (strain...    33   2.6  
+sp|Q4V2J8|DTML_BURMA Dictomallein OS=Burkholderia mallei (strain...    33   2.6  
+sp|A2RWR9|DTML_BURM9 Dictomallein OS=Burkholderia mallei (strain...    33   2.6  
+sp|A3MDY1|DTML_BURM7 Dictomallein OS=Burkholderia mallei (strain...    33   2.6  
+sp|Q5S580|SEC31_AJECA Protein transport protein SEC31 OS=Ajellom...    33   2.8  
+sp|C0ZYA5|IF2_RHOE4 Translation initiation factor IF-2 OS=Rhodoc...    33   2.8  
+sp|Q96T58|MINT_HUMAN Msx2-interacting protein OS=Homo sapiens OX...    33   2.8  
+sp|P87233|PHF1_SCHPO SWM histone demethylase complex subunit phf...    33   2.9  
+sp|Q20765|NHR7_CAEEL Nuclear hormone receptor family member nhr-...    33   3.0  
+sp|Q9JKS4|LDB3_MOUSE LIM domain-binding protein 3 OS=Mus musculu...    33   3.0  
+sp|B2TWZ6|ZIPA_SHIB3 Cell division protein ZipA OS=Shigella boyd...    33   3.0  
+sp|O75962|TRIO_HUMAN Triple functional domain protein OS=Homo sa...    33   3.0  
+sp|A2C6Q5|IF2_PROM3 Translation initiation factor IF-2 OS=Prochl...    33   3.1  
+sp|Q4WQG9|ACRB_ASPFU Probable ubiquitination network signaling p...    33   3.2  
+sp|B0Y4N5|ACRB_ASPFC Probable ubiquitination network signaling p...    33   3.3  
+sp|P05070|COAT_TRVCA Coat protein OS=Tobacco rattle virus (strai...    33   3.5  
+sp|Q9EQN3|T22D4_MOUSE Sperm acrosome developmental regulator OS=...    33   3.5  
+sp|Q9DC04|RGS3_MOUSE Regulator of G-protein signaling 3 OS=Mus m...    33   3.5  
+sp|A2ABV5|MED14_MOUSE Mediator of RNA polymerase II transcriptio...    33   3.8  
+sp|Q75A30|SEC31_ASHGO Protein transport protein SEC31 OS=Ashbya ...    33   4.0  
+sp|Q9P107|GMIP_HUMAN GEM-interacting protein OS=Homo sapiens OX=...    33   4.0  
+sp|Q4FZU4|ATL4_RAT ADAMTS-like protein 4 OS=Rattus norvegicus OX...    33   4.0  
+sp|B0CXQ2|VELB_LACBS Velvet complex subunit B OS=Laccaria bicolo...    33   4.2  
+sp|Q174I2|PRIC1_AEDAE Protein prickle OS=Aedes aegypti OX=7159 G...    33   4.2  
+sp|Q4R5L5|ANXA7_MACFA Annexin A7 OS=Macaca fascicularis OX=9541 ...    33   4.2  
+sp|Q07DX4|CTTB2_NOMLE Cortactin-binding protein 2 OS=Nomascus le...    33   4.3  
+sp|Q31Y67|ZIPA_SHIBS Cell division protein ZipA OS=Shigella boyd...    32   4.8  
+sp|Q9NVW2|RNF12_HUMAN E3 ubiquitin-protein ligase RLIM OS=Homo s...    32   4.9  
+sp|Q10475|IF4G_SCHPO Eukaryotic translation initiation factor 4 ...    32   4.9  
+sp|P55864|PAX6_XENLA Paired box protein Pax-6 OS=Xenopus laevis ...    32   5.0  
+sp|O35615|FOG1_MOUSE Zinc finger protein ZFPM1 OS=Mus musculus O...    32   5.1  
+sp|Q9H987|SYP2L_HUMAN Synaptopodin 2-like protein OS=Homo sapien...    32   5.4  
+sp|Q4R8E6|PRR30_MACFA Proline-rich protein 30 OS=Macaca fascicul...    32   5.8  
+sp|Q9WTR2|M3K6_MOUSE Mitogen-activated protein kinase kinase kin...    32   6.1  
+sp|Q9UPN7|PP6R1_HUMAN Serine/threonine-protein phosphatase 6 reg...    32   6.3  
+sp|Q05D32|CTSL2_HUMAN CTD small phosphatase-like protein 2 OS=Ho...    32   6.3  
+sp|Q6W4X9|MUC6_HUMAN Mucin-6 OS=Homo sapiens OX=9606 GN=MUC6 PE=...    32   7.1  
+sp|A2R9H9|INO80_ASPNC Chromatin-remodeling ATPase INO80 OS=Asper...    32   7.1  
+sp|A7ZPL3|ZIPA_ECO24 Cell division protein ZipA OS=Escherichia c...    32   7.3  
+sp|P49790|NU153_HUMAN Nuclear pore complex protein Nup153 OS=Hom...    32   7.6  
+sp|B6I4Y9|ZIPA_ECOSE Cell division protein ZipA OS=Escherichia c...    32   7.7  
+sp|A8A2Q8|ZIPA_ECOHS Cell division protein ZipA OS=Escherichia c...    32   7.7  
+sp|B7M6S2|ZIPA_ECO8A Cell division protein ZipA OS=Escherichia c...    32   7.7  
+sp|B7LCF7|ZIPA_ECO55 Cell division protein ZipA OS=Escherichia c...    32   7.7  
+sp|O13637|SEC31_SCHPO Protein transport protein sec31 OS=Schizos...    32   7.7  
+sp|O88703|HCN2_MOUSE Potassium/sodium hyperpolarization-activate...    32   7.7  
+sp|Q3YZD0|ZIPA_SHISS Cell division protein ZipA OS=Shigella sonn...    32   7.8  
+sp|Q940H8|FRL4B_ARATH FRIGIDA-like protein 4b OS=Arabidopsis tha...    32   7.9  
+sp|A2R7P5|NST1_ASPNC Stress response protein nst1 OS=Aspergillus...    32   8.0  
+sp|Q91V98|CD248_MOUSE Endosialin OS=Mus musculus OX=10090 GN=Cd2...    32   8.1  
+sp|A0M8S4|CTTB2_PAPAN Cortactin-binding protein 2 OS=Papio anubi...    31   8.3  
+sp|Q2IBA2|CTTB2_CHLAE Cortactin-binding protein 2 OS=Chlorocebus...    31   8.3  
+sp|O94744|GIT3_SCHPO Glucose receptor protein git3 OS=Schizosacc...    31   8.5  
+sp|Q67FY2|BCL9L_MOUSE B-cell CLL/lymphoma 9-like protein OS=Mus ...    31   8.6  
+sp|Q9XUS2|MED29_CAEEL Mediator of RNA polymerase II transcriptio...    31   8.7  
+sp|Q07DW4|CTTB2_MUNRE Cortactin-binding protein 2 OS=Muntiacus r...    31   8.7  
+sp|O81765|PLRX4_ARATH Pollen-specific leucine-rich repeat extens...    31   9.0  
+sp|Q9Y3Q8|T22D4_HUMAN Sperm acrosome developmental regulator OS=...    31   9.1  
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    31   9.4  
+sp|O15265|ATX7_HUMAN Ataxin-7 OS=Homo sapiens OX=9606 GN=ATXN7 P...    31   9.4  
+sp|J9VQQ3|ATC2_CRYNH Calcium-transporting ATPase 2 OS=Cryptococc...    31   9.5  
+sp|Q7TS99|HELT_MOUSE Hairy and enhancer of split-related protein...    31   9.7  
+sp|Q9NR90|DAZ3_HUMAN Deleted in azoospermia protein 3 OS=Homo sa...    31   9.7  
+sp|Q6P3G4|CCSAP_DANRE Centriole, cilia and spindle-associated pr...    31   9.7  
+sp|O23373|FH3_ARATH Formin-like protein 3 OS=Arabidopsis thalian...    31   9.8  
+sp|O13394|CHS5_USTMA Chitin synthase 5 OS=Ustilago maydis (strai...    31   9.8  
+sp|Q8X492|ZIPA_ECO57 Cell division protein ZipA OS=Escherichia c...    31   9.9  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.297    0.113    0.308 
+
+Lambda     K      H
+   0.267   0.0348    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 306,523,685
+Number of Sequences: 569516
+Number of extensions: 11944224
+Number of successful extensions: 107603
+Number of sequences better than 10.0: 2466
+Number of HSP's better than 10.0 without gapping: 1885
+Number of HSP's successfully gapped in prelim test: 1222
+Number of HSP's that attempted gapping in prelim test: 79376
+Number of HSP's gapped (non-prelim): 20763
+length of query: 312
+length of database: 205,866,895
+effective HSP length: 118
+effective length of query: 194
+effective length of database: 138,664,007
+effective search space: 26900817358
+effective search space used: 26900817358
+T: 11
+A: 40
+X1: 16 ( 6.9 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (20.7 bits)
+S2: 69 (31.4 bits)

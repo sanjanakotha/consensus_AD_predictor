@@ -1,0 +1,636 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (202 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P40267|H1_SOLPN Histone H1 OS=Solanum pennellii OX=28526 PE=2...   191   3e-48
+sp|P23444|H1_MAIZE Histone H1 OS=Zea mays OX=4577 PE=2 SV=2            89   2e-17
+sp|P27806|H1_WHEAT Histone H1 OS=Triticum aestivum OX=4565 PE=2 ...    89   2e-17
+sp|P26569|H12_ARATH Histone H1.2 OS=Arabidopsis thaliana OX=3702...    85   3e-16
+sp|P08283|H1_PEA Histone H1 OS=Pisum sativum OX=3888 PE=2 SV=1         78   3e-14
+sp|Q9M5W4|H1_EUPES Histone H1 OS=Euphorbia esula OX=3993 PE=2 SV=1     77   6e-14
+sp|P37218|H1_SOLLC Histone H1 OS=Solanum lycopersicum OX=4081 PE...    77   9e-14
+sp|Q08864|H11_VOLCA Histone H1-I OS=Volvox carteri OX=3067 GN=H1...    76   1e-13
+sp|Q08865|H12_VOLCA Histone H1-II OS=Volvox carteri OX=3067 GN=H...    75   2e-13
+sp|P26568|H11_ARATH Histone H1.1 OS=Arabidopsis thaliana OX=3702...    72   2e-12
+sp|P54671|H1_DICDI Histone H1 OS=Dictyostelium discoideum OX=446...    64   1e-09
+sp|P40263|H11_GLYBA Histone H1-I OS=Glyptotendipes barbipes OX=3...    55   4e-07
+sp|Q8W119|SMH4_MAIZE Single myb histone 4 OS=Zea mays OX=4577 GN...    55   4e-07
+sp|P40266|H11_GLYSA Histone H1-I OS=Glyptotendipes salinus OX=33...    54   5e-07
+sp|Q94555|H12_DROVI Histone H1.2 OS=Drosophila virilis OX=7244 G...    51   5e-06
+sp|Q94972|H13_DROVI Histone H1.3 OS=Drosophila virilis OX=7244 G...    51   6e-06
+sp|Q43386|HMGYA_ARATH HMG-Y-related protein A OS=Arabidopsis tha...    50   1e-05
+sp|P40278|H1E_CHITE Histone H1E OS=Chironomus tentans OX=7153 PE...    50   1e-05
+sp|Q6WLH4|SMH3_MAIZE Single myb histone 3 OS=Zea mays OX=4577 GN...    49   2e-05
+sp|Q19743|H13_CAEEL Histone H1.3 OS=Caenorhabditis elegans OX=62...    49   2e-05
+sp|P02255|H1_DROME Histone H1 OS=Drosophila melanogaster OX=7227...    49   3e-05
+sp|Q8VWK4|TRB1_ARATH Telomere repeat-binding factor 1 OS=Arabido...    48   4e-05
+sp|O16277|H16_CAEEL Putative histone H1.6 OS=Caenorhabditis eleg...    48   5e-05
+sp|P02259|H5_CHICK Histone H5 OS=Gallus gallus OX=9031 PE=1 SV=2       48   6e-05
+sp|Q6WLH3|SMH5_MAIZE Single myb histone 5 OS=Zea mays OX=4577 GN...    48   6e-05
+sp|C0HIA3|SMH6_MAIZE Single myb histone 6 OS=Zea mays OX=4577 GN...    47   8e-05
+sp|P15796|H12_CAEEL Histone H1.2 OS=Caenorhabditis elegans OX=62...    47   9e-05
+sp|F4IEY4|TRB5_ARATH Telomere repeat-binding factor 5 OS=Arabido...    46   2e-04
+sp|Q24704|H11_DROVI Histone H1.1 OS=Drosophila virilis OX=7244 G...    46   2e-04
+sp|Q9FYS5|HMGYA_MAIZE HMG-Y-related protein A OS=Zea mays OX=457...    46   2e-04
+sp|P17268|H1_DROHY Histone H1 OS=Drosophila hydei OX=7224 GN=His...    45   4e-04
+sp|B4FT40|SMH2_MAIZE Single myb histone 2 OS=Zea mays OX=4577 GN...    44   6e-04
+sp|P06144|H1_LYTPI Late histone H1 OS=Lytechinus pictus OX=7653 ...    44   0.001
+sp|Q9FJW5|TRB2_ARATH Telomere repeat-binding factor 2 OS=Arabido...    43   0.001
+sp|Q6WS85|SMH1_MAIZE Single myb histone 1 OS=Zea mays OX=4577 GN...    42   0.002
+sp|P40262|H1E_CHIPA Histone H1E OS=Chironomus pallidivittatus OX...    42   0.002
+sp|P02256|H1_PARAN Histone H1, gonadal OS=Parechinus angulosus O...    42   0.002
+sp|O01833|H15_CAEEL Histone H1.5 OS=Caenorhabditis elegans OX=62...    42   0.004
+sp|Q07134|H1O_CHITH Histone H1, orphon OS=Chironomus thummi thum...    41   0.007
+sp|Q00423|HMGYA_SOYBN HMG-Y-related protein A OS=Glycine max OX=...    40   0.011
+sp|F4I7L1|TRB4_ARATH Telomere repeat-binding factor 4 OS=Arabido...    40   0.012
+sp|P21895|H1_CHITH Histone H1 OS=Chironomus thummi thummi OX=715...    40   0.015
+sp|Q75C22|H1_ASHGO Histone H1 OS=Ashbya gossypii (strain ATCC 10...    40   0.017
+sp|P82898|H1A_OLILU Histone H1A (Fragment) OS=Olisthodiscus lute...    39   0.018
+sp|P07796|H1G_STRPU Histone H1-gamma, late OS=Strongylocentrotus...    39   0.022
+sp|Q8IZA3|H18_HUMAN Histone H1.8 OS=Homo sapiens OX=9606 GN=H1-8...    39   0.022
+sp|P15308|B4_XENLA Protein B4 OS=Xenopus laevis OX=8355 GN=b4 PE...    39   0.024
+sp|P06513|H5_CAIMO Histone H5 OS=Cairina moschata OX=8855 PE=2 SV=2    39   0.029
+sp|O17536|H14_CAEEL Histone H1.4 OS=Caenorhabditis elegans OX=62...    39   0.030
+sp|P10771|H24_CAEEL Histone 24 OS=Caenorhabditis elegans OX=6239...    39   0.034
+sp|P15869|H1B_STRPU Histone H1-beta, late embryonic OS=Strongylo...    38   0.039
+sp|P02258|H5_ANSAN Histone H5 OS=Anser anser anser OX=8844 PE=1 ...    37   0.079
+sp|P02257|H1_ECHCR Histone H1, gonadal (Fragment) OS=Echinolampa...    37   0.089
+sp|P19375|H1E_STRPU Histone H1, early embryonic OS=Strongylocent...    37   0.099
+sp|P40277|H1C_CHITE Histone H1C OS=Chironomus tentans OX=7153 PE...    37   0.13 
+sp|Q3HNG7|H18_BOVIN Histone H1.8 OS=Bos taurus OX=9913 GN=H1-8 P...    36   0.14 
+sp|P40265|H13_GLYBA Histone H1-III OS=Glyptotendipes barbipes OX...    36   0.15 
+sp|Q9P8F8|H1_EMENI Histone H1 OS=Emericella nidulans (strain FGS...    36   0.15 
+sp|Q18336|H1X_CAEEL Histone H1.X OS=Caenorhabditis elegans OX=62...    36   0.16 
+sp|Q8VIK3|H18_MOUSE Histone H1.8 OS=Mus musculus OX=10090 GN=H1....    36   0.20 
+sp|P82899|H1B_OLILU Histone H1B (Fragment) OS=Olisthodiscus lute...    36   0.23 
+sp|P40264|H12_GLYBA Histone H1-II OS=Glyptotendipes barbipes OX=...    35   0.29 
+sp|P06895|H1B_PLADU Histone H1B, sperm OS=Platynereis dumerilii ...    35   0.29 
+sp|P15870|H1D_STRPU Histone H1-delta OS=Strongylocentrotus purpu...    35   0.37 
+sp|Q99281|H11E_PARAN Histone H1.1, embryonic (Fragments) OS=Pare...    35   0.42 
+sp|P40276|H1B_CHITE Histone H1B OS=Chironomus tentans OX=7153 PE...    35   0.46 
+sp|P22845|H10A_XENLA Histone H1.0-A OS=Xenopus laevis OX=8355 GN...    34   0.88 
+sp|P06894|H1A_PLADU Histone H1A, sperm OS=Platynereis dumerilii ...    34   0.90 
+sp|P10922|H10_MOUSE Histone H1.0 OS=Mus musculus OX=10090 GN=H1-...    33   1.1  
+sp|Q0IIJ2|H10_BOVIN Histone H1.0 OS=Bos taurus OX=9913 GN=H1-0 P...    33   1.4  
+sp|Q86QH9|H1L1_OSTED Sperm-specific H1/protamine-like protein ty...    32   2.3  
+sp|P35060|H1_TIGCA Histone H1 OS=Tigriopus californicus OX=6832 ...    32   2.7  
+sp|Q6NVM0|H10_XENTR Histone H1.0 OS=Xenopus tropicalis OX=8364 G...    32   2.8  
+sp|P40275|H1A_CHITE Histone H1A OS=Chironomus tentans OX=7153 PE...    32   2.8  
+sp|P22844|H10B_XENLA Histone H1.0-B OS=Xenopus laevis OX=8355 GN...    32   2.9  
+sp|P07305|H10_HUMAN Histone H1.0 OS=Homo sapiens OX=9606 GN=H1-0...    32   3.2  
+sp|P53551|H1_YEAST Histone H1 OS=Saccharomyces cerevisiae (strai...    32   3.3  
+sp|Q9GLG4|SCG1_PIG Secretogranin-1 OS=Sus scrofa OX=9823 GN=CHGB...    32   3.4  
+sp|F5HGJ4|PP85_HCMVM Phosphoprotein 85 OS=Human cytomegalovirus ...    32   4.3  
+sp|P16761|PP85_HCMVA Phosphoprotein 85 OS=Human cytomegalovirus ...    32   4.3  
+sp|Q9UV33|H1_ASCIM Histone H1 OS=Ascobolus immersus OX=5191 PE=3...    32   4.5  
+sp|Q5NVN9|H10_PONAB Histone H1.0 OS=Pongo abelii OX=9601 GN=H1-0...    31   5.0  
+sp|Q6FJX6|H1_CANGA Histone H1 OS=Candida glabrata (strain ATCC 2...    31   6.3  
+sp|Q9Y5E6|PCDB3_HUMAN Protocadherin beta-3 OS=Homo sapiens OX=96...    31   6.4  
+sp|Q5U504|KLH40_XENLA Kelch-like protein 40 OS=Xenopus laevis OX...    31   7.7  
+sp|Q9ULJ7|ANR50_HUMAN Ankyrin repeat domain-containing protein 5...    30   9.5  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P40267|H1_SOLPN Histone H1 OS=Solanum pennellii OX=28526 PE=2...   109   2e-23
+sp|Q6WLH4|SMH3_MAIZE Single myb histone 3 OS=Zea mays OX=4577 GN...    95   3e-19
+sp|Q6WLH3|SMH5_MAIZE Single myb histone 5 OS=Zea mays OX=4577 GN...    93   1e-18
+sp|Q8W119|SMH4_MAIZE Single myb histone 4 OS=Zea mays OX=4577 GN...    91   5e-18
+sp|C0HIA3|SMH6_MAIZE Single myb histone 6 OS=Zea mays OX=4577 GN...    87   6e-17
+sp|B4FT40|SMH2_MAIZE Single myb histone 2 OS=Zea mays OX=4577 GN...    83   2e-15
+sp|F4IEY4|TRB5_ARATH Telomere repeat-binding factor 5 OS=Arabido...    81   4e-15
+sp|Q8VWK4|TRB1_ARATH Telomere repeat-binding factor 1 OS=Arabido...    80   1e-14
+sp|P27806|H1_WHEAT Histone H1 OS=Triticum aestivum OX=4565 PE=2 ...    80   1e-14
+sp|P23444|H1_MAIZE Histone H1 OS=Zea mays OX=4577 PE=2 SV=2            71   4e-12
+sp|Q43386|HMGYA_ARATH HMG-Y-related protein A OS=Arabidopsis tha...    70   9e-12
+sp|Q08865|H12_VOLCA Histone H1-II OS=Volvox carteri OX=3067 GN=H...    68   5e-11
+sp|Q08864|H11_VOLCA Histone H1-I OS=Volvox carteri OX=3067 GN=H1...    66   2e-10
+sp|P17268|H1_DROHY Histone H1 OS=Drosophila hydei OX=7224 GN=His...    65   5e-10
+sp|P40278|H1E_CHITE Histone H1E OS=Chironomus tentans OX=7153 PE...    63   1e-09
+sp|P26569|H12_ARATH Histone H1.2 OS=Arabidopsis thaliana OX=3702...    63   1e-09
+sp|P54671|H1_DICDI Histone H1 OS=Dictyostelium discoideum OX=446...    63   1e-09
+sp|P06144|H1_LYTPI Late histone H1 OS=Lytechinus pictus OX=7653 ...    62   3e-09
+sp|P15796|H12_CAEEL Histone H1.2 OS=Caenorhabditis elegans OX=62...    61   6e-09
+sp|P40263|H11_GLYBA Histone H1-I OS=Glyptotendipes barbipes OX=3...    61   7e-09
+sp|P40266|H11_GLYSA Histone H1-I OS=Glyptotendipes salinus OX=33...    60   8e-09
+sp|P26568|H11_ARATH Histone H1.1 OS=Arabidopsis thaliana OX=3702...    59   2e-08
+sp|Q9M5W4|H1_EUPES Histone H1 OS=Euphorbia esula OX=3993 PE=2 SV=1     58   5e-08
+sp|P02255|H1_DROME Histone H1 OS=Drosophila melanogaster OX=7227...    58   7e-08
+sp|P02259|H5_CHICK Histone H5 OS=Gallus gallus OX=9031 PE=1 SV=2       56   1e-07
+sp|O16277|H16_CAEEL Putative histone H1.6 OS=Caenorhabditis eleg...    56   1e-07
+sp|Q94555|H12_DROVI Histone H1.2 OS=Drosophila virilis OX=7244 G...    56   1e-07
+sp|Q9FYS5|HMGYA_MAIZE HMG-Y-related protein A OS=Zea mays OX=457...    56   1e-07
+sp|Q94972|H13_DROVI Histone H1.3 OS=Drosophila virilis OX=7244 G...    56   2e-07
+sp|P37218|H1_SOLLC Histone H1 OS=Solanum lycopersicum OX=4081 PE...    55   3e-07
+sp|Q24704|H11_DROVI Histone H1.1 OS=Drosophila virilis OX=7244 G...    51   4e-06
+sp|P08283|H1_PEA Histone H1 OS=Pisum sativum OX=3888 PE=2 SV=1         51   4e-06
+sp|Q19743|H13_CAEEL Histone H1.3 OS=Caenorhabditis elegans OX=62...    50   8e-06
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q6WS85|SMH1_MAIZE Single myb histone 1 OS=Zea mays OX=4577 GN...    75   5e-13
+sp|F4I7L1|TRB4_ARATH Telomere repeat-binding factor 4 OS=Arabido...    68   6e-11
+sp|P40262|H1E_CHIPA Histone H1E OS=Chironomus pallidivittatus OX...    63   1e-09
+sp|P15870|H1D_STRPU Histone H1-delta OS=Strongylocentrotus purpu...    63   2e-09
+sp|P10771|H24_CAEEL Histone 24 OS=Caenorhabditis elegans OX=6239...    63   2e-09
+sp|Q18336|H1X_CAEEL Histone H1.X OS=Caenorhabditis elegans OX=62...    60   1e-08
+sp|Q07134|H1O_CHITH Histone H1, orphon OS=Chironomus thummi thum...    60   1e-08
+sp|Q9FJW5|TRB2_ARATH Telomere repeat-binding factor 2 OS=Arabido...    59   3e-08
+sp|P40276|H1B_CHITE Histone H1B OS=Chironomus tentans OX=7153 PE...    59   3e-08
+sp|Q149N8|SHPRH_HUMAN E3 ubiquitin-protein ligase SHPRH OS=Homo ...    58   3e-08
+sp|P40277|H1C_CHITE Histone H1C OS=Chironomus tentans OX=7153 PE...    57   8e-08
+sp|P06895|H1B_PLADU Histone H1B, sperm OS=Platynereis dumerilii ...    56   2e-07
+sp|Q7TPQ3|SHPRH_MOUSE E3 ubiquitin-protein ligase SHPRH OS=Mus m...    56   2e-07
+sp|P40275|H1A_CHITE Histone H1A OS=Chironomus tentans OX=7153 PE...    55   4e-07
+sp|Q86QH9|H1L1_OSTED Sperm-specific H1/protamine-like protein ty...    53   1e-06
+sp|Q9M2X3|TRB3_ARATH Telomere repeat-binding factor 3 OS=Arabido...    53   1e-06
+sp|P82898|H1A_OLILU Histone H1A (Fragment) OS=Olisthodiscus lute...    52   3e-06
+sp|P06894|H1A_PLADU Histone H1A, sperm OS=Platynereis dumerilii ...    51   4e-06
+sp|P40264|H12_GLYBA Histone H1-II OS=Glyptotendipes barbipes OX=...    51   4e-06
+sp|Q86QI0|H1L2_OSTED Sperm-specific H1/protamine-like protein ty...    50   1e-05
+sp|P43278|H10_RAT Histone H1.0 OS=Rattus norvegicus OX=10116 GN=...    50   1e-05
+sp|P40265|H13_GLYBA Histone H1-III OS=Glyptotendipes barbipes OX...    50   1e-05
+sp|O01761|UNC89_CAEEL Muscle M-line assembly protein unc-89 OS=C...    50   1e-05
+sp|P82899|H1B_OLILU Histone H1B (Fragment) OS=Olisthodiscus lute...    49   2e-05
+sp|Q6NVM0|H10_XENTR Histone H1.0 OS=Xenopus tropicalis OX=8364 G...    49   2e-05
+sp|P35060|H1_TIGCA Histone H1 OS=Tigriopus californicus OX=6832 ...    48   3e-05
+sp|O17536|H14_CAEEL Histone H1.4 OS=Caenorhabditis elegans OX=62...    48   3e-05
+sp|Q9UV33|H1_ASCIM Histone H1 OS=Ascobolus immersus OX=5191 PE=3...    48   4e-05
+sp|Q99281|H11E_PARAN Histone H1.1, embryonic (Fragments) OS=Pare...    48   6e-05
+sp|P22845|H10A_XENLA Histone H1.0-A OS=Xenopus laevis OX=8355 GN...    48   6e-05
+sp|P19375|H1E_STRPU Histone H1, early embryonic OS=Strongylocent...    48   6e-05
+sp|P02257|H1_ECHCR Histone H1, gonadal (Fragment) OS=Echinolampa...    48   6e-05
+sp|P22844|H10B_XENLA Histone H1.0-B OS=Xenopus laevis OX=8355 GN...    47   1e-04
+sp|Q00423|HMGYA_SOYBN HMG-Y-related protein A OS=Glycine max OX=...    47   1e-04
+sp|P07796|H1G_STRPU Histone H1-gamma, late OS=Strongylocentrotus...    45   3e-04
+sp|P15869|H1B_STRPU Histone H1-beta, late embryonic OS=Strongylo...    45   4e-04
+sp|A2ASS6|TITIN_MOUSE Titin OS=Mus musculus OX=10090 GN=Ttn PE=1...    45   5e-04
+sp|P21895|H1_CHITH Histone H1 OS=Chironomus thummi thummi OX=715...    44   8e-04
+sp|P02258|H5_ANSAN Histone H5 OS=Anser anser anser OX=8844 PE=1 ...    43   0.001
+sp|P06513|H5_CAIMO Histone H5 OS=Cairina moschata OX=8855 PE=2 SV=2    43   0.001
+sp|Q05831|H1L_MYTTR Sperm-specific protein PHI-2B/PHI-3 OS=Mytil...    43   0.001
+sp|Q5SSJ5|HP1B3_HUMAN Heterochromatin protein 1-binding protein ...    43   0.002
+sp|Q0IIJ2|H10_BOVIN Histone H1.0 OS=Bos taurus OX=9913 GN=H1-0 P...    43   0.002
+sp|Q8BRB7|KAT6B_MOUSE Histone acetyltransferase KAT6B OS=Mus mus...    43   0.002
+sp|O01833|H15_CAEEL Histone H1.5 OS=Caenorhabditis elegans OX=62...    43   0.002
+sp|Q08DU9|HP1B3_BOVIN Heterochromatin protein 1-binding protein ...    43   0.002
+sp|Q5XV31|FRL5_ARATH FRIGIDA-like protein 5 OS=Arabidopsis thali...    43   0.002
+sp|Q8J0U2|H1_NEUCR Histone H1 OS=Neurospora crassa (strain ATCC ...    42   0.002
+sp|P27203|H1L5_ENSMI Histone H1-like protein EM5 (Fragment) OS=E...    41   0.005
+sp|Q6FJX6|H1_CANGA Histone H1 OS=Candida glabrata (strain ATCC 2...    41   0.005
+sp|Q99284|H1S_SPHGR Histone H1, sperm (Fragments) OS=Sphaerechin...    41   0.006
+sp|Q7TPV4|MBB1A_MOUSE Myb-binding protein 1A OS=Mus musculus OX=...    41   0.006
+sp|Q80TN7|NAV3_MOUSE Neuron navigator 3 OS=Mus musculus OX=10090...    41   0.008
+sp|P22974|H1L_MYTCA Sperm-specific protein PHI-2B OS=Mytilus cal...    40   0.010
+sp|P53551|H1_YEAST Histone H1 OS=Saccharomyces cerevisiae (strai...    40   0.012
+sp|Q8WML3|KAT6B_MACFA Histone acetyltransferase KAT6B OS=Macaca ...    40   0.012
+sp|Q8VIK3|H18_MOUSE Histone H1.8 OS=Mus musculus OX=10090 GN=H1....    40   0.014
+sp|P15868|H1_PSAMI Histone H1 (Fragment) OS=Psammechinus miliari...    40   0.015
+sp|Q5ZM33|HP1B3_CHICK Heterochromatin protein 1-binding protein ...    40   0.016
+sp|P07305|H10_HUMAN Histone H1.0 OS=Homo sapiens OX=9606 GN=H1-0...    40   0.017
+sp|Q5NVN9|H10_PONAB Histone H1.0 OS=Pongo abelii OX=9601 GN=H1-0...    39   0.020
+sp|Q8WYB5|KAT6B_HUMAN Histone acetyltransferase KAT6B OS=Homo sa...    39   0.021
+sp|Q4A6S2|SECA_MYCS5 Protein translocase subunit SecA OS=Mycopla...    39   0.021
+sp|A6Q1M4|RPOC_NITSB DNA-directed RNA polymerase subunit beta' O...    39   0.023
+sp|A0SWL0|FRL2A_ARATH FRIGIDA-like protein 2 OS=Arabidopsis thal...    39   0.028
+sp|P10922|H10_MOUSE Histone H1.0 OS=Mus musculus OX=10090 GN=H1-...    39   0.030
+sp|Q9C6S2|FRL2I_ARATH Inactive FRIGIDA-like protein 2 OS=Arabido...    39   0.030
+sp|Q38870|CDPK2_ARATH Calcium-dependent protein kinase 2 OS=Arab...    38   0.035
+sp|Q6P747|HP1B3_RAT Heterochromatin protein 1-binding protein 3 ...    38   0.038
+sp|Q92522|H1X_HUMAN Histone H1.10 OS=Homo sapiens OX=9606 GN=H1-...    38   0.045
+sp|Q9TW65|DMD_CAEEL Dystrophin-1 OS=Caenorhabditis elegans OX=62...    38   0.052
+sp|Q2HEW5|CHEA_CHAGB PKS-NRPS hybrid synthetase cheA OS=Chaetomi...    38   0.056
+sp|Q9Y4D8|HECD4_HUMAN Probable E3 ubiquitin-protein ligase HECTD...    38   0.058
+sp|P15308|B4_XENLA Protein B4 OS=Xenopus laevis OX=8355 GN=b4 PE...    38   0.069
+sp|Q8IZA3|H18_HUMAN Histone H1.8 OS=Homo sapiens OX=9606 GN=H1-8...    37   0.078
+sp|P11622|P1_PLRVW Protein P1 OS=Potato leafroll virus (strain P...    37   0.087
+sp|C7DZK3|CRA1A_DANRE Collagen alpha-1(XXVII) chain A OS=Danio r...    37   0.089
+sp|Q1B4V6|KGD_MYCSS Multifunctional 2-oxoglutarate metabolism en...    37   0.092
+sp|A1UK81|KGD_MYCSK Multifunctional 2-oxoglutarate metabolism en...    37   0.092
+sp|Q96AY4|TTC28_HUMAN Tetratricopeptide repeat protein 28 OS=Hom...    37   0.10 
+sp|Q9P8F8|H1_EMENI Histone H1 OS=Emericella nidulans (strain FGS...    37   0.11 
+sp|Q5JET0|DP2L_THEKO DNA polymerase II large subunit OS=Thermoco...    37   0.11 
+sp|A3Q3N5|KGD_MYCSJ Multifunctional 2-oxoglutarate metabolism en...    36   0.13 
+sp|Q9QZ39|SIA7A_MOUSE Alpha-N-acetylgalactosaminide alpha-2,6-si...    36   0.13 
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    36   0.15 
+sp|Q75C22|H1_ASHGO Histone H1 OS=Ashbya gossypii (strain ATCC 10...    36   0.15 
+sp|P02256|H1_PARAN Histone H1, gonadal OS=Parechinus angulosus O...    36   0.16 
+sp|G5EC23|HCF1_CAEEL Host cell factor homolog hcf-1 OS=Caenorhab...    36   0.16 
+sp|A1L1F4|PDS5A_DANRE Sister chromatid cohesion protein PDS5 hom...    36   0.16 
+sp|O35821|MBB1A_RAT Myb-binding protein 1A OS=Rattus norvegicus ...    36   0.16 
+sp|P22022|WETA_EMENI Developmental regulatory protein wetA OS=Em...    36   0.17 
+sp|Q8LK56|DME_ARATH Transcriptional activator DEMETER OS=Arabido...    36   0.18 
+sp|Q3TEA8|HP1B3_MOUSE Heterochromatin protein 1-binding protein ...    36   0.18 
+sp|B8HCX6|RS13_PSECP 30S ribosomal protein S13 OS=Pseudarthrobac...    36   0.20 
+sp|Q10059|CDC12_SCHPO Cell division control protein 12 OS=Schizo...    36   0.23 
+sp|Q9JLS4|SFRP4_RAT Secreted frizzled-related protein 4 OS=Rattu...    35   0.28 
+sp|Q3HNG7|H18_BOVIN Histone H1.8 OS=Bos taurus OX=9913 GN=H1-8 P...    35   0.28 
+sp|P09506|P1_TYYVF Protein P1 OS=Turnip yellows virus (isolate F...    35   0.28 
+sp|Q9QYX7|PCLO_MOUSE Protein piccolo OS=Mus musculus OX=10090 GN...    35   0.30 
+sp|Q8WZ42|TITIN_HUMAN Titin OS=Homo sapiens OX=9606 GN=TTN PE=1 ...    35   0.32 
+sp|Q9HGI6|ERF3_DEBHA Eukaryotic peptide chain release factor GTP...    35   0.32 
+sp|A1R8R7|RS13_PAEAT 30S ribosomal protein S13 OS=Paenarthrobact...    35   0.33 
+sp|A0JZ51|RS13_ARTS2 30S ribosomal protein S13 OS=Arthrobacter s...    35   0.36 
+sp|Q8NRC3|ODO12_CORGL 2-oxoglutarate dehydrogenase E1/E2 compone...    35   0.40 
+sp|Q7ZUM8|UBP44_DANRE Ubiquitin carboxyl-terminal hydrolase 44 O...    35   0.44 
+sp|B7FF08|WDY_DROVI WD repeat-containing protein on Y chromosome...    35   0.47 
+sp|Q9FLQ7|FH20_ARATH Formin-like protein 20 OS=Arabidopsis thali...    35   0.48 
+sp|Q5B0D0|APTA_EMENI Non-reducing polyketide synthase aptA OS=Em...    35   0.54 
+sp|C5P436|MIC60_COCP7 MICOS complex subunit MIC60 OS=Coccidioide...    35   0.56 
+sp|O77735|SCAM1_PIG Secretory carrier-associated membrane protei...    35   0.59 
+sp|P56603|SCAM1_RAT Secretory carrier-associated membrane protei...    34   0.61 
+sp|Q74IS8|IF2_LACJO Translation initiation factor IF-2 OS=Lactob...    34   0.63 
+sp|P10312|BPD_BPP2 Probable baseplate hub protein OS=Escherichia...    34   0.66 
+sp|Q9X3X7|TOP1_ZYMMO DNA topoisomerase 1 OS=Zymomonas mobilis su...    34   0.67 
+sp|P50739|SLEB_BACSU Spore cortex-lytic enzyme OS=Bacillus subti...    34   0.67 
+sp|O15126|SCAM1_HUMAN Secretory carrier-associated membrane prot...    34   0.69 
+sp|Q044B7|IF2_LACGA Translation initiation factor IF-2 OS=Lactob...    34   0.76 
+sp|P19334|TRP_DROME Transient receptor potential protein OS=Dros...    34   0.78 
+sp|Q8K021|SCAM1_MOUSE Secretory carrier-associated membrane prot...    34   0.78 
+sp|B8ZM93|IF2_STRPJ Translation initiation factor IF-2 OS=Strept...    34   0.79 
+sp|Q5BEN5|STU1_EMENI Protein stu1 OS=Emericella nidulans (strain...    34   0.83 
+sp|P15205|MAP1B_RAT Microtubule-associated protein 1B OS=Rattus ...    34   0.89 
+sp|Q97S57|IF2_STRPN Translation initiation factor IF-2 OS=Strept...    34   0.91 
+sp|P17519|P1_PLRV1 Protein P1 OS=Potato leafroll virus (strain P...    34   0.96 
+sp|Q2UCC9|STU1_ASPOR Protein stu1 OS=Aspergillus oryzae (strain ...    34   1.0  
+sp|C1CJ39|IF2_STRZP Translation initiation factor IF-2 OS=Strept...    33   1.0  
+sp|B2IME4|IF2_STRPS Translation initiation factor IF-2 OS=Strept...    33   1.1  
+sp|Q23915|KINX_DICDI Probable serine/threonine-protein kinase ki...    33   1.1  
+sp|Q9ZM46|IF2_HELPJ Translation initiation factor IF-2 OS=Helico...    33   1.1  
+sp|E5RHQ5|NPB11_HUMAN Nuclear pore complex-interacting protein f...    33   1.1  
+sp|C1CQ48|IF2_STRZT Translation initiation factor IF-2 OS=Strept...    33   1.2  
+sp|C1C5S8|IF2_STRP7 Translation initiation factor IF-2 OS=Strept...    33   1.2  
+sp|Q23551|UNC22_CAEEL Twitchin OS=Caenorhabditis elegans OX=6239...    33   1.2  
+sp|P15711|104K_THEPA 104 kDa microneme/rhoptry antigen OS=Theile...    33   1.3  
+sp|B5E266|IF2_STRP4 Translation initiation factor IF-2 OS=Strept...    33   1.4  
+sp|B3A0P1|DGLSP_LOTGI Aspartate, glycine, lysine and serine-rich...    33   1.4  
+sp|Q9P3K9|TYW4_NEUCR tRNA wybutosine-synthesizing protein 4 OS=N...    33   1.4  
+sp|Q0VBD2|MCM10_MOUSE Protein MCM10 homolog OS=Mus musculus OX=1...    33   1.5  
+sp|Q08GK9|HSPL_MULSU Protamine-like protein OS=Mullus surmuletus...    33   1.7  
+sp|Q9BX69|CARD6_HUMAN Caspase recruitment domain-containing prot...    33   1.7  
+sp|B1IA80|IF2_STRPI Translation initiation factor IF-2 OS=Strept...    33   1.8  
+sp|Q030K2|IF2_LACLS Translation initiation factor IF-2 OS=Lactoc...    33   1.8  
+sp|A2RM37|IF2_LACLM Translation initiation factor IF-2 OS=Lactoc...    33   1.8  
+sp|C1CCT8|IF2_STRZJ Translation initiation factor IF-2 OS=Strept...    33   1.9  
+sp|Q8DQV2|IF2_STRR6 Translation initiation factor IF-2 OS=Strept...    33   1.9  
+sp|Q04LW0|IF2_STRP2 Translation initiation factor IF-2 OS=Strept...    33   1.9  
+sp|O94397|SGF73_SCHPO SAGA-associated factor 73 OS=Schizosacchar...    33   2.0  
+sp|D3ZA12|CHD6_RAT Chromodomain-helicase-DNA-binding protein 6 O...    33   2.0  
+sp|A9BCI5|IF2_PROM4 Translation initiation factor IF-2 OS=Prochl...    33   2.0  
+sp|B2J955|IF2_NOSP7 Translation initiation factor IF-2 OS=Nostoc...    32   2.4  
+sp|Q1G9P9|IF2_LACDA Translation initiation factor IF-2 OS=Lactob...    32   2.4  
+sp|Q049V5|IF2_LACDB Translation initiation factor IF-2 OS=Lactob...    32   2.4  
+sp|O36414|LTP_ALHV1 Large tegument protein deneddylase OS=Alcela...    32   2.4  
+sp|B6H457|MIC60_PENRW MICOS complex subunit mic60 OS=Penicillium...    32   2.5  
+sp|Q7KRY6|NHK1_DROME Nucleosomal histone kinase 1 OS=Drosophila ...    32   2.9  
+sp|Q9ESZ0|XRCC1_RAT DNA repair protein XRCC1 OS=Rattus norvegicu...    32   2.9  
+sp|P43027|GDF5_MOUSE Growth/differentiation factor 5 OS=Mus musc...    32   2.9  
+sp|Q9FJL0|SMC4_ARATH Structural maintenance of chromosomes prote...    32   3.0  
+sp|Q10370|HMGYB_SOYBN HMG-Y-related protein B (Fragment) OS=Glyc...    32   3.2  
+sp|B1XI09|IF2_SYNP2 Translation initiation factor IF-2 OS=Synech...    32   3.5  
+sp|Q9HGI7|ERF3_CANMA Eukaryotic peptide chain release factor GTP...    32   3.6  
+sp|P0DH89|BBRB_ORYSJ Barley B recombinant-like protein B OS=Oryz...    32   3.7  
+sp|P0DH88|BBRA_ORYSJ Barley B recombinant-like protein A OS=Oryz...    32   3.7  
+sp|Q8FPA7|IF2_COREF Translation initiation factor IF-2 OS=Coryne...    31   4.0  
+sp|Q08DZ2|PRP4B_BOVIN Serine/threonine-protein kinase PRP4 homol...    31   4.2  
+sp|Q14008|CKAP5_HUMAN Cytoskeleton-associated protein 5 OS=Homo ...    31   4.5  
+sp|O54569|YIDC_STRCO Membrane protein insertase YidC OS=Streptom...    31   4.6  
+sp|P25992|YEMA_DROME yemanuclein OS=Drosophila melanogaster OX=7...    31   4.7  
+sp|B0CRJ3|MYO1_LACBS Myosin-1 OS=Laccaria bicolor (strain S238N-...    31   4.8  
+sp|Q1DS65|STU1_COCIM Protein STU1 OS=Coccidioides immitis (strai...    31   5.0  
+sp|Q8IVL0|NAV3_HUMAN Neuron navigator 3 OS=Homo sapiens OX=9606 ...    31   5.2  
+sp|Q9Y2B4|T53G5_HUMAN TP53-target gene 5 protein OS=Homo sapiens...    31   5.2  
+sp|P0CV39|RL101_PLAVT Secreted RxLR effector protein 101 OS=Plas...    31   5.3  
+sp|Q03164|KMT2A_HUMAN Histone-lysine N-methyltransferase 2A OS=H...    31   5.6  
+sp|P06350|H1_ONCMY Histone H1 OS=Oncorhynchus mykiss OX=8022 PE=...    31   5.7  
+sp|D3ZBN0|H15_RAT Histone H1.5 OS=Rattus norvegicus OX=10116 GN=...    31   6.1  
+sp|Q0UQJ8|STU1_PHANO Protein STU1 OS=Phaeosphaeria nodorum (stra...    31   6.2  
+sp|Q70CQ4|UBP31_HUMAN Ubiquitin carboxyl-terminal hydrolase 31 O...    31   6.2  
+sp|Q96T58|MINT_HUMAN Msx2-interacting protein OS=Homo sapiens OX...    31   6.4  
+sp|Q22992|SUMV2_CAEEL Protein sumv-2 OS=Caenorhabditis elegans O...    31   6.5  
+sp|A7ZC69|IF2_CAMC1 Translation initiation factor IF-2 OS=Campyl...    31   6.5  
+sp|Q8S237|XOAT1_ORYSJ Xylan O-acetyltransferase 1 OS=Oryza sativ...    31   6.8  
+sp|Q5M729|ODP23_ARATH Dihydrolipoyllysine-residue acetyltransfer...    31   7.2  
+sp|Q2KXY7|IF2_BORA1 Translation initiation factor IF-2 OS=Bordet...    31   7.4  
+sp|P13595|NCAM1_MOUSE Neural cell adhesion molecule 1 OS=Mus mus...    31   7.6  
+sp|Q8VIG1|REST_MOUSE RE1-silencing transcription factor OS=Mus m...    31   7.8  
+sp|B2VJ55|PROQ_ERWT9 RNA chaperone ProQ OS=Erwinia tasmaniensis ...    31   8.2  
+sp|Q6YW46|EF1G2_ORYSJ Elongation factor 1-gamma 2 OS=Oryza sativ...    31   8.2  
+sp|Q9VYD1|C1716_DROME Probable histone-lysine N-methyltransferas...    30   8.8  
+sp|Q68F67|DEN1A_XENLA DENN domain-containing protein 1A OS=Xenop...    30   9.0  
+sp|Q13523|PRP4B_HUMAN Serine/threonine-protein kinase PRP4 homol...    30   9.2  
+sp|B6QL24|SLX4_TALMQ Structure-specific endonuclease subunit slx...    30   9.6  
+sp|Q52KK4|NAF1_RAT H/ACA ribonucleoprotein complex non-core subu...    30   9.6  
+sp|Q5R814|PRP4B_PONAB Serine/threonine-protein kinase PRP4 homol...    30   10.0 
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|A2ASS6|TITIN_MOUSE Titin OS=Mus musculus OX=10090 GN=Ttn PE=1...   116   1e-25
+sp|Q149N8|SHPRH_HUMAN E3 ubiquitin-protein ligase SHPRH OS=Homo ...   106   8e-23
+sp|Q7TPQ3|SHPRH_MOUSE E3 ubiquitin-protein ligase SHPRH OS=Mus m...   100   8e-21
+sp|O01761|UNC89_CAEEL Muscle M-line assembly protein unc-89 OS=C...    97   7e-20
+sp|P40267|H1_SOLPN Histone H1 OS=Solanum pennellii OX=28526 PE=2...    86   2e-16
+sp|Q6WLH3|SMH5_MAIZE Single myb histone 5 OS=Zea mays OX=4577 GN...    83   1e-15
+sp|Q6WLH4|SMH3_MAIZE Single myb histone 3 OS=Zea mays OX=4577 GN...    82   2e-15
+sp|Q9M2X3|TRB3_ARATH Telomere repeat-binding factor 3 OS=Arabido...    77   9e-14
+sp|C0HIA3|SMH6_MAIZE Single myb histone 6 OS=Zea mays OX=4577 GN...    76   1e-13
+sp|Q8W119|SMH4_MAIZE Single myb histone 4 OS=Zea mays OX=4577 GN...    75   3e-13
+sp|P10771|H24_CAEEL Histone 24 OS=Caenorhabditis elegans OX=6239...    74   6e-13
+sp|P15870|H1D_STRPU Histone H1-delta OS=Strongylocentrotus purpu...    73   1e-12
+sp|Q18336|H1X_CAEEL Histone H1.X OS=Caenorhabditis elegans OX=62...    73   1e-12
+sp|O17536|H14_CAEEL Histone H1.4 OS=Caenorhabditis elegans OX=62...    73   2e-12
+sp|B4FT40|SMH2_MAIZE Single myb histone 2 OS=Zea mays OX=4577 GN...    72   2e-12
+sp|Q94972|H13_DROVI Histone H1.3 OS=Drosophila virilis OX=7244 G...    71   6e-12
+sp|Q94555|H12_DROVI Histone H1.2 OS=Drosophila virilis OX=7244 G...    71   6e-12
+sp|Q08865|H12_VOLCA Histone H1-II OS=Volvox carteri OX=3067 GN=H...    70   1e-11
+sp|F4I7L1|TRB4_ARATH Telomere repeat-binding factor 4 OS=Arabido...    70   1e-11
+sp|Q08864|H11_VOLCA Histone H1-I OS=Volvox carteri OX=3067 GN=H1...    68   3e-11
+sp|P54671|H1_DICDI Histone H1 OS=Dictyostelium discoideum OX=446...    68   3e-11
+sp|P26569|H12_ARATH Histone H1.2 OS=Arabidopsis thaliana OX=3702...    68   4e-11
+sp|Q9FJW5|TRB2_ARATH Telomere repeat-binding factor 2 OS=Arabido...    68   5e-11
+sp|Q8VWK4|TRB1_ARATH Telomere repeat-binding factor 1 OS=Arabido...    68   5e-11
+sp|F4IEY4|TRB5_ARATH Telomere repeat-binding factor 5 OS=Arabido...    68   6e-11
+sp|Q86QH9|H1L1_OSTED Sperm-specific H1/protamine-like protein ty...    67   7e-11
+sp|Q24704|H11_DROVI Histone H1.1 OS=Drosophila virilis OX=7244 G...    67   7e-11
+sp|Q6WS85|SMH1_MAIZE Single myb histone 1 OS=Zea mays OX=4577 GN...    67   9e-11
+sp|P40266|H11_GLYSA Histone H1-I OS=Glyptotendipes salinus OX=33...    67   1e-10
+sp|P02255|H1_DROME Histone H1 OS=Drosophila melanogaster OX=7227...    67   1e-10
+sp|P40278|H1E_CHITE Histone H1E OS=Chironomus tentans OX=7153 PE...    65   3e-10
+sp|Q86QI0|H1L2_OSTED Sperm-specific H1/protamine-like protein ty...    65   4e-10
+sp|P17268|H1_DROHY Histone H1 OS=Drosophila hydei OX=7224 GN=His...    65   5e-10
+sp|P26568|H11_ARATH Histone H1.1 OS=Arabidopsis thaliana OX=3702...    64   6e-10
+sp|P27806|H1_WHEAT Histone H1 OS=Triticum aestivum OX=4565 PE=2 ...    64   6e-10
+sp|P02259|H5_CHICK Histone H5 OS=Gallus gallus OX=9031 PE=1 SV=2       63   1e-09
+sp|P40263|H11_GLYBA Histone H1-I OS=Glyptotendipes barbipes OX=3...    63   1e-09
+sp|O16277|H16_CAEEL Putative histone H1.6 OS=Caenorhabditis eleg...    62   2e-09
+sp|Q9M5W4|H1_EUPES Histone H1 OS=Euphorbia esula OX=3993 PE=2 SV=1     62   4e-09
+sp|P06895|H1B_PLADU Histone H1B, sperm OS=Platynereis dumerilii ...    60   8e-09
+sp|P06144|H1_LYTPI Late histone H1 OS=Lytechinus pictus OX=7653 ...    60   1e-08
+sp|P23444|H1_MAIZE Histone H1 OS=Zea mays OX=4577 PE=2 SV=2            60   2e-08
+sp|Q19743|H13_CAEEL Histone H1.3 OS=Caenorhabditis elegans OX=62...    60   2e-08
+sp|P40265|H13_GLYBA Histone H1-III OS=Glyptotendipes barbipes OX...    59   2e-08
+sp|P21895|H1_CHITH Histone H1 OS=Chironomus thummi thummi OX=715...    59   2e-08
+sp|P37218|H1_SOLLC Histone H1 OS=Solanum lycopersicum OX=4081 PE...    59   2e-08
+sp|P35060|H1_TIGCA Histone H1 OS=Tigriopus californicus OX=6832 ...    58   5e-08
+sp|P15796|H12_CAEEL Histone H1.2 OS=Caenorhabditis elegans OX=62...    58   5e-08
+sp|P82899|H1B_OLILU Histone H1B (Fragment) OS=Olisthodiscus lute...    57   1e-07
+sp|P40277|H1C_CHITE Histone H1C OS=Chironomus tentans OX=7153 PE...    57   1e-07
+sp|P40276|H1B_CHITE Histone H1B OS=Chironomus tentans OX=7153 PE...    56   2e-07
+sp|P19375|H1E_STRPU Histone H1, early embryonic OS=Strongylocent...    55   3e-07
+sp|P40275|H1A_CHITE Histone H1A OS=Chironomus tentans OX=7153 PE...    55   4e-07
+sp|P40262|H1E_CHIPA Histone H1E OS=Chironomus pallidivittatus OX...    55   5e-07
+sp|Q43386|HMGYA_ARATH HMG-Y-related protein A OS=Arabidopsis tha...    55   5e-07
+sp|P08283|H1_PEA Histone H1 OS=Pisum sativum OX=3888 PE=2 SV=1         55   5e-07
+sp|Q9FYS5|HMGYA_MAIZE HMG-Y-related protein A OS=Zea mays OX=457...    54   6e-07
+sp|P82898|H1A_OLILU Histone H1A (Fragment) OS=Olisthodiscus lute...    54   9e-07
+sp|Q07134|H1O_CHITH Histone H1, orphon OS=Chironomus thummi thum...    53   9e-07
+sp|P07796|H1G_STRPU Histone H1-gamma, late OS=Strongylocentrotus...    53   1e-06
+sp|P06894|H1A_PLADU Histone H1A, sperm OS=Platynereis dumerilii ...    52   3e-06
+sp|P02257|H1_ECHCR Histone H1, gonadal (Fragment) OS=Echinolampa...    52   4e-06
+sp|Q00423|HMGYA_SOYBN HMG-Y-related protein A OS=Glycine max OX=...    51   5e-06
+sp|Q6NVM0|H10_XENTR Histone H1.0 OS=Xenopus tropicalis OX=8364 G...    51   6e-06
+sp|P22844|H10B_XENLA Histone H1.0-B OS=Xenopus laevis OX=8355 GN...    51   7e-06
+sp|P15869|H1B_STRPU Histone H1-beta, late embryonic OS=Strongylo...    51   7e-06
+sp|P22845|H10A_XENLA Histone H1.0-A OS=Xenopus laevis OX=8355 GN...    50   9e-06
+sp|P40264|H12_GLYBA Histone H1-II OS=Glyptotendipes barbipes OX=...    48   4e-05
+sp|P43278|H10_RAT Histone H1.0 OS=Rattus norvegicus OX=10116 GN=...    47   8e-05
+sp|Q99281|H11E_PARAN Histone H1.1, embryonic (Fragments) OS=Pare...    46   1e-04
+sp|Q9UV33|H1_ASCIM Histone H1 OS=Ascobolus immersus OX=5191 PE=3...    45   5e-04
+
+Sequences not found previously or not previously below threshold:
+
+sp|O01833|H15_CAEEL Histone H1.5 OS=Caenorhabditis elegans OX=62...    57   9e-08
+sp|Q9Y493|ZAN_HUMAN Zonadhesin OS=Homo sapiens OX=9606 GN=ZAN PE...    55   3e-07
+sp|P02256|H1_PARAN Histone H1, gonadal OS=Parechinus angulosus O...    54   6e-07
+sp|Q05831|H1L_MYTTR Sperm-specific protein PHI-2B/PHI-3 OS=Mytil...    53   2e-06
+sp|P07305|H10_HUMAN Histone H1.0 OS=Homo sapiens OX=9606 GN=H1-0...    53   2e-06
+sp|Q5NVN9|H10_PONAB Histone H1.0 OS=Pongo abelii OX=9601 GN=H1-0...    52   2e-06
+sp|P10922|H10_MOUSE Histone H1.0 OS=Mus musculus OX=10090 GN=H1-...    51   5e-06
+sp|Q0IIJ2|H10_BOVIN Histone H1.0 OS=Bos taurus OX=9913 GN=H1-0 P...    51   5e-06
+sp|Q3HNG7|H18_BOVIN Histone H1.8 OS=Bos taurus OX=9913 GN=H1-8 P...    50   1e-05
+sp|P22974|H1L_MYTCA Sperm-specific protein PHI-2B OS=Mytilus cal...    50   1e-05
+sp|P06513|H5_CAIMO Histone H5 OS=Cairina moschata OX=8855 PE=2 SV=2    48   3e-05
+sp|Q9P8F8|H1_EMENI Histone H1 OS=Emericella nidulans (strain FGS...    48   3e-05
+sp|P50942|INP52_YEAST Polyphosphatidylinositol phosphatase INP52...    48   5e-05
+sp|Q28983|ZAN_PIG Zonadhesin OS=Sus scrofa OX=9823 GN=ZAN PE=1 SV=1    48   6e-05
+sp|P02258|H5_ANSAN Histone H5 OS=Anser anser anser OX=8844 PE=1 ...    48   6e-05
+sp|P53551|H1_YEAST Histone H1 OS=Saccharomyces cerevisiae (strai...    46   2e-04
+sp|Q8BRB7|KAT6B_MOUSE Histone acetyltransferase KAT6B OS=Mus mus...    46   2e-04
+sp|Q8IZA3|H18_HUMAN Histone H1.8 OS=Homo sapiens OX=9606 GN=H1-8...    46   2e-04
+sp|O35821|MBB1A_RAT Myb-binding protein 1A OS=Rattus norvegicus ...    46   2e-04
+sp|Q8WZ42|TITIN_HUMAN Titin OS=Homo sapiens OX=9606 GN=TTN PE=1 ...    45   3e-04
+sp|Q75C22|H1_ASHGO Histone H1 OS=Ashbya gossypii (strain ATCC 10...    45   3e-04
+sp|P19334|TRP_DROME Transient receptor potential protein OS=Dros...    45   4e-04
+sp|Q2EG98|PK1L3_MOUSE Polycystic kidney disease protein 1-like 3...    45   5e-04
+sp|P27203|H1L5_ENSMI Histone H1-like protein EM5 (Fragment) OS=E...    44   6e-04
+sp|P15868|H1_PSAMI Histone H1 (Fragment) OS=Psammechinus miliari...    43   0.001
+sp|Q99284|H1S_SPHGR Histone H1, sperm (Fragments) OS=Sphaerechin...    43   0.001
+sp|Q5B0D0|APTA_EMENI Non-reducing polyketide synthase aptA OS=Em...    43   0.001
+sp|Q7ZUM8|UBP44_DANRE Ubiquitin carboxyl-terminal hydrolase 44 O...    43   0.001
+sp|Q8WML3|KAT6B_MACFA Histone acetyltransferase KAT6B OS=Macaca ...    43   0.001
+sp|P15308|B4_XENLA Protein B4 OS=Xenopus laevis OX=8355 GN=b4 PE...    43   0.002
+sp|P17519|P1_PLRV1 Protein P1 OS=Potato leafroll virus (strain P...    42   0.003
+sp|Q8WYB5|KAT6B_HUMAN Histone acetyltransferase KAT6B OS=Homo sa...    42   0.003
+sp|Q4A6S2|SECA_MYCS5 Protein translocase subunit SecA OS=Mycopla...    41   0.004
+sp|Q24574|UBPE_DROME Ubiquitin carboxyl-terminal hydrolase 47 OS...    41   0.004
+sp|Q8J0U2|H1_NEUCR Histone H1 OS=Neurospora crassa (strain ATCC ...    41   0.006
+sp|Q6FJX6|H1_CANGA Histone H1 OS=Candida glabrata (strain ATCC 2...    40   0.008
+sp|P11622|P1_PLRVW Protein P1 OS=Potato leafroll virus (strain P...    40   0.009
+sp|Q7TPV4|MBB1A_MOUSE Myb-binding protein 1A OS=Mus musculus OX=...    40   0.012
+sp|D3ZA12|CHD6_RAT Chromodomain-helicase-DNA-binding protein 6 O...    40   0.016
+sp|A1ZA92|NOL9_DROME Polynucleotide 5'-hydroxyl-kinase NOL9 OS=D...    39   0.021
+sp|A6Q1M4|RPOC_NITSB DNA-directed RNA polymerase subunit beta' O...    39   0.024
+sp|Q01879|TOP2_PICGU DNA topoisomerase 2 OS=Meyerozyma guillierm...    39   0.027
+sp|P16884|NFH_RAT Neurofilament heavy polypeptide OS=Rattus norv...    38   0.032
+sp|Q8VIK3|H18_MOUSE Histone H1.8 OS=Mus musculus OX=10090 GN=H1....    38   0.033
+sp|Q8LK56|DME_ARATH Transcriptional activator DEMETER OS=Arabido...    38   0.039
+sp|P12036|NFH_HUMAN Neurofilament heavy polypeptide OS=Homo sapi...    38   0.040
+sp|P12255|FHAB_BORPE Filamentous hemagglutinin OS=Bordetella per...    38   0.047
+sp|P19246|NFH_MOUSE Neurofilament heavy polypeptide OS=Mus muscu...    38   0.067
+sp|D3ZBN0|H15_RAT Histone H1.5 OS=Rattus norvegicus OX=10116 GN=...    38   0.068
+sp|P59811|YIDC_STRAW Membrane protein insertase YidC OS=Streptom...    37   0.072
+sp|Q5SSJ5|HP1B3_HUMAN Heterochromatin protein 1-binding protein ...    37   0.084
+sp|Q08DU9|HP1B3_BOVIN Heterochromatin protein 1-binding protein ...    37   0.088
+sp|O13046|WDHD1_XENLA WD repeat and HMG-box DNA-binding protein ...    37   0.091
+sp|Q6P747|HP1B3_RAT Heterochromatin protein 1-binding protein 3 ...    37   0.095
+sp|P0CP00|MYO1_CRYNJ Myosin-1 OS=Cryptococcus neoformans var. ne...    36   0.19 
+sp|P0CP01|MYO1_CRYNB Myosin-1 OS=Cryptococcus neoformans var. ne...    36   0.19 
+sp|Q04322|GYL1_YEAST Probable GTPase-activating protein GYL1 OS=...    36   0.21 
+sp|Q3TEA8|HP1B3_MOUSE Heterochromatin protein 1-binding protein ...    36   0.22 
+sp|A8DYP0|OBSCN_DROME Obscurin OS=Drosophila melanogaster OX=722...    36   0.25 
+sp|Q2M2I8|AAK1_HUMAN AP2-associated protein kinase 1 OS=Homo sap...    35   0.32 
+sp|Q70XJ9|LEVS_FRUSA Levansucrase OS=Fructilactobacillus sanfran...    35   0.34 
+sp|P9WHW5|PSTP_MYCTU Serine/threonine protein phosphatase PstP O...    35   0.35 
+sp|Q10370|HMGYB_SOYBN HMG-Y-related protein B (Fragment) OS=Glyc...    35   0.36 
+sp|O13166|TLE3A_DANRE Transducin-like enhancer protein 3-A OS=Da...    35   0.37 
+sp|P9WHW4|PSTP_MYCTO Serine/threonine protein phosphatase PstP O...    35   0.37 
+sp|Q9V7H4|TM131_DROME Transmembrane protein 131 homolog OS=Droso...    35   0.37 
+sp|Q9QYX7|PCLO_MOUSE Protein piccolo OS=Mus musculus OX=10090 GN...    35   0.42 
+sp|P06786|TOP2_YEAST DNA topoisomerase 2 OS=Saccharomyces cerevi...    35   0.45 
+sp|A1VE93|RS13_DESVV 30S ribosomal protein S13 OS=Desulfovibrio ...    35   0.47 
+sp|Q72CF7|RS13_DESVH 30S ribosomal protein S13 OS=Desulfovibrio ...    35   0.47 
+sp|Q6P5Z2|PKN3_HUMAN Serine/threonine-protein kinase N3 OS=Homo ...    35   0.47 
+sp|Q5ZM33|HP1B3_CHICK Heterochromatin protein 1-binding protein ...    35   0.54 
+sp|Q30Z65|RS13_OLEA2 30S ribosomal protein S13 OS=Oleidesulfovib...    34   0.62 
+sp|P35074|RPB1_CAEBR DNA-directed RNA polymerase II subunit RPB1...    34   0.63 
+sp|Q14839|CHD4_HUMAN Chromodomain-helicase-DNA-binding protein 4...    34   0.71 
+sp|Q22992|SUMV2_CAEEL Protein sumv-2 OS=Caenorhabditis elegans O...    34   0.77 
+sp|B0CRJ3|MYO1_LACBS Myosin-1 OS=Laccaria bicolor (strain S238N-...    34   0.82 
+sp|P16053|NFM_CHICK Neurofilament medium polypeptide OS=Gallus g...    34   0.91 
+sp|P40286|H1T_MACMU Histone H1t OS=Macaca mulatta OX=9544 GN=H1-...    33   1.0  
+sp|A5KAL1|FEN1_PLAVS Flap endonuclease 1 OS=Plasmodium vivax (st...    33   1.3  
+sp|Q3U3D7|T131L_MOUSE Transmembrane protein 131-like OS=Mus musc...    33   1.3  
+sp|Q8WUA4|TF3C2_HUMAN General transcription factor 3C polypeptid...    33   1.4  
+sp|P49610|STRH_STRPN Beta-N-acetylhexosaminidase OS=Streptococcu...    33   1.4  
+sp|P45384|IGA2_HAEIF Immunoglobulin A1 protease autotransporter ...    33   1.5  
+sp|P44969|IGA0_HAEIN Immunoglobulin A1 protease autotransporter ...    33   1.5  
+sp|P15205|MAP1B_RAT Microtubule-associated protein 1B OS=Rattus ...    33   1.6  
+sp|Q3YEC7|RABL6_HUMAN Rab-like protein 6 OS=Homo sapiens OX=9606...    33   1.6  
+sp|Q56X46|MSL2_ARATH Mechanosensitive ion channel protein 2, chl...    33   1.7  
+sp|Q4JV51|IF2_CORJK Translation initiation factor IF-2 OS=Coryne...    33   1.7  
+sp|Q148V8|FA83H_MOUSE Protein FAM83H OS=Mus musculus OX=10090 GN...    33   1.8  
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    33   1.9  
+sp|P55802|LPP_MYCMS Uncharacterized lipoprotein lpp OS=Mycoplasm...    33   1.9  
+sp|P9WGI1|SIGA_MYCTU RNA polymerase sigma factor SigA OS=Mycobac...    33   2.0  
+sp|P9WGI0|SIGA_MYCTO RNA polymerase sigma factor SigA OS=Mycobac...    33   2.0  
+sp|P0A603|SIGA_MYCBO RNA polymerase sigma factor SigA OS=Mycobac...    33   2.0  
+sp|Q5RDC3|TF3C2_PONAB General transcription factor 3C polypeptid...    33   2.0  
+sp|O14139|HRP3_SCHPO Chromodomain helicase hrp3 OS=Schizosacchar...    33   2.0  
+sp|Q1LZ53|DNM3A_RAT DNA (cytosine-5)-methyltransferase 3A OS=Rat...    33   2.1  
+sp|Q8TD26|CHD6_HUMAN Chromodomain-helicase-DNA-binding protein 6...    33   2.1  
+sp|G3N131|H11_BOVIN Histone H1.1 OS=Bos taurus OX=9913 GN=H1-1 P...    33   2.2  
+sp|C7DZK3|CRA1A_DANRE Collagen alpha-1(XXVII) chain A OS=Danio r...    33   2.2  
+sp|O74718|ERF3_SCHPO Eukaryotic peptide chain release factor GTP...    32   2.3  
+sp|P06350|H1_ONCMY Histone H1 OS=Oncorhynchus mykiss OX=8022 PE=...    32   2.3  
+sp|Q5U249|ELYS_XENLA Protein ELYS OS=Xenopus laevis OX=8355 GN=a...    32   2.3  
+sp|Q07133|H1T_MOUSE Histone H1t OS=Mus musculus OX=10090 GN=H1-6...    32   2.3  
+sp|Q8FPA7|IF2_COREF Translation initiation factor IF-2 OS=Coryne...    32   2.4  
+sp|Q16VC0|TRM5_AEDAE tRNA (guanine(37)-N1)-methyltransferase OS=...    32   2.6  
+sp|Q9HZ55|RLUB_PSEAE Ribosomal large subunit pseudouridine synth...    32   2.9  
+sp|Q6P2L6|NSD3_MOUSE Histone-lysine N-methyltransferase NSD3 OS=...    32   3.0  
+sp|P16402|H13_HUMAN Histone H1.3 OS=Homo sapiens OX=9606 GN=H1-3...    32   3.0  
+sp|A8XJN7|FKH02_CAEBR Forkhead box protein fkh-2 OS=Caenorhabdit...    32   3.1  
+sp|Q64399|TOP2B_CRILO DNA topoisomerase 2-beta OS=Cricetulus lon...    32   3.2  
+sp|Q9BX69|CARD6_HUMAN Caspase recruitment domain-containing prot...    32   3.2  
+sp|Q14008|CKAP5_HUMAN Cytoskeleton-associated protein 5 OS=Homo ...    32   3.3  
+sp|Q14966|ZN638_HUMAN Zinc finger protein 638 OS=Homo sapiens OX...    32   3.3  
+sp|A7MB10|RRP5_BOVIN Protein RRP5 homolog OS=Bos taurus OX=9913 ...    31   4.0  
+sp|Q4IAK7|SWR1_GIBZE Helicase SWR1 OS=Gibberella zeae (strain AT...    31   4.1  
+sp|O15056|SYNJ2_HUMAN Synaptojanin-2 OS=Homo sapiens OX=9606 GN=...    31   4.4  
+sp|Q9HDC5|JPH1_HUMAN Junctophilin-1 OS=Homo sapiens OX=9606 GN=J...    31   4.4  
+sp|P43276|H15_MOUSE Histone H1.5 OS=Mus musculus OX=10090 GN=H1-...    31   4.4  
+sp|Q92522|H1X_HUMAN Histone H1.10 OS=Homo sapiens OX=9606 GN=H1-...    31   4.5  
+sp|O54569|YIDC_STRCO Membrane protein insertase YidC OS=Streptom...    31   4.5  
+sp|P22975|H1L_SPISO Sperm-specific protein PL-I (Fragment) OS=Sp...    31   4.9  
+sp|P34427|LIN36_CAEEL Protein lin-36 OS=Caenorhabditis elegans O...    31   5.1  
+sp|Q1DU03|SET2_COCIM Histone-lysine N-methyltransferase, H3 lysi...    31   5.4  
+sp|P18887|XRCC1_HUMAN DNA repair protein XRCC1 OS=Homo sapiens O...    31   5.4  
+sp|Q53654|CNA_STAAU Collagen adhesin OS=Staphylococcus aureus OX...    31   5.5  
+sp|Q9REM8|ADP2_MYCGA Adhesin P1 OS=Mycoplasmoides gallisepticum ...    31   5.9  
+sp|Q3SKX1|IF2_THIDA Translation initiation factor IF-2 OS=Thioba...    31   6.0  
+sp|P14199|REF2P_DROME Protein ref(2)P OS=Drosophila melanogaster...    31   6.1  
+sp|Q5SMU7|ORC1_ORYSJ Origin of replication complex subunit 1 OS=...    31   6.2  
+sp|P45386|IGA4_HAEIF Immunoglobulin A1 protease autotransporter ...    31   6.2  
+sp|Q49379|ADP1_MYCGL Adhesin P1 OS=Mycoplasmoides gallisepticum ...    31   6.2  
+sp|Q25460|FP1_MYTED Adhesive plaque matrix protein (Fragment) OS...    31   6.3  
+sp|Q13459|MYO9B_HUMAN Unconventional myosin-IXb OS=Homo sapiens ...    31   6.3  
+sp|P13595|NCAM1_MOUSE Neural cell adhesion molecule 1 OS=Mus mus...    31   6.4  
+sp|P35600|RFC1_DROME Replication factor C subunit 1 OS=Drosophil...    31   6.7  
+sp|P45699|GUNK_FUSOX Putative endoglucanase type K OS=Fusarium o...    31   7.1  
+sp|A1KV51|IF2_NEIMF Translation initiation factor IF-2 OS=Neisse...    31   7.2  
+sp|Q9BZ95|NSD3_HUMAN Histone-lysine N-methyltransferase NSD3 OS=...    31   7.4  
+sp|D4A3K5|H11_RAT Histone H1.1 OS=Rattus norvegicus OX=10116 GN=...    31   7.6  
+sp|Q1HVH9|LTP_EBVA8 Large tegument protein deneddylase OS=Epstei...    31   7.7  
+sp|Q47BM0|ASSY_DECAR Argininosuccinate synthase OS=Dechloromonas...    31   7.9  
+sp|Q9PU36|PCLO_CHICK Protein piccolo (Fragment) OS=Gallus gallus...    31   8.0  
+sp|P42522|MYOC_DICDI Myosin IC heavy chain OS=Dictyostelium disc...    31   8.1  
+sp|Q9JTB5|IF2_NEIMA Translation initiation factor IF-2 OS=Neisse...    31   8.3  
+sp|F1SPM8|AAK1_PIG AP2-associated protein kinase 1 OS=Sus scrofa...    30   8.7  
+sp|A1R8R7|RS13_PAEAT 30S ribosomal protein S13 OS=Paenarthrobact...    30   9.2  
+sp|A0JZ51|RS13_ARTS2 30S ribosomal protein S13 OS=Arthrobacter s...    30   9.3  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.291    0.110    0.241 
+
+Lambda     K      H
+   0.267   0.0337    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 139,982,904
+Number of Sequences: 569516
+Number of extensions: 4257768
+Number of successful extensions: 57118
+Number of sequences better than 10.0: 1881
+Number of HSP's better than 10.0 without gapping: 1866
+Number of HSP's successfully gapped in prelim test: 2342
+Number of HSP's that attempted gapping in prelim test: 36461
+Number of HSP's gapped (non-prelim): 14981
+length of query: 202
+length of database: 205,866,895
+effective HSP length: 112
+effective length of query: 90
+effective length of database: 142,081,103
+effective search space: 12787299270
+effective search space used: 12787299270
+T: 11
+A: 40
+X1: 16 ( 6.7 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 43 (21.2 bits)
+S2: 66 (30.3 bits)

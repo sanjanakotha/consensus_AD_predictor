@@ -1,0 +1,752 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (1246 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q27746|DNMT1_PARLI DNA (cytosine-5)-methyltransferase PliMCI ...  1397   0.0  
+sp|Q92072|DNMT1_CHICK DNA (cytosine-5)-methyltransferase 1 OS=Ga...  1392   0.0  
+sp|Q24K09|DNMT1_BOVIN DNA (cytosine-5)-methyltransferase 1 OS=Bo...  1362   0.0  
+sp|P26358|DNMT1_HUMAN DNA (cytosine-5)-methyltransferase 1 OS=Ho...  1350   0.0  
+sp|P13864|DNMT1_MOUSE DNA (cytosine-5)-methyltransferase 1 OS=Mu...  1335   0.0  
+sp|Q9Z330|DNMT1_RAT DNA (cytosine-5)-methyltransferase 1 OS=Ratt...  1266   0.0  
+sp|B1Q3J6|DNM1B_ORYSJ DNA (cytosine-5)-methyltransferase 1B OS=O...   533   e-150
+sp|Q7Y1I7|DNM1A_ORYSJ DNA (cytosine-5)-methyltransferase 1A OS=O...   528   e-148
+sp|P34881|DNMT1_ARATH DNA (cytosine-5)-methyltransferase 1 OS=Ar...   507   e-142
+sp|Q9M0S8|DNMT2_ARATH DNA (cytosine-5)-methyltransferase 2 OS=Ar...   479   e-134
+sp|O23273|DNMT4_ARATH DNA (cytosine-5)-methyltransferase 4 OS=Ar...   467   e-130
+sp|Q9T0I1|DNMT3_ARATH DNA (cytosine-5)-methyltransferase 3 OS=Ar...   444   e-123
+sp|A0A0P0VUY4|CMT1_ORYSJ DNA (cytosine-5)-methyltransferase CMT1...   207   3e-52
+sp|Q5KQL9|CMT2_ORYSJ DNA (cytosine-5)-methyltransferase CMT2 OS=...   198   2e-49
+sp|Q94F88|CMT3_ARATH DNA (cytosine-5)-methyltransferase CMT3 OS=...   197   4e-49
+sp|C0SQ89|CMT3_ORYSJ DNA (cytosine-5)-methyltransferase CMT3 OS=...   193   9e-48
+sp|Q9ARI6|CMT2_MAIZE DNA (cytosine-5)-methyltransferase 2 OS=Zea...   189   2e-46
+sp|Q8LPU5|CMT3_MAIZE DNA (cytosine-5)-methyltransferase 3 OS=Zea...   188   2e-46
+sp|Q9AXT8|CMT1_MAIZE DNA (cytosine-5)-methyltransferase 1 OS=Zea...   187   4e-46
+sp|O49139|CMT1_ARATH Putative DNA (cytosine-5)-methyltransferase...   184   3e-45
+sp|Q94F87|CMT2_ARATH DNA (cytosine-5)-methyltransferase CMT2 OS=...   181   3e-44
+sp|P94147|MTA1_THAGE Type II methyltransferase M.AgeI OS=Thalass...   179   9e-44
+sp|P05302|MTD1_DESNO Type II methyltransferase M.DdeI OS=Desulfo...   125   2e-27
+sp|O52702|MTA1_ACEPA Type II methyltransferase M.ApaLI OS=Acetob...   120   5e-26
+sp|P52311|MTX2_XANOR Type II methyltransferase M.XorII OS=Xantho...   108   4e-22
+sp|P50192|MTHA_HAEPH Type II methyltransferase M1.HphI OS=Haemop...   106   1e-21
+sp|P25262|MTB1_HERAU Type II methyltransferase M.HgiBI OS=Herpet...   102   3e-20
+sp|P25266|MTE1_HERAU Type II methylase M.HgiEI OS=Herpetosiphon ...    99   2e-19
+sp|P25263|MTC1_HERAU Type II methyltransferase M.HgiCI OS=Herpet...    97   1e-18
+sp|P34882|MTAA_SYNP2 Type II methyltransferase M.AquIA OS=Synech...    94   9e-18
+sp|O33481|MTP1_PSYTA Type II methyltransferase M.PspPI OS=Psychr...    92   4e-17
+sp|P45000|MTH5_HAEIN Type II methyltransferase M.HindV OS=Haemop...    87   1e-15
+sp|Q8EL95|MT36_OCEIH Putative type II methyltransferase M.OihORF...    81   5e-14
+sp|Q59606|MTF7_NEIGO Type II methyltransferase M.NgoFVII OS=Neis...    81   7e-14
+sp|P34877|MTSA_LACLC Type II methyltransferase M1.ScrFI OS=Lacto...    79   3e-13
+sp|P23737|MTS9_STAAU Type II methyltransferase M.Sau96I OS=Staph...    77   1e-12
+sp|P09795|MTS1_SALIN Type II methyltransferase M.SinI OS=Salmone...    77   1e-12
+sp|P06530|MTBR_BACIU Type II methyltransferase M.BsuRI OS=Bacill...    76   2e-12
+sp|P50196|MTE8_ECOLX Type II methyltransferase M.Eco47II OS=Esch...    75   4e-12
+sp|P00476|MTBS_BPSPR Orphan methyltransferase M.SPRI OS=Bacillus...    75   5e-12
+sp|P17044|MTBF_BACIU Type II methyltransferase M.BsuFI OS=Bacill...    74   8e-12
+sp|O34939|YDIO_BACSU Type II methyltransferase M1.BsuMI OS=Bacil...    74   8e-12
+sp|P16668|MTS3_STAAU Type II methyltransferase M.Sau3AI OS=Staph...    74   8e-12
+sp|P0AED9|DCM_ECOLI DNA-cytosine methyltransferase OS=Escherichi...    74   1e-11
+sp|P0AEE0|DCM_ECO57 DNA-cytosine methyltransferase OS=Escherichi...    74   1e-11
+sp|O14717|TRDMT_HUMAN tRNA (cytosine(38)-C(5))-methyltransferase...    73   1e-11
+sp|P19888|MTBA_ANEAE Type II methyltransferase M.BanI OS=Aneurin...    73   2e-11
+sp|P09915|MTBR_BPRH1 Orphan methyltransferase M.Rho11sI OS=Bacil...    72   4e-11
+sp|P31033|MTM4_NEIGO Type II methyltransferase M.NgoMIV OS=Neiss...    72   5e-11
+sp|P43420|MTB6_BACSF Type II methyltransferase M.Bsp6I OS=Bacill...    71   7e-11
+sp|P25264|MTC2_HERAU Type II methyltransferase M.HgiCII OS=Herpe...    70   9e-11
+sp|Q58600|MTM7_METJA Putative type II methyltransferase M.MjaORF...    70   1e-10
+sp|O55055|TRDMT_MOUSE tRNA (cytosine(38)-C(5))-methyltransferase...    70   2e-10
+sp|P08455|MTP2_NEIGO Type II methyltransferase M.NgoPII OS=Neiss...    69   2e-10
+sp|P50188|MTN1_LENAE Type II methyltransferase M.NaeI OS=Lentzea...    69   4e-10
+sp|P24600|MTD1_HERAU Type II methyltransferase M.HgiDI OS=Herpet...    69   4e-10
+sp|P25265|MTD2_HERAU Type II methylase M.HgiDII OS=Herpetosiphon...    68   4e-10
+sp|P05102|MTH1_HAEPH Type II methyltransferase M.HhaI OS=Haemoph...    68   5e-10
+sp|P34879|MTS2_SHISO Type II methyltransferase M.SsoII OS=Shigel...    68   5e-10
+sp|P24581|MTNX_NEILA Type II methyltransferase M.NlaX OS=Neisser...    68   5e-10
+sp|P34906|MTF1_FUSNU Type II methyltransferase M.FnuDI OS=Fusoba...    67   8e-10
+sp|P11408|MTM1_MORSP Type II methyltransferase M.MspI OS=Moraxel...    67   1e-09
+sp|Q59603|MTB1_NEIGO Type II methyltransferase M.NgoBI OS=Neisse...    66   2e-09
+sp|P05101|MTE2_ECOLX Type II methyltransferase M.EcoRII OS=Esche...    65   3e-09
+sp|Q4G073|TRDMT_RAT tRNA (cytosine(38)-C(5))-methyltransferase O...    65   3e-09
+sp|D4ZX35|MTAP_ARTPN Type II methyltransferase M.AplI OS=Arthros...    65   4e-09
+sp|Q9VHH9|JHD1_DROME JmjC domain-containing histone demethylatio...    65   5e-09
+sp|P50182|MTN4_NEILA Type II methyltransferase M.NlaIV OS=Neisse...    64   1e-08
+sp|Q59605|MTB5_NEIGO Type II methyltransferase M.NgoBV OS=Neisse...    63   1e-08
+sp|Q57983|MT51_METJA Putative type II methyltransferase M.MJ0563...    63   2e-08
+sp|Q7YS61|TRDMT_BOVIN tRNA (cytosine(38)-C(5))-methyltransferase...    63   2e-08
+sp|P0DW08|MTB1_BACP9 Type II methyltransferase M.Bpa9945I OS=Bac...    62   2e-08
+sp|P13906|MTB1_LYSSH Type II methyltransferase M.BspRI OS=Lysini...    62   2e-08
+sp|P25282|MTG1_AVIVO Type II methyltransferase M1.HgaI OS=Avibac...    62   4e-08
+sp|Q03164|KMT2A_HUMAN Histone-lysine N-methyltransferase 2A OS=H...    60   1e-07
+sp|Q9YDP3|MT872_AERPE DNA (cytosine-5-)-methyltransferase M.ApeK...    60   1e-07
+sp|P55200|KMT2A_MOUSE Histone-lysine N-methyltransferase 2A OS=M...    59   2e-07
+sp|P15446|MTH2_HAEPA Type II methyltransferase M.HpaII OS=Haemop...    59   2e-07
+sp|P29567|MTHT_METTF Type II methyltransferase M.MthTI OS=Methan...    59   3e-07
+sp|P31974|MTA1_CELCE Type II methyltransferase M.AluI OS=Cellulo...    59   3e-07
+sp|O30868|MTH2_HAEAE Type II methyltransferase M.HaeII OS=Haemop...    58   5e-07
+sp|O31073|MTS1_STRAH Type II methyltransferase M.SacI OS=Strepto...    57   8e-07
+sp|P20589|MTH3_HAEAE Type II methyltransferase M.HaeIII OS=Haemo...    57   1e-06
+sp|P50185|MTD5_DACSA Type II methyltransferase M.DsaV OS=Dactylo...    55   3e-06
+sp|Q5U263|KDM2A_XENTR Lysine-specific demethylase 2A OS=Xenopus ...    55   4e-06
+sp|P34905|MTB1_BREBE Type II methyltransferase M.BbvI OS=Breviba...    55   4e-06
+sp|O34680|YDIP_BACSU Type II methyltransferase M2.BsuMI OS=Bacil...    55   4e-06
+sp|Q9RLM4|MTD1_NEIMC Type II methyltransferase M.NmeDI OS=Neisse...    54   9e-06
+sp|P25267|MTG1_HERAU Type II methyltransferase M.HgiGI (Fragment...    54   1e-05
+sp|Q6P1G2|KDM2B_MOUSE Lysine-specific demethylase 2B OS=Mus musc...    53   1e-05
+sp|Q8NHM5|KDM2B_HUMAN Lysine-specific demethylase 2B OS=Homo sap...    53   1e-05
+sp|Q640I9|KDM2B_XENLA Lysine-specific demethylase 2B OS=Xenopus ...    53   1e-05
+sp|P59997|KDM2A_MOUSE Lysine-specific demethylase 2A OS=Mus musc...    53   2e-05
+sp|P68586|MTBP_BPPHT Orphan methyltransferase M.Phi3TI OS=Bacill...    52   3e-05
+sp|P68585|MTBP_BACSU Putative type II methyltransferase M.BsuMII...    52   3e-05
+sp|P09389|MTBB_BPSPB Orphan methyltransferase M.SPBetaI OS=Bacil...    52   3e-05
+sp|Q9Y2K7|KDM2A_HUMAN Lysine-specific demethylase 2A OS=Homo sap...    51   5e-05
+sp|P25283|MTG2_AVIVO Type II methlytransferase M2.HgaI OS=Avibac...    51   5e-05
+sp|P36216|MTC1_PBCVI Type II methyltransferase M.CviJI OS=Parame...    51   8e-05
+sp|F4JL28|EBS_ARATH Chromatin remodeling protein EBS OS=Arabidop...    50   1e-04
+sp|O08550|KMT2B_MOUSE Histone-lysine N-methyltransferase 2B OS=M...    50   2e-04
+sp|Q9UMN6|KMT2B_HUMAN Histone-lysine N-methyltransferase 2B OS=H...    49   2e-04
+sp|Q9FEN9|SHL_ARATH Chromatin remodeling protein SHL OS=Arabidop...    49   2e-04
+sp|Q3LHL9|WGE_DROME Protein winged eye OS=Drosophila melanogaste...    49   3e-04
+sp|Q54JH6|CMT1_DICDI DNA (cytosine-5)-methyltransferase OS=Dicty...    48   5e-04
+sp|P34878|MTSB_LACLC Type II methyltransferase M2.ScrFI OS=Lacto...    46   0.002
+sp|Q86U86|PB1_HUMAN Protein polybromo-1 OS=Homo sapiens OX=9606 ...    45   0.005
+sp|Q90941|PB1_CHICK Protein polybromo-1 OS=Gallus gallus OX=9031...    45   0.005
+sp|Q8BSQ9|PB1_MOUSE Protein polybromo-1 OS=Mus musculus OX=10090...    45   0.005
+sp|Q8NFU7|TET1_HUMAN Methylcytosine dioxygenase TET1 OS=Homo sap...    44   0.012
+sp|Q6PB97|FXL19_MOUSE F-box/LRR-repeat protein 19 OS=Mus musculu...    44   0.012
+sp|Q9Z2E2|MBD1_MOUSE Methyl-CpG-binding domain protein 1 OS=Mus ...    44   0.012
+sp|P10283|MTB1_BREEP Type II methyltransferase M.BepI OS=Breviba...    43   0.016
+sp|Q5EA28|CXXC1_BOVIN CXXC-type zinc finger protein 1 OS=Bos tau...    43   0.018
+sp|Q9P0U4|CXXC1_HUMAN CXXC-type zinc finger protein 1 OS=Homo sa...    43   0.019
+sp|Q9CWW7|CXXC1_MOUSE CXXC-type zinc finger protein 1 OS=Mus mus...    43   0.022
+sp|Q6PCT2|FXL19_HUMAN F-box/LRR-repeat protein 19 OS=Homo sapien...    42   0.024
+sp|O43151|TET3_HUMAN Methylcytosine dioxygenase TET3 OS=Homo sap...    41   0.076
+sp|A0A2H1VE33|TRDMT_SPOFR tRNA (cytosine(38)-C(5))-methyltransfe...    41   0.082
+sp|P15840|MTSI_SPISQ Orphan methyltransferase M.SssI OS=Spiropla...    40   0.090
+sp|Q9UIS9|MBD1_HUMAN Methyl-CpG-binding domain protein 1 OS=Homo...    40   0.11 
+sp|Q800L6|CXXC4_XENLA CXXC-type zinc finger protein 4 OS=Xenopus...    40   0.11 
+sp|F4JGB7|EBSL_ARATH Chromatin remodeling protein At4g04260 OS=A...    40   0.12 
+sp|P34883|MTAB_SYNP2 Type II methyltransferase M.AquIB OS=Synech...    40   0.12 
+sp|Q3URK3|TET1_MOUSE Methylcytosine dioxygenase TET1 OS=Mus musc...    40   0.13 
+sp|P40999|PMT1M_SCHPO tRNA (cytosine(38)-C(5))-methyltransferase...    40   0.15 
+sp|M9NEY8|TET_DROME Methylcytosine dioxygenase TET OS=Drosophila...    40   0.18 
+sp|Q3UHR0|BAHC1_MOUSE BAH and coiled-coil domain-containing prot...    39   0.26 
+sp|Q0VFP6|CXXC4_XENTR CXXC-type zinc finger protein 4 OS=Xenopus...    39   0.28 
+sp|Q9EQC9|CXXC4_RAT CXXC-type zinc finger protein 4 OS=Rattus no...    39   0.29 
+sp|Q6NXI8|CXXC4_MOUSE CXXC-type zinc finger protein 4 OS=Mus mus...    39   0.29 
+sp|Q9H2H0|CXXC4_HUMAN CXXC-type zinc finger protein 4 OS=Homo sa...    39   0.29 
+sp|Q9P281|BAHC1_HUMAN BAH and coiled-coil domain-containing prot...    39   0.33 
+sp|Q8BG87|TET3_MOUSE Methylcytosine dioxygenase TET3 OS=Mus musc...    39   0.42 
+sp|P53236|RSC1_YEAST Chromatin structure-remodeling complex subu...    38   0.66 
+sp|O15417|TNC18_HUMAN Trinucleotide repeat-containing gene 18 pr...    37   0.78 
+sp|Q80WC3|TNC18_MOUSE Trinucleotide repeat-containing gene 18 pr...    37   0.88 
+sp|Q9W352|CXXC1_DROME CXXC-type zinc finger protein 1 OS=Drosoph...    36   2.0  
+sp|J9VI03|DMT5_CRYNH DNA (cytosine-5-)-methyltransferase DMT5 OS...    36   2.6  
+sp|Q6T264|MAML1_MOUSE Mastermind-like protein 1 OS=Mus musculus ...    36   2.7  
+sp|A0JP82|TET3_XENTR Methylcytosine dioxygenase tet3 OS=Xenopus ...    35   2.9  
+sp|P16876|MDR3_ENTH1 Multidrug resistance protein 3 OS=Entamoeba...    35   4.0  
+sp|K9JHZ4|TET3B_XENLA Methylcytosine dioxygenase tet3-B OS=Xenop...    34   6.3  
+sp|A0A1L8GSA2|TET3A_XENLA Methylcytosine dioxygenase tet3-A OS=X...    34   6.8  
+sp|P54789|ORC1_SCHPO Origin recognition complex subunit 1 OS=Sch...    34   9.2  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q92072|DNMT1_CHICK DNA (cytosine-5)-methyltransferase 1 OS=Ga...  1653   0.0  
+sp|Q24K09|DNMT1_BOVIN DNA (cytosine-5)-methyltransferase 1 OS=Bo...  1617   0.0  
+sp|P26358|DNMT1_HUMAN DNA (cytosine-5)-methyltransferase 1 OS=Ho...  1615   0.0  
+sp|P13864|DNMT1_MOUSE DNA (cytosine-5)-methyltransferase 1 OS=Mu...  1613   0.0  
+sp|Q9Z330|DNMT1_RAT DNA (cytosine-5)-methyltransferase 1 OS=Ratt...  1547   0.0  
+sp|Q27746|DNMT1_PARLI DNA (cytosine-5)-methyltransferase PliMCI ...  1502   0.0  
+sp|Q9M0S8|DNMT2_ARATH DNA (cytosine-5)-methyltransferase 2 OS=Ar...   908   0.0  
+sp|O23273|DNMT4_ARATH DNA (cytosine-5)-methyltransferase 4 OS=Ar...   887   0.0  
+sp|P34881|DNMT1_ARATH DNA (cytosine-5)-methyltransferase 1 OS=Ar...   880   0.0  
+sp|B1Q3J6|DNM1B_ORYSJ DNA (cytosine-5)-methyltransferase 1B OS=O...   864   0.0  
+sp|Q7Y1I7|DNM1A_ORYSJ DNA (cytosine-5)-methyltransferase 1A OS=O...   855   0.0  
+sp|Q9T0I1|DNMT3_ARATH DNA (cytosine-5)-methyltransferase 3 OS=Ar...   844   0.0  
+sp|Q8LPU5|CMT3_MAIZE DNA (cytosine-5)-methyltransferase 3 OS=Zea...   393   e-108
+sp|Q9ARI6|CMT2_MAIZE DNA (cytosine-5)-methyltransferase 2 OS=Zea...   392   e-108
+sp|Q9AXT8|CMT1_MAIZE DNA (cytosine-5)-methyltransferase 1 OS=Zea...   390   e-107
+sp|P94147|MTA1_THAGE Type II methyltransferase M.AgeI OS=Thalass...   380   e-104
+sp|C0SQ89|CMT3_ORYSJ DNA (cytosine-5)-methyltransferase CMT3 OS=...   379   e-104
+sp|A0A0P0VUY4|CMT1_ORYSJ DNA (cytosine-5)-methyltransferase CMT1...   371   e-101
+sp|Q94F88|CMT3_ARATH DNA (cytosine-5)-methyltransferase CMT3 OS=...   369   e-101
+sp|Q94F87|CMT2_ARATH DNA (cytosine-5)-methyltransferase CMT2 OS=...   358   2e-97
+sp|Q5KQL9|CMT2_ORYSJ DNA (cytosine-5)-methyltransferase CMT2 OS=...   356   5e-97
+sp|P25266|MTE1_HERAU Type II methylase M.HgiEI OS=Herpetosiphon ...   350   4e-95
+sp|P25262|MTB1_HERAU Type II methyltransferase M.HgiBI OS=Herpet...   349   8e-95
+sp|O49139|CMT1_ARATH Putative DNA (cytosine-5)-methyltransferase...   338   2e-91
+sp|P25264|MTC2_HERAU Type II methyltransferase M.HgiCII OS=Herpe...   334   4e-90
+sp|P25263|MTC1_HERAU Type II methyltransferase M.HgiCI OS=Herpet...   322   2e-86
+sp|P05302|MTD1_DESNO Type II methyltransferase M.DdeI OS=Desulfo...   318   2e-85
+sp|O52702|MTA1_ACEPA Type II methyltransferase M.ApaLI OS=Acetob...   308   2e-82
+sp|Q8EL95|MT36_OCEIH Putative type II methyltransferase M.OihORF...   303   7e-81
+sp|P50196|MTE8_ECOLX Type II methyltransferase M.Eco47II OS=Esch...   299   8e-80
+sp|P52311|MTX2_XANOR Type II methyltransferase M.XorII OS=Xantho...   292   1e-77
+sp|P19888|MTBA_ANEAE Type II methyltransferase M.BanI OS=Aneurin...   291   3e-77
+sp|O33481|MTP1_PSYTA Type II methyltransferase M.PspPI OS=Psychr...   284   5e-75
+sp|P09795|MTS1_SALIN Type II methyltransferase M.SinI OS=Salmone...   276   8e-73
+sp|P23737|MTS9_STAAU Type II methyltransferase M.Sau96I OS=Staph...   258   3e-67
+sp|P25265|MTD2_HERAU Type II methylase M.HgiDII OS=Herpetosiphon...   250   6e-65
+sp|P0DW08|MTB1_BACP9 Type II methyltransferase M.Bpa9945I OS=Bac...   247   5e-64
+sp|P50192|MTHA_HAEPH Type II methyltransferase M1.HphI OS=Haemop...   247   7e-64
+sp|P50182|MTN4_NEILA Type II methyltransferase M.NlaIV OS=Neisse...   238   2e-61
+sp|Q9YDP3|MT872_AERPE DNA (cytosine-5-)-methyltransferase M.ApeK...   234   3e-60
+sp|P34882|MTAA_SYNP2 Type II methyltransferase M.AquIA OS=Synech...   233   7e-60
+sp|Q59605|MTB5_NEIGO Type II methyltransferase M.NgoBV OS=Neisse...   233   9e-60
+sp|P15446|MTH2_HAEPA Type II methyltransferase M.HpaII OS=Haemop...   228   3e-58
+sp|P17044|MTBF_BACIU Type II methyltransferase M.BsuFI OS=Bacill...   225   3e-57
+sp|Q59603|MTB1_NEIGO Type II methyltransferase M.NgoBI OS=Neisse...   224   4e-57
+sp|P00476|MTBS_BPSPR Orphan methyltransferase M.SPRI OS=Bacillus...   223   9e-57
+sp|P24581|MTNX_NEILA Type II methyltransferase M.NlaX OS=Neisser...   222   2e-56
+sp|P45000|MTH5_HAEIN Type II methyltransferase M.HindV OS=Haemop...   220   4e-56
+sp|P34877|MTSA_LACLC Type II methyltransferase M1.ScrFI OS=Lacto...   219   1e-55
+sp|O30868|MTH2_HAEAE Type II methyltransferase M.HaeII OS=Haemop...   218   2e-55
+sp|P34879|MTS2_SHISO Type II methyltransferase M.SsoII OS=Shigel...   218   3e-55
+sp|P29567|MTHT_METTF Type II methyltransferase M.MthTI OS=Methan...   216   9e-55
+sp|P08455|MTP2_NEIGO Type II methyltransferase M.NgoPII OS=Neiss...   213   5e-54
+sp|Q59606|MTF7_NEIGO Type II methyltransferase M.NgoFVII OS=Neis...   213   7e-54
+sp|P43420|MTB6_BACSF Type II methyltransferase M.Bsp6I OS=Bacill...   212   2e-53
+sp|P05102|MTH1_HAEPH Type II methyltransferase M.HhaI OS=Haemoph...   211   4e-53
+sp|P16668|MTS3_STAAU Type II methyltransferase M.Sau3AI OS=Staph...   210   5e-53
+sp|P50185|MTD5_DACSA Type II methyltransferase M.DsaV OS=Dactylo...   210   7e-53
+sp|P0AED9|DCM_ECOLI DNA-cytosine methyltransferase OS=Escherichi...   209   1e-52
+sp|P0AEE0|DCM_ECO57 DNA-cytosine methyltransferase OS=Escherichi...   209   1e-52
+sp|P34906|MTF1_FUSNU Type II methyltransferase M.FnuDI OS=Fusoba...   209   2e-52
+sp|P11408|MTM1_MORSP Type II methyltransferase M.MspI OS=Moraxel...   208   2e-52
+sp|P06530|MTBR_BACIU Type II methyltransferase M.BsuRI OS=Bacill...   208   2e-52
+sp|P13906|MTB1_LYSSH Type II methyltransferase M.BspRI OS=Lysini...   208   4e-52
+sp|P20589|MTH3_HAEAE Type II methyltransferase M.HaeIII OS=Haemo...   202   2e-50
+sp|P05101|MTE2_ECOLX Type II methyltransferase M.EcoRII OS=Esche...   198   3e-49
+sp|P09915|MTBR_BPRH1 Orphan methyltransferase M.Rho11sI OS=Bacil...   192   2e-47
+sp|P24600|MTD1_HERAU Type II methyltransferase M.HgiDI OS=Herpet...   191   2e-47
+sp|P31974|MTA1_CELCE Type II methyltransferase M.AluI OS=Cellulo...   191   5e-47
+sp|P68586|MTBP_BPPHT Orphan methyltransferase M.Phi3TI OS=Bacill...   185   2e-45
+sp|P68585|MTBP_BACSU Putative type II methyltransferase M.BsuMII...   185   2e-45
+sp|P09389|MTBB_BPSPB Orphan methyltransferase M.SPBetaI OS=Bacil...   185   2e-45
+sp|P31033|MTM4_NEIGO Type II methyltransferase M.NgoMIV OS=Neiss...   181   4e-44
+sp|Q58600|MTM7_METJA Putative type II methyltransferase M.MjaORF...   173   1e-41
+sp|P50188|MTN1_LENAE Type II methyltransferase M.NaeI OS=Lentzea...   171   3e-41
+sp|O55055|TRDMT_MOUSE tRNA (cytosine(38)-C(5))-methyltransferase...   171   5e-41
+sp|D4ZX35|MTAP_ARTPN Type II methyltransferase M.AplI OS=Arthros...   170   6e-41
+sp|Q9RLM4|MTD1_NEIMC Type II methyltransferase M.NmeDI OS=Neisse...   169   1e-40
+sp|O34680|YDIP_BACSU Type II methyltransferase M2.BsuMI OS=Bacil...   165   3e-39
+sp|O14717|TRDMT_HUMAN tRNA (cytosine(38)-C(5))-methyltransferase...   164   5e-39
+sp|O34939|YDIO_BACSU Type II methyltransferase M1.BsuMI OS=Bacil...   163   6e-39
+sp|P25282|MTG1_AVIVO Type II methyltransferase M1.HgaI OS=Avibac...   162   2e-38
+sp|P34905|MTB1_BREBE Type II methyltransferase M.BbvI OS=Breviba...   162   2e-38
+sp|P25283|MTG2_AVIVO Type II methlytransferase M2.HgaI OS=Avibac...   159   1e-37
+sp|Q4G073|TRDMT_RAT tRNA (cytosine(38)-C(5))-methyltransferase O...   159   2e-37
+sp|Q7YS61|TRDMT_BOVIN tRNA (cytosine(38)-C(5))-methyltransferase...   158   3e-37
+sp|O31073|MTS1_STRAH Type II methyltransferase M.SacI OS=Strepto...   155   2e-36
+sp|P36216|MTC1_PBCVI Type II methyltransferase M.CviJI OS=Parame...   153   1e-35
+sp|Q54JH6|CMT1_DICDI DNA (cytosine-5)-methyltransferase OS=Dicty...   147   6e-34
+sp|Q57983|MT51_METJA Putative type II methyltransferase M.MJ0563...   147   7e-34
+sp|P59997|KDM2A_MOUSE Lysine-specific demethylase 2A OS=Mus musc...   146   1e-33
+sp|Q9Y2K7|KDM2A_HUMAN Lysine-specific demethylase 2A OS=Homo sap...   144   5e-33
+sp|F4JL28|EBS_ARATH Chromatin remodeling protein EBS OS=Arabidop...   136   9e-31
+sp|Q9FEN9|SHL_ARATH Chromatin remodeling protein SHL OS=Arabidop...   134   5e-30
+sp|P25267|MTG1_HERAU Type II methyltransferase M.HgiGI (Fragment...   130   9e-29
+sp|Q5U263|KDM2A_XENTR Lysine-specific demethylase 2A OS=Xenopus ...   128   2e-28
+sp|Q3LHL9|WGE_DROME Protein winged eye OS=Drosophila melanogaste...   123   1e-26
+sp|Q9VHH9|JHD1_DROME JmjC domain-containing histone demethylatio...   118   4e-25
+sp|Q640I9|KDM2B_XENLA Lysine-specific demethylase 2B OS=Xenopus ...   106   2e-21
+sp|Q6P1G2|KDM2B_MOUSE Lysine-specific demethylase 2B OS=Mus musc...   105   2e-21
+sp|Q8NHM5|KDM2B_HUMAN Lysine-specific demethylase 2B OS=Homo sap...   105   3e-21
+sp|O08550|KMT2B_MOUSE Histone-lysine N-methyltransferase 2B OS=M...    94   7e-18
+sp|Q9UMN6|KMT2B_HUMAN Histone-lysine N-methyltransferase 2B OS=H...    92   3e-17
+sp|Q03164|KMT2A_HUMAN Histone-lysine N-methyltransferase 2A OS=H...    87   8e-16
+sp|P55200|KMT2A_MOUSE Histone-lysine N-methyltransferase 2A OS=M...    87   1e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|P10283|MTB1_BREEP Type II methyltransferase M.BepI OS=Breviba...   156   2e-36
+sp|P34878|MTSB_LACLC Type II methyltransferase M2.ScrFI OS=Lacto...   135   2e-30
+sp|A0A2H1VE33|TRDMT_SPOFR tRNA (cytosine(38)-C(5))-methyltransfe...   134   3e-30
+sp|F4JGB7|EBSL_ARATH Chromatin remodeling protein At4g04260 OS=A...   123   8e-27
+sp|F4JWT7|TRDMT_ARATH tRNA (cytosine(38)-C(5))-methyltransferase...   114   5e-24
+sp|P40999|PMT1M_SCHPO tRNA (cytosine(38)-C(5))-methyltransferase...   114   6e-24
+sp|Q71TL0|DAM_BPP1 DNA N-6-adenine-methyltransferase OS=Escheric...   109   2e-22
+sp|Q9P281|BAHC1_HUMAN BAH and coiled-coil domain-containing prot...   105   2e-21
+sp|P15840|MTSI_SPISQ Orphan methyltransferase M.SssI OS=Spiropla...   105   3e-21
+sp|Q3UHR0|BAHC1_MOUSE BAH and coiled-coil domain-containing prot...   102   2e-20
+sp|Q6PB97|FXL19_MOUSE F-box/LRR-repeat protein 19 OS=Mus musculu...    98   3e-19
+sp|Q6PCT2|FXL19_HUMAN F-box/LRR-repeat protein 19 OS=Homo sapien...    98   5e-19
+sp|P34883|MTAB_SYNP2 Type II methyltransferase M.AquIB OS=Synech...    89   2e-16
+sp|O15417|TNC18_HUMAN Trinucleotide repeat-containing gene 18 pr...    88   7e-16
+sp|Q80WC3|TNC18_MOUSE Trinucleotide repeat-containing gene 18 pr...    87   9e-16
+sp|Q86U86|PB1_HUMAN Protein polybromo-1 OS=Homo sapiens OX=9606 ...    87   1e-15
+sp|Q8BSQ9|PB1_MOUSE Protein polybromo-1 OS=Mus musculus OX=10090...    86   2e-15
+sp|Q90941|PB1_CHICK Protein polybromo-1 OS=Gallus gallus OX=9031...    86   3e-15
+sp|J9VI03|DMT5_CRYNH DNA (cytosine-5-)-methyltransferase DMT5 OS...    83   1e-14
+sp|Q9UBC3|DNM3B_HUMAN DNA (cytosine-5)-methyltransferase 3B OS=H...    77   1e-12
+sp|O88509|DNM3B_MOUSE DNA (cytosine-5)-methyltransferase 3B OS=M...    76   2e-12
+sp|Q4W5Z4|DNM3A_CHICK DNA (cytosine-5)-methyltransferase 3A OS=G...    75   3e-12
+sp|P0DOY1|DNM3C_MOUSE DNA (cytosine-5)-methyltransferase 3C OS=M...    75   3e-12
+sp|Q9CWW7|CXXC1_MOUSE CXXC-type zinc finger protein 1 OS=Mus mus...    73   1e-11
+sp|Q1LZ53|DNM3A_RAT DNA (cytosine-5)-methyltransferase 3A OS=Rat...    73   2e-11
+sp|O88508|DNM3A_MOUSE DNA (cytosine-5)-methyltransferase 3A OS=M...    73   2e-11
+sp|Q9Y6K1|DNM3A_HUMAN DNA (cytosine-5)-methyltransferase 3A OS=H...    73   2e-11
+sp|Q9P0U4|CXXC1_HUMAN CXXC-type zinc finger protein 1 OS=Homo sa...    71   5e-11
+sp|Q5EA28|CXXC1_BOVIN CXXC-type zinc finger protein 1 OS=Bos tau...    71   5e-11
+sp|Q9UIS9|MBD1_HUMAN Methyl-CpG-binding domain protein 1 OS=Homo...    71   6e-11
+sp|Q10SU5|DRM2_ORYSJ DNA (cytosine-5)-methyltransferase DRM2 OS=...    69   2e-10
+sp|Q9Z2E2|MBD1_MOUSE Methyl-CpG-binding domain protein 1 OS=Mus ...    69   2e-10
+sp|Q2RBJ4|DRM1A_ORYSJ DNA (cytosine-5)-methyltransferase DRM1A O...    69   2e-10
+sp|Q9M548|DRM2_ARATH DNA (cytosine-5)-methyltransferase DRM2 OS=...    64   6e-09
+sp|Q9LXE5|DRM1L_ARATH DNA (cytosine-5)-methyltransferase DRM1 OS...    64   1e-08
+sp|Q8TBE0|BAHD1_HUMAN Bromo adjacent homology domain-containing ...    63   2e-08
+sp|Q8NFU7|TET1_HUMAN Methylcytosine dioxygenase TET1 OS=Homo sap...    63   2e-08
+sp|Q497V6|BAHD1_MOUSE Bromo adjacent homology domain-containing ...    63   2e-08
+sp|P53236|RSC1_YEAST Chromatin structure-remodeling complex subu...    61   8e-08
+sp|Q3URK3|TET1_MOUSE Methylcytosine dioxygenase TET1 OS=Mus musc...    60   2e-07
+sp|Q06488|RSC2_YEAST Chromatin structure-remodeling complex subu...    58   6e-07
+sp|G2WR64|DMT5_VERDV DNA (cytosine-5-)-methyltransferase DMT5 OS...    58   7e-07
+sp|M9NEY8|TET_DROME Methylcytosine dioxygenase TET OS=Drosophila...    57   1e-06
+sp|Q80Z32|ORC1_RAT Origin recognition complex subunit 1 OS=Rattu...    56   3e-06
+sp|A0JP82|TET3_XENTR Methylcytosine dioxygenase tet3 OS=Xenopus ...    55   4e-06
+sp|K9JHZ4|TET3B_XENLA Methylcytosine dioxygenase tet3-B OS=Xenop...    55   4e-06
+sp|O74964|RSC1_SCHPO Chromatin structure-remodeling complex subu...    54   7e-06
+sp|Q800L6|CXXC4_XENLA CXXC-type zinc finger protein 4 OS=Xenopus...    54   8e-06
+sp|Q710E8|ORC1A_ARATH Origin of replication complex subunit 1A O...    54   1e-05
+sp|O43151|TET3_HUMAN Methylcytosine dioxygenase TET3 OS=Homo sap...    52   3e-05
+sp|A0A1L8GSA2|TET3A_XENLA Methylcytosine dioxygenase tet3-A OS=X...    52   4e-05
+sp|P53127|SNT2_YEAST E3 ubiquitin-protein ligase SNT2 OS=Sacchar...    51   5e-05
+sp|Q8BG87|TET3_MOUSE Methylcytosine dioxygenase TET3 OS=Mus musc...    51   7e-05
+sp|P54789|ORC1_SCHPO Origin recognition complex subunit 1 OS=Sch...    50   1e-04
+sp|Q9SU24|ORC1B_ARATH Origin of replication complex subunit 1B O...    50   1e-04
+sp|Q9LYE3|ASI1_ARATH Protein ANTI-SILENCING 1 OS=Arabidopsis tha...    49   3e-04
+sp|Q9W352|CXXC1_DROME CXXC-type zinc finger protein 1 OS=Drosoph...    48   5e-04
+sp|Q0VFP6|CXXC4_XENTR CXXC-type zinc finger protein 4 OS=Xenopus...    48   7e-04
+sp|Q67472|DNMT_FRG3G Probable DNA (cytosine-5)-methyltransferase...    48   7e-04
+sp|Q9EQC9|CXXC4_RAT CXXC-type zinc finger protein 4 OS=Rattus no...    48   8e-04
+sp|Q6NXI8|CXXC4_MOUSE CXXC-type zinc finger protein 4 OS=Mus mus...    48   8e-04
+sp|Q9H2H0|CXXC4_HUMAN CXXC-type zinc finger protein 4 OS=Homo sa...    48   8e-04
+sp|Q6AUQ7|DRM3_ORYSJ Probable inactive DNA (cytosine-5)-methyltr...    47   0.001
+sp|Q5SMU7|ORC1_ORYSJ Origin of replication complex subunit 1 OS=...    47   0.001
+sp|Q496Y0|LONF3_HUMAN LON peptidase N-terminal domain and RING f...    47   0.001
+sp|Q58DC8|ORC1_BOVIN Origin recognition complex subunit 1 OS=Bos...    46   0.002
+sp|Q9VW15|ASH1_DROME Histone-lysine N-methyltransferase ash1 OS=...    46   0.003
+sp|Q5XIQ3|CXXC5_RAT CXXC-type zinc finger protein 5 OS=Rattus no...    45   0.004
+sp|Q5R7N4|CXXC5_PONAB CXXC-type zinc finger protein 5 OS=Pongo a...    45   0.004
+sp|Q7LFL8|CXXC5_HUMAN CXXC-type zinc finger protein 5 OS=Homo sa...    45   0.004
+sp|Q91WA4|CXXC5_MOUSE CXXC-type zinc finger protein 5 OS=Mus mus...    45   0.004
+sp|Q32LB3|CXXC5_BOVIN CXXC-type zinc finger protein 5 OS=Bos tau...    45   0.004
+sp|Q13415|ORC1_HUMAN Origin recognition complex subunit 1 OS=Hom...    45   0.004
+sp|Q8HXH0|LONF3_MACFA LON peptidase N-terminal domain and RING f...    44   0.010
+sp|Q9BTC8|MTA3_HUMAN Metastasis-associated protein MTA3 OS=Homo ...    44   0.011
+sp|Q8H4D4|TYW23_ORYSJ tRNA wybutosine-synthesizing protein 2/3/4...    44   0.011
+sp|A6QL72|MTA3_BOVIN Metastasis-associated protein MTA3 OS=Bos t...    43   0.013
+sp|Q8W4K1|TYW23_ARATH tRNA wybutosine-synthesizing protein 2/3/4...    43   0.015
+sp|Q6BSE2|ORC1_DEBHA Origin recognition complex subunit 1 OS=Deb...    43   0.022
+sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subuni...    43   0.023
+sp|O74560|RAF2_SCHPO Rik1-associated factor 2 OS=Schizosaccharom...    43   0.026
+sp|Q8Y4A9|PRMC_LISMO Release factor glutamine methyltransferase ...    42   0.033
+sp|Q09228|EGL27_CAEEL Egg-laying defective protein 27 OS=Caenorh...    42   0.036
+sp|Q1MRW8|PURA_LAWIP Adenylosuccinate synthetase OS=Lawsonia int...    42   0.045
+sp|Q74D67|Y1452_GEOSL Uncharacterized RNA methyltransferase GSU1...    41   0.052
+sp|A9AA91|CBIT_METM6 Probable cobalt-precorrin-6B C(15)-methyltr...    41   0.062
+sp|Q09814|TGS1_SCHPO Trimethylguanosine synthase OS=Schizosaccha...    41   0.088
+sp|A1RGE6|RLMC_SHESW 23S rRNA (uracil(747)-C(5))-methyltransfera...    41   0.089
+sp|B2TN76|PUR9_CLOBB Bifunctional purine biosynthesis protein Pu...    41   0.091
+sp|A4Y9Y4|RLMC_SHEPC 23S rRNA (uracil(747)-C(5))-methyltransfera...    40   0.12 
+sp|A6Q2V7|TRMA_NITSB tRNA/tmRNA (uracil-C(5))-methyltransferase ...    40   0.14 
+sp|Q6F0I4|PRMC_MESFL Release factor glutamine methyltransferase ...    39   0.19 
+sp|O58994|ARLMC_PYRHO 23S rRNA (uracil(747)-C(5))-methyltransfer...    39   0.19 
+sp|B4ET17|RLMC_PROMH 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.20 
+sp|Q8U2K7|ARLMC_PYRFU 23S rRNA (uracil(747)-C(5))-methyltransfer...    39   0.26 
+sp|A7MZM6|RLMI_VIBC1 Ribosomal RNA large subunit methyltransfera...    39   0.28 
+sp|A6WS34|RLMC_SHEB8 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.28 
+sp|A3D0Y0|RLMC_SHEB5 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.28 
+sp|A8H8Q9|RLMC_SHEPA 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.29 
+sp|A4TN73|RLMC_YERPP 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.29 
+sp|Q1CGA8|RLMC_YERPN 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.29 
+sp|A9R4V6|RLMC_YERPG 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.29 
+sp|Q8ZGG1|RLMC_YERPE 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.29 
+sp|D0JIM5|RLMC_YERPD 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.29 
+sp|Q1CAC8|RLMC_YERPA 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.29 
+sp|B2V3C3|PUR9_CLOBA Bifunctional purine biosynthesis protein Pu...    39   0.31 
+sp|Q7ML80|RLMI_VIBVY Ribosomal RNA large subunit methyltransfera...    39   0.33 
+sp|Q8D992|RLMI_VIBVU Ribosomal RNA large subunit methyltransfera...    39   0.33 
+sp|Q87P89|RLMI_VIBPA Ribosomal RNA large subunit methyltransfera...    39   0.37 
+sp|A9L1I5|RLMC_SHEB9 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.38 
+sp|B8E5Q5|RLMC_SHEB2 23S rRNA (uracil(747)-C(5))-methyltransfera...    39   0.38 
+sp|Q6MEM7|Y248_PARUW Uncharacterized RNA methyltransferase pc024...    38   0.39 
+sp|O32232|EST_BACSU Carboxylesterase OS=Bacillus subtilis (strai...    38   0.42 
+sp|B0TUZ2|RLMC_SHEHH 23S rRNA (uracil(747)-C(5))-methyltransfera...    38   0.47 
+sp|Q5B4Q8|EAF1_EMENI Chromatin modification-related protein eaf1...    38   0.51 
+sp|Q2JIM4|RL2_SYNJB 50S ribosomal protein L2 OS=Synechococcus sp...    38   0.56 
+sp|Q5VN06|CLF_ORYSJ Histone-lysine N-methyltransferase CLF OS=Or...    38   0.57 
+sp|Q99MY8|ASH1L_MOUSE Histone-lysine N-methyltransferase ASH1L O...    38   0.62 
+sp|A6LSB3|PUR9_CLOB8 Bifunctional purine biosynthesis protein Pu...    38   0.66 
+sp|Q1QX18|RLMD_CHRSD 23S rRNA (uracil(1939)-C(5))-methyltransfer...    38   0.76 
+sp|Q4V8B8|TYW2_RAT tRNA wybutosine-synthesizing protein 2 homolo...    38   0.77 
+sp|Q8K1A0|METL5_MOUSE rRNA N6-adenosine-methyltransferase METTL5...    38   0.80 
+sp|B1JRJ4|RLMC_YERPY 23S rRNA (uracil(747)-C(5))-methyltransfera...    38   0.82 
+sp|Q66CN7|RLMC_YERPS 23S rRNA (uracil(747)-C(5))-methyltransfera...    38   0.82 
+sp|B2K9X0|RLMC_YERPB 23S rRNA (uracil(747)-C(5))-methyltransfera...    38   0.82 
+sp|A7FK27|RLMC_YERP3 23S rRNA (uracil(747)-C(5))-methyltransfera...    38   0.82 
+sp|Q58293|TRM5B_METJA tRNA (guanine(37)-N1)-methyltransferase Tr...    37   0.89 
+sp|A3KP85|ETKMT_DANRE Electron transfer flavoprotein beta subuni...    37   1.0  
+sp|P04392|DMA_BPT4 DNA adenine methylase OS=Enterobacteria phage...    37   1.0  
+sp|P75419|Y362_MYCPN Uncharacterized protein MG259 homolog OS=My...    37   1.1  
+sp|Q8BG71|TYW2_MOUSE tRNA wybutosine-synthesizing protein 2 homo...    36   1.6  
+sp|Q4R3U8|TYW2_MACFA tRNA wybutosine-synthesizing protein 2 homo...    36   1.6  
+sp|Q53H54|TYW2_HUMAN tRNA wybutosine-synthesizing protein 2 homo...    36   1.6  
+sp|Q9NRN9|METL5_HUMAN rRNA N6-adenosine-methyltransferase METTL5...    36   1.8  
+sp|P12427|DMA_BPT2 DNA adenine methylase OS=Enterobacteria phage...    36   1.8  
+sp|P0DJB1|PRMC_CORGL Release factor glutamine methyltransferase ...    36   2.2  
+sp|A4QDG2|PRMC_CORGB Release factor glutamine methyltransferase ...    36   2.2  
+sp|Q8BM75|ARI5B_MOUSE AT-rich interactive domain-containing prot...    36   2.2  
+sp|F4JT80|RPP2B_ARATH Disease resistance protein RPP2B OS=Arabid...    36   2.3  
+sp|E2R9X2|ARI5B_CANLF AT-rich interactive domain-containing prot...    36   2.3  
+sp|E1BLP6|ARI5B_BOVIN AT-rich interactive domain-containing prot...    36   2.3  
+sp|F6CY50|RLMD_MARPP 23S rRNA (uracil(1939)-C(5))-methyltransfer...    36   2.3  
+sp|Q9KL20|RLMC_VIBCH 23S rRNA (uracil(747)-C(5))-methyltransfera...    36   2.5  
+sp|Q14865|ARI5B_HUMAN AT-rich interactive domain-containing prot...    36   2.5  
+sp|A1S382|RLMC_SHEAM 23S rRNA (uracil(747)-C(5))-methyltransfera...    36   2.6  
+sp|C3LWJ3|RLMC_VIBCM 23S rRNA (uracil(747)-C(5))-methyltransfera...    36   2.8  
+sp|A5F0U5|RLMC_VIBC3 23S rRNA (uracil(747)-C(5))-methyltransfera...    36   2.8  
+sp|O44757|LIN59_CAEEL Probable histone-lysine N-methyltransferas...    36   2.9  
+sp|P39200|PRMB_VIBA7 50S ribosomal protein L3 glutamine methyltr...    35   3.4  
+sp|Q00014|ERMG_LIMRT rRNA adenine N-6-methyltransferase OS=Limos...    35   4.9  
+sp|D3VBF7|RLMC_XENNA 23S rRNA (uracil(747)-C(5))-methyltransfera...    35   5.1  
+sp|Q5E3U5|PRMB_ALIF1 50S ribosomal protein L3 glutamine methyltr...    34   5.9  
+sp|Q9NR48|ASH1L_HUMAN Histone-lysine N-methyltransferase ASH1L O...    34   6.4  
+sp|P53944|MTQ1_YEAST Mitochondrial MRF1 N(5)-glutamine methyltra...    34   6.5  
+sp|O77245|E75_METEN Nuclear hormone receptor E75 OS=Metapenaeus ...    34   6.9  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q92072|DNMT1_CHICK DNA (cytosine-5)-methyltransferase 1 OS=Ga...  1409   0.0  
+sp|P13864|DNMT1_MOUSE DNA (cytosine-5)-methyltransferase 1 OS=Mu...  1391   0.0  
+sp|P26358|DNMT1_HUMAN DNA (cytosine-5)-methyltransferase 1 OS=Ho...  1389   0.0  
+sp|Q24K09|DNMT1_BOVIN DNA (cytosine-5)-methyltransferase 1 OS=Bo...  1388   0.0  
+sp|Q9Z330|DNMT1_RAT DNA (cytosine-5)-methyltransferase 1 OS=Ratt...  1336   0.0  
+sp|Q27746|DNMT1_PARLI DNA (cytosine-5)-methyltransferase PliMCI ...  1303   0.0  
+sp|Q7Y1I7|DNM1A_ORYSJ DNA (cytosine-5)-methyltransferase 1A OS=O...   954   0.0  
+sp|Q9M0S8|DNMT2_ARATH DNA (cytosine-5)-methyltransferase 2 OS=Ar...   930   0.0  
+sp|B1Q3J6|DNM1B_ORYSJ DNA (cytosine-5)-methyltransferase 1B OS=O...   930   0.0  
+sp|P34881|DNMT1_ARATH DNA (cytosine-5)-methyltransferase 1 OS=Ar...   902   0.0  
+sp|O23273|DNMT4_ARATH DNA (cytosine-5)-methyltransferase 4 OS=Ar...   888   0.0  
+sp|Q9T0I1|DNMT3_ARATH DNA (cytosine-5)-methyltransferase 3 OS=Ar...   859   0.0  
+sp|Q8LPU5|CMT3_MAIZE DNA (cytosine-5)-methyltransferase 3 OS=Zea...   393   e-108
+sp|Q9AXT8|CMT1_MAIZE DNA (cytosine-5)-methyltransferase 1 OS=Zea...   392   e-108
+sp|Q9ARI6|CMT2_MAIZE DNA (cytosine-5)-methyltransferase 2 OS=Zea...   392   e-107
+sp|C0SQ89|CMT3_ORYSJ DNA (cytosine-5)-methyltransferase CMT3 OS=...   390   e-107
+sp|Q94F88|CMT3_ARATH DNA (cytosine-5)-methyltransferase CMT3 OS=...   369   e-101
+sp|A0A0P0VUY4|CMT1_ORYSJ DNA (cytosine-5)-methyltransferase CMT1...   368   e-100
+sp|Q94F87|CMT2_ARATH DNA (cytosine-5)-methyltransferase CMT2 OS=...   358   2e-97
+sp|P94147|MTA1_THAGE Type II methyltransferase M.AgeI OS=Thalass...   355   1e-96
+sp|Q5KQL9|CMT2_ORYSJ DNA (cytosine-5)-methyltransferase CMT2 OS=...   348   1e-94
+sp|O49139|CMT1_ARATH Putative DNA (cytosine-5)-methyltransferase...   333   4e-90
+sp|P25263|MTC1_HERAU Type II methyltransferase M.HgiCI OS=Herpet...   323   5e-87
+sp|P19888|MTBA_ANEAE Type II methyltransferase M.BanI OS=Aneurin...   320   4e-86
+sp|P50196|MTE8_ECOLX Type II methyltransferase M.Eco47II OS=Esch...   319   8e-86
+sp|P25266|MTE1_HERAU Type II methylase M.HgiEI OS=Herpetosiphon ...   318   2e-85
+sp|P25262|MTB1_HERAU Type II methyltransferase M.HgiBI OS=Herpet...   317   3e-85
+sp|P50182|MTN4_NEILA Type II methyltransferase M.NlaIV OS=Neisse...   317   5e-85
+sp|Q9YDP3|MT872_AERPE DNA (cytosine-5-)-methyltransferase M.ApeK...   316   1e-84
+sp|Q8EL95|MT36_OCEIH Putative type II methyltransferase M.OihORF...   316   1e-84
+sp|P52311|MTX2_XANOR Type II methyltransferase M.XorII OS=Xantho...   314   3e-84
+sp|Q59605|MTB5_NEIGO Type II methyltransferase M.NgoBV OS=Neisse...   311   2e-83
+sp|P25264|MTC2_HERAU Type II methyltransferase M.HgiCII OS=Herpe...   310   4e-83
+sp|P05302|MTD1_DESNO Type II methyltransferase M.DdeI OS=Desulfo...   306   7e-82
+sp|O33481|MTP1_PSYTA Type II methyltransferase M.PspPI OS=Psychr...   302   1e-80
+sp|P00476|MTBS_BPSPR Orphan methyltransferase M.SPRI OS=Bacillus...   297   3e-79
+sp|O52702|MTA1_ACEPA Type II methyltransferase M.ApaLI OS=Acetob...   292   9e-78
+sp|P09795|MTS1_SALIN Type II methyltransferase M.SinI OS=Salmone...   279   8e-74
+sp|P31974|MTA1_CELCE Type II methyltransferase M.AluI OS=Cellulo...   279   2e-73
+sp|P0DW08|MTB1_BACP9 Type II methyltransferase M.Bpa9945I OS=Bac...   276   9e-73
+sp|P16668|MTS3_STAAU Type II methyltransferase M.Sau3AI OS=Staph...   275   2e-72
+sp|P23737|MTS9_STAAU Type II methyltransferase M.Sau96I OS=Staph...   270   5e-71
+sp|P09915|MTBR_BPRH1 Orphan methyltransferase M.Rho11sI OS=Bacil...   262   9e-69
+sp|P50192|MTHA_HAEPH Type II methyltransferase M1.HphI OS=Haemop...   259   1e-67
+sp|P34877|MTSA_LACLC Type II methyltransferase M1.ScrFI OS=Lacto...   259   1e-67
+sp|P34879|MTS2_SHISO Type II methyltransferase M.SsoII OS=Shigel...   259   1e-67
+sp|P25265|MTD2_HERAU Type II methylase M.HgiDII OS=Herpetosiphon...   258   3e-67
+sp|Q90941|PB1_CHICK Protein polybromo-1 OS=Gallus gallus OX=9031...   254   4e-66
+sp|P24581|MTNX_NEILA Type II methyltransferase M.NlaX OS=Neisser...   253   7e-66
+sp|P68586|MTBP_BPPHT Orphan methyltransferase M.Phi3TI OS=Bacill...   249   2e-64
+sp|P68585|MTBP_BACSU Putative type II methyltransferase M.BsuMII...   249   2e-64
+sp|P09389|MTBB_BPSPB Orphan methyltransferase M.SPBetaI OS=Bacil...   249   2e-64
+sp|O55055|TRDMT_MOUSE tRNA (cytosine(38)-C(5))-methyltransferase...   248   2e-64
+sp|Q59603|MTB1_NEIGO Type II methyltransferase M.NgoBI OS=Neisse...   247   5e-64
+sp|P50185|MTD5_DACSA Type II methyltransferase M.DsaV OS=Dactylo...   245   1e-63
+sp|O30868|MTH2_HAEAE Type II methyltransferase M.HaeII OS=Haemop...   245   1e-63
+sp|Q8BSQ9|PB1_MOUSE Protein polybromo-1 OS=Mus musculus OX=10090...   245   2e-63
+sp|P08455|MTP2_NEIGO Type II methyltransferase M.NgoPII OS=Neiss...   245   2e-63
+sp|Q86U86|PB1_HUMAN Protein polybromo-1 OS=Homo sapiens OX=9606 ...   235   2e-60
+sp|P34882|MTAA_SYNP2 Type II methyltransferase M.AquIA OS=Synech...   232   1e-59
+sp|Q59606|MTF7_NEIGO Type II methyltransferase M.NgoFVII OS=Neis...   232   2e-59
+sp|P34906|MTF1_FUSNU Type II methyltransferase M.FnuDI OS=Fusoba...   230   6e-59
+sp|P17044|MTBF_BACIU Type II methyltransferase M.BsuFI OS=Bacill...   230   7e-59
+sp|P15446|MTH2_HAEPA Type II methyltransferase M.HpaII OS=Haemop...   229   9e-59
+sp|P06530|MTBR_BACIU Type II methyltransferase M.BsuRI OS=Bacill...   229   2e-58
+sp|P20589|MTH3_HAEAE Type II methyltransferase M.HaeIII OS=Haemo...   228   2e-58
+sp|P13906|MTB1_LYSSH Type II methyltransferase M.BspRI OS=Lysini...   228   3e-58
+sp|P29567|MTHT_METTF Type II methyltransferase M.MthTI OS=Methan...   227   4e-58
+sp|P05102|MTH1_HAEPH Type II methyltransferase M.HhaI OS=Haemoph...   227   4e-58
+sp|P0AED9|DCM_ECOLI DNA-cytosine methyltransferase OS=Escherichi...   223   5e-57
+sp|P0AEE0|DCM_ECO57 DNA-cytosine methyltransferase OS=Escherichi...   223   5e-57
+sp|P43420|MTB6_BACSF Type II methyltransferase M.Bsp6I OS=Bacill...   220   9e-56
+sp|O14717|TRDMT_HUMAN tRNA (cytosine(38)-C(5))-methyltransferase...   220   9e-56
+sp|P11408|MTM1_MORSP Type II methyltransferase M.MspI OS=Moraxel...   217   5e-55
+sp|P05101|MTE2_ECOLX Type II methyltransferase M.EcoRII OS=Esche...   215   2e-54
+sp|Q4G073|TRDMT_RAT tRNA (cytosine(38)-C(5))-methyltransferase O...   215   2e-54
+sp|Q7YS61|TRDMT_BOVIN tRNA (cytosine(38)-C(5))-methyltransferase...   211   3e-53
+sp|P45000|MTH5_HAEIN Type II methyltransferase M.HindV OS=Haemop...   209   1e-52
+sp|Q71TL0|DAM_BPP1 DNA N-6-adenine-methyltransferase OS=Escheric...   207   5e-52
+sp|Q9LYE3|ASI1_ARATH Protein ANTI-SILENCING 1 OS=Arabidopsis tha...   205   3e-51
+sp|P10283|MTB1_BREEP Type II methyltransferase M.BepI OS=Breviba...   200   5e-50
+sp|O34680|YDIP_BACSU Type II methyltransferase M2.BsuMI OS=Bacil...   199   2e-49
+sp|P24600|MTD1_HERAU Type II methyltransferase M.HgiDI OS=Herpet...   195   2e-48
+sp|D4ZX35|MTAP_ARTPN Type II methyltransferase M.AplI OS=Arthros...   193   9e-48
+sp|Q9RLM4|MTD1_NEIMC Type II methyltransferase M.NmeDI OS=Neisse...   192   1e-47
+sp|P31033|MTM4_NEIGO Type II methyltransferase M.NgoMIV OS=Neiss...   189   1e-46
+sp|O31073|MTS1_STRAH Type II methyltransferase M.SacI OS=Strepto...   188   3e-46
+sp|O34939|YDIO_BACSU Type II methyltransferase M1.BsuMI OS=Bacil...   183   8e-45
+sp|P25282|MTG1_AVIVO Type II methyltransferase M1.HgaI OS=Avibac...   182   2e-44
+sp|P36216|MTC1_PBCVI Type II methyltransferase M.CviJI OS=Parame...   180   5e-44
+sp|P34878|MTSB_LACLC Type II methyltransferase M2.ScrFI OS=Lacto...   178   2e-43
+sp|P50188|MTN1_LENAE Type II methyltransferase M.NaeI OS=Lentzea...   176   1e-42
+sp|Q58600|MTM7_METJA Putative type II methyltransferase M.MjaORF...   172   2e-41
+sp|P34905|MTB1_BREBE Type II methyltransferase M.BbvI OS=Breviba...   168   3e-40
+sp|P25283|MTG2_AVIVO Type II methlytransferase M2.HgaI OS=Avibac...   165   3e-39
+sp|A0A2H1VE33|TRDMT_SPOFR tRNA (cytosine(38)-C(5))-methyltransfe...   164   5e-39
+sp|Q54JH6|CMT1_DICDI DNA (cytosine-5)-methyltransferase OS=Dicty...   158   3e-37
+sp|Q9UBC3|DNM3B_HUMAN DNA (cytosine-5)-methyltransferase 3B OS=H...   157   7e-37
+sp|Q57983|MT51_METJA Putative type II methyltransferase M.MJ0563...   156   1e-36
+sp|Q9P281|BAHC1_HUMAN BAH and coiled-coil domain-containing prot...   156   1e-36
+sp|P0DOY1|DNM3C_MOUSE DNA (cytosine-5)-methyltransferase 3C OS=M...   154   4e-36
+sp|O88509|DNM3B_MOUSE DNA (cytosine-5)-methyltransferase 3B OS=M...   152   2e-35
+sp|F4JWT7|TRDMT_ARATH tRNA (cytosine(38)-C(5))-methyltransferase...   150   8e-35
+sp|Q3UHR0|BAHC1_MOUSE BAH and coiled-coil domain-containing prot...   148   4e-34
+sp|P40999|PMT1M_SCHPO tRNA (cytosine(38)-C(5))-methyltransferase...   145   3e-33
+sp|O74964|RSC1_SCHPO Chromatin structure-remodeling complex subu...   145   3e-33
+sp|Q4W5Z4|DNM3A_CHICK DNA (cytosine-5)-methyltransferase 3A OS=G...   143   1e-32
+sp|Q1LZ53|DNM3A_RAT DNA (cytosine-5)-methyltransferase 3A OS=Rat...   140   9e-32
+sp|O88508|DNM3A_MOUSE DNA (cytosine-5)-methyltransferase 3A OS=M...   140   9e-32
+sp|Q9Y6K1|DNM3A_HUMAN DNA (cytosine-5)-methyltransferase 3A OS=H...   140   1e-31
+sp|F4JGB7|EBSL_ARATH Chromatin remodeling protein At4g04260 OS=A...   139   2e-31
+sp|P15840|MTSI_SPISQ Orphan methyltransferase M.SssI OS=Spiropla...   138   3e-31
+sp|F4JL28|EBS_ARATH Chromatin remodeling protein EBS OS=Arabidop...   137   5e-31
+sp|Q9SU24|ORC1B_ARATH Origin of replication complex subunit 1B O...   132   2e-29
+sp|Q3LHL9|WGE_DROME Protein winged eye OS=Drosophila melanogaste...   131   4e-29
+sp|P25267|MTG1_HERAU Type II methyltransferase M.HgiGI (Fragment...   131   5e-29
+sp|J9VI03|DMT5_CRYNH DNA (cytosine-5-)-methyltransferase DMT5 OS...   131   5e-29
+sp|P59997|KDM2A_MOUSE Lysine-specific demethylase 2A OS=Mus musc...   130   1e-28
+sp|G2WR64|DMT5_VERDV DNA (cytosine-5-)-methyltransferase DMT5 OS...   128   3e-28
+sp|O15417|TNC18_HUMAN Trinucleotide repeat-containing gene 18 pr...   128   3e-28
+sp|Q9Y2K7|KDM2A_HUMAN Lysine-specific demethylase 2A OS=Homo sap...   128   4e-28
+sp|Q80WC3|TNC18_MOUSE Trinucleotide repeat-containing gene 18 pr...   127   6e-28
+sp|Q710E8|ORC1A_ARATH Origin of replication complex subunit 1A O...   126   1e-27
+sp|P53236|RSC1_YEAST Chromatin structure-remodeling complex subu...   125   3e-27
+sp|Q9VHH9|JHD1_DROME JmjC domain-containing histone demethylatio...   124   4e-27
+sp|Q9FEN9|SHL_ARATH Chromatin remodeling protein SHL OS=Arabidop...   121   3e-26
+sp|Q8TBE0|BAHD1_HUMAN Bromo adjacent homology domain-containing ...   121   4e-26
+sp|Q497V6|BAHD1_MOUSE Bromo adjacent homology domain-containing ...   119   1e-25
+sp|Q06488|RSC2_YEAST Chromatin structure-remodeling complex subu...   119   1e-25
+sp|Q640I9|KDM2B_XENLA Lysine-specific demethylase 2B OS=Xenopus ...   117   7e-25
+sp|Q5U263|KDM2A_XENTR Lysine-specific demethylase 2A OS=Xenopus ...   115   2e-24
+sp|Q6P1G2|KDM2B_MOUSE Lysine-specific demethylase 2B OS=Mus musc...   114   3e-24
+sp|Q8NHM5|KDM2B_HUMAN Lysine-specific demethylase 2B OS=Homo sap...   114   3e-24
+sp|P53127|SNT2_YEAST E3 ubiquitin-protein ligase SNT2 OS=Sacchar...   111   3e-23
+sp|O08550|KMT2B_MOUSE Histone-lysine N-methyltransferase 2B OS=M...   109   2e-22
+sp|Q9M548|DRM2_ARATH DNA (cytosine-5)-methyltransferase DRM2 OS=...   108   3e-22
+sp|Q10SU5|DRM2_ORYSJ DNA (cytosine-5)-methyltransferase DRM2 OS=...   108   4e-22
+sp|Q9LXE5|DRM1L_ARATH DNA (cytosine-5)-methyltransferase DRM1 OS...   107   7e-22
+sp|Q2RBJ4|DRM1A_ORYSJ DNA (cytosine-5)-methyltransferase DRM1A O...   105   2e-21
+sp|Q800L6|CXXC4_XENLA CXXC-type zinc finger protein 4 OS=Xenopus...   103   1e-20
+sp|Q9UMN6|KMT2B_HUMAN Histone-lysine N-methyltransferase 2B OS=H...   102   2e-20
+sp|P34883|MTAB_SYNP2 Type II methyltransferase M.AquIB OS=Synech...   101   6e-20
+sp|Q6PCT2|FXL19_HUMAN F-box/LRR-repeat protein 19 OS=Homo sapien...   100   2e-19
+sp|Q6PB97|FXL19_MOUSE F-box/LRR-repeat protein 19 OS=Mus musculu...    99   2e-19
+sp|Q9CWW7|CXXC1_MOUSE CXXC-type zinc finger protein 1 OS=Mus mus...    96   3e-18
+sp|Q5EA28|CXXC1_BOVIN CXXC-type zinc finger protein 1 OS=Bos tau...    95   3e-18
+sp|Q9P0U4|CXXC1_HUMAN CXXC-type zinc finger protein 1 OS=Homo sa...    95   6e-18
+sp|Q0VFP6|CXXC4_XENTR CXXC-type zinc finger protein 4 OS=Xenopus...    94   8e-18
+sp|Q80Z32|ORC1_RAT Origin recognition complex subunit 1 OS=Rattu...    93   1e-17
+sp|P54789|ORC1_SCHPO Origin recognition complex subunit 1 OS=Sch...    93   2e-17
+sp|Q9EQC9|CXXC4_RAT CXXC-type zinc finger protein 4 OS=Rattus no...    87   1e-15
+sp|Q6NXI8|CXXC4_MOUSE CXXC-type zinc finger protein 4 OS=Mus mus...    87   1e-15
+sp|Q9H2H0|CXXC4_HUMAN CXXC-type zinc finger protein 4 OS=Homo sa...    87   1e-15
+sp|Q3URK3|TET1_MOUSE Methylcytosine dioxygenase TET1 OS=Mus musc...    81   5e-14
+sp|Q9UIS9|MBD1_HUMAN Methyl-CpG-binding domain protein 1 OS=Homo...    81   5e-14
+sp|Q9Z2E2|MBD1_MOUSE Methyl-CpG-binding domain protein 1 OS=Mus ...    81   6e-14
+sp|Q8NFU7|TET1_HUMAN Methylcytosine dioxygenase TET1 OS=Homo sap...    80   9e-14
+sp|K9JHZ4|TET3B_XENLA Methylcytosine dioxygenase tet3-B OS=Xenop...    80   1e-13
+sp|Q67472|DNMT_FRG3G Probable DNA (cytosine-5)-methyltransferase...    80   1e-13
+sp|A0A1L8GSA2|TET3A_XENLA Methylcytosine dioxygenase tet3-A OS=X...    79   3e-13
+sp|P55200|KMT2A_MOUSE Histone-lysine N-methyltransferase 2A OS=M...    76   1e-12
+sp|Q03164|KMT2A_HUMAN Histone-lysine N-methyltransferase 2A OS=H...    76   1e-12
+sp|A0JP82|TET3_XENTR Methylcytosine dioxygenase tet3 OS=Xenopus ...    75   3e-12
+sp|M9NEY8|TET_DROME Methylcytosine dioxygenase TET OS=Drosophila...    74   7e-12
+sp|O43151|TET3_HUMAN Methylcytosine dioxygenase TET3 OS=Homo sap...    72   3e-11
+sp|Q9W352|CXXC1_DROME CXXC-type zinc finger protein 1 OS=Drosoph...    71   8e-11
+sp|Q8BG87|TET3_MOUSE Methylcytosine dioxygenase TET3 OS=Mus musc...    70   1e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5SMU7|ORC1_ORYSJ Origin of replication complex subunit 1 OS=...    93   2e-17
+sp|Q9Z1N2|ORC1_MOUSE Origin recognition complex subunit 1 OS=Mus...    79   3e-13
+sp|Q58DC8|ORC1_BOVIN Origin recognition complex subunit 1 OS=Bos...    73   2e-11
+sp|Q9JI69|ORC1_CRIGR Origin recognition complex subunit 1 OS=Cri...    72   3e-11
+sp|Q13415|ORC1_HUMAN Origin recognition complex subunit 1 OS=Hom...    70   2e-10
+sp|Q32LB3|CXXC5_BOVIN CXXC-type zinc finger protein 5 OS=Bos tau...    67   1e-09
+sp|Q6AUQ7|DRM3_ORYSJ Probable inactive DNA (cytosine-5)-methyltr...    66   1e-09
+sp|Q5XIQ3|CXXC5_RAT CXXC-type zinc finger protein 5 OS=Rattus no...    66   2e-09
+sp|Q5R7N4|CXXC5_PONAB CXXC-type zinc finger protein 5 OS=Pongo a...    66   2e-09
+sp|Q91WA4|CXXC5_MOUSE CXXC-type zinc finger protein 5 OS=Mus mus...    66   2e-09
+sp|Q7LFL8|CXXC5_HUMAN CXXC-type zinc finger protein 5 OS=Homo sa...    66   2e-09
+sp|Q10077|SNT2_SCHPO Lid2 complex component snt2 OS=Schizosaccha...    60   2e-07
+sp|Q9BTC8|MTA3_HUMAN Metastasis-associated protein MTA3 OS=Homo ...    59   2e-07
+sp|A6QL72|MTA3_BOVIN Metastasis-associated protein MTA3 OS=Bos t...    59   3e-07
+sp|Q924K8|MTA3_MOUSE Metastasis-associated protein MTA3 OS=Mus m...    57   8e-07
+sp|Q9VW15|ASH1_DROME Histone-lysine N-methyltransferase ash1 OS=...    57   9e-07
+sp|Q99MY8|ASH1L_MOUSE Histone-lysine N-methyltransferase ASH1L O...    56   2e-06
+sp|Q9NR48|ASH1L_HUMAN Histone-lysine N-methyltransferase ASH1L O...    56   2e-06
+sp|O44757|LIN59_CAEEL Probable histone-lysine N-methyltransferas...    51   5e-05
+sp|Q09228|EGL27_CAEEL Egg-laying defective protein 27 OS=Caenorh...    50   1e-04
+sp|Q8Y4A9|PRMC_LISMO Release factor glutamine methyltransferase ...    49   3e-04
+sp|Q62901|RERE_RAT Arginine-glutamic acid dipeptide repeats prot...    49   3e-04
+sp|Q8H1E8|DRM3_ARATH Probable inactive DNA (cytosine-5)-methyltr...    49   3e-04
+sp|Q80TZ9|RERE_MOUSE Arginine-glutamic acid dipeptide repeats pr...    48   6e-04
+sp|Q9P2R6|RERE_HUMAN Arginine-glutamic acid dipeptide repeats pr...    47   0.001
+sp|Q8K4B0|MTA1_MOUSE Metastasis-associated protein MTA1 OS=Mus m...    46   0.002
+sp|Q62599|MTA1_RAT Metastasis-associated protein MTA1 OS=Rattus ...    46   0.002
+sp|O26249|CBIT_METTH Probable cobalt-precorrin-6B C(15)-methyltr...    46   0.002
+sp|Q6BSE2|ORC1_DEBHA Origin recognition complex subunit 1 OS=Deb...    45   0.004
+sp|Q13330|MTA1_HUMAN Metastasis-associated protein MTA1 OS=Homo ...    45   0.004
+sp|Q09814|TGS1_SCHPO Trimethylguanosine synthase OS=Schizosaccha...    45   0.005
+sp|O94776|MTA2_HUMAN Metastasis-associated protein MTA2 OS=Homo ...    44   0.005
+sp|A9AA91|CBIT_METM6 Probable cobalt-precorrin-6B C(15)-methyltr...    44   0.007
+sp|Q9R190|MTA2_MOUSE Metastasis-associated protein MTA2 OS=Mus m...    43   0.012
+sp|Q9Z721|Y885_CHLPN Uncharacterized RNA methyltransferase CPn_0...    43   0.021
+sp|Q8W4K1|TYW23_ARATH tRNA wybutosine-synthesizing protein 2/3/4...    43   0.024
+sp|Q8H4D4|TYW23_ORYSJ tRNA wybutosine-synthesizing protein 2/3/4...    42   0.030
+sp|P11712|CP2C9_HUMAN Cytochrome P450 2C9 OS=Homo sapiens OX=960...    42   0.036
+sp|Q6MLF5|Y2056_BDEBA Uncharacterized RNA methyltransferase Bd20...    42   0.038
+sp|Q8LKW0|TERT_ORYSJ Telomerase reverse transcriptase OS=Oryza s...    42   0.040
+sp|O16810|ORC1_DROME Origin recognition complex subunit 1 OS=Dro...    42   0.040
+sp|P61820|CBIT_METMP Probable cobalt-precorrin-6B C(15)-methyltr...    42   0.044
+sp|O74560|RAF2_SCHPO Rik1-associated factor 2 OS=Schizosaccharom...    41   0.049
+sp|Q8U2K7|ARLMC_PYRFU 23S rRNA (uracil(747)-C(5))-methyltransfer...    41   0.057
+sp|Q74D67|Y1452_GEOSL Uncharacterized RNA methyltransferase GSU1...    41   0.081
+sp|B4ET17|RLMC_PROMH 23S rRNA (uracil(747)-C(5))-methyltransfera...    41   0.083
+sp|Q58293|TRM5B_METJA tRNA (guanine(37)-N1)-methyltransferase Tr...    41   0.097
+sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subuni...    40   0.12 
+sp|B2TN76|PUR9_CLOBB Bifunctional purine biosynthesis protein Pu...    40   0.13 
+sp|Q821Q5|Y883_CHLCV Uncharacterized RNA methyltransferase CCA_0...    40   0.14 
+sp|Q9V0Q0|TRM5B_PYRAB tRNA (guanine(37)-N1)-methyltransferase Tr...    40   0.15 
+sp|P46834|GNTK_BACLI Gluconokinase OS=Bacillus licheniformis OX=...    39   0.21 
+sp|O31503|RLMCD_BACSU 23S rRNA (uracil-C(5))-methyltransferase R...    39   0.23 
+sp|Q8MJ03|RP1_SAIBB Oxygen-regulated protein 1 OS=Saimiri bolivi...    39   0.24 
+sp|P15123|CP2CG_RABIT Cytochrome P450 2C16 OS=Oryctolagus cunicu...    39   0.27 
+sp|Q8G3P4|PRMC_BIFLO Release factor glutamine methyltransferase ...    39   0.29 
+sp|P0DJB1|PRMC_CORGL Release factor glutamine methyltransferase ...    39   0.35 
+sp|A4QDG2|PRMC_CORGB Release factor glutamine methyltransferase ...    39   0.35 
+sp|Q64962|RDRP_ASPVP RNA replication polyprotein OS=Apple stem p...    38   0.45 
+sp|A6LSB3|PUR9_CLOB8 Bifunctional purine biosynthesis protein Pu...    38   0.59 
+sp|B2V3C3|PUR9_CLOBA Bifunctional purine biosynthesis protein Pu...    38   0.65 
+sp|Q923W1|TGS1_MOUSE Trimethylguanosine synthase OS=Mus musculus...    38   0.79 
+sp|Q8UHE7|Y735_AGRFC Uncharacterized RNA methyltransferase Atu07...    37   0.84 
+sp|Q8DNZ9|MURT_STRR6 Lipid II isoglutaminyl synthase (glutamine-...    37   0.90 
+sp|B9KCK3|TRMA_CAMLR tRNA/tmRNA (uracil-C(5))-methyltransferase ...    37   1.0  
+sp|A7H422|TRMA_CAMJD tRNA/tmRNA (uracil-C(5))-methyltransferase ...    37   1.2  
+sp|O65312|MEDEA_ARATH Histone-lysine N-methyltransferase MEDEA O...    37   1.3  
+sp|Q4V8B8|TYW2_RAT tRNA wybutosine-synthesizing protein 2 homolo...    37   1.4  
+sp|Q8DD43|TRMA_VIBVU tRNA/tmRNA (uracil-C(5))-methyltransferase ...    36   1.4  
+sp|Q7MQ79|TRMA_VIBVY tRNA/tmRNA (uracil-C(5))-methyltransferase ...    36   1.5  
+sp|A8FLP0|TRMA_CAMJ8 tRNA/tmRNA (uracil-C(5))-methyltransferase ...    36   1.7  
+sp|B7VM88|TRMA_VIBA3 tRNA/tmRNA (uracil-C(5))-methyltransferase ...    36   2.4  
+sp|Q6P3P1|TAXB1_XENTR Tax1-binding protein 1 homolog OS=Xenopus ...    36   2.9  
+sp|Q8I3Z1|MLRR1_PLAF7 MATH and LRR domain-containing protein PFE...    35   3.2  
+sp|B2GA02|SYN_LIMRJ Asparagine--tRNA ligase OS=Limosilactobacill...    35   4.0  
+sp|A5VMP9|SYN_LIMRD Asparagine--tRNA ligase OS=Limosilactobacill...    35   4.0  
+sp|Q5E3U5|PRMB_ALIF1 50S ribosomal protein L3 glutamine methyltr...    35   4.3  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.305    0.116    0.290 
+
+Lambda     K      H
+   0.267   0.0357    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 1,119,442,439
+Number of Sequences: 569516
+Number of extensions: 42547894
+Number of successful extensions: 121454
+Number of sequences better than 10.0: 253
+Number of HSP's better than 10.0 without gapping: 411
+Number of HSP's successfully gapped in prelim test: 265
+Number of HSP's that attempted gapping in prelim test: 118425
+Number of HSP's gapped (non-prelim): 1389
+length of query: 1246
+length of database: 205,866,895
+effective HSP length: 130
+effective length of query: 1116
+effective length of database: 131,829,815
+effective search space: 147122073540
+effective search space used: 147122073540
+T: 11
+A: 40
+X1: 16 ( 7.0 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.1 bits)
+S2: 76 (34.1 bits)

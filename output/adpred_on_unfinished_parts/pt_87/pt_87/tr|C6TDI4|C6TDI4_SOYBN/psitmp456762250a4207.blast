@@ -1,0 +1,1946 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (353 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q84KK5|D7OMT_GLYEC Isoflavone 7-O-methyltransferase OS=Glycyr...   576   e-163
+sp|O22309|7OMT9_MEDSA Isoflavone-7-O-methyltransferase 9 OS=Medi...   558   e-158
+sp|O22308|7OMT6_MEDSA Isoflavone-7-O-methyltransferase 6 OS=Medi...   556   e-158
+sp|O24529|7OMT8_MEDSA Isoflavone-7-O-methyltransferase 8 OS=Medi...   555   e-157
+sp|C6TAY1|SOMT2_SOYBN Flavonoid 4'-O-methyltransferase OS=Glycin...   549   e-155
+sp|O24305|M3OM1_PEA (+)-6a-hydroxymaackiain 3-O-methyltransferas...   363   1e-99
+sp|Q84KK4|I4OMT_LOTJA Isoflavone 4'-O-methyltransferase OS=Lotus...   355   3e-97
+sp|P0DH60|M3OM2_PEA (+)-6a-hydroxymaackiain 3-O-methyltransferas...   343   1e-93
+sp|B6VJS4|ROMT_VITVI Trans-resveratrol di-O-methyltransferase OS...   343   2e-93
+sp|Q29U70|I4OMT_MEDTR Isoflavone 4'-O-methyltransferase OS=Medic...   341   4e-93
+sp|Q84KK6|I4OMT_GLYEC Isoflavone 4'-O-methyltransferase OS=Glycy...   340   1e-92
+sp|A0A0N9HMN6|POMT3_SINHE Pluviatolide O-methyltransferase OS=Si...   323   2e-87
+sp|B0ZB57|OMT3_HUMLU Probable O-methyltransferase 3 OS=Humulus l...   322   4e-87
+sp|S5DWK8|F8MT1_OCIBA Flavonoid 8-O-methyltransferase 1 OS=Ocimu...   308   6e-83
+sp|Q8GSN1|MOMT_CATRO Myricetin O-methyltransferase OS=Catharanth...   291   5e-78
+sp|Q6VMW0|Q8OMT_MENPI 8-hydroxyquercetin 8-O-methyltransferase O...   287   8e-77
+sp|B0EXJ8|HTOMT_CATRO Tabersonine 16-O-methyltransferase OS=Cath...   287   8e-77
+sp|Q93WU2|EOMT1_OCIBA Eugenol O-methyltransferase OS=Ocimum basi...   282   3e-75
+sp|Q93WU3|CVMT1_OCIBA Chavicol O-methyltransferase OS=Ocimum bas...   279   3e-74
+sp|Q9LEL6|6OMT_COPJA (RS)-norcoclaurine 6-O-methyltransferase OS...   276   2e-73
+sp|F2YTN5|MOMT2_SOLHA Myricetin 7/4'-O-methyltransferase 2 OS=So...   276   3e-73
+sp|A0A3Q7GYG2|MOMT2_SOLLC Myricetin 7/4'-O-methyltransferase 2 O...   275   4e-73
+sp|Q5C9L7|6OMT_THLFG (RS)-norcoclaurine 6-O-methyltransferase OS...   262   3e-69
+sp|Q7XB10|4OMT2_PAPSO 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-me...   261   4e-69
+sp|Q7XB11|4OMT1_PAPSO 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-me...   257   1e-67
+sp|A8QW53|OMT3_SORBI 5-pentadecatrienyl resorcinol O-methyltrans...   253   1e-66
+sp|Q9LEL5|4OMT_COPJA 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-met...   253   2e-66
+sp|Q6EPG8|ASMT1_ORYSJ Acetylserotonin O-methyltransferase 1 OS=O...   248   6e-65
+sp|P47917|ZRP4_MAIZE O-methyltransferase ZRP4 OS=Zea mays OX=457...   246   2e-64
+sp|Q6WUC1|6OMT_PAPSO (RS)-norcoclaurine 6-O-methyltransferase OS...   246   2e-64
+sp|Q53QK0|Y1103_ORYSJ Flavonoid O-methyltransferase-like protein...   241   5e-63
+sp|C7SDN9|N7OMT_PAPSO Norreticuline-7-O-methyltransferase OS=Pap...   230   1e-59
+sp|Q6WUC2|7OMT_PAPSO (R,S)-reticuline 7-O-methyltransferase OS=P...   229   2e-59
+sp|B0ZB56|OMT2_HUMLU Xanthohumol 4-O-methyltransferase OS=Humulu...   226   2e-58
+sp|Q8VWG4|ASMT3_ORYSJ Acetylserotonin O-methyltransferase 3 OS=O...   224   7e-58
+sp|Q8VWJ6|ASMT2_ORYSJ Acetylserotonin O-methyltransferase 2 OS=O...   224   8e-58
+sp|I3PLQ7|SOMT3_PAPSO Scoulerine-9-O-methyltransferase 3 OS=Papa...   218   5e-56
+sp|A0A2S1WC15|OMT3B_PAPSO Probable scoulerine-9-O-methyltransfer...   218   5e-56
+sp|Q8H9A8|COOMT_COPJA Columbamine O-methyltransferase OS=Coptis ...   217   1e-55
+sp|Q6VMW2|OMT1A_MENPI Flavonoid 7-O-methyltransferase 1A OS=Ment...   204   8e-52
+sp|K0II72|FOMT2_OCIBA Flavonoid 7-O-methyltransferase 2 OS=Ocimu...   200   1e-50
+sp|Q6VMW1|OMT1B_MENPI Flavonoid 7-O-methyltransferase 1B OS=Ment...   196   2e-49
+sp|A0A2S1WBY6|OMT2B_PAPSO Probable scoulerine-9-O-methyltransfer...   195   5e-49
+sp|I3PLQ6|SOMT2_PAPSO Scoulerine-9-O-methyltransferase 2 OS=Papa...   194   6e-49
+sp|B1P123|BX7_MAIZE TRIBOA-glucoside O-methyltransferase BX7 OS=...   193   2e-48
+sp|K0I977|FOMT1_OCIBA Flavonoid 7-O-methyltransferase 1 OS=Ocimu...   192   2e-48
+sp|A8QW51|OMT2_SORBI Probable O-methyltransferase 2 OS=Sorghum b...   192   3e-48
+sp|K0I7Q2|FOMT3_OCIBA Flavonoid 4'-O-methyltransferase 3 OS=Ocim...   191   6e-48
+sp|K0ICR0|FOMT5_OCIBA Flavonoid 4'-O-methyltransferase 5 OS=Ocim...   191   6e-48
+sp|Q9T003|ASMT_ARATH Acetylserotonin O-methyltransferase OS=Arab...   191   9e-48
+sp|B0ZB55|OMT1_HUMLU Desmethylxanthohumol 6'-O-methyltransferase...   183   2e-45
+sp|K0I986|FOMT6_OCIBA Flavonoid 6-O-methyltransferase 6 OS=Ocimu...   181   7e-45
+sp|Q6VMV8|OMT4_MENPI Flavonoid 4'-O-methyltransferase 4 OS=Menth...   181   1e-44
+sp|P59049|OMT1_CHRAE Flavone 3'-O-methyltransferase OMT1 OS=Chry...   175   5e-43
+sp|K0I210|FOMT4_OCIBA Flavonoid 6-O-methyltransferase 4 OS=Ocimu...   174   7e-43
+sp|Q84XW5|OMT1_SECCE Daphnetin O-methyltransferase 1 OS=Secale c...   174   7e-43
+sp|Q42653|OMT2_CHRAE Flavone 3'-O-methyltransferase OMT2 OS=Chry...   174   8e-43
+sp|Q6VMV9|OMT3_MENPI Flavonoid 3'-O-methyltransferase 3 OS=Menth...   173   2e-42
+sp|A0A0N9HTA1|DOMT1_SINHE Desmethyl-yatein O-methyltransferase O...   169   3e-41
+sp|Q8W013|COMT1_CATRO Caffeic acid 3-O-methyltransferase OS=Cath...   169   4e-41
+sp|Q8LL87|COMT1_COFCA Caffeic acid 3-O-methyltransferase OS=Coff...   167   9e-41
+sp|Q42654|FOMT1_CHRAE Flavonoid 3'-O-methyltransferase FOMT OS=C...   167   1e-40
+sp|Q39522|SMT_COPJA (S)-scoulerine 9-O-methyltransferase OS=Copt...   167   2e-40
+sp|M9Z1G5|MOMT3_SOLHA Myricetin 3-O-methyltransferase 3 OS=Solan...   165   5e-40
+sp|Q43609|COMT1_PRUDU Caffeic acid 3-O-methyltransferase OS=Prun...   165   5e-40
+sp|Q6T1F5|COMT1_AMMMJ Caffeic acid 3-O-methyltransferase OS=Ammi...   164   9e-40
+sp|Q9XGW0|COMT1_OCIBA Caffeic acid 3-O-methyltransferase 1 OS=Oc...   164   1e-39
+sp|A0A3Q7HYF0|MOMT3_SOLLC Myricetin 3-O-methyltransferase 3 OS=S...   164   1e-39
+sp|Q9FK25|OMT1_ARATH Flavone 3'-O-methyltransferase 1 OS=Arabido...   163   2e-39
+sp|Q9FQY8|COMT1_CAPAN Caffeic acid 3-O-methyltransferase OS=Caps...   163   2e-39
+sp|P28002|COMT1_MEDSA Caffeic acid 3-O-methyltransferase OS=Medi...   163   2e-39
+sp|O04385|IEMT_CLABR (Iso)eugenol O-methyltransferase OS=Clarkia...   162   3e-39
+sp|A8QW52|OMT1_SORBI Eugenol O-methyltransferase OS=Sorghum bico...   161   6e-39
+sp|A0A4P8DY91|COMTS_KITPR Esculetin O-methyltransferase OS=Kitag...   160   1e-38
+sp|A0A088MF62|MOMT4_SOLLC Myricetin 3'-O-methyltransferase 4 OS=...   160   2e-38
+sp|Q9XGV9|COMT2_OCIBA Caffeic acid 3-O-methyltransferase 2 OS=Oc...   159   2e-38
+sp|Q8GU25|COMT1_ROSCH Caffeic acid 3-O-methyltransferase OS=Rosa...   159   5e-38
+sp|O81646|COMT1_CAPCH Caffeic acid 3-O-methyltransferase OS=Caps...   158   7e-38
+sp|Q00763|COMT1_POPTM Caffeic acid 3-O-methyltransferase 1 OS=Po...   158   8e-38
+sp|Q41086|COMT2_POPTM Caffeic acid 3-O-methyltransferase 2 OS=Po...   157   1e-37
+sp|Q43046|COMT1_POPKI Caffeic acid 3-O-methyltransferase 1 OS=Po...   157   2e-37
+sp|A8J6X1|BMT_GLELI Bergaptol O-methyltransferase OS=Glehnia lit...   156   2e-37
+sp|O23760|COMT1_CLABR Caffeic acid 3-O-methyltransferase OS=Clar...   156   3e-37
+sp|Q43239|COMT1_ZINVI Caffeic acid 3-O-methyltransferase OS=Zinn...   156   3e-37
+sp|Q43047|COMT3_POPKI Caffeic acid 3-O-methyltransferase 3 OS=Po...   155   5e-37
+sp|P46484|COMT1_EUCGU Caffeic acid 3-O-methyltransferase OS=Euca...   155   7e-37
+sp|A0A166U5H3|BMT_KITPR Bergaptol O-methyltransferase OS=Kitagaw...   154   1e-36
+sp|F2YTN4|MOMT1_SOLHA Myricetin 3'/5'-O-methyltransferase 1 OS=S...   154   1e-36
+sp|P93324|CHOMT_MEDSA Isoliquiritigenin 2'-O-methyltransferase O...   151   1e-35
+sp|Q7XXD4|METL_ORYSJ Probable inactive methyltransferase Os04g01...   150   2e-35
+sp|A0A3Q7I9E2|CTOMT_SOLLC Cathecol O-methyltransferase 1 OS=Sola...   150   2e-35
+sp|O82054|COMT1_SACOF Caffeic acid 3-O-methyltransferase OS=Sacc...   149   4e-35
+sp|I1M2U5|NAMT1_SOYBN Nicotinate N-methyltransferase 1 OS=Glycin...   148   6e-35
+sp|A9X7L0|ANMT_RUTGR Anthranilate N-methyltransferase OS=Ruta gr...   145   6e-34
+sp|Q6T1F6|BMT_AMMMJ Bergaptol O-methyltransferase OS=Ammi majus ...   145   7e-34
+sp|Q7XXI9|OMTL2_ORYSJ Caffeate O-methyltransferase-like protein ...   144   8e-34
+sp|Q9SCP7|NAMT1_ARATH Nicotinate N-methyltransferase 1 OS=Arabid...   144   1e-33
+sp|I3V6A7|SOMT1_PAPSO Scoulerine-9-O-methyltransferase 1 OS=Papa...   142   5e-33
+sp|Q38J50|FOMT2_WHEAT Tricetin 3',4',5'-O-trimethyltransferase O...   141   9e-33
+sp|Q06509|COMT1_MAIZE Caffeic acid 3-O-methyltransferase OS=Zea ...   140   2e-32
+sp|Q9SWC2|COMT1_EUCGL Caffeic acid 3-O-methyltransferase (Fragme...   139   3e-32
+sp|B8RCD3|AIMT1_PIMAN Trans-anol O-methyltransferase 1 OS=Pimpin...   139   4e-32
+sp|Q96565|AMNMT_HORVV 3-aminomethylindole N-methyltransferase OS...   135   5e-31
+sp|A0A172J1V3|PHZM_LYSAN Phenazine O-methyltransferase PhzM OS=L...   128   8e-29
+sp|Q0IP69|NOMT_ORYSJ Naringenin 7-O-methyltransferase OS=Oryza s...   126   3e-28
+sp|Q84N28|FOMT1_WHEAT Flavone O-methyltransferase 1 OS=Triticum ...   126   3e-28
+sp|P45986|IMT1_MESCR Inositol 4-methyltransferase OS=Mesembryant...   124   2e-27
+sp|Q6K9X3|NAMT1_ORYSJ Nicotinate N-methyltransferase 1 OS=Oryza ...   119   3e-26
+sp|Q6ZD89|OMT1_ORYSJ Flavone 3'-O-methyltransferase 1 OS=Oryza s...   114   1e-24
+sp|Q9SRD4|IGMT5_ARATH Indole glucosinolate O-methyltransferase 5...   111   1e-23
+sp|Q9X5T6|MMCR_STRLA Mitomycin biosynthesis 6-O-methyltransferas...   107   1e-22
+sp|B0CN39|SFMM3_STRLA O-methyltransferase SfmM3 OS=Streptomyces ...   106   3e-22
+sp|Q9LPU6|IGMT3_ARATH Indole glucosinolate O-methyltransferase 3...   103   2e-21
+sp|Q9LPU8|IGMT4_ARATH Indole glucosinolate O-methyltransferase 4...   103   2e-21
+sp|Q9LPU5|IGMT1_ARATH Indole glucosinolate O-methyltransferase 1...   102   4e-21
+sp|Q9LPU7|IGMT2_ARATH Indole glucosinolate O-methyltransferase 2...   102   6e-21
+sp|Q6Q880|SIRM_LEPMC O-methyltransferase sirM OS=Leptosphaeria m...   100   3e-20
+sp|Q54S95|OMT7_DICDI O-methyltransferase 7 OS=Dictyostelium disc...    99   4e-20
+sp|A0A0K2JL91|CREN_STRCM 3-amino-4-hydroxybenzoate 4-O-methyltra...    99   4e-20
+sp|Q9HWH2|PHZM_PSEAE Phenazine-1-carboxylate N-methyltransferase...    97   1e-19
+sp|A0A443HJY8|VDTC1_BYSSP O-methyltransferase VdtC OS=Byssochlam...    97   2e-19
+sp|P42712|DMPM_STRAD O-demethylpuromycin-O-methyltransferase OS=...    96   3e-19
+sp|A0A1U9YI02|VERM_CLORO O-methyltransferase verK OS=Clonostachy...    95   1e-18
+sp|Q54B59|OMT12_DICDI O-methyltransferase 12 OS=Dictyostelium di...    94   2e-18
+sp|A0A348AXX3|OMT_CURCL O-methyltransferase OS=Curvularia clavat...    93   4e-18
+sp|P55790|OMTA_ASPFN Sterigmatocystin 8-O-methyltransferase OS=A...    92   6e-18
+sp|Q54GZ0|OMT9_DICDI O-methyltransferase 9 OS=Dictyostelium disc...    92   7e-18
+sp|S0DQQ0|FSR2_GIBF5 O-methyltransferase fsr2 OS=Gibberella fuji...    92   9e-18
+sp|Q4WMJ5|GLIM_ASPFU O-methyltransferase gliM OS=Aspergillus fum...    91   1e-17
+sp|Q86I40|OMT4_DICDI O-methyltransferase 4 OS=Dictyostelium disc...    91   2e-17
+sp|Q0UI02|ELCB_PHANO Dual O-methyltransferase/FAD-dependent mono...    90   3e-17
+sp|Q12120|AFLP_ASPPU Sterigmatocystin 8-O-methyltransferase OS=A...    90   3e-17
+sp|B9WZX2|FTMD_ASPFM 6-hydroxytryprostatin B O-methyltransferase...    87   2e-16
+sp|A1DA61|FTMD_NEOFI 6-hydroxytryprostatin B O-methyltransferase...    87   3e-16
+sp|K4RFM2|ROSA_STRDJ 8-amino-8-demethylriboflavin N,N-dimethyltr...    86   3e-16
+sp|E9KMQ4|GRA3_CLAGR Grayanic acid biosynthesis cluster O-methyl...    85   7e-16
+sp|A0A0C1E5J2|OPAF_ASPUT O-methyltransferase opaF OS=Aspergillus...    84   1e-15
+sp|A0A2V5HP22|PYVH_ASPV1 O-methyltransferase pyvH OS=Aspergillus...    84   1e-15
+sp|Q4WED7|XANE_ASPFU O-methyltransferase xanE OS=Aspergillus fum...    84   2e-15
+sp|Q9P900|OMTB_ASPFN Demethylsterigmatocystin 6-O-methyltransfer...    84   2e-15
+sp|Q5AR57|ASQN_EMENI O-methyltransferase asqN OS=Emericella nidu...    84   2e-15
+sp|Q4WAW6|FTMD_ASPFU 6-hydroxytryprostatin B O-methyltransferase...    84   3e-15
+sp|A0A1B2CTC1|PENK_PENTH O-methyltransferase penK OS=Penicillium...    83   3e-15
+sp|S0E608|BIK3_GIBF5 O-methyltransferase bik3 OS=Gibberella fuji...    83   4e-15
+sp|G3XSI5|AUND_ASPNA O-methyltransferase aunD OS=Aspergillus nig...    82   5e-15
+sp|P10950|ASMT_BOVIN Acetylserotonin O-methyltransferase OS=Bos ...    82   6e-15
+sp|A0A2Z5XAK6|PHM5_PYRSX Methyltransferase phm5 OS=Pyrenochaetop...    81   1e-14
+sp|A0A1W5SMT6|PGMB_ASPTE O-methyltransferase pgmB OS=Aspergillus...    80   2e-14
+sp|A2QBF0|AUND_ASPNC O-methyltransferase aunD OS=Aspergillus nig...    80   3e-14
+sp|P16559|TCMN_STRGA Tetracenomycin biosynthesis bifunctional cy...    80   3e-14
+sp|Q0CJD1|PGMB_ASPTN O-methyltransferase pgmB OS=Aspergillus ter...    80   3e-14
+sp|A0A2G5IC53|CTB3_CERBT Dual O-methyltransferase/FAD-dependent ...    79   5e-14
+sp|Q54B60|OMT11_DICDI Probable inactive O-methyltransferase 11 O...    79   6e-14
+sp|Q8T638|DMTA_DICDI Des-methyl DIF-1 methyltransferase A OS=Dic...    79   7e-14
+sp|Q9UQY0|AFLO_ASPPU Demethylsterigmatocystin 6-O-methyltransfer...    79   7e-14
+sp|A0A1L9UR19|BFOD_ASPBC O-methyltransferase bfoD OS=Aspergillus...    78   1e-13
+sp|D3KU67|ASMT_MUSMM Acetylserotonin O-methyltransferase OS=Mus ...    78   1e-13
+sp|D3KU66|ASMT_MOUSE Acetylserotonin O-methyltransferase OS=Mus ...    78   1e-13
+sp|Q2UPB3|ACLM_ASPOR O-methyltransferase aclM OS=Aspergillus ory...    78   1e-13
+sp|Q2I0M6|CTB3_CERNC Dual O-methyltransferase/FAD-dependent mono...    78   1e-13
+sp|M2YKT1|MET1_DOTSN Hps1-dma1 cluster O-methyltransferase OS=Do...    77   1e-13
+sp|D7UQ43|SOL2_ALTSO O-methyltransferase sol2 OS=Alternaria sola...    77   2e-13
+sp|Q0CS95|TAZO_ASPTN O-methyltransferase tazO OS=Aspergillus ter...    76   4e-13
+sp|A5ABG3|PYNC_ASPNC Methyltransferase pynC OS=Aspergillus niger...    75   6e-13
+sp|A0A0E3VJW8|FSA4_FUSSF Methyltransferase fsa4 OS=Fusarium sp. ...    75   1e-12
+sp|Q2UPA6|ACLU_ASPOR O-methyltransferase aclU OS=Aspergillus ory...    74   1e-12
+sp|C9K7C0|AMT9_ALTAL O-methyltransferase AMT9 OS=Alternaria alte...    74   2e-12
+sp|Q54527|RDMB_STREF Aclacinomycin 10-hydroxylase RdmB OS=Strept...    74   2e-12
+sp|D7PI16|GSFB_PENAE O-methyltransferase gsfB OS=Penicillium aet...    74   2e-12
+sp|I1RF60|AURJ_GIBZE O-methyltransferase aurJ OS=Gibberella zeae...    74   3e-12
+sp|L0MXX3|FC8_PHOAM O-methyltransferase PaMT OS=Phomopsis amygda...    73   4e-12
+sp|Q8HZJ0|ASMT_MACMU Acetylserotonin O-methyltransferase OS=Maca...    72   6e-12
+sp|B8N8R1|AFVC_ASPFN O-methyltransferase afvC OS=Aspergillus fla...    72   1e-11
+sp|S4W780|EQXD_FUSHE Methyltransferase eqxD OS=Fusarium heterosp...    71   1e-11
+sp|Q06528|DNRK_STRPE Carminomycin 4-O-methyltransferase DnrK OS=...    71   1e-11
+sp|G4MWB6|OME1B_MAGO7 O-methyltransferase OME1 OS=Magnaporthe or...    71   2e-11
+sp|Q55216|DNRK_STRS5 Carminomycin 4-O-methyltransferase DauK OS=...    70   2e-11
+sp|D3H5H5|CMT1_TRILO Chlorophenol O-methyltransferase OS=Trichod...    70   2e-11
+sp|P46597|ASMT_HUMAN Acetylserotonin O-methyltransferase OS=Homo...    70   3e-11
+sp|A0A5B8YVD8|GME66_PESMI O-methyltransferase GME11366 OS=Pestal...    69   5e-11
+sp|B3FWS1|HPM5_HYPSB O-methyltransferase hmp5 OS=Hypomyces subic...    69   7e-11
+sp|P0CT90|OMT2_PHACR 3-O-methyltransferase 2 OS=Phanerochaete ch...    69   7e-11
+sp|P0CT89|OMT1_PHACR 4-O-methyltransferase 1 OS=Phanerochaete ch...    69   7e-11
+sp|B3GSH5|ASMT_RAT Acetylserotonin O-methyltransferase OS=Rattus...    69   7e-11
+sp|A0A0N9HN32|DESB_ASPDE O-methyltransferase desB OS=Aspergillus...    69   7e-11
+sp|P54906|CRTF_CERS4 Demethylspheroidene O-methyltransferase OS=...    68   9e-11
+sp|P9WEP8|STCP_EMENI Demethylsterigmatocystin 6-O-methyltransfer...    68   9e-11
+sp|O95671|ASML_HUMAN Probable bifunctional dTTP/UTP pyrophosphat...    67   2e-10
+sp|A0A4P8WAD3|PYIA_MAGGR O-methyltransferase pyiA OS=Magnaporthe...    67   2e-10
+sp|A0A3Q9U4A9|PVHD_TALVA Methyltransferase pvhD OS=Talaromyces v...    67   3e-10
+sp|A0A067Z9B6|FMAD_ASPFU O-methyltransferase af390-400 OS=Asperg...    67   3e-10
+sp|Q92056|ASMT_CHICK Acetylserotonin O-methyltransferase OS=Gall...    66   4e-10
+sp|A0A0B5L781|MPAG2_PENBR O-methyltransferase mpaG' OS=Penicilli...    66   5e-10
+sp|F1DBB3|MPAG_PENBR O-methyltransferase mpaG OS=Penicillium bre...    66   5e-10
+sp|Q5AR47|ASQD_EMENI O-methyltransferase asqD OS=Emericella nidu...    65   6e-10
+sp|A0A179H2P2|LCSG_PURLI O-methyltransferase lcsG OS=Purpureocil...    65   7e-10
+sp|A0A2H3CSB7|ARMOM_ARMGA O-methyltransferase ARMGADRAFT_1088206...    65   8e-10
+sp|A0ST41|CTB2_CERNC O-methyltransferase CTB2 OS=Cercospora nico...    65   1e-09
+sp|A0A084R1I1|ATR12_STAC4 O-methyltransferase ATR12 OS=Stachybot...    64   2e-09
+sp|A0A2G5ICZ9|CTB2_CERBT O-methyltransferase CTB2 OS=Cercospora ...    64   2e-09
+sp|P39896|TCMO_STRGA Tetracenomycin polyketide synthesis 8-O-met...    64   2e-09
+sp|D5AP78|CRTF_RHOCB Demethylspheroidene O-methyltransferase OS=...    62   6e-09
+sp|Q54FP4|OMT10_DICDI O-methyltransferase 10 OS=Dictyostelium di...    62   9e-09
+sp|D7PI17|GSFC_PENAE O-methyltransferase gsfC OS=Penicillium aet...    61   2e-08
+sp|Q4WQZ7|TPCA_ASPFU O-methyltransferase tpcA OS=Aspergillus fum...    61   2e-08
+sp|D7PI18|GSFD_PENAE O-methyltransferase gsfD OS=Penicillium aet...    60   4e-08
+sp|Q84HC8|NCSB1_STRCZ 2,7-dihydroxy-5-methyl-1-naphthoate 7-O-me...    60   4e-08
+sp|A0A1B2CTA7|PENC_PENTH O-methyltransferase penC OS=Penicillium...    59   7e-08
+sp|B8NY85|AGIB_ASPFN O-methyltransferase agiB OS=Aspergillus fla...    58   1e-07
+sp|B4XY98|AZIB2_STREG 3-hydroxy-5-methyl-1-naphthoate 3-O-methyl...    57   2e-07
+sp|W6R4H4|MPAG_PENRF O-methyltransferase mpaG OS=Penicillium roq...    57   2e-07
+sp|A2QK65|KTNB_ASPNC O-methyltransferase kntB OS=Aspergillus nig...    57   2e-07
+sp|Q3S8P6|OXYT_STRRM N,N-dimethyltransferase OxyT OS=Streptomyce...    55   1e-06
+sp|Q0CCY5|GEDA_ASPTN O-methyltransferase gedA OS=Aspergillus ter...    55   1e-06
+sp|Q0UI04|ELCD_PHANO O-methyltransferase elcB OS=Phaeosphaeria n...    54   2e-06
+sp|Q5W266|PIGF_SERS3 S-adenosyl-L-methionine-dependent methyl tr...    54   2e-06
+sp|B8NJH3|LEPI_ASPFN O-methyltransferase lepI OS=Aspergillus fla...    52   9e-06
+sp|Q8KGE0|BCHU_CHLTE Bacteriochlorophyllide d C-20 methyltransfe...    51   2e-05
+sp|A0A084AFG7|SAT18_STACB O-methyltransferase SAT18 OS=Stachybot...    51   2e-05
+sp|C9K2Q2|BSC6_ALTBR 16-O-methyltransferase bsc6 OS=Alternaria b...    49   7e-05
+sp|S0DLP1|APF6_GIBF5 O-methyltransferase apf6 OS=Gibberella fuji...    47   3e-04
+sp|B0CN31|SFMM2_STRLA L-tyrosine C(3)-methyltransferase OS=Strep...    46   5e-04
+sp|Q0CS62|ATIMG_ASPTN Trimodular acetylaranotin synthesis protei...    44   0.002
+sp|Q86HS9|OMT2_DICDI O-methyltransferase 2 OS=Dictyostelium disc...    44   0.003
+sp|I1RL18|DPFGI_GIBZE O-methyltransferase dpfgI OS=Gibberella ze...    41   0.018
+sp|Q57551|Y086_METJA Uncharacterized protein MJ0086 OS=Methanoca...    36   0.49 
+sp|Q55DH6|NTM1_DICDI Alpha N-terminal protein methyltransferase ...    36   0.51 
+sp|Q5VVY1|NTM1B_HUMAN N-terminal Xaa-Pro-Lys N-methyltransferase...    35   0.63 
+sp|E3H9W1|BIOC1_ILYPC Malonyl-[acyl-carrier protein] O-methyltra...    34   2.2  
+sp|A0A1U8QH20|CICE_EMENI O-methyltransferase cicE OS=Emericella ...    33   3.1  
+sp|P0CU67|CLAG_PASFU Atrochrysone carboxylic acid synthase OS=Pa...    33   3.3  
+sp|D3ZVR1|NTM1B_RAT N-terminal Xaa-Pro-Lys N-methyltransferase 2...    32   6.0  
+sp|B2RXM4|NTM1B_MOUSE N-terminal Xaa-Pro-Lys N-methyltransferase...    32   6.7  
+sp|C6V598|BIOC_NEORI Malonyl-[acyl-carrier protein] O-methyltran...    32   8.1  
+sp|Q0SMR8|RSMA_BORAP Ribosomal RNA small subunit methyltransfera...    32   9.6  
+sp|Q9N4D9|NTM1_CAEEL Alpha N-terminal protein methyltransferase ...    32   9.6  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q84KK5|D7OMT_GLYEC Isoflavone 7-O-methyltransferase OS=Glycyr...   500   e-141
+sp|O22308|7OMT6_MEDSA Isoflavone-7-O-methyltransferase 6 OS=Medi...   486   e-137
+sp|O22309|7OMT9_MEDSA Isoflavone-7-O-methyltransferase 9 OS=Medi...   485   e-136
+sp|O24529|7OMT8_MEDSA Isoflavone-7-O-methyltransferase 8 OS=Medi...   485   e-136
+sp|C6TAY1|SOMT2_SOYBN Flavonoid 4'-O-methyltransferase OS=Glycin...   464   e-130
+sp|B6VJS4|ROMT_VITVI Trans-resveratrol di-O-methyltransferase OS...   442   e-123
+sp|O24305|M3OM1_PEA (+)-6a-hydroxymaackiain 3-O-methyltransferas...   435   e-121
+sp|Q9LEL6|6OMT_COPJA (RS)-norcoclaurine 6-O-methyltransferase OS...   423   e-118
+sp|B0ZB57|OMT3_HUMLU Probable O-methyltransferase 3 OS=Humulus l...   423   e-117
+sp|S5DWK8|F8MT1_OCIBA Flavonoid 8-O-methyltransferase 1 OS=Ocimu...   420   e-116
+sp|P0DH60|M3OM2_PEA (+)-6a-hydroxymaackiain 3-O-methyltransferas...   417   e-116
+sp|A0A0N9HMN6|POMT3_SINHE Pluviatolide O-methyltransferase OS=Si...   415   e-115
+sp|Q29U70|I4OMT_MEDTR Isoflavone 4'-O-methyltransferase OS=Medic...   407   e-113
+sp|Q84KK4|I4OMT_LOTJA Isoflavone 4'-O-methyltransferase OS=Lotus...   407   e-113
+sp|Q5C9L7|6OMT_THLFG (RS)-norcoclaurine 6-O-methyltransferase OS...   406   e-112
+sp|B0EXJ8|HTOMT_CATRO Tabersonine 16-O-methyltransferase OS=Cath...   405   e-112
+sp|Q7XB10|4OMT2_PAPSO 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-me...   404   e-112
+sp|Q6WUC1|6OMT_PAPSO (RS)-norcoclaurine 6-O-methyltransferase OS...   403   e-112
+sp|Q9FK25|OMT1_ARATH Flavone 3'-O-methyltransferase 1 OS=Arabido...   401   e-111
+sp|Q7XB11|4OMT1_PAPSO 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-me...   398   e-110
+sp|Q93WU3|CVMT1_OCIBA Chavicol O-methyltransferase OS=Ocimum bas...   397   e-110
+sp|Q9XGW0|COMT1_OCIBA Caffeic acid 3-O-methyltransferase 1 OS=Oc...   396   e-109
+sp|Q8W013|COMT1_CATRO Caffeic acid 3-O-methyltransferase OS=Cath...   395   e-109
+sp|Q00763|COMT1_POPTM Caffeic acid 3-O-methyltransferase 1 OS=Po...   393   e-108
+sp|Q42653|OMT2_CHRAE Flavone 3'-O-methyltransferase OMT2 OS=Chry...   393   e-108
+sp|Q43046|COMT1_POPKI Caffeic acid 3-O-methyltransferase 1 OS=Po...   393   e-108
+sp|Q8LL87|COMT1_COFCA Caffeic acid 3-O-methyltransferase OS=Coff...   393   e-108
+sp|Q93WU2|EOMT1_OCIBA Eugenol O-methyltransferase OS=Ocimum basi...   391   e-108
+sp|P59049|OMT1_CHRAE Flavone 3'-O-methyltransferase OMT1 OS=Chry...   391   e-108
+sp|Q9XGV9|COMT2_OCIBA Caffeic acid 3-O-methyltransferase 2 OS=Oc...   391   e-108
+sp|Q6VMW0|Q8OMT_MENPI 8-hydroxyquercetin 8-O-methyltransferase O...   391   e-108
+sp|A0A4P8DY91|COMTS_KITPR Esculetin O-methyltransferase OS=Kitag...   391   e-108
+sp|Q6T1F5|COMT1_AMMMJ Caffeic acid 3-O-methyltransferase OS=Ammi...   391   e-108
+sp|Q9FQY8|COMT1_CAPAN Caffeic acid 3-O-methyltransferase OS=Caps...   390   e-107
+sp|Q8GSN1|MOMT_CATRO Myricetin O-methyltransferase OS=Catharanth...   389   e-107
+sp|Q6WUC2|7OMT_PAPSO (R,S)-reticuline 7-O-methyltransferase OS=P...   389   e-107
+sp|Q43609|COMT1_PRUDU Caffeic acid 3-O-methyltransferase OS=Prun...   389   e-107
+sp|Q84KK6|I4OMT_GLYEC Isoflavone 4'-O-methyltransferase OS=Glycy...   387   e-107
+sp|Q9LEL5|4OMT_COPJA 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-met...   386   e-106
+sp|F2YTN5|MOMT2_SOLHA Myricetin 7/4'-O-methyltransferase 2 OS=So...   385   e-106
+sp|A0A3Q7GYG2|MOMT2_SOLLC Myricetin 7/4'-O-methyltransferase 2 O...   385   e-106
+sp|Q8GU25|COMT1_ROSCH Caffeic acid 3-O-methyltransferase OS=Rosa...   383   e-105
+sp|O81646|COMT1_CAPCH Caffeic acid 3-O-methyltransferase OS=Caps...   382   e-105
+sp|P46484|COMT1_EUCGU Caffeic acid 3-O-methyltransferase OS=Euca...   381   e-105
+sp|O23760|COMT1_CLABR Caffeic acid 3-O-methyltransferase OS=Clar...   381   e-105
+sp|P28002|COMT1_MEDSA Caffeic acid 3-O-methyltransferase OS=Medi...   379   e-104
+sp|Q43047|COMT3_POPKI Caffeic acid 3-O-methyltransferase 3 OS=Po...   378   e-104
+sp|Q41086|COMT2_POPTM Caffeic acid 3-O-methyltransferase 2 OS=Po...   376   e-103
+sp|Q43239|COMT1_ZINVI Caffeic acid 3-O-methyltransferase OS=Zinn...   371   e-102
+sp|Q42654|FOMT1_CHRAE Flavonoid 3'-O-methyltransferase FOMT OS=C...   369   e-101
+sp|Q38J50|FOMT2_WHEAT Tricetin 3',4',5'-O-trimethyltransferase O...   366   e-100
+sp|C7SDN9|N7OMT_PAPSO Norreticuline-7-O-methyltransferase OS=Pap...   366   e-100
+sp|Q6T1F6|BMT_AMMMJ Bergaptol O-methyltransferase OS=Ammi majus ...   365   e-100
+sp|A8J6X1|BMT_GLELI Bergaptol O-methyltransferase OS=Glehnia lit...   365   e-100
+sp|O04385|IEMT_CLABR (Iso)eugenol O-methyltransferase OS=Clarkia...   364   e-100
+sp|M9Z1G5|MOMT3_SOLHA Myricetin 3-O-methyltransferase 3 OS=Solan...   364   e-100
+sp|O82054|COMT1_SACOF Caffeic acid 3-O-methyltransferase OS=Sacc...   363   1e-99
+sp|I3PLQ7|SOMT3_PAPSO Scoulerine-9-O-methyltransferase 3 OS=Papa...   362   3e-99
+sp|A0A166U5H3|BMT_KITPR Bergaptol O-methyltransferase OS=Kitagaw...   362   3e-99
+sp|Q6EPG8|ASMT1_ORYSJ Acetylserotonin O-methyltransferase 1 OS=O...   360   9e-99
+sp|B0ZB56|OMT2_HUMLU Xanthohumol 4-O-methyltransferase OS=Humulu...   359   1e-98
+sp|A0A2S1WC15|OMT3B_PAPSO Probable scoulerine-9-O-methyltransfer...   359   2e-98
+sp|A0A3Q7HYF0|MOMT3_SOLLC Myricetin 3-O-methyltransferase 3 OS=S...   359   2e-98
+sp|Q6VMV9|OMT3_MENPI Flavonoid 3'-O-methyltransferase 3 OS=Menth...   353   9e-97
+sp|P47917|ZRP4_MAIZE O-methyltransferase ZRP4 OS=Zea mays OX=457...   353   1e-96
+sp|Q53QK0|Y1103_ORYSJ Flavonoid O-methyltransferase-like protein...   348   3e-95
+sp|A0A0N9HTA1|DOMT1_SINHE Desmethyl-yatein O-methyltransferase O...   348   4e-95
+sp|Q06509|COMT1_MAIZE Caffeic acid 3-O-methyltransferase OS=Zea ...   348   4e-95
+sp|A0A088MF62|MOMT4_SOLLC Myricetin 3'-O-methyltransferase 4 OS=...   347   7e-95
+sp|A8QW53|OMT3_SORBI 5-pentadecatrienyl resorcinol O-methyltrans...   346   2e-94
+sp|P45986|IMT1_MESCR Inositol 4-methyltransferase OS=Mesembryant...   341   5e-93
+sp|A0A3Q7I9E2|CTOMT_SOLLC Cathecol O-methyltransferase 1 OS=Sola...   340   1e-92
+sp|F2YTN4|MOMT1_SOLHA Myricetin 3'/5'-O-methyltransferase 1 OS=S...   339   1e-92
+sp|A9X7L0|ANMT_RUTGR Anthranilate N-methyltransferase OS=Ruta gr...   339   2e-92
+sp|Q9SWC2|COMT1_EUCGL Caffeic acid 3-O-methyltransferase (Fragme...   339   2e-92
+sp|Q39522|SMT_COPJA (S)-scoulerine 9-O-methyltransferase OS=Copt...   338   5e-92
+sp|K0ICR0|FOMT5_OCIBA Flavonoid 4'-O-methyltransferase 5 OS=Ocim...   336   2e-91
+sp|Q8VWJ6|ASMT2_ORYSJ Acetylserotonin O-methyltransferase 2 OS=O...   334   4e-91
+sp|I3PLQ6|SOMT2_PAPSO Scoulerine-9-O-methyltransferase 2 OS=Papa...   334   6e-91
+sp|K0I7Q2|FOMT3_OCIBA Flavonoid 4'-O-methyltransferase 3 OS=Ocim...   334   7e-91
+sp|A0A2S1WBY6|OMT2B_PAPSO Probable scoulerine-9-O-methyltransfer...   334   8e-91
+sp|K0I986|FOMT6_OCIBA Flavonoid 6-O-methyltransferase 6 OS=Ocimu...   332   3e-90
+sp|Q8VWG4|ASMT3_ORYSJ Acetylserotonin O-methyltransferase 3 OS=O...   331   7e-90
+sp|Q84N28|FOMT1_WHEAT Flavone O-methyltransferase 1 OS=Triticum ...   330   8e-90
+sp|Q6VMW2|OMT1A_MENPI Flavonoid 7-O-methyltransferase 1A OS=Ment...   329   2e-89
+sp|Q6VMV8|OMT4_MENPI Flavonoid 4'-O-methyltransferase 4 OS=Menth...   328   4e-89
+sp|P93324|CHOMT_MEDSA Isoliquiritigenin 2'-O-methyltransferase O...   327   7e-89
+sp|Q8H9A8|COOMT_COPJA Columbamine O-methyltransferase OS=Coptis ...   327   9e-89
+sp|K0II72|FOMT2_OCIBA Flavonoid 7-O-methyltransferase 2 OS=Ocimu...   326   2e-88
+sp|K0I210|FOMT4_OCIBA Flavonoid 6-O-methyltransferase 4 OS=Ocimu...   324   9e-88
+sp|K0I977|FOMT1_OCIBA Flavonoid 7-O-methyltransferase 1 OS=Ocimu...   323   1e-87
+sp|A8QW51|OMT2_SORBI Probable O-methyltransferase 2 OS=Sorghum b...   321   4e-87
+sp|Q6VMW1|OMT1B_MENPI Flavonoid 7-O-methyltransferase 1B OS=Ment...   321   7e-87
+sp|Q9T003|ASMT_ARATH Acetylserotonin O-methyltransferase OS=Arab...   320   9e-87
+sp|Q7XXD4|METL_ORYSJ Probable inactive methyltransferase Os04g01...   317   7e-86
+sp|B0ZB55|OMT1_HUMLU Desmethylxanthohumol 6'-O-methyltransferase...   316   1e-85
+sp|Q6ZD89|OMT1_ORYSJ Flavone 3'-O-methyltransferase 1 OS=Oryza s...   314   8e-85
+sp|A8QW52|OMT1_SORBI Eugenol O-methyltransferase OS=Sorghum bico...   312   3e-84
+sp|I3V6A7|SOMT1_PAPSO Scoulerine-9-O-methyltransferase 1 OS=Papa...   311   4e-84
+sp|Q96565|AMNMT_HORVV 3-aminomethylindole N-methyltransferase OS...   309   2e-83
+sp|Q7XXI9|OMTL2_ORYSJ Caffeate O-methyltransferase-like protein ...   308   4e-83
+sp|I1M2U5|NAMT1_SOYBN Nicotinate N-methyltransferase 1 OS=Glycin...   307   7e-83
+sp|Q9SCP7|NAMT1_ARATH Nicotinate N-methyltransferase 1 OS=Arabid...   303   1e-81
+sp|Q84XW5|OMT1_SECCE Daphnetin O-methyltransferase 1 OS=Secale c...   299   3e-80
+sp|B1P123|BX7_MAIZE TRIBOA-glucoside O-methyltransferase BX7 OS=...   297   7e-80
+sp|B8RCD3|AIMT1_PIMAN Trans-anol O-methyltransferase 1 OS=Pimpin...   292   2e-78
+sp|Q9LPU8|IGMT4_ARATH Indole glucosinolate O-methyltransferase 4...   292   3e-78
+sp|Q0IP69|NOMT_ORYSJ Naringenin 7-O-methyltransferase OS=Oryza s...   291   5e-78
+sp|Q9LPU5|IGMT1_ARATH Indole glucosinolate O-methyltransferase 1...   290   1e-77
+sp|Q9LPU6|IGMT3_ARATH Indole glucosinolate O-methyltransferase 3...   284   1e-75
+sp|Q9LPU7|IGMT2_ARATH Indole glucosinolate O-methyltransferase 2...   282   3e-75
+sp|Q9SRD4|IGMT5_ARATH Indole glucosinolate O-methyltransferase 5...   276   1e-73
+sp|A0A172J1V3|PHZM_LYSAN Phenazine O-methyltransferase PhzM OS=L...   273   2e-72
+sp|Q6K9X3|NAMT1_ORYSJ Nicotinate N-methyltransferase 1 OS=Oryza ...   254   8e-67
+sp|Q54B59|OMT12_DICDI O-methyltransferase 12 OS=Dictyostelium di...   246   2e-64
+sp|Q4WMJ5|GLIM_ASPFU O-methyltransferase gliM OS=Aspergillus fum...   243   2e-63
+sp|P0CT90|OMT2_PHACR 3-O-methyltransferase 2 OS=Phanerochaete ch...   238   5e-62
+sp|A0A2G5IC53|CTB3_CERBT Dual O-methyltransferase/FAD-dependent ...   237   8e-62
+sp|Q6Q880|SIRM_LEPMC O-methyltransferase sirM OS=Leptosphaeria m...   237   9e-62
+sp|P55790|OMTA_ASPFN Sterigmatocystin 8-O-methyltransferase OS=A...   237   1e-61
+sp|Q2I0M6|CTB3_CERNC Dual O-methyltransferase/FAD-dependent mono...   237   1e-61
+sp|Q12120|AFLP_ASPPU Sterigmatocystin 8-O-methyltransferase OS=A...   237   1e-61
+sp|P10950|ASMT_BOVIN Acetylserotonin O-methyltransferase OS=Bos ...   237   1e-61
+sp|A0A443HJY8|VDTC1_BYSSP O-methyltransferase VdtC OS=Byssochlam...   236   2e-61
+sp|B0CN39|SFMM3_STRLA O-methyltransferase SfmM3 OS=Streptomyces ...   235   5e-61
+sp|Q9X5T6|MMCR_STRLA Mitomycin biosynthesis 6-O-methyltransferas...   233   2e-60
+sp|Q54GZ0|OMT9_DICDI O-methyltransferase 9 OS=Dictyostelium disc...   231   5e-60
+sp|Q86I40|OMT4_DICDI O-methyltransferase 4 OS=Dictyostelium disc...   230   1e-59
+sp|Q8T638|DMTA_DICDI Des-methyl DIF-1 methyltransferase A OS=Dic...   229   2e-59
+sp|Q0CJD1|PGMB_ASPTN O-methyltransferase pgmB OS=Aspergillus ter...   228   7e-59
+sp|B8N8R1|AFVC_ASPFN O-methyltransferase afvC OS=Aspergillus fla...   227   1e-58
+sp|A0A1W5SMT6|PGMB_ASPTE O-methyltransferase pgmB OS=Aspergillus...   227   1e-58
+sp|Q0UI02|ELCB_PHANO Dual O-methyltransferase/FAD-dependent mono...   227   2e-58
+sp|Q2UPB3|ACLM_ASPOR O-methyltransferase aclM OS=Aspergillus ory...   225   3e-58
+sp|A0A0N9HN32|DESB_ASPDE O-methyltransferase desB OS=Aspergillus...   224   9e-58
+sp|Q2UPA6|ACLU_ASPOR O-methyltransferase aclU OS=Aspergillus ory...   224   1e-57
+sp|A0A348AXX3|OMT_CURCL O-methyltransferase OS=Curvularia clavat...   223   2e-57
+sp|Q9P900|OMTB_ASPFN Demethylsterigmatocystin 6-O-methyltransfer...   222   3e-57
+sp|Q4WED7|XANE_ASPFU O-methyltransferase xanE OS=Aspergillus fum...   222   4e-57
+sp|S0DQQ0|FSR2_GIBF5 O-methyltransferase fsr2 OS=Gibberella fuji...   221   7e-57
+sp|A0A1B2CTC1|PENK_PENTH O-methyltransferase penK OS=Penicillium...   221   8e-57
+sp|D3H5H5|CMT1_TRILO Chlorophenol O-methyltransferase OS=Trichod...   220   9e-57
+sp|A0A1U9YI02|VERM_CLORO O-methyltransferase verK OS=Clonostachy...   220   1e-56
+sp|P42712|DMPM_STRAD O-demethylpuromycin-O-methyltransferase OS=...   220   1e-56
+sp|P16559|TCMN_STRGA Tetracenomycin biosynthesis bifunctional cy...   220   2e-56
+sp|A2QK65|KTNB_ASPNC O-methyltransferase kntB OS=Aspergillus nig...   219   2e-56
+sp|Q9UQY0|AFLO_ASPPU Demethylsterigmatocystin 6-O-methyltransfer...   219   3e-56
+sp|Q92056|ASMT_CHICK Acetylserotonin O-methyltransferase OS=Gall...   218   7e-56
+sp|D7UQ43|SOL2_ALTSO O-methyltransferase sol2 OS=Alternaria sola...   217   8e-56
+sp|Q54S95|OMT7_DICDI O-methyltransferase 7 OS=Dictyostelium disc...   216   2e-55
+sp|A0A0K2JL91|CREN_STRCM 3-amino-4-hydroxybenzoate 4-O-methyltra...   216   2e-55
+sp|G4MWB6|OME1B_MAGO7 O-methyltransferase OME1 OS=Magnaporthe or...   215   3e-55
+sp|A1DA61|FTMD_NEOFI 6-hydroxytryprostatin B O-methyltransferase...   212   3e-54
+sp|S0E608|BIK3_GIBF5 O-methyltransferase bik3 OS=Gibberella fuji...   212   4e-54
+sp|Q4WAW6|FTMD_ASPFU 6-hydroxytryprostatin B O-methyltransferase...   212   4e-54
+sp|A0A5B8YVD8|GME66_PESMI O-methyltransferase GME11366 OS=Pestal...   211   6e-54
+sp|Q8HZJ0|ASMT_MACMU Acetylserotonin O-methyltransferase OS=Maca...   211   7e-54
+sp|Q0CS95|TAZO_ASPTN O-methyltransferase tazO OS=Aspergillus ter...   211   7e-54
+sp|B9WZX2|FTMD_ASPFM 6-hydroxytryprostatin B O-methyltransferase...   211   9e-54
+sp|P46597|ASMT_HUMAN Acetylserotonin O-methyltransferase OS=Homo...   209   3e-53
+sp|E9KMQ4|GRA3_CLAGR Grayanic acid biosynthesis cluster O-methyl...   208   4e-53
+sp|Q54B60|OMT11_DICDI Probable inactive O-methyltransferase 11 O...   208   4e-53
+sp|K4RFM2|ROSA_STRDJ 8-amino-8-demethylriboflavin N,N-dimethyltr...   206   2e-52
+sp|C9K7C0|AMT9_ALTAL O-methyltransferase AMT9 OS=Alternaria alte...   205   3e-52
+sp|A0A0C1E5J2|OPAF_ASPUT O-methyltransferase opaF OS=Aspergillus...   205   4e-52
+sp|A0A0E3VJW8|FSA4_FUSSF Methyltransferase fsa4 OS=Fusarium sp. ...   203   1e-51
+sp|Q54FP4|OMT10_DICDI O-methyltransferase 10 OS=Dictyostelium di...   203   2e-51
+sp|Q54527|RDMB_STREF Aclacinomycin 10-hydroxylase RdmB OS=Strept...   202   3e-51
+sp|O95671|ASML_HUMAN Probable bifunctional dTTP/UTP pyrophosphat...   202   5e-51
+sp|A0A1L9UR19|BFOD_ASPBC O-methyltransferase bfoD OS=Aspergillus...   199   2e-50
+sp|A2QBF0|AUND_ASPNC O-methyltransferase aunD OS=Aspergillus nig...   199   2e-50
+sp|A0A1B2CTA7|PENC_PENTH O-methyltransferase penC OS=Penicillium...   199   3e-50
+sp|G3XSI5|AUND_ASPNA O-methyltransferase aunD OS=Aspergillus nig...   198   4e-50
+sp|Q5AR57|ASQN_EMENI O-methyltransferase asqN OS=Emericella nidu...   198   5e-50
+sp|D7PI16|GSFB_PENAE O-methyltransferase gsfB OS=Penicillium aet...   198   7e-50
+sp|S4W780|EQXD_FUSHE Methyltransferase eqxD OS=Fusarium heterosp...   196   2e-49
+sp|B3FWS1|HPM5_HYPSB O-methyltransferase hmp5 OS=Hypomyces subic...   195   4e-49
+sp|I1RF60|AURJ_GIBZE O-methyltransferase aurJ OS=Gibberella zeae...   194   7e-49
+sp|M2YKT1|MET1_DOTSN Hps1-dma1 cluster O-methyltransferase OS=Do...   193   1e-48
+sp|A5ABG3|PYNC_ASPNC Methyltransferase pynC OS=Aspergillus niger...   193   1e-48
+sp|Q9HWH2|PHZM_PSEAE Phenazine-1-carboxylate N-methyltransferase...   193   2e-48
+sp|L0MXX3|FC8_PHOAM O-methyltransferase PaMT OS=Phomopsis amygda...   191   6e-48
+sp|A0A2V5HP22|PYVH_ASPV1 O-methyltransferase pyvH OS=Aspergillus...   191   9e-48
+sp|A0A084R1I1|ATR12_STAC4 O-methyltransferase ATR12 OS=Stachybot...   188   7e-47
+sp|A0A067Z9B6|FMAD_ASPFU O-methyltransferase af390-400 OS=Asperg...   187   1e-46
+sp|Q5AR47|ASQD_EMENI O-methyltransferase asqD OS=Emericella nidu...   187   2e-46
+sp|Q4WQZ7|TPCA_ASPFU O-methyltransferase tpcA OS=Aspergillus fum...   186   2e-46
+sp|P0CT89|OMT1_PHACR 4-O-methyltransferase 1 OS=Phanerochaete ch...   183   1e-45
+sp|A0A3Q9U4A9|PVHD_TALVA Methyltransferase pvhD OS=Talaromyces v...   183   2e-45
+sp|Q0CCY5|GEDA_ASPTN O-methyltransferase gedA OS=Aspergillus ter...   183   2e-45
+sp|S0DLP1|APF6_GIBF5 O-methyltransferase apf6 OS=Gibberella fuji...   180   1e-44
+sp|B3GSH5|ASMT_RAT Acetylserotonin O-methyltransferase OS=Rattus...   178   5e-44
+sp|A0A2H3CSB7|ARMOM_ARMGA O-methyltransferase ARMGADRAFT_1088206...   177   9e-44
+sp|D7PI18|GSFD_PENAE O-methyltransferase gsfD OS=Penicillium aet...   177   1e-43
+sp|F1DBB3|MPAG_PENBR O-methyltransferase mpaG OS=Penicillium bre...   173   2e-42
+sp|D3KU66|ASMT_MOUSE Acetylserotonin O-methyltransferase OS=Mus ...   173   2e-42
+sp|A0A2G5ICZ9|CTB2_CERBT O-methyltransferase CTB2 OS=Cercospora ...   173   2e-42
+sp|D3KU67|ASMT_MUSMM Acetylserotonin O-methyltransferase OS=Mus ...   173   2e-42
+sp|B8NJH3|LEPI_ASPFN O-methyltransferase lepI OS=Aspergillus fla...   173   2e-42
+sp|A0A084AFG7|SAT18_STACB O-methyltransferase SAT18 OS=Stachybot...   172   4e-42
+sp|A0ST41|CTB2_CERNC O-methyltransferase CTB2 OS=Cercospora nico...   170   1e-41
+sp|A0A0B5L781|MPAG2_PENBR O-methyltransferase mpaG' OS=Penicilli...   170   2e-41
+sp|P9WEP8|STCP_EMENI Demethylsterigmatocystin 6-O-methyltransfer...   168   5e-41
+sp|A0A4P8WAD3|PYIA_MAGGR O-methyltransferase pyiA OS=Magnaporthe...   168   7e-41
+sp|Q0UI04|ELCD_PHANO O-methyltransferase elcB OS=Phaeosphaeria n...   166   3e-40
+sp|Q55216|DNRK_STRS5 Carminomycin 4-O-methyltransferase DauK OS=...   166   3e-40
+sp|P39896|TCMO_STRGA Tetracenomycin polyketide synthesis 8-O-met...   165   5e-40
+sp|D7PI17|GSFC_PENAE O-methyltransferase gsfC OS=Penicillium aet...   165   6e-40
+sp|Q06528|DNRK_STRPE Carminomycin 4-O-methyltransferase DnrK OS=...   164   1e-39
+sp|B4XY98|AZIB2_STREG 3-hydroxy-5-methyl-1-naphthoate 3-O-methyl...   163   2e-39
+sp|Q3S8P6|OXYT_STRRM N,N-dimethyltransferase OxyT OS=Streptomyce...   162   4e-39
+sp|B8NY85|AGIB_ASPFN O-methyltransferase agiB OS=Aspergillus fla...   160   2e-38
+sp|A0A179H2P2|LCSG_PURLI O-methyltransferase lcsG OS=Purpureocil...   159   3e-38
+sp|C9K2Q2|BSC6_ALTBR 16-O-methyltransferase bsc6 OS=Alternaria b...   159   3e-38
+sp|A0A2Z5XAK6|PHM5_PYRSX Methyltransferase phm5 OS=Pyrenochaetop...   158   6e-38
+sp|Q5W266|PIGF_SERS3 S-adenosyl-L-methionine-dependent methyl tr...   154   1e-36
+sp|D5AP78|CRTF_RHOCB Demethylspheroidene O-methyltransferase OS=...   153   2e-36
+sp|W6R4H4|MPAG_PENRF O-methyltransferase mpaG OS=Penicillium roq...   151   1e-35
+sp|Q84HC8|NCSB1_STRCZ 2,7-dihydroxy-5-methyl-1-naphthoate 7-O-me...   150   2e-35
+sp|P54906|CRTF_CERS4 Demethylspheroidene O-methyltransferase OS=...   145   4e-34
+sp|B0CN31|SFMM2_STRLA L-tyrosine C(3)-methyltransferase OS=Strep...   144   1e-33
+sp|Q8KGE0|BCHU_CHLTE Bacteriochlorophyllide d C-20 methyltransfe...   131   8e-30
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q86HS9|OMT2_DICDI O-methyltransferase 2 OS=Dictyostelium disc...   165   4e-40
+sp|A0A1U8QH20|CICE_EMENI O-methyltransferase cicE OS=Emericella ...   155   4e-37
+sp|A0A142C7A1|PHNC_PENHR O-methyltransferase phnC OS=Penicillium...   145   6e-34
+sp|I1RL18|DPFGI_GIBZE O-methyltransferase dpfgI OS=Gibberella ze...   138   9e-32
+sp|Q0CS62|ATIMG_ASPTN Trimodular acetylaranotin synthesis protei...   130   2e-29
+sp|A0A6G9KJC3|NANE_ASPNN N-methyltransferase nanE OS=Aspergillus...   115   5e-25
+sp|A0A1L9URE0|BFOE_ASPBC O-methyltransferase bfoE OS=Aspergillus...   102   4e-21
+sp|G3XSI6|AUNE_ASPNA O-methyltransferase aunE (Fragment) OS=Aspe...   100   2e-20
+sp|A2QBF1|AUNE_ASPNC O-methyltransferase aunE OS=Aspergillus nig...    97   2e-19
+sp|Q57551|Y086_METJA Uncharacterized protein MJ0086 OS=Methanoca...    72   7e-12
+sp|M2YJ20|AFLJ_DOTSN Dothistromin biosynthesis regulatory protei...    71   9e-12
+sp|K2RGJ8|DPMPI_MACPH O-methyltransferase dpmpI OS=Macrophomina ...    71   1e-11
+sp|E1ACR3|NOTR_ASPSM Notoamide biosynthesis cluster transcriptio...    69   7e-11
+sp|M2YMT1|PK81J_PSEFD Transcriptional coactivator MYCFIDRAFT_190...    62   6e-09
+sp|O42716|AFLS_ASPPU Aflatoxin cluster transcriptional coactivat...    61   1e-08
+sp|Q643C8|MPPJ_STRHY Phenylpyruvate C(3)-methyltransferase OS=St...    61   2e-08
+sp|A0A5B8YU39|GME69_PESMI Transcriptional coactivator GME11369 O...    60   4e-08
+sp|Q0CCY2|GEDD_ASPTN Geodin cluster transcriptional coactivator ...    57   3e-07
+sp|A0A411PQN9|AGN9_PAEDI Agnestins biosynthesis cluster transcri...    57   3e-07
+sp|O53532|Y2258_MYCTU S-adenosylmethionine-dependent methyltrans...    55   7e-07
+sp|A0A1L9WLK0|AACUS_ASPA1 Transcriptional coactivator AacuS OS=A...    53   4e-06
+sp|P0CU73|CLAA_PASFU Cladofulvin cluster transcriptional coactiv...    52   7e-06
+sp|C8VQ72|MDPA_EMENI Monodictyphenone cluster transcriptional co...    49   7e-05
+sp|A0A0D4BS77|IND1_STRGR Indolepyruvate C-methyltransferase OS=S...    47   3e-04
+sp|P0CY89|CRTF_RHOCA Demethylspheroidene O-methyltransferase (Fr...    46   3e-04
+sp|Q8TJK1|ARSM_METAC Arsenite methyltransferase OS=Methanosarcin...    46   4e-04
+sp|A0A2I1C3U1|NSRH_ASPN1 Transcriptional coactivator nsrH OS=Asp...    44   0.002
+sp|C0ZA63|RSMG_BREBN Ribosomal RNA small subunit methyltransfera...    44   0.002
+sp|A1BAN1|UBIE_PARDP Ubiquinone/menaquinone biosynthesis C-methy...    43   0.003
+sp|A0QM44|TAM_MYCA1 Trans-aconitate 2-methyltransferase OS=Mycob...    43   0.003
+sp|A4WVR7|UBIE_CERS5 Ubiquinone/menaquinone biosynthesis C-methy...    43   0.003
+sp|Q6NWX7|NTM1A_DANRE N-terminal Xaa-Pro-Lys N-methyltransferase...    43   0.003
+sp|A0A384XC21|STR2_STRTC Methyltransferase str2 OS=Strobilurus t...    43   0.003
+sp|B9KQJ8|UBIE_CERSK Ubiquinone/menaquinone biosynthesis C-methy...    43   0.004
+sp|Q3IY65|UBIE_CERS4 Ubiquinone/menaquinone biosynthesis C-methy...    43   0.004
+sp|A3PFL1|UBIE_CERS1 Ubiquinone/menaquinone biosynthesis C-methy...    43   0.004
+sp|Q6ZLD3|BQMT1_ORYSJ 2-methyl-6-phytyl-1,4-hydroquinone methylt...    43   0.004
+sp|C3LSR6|TRMN6_VIBCM tRNA1(Val) (adenine(37)-N6)-methyltransfer...    43   0.005
+sp|Q9KU62|TRMN6_VIBCH tRNA1(Val) (adenine(37)-N6)-methyltransfer...    43   0.005
+sp|Q9K623|BIOC_HALH5 Malonyl-[acyl-carrier protein] O-methyltran...    43   0.005
+sp|Q9RX93|TAM_DEIRA Trans-aconitate 2-methyltransferase OS=Deino...    43   0.006
+sp|Q4KLE6|NT1AB_XENLA N-terminal Xaa-Pro-Lys N-methyltransferase...    42   0.006
+sp|P9WGA3|TAM_MYCTU Probable trans-aconitate 2-methyltransferase...    42   0.007
+sp|P9WGA2|TAM_MYCTO Probable trans-aconitate 2-methyltransferase...    42   0.007
+sp|A5TZ21|TAM_MYCTA Trans-aconitate 2-methyltransferase OS=Mycob...    42   0.007
+sp|C1AJX2|TAM_MYCBT Trans-aconitate 2-methyltransferase OS=Mycob...    42   0.007
+sp|A1KFB7|TAM_MYCBP Trans-aconitate 2-methyltransferase OS=Mycob...    42   0.007
+sp|P66886|TAM_MYCBO Probable trans-aconitate 2-methyltransferase...    42   0.007
+sp|A8LNK7|UBIE_DINSH Ubiquinone/menaquinone biosynthesis C-methy...    42   0.008
+sp|P38340|NTM1_YEAST Alpha N-terminal protein methyltransferase ...    41   0.011
+sp|Q2QM69|BQMT2_ORYSJ 2-methyl-6-phytyl-1,4-hydroquinone methylt...    41   0.012
+sp|Q87TH4|UBIE_VIBPA Ubiquinone/menaquinone biosynthesis C-methy...    41   0.013
+sp|E3HCT1|BIOC2_ILYPC Malonyl-[acyl-carrier protein] O-methyltra...    41   0.015
+sp|A7MTX1|UBIE_VIBC1 Ubiquinone/menaquinone biosynthesis C-methy...    40   0.024
+sp|B9L9I3|CMOA_NAUPA Carboxy-S-adenosyl-L-methionine synthase OS...    40   0.033
+sp|Q0CCX8|GEDG_ASPTN Methyltransferase gedG OS=Aspergillus terre...    40   0.035
+sp|P75419|Y362_MYCPN Uncharacterized protein MG259 homolog OS=My...    40   0.035
+sp|A0A6F8RNP4|GRGA_PENSQ Reducing polyketide synthase grgA OS=Pe...    39   0.037
+sp|C0MF82|PRMA_STRS7 Ribosomal protein L11 methyltransferase OS=...    39   0.038
+sp|B4U5A5|PRMA_STREM Ribosomal protein L11 methyltransferase OS=...    39   0.038
+sp|C0M9U4|PRMA_STRE4 Ribosomal protein L11 methyltransferase OS=...    39   0.038
+sp|E3H9W1|BIOC1_ILYPC Malonyl-[acyl-carrier protein] O-methyltra...    39   0.038
+sp|Q5E6T2|PRMC_ALIF1 Release factor glutamine methyltransferase ...    39   0.038
+sp|O31474|YCGJ_BACSU Uncharacterized methyltransferase YcgJ OS=B...    39   0.040
+sp|A9MRB9|RSMC_SALAR Ribosomal RNA small subunit methyltransfera...    39   0.041
+sp|Q5BJX0|NTM1A_RAT N-terminal Xaa-Pro-Lys N-methyltransferase 1...    39   0.043
+sp|Q57693|Y241_METJA Uncharacterized protein MJ0241 OS=Methanoca...    39   0.046
+sp|P77460|YBCY_ECOLI Putative uncharacterized protein YbcY OS=Es...    39   0.051
+sp|Q8R2U4|NTM1A_MOUSE N-terminal Xaa-Pro-Lys N-methyltransferase...    39   0.054
+sp|A6WZN1|TAM_BRUA4 Trans-aconitate 2-methyltransferase OS=Bruce...    39   0.063
+sp|C0R2Q3|UBIE_WOLWR Ubiquinone/menaquinone biosynthesis C-methy...    39   0.063
+sp|Q7ULT2|PRMC_RHOBA Release factor glutamine methyltransferase ...    39   0.064
+sp|B9J7S8|UBIE_AGRRK Ubiquinone/menaquinone biosynthesis C-methy...    39   0.065
+sp|Q55DH6|NTM1_DICDI Alpha N-terminal protein methyltransferase ...    39   0.067
+sp|B1H2P7|NTM1A_XENTR N-terminal Xaa-Pro-Lys N-methyltransferase...    39   0.071
+sp|C5C0T0|MENG_BEUC1 Demethylmenaquinone methyltransferase OS=Be...    39   0.072
+sp|B0B9D1|PRMC_CHLT2 Release factor glutamine methyltransferase ...    39   0.078
+sp|B9E8Z2|RSMG_MACCJ Ribosomal RNA small subunit methyltransfera...    39   0.079
+sp|O84027|PRMC_CHLTR Release factor glutamine methyltransferase ...    39   0.079
+sp|Q3JYX9|PRMA_STRA1 Ribosomal protein L11 methyltransferase OS=...    39   0.079
+sp|Q6NN40|NTM1_DROME Alpha N-terminal protein methyltransferase ...    39   0.079
+sp|A0A0A2IBN3|CNSE_PENEN O-methyltransferase cnsE OS=Penicillium...    38   0.091
+sp|Q2KDB0|UBIE_RHIEC Ubiquinone/menaquinone biosynthesis C-methy...    38   0.091
+sp|B1YGA6|RSMG_EXIS2 Ribosomal RNA small subunit methyltransfera...    38   0.097
+sp|Q609U9|BIOC_METCA Malonyl-[acyl-carrier protein] O-methyltran...    38   0.10 
+sp|Q3SPQ7|TAM_NITWN Trans-aconitate 2-methyltransferase OS=Nitro...    38   0.11 
+sp|Q9LY74|BQMT_ARATH 2-methyl-6-phytyl-1,4-hydroquinone methyltr...    38   0.12 
+sp|C6V598|BIOC_NEORI Malonyl-[acyl-carrier protein] O-methyltran...    38   0.12 
+sp|A0PN72|TAM_MYCUA Trans-aconitate 2-methyltransferase OS=Mycob...    38   0.13 
+sp|B2HNX5|TAM_MYCMM Trans-aconitate 2-methyltransferase OS=Mycob...    38   0.13 
+sp|B2TZQ2|RSMC_SHIB3 Ribosomal RNA small subunit methyltransfera...    38   0.14 
+sp|B0UPF4|TAM_METS4 Trans-aconitate 2-methyltransferase OS=Methy...    38   0.15 
+sp|P46326|YXBB_BACSU Uncharacterized protein YxbB OS=Bacillus su...    38   0.15 
+sp|Q73HZ4|UBIE_WOLPM Ubiquinone/menaquinone biosynthesis C-methy...    38   0.16 
+sp|S0EG57|ME178_GIBF5 Methyltransferase FFUJ_09178 OS=Gibberella...    38   0.16 
+sp|A0A384XH94|SPKS1_STRTC Highly reducing polyketide synthase st...    38   0.17 
+sp|A0AMC5|RSMG_LISW6 Ribosomal RNA small subunit methyltransfera...    38   0.17 
+sp|S0EET5|FUJ1_GIBF5 Polyketide synthase 19 OS=Gibberella fujiku...    38   0.17 
+sp|B2GDC8|TRMB_LIMF3 tRNA (guanine-N(7)-)-methyltransferase OS=L...    38   0.18 
+sp|Q2SBD7|BIOC_HAHCH Malonyl-[acyl-carrier protein] O-methyltran...    38   0.18 
+sp|Q4KL94|NT1AA_XENLA N-terminal Xaa-Pro-Lys N-methyltransferase...    37   0.19 
+sp|A1QZA2|RSMH_BORT9 Ribosomal RNA small subunit methyltransfera...    37   0.21 
+sp|Q820A9|PRMA_ENTFA Ribosomal protein L11 methyltransferase OS=...    37   0.21 
+sp|Q9S1M6|RLMA2_STRFR 23S rRNA (guanine(748)-N(1))-methyltransfe...    37   0.21 
+sp|Q74HM3|RSMG_LACJO Ribosomal RNA small subunit methyltransfera...    37   0.22 
+sp|Q1MME0|UBIE_RHIL3 Ubiquinone/menaquinone biosynthesis C-methy...    37   0.22 
+sp|A4T0W0|TAM_MYCGI Trans-aconitate 2-methyltransferase OS=Mycol...    37   0.22 
+sp|P0DD19|PRMA_STRPQ Ribosomal protein L11 methyltransferase OS=...    37   0.23 
+sp|P0DD18|PRMA_STRP3 Ribosomal protein L11 methyltransferase OS=...    37   0.23 
+sp|P9WEZ3|PYTC_ASPTE Methyltransferase pytC OS=Aspergillus terre...    37   0.24 
+sp|Q2T9N3|NTM1A_BOVIN N-terminal Xaa-Pro-Lys N-methyltransferase...    37   0.24 
+sp|A8ALZ1|RSMC_CITK8 Ribosomal RNA small subunit methyltransfera...    37   0.25 
+sp|B1HPM1|RSMG_LYSSC Ribosomal RNA small subunit methyltransfera...    37   0.26 
+sp|Q749W5|BIOC_GEOSL Malonyl-[acyl-carrier protein] O-methyltran...    37   0.26 
+sp|Q0CZH2|PYTC_ASPTN Methyltransferase pytC OS=Aspergillus terre...    37   0.27 
+sp|A0A0D3MJQ5|ARSM_CLOSP Arsenite methyltransferase OS=Clostridi...    37   0.28 
+sp|B9DTA9|PRMA_STRU0 Ribosomal protein L11 methyltransferase OS=...    37   0.29 
+sp|B5Y286|RSMC_KLEP3 Ribosomal RNA small subunit methyltransfera...    37   0.31 
+sp|B1I7P5|PRMA_STRPI Ribosomal protein L11 methyltransferase OS=...    36   0.31 
+sp|D2H163|NTM1A_AILME N-terminal Xaa-Pro-Lys N-methyltransferase...    36   0.32 
+sp|Q9K5M8|RSMG_HALH5 Ribosomal RNA small subunit methyltransfera...    36   0.32 
+sp|Q8DS02|PRMA_STRMU Ribosomal protein L11 methyltransferase OS=...    36   0.32 
+sp|Q8UIH5|UBIE_AGRFC Ubiquinone/menaquinone biosynthesis C-methy...    36   0.33 
+sp|Q1JJU1|PRMA_STRPC Ribosomal protein L11 methyltransferase OS=...    36   0.34 
+sp|Q1J9P3|PRMA_STRPB Ribosomal protein L11 methyltransferase OS=...    36   0.34 
+sp|A7GVP5|RSMG_BACCN Ribosomal RNA small subunit methyltransfera...    36   0.34 
+sp|O26249|CBIT_METTH Probable cobalt-precorrin-6B C(15)-methyltr...    36   0.36 
+sp|C1L0D6|RSMG_LISMC Ribosomal RNA small subunit methyltransfera...    36   0.37 
+sp|Q1JET3|PRMA_STRPD Ribosomal protein L11 methyltransferase OS=...    36   0.39 
+sp|Q97P62|PRMA_STRPN Ribosomal protein L11 methyltransferase OS=...    36   0.39 
+sp|Q820Z6|RSMC_SHIFL Ribosomal RNA small subunit methyltransfera...    36   0.40 
+sp|Q1R2D5|RSMC_ECOUT Ribosomal RNA small subunit methyltransfera...    36   0.40 
+sp|A1AJP2|RSMC_ECOK1 Ribosomal RNA small subunit methyltransfera...    36   0.40 
+sp|B8DD12|RSMG_LISMH Ribosomal RNA small subunit methyltransfera...    36   0.41 
+sp|Q0T8U3|RSMC_ECOL5 Ribosomal RNA small subunit methyltransfera...    36   0.41 
+sp|A0A3G1DJF3|SQHKS_PHOSM Squalestatin hexaketide synthase OS=Ph...    36   0.41 
+sp|Q814F8|RSMG_BACCR Ribosomal RNA small subunit methyltransfera...    36   0.41 
+sp|B7H7A0|RSMG_BACC4 Ribosomal RNA small subunit methyltransfera...    36   0.41 
+sp|B7IST2|RSMG_BACC2 Ribosomal RNA small subunit methyltransfera...    36   0.41 
+sp|B7MTB6|RSMC_ECO81 Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B7NH38|RSMC_ECOLU Ribosomal RNA small subunit methyltransfera...    36   0.43 
+sp|B5Z4Q2|RSMC_ECO5E Ribosomal RNA small subunit methyltransfera...    36   0.43 
+sp|Q8X510|RSMC_ECO57 Ribosomal RNA small subunit methyltransfera...    36   0.43 
+sp|Q831F7|PRMC_ENTFA Release factor glutamine methyltransferase ...    36   0.43 
+sp|Q48R70|PRMA_STRPM Ribosomal protein L11 methyltransferase OS=...    36   0.43 
+sp|Q327M6|RSMC_SHIDS Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|P39406|RSMC_ECOLI Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|B1XFI0|RSMC_ECODH Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|B7LEL6|RSMC_ECO55 Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|B7MNC1|RSMC_ECO45 Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|Q6HAF4|RSMG_BACHK Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|B9IT40|RSMG_BACCQ Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|C1ER75|RSMG_BACC3 Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|Q72WU5|RSMG_BACC1 Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|B7JIK9|RSMG_BACC0 Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|Q81JH4|RSMG_BACAN Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|A0RLR0|RSMG_BACAH Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|C3LGT9|RSMG_BACAC Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|C3P3F3|RSMG_BACAA Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|B1IS49|RSMC_ECOLC Ribosomal RNA small subunit methyltransfera...    36   0.44 
+sp|Q8DX85|PRMA_STRA5 Ribosomal protein L11 methyltransferase OS=...    36   0.44 
+sp|Q8E307|PRMA_STRA3 Ribosomal protein L11 methyltransferase OS=...    36   0.44 
+sp|Q630C0|RSMG_BACCZ Ribosomal RNA small subunit methyltransfera...    36   0.45 
+sp|Q5X9S8|PRMA_STRP6 Ribosomal protein L11 methyltransferase OS=...    36   0.45 
+sp|B7HZG8|RSMG_BACC7 Ribosomal RNA small subunit methyltransfera...    36   0.45 
+sp|E5KIC0|CYPM_STRSQ Cypemycin N-terminal methyltransferase OS=S...    36   0.45 
+sp|B5XIN3|PRMA_STRPZ Ribosomal protein L11 methyltransferase OS=...    36   0.46 
+sp|B0T7D0|UBIE_CAUSK Ubiquinone/menaquinone biosynthesis C-methy...    36   0.46 
+sp|Q1J4K0|PRMA_STRPF Ribosomal protein L11 methyltransferase OS=...    36   0.46 
+sp|C3MCY6|UBIE_SINFN Ubiquinone/menaquinone biosynthesis C-methy...    36   0.48 
+sp|B1J2S8|UBIE_PSEPW Ubiquinone/menaquinone biosynthesis C-methy...    36   0.49 
+sp|T1T504|LAEA_HYPAT Secondary metabolism regulator LAE1 OS=Hypo...    36   0.49 
+sp|G9P9X3|LAEA_HYPAI Secondary metabolism regulator LAE1 OS=Hypo...    36   0.49 
+sp|Q88D17|UBIE_PSEPK Ubiquinone/menaquinone biosynthesis C-methy...    36   0.50 
+sp|A5WA45|UBIE_PSEP1 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.50 
+sp|B2VH94|RSMC_ERWT9 Ribosomal RNA small subunit methyltransfera...    36   0.51 
+sp|A3PSZ4|Y208_MYCSJ Uncharacterized methyltransferase Mjls_0208...    36   0.52 
+sp|B7NVD9|RSMC_ECO7I Ribosomal RNA small subunit methyltransfera...    36   0.52 
+sp|Q8FZM5|TAM_BRUSU Trans-aconitate 2-methyltransferase OS=Bruce...    36   0.53 
+sp|B0CHP1|TAM_BRUSI Trans-aconitate 2-methyltransferase OS=Bruce...    36   0.53 
+sp|A5VRJ7|TAM_BRUO2 Trans-aconitate 2-methyltransferase OS=Bruce...    36   0.53 
+sp|A9M6C1|TAM_BRUC2 Trans-aconitate 2-methyltransferase OS=Bruce...    36   0.53 
+sp|Q82N59|RLMG_STRAW Ribosomal RNA large subunit methyltransfera...    36   0.53 
+sp|Q8FA64|RSMC_ECOL6 Ribosomal RNA small subunit methyltransfera...    36   0.54 
+sp|A2RGK2|PRMA_STRPG Ribosomal protein L11 methyltransferase OS=...    36   0.54 
+sp|B0KM36|UBIE_PSEPG Ubiquinone/menaquinone biosynthesis C-methy...    36   0.55 
+sp|Q8NZ98|PRMA_STRP8 Ribosomal protein L11 methyltransferase OS=...    36   0.56 
+sp|Q1II29|PRMC_KORVE Release factor glutamine methyltransferase ...    36   0.56 
+sp|Q99XW8|PRMA_STRP1 Ribosomal protein L11 methyltransferase OS=...    36   0.56 
+sp|Q8YI91|TAM_BRUME Trans-aconitate 2-methyltransferase OS=Bruce...    36   0.58 
+sp|O52025|ARSM_HALSA Arsenite methyltransferase OS=Halobacterium...    36   0.58 
+sp|Q8CMN7|RSMG_STAES Ribosomal RNA small subunit methyltransfera...    36   0.59 
+sp|Q5HS34|RSMG_STAEQ Ribosomal RNA small subunit methyltransfera...    36   0.59 
+sp|A4W687|RSMC_ENT38 Ribosomal RNA small subunit methyltransfera...    36   0.59 
+sp|B1LEH4|RSMC_ECOSM Ribosomal RNA small subunit methyltransfera...    36   0.60 
+sp|Q057M1|RSMC_BUCCC Ribosomal RNA small subunit methyltransfera...    36   0.60 
+sp|Q1I3T0|UBIE_PSEE4 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.62 
+sp|A3DBD7|BIOC_ACET2 Malonyl-[acyl-carrier protein] O-methyltran...    36   0.62 
+sp|A2C000|RSMH_PROM1 Ribosomal RNA small subunit methyltransfera...    36   0.63 
+sp|Q3YU23|RSMC_SHISS Ribosomal RNA small subunit methyltransfera...    36   0.63 
+sp|Q31SW8|RSMC_SHIBS Ribosomal RNA small subunit methyltransfera...    36   0.64 
+sp|Q9RAH6|NAT_NOCUT Isonocardicin synthase OS=Nocardia uniformis...    36   0.64 
+sp|B6I2Q2|RSMC_ECOSE Ribosomal RNA small subunit methyltransfera...    36   0.64 
+sp|A8A899|RSMC_ECOHS Ribosomal RNA small subunit methyltransfera...    36   0.64 
+sp|B7LXT2|RSMC_ECO8A Ribosomal RNA small subunit methyltransfera...    36   0.64 
+sp|A7ZVR0|RSMC_ECO24 Ribosomal RNA small subunit methyltransfera...    36   0.64 
+sp|B7LNK6|RSMC_ESCF3 Ribosomal RNA small subunit methyltransfera...    36   0.67 
+sp|C1CG04|PRMA_STRZJ Ribosomal protein L11 methyltransferase OS=...    36   0.68 
+sp|B2ISD7|PRMA_STRPS Ribosomal protein L11 methyltransferase OS=...    36   0.68 
+sp|C1C922|PRMA_STRP7 Ribosomal protein L11 methyltransferase OS=...    36   0.68 
+sp|B2RJE9|MENG_PORG3 Demethylmenaquinone methyltransferase OS=Po...    36   0.68 
+sp|Q7MVR7|MENG_PORGI Demethylmenaquinone methyltransferase OS=Po...    35   0.70 
+sp|Q92RC5|TAM_RHIME Trans-aconitate 2-methyltransferase OS=Rhizo...    35   0.71 
+sp|B5R9T9|RSMC_SALG2 Ribosomal RNA small subunit methyltransfera...    35   0.74 
+sp|Q5VVY1|NTM1B_HUMAN N-terminal Xaa-Pro-Lys N-methyltransferase...    35   0.74 
+sp|A7MXM2|TRMN6_VIBC1 tRNA1(Val) (adenine(37)-N6)-methyltransfer...    35   0.74 
+sp|B8ZMW2|PRMA_STRPJ Ribosomal protein L11 methyltransferase OS=...    35   0.74 
+sp|B8IJ00|UBIE_METNO Ubiquinone/menaquinone biosynthesis C-methy...    35   0.75 
+sp|B4TU29|RSMC_SALSV Ribosomal RNA small subunit methyltransfera...    35   0.76 
+sp|B5BL07|RSMC_SALPK Ribosomal RNA small subunit methyltransfera...    35   0.76 
+sp|Q5PK16|RSMC_SALPA Ribosomal RNA small subunit methyltransfera...    35   0.76 
+sp|B5F512|RSMC_SALA4 Ribosomal RNA small subunit methyltransfera...    35   0.76 
+sp|B4T4F9|RSMC_SALNS Ribosomal RNA small subunit methyltransfera...    35   0.77 
+sp|Q8ZJW6|RSMC_SALTY Ribosomal RNA small subunit methyltransfera...    35   0.77 
+sp|B5R2I6|RSMC_SALEP Ribosomal RNA small subunit methyltransfera...    35   0.77 
+sp|B5FTB3|RSMC_SALDC Ribosomal RNA small subunit methyltransfera...    35   0.77 
+sp|Q9BV86|NTM1A_HUMAN N-terminal Xaa-Pro-Lys N-methyltransferase...    35   0.77 
+sp|Q8Z0V2|RSMC_SALTI Ribosomal RNA small subunit methyltransfera...    35   0.79 
+sp|A9N7C4|RSMC_SALPB Ribosomal RNA small subunit methyltransfera...    35   0.79 
+sp|B4TGY8|RSMC_SALHS Ribosomal RNA small subunit methyltransfera...    35   0.79 
+sp|P25813|RSMG_BACSU Ribosomal RNA small subunit methyltransfera...    35   0.79 
+sp|Q8DNP4|PRMA_STRR6 Ribosomal protein L11 methyltransferase OS=...    35   0.80 
+sp|Q04J12|PRMA_STRP2 Ribosomal protein L11 methyltransferase OS=...    35   0.80 
+sp|C1CMA0|PRMA_STRZP Ribosomal protein L11 methyltransferase OS=...    35   0.81 
+sp|A7ZAV9|RSMG_BACVZ Ribosomal RNA small subunit methyltransfera...    35   0.82 
+sp|Q9N4D9|NTM1_CAEEL Alpha N-terminal protein methyltransferase ...    35   0.83 
+sp|A1JJ89|RSMC_YERE8 Ribosomal RNA small subunit methyltransfera...    35   0.85 
+sp|Q040U0|RSMG_LACGA Ribosomal RNA small subunit methyltransfera...    35   0.86 
+sp|Q1QJC0|TAM_NITHX Trans-aconitate 2-methyltransferase OS=Nitro...    35   0.87 
+sp|Q2T4P1|THAQ_BURTA Polyketide synthase ThaQ OS=Burkholderia th...    35   0.91 
+sp|Q21H69|UBIE_SACD2 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.91 
+sp|C4L001|RSMG_EXISA Ribosomal RNA small subunit methyltransfera...    35   0.91 
+sp|M1WG94|PIG10_CLAP2 Ergochrome gene cluster transcriptional co...    35   0.97 
+sp|A6UFF7|UBIE_SINMW Ubiquinone/menaquinone biosynthesis C-methy...    35   1.0  
+sp|Q89AI2|RSMC_BUCBP Ribosomal RNA small subunit methyltransfera...    35   1.0  
+sp|C0ZHY5|TRMB_BREBN tRNA (guanine-N(7)-)-methyltransferase OS=B...    35   1.0  
+sp|Q71VW1|RSMG_LISMF Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q9RRT0|MENG_DEIRA Demethylmenaquinone methyltransferase OS=De...    35   1.1  
+sp|A1U9D7|Y228_MYCSK Uncharacterized methyltransferase Mkms_0228...    35   1.1  
+sp|Q1BFJ5|Y218_MYCSS Uncharacterized methyltransferase Mmcs_0218...    35   1.1  
+sp|Q9Z439|UBIE_PSEPU Ubiquinone/menaquinone biosynthesis C-methy...    35   1.1  
+sp|Q8EKU4|RSMG_OCEIH Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q8Y3N3|RSMG_LISMO Ribosomal RNA small subunit methyltransfera...    35   1.2  
+sp|Q65CN3|RSMG_BACLD Ribosomal RNA small subunit methyltransfera...    35   1.2  
+sp|Q87SB8|TRMN6_VIBPA tRNA1(Val) (adenine(37)-N6)-methyltransfer...    34   1.2  
+sp|A1W9K6|TAM_ACISJ Trans-aconitate 2-methyltransferase OS=Acido...    34   1.2  
+sp|B8ISV4|TAM_METNO Trans-aconitate 2-methyltransferase OS=Methy...    34   1.2  
+sp|P9WET0|PREU9_PREIS Polyketide synthase-like protein Preu9 OS=...    34   1.2  
+sp|Q5ZT34|BIOC_LEGPH Malonyl-[acyl-carrier protein] O-methyltran...    34   1.2  
+sp|Q21DG3|RSMG_SACD2 Ribosomal RNA small subunit methyltransfera...    34   1.3  
+sp|Q6ANL3|UBIE_DESPS Ubiquinone/menaquinone biosynthesis C-methy...    34   1.3  
+sp|P54084|RNR_ACIFR Ribonuclease R (Fragment) OS=Acidithiobacill...    34   1.3  
+sp|Q03MQ4|PRMA_STRTD Ribosomal protein L11 methyltransferase OS=...    34   1.3  
+sp|P67064|MENG_TROWT Demethylmenaquinone methyltransferase OS=Tr...    34   1.3  
+sp|P67065|MENG_TROW8 Demethylmenaquinone methyltransferase OS=Tr...    34   1.3  
+sp|Q57G51|RSMC_SALCH Ribosomal RNA small subunit methyltransfera...    34   1.4  
+sp|Q748B2|PRMC_GEOSL Release factor glutamine methyltransferase ...    34   1.4  
+sp|C5D9Y5|RSMG_GEOSW Ribosomal RNA small subunit methyltransfera...    34   1.4  
+sp|A0A3B1EFP8|STR3_STRTC Methyltransferase str3 OS=Strobilurus t...    34   1.5  
+sp|Q2NJ22|RSMG_AYWBP Ribosomal RNA small subunit methyltransfera...    34   1.5  
+sp|Q5M6B7|PRMA_STRT2 Ribosomal protein L11 methyltransferase OS=...    34   1.5  
+sp|Q5M1S5|PRMA_STRT1 Ribosomal protein L11 methyltransferase OS=...    34   1.5  
+sp|B8GVY5|UBIE_CAUVN Ubiquinone/menaquinone biosynthesis C-methy...    34   1.5  
+sp|Q9A258|UBIE_CAUVC Ubiquinone/menaquinone biosynthesis C-methy...    34   1.5  
+sp|B1JL46|RSMC_YERPY Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|A4TQK1|RSMC_YERPP Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|Q1CN00|RSMC_YERPN Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|A9R058|RSMC_YERPG Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|Q7CG56|RSMC_YERPE Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|Q1C153|RSMC_YERPA Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|A7FMI4|RSMC_YERP3 Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|Q66EW9|RSMC_YERPS Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|B2K3H9|RSMC_YERPB Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|A7MGA7|RSMC_CROS8 Ribosomal RNA small subunit methyltransfera...    34   1.7  
+sp|Q4L2Z4|RSMG_STAHJ Ribosomal RNA small subunit methyltransfera...    34   1.7  
+sp|Q32G05|TAM_SHIDS Trans-aconitate 2-methyltransferase OS=Shige...    34   1.8  
+sp|Q7MSS6|RSMH_WOLSU Ribosomal RNA small subunit methyltransfera...    34   1.8  
+sp|Q0T4L2|TAM_SHIF8 Trans-aconitate 2-methyltransferase OS=Shige...    34   1.8  
+sp|Q2JHU0|G6PI_SYNJB Glucose-6-phosphate isomerase OS=Synechococ...    34   1.8  
+sp|Q9HUC0|UBIE_PSEAE Ubiquinone/menaquinone biosynthesis C-methy...    34   1.8  
+sp|Q02EV4|UBIE_PSEAB Ubiquinone/menaquinone biosynthesis C-methy...    34   1.8  
+sp|B7V3F6|UBIE_PSEA8 Ubiquinone/menaquinone biosynthesis C-methy...    34   1.8  
+sp|Q83RE0|TAM_SHIFL Trans-aconitate 2-methyltransferase OS=Shige...    34   1.8  
+sp|Q7MNQ4|TRMN6_VIBVY tRNA1(Val) (adenine(37)-N6)-methyltransfer...    34   1.8  
+sp|A7Z722|Y2438_BACVZ Uncharacterized methyltransferase RBAM_024...    34   1.9  
+sp|A8WVR2|NTM1_CAEBR Alpha N-terminal protein methyltransferase ...    34   1.9  
+sp|Q46HK1|RSMH_PROMT Ribosomal RNA small subunit methyltransfera...    34   1.9  
+sp|Q926V6|RSMG_LISIN Ribosomal RNA small subunit methyltransfera...    34   1.9  
+sp|C5BRL2|UBIE_TERTT Ubiquinone/menaquinone biosynthesis C-methy...    34   2.0  
+sp|Q7NJS7|PRMC_GLOVI Release factor glutamine methyltransferase ...    34   2.0  
+sp|B8HVV6|G6PI_CYAP4 Glucose-6-phosphate isomerase OS=Cyanothece...    34   2.0  
+sp|Q8Z5M9|CBIT_SALTI Cobalt-precorrin-6B C(15)-methyltransferase...    34   2.0  
+sp|Q8FMF7|SPEE_COREF Polyamine aminopropyltransferase OS=Coryneb...    34   2.0  
+sp|Q7U4Z9|SDMT_PARMW Dimethylglycine N-methyltransferase OS=Para...    34   2.0  
+sp|Q05632|CBIT_SALTY Cobalt-precorrin-6B C(15)-methyltransferase...    34   2.0  
+sp|A0QMC8|Y4945_MYCA1 Uncharacterized methyltransferase MAV_4945...    34   2.0  
+sp|B6IAS2|TAM_ECOSE Trans-aconitate 2-methyltransferase OS=Esche...    34   2.0  
+sp|Q5FIS5|TRMB_LACAC tRNA (guanine-N(7)-)-methyltransferase OS=L...    34   2.1  
+sp|Q9PPL4|RSMH_CAMJE Ribosomal RNA small subunit methyltransfera...    34   2.1  
+sp|C1CT24|PRMA_STRZT Ribosomal protein L11 methyltransferase OS=...    34   2.1  
+sp|Q9KD70|PRMA_HALH5 Ribosomal protein L11 methyltransferase OS=...    34   2.1  
+sp|B7LZC1|TAM_ECO8A Trans-aconitate 2-methyltransferase OS=Esche...    34   2.1  
+sp|A7ZLX5|TAM_ECO24 Trans-aconitate 2-methyltransferase OS=Esche...    34   2.1  
+sp|A4WHN0|SPEE_PYRAR Polyamine aminopropyltransferase OS=Pyrobac...    34   2.1  
+sp|B2RXM4|NTM1B_MOUSE N-terminal Xaa-Pro-Lys N-methyltransferase...    34   2.1  
+sp|A6LRN8|PRMA_CLOB8 Ribosomal protein L11 methyltransferase OS=...    34   2.2  
+sp|P9WGE5|SPEE_MYCTU Polyamine aminopropyltransferase OS=Mycobac...    34   2.3  
+sp|P9WGE4|SPEE_MYCTO Polyamine aminopropyltransferase OS=Mycobac...    34   2.3  
+sp|Q7TY95|SPEE_MYCBO Polyamine aminopropyltransferase OS=Mycobac...    34   2.3  
+sp|B2V2I9|PRMA_CLOBA Ribosomal protein L11 methyltransferase OS=...    34   2.3  
+sp|B2IAI0|BIOC_XYLF2 Malonyl-[acyl-carrier protein] O-methyltran...    34   2.3  
+sp|Q6ZIK0|GTOMC_ORYSJ Probable tocopherol O-methyltransferase, c...    34   2.3  
+sp|C6CWS7|BIOC_PAESJ Malonyl-[acyl-carrier protein] O-methyltran...    34   2.3  
+sp|C4LCN4|TRMN6_TOLAT tRNA1(Val) (adenine(37)-N6)-methyltransfer...    34   2.3  
+sp|B7NIJ1|TAM_ECO7I Trans-aconitate 2-methyltransferase OS=Esche...    34   2.3  
+sp|B6JIA0|TAM_AFIC5 Trans-aconitate 2-methyltransferase OS=Afipi...    34   2.3  
+sp|D3ZVR1|NTM1B_RAT N-terminal Xaa-Pro-Lys N-methyltransferase 2...    34   2.3  
+sp|Q16DL1|UBIE_ROSDO Ubiquinone/menaquinone biosynthesis C-methy...    34   2.3  
+sp|P65347|Y092_MYCBO Uncharacterized methyltransferase Mb0092 OS...    34   2.4  
+sp|P9WK03|Y089_MYCTU Uncharacterized methyltransferase Rv0089 OS...    34   2.4  
+sp|P9WK02|Y089_MYCTO Uncharacterized methyltransferase MT0098 OS...    34   2.4  
+sp|Q9F8T9|COUO_STRRH C-methyltransferase CouO OS=Streptomyces ri...    34   2.4  
+sp|B1LF96|TAM_ECOSM Trans-aconitate 2-methyltransferase OS=Esche...    34   2.5  
+sp|B5Z1X6|TAM_ECO5E Trans-aconitate 2-methyltransferase OS=Esche...    34   2.5  
+sp|Q8XAZ2|TAM_ECO57 Trans-aconitate 2-methyltransferase OS=Esche...    34   2.5  
+sp|Q3SGF7|RSMA_THIDA Ribosomal RNA small subunit methyltransfera...    34   2.5  
+sp|Q98GV1|UBIE_RHILO Ubiquinone/menaquinone biosynthesis C-methy...    34   2.5  
+sp|Q92SK7|UBIE_RHIME Ubiquinone/menaquinone biosynthesis C-methy...    34   2.6  
+sp|C3M8G8|TAM_SINFN Trans-aconitate 2-methyltransferase OS=Sinor...    34   2.6  
+sp|C3K8U4|UBIE_PSEFS Ubiquinone/menaquinone biosynthesis C-methy...    33   2.6  
+sp|B9MBN9|TAM_ACIET Trans-aconitate 2-methyltransferase OS=Acido...    33   2.6  
+sp|Q0SX40|RSMC_SHIF8 Ribosomal RNA small subunit methyltransfera...    33   2.7  
+sp|Q8G4X3|GLUQ_BIFLO Glutamyl-Q tRNA(Asp) synthetase OS=Bifidoba...    33   2.7  
+sp|A1K8U5|TAM_AZOSB Trans-aconitate 2-methyltransferase OS=Azoar...    33   2.9  
+sp|Q82XD4|SPEE_NITEU Polyamine aminopropyltransferase OS=Nitroso...    33   3.0  
+sp|Q8KE87|RSMA_CHLTE Ribosomal RNA small subunit methyltransfera...    33   3.1  
+sp|Q98K73|TAM_RHILO Trans-aconitate 2-methyltransferase OS=Mesor...    33   3.4  
+sp|A5II90|UBIE_LEGPC Ubiquinone/menaquinone biosynthesis C-methy...    33   3.5  
+sp|A6T481|RSMG_JANMA Ribosomal RNA small subunit methyltransfera...    33   3.5  
+sp|B7LRD2|TAM_ESCF3 Trans-aconitate 2-methyltransferase OS=Esche...    33   3.6  
+sp|Q8DEQ3|TRMN6_VIBVU tRNA1(Val) (adenine(37)-N6)-methyltransfer...    33   3.7  
+sp|Q3A8E9|CMOB_SYNC1 tRNA U34 carboxymethyltransferase OS=Syntro...    33   3.7  
+sp|B0G100|PKS7_DICDI Probable polyketide synthase 7 OS=Dictyoste...    33   3.7  
+sp|B4SRA0|RLME_STRM5 Ribosomal RNA large subunit methyltransfera...    33   3.8  
+sp|Q02099|RAD3_SCHPO Protein kinase rad3 OS=Schizosaccharomyces ...    33   3.9  
+sp|Q5ZRH9|UBIE_LEGPH Ubiquinone/menaquinone biosynthesis C-methy...    33   4.0  
+sp|A6VDI6|UBIE_PSEA7 Ubiquinone/menaquinone biosynthesis C-methy...    33   4.1  
+sp|B2FKA1|RLME_STRMK Ribosomal RNA large subunit methyltransfera...    33   4.1  
+sp|A1KF44|Y261_MYCBP Uncharacterized methyltransferase BCG_0261c...    33   4.1  
+sp|A5TYU9|Y232_MYCTA Uncharacterized methyltransferase MRA_0232 ...    33   4.1  
+sp|Q7U2J0|Y229_MYCBO Uncharacterized methyltransferase Mb0229c O...    33   4.1  
+sp|P9WJZ9|Y224_MYCTU Uncharacterized methyltransferase Rv0224c O...    33   4.1  
+sp|P9WJZ8|Y224_MYCTO Uncharacterized methyltransferase MT0234 OS...    33   4.1  
+sp|P23525|IN37_SPIOL 2-methyl-6-phytyl-1,4-hydroquinone methyltr...    33   4.2  
+sp|A2RHI1|PRMA_LACLM Ribosomal protein L11 methyltransferase OS=...    33   4.5  
+sp|Q033A6|PRMA_LACLS Ribosomal protein L11 methyltransferase OS=...    33   4.5  
+sp|Q82HD9|TAM_STRAW Trans-aconitate 2-methyltransferase OS=Strep...    33   4.6  
+sp|A4T3V1|Y427_MYCGI Uncharacterized methyltransferase Mflv_0427...    33   4.7  
+sp|Q73TQ5|Y3663_MYCPA Uncharacterized methyltransferase MAP_3663...    33   4.7  
+sp|Q32GZ5|PRMC_SHIDS Release factor glutamine methyltransferase ...    33   4.8  
+sp|B7GHW9|BIOC_ANOFW Malonyl-[acyl-carrier protein] O-methyltran...    33   4.8  
+sp|A1T1P0|Y241_MYCVP Uncharacterized methyltransferase Mvan_0241...    33   4.8  
+sp|B7ICR2|RPOC_THEAB DNA-directed RNA polymerase subunit beta' O...    33   4.8  
+sp|Q9RXR2|PRMC_DEIRA Release factor glutamine methyltransferase ...    33   4.9  
+sp|Q9M571|PEAMT_SPIOL Phosphoethanolamine N-methyltransferase OS...    33   4.9  
+sp|Q03DH7|RSMG_PEDPA Ribosomal RNA small subunit methyltransfera...    33   5.0  
+sp|P76145|TAM_ECOLI Trans-aconitate 2-methyltransferase OS=Esche...    33   5.1  
+sp|B1IRU1|TAM_ECOLC Trans-aconitate 2-methyltransferase OS=Esche...    33   5.1  
+sp|B1XEA7|TAM_ECODH Trans-aconitate 2-methyltransferase OS=Esche...    33   5.1  
+sp|C4ZWT6|TAM_ECOBW Trans-aconitate 2-methyltransferase OS=Esche...    33   5.1  
+sp|Q5GYL7|RLME_XANOR Ribosomal RNA large subunit methyltransfera...    33   5.3  
+sp|B2SUB8|RLME_XANOP Ribosomal RNA large subunit methyltransfera...    33   5.3  
+sp|Q2P1M0|RLME_XANOM Ribosomal RNA large subunit methyltransfera...    33   5.3  
+sp|Q7TX91|FTSX_MYCBO Cell division protein FtsX OS=Mycobacterium...    33   5.3  
+sp|A0PMY7|Y1123_MYCUA Uncharacterized methyltransferase MUL_1123...    33   5.4  
+sp|Q8P8H2|UBIG_XANCP Ubiquinone biosynthesis O-methyltransferase...    33   5.4  
+sp|B0RS27|UBIG_XANCB Ubiquinone biosynthesis O-methyltransferase...    33   5.4  
+sp|Q4UVL4|UBIG_XANC8 Ubiquinone biosynthesis O-methyltransferase...    33   5.4  
+sp|B2HMZ9|Y473_MYCMM Uncharacterized methyltransferase MMAR_0473...    33   5.4  
+sp|A1AB99|TAM_ECOK1 Trans-aconitate 2-methyltransferase OS=Esche...    33   5.4  
+sp|P9WG19|FTSX_MYCTU Cell division protein FtsX OS=Mycobacterium...    33   5.4  
+sp|P9WG18|FTSX_MYCTO Cell division protein FtsX OS=Mycobacterium...    33   5.4  
+sp|A5U7B6|FTSX_MYCTA Cell division protein FtsX OS=Mycobacterium...    33   5.4  
+sp|A4SQM2|RLMG_AERS4 Ribosomal RNA large subunit methyltransfera...    33   5.6  
+sp|A5II63|RSMG_LEGPC Ribosomal RNA small subunit methyltransfera...    33   5.7  
+sp|Q9CJ97|PRMA_LACLA Ribosomal protein L11 methyltransferase OS=...    33   5.7  
+sp|Q1BF27|TAM_MYCSS Trans-aconitate 2-methyltransferase OS=Mycob...    32   5.9  
+sp|A1U9V4|TAM_MYCSK Trans-aconitate 2-methyltransferase OS=Mycob...    32   5.9  
+sp|A3PTG0|TAM_MYCSJ Trans-aconitate 2-methyltransferase OS=Mycob...    32   5.9  
+sp|Q8Y4A9|PRMC_LISMO Release factor glutamine methyltransferase ...    32   5.9  
+sp|A6UYW3|BIOC_PSEA7 Malonyl-[acyl-carrier protein] O-methyltran...    32   5.9  
+sp|Q85B60|YCF2_ADICA Protein Ycf2 OS=Adiantum capillus-veneris O...    32   6.1  
+sp|Q0K846|SAUR_CUPNH Probable transcriptional regulator SauR OS=...    32   6.2  
+sp|B0U3W1|UBIG_XYLFM Ubiquinone biosynthesis O-methyltransferase...    32   6.4  
+sp|Q9KQ83|PRMB_VIBCH 50S ribosomal protein L3 glutamine methyltr...    32   6.5  
+sp|B1LXF6|TAM_METRJ Trans-aconitate 2-methyltransferase OS=Methy...    32   6.8  
+sp|P39200|PRMB_VIBA7 50S ribosomal protein L3 glutamine methyltr...    32   7.0  
+sp|E4QJB8|BIOC_METS6 Malonyl-[acyl-carrier protein] O-methyltran...    32   7.1  
+sp|Q8TX83|PUR7_METKA Phosphoribosylaminoimidazole-succinocarboxa...    32   7.4  
+sp|A1B8Z4|BHCR_PARDP HTH-type transcriptional regulator BhcR OS=...    32   7.7  
+sp|P45873|PRMC_BACSU Release factor glutamine methyltransferase ...    32   7.8  
+sp|A0A6J4B487|LUC5_FUSSX Hybrid PKS-NRPS synthetase LUC5 OS=Fusa...    32   8.5  
+sp|B1MK43|Y4481_MYCA9 Uncharacterized methyltransferase MAB_4481...    32   8.8  
+sp|B1YKZ4|Y2346_EXIS2 Uncharacterized methyltransferase Exig_234...    32   9.1  
+sp|Q5QVT9|PRMA_IDILO Ribosomal protein L11 methyltransferase OS=...    32   9.4  
+sp|Q3BUR8|RLME_XANC5 Ribosomal RNA large subunit methyltransfera...    32   9.5  
+sp|Q8PLQ8|RLME_XANAC Ribosomal RNA large subunit methyltransfera...    32   9.5  
+sp|A0R213|PRMC_MYCS2 Release factor glutamine methyltransferase ...    32   9.5  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q84KK5|D7OMT_GLYEC Isoflavone 7-O-methyltransferase OS=Glycyr...   463   e-129
+sp|O22308|7OMT6_MEDSA Isoflavone-7-O-methyltransferase 6 OS=Medi...   451   e-126
+sp|O24529|7OMT8_MEDSA Isoflavone-7-O-methyltransferase 8 OS=Medi...   449   e-125
+sp|O22309|7OMT9_MEDSA Isoflavone-7-O-methyltransferase 9 OS=Medi...   448   e-125
+sp|B6VJS4|ROMT_VITVI Trans-resveratrol di-O-methyltransferase OS...   427   e-119
+sp|C6TAY1|SOMT2_SOYBN Flavonoid 4'-O-methyltransferase OS=Glycin...   426   e-118
+sp|Q9FK25|OMT1_ARATH Flavone 3'-O-methyltransferase 1 OS=Arabido...   420   e-117
+sp|Q9XGW0|COMT1_OCIBA Caffeic acid 3-O-methyltransferase 1 OS=Oc...   420   e-116
+sp|Q9LEL6|6OMT_COPJA (RS)-norcoclaurine 6-O-methyltransferase OS...   418   e-116
+sp|Q00763|COMT1_POPTM Caffeic acid 3-O-methyltransferase 1 OS=Po...   417   e-116
+sp|Q43046|COMT1_POPKI Caffeic acid 3-O-methyltransferase 1 OS=Po...   417   e-116
+sp|Q8W013|COMT1_CATRO Caffeic acid 3-O-methyltransferase OS=Cath...   416   e-115
+sp|O24305|M3OM1_PEA (+)-6a-hydroxymaackiain 3-O-methyltransferas...   416   e-115
+sp|A0A4P8DY91|COMTS_KITPR Esculetin O-methyltransferase OS=Kitag...   415   e-115
+sp|B0ZB57|OMT3_HUMLU Probable O-methyltransferase 3 OS=Humulus l...   414   e-115
+sp|Q9FQY8|COMT1_CAPAN Caffeic acid 3-O-methyltransferase OS=Caps...   414   e-115
+sp|Q9XGV9|COMT2_OCIBA Caffeic acid 3-O-methyltransferase 2 OS=Oc...   413   e-114
+sp|Q43609|COMT1_PRUDU Caffeic acid 3-O-methyltransferase OS=Prun...   412   e-114
+sp|S5DWK8|F8MT1_OCIBA Flavonoid 8-O-methyltransferase 1 OS=Ocimu...   411   e-114
+sp|Q6T1F5|COMT1_AMMMJ Caffeic acid 3-O-methyltransferase OS=Ammi...   409   e-113
+sp|Q8LL87|COMT1_COFCA Caffeic acid 3-O-methyltransferase OS=Coff...   408   e-113
+sp|Q42653|OMT2_CHRAE Flavone 3'-O-methyltransferase OMT2 OS=Chry...   407   e-113
+sp|Q8GU25|COMT1_ROSCH Caffeic acid 3-O-methyltransferase OS=Rosa...   406   e-112
+sp|O81646|COMT1_CAPCH Caffeic acid 3-O-methyltransferase OS=Caps...   406   e-112
+sp|O23760|COMT1_CLABR Caffeic acid 3-O-methyltransferase OS=Clar...   405   e-112
+sp|P59049|OMT1_CHRAE Flavone 3'-O-methyltransferase OMT1 OS=Chry...   405   e-112
+sp|P28002|COMT1_MEDSA Caffeic acid 3-O-methyltransferase OS=Medi...   404   e-112
+sp|P46484|COMT1_EUCGU Caffeic acid 3-O-methyltransferase OS=Euca...   403   e-111
+sp|Q43047|COMT3_POPKI Caffeic acid 3-O-methyltransferase 3 OS=Po...   402   e-111
+sp|Q5C9L7|6OMT_THLFG (RS)-norcoclaurine 6-O-methyltransferase OS...   402   e-111
+sp|B0EXJ8|HTOMT_CATRO Tabersonine 16-O-methyltransferase OS=Cath...   402   e-111
+sp|Q7XB10|4OMT2_PAPSO 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-me...   400   e-111
+sp|Q41086|COMT2_POPTM Caffeic acid 3-O-methyltransferase 2 OS=Po...   400   e-110
+sp|A0A0N9HMN6|POMT3_SINHE Pluviatolide O-methyltransferase OS=Si...   399   e-110
+sp|P0DH60|M3OM2_PEA (+)-6a-hydroxymaackiain 3-O-methyltransferas...   397   e-110
+sp|Q6WUC1|6OMT_PAPSO (RS)-norcoclaurine 6-O-methyltransferase OS...   397   e-110
+sp|Q6T1F6|BMT_AMMMJ Bergaptol O-methyltransferase OS=Ammi majus ...   392   e-108
+sp|Q7XB11|4OMT1_PAPSO 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-me...   391   e-108
+sp|Q29U70|I4OMT_MEDTR Isoflavone 4'-O-methyltransferase OS=Medic...   391   e-108
+sp|A8J6X1|BMT_GLELI Bergaptol O-methyltransferase OS=Glehnia lit...   390   e-108
+sp|Q43239|COMT1_ZINVI Caffeic acid 3-O-methyltransferase OS=Zinn...   389   e-107
+sp|Q6WUC2|7OMT_PAPSO (R,S)-reticuline 7-O-methyltransferase OS=P...   389   e-107
+sp|Q84KK4|I4OMT_LOTJA Isoflavone 4'-O-methyltransferase OS=Lotus...   388   e-107
+sp|A0A166U5H3|BMT_KITPR Bergaptol O-methyltransferase OS=Kitagaw...   387   e-107
+sp|Q93WU3|CVMT1_OCIBA Chavicol O-methyltransferase OS=Ocimum bas...   386   e-106
+sp|Q6VMW0|Q8OMT_MENPI 8-hydroxyquercetin 8-O-methyltransferase O...   386   e-106
+sp|Q38J50|FOMT2_WHEAT Tricetin 3',4',5'-O-trimethyltransferase O...   385   e-106
+sp|O82054|COMT1_SACOF Caffeic acid 3-O-methyltransferase OS=Sacc...   384   e-106
+sp|Q8GSN1|MOMT_CATRO Myricetin O-methyltransferase OS=Catharanth...   384   e-106
+sp|O04385|IEMT_CLABR (Iso)eugenol O-methyltransferase OS=Clarkia...   384   e-106
+sp|Q42654|FOMT1_CHRAE Flavonoid 3'-O-methyltransferase FOMT OS=C...   383   e-105
+sp|Q9LEL5|4OMT_COPJA 3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-met...   383   e-105
+sp|F2YTN5|MOMT2_SOLHA Myricetin 7/4'-O-methyltransferase 2 OS=So...   379   e-104
+sp|A0A3Q7GYG2|MOMT2_SOLLC Myricetin 7/4'-O-methyltransferase 2 O...   379   e-104
+sp|Q93WU2|EOMT1_OCIBA Eugenol O-methyltransferase OS=Ocimum basi...   378   e-104
+sp|M9Z1G5|MOMT3_SOLHA Myricetin 3-O-methyltransferase 3 OS=Solan...   375   e-103
+sp|Q6VMV9|OMT3_MENPI Flavonoid 3'-O-methyltransferase 3 OS=Menth...   371   e-102
+sp|A0A3Q7HYF0|MOMT3_SOLLC Myricetin 3-O-methyltransferase 3 OS=S...   370   e-102
+sp|Q84KK6|I4OMT_GLYEC Isoflavone 4'-O-methyltransferase OS=Glycy...   369   e-101
+sp|Q06509|COMT1_MAIZE Caffeic acid 3-O-methyltransferase OS=Zea ...   368   e-101
+sp|A0A0N9HTA1|DOMT1_SINHE Desmethyl-yatein O-methyltransferase O...   362   3e-99
+sp|I3PLQ7|SOMT3_PAPSO Scoulerine-9-O-methyltransferase 3 OS=Papa...   362   3e-99
+sp|P45986|IMT1_MESCR Inositol 4-methyltransferase OS=Mesembryant...   361   4e-99
+sp|B0ZB56|OMT2_HUMLU Xanthohumol 4-O-methyltransferase OS=Humulu...   361   7e-99
+sp|A0A088MF62|MOMT4_SOLLC Myricetin 3'-O-methyltransferase 4 OS=...   360   1e-98
+sp|A0A3Q7I9E2|CTOMT_SOLLC Cathecol O-methyltransferase 1 OS=Sola...   359   1e-98
+sp|A0A2S1WC15|OMT3B_PAPSO Probable scoulerine-9-O-methyltransfer...   359   2e-98
+sp|C7SDN9|N7OMT_PAPSO Norreticuline-7-O-methyltransferase OS=Pap...   359   2e-98
+sp|A9X7L0|ANMT_RUTGR Anthranilate N-methyltransferase OS=Ruta gr...   356   1e-97
+sp|Q6EPG8|ASMT1_ORYSJ Acetylserotonin O-methyltransferase 1 OS=O...   356   2e-97
+sp|F2YTN4|MOMT1_SOLHA Myricetin 3'/5'-O-methyltransferase 1 OS=S...   354   4e-97
+sp|Q84N28|FOMT1_WHEAT Flavone O-methyltransferase 1 OS=Triticum ...   354   7e-97
+sp|Q9SWC2|COMT1_EUCGL Caffeic acid 3-O-methyltransferase (Fragme...   354   8e-97
+sp|Q39522|SMT_COPJA (S)-scoulerine 9-O-methyltransferase OS=Copt...   349   3e-95
+sp|P47917|ZRP4_MAIZE O-methyltransferase ZRP4 OS=Zea mays OX=457...   347   1e-94
+sp|K0ICR0|FOMT5_OCIBA Flavonoid 4'-O-methyltransferase 5 OS=Ocim...   346   2e-94
+sp|A8QW53|OMT3_SORBI 5-pentadecatrienyl resorcinol O-methyltrans...   344   6e-94
+sp|K0I7Q2|FOMT3_OCIBA Flavonoid 4'-O-methyltransferase 3 OS=Ocim...   344   9e-94
+sp|K0I986|FOMT6_OCIBA Flavonoid 6-O-methyltransferase 6 OS=Ocimu...   344   9e-94
+sp|Q6VMW2|OMT1A_MENPI Flavonoid 7-O-methyltransferase 1A OS=Ment...   342   3e-93
+sp|Q53QK0|Y1103_ORYSJ Flavonoid O-methyltransferase-like protein...   341   7e-93
+sp|I3PLQ6|SOMT2_PAPSO Scoulerine-9-O-methyltransferase 2 OS=Papa...   339   2e-92
+sp|P93324|CHOMT_MEDSA Isoliquiritigenin 2'-O-methyltransferase O...   338   4e-92
+sp|A0A2S1WBY6|OMT2B_PAPSO Probable scoulerine-9-O-methyltransfer...   338   5e-92
+sp|Q6VMV8|OMT4_MENPI Flavonoid 4'-O-methyltransferase 4 OS=Menth...   336   1e-91
+sp|Q6VMW1|OMT1B_MENPI Flavonoid 7-O-methyltransferase 1B OS=Ment...   336   2e-91
+sp|K0I210|FOMT4_OCIBA Flavonoid 6-O-methyltransferase 4 OS=Ocimu...   335   4e-91
+sp|K0II72|FOMT2_OCIBA Flavonoid 7-O-methyltransferase 2 OS=Ocimu...   334   5e-91
+sp|Q6ZD89|OMT1_ORYSJ Flavone 3'-O-methyltransferase 1 OS=Oryza s...   332   3e-90
+sp|K0I977|FOMT1_OCIBA Flavonoid 7-O-methyltransferase 1 OS=Ocimu...   331   4e-90
+sp|Q7XXD4|METL_ORYSJ Probable inactive methyltransferase Os04g01...   329   2e-89
+sp|A8QW51|OMT2_SORBI Probable O-methyltransferase 2 OS=Sorghum b...   329   3e-89
+sp|B0ZB55|OMT1_HUMLU Desmethylxanthohumol 6'-O-methyltransferase...   329   3e-89
+sp|Q8VWJ6|ASMT2_ORYSJ Acetylserotonin O-methyltransferase 2 OS=O...   329   3e-89
+sp|Q8VWG4|ASMT3_ORYSJ Acetylserotonin O-methyltransferase 3 OS=O...   326   2e-88
+sp|I1M2U5|NAMT1_SOYBN Nicotinate N-methyltransferase 1 OS=Glycin...   325   4e-88
+sp|A8QW52|OMT1_SORBI Eugenol O-methyltransferase OS=Sorghum bico...   324   6e-88
+sp|Q9T003|ASMT_ARATH Acetylserotonin O-methyltransferase OS=Arab...   323   1e-87
+sp|Q8H9A8|COOMT_COPJA Columbamine O-methyltransferase OS=Coptis ...   323   2e-87
+sp|I3V6A7|SOMT1_PAPSO Scoulerine-9-O-methyltransferase 1 OS=Papa...   320   8e-87
+sp|Q9SCP7|NAMT1_ARATH Nicotinate N-methyltransferase 1 OS=Arabid...   317   7e-86
+sp|Q7XXI9|OMTL2_ORYSJ Caffeate O-methyltransferase-like protein ...   317   7e-86
+sp|B8RCD3|AIMT1_PIMAN Trans-anol O-methyltransferase 1 OS=Pimpin...   314   6e-85
+sp|Q96565|AMNMT_HORVV 3-aminomethylindole N-methyltransferase OS...   307   1e-82
+sp|Q0IP69|NOMT_ORYSJ Naringenin 7-O-methyltransferase OS=Oryza s...   305   3e-82
+sp|Q84XW5|OMT1_SECCE Daphnetin O-methyltransferase 1 OS=Secale c...   304   1e-81
+sp|Q9LPU8|IGMT4_ARATH Indole glucosinolate O-methyltransferase 4...   298   4e-80
+sp|Q9LPU5|IGMT1_ARATH Indole glucosinolate O-methyltransferase 1...   294   6e-79
+sp|A0A172J1V3|PHZM_LYSAN Phenazine O-methyltransferase PhzM OS=L...   294   6e-79
+sp|B1P123|BX7_MAIZE TRIBOA-glucoside O-methyltransferase BX7 OS=...   288   4e-77
+sp|Q9LPU6|IGMT3_ARATH Indole glucosinolate O-methyltransferase 3...   288   5e-77
+sp|Q9LPU7|IGMT2_ARATH Indole glucosinolate O-methyltransferase 2...   287   1e-76
+sp|Q9SRD4|IGMT5_ARATH Indole glucosinolate O-methyltransferase 5...   282   4e-75
+sp|A0A2G5IC53|CTB3_CERBT Dual O-methyltransferase/FAD-dependent ...   273   2e-72
+sp|Q2I0M6|CTB3_CERNC Dual O-methyltransferase/FAD-dependent mono...   273   2e-72
+sp|P10950|ASMT_BOVIN Acetylserotonin O-methyltransferase OS=Bos ...   272   3e-72
+sp|Q6K9X3|NAMT1_ORYSJ Nicotinate N-methyltransferase 1 OS=Oryza ...   272   4e-72
+sp|Q54B59|OMT12_DICDI O-methyltransferase 12 OS=Dictyostelium di...   270   1e-71
+sp|A0A1W5SMT6|PGMB_ASPTE O-methyltransferase pgmB OS=Aspergillus...   270   2e-71
+sp|A0A443HJY8|VDTC1_BYSSP O-methyltransferase VdtC OS=Byssochlam...   268   6e-71
+sp|Q0CJD1|PGMB_ASPTN O-methyltransferase pgmB OS=Aspergillus ter...   267   9e-71
+sp|Q54GZ0|OMT9_DICDI O-methyltransferase 9 OS=Dictyostelium disc...   262   3e-69
+sp|Q6Q880|SIRM_LEPMC O-methyltransferase sirM OS=Leptosphaeria m...   260   1e-68
+sp|P0CT90|OMT2_PHACR 3-O-methyltransferase 2 OS=Phanerochaete ch...   258   3e-68
+sp|S0E608|BIK3_GIBF5 O-methyltransferase bik3 OS=Gibberella fuji...   258   3e-68
+sp|B8N8R1|AFVC_ASPFN O-methyltransferase afvC OS=Aspergillus fla...   258   4e-68
+sp|Q0UI02|ELCB_PHANO Dual O-methyltransferase/FAD-dependent mono...   255   4e-67
+sp|D7UQ43|SOL2_ALTSO O-methyltransferase sol2 OS=Alternaria sola...   253   1e-66
+sp|Q4WMJ5|GLIM_ASPFU O-methyltransferase gliM OS=Aspergillus fum...   252   3e-66
+sp|P55790|OMTA_ASPFN Sterigmatocystin 8-O-methyltransferase OS=A...   252   4e-66
+sp|A0A0N9HN32|DESB_ASPDE O-methyltransferase desB OS=Aspergillus...   252   4e-66
+sp|Q86I40|OMT4_DICDI O-methyltransferase 4 OS=Dictyostelium disc...   251   7e-66
+sp|A0A1B2CTC1|PENK_PENTH O-methyltransferase penK OS=Penicillium...   250   1e-65
+sp|Q12120|AFLP_ASPPU Sterigmatocystin 8-O-methyltransferase OS=A...   250   1e-65
+sp|A2QK65|KTNB_ASPNC O-methyltransferase kntB OS=Aspergillus nig...   250   1e-65
+sp|P16559|TCMN_STRGA Tetracenomycin biosynthesis bifunctional cy...   250   1e-65
+sp|Q9P900|OMTB_ASPFN Demethylsterigmatocystin 6-O-methyltransfer...   250   2e-65
+sp|Q9UQY0|AFLO_ASPPU Demethylsterigmatocystin 6-O-methyltransfer...   248   6e-65
+sp|S0DQQ0|FSR2_GIBF5 O-methyltransferase fsr2 OS=Gibberella fuji...   247   8e-65
+sp|Q9X5T6|MMCR_STRLA Mitomycin biosynthesis 6-O-methyltransferas...   247   1e-64
+sp|Q8HZJ0|ASMT_MACMU Acetylserotonin O-methyltransferase OS=Maca...   245   4e-64
+sp|A0A348AXX3|OMT_CURCL O-methyltransferase OS=Curvularia clavat...   244   7e-64
+sp|D3H5H5|CMT1_TRILO Chlorophenol O-methyltransferase OS=Trichod...   244   7e-64
+sp|Q8T638|DMTA_DICDI Des-methyl DIF-1 methyltransferase A OS=Dic...   244   8e-64
+sp|Q92056|ASMT_CHICK Acetylserotonin O-methyltransferase OS=Gall...   243   1e-63
+sp|P46597|ASMT_HUMAN Acetylserotonin O-methyltransferase OS=Homo...   243   2e-63
+sp|A2QBF0|AUND_ASPNC O-methyltransferase aunD OS=Aspergillus nig...   243   2e-63
+sp|Q54S95|OMT7_DICDI O-methyltransferase 7 OS=Dictyostelium disc...   243   2e-63
+sp|Q2UPA6|ACLU_ASPOR O-methyltransferase aclU OS=Aspergillus ory...   242   3e-63
+sp|A0A0K2JL91|CREN_STRCM 3-amino-4-hydroxybenzoate 4-O-methyltra...   242   4e-63
+sp|G3XSI5|AUND_ASPNA O-methyltransferase aunD OS=Aspergillus nig...   242   4e-63
+sp|E9KMQ4|GRA3_CLAGR Grayanic acid biosynthesis cluster O-methyl...   242   4e-63
+sp|B0CN39|SFMM3_STRLA O-methyltransferase SfmM3 OS=Streptomyces ...   241   8e-63
+sp|A0A1L9UR19|BFOD_ASPBC O-methyltransferase bfoD OS=Aspergillus...   241   9e-63
+sp|Q4WED7|XANE_ASPFU O-methyltransferase xanE OS=Aspergillus fum...   240   1e-62
+sp|Q0CS95|TAZO_ASPTN O-methyltransferase tazO OS=Aspergillus ter...   239   3e-62
+sp|A0A0C1E5J2|OPAF_ASPUT O-methyltransferase opaF OS=Aspergillus...   239   3e-62
+sp|Q2UPB3|ACLM_ASPOR O-methyltransferase aclM OS=Aspergillus ory...   238   3e-62
+sp|G4MWB6|OME1B_MAGO7 O-methyltransferase OME1 OS=Magnaporthe or...   238   6e-62
+sp|I1RF60|AURJ_GIBZE O-methyltransferase aurJ OS=Gibberella zeae...   238   6e-62
+sp|C9K7C0|AMT9_ALTAL O-methyltransferase AMT9 OS=Alternaria alte...   236   2e-61
+sp|A0A1U9YI02|VERM_CLORO O-methyltransferase verK OS=Clonostachy...   236   2e-61
+sp|Q54B60|OMT11_DICDI Probable inactive O-methyltransferase 11 O...   235   4e-61
+sp|P42712|DMPM_STRAD O-demethylpuromycin-O-methyltransferase OS=...   233   1e-60
+sp|Q4WQZ7|TPCA_ASPFU O-methyltransferase tpcA OS=Aspergillus fum...   233   1e-60
+sp|Q0CCY5|GEDA_ASPTN O-methyltransferase gedA OS=Aspergillus ter...   233   1e-60
+sp|A0A5B8YVD8|GME66_PESMI O-methyltransferase GME11366 OS=Pestal...   232   4e-60
+sp|A0A0E3VJW8|FSA4_FUSSF Methyltransferase fsa4 OS=Fusarium sp. ...   231   8e-60
+sp|Q4WAW6|FTMD_ASPFU 6-hydroxytryprostatin B O-methyltransferase...   230   1e-59
+sp|A1DA61|FTMD_NEOFI 6-hydroxytryprostatin B O-methyltransferase...   230   2e-59
+sp|B9WZX2|FTMD_ASPFM 6-hydroxytryprostatin B O-methyltransferase...   229   3e-59
+sp|O95671|ASML_HUMAN Probable bifunctional dTTP/UTP pyrophosphat...   229   3e-59
+sp|A0A2V5HP22|PYVH_ASPV1 O-methyltransferase pyvH OS=Aspergillus...   227   9e-59
+sp|M2YKT1|MET1_DOTSN Hps1-dma1 cluster O-methyltransferase OS=Do...   227   1e-58
+sp|B3GSH5|ASMT_RAT Acetylserotonin O-methyltransferase OS=Rattus...   223   1e-57
+sp|D7PI16|GSFB_PENAE O-methyltransferase gsfB OS=Penicillium aet...   223   1e-57
+sp|S4W780|EQXD_FUSHE Methyltransferase eqxD OS=Fusarium heterosp...   223   2e-57
+sp|L0MXX3|FC8_PHOAM O-methyltransferase PaMT OS=Phomopsis amygda...   222   4e-57
+sp|Q54527|RDMB_STREF Aclacinomycin 10-hydroxylase RdmB OS=Strept...   220   1e-56
+sp|A5ABG3|PYNC_ASPNC Methyltransferase pynC OS=Aspergillus niger...   220   1e-56
+sp|Q5AR57|ASQN_EMENI O-methyltransferase asqN OS=Emericella nidu...   220   1e-56
+sp|A0A1B2CTA7|PENC_PENTH O-methyltransferase penC OS=Penicillium...   218   4e-56
+sp|Q54FP4|OMT10_DICDI O-methyltransferase 10 OS=Dictyostelium di...   216   3e-55
+sp|A0A067Z9B6|FMAD_ASPFU O-methyltransferase af390-400 OS=Asperg...   216   3e-55
+sp|F1DBB3|MPAG_PENBR O-methyltransferase mpaG OS=Penicillium bre...   215   3e-55
+sp|A0A3Q9U4A9|PVHD_TALVA Methyltransferase pvhD OS=Talaromyces v...   215   4e-55
+sp|K4RFM2|ROSA_STRDJ 8-amino-8-demethylriboflavin N,N-dimethyltr...   213   2e-54
+sp|A0A0B5L781|MPAG2_PENBR O-methyltransferase mpaG' OS=Penicilli...   211   4e-54
+sp|P0CT89|OMT1_PHACR 4-O-methyltransferase 1 OS=Phanerochaete ch...   211   5e-54
+sp|B3FWS1|HPM5_HYPSB O-methyltransferase hmp5 OS=Hypomyces subic...   211   8e-54
+sp|A0A2H3CSB7|ARMOM_ARMGA O-methyltransferase ARMGADRAFT_1088206...   210   2e-53
+sp|Q5AR47|ASQD_EMENI O-methyltransferase asqD OS=Emericella nidu...   208   4e-53
+sp|Q0UI04|ELCD_PHANO O-methyltransferase elcB OS=Phaeosphaeria n...   208   4e-53
+sp|A0A2G5ICZ9|CTB2_CERBT O-methyltransferase CTB2 OS=Cercospora ...   208   5e-53
+sp|B8NJH3|LEPI_ASPFN O-methyltransferase lepI OS=Aspergillus fla...   208   7e-53
+sp|Q9HWH2|PHZM_PSEAE Phenazine-1-carboxylate N-methyltransferase...   208   7e-53
+sp|W6R4H4|MPAG_PENRF O-methyltransferase mpaG OS=Penicillium roq...   206   1e-52
+sp|D3KU66|ASMT_MOUSE Acetylserotonin O-methyltransferase OS=Mus ...   206   2e-52
+sp|A0A1U8QH20|CICE_EMENI O-methyltransferase cicE OS=Emericella ...   206   2e-52
+sp|D3KU67|ASMT_MUSMM Acetylserotonin O-methyltransferase OS=Mus ...   206   3e-52
+sp|Q86HS9|OMT2_DICDI O-methyltransferase 2 OS=Dictyostelium disc...   204   1e-51
+sp|A0A084R1I1|ATR12_STAC4 O-methyltransferase ATR12 OS=Stachybot...   202   3e-51
+sp|A0ST41|CTB2_CERNC O-methyltransferase CTB2 OS=Cercospora nico...   200   2e-50
+sp|Q55216|DNRK_STRS5 Carminomycin 4-O-methyltransferase DauK OS=...   196   3e-49
+sp|A0A084AFG7|SAT18_STACB O-methyltransferase SAT18 OS=Stachybot...   194   7e-49
+sp|A0A142C7A1|PHNC_PENHR O-methyltransferase phnC OS=Penicillium...   194   1e-48
+sp|B4XY98|AZIB2_STREG 3-hydroxy-5-methyl-1-naphthoate 3-O-methyl...   194   1e-48
+sp|Q06528|DNRK_STRPE Carminomycin 4-O-methyltransferase DnrK OS=...   192   3e-48
+sp|S0DLP1|APF6_GIBF5 O-methyltransferase apf6 OS=Gibberella fuji...   189   3e-47
+sp|C9K2Q2|BSC6_ALTBR 16-O-methyltransferase bsc6 OS=Alternaria b...   188   6e-47
+sp|D7PI18|GSFD_PENAE O-methyltransferase gsfD OS=Penicillium aet...   185   4e-46
+sp|P39896|TCMO_STRGA Tetracenomycin polyketide synthesis 8-O-met...   183   2e-45
+sp|Q3S8P6|OXYT_STRRM N,N-dimethyltransferase OxyT OS=Streptomyce...   183   2e-45
+sp|D7PI17|GSFC_PENAE O-methyltransferase gsfC OS=Penicillium aet...   181   5e-45
+sp|B8NY85|AGIB_ASPFN O-methyltransferase agiB OS=Aspergillus fla...   181   6e-45
+sp|Q5W266|PIGF_SERS3 S-adenosyl-L-methionine-dependent methyl tr...   180   1e-44
+sp|P9WEP8|STCP_EMENI Demethylsterigmatocystin 6-O-methyltransfer...   180   2e-44
+sp|A0A4P8WAD3|PYIA_MAGGR O-methyltransferase pyiA OS=Magnaporthe...   177   9e-44
+sp|I1RL18|DPFGI_GIBZE O-methyltransferase dpfgI OS=Gibberella ze...   177   1e-43
+sp|D5AP78|CRTF_RHOCB Demethylspheroidene O-methyltransferase OS=...   176   2e-43
+sp|A0A2Z5XAK6|PHM5_PYRSX Methyltransferase phm5 OS=Pyrenochaetop...   173   2e-42
+sp|A0A179H2P2|LCSG_PURLI O-methyltransferase lcsG OS=Purpureocil...   171   8e-42
+sp|Q84HC8|NCSB1_STRCZ 2,7-dihydroxy-5-methyl-1-naphthoate 7-O-me...   166   3e-40
+sp|P54906|CRTF_CERS4 Demethylspheroidene O-methyltransferase OS=...   161   6e-39
+sp|B0CN31|SFMM2_STRLA L-tyrosine C(3)-methyltransferase OS=Strep...   160   2e-38
+sp|A0A6G9KJC3|NANE_ASPNN N-methyltransferase nanE OS=Aspergillus...   159   2e-38
+sp|A0A1L9URE0|BFOE_ASPBC O-methyltransferase bfoE OS=Aspergillus...   159   3e-38
+sp|G3XSI6|AUNE_ASPNA O-methyltransferase aunE (Fragment) OS=Aspe...   154   1e-36
+sp|Q8KGE0|BCHU_CHLTE Bacteriochlorophyllide d C-20 methyltransfe...   153   3e-36
+sp|A2QBF1|AUNE_ASPNC O-methyltransferase aunE OS=Aspergillus nig...   151   1e-35
+sp|Q0CS62|ATIMG_ASPTN Trimodular acetylaranotin synthesis protei...   149   3e-35
+sp|Q0CCY2|GEDD_ASPTN Geodin cluster transcriptional coactivator ...   135   4e-31
+sp|Q57551|Y086_METJA Uncharacterized protein MJ0086 OS=Methanoca...   131   6e-30
+sp|M2YMT1|PK81J_PSEFD Transcriptional coactivator MYCFIDRAFT_190...   131   1e-29
+sp|M2YJ20|AFLJ_DOTSN Dothistromin biosynthesis regulatory protei...   128   6e-29
+sp|E1ACR3|NOTR_ASPSM Notoamide biosynthesis cluster transcriptio...   119   3e-26
+sp|O42716|AFLS_ASPPU Aflatoxin cluster transcriptional coactivat...   117   1e-25
+sp|A0A411PQN9|AGN9_PAEDI Agnestins biosynthesis cluster transcri...   116   2e-25
+sp|A0A5B8YU39|GME69_PESMI Transcriptional coactivator GME11369 O...   113   2e-24
+sp|P0CU73|CLAA_PASFU Cladofulvin cluster transcriptional coactiv...   112   4e-24
+sp|A0A1L9WLK0|AACUS_ASPA1 Transcriptional coactivator AacuS OS=A...   109   3e-23
+sp|C8VQ72|MDPA_EMENI Monodictyphenone cluster transcriptional co...   108   5e-23
+sp|Q643C8|MPPJ_STRHY Phenylpyruvate C(3)-methyltransferase OS=St...   103   2e-21
+sp|K2RGJ8|DPMPI_MACPH O-methyltransferase dpmpI OS=Macrophomina ...    94   1e-18
+sp|O53532|Y2258_MYCTU S-adenosylmethionine-dependent methyltrans...    81   1e-14
+sp|A0A0D4BS77|IND1_STRGR Indolepyruvate C-methyltransferase OS=S...    79   7e-14
+sp|Q8TJK1|ARSM_METAC Arsenite methyltransferase OS=Methanosarcin...    66   3e-10
+sp|P0CY89|CRTF_RHOCA Demethylspheroidene O-methyltransferase (Fr...    46   5e-04
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q4WQZ4|TPCD_ASPFU Trypacidin cluster transcriptional coactiva...   111   1e-23
+sp|A0A2I1C3U1|NSRH_ASPN1 Transcriptional coactivator nsrH OS=Asp...    94   2e-18
+sp|A0A067XNJ0|PTAR1_PESFW Pestheic acid cluster transcriptional ...    83   4e-15
+sp|M1WG94|PIG10_CLAP2 Ergochrome gene cluster transcriptional co...    78   1e-13
+sp|B3QLI9|MENG_CHLP8 Demethylmenaquinone methyltransferase OS=Ch...    50   2e-05
+sp|O31474|YCGJ_BACSU Uncharacterized methyltransferase YcgJ OS=B...    48   1e-04
+sp|C3LSR6|TRMN6_VIBCM tRNA1(Val) (adenine(37)-N6)-methyltransfer...    48   1e-04
+sp|Q9KU62|TRMN6_VIBCH tRNA1(Val) (adenine(37)-N6)-methyltransfer...    48   1e-04
+sp|A0A384XC21|STR2_STRTC Methyltransferase str2 OS=Strobilurus t...    48   1e-04
+sp|Q6NWX7|NTM1A_DANRE N-terminal Xaa-Pro-Lys N-methyltransferase...    48   1e-04
+sp|B0B9D1|PRMC_CHLT2 Release factor glutamine methyltransferase ...    46   3e-04
+sp|O84027|PRMC_CHLTR Release factor glutamine methyltransferase ...    46   3e-04
+sp|A0QM44|TAM_MYCA1 Trans-aconitate 2-methyltransferase OS=Mycob...    46   4e-04
+sp|Q0CCX8|GEDG_ASPTN Methyltransferase gedG OS=Aspergillus terre...    46   6e-04
+sp|A0A0D3MJQ5|ARSM_CLOSP Arsenite methyltransferase OS=Clostridi...    46   6e-04
+sp|Q3SPQ7|TAM_NITWN Trans-aconitate 2-methyltransferase OS=Nitro...    46   6e-04
+sp|A4WVR7|UBIE_CERS5 Ubiquinone/menaquinone biosynthesis C-methy...    46   6e-04
+sp|Q2QM69|BQMT2_ORYSJ 2-methyl-6-phytyl-1,4-hydroquinone methylt...    45   7e-04
+sp|A0A3G1DJF3|SQHKS_PHOSM Squalestatin hexaketide synthase OS=Ph...    45   0.001
+sp|A6WZN1|TAM_BRUA4 Trans-aconitate 2-methyltransferase OS=Bruce...    45   0.001
+sp|P9WGA3|TAM_MYCTU Probable trans-aconitate 2-methyltransferase...    44   0.001
+sp|P9WGA2|TAM_MYCTO Probable trans-aconitate 2-methyltransferase...    44   0.001
+sp|A5TZ21|TAM_MYCTA Trans-aconitate 2-methyltransferase OS=Mycob...    44   0.001
+sp|C1AJX2|TAM_MYCBT Trans-aconitate 2-methyltransferase OS=Mycob...    44   0.001
+sp|A1KFB7|TAM_MYCBP Trans-aconitate 2-methyltransferase OS=Mycob...    44   0.001
+sp|P66886|TAM_MYCBO Probable trans-aconitate 2-methyltransferase...    44   0.001
+sp|B9KQJ8|UBIE_CERSK Ubiquinone/menaquinone biosynthesis C-methy...    44   0.001
+sp|Q3IY65|UBIE_CERS4 Ubiquinone/menaquinone biosynthesis C-methy...    44   0.001
+sp|A3PFL1|UBIE_CERS1 Ubiquinone/menaquinone biosynthesis C-methy...    44   0.001
+sp|A1BAN1|UBIE_PARDP Ubiquinone/menaquinone biosynthesis C-methy...    44   0.002
+sp|P75419|Y362_MYCPN Uncharacterized protein MG259 homolog OS=My...    44   0.002
+sp|Q87TH4|UBIE_VIBPA Ubiquinone/menaquinone biosynthesis C-methy...    44   0.002
+sp|Q4KLE6|NT1AB_XENLA N-terminal Xaa-Pro-Lys N-methyltransferase...    44   0.003
+sp|Q4KL94|NT1AA_XENLA N-terminal Xaa-Pro-Lys N-methyltransferase...    43   0.003
+sp|Q9RX93|TAM_DEIRA Trans-aconitate 2-methyltransferase OS=Deino...    43   0.003
+sp|A7MTX1|UBIE_VIBC1 Ubiquinone/menaquinone biosynthesis C-methy...    43   0.003
+sp|Q65I24|MENG_BACLD Demethylmenaquinone methyltransferase OS=Ba...    43   0.003
+sp|Q2T4P1|THAQ_BURTA Polyketide synthase ThaQ OS=Burkholderia th...    43   0.003
+sp|C0ZA63|RSMG_BREBN Ribosomal RNA small subunit methyltransfera...    43   0.003
+sp|Q759S7|ERG6_ASHGO Sterol 24-C-methyltransferase OS=Ashbya gos...    43   0.004
+sp|Q6ZLD3|BQMT1_ORYSJ 2-methyl-6-phytyl-1,4-hydroquinone methylt...    43   0.004
+sp|E3H9W1|BIOC1_ILYPC Malonyl-[acyl-carrier protein] O-methyltra...    43   0.004
+sp|P9WEZ3|PYTC_ASPTE Methyltransferase pytC OS=Aspergillus terre...    43   0.004
+sp|E3HCT1|BIOC2_ILYPC Malonyl-[acyl-carrier protein] O-methyltra...    43   0.004
+sp|Q57693|Y241_METJA Uncharacterized protein MJ0241 OS=Methanoca...    42   0.005
+sp|Q6ANL3|UBIE_DESPS Ubiquinone/menaquinone biosynthesis C-methy...    42   0.005
+sp|Q8KF69|MENG_CHLTE Demethylmenaquinone methyltransferase OS=Ch...    42   0.005
+sp|Q5E6T2|PRMC_ALIF1 Release factor glutamine methyltransferase ...    42   0.005
+sp|C6V598|BIOC_NEORI Malonyl-[acyl-carrier protein] O-methyltran...    42   0.005
+sp|B9J7S8|UBIE_AGRRK Ubiquinone/menaquinone biosynthesis C-methy...    42   0.006
+sp|Q0CZH2|PYTC_ASPTN Methyltransferase pytC OS=Aspergillus terre...    42   0.007
+sp|P38340|NTM1_YEAST Alpha N-terminal protein methyltransferase ...    42   0.007
+sp|B9L9I3|CMOA_NAUPA Carboxy-S-adenosyl-L-methionine synthase OS...    42   0.007
+sp|Q5BJX0|NTM1A_RAT N-terminal Xaa-Pro-Lys N-methyltransferase 1...    42   0.009
+sp|Q6ZIK0|GTOMC_ORYSJ Probable tocopherol O-methyltransferase, c...    42   0.009
+sp|Q9UTA8|YL8A_SCHPO Uncharacterized methyltransferase-like C25B...    42   0.010
+sp|Q9K623|BIOC_HALH5 Malonyl-[acyl-carrier protein] O-methyltran...    42   0.010
+sp|B2GDC8|TRMB_LIMF3 tRNA (guanine-N(7)-)-methyltransferase OS=L...    41   0.011
+sp|A4T0W0|TAM_MYCGI Trans-aconitate 2-methyltransferase OS=Mycol...    41   0.012
+sp|Q8CMN7|RSMG_STAES Ribosomal RNA small subunit methyltransfera...    41   0.012
+sp|Q5HS34|RSMG_STAEQ Ribosomal RNA small subunit methyltransfera...    41   0.012
+sp|Q9LY74|BQMT_ARATH 2-methyl-6-phytyl-1,4-hydroquinone methyltr...    41   0.012
+sp|B1YGA6|RSMG_EXIS2 Ribosomal RNA small subunit methyltransfera...    41   0.013
+sp|Q9H8H3|TMT1A_HUMAN N6-adenosine-methyltransferase TMT1A OS=Ho...    41   0.013
+sp|Q74HM3|RSMG_LACJO Ribosomal RNA small subunit methyltransfera...    41   0.013
+sp|Q9F8T9|COUO_STRRH C-methyltransferase CouO OS=Streptomyces ri...    41   0.014
+sp|A0A384XH94|SPKS1_STRTC Highly reducing polyketide synthase st...    41   0.014
+sp|O26249|CBIT_METTH Probable cobalt-precorrin-6B C(15)-methyltr...    41   0.014
+sp|Q8R2U4|NTM1A_MOUSE N-terminal Xaa-Pro-Lys N-methyltransferase...    41   0.015
+sp|B1HPM1|RSMG_LYSSC Ribosomal RNA small subunit methyltransfera...    41   0.016
+sp|B9E8Z2|RSMG_MACCJ Ribosomal RNA small subunit methyltransfera...    41   0.016
+sp|B8IJ00|UBIE_METNO Ubiquinone/menaquinone biosynthesis C-methy...    41   0.017
+sp|D5FKJ3|MRSA_PSESY 2-ketoarginine methyltransferase OS=Pseudom...    41   0.017
+sp|P9WET0|PREU9_PREIS Polyketide synthase-like protein Preu9 OS=...    41   0.017
+sp|Q2T9N3|NTM1A_BOVIN N-terminal Xaa-Pro-Lys N-methyltransferase...    41   0.018
+sp|C0R2Q3|UBIE_WOLWR Ubiquinone/menaquinone biosynthesis C-methy...    41   0.018
+sp|Q73HZ4|UBIE_WOLPM Ubiquinone/menaquinone biosynthesis C-methy...    41   0.018
+sp|Q892R2|PRMA_CLOTE Ribosomal protein L11 methyltransferase OS=...    41   0.018
+sp|B0UPF4|TAM_METS4 Trans-aconitate 2-methyltransferase OS=Methy...    41   0.019
+sp|Q9N4D9|NTM1_CAEEL Alpha N-terminal protein methyltransferase ...    41   0.019
+sp|A1K8U5|TAM_AZOSB Trans-aconitate 2-methyltransferase OS=Azoar...    41   0.022
+sp|S0EG57|ME178_GIBF5 Methyltransferase FFUJ_09178 OS=Gibberella...    41   0.023
+sp|P46326|YXBB_BACSU Uncharacterized protein YxbB OS=Bacillus su...    40   0.023
+sp|Q1QJC0|TAM_NITHX Trans-aconitate 2-methyltransferase OS=Nitro...    40   0.024
+sp|A5II90|UBIE_LEGPC Ubiquinone/menaquinone biosynthesis C-methy...    40   0.024
+sp|Q55DH6|NTM1_DICDI Alpha N-terminal protein methyltransferase ...    40   0.025
+sp|A0PN72|TAM_MYCUA Trans-aconitate 2-methyltransferase OS=Mycob...    40   0.026
+sp|B2HNX5|TAM_MYCMM Trans-aconitate 2-methyltransferase OS=Mycob...    40   0.027
+sp|A1W9K6|TAM_ACISJ Trans-aconitate 2-methyltransferase OS=Acido...    40   0.027
+sp|T1T504|LAEA_HYPAT Secondary metabolism regulator LAE1 OS=Hypo...    40   0.027
+sp|G9P9X3|LAEA_HYPAI Secondary metabolism regulator LAE1 OS=Hypo...    40   0.027
+sp|B1H2P7|NTM1A_XENTR N-terminal Xaa-Pro-Lys N-methyltransferase...    40   0.029
+sp|Q5ZRH9|UBIE_LEGPH Ubiquinone/menaquinone biosynthesis C-methy...    40   0.031
+sp|Q9RAH6|NAT_NOCUT Isonocardicin synthase OS=Nocardia uniformis...    40   0.031
+sp|Q944H0|PEAM2_ARATH Phosphomethylethanolamine N-methyltransfer...    40   0.031
+sp|P77460|YBCY_ECOLI Putative uncharacterized protein YbcY OS=Es...    40   0.038
+sp|Q5WSQ8|UBIE_LEGPL Ubiquinone/menaquinone biosynthesis C-methy...    39   0.041
+sp|A1QZA2|RSMH_BORT9 Ribosomal RNA small subunit methyltransfera...    39   0.042
+sp|B8ISV4|TAM_METNO Trans-aconitate 2-methyltransferase OS=Methy...    39   0.043
+sp|Q8FZM5|TAM_BRUSU Trans-aconitate 2-methyltransferase OS=Bruce...    39   0.043
+sp|B0CHP1|TAM_BRUSI Trans-aconitate 2-methyltransferase OS=Bruce...    39   0.043
+sp|A5VRJ7|TAM_BRUO2 Trans-aconitate 2-methyltransferase OS=Bruce...    39   0.043
+sp|A9M6C1|TAM_BRUC2 Trans-aconitate 2-methyltransferase OS=Bruce...    39   0.043
+sp|B2RJE9|MENG_PORG3 Demethylmenaquinone methyltransferase OS=Po...    39   0.043
+sp|Q9FR44|PEAM1_ARATH Phosphoethanolamine N-methyltransferase 1 ...    39   0.045
+sp|Q7ULT2|PRMC_RHOBA Release factor glutamine methyltransferase ...    39   0.045
+sp|Q9C6B9|PEAM3_ARATH Phosphoethanolamine N-methyltransferase 3 ...    39   0.045
+sp|Q8YI91|TAM_BRUME Trans-aconitate 2-methyltransferase OS=Bruce...    39   0.046
+sp|Q7MVR7|MENG_PORGI Demethylmenaquinone methyltransferase OS=Po...    39   0.046
+sp|A7GVP5|RSMG_BACCN Ribosomal RNA small subunit methyltransfera...    39   0.049
+sp|A8LNK7|UBIE_DINSH Ubiquinone/menaquinone biosynthesis C-methy...    39   0.050
+sp|A7ZAV9|RSMG_BACVZ Ribosomal RNA small subunit methyltransfera...    39   0.051
+sp|P9WLW9|Y1498_MYCTU Uncharacterised methyltransferase Rv1498c ...    39   0.052
+sp|Q040U0|RSMG_LACGA Ribosomal RNA small subunit methyltransfera...    39   0.052
+sp|Q8EKU4|RSMG_OCEIH Ribosomal RNA small subunit methyltransfera...    39   0.053
+sp|Q65CN3|RSMG_BACLD Ribosomal RNA small subunit methyltransfera...    39   0.054
+sp|A0A0E0SMA3|ERG6B_GIBZE Sterol 24-C-methyltransferase ERG6B OS...    39   0.055
+sp|Q6FRZ7|ERG6_CANGA Sterol 24-C-methyltransferase OS=Candida gl...    39   0.056
+sp|P9WLW8|Y1498_MYCTO Uncharacterised methyltransferase MT1546 O...    39   0.059
+sp|S0EET5|FUJ1_GIBF5 Polyketide synthase 19 OS=Gibberella fujiku...    39   0.060
+sp|B7NIJ1|TAM_ECO7I Trans-aconitate 2-methyltransferase OS=Esche...    39   0.062
+sp|Q6NN40|NTM1_DROME Alpha N-terminal protein methyltransferase ...    39   0.063
+sp|Q9RRT0|MENG_DEIRA Demethylmenaquinone methyltransferase OS=De...    39   0.063
+sp|B4SRA0|RLME_STRM5 Ribosomal RNA large subunit methyltransfera...    39   0.065
+sp|C3LPS5|UBIE_VIBCM Ubiquinone/menaquinone biosynthesis C-methy...    39   0.066
+sp|Q9KVQ6|UBIE_VIBCH Ubiquinone/menaquinone biosynthesis C-methy...    39   0.066
+sp|A5F4E5|UBIE_VIBC3 Ubiquinone/menaquinone biosynthesis C-methy...    39   0.066
+sp|Q5GYL7|RLME_XANOR Ribosomal RNA large subunit methyltransfera...    39   0.068
+sp|B2SUB8|RLME_XANOP Ribosomal RNA large subunit methyltransfera...    39   0.068
+sp|Q2P1M0|RLME_XANOM Ribosomal RNA large subunit methyltransfera...    39   0.068
+sp|Q5X0X6|UBIE_LEGPA Ubiquinone/menaquinone biosynthesis C-methy...    39   0.069
+sp|B2FKA1|RLME_STRMK Ribosomal RNA large subunit methyltransfera...    39   0.070
+sp|Q9K5M8|RSMG_HALH5 Ribosomal RNA small subunit methyltransfera...    39   0.075
+sp|B6JIA0|TAM_AFIC5 Trans-aconitate 2-methyltransferase OS=Afipi...    39   0.077
+sp|B6IAS2|TAM_ECOSE Trans-aconitate 2-methyltransferase OS=Esche...    39   0.080
+sp|C5D9Y5|RSMG_GEOSW Ribosomal RNA small subunit methyltransfera...    39   0.081
+sp|B7LZC1|TAM_ECO8A Trans-aconitate 2-methyltransferase OS=Esche...    39   0.082
+sp|A7ZLX5|TAM_ECO24 Trans-aconitate 2-methyltransferase OS=Esche...    39   0.082
+sp|A4WFY5|UBIE_ENT38 Ubiquinone/menaquinone biosynthesis C-methy...    39   0.085
+sp|A0Q1R2|PRMA_CLONN Ribosomal protein L11 methyltransferase OS=...    39   0.086
+sp|B9JZF4|UBIE_AGRVS Ubiquinone/menaquinone biosynthesis C-methy...    38   0.087
+sp|B1LF96|TAM_ECOSM Trans-aconitate 2-methyltransferase OS=Esche...    38   0.087
+sp|A9MRB9|RSMC_SALAR Ribosomal RNA small subunit methyltransfera...    38   0.089
+sp|A0A0A2IBN3|CNSE_PENEN O-methyltransferase cnsE OS=Penicillium...    38   0.090
+sp|Q4L2Z4|RSMG_STAHJ Ribosomal RNA small subunit methyltransfera...    38   0.091
+sp|A0A6F8RNP4|GRGA_PENSQ Reducing polyketide synthase grgA OS=Pe...    38   0.091
+sp|Q3S2U6|MOKB_MONPI Lovastatin diketide synthase mokB OS=Monasc...    38   0.092
+sp|Q9M571|PEAMT_SPIOL Phosphoethanolamine N-methyltransferase OS...    38   0.096
+sp|Q749W5|BIOC_GEOSL Malonyl-[acyl-carrier protein] O-methyltran...    38   0.097
+sp|Q0C8L6|LOVF_ASPTN Lovastatin diketide synthase lovF OS=Asperg...    38   0.10 
+sp|Q6HAF4|RSMG_BACHK Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|Q630C0|RSMG_BACCZ Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|Q814F8|RSMG_BACCR Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|B9IT40|RSMG_BACCQ Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|B7HZG8|RSMG_BACC7 Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|B7H7A0|RSMG_BACC4 Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|C1ER75|RSMG_BACC3 Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|B7IST2|RSMG_BACC2 Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|Q72WU5|RSMG_BACC1 Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|B7JIK9|RSMG_BACC0 Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|Q81JH4|RSMG_BACAN Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|A0RLR0|RSMG_BACAH Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|C3LGT9|RSMG_BACAC Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|C3P3F3|RSMG_BACAA Ribosomal RNA small subunit methyltransfera...    38   0.10 
+sp|P38074|HMT1_YEAST Protein arginine N-methyltransferase 1 OS=S...    38   0.10 
+sp|Q32G05|TAM_SHIDS Trans-aconitate 2-methyltransferase OS=Shige...    38   0.11 
+sp|B5Z1X6|TAM_ECO5E Trans-aconitate 2-methyltransferase OS=Esche...    38   0.11 
+sp|Q8XAZ2|TAM_ECO57 Trans-aconitate 2-methyltransferase OS=Esche...    38   0.11 
+sp|Q87F66|RLME_XYLFT Ribosomal RNA large subunit methyltransfera...    38   0.11 
+sp|B2I696|RLME_XYLF2 Ribosomal RNA large subunit methyltransfera...    38   0.11 
+sp|Q4WQY5|TPCM_ASPFU Methyltransferase tpcM OS=Aspergillus fumig...    38   0.11 
+sp|D2H163|NTM1A_AILME N-terminal Xaa-Pro-Lys N-methyltransferase...    38   0.12 
+sp|Q8UIH5|UBIE_AGRFC Ubiquinone/menaquinone biosynthesis C-methy...    38   0.12 
+sp|Q2SBD7|BIOC_HAHCH Malonyl-[acyl-carrier protein] O-methyltran...    38   0.12 
+sp|Q3BUR8|RLME_XANC5 Ribosomal RNA large subunit methyltransfera...    38   0.12 
+sp|Q8PLQ8|RLME_XANAC Ribosomal RNA large subunit methyltransfera...    38   0.12 
+sp|Q49UI6|RSMG_STAS1 Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|Q8NUF9|RSMG_STAAW Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|A8YYR9|RSMG_STAAT Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|Q6G5W6|RSMG_STAAS Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|P64240|RSMG_STAAN Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|P64239|RSMG_STAAM Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|A6QKK0|RSMG_STAAE Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|Q5HCI5|RSMG_STAAC Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|A5IWD5|RSMG_STAA9 Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|Q2FUQ4|RSMG_STAA8 Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|Q2FDF0|RSMG_STAA3 Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|A6U593|RSMG_STAA2 Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|A7X7A5|RSMG_STAA1 Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|A8WVR2|NTM1_CAEBR Alpha N-terminal protein methyltransferase ...    38   0.13 
+sp|Q98K73|TAM_RHILO Trans-aconitate 2-methyltransferase OS=Mesor...    38   0.13 
+sp|Q5ZT34|BIOC_LEGPH Malonyl-[acyl-carrier protein] O-methyltran...    38   0.13 
+sp|C0ZHY5|TRMB_BREBN tRNA (guanine-N(7)-)-methyltransferase OS=B...    38   0.13 
+sp|C4LCN4|TRMN6_TOLAT tRNA1(Val) (adenine(37)-N6)-methyltransfer...    38   0.13 
+sp|Q83RE0|TAM_SHIFL Trans-aconitate 2-methyltransferase OS=Shige...    38   0.13 
+sp|C5C0T0|MENG_BEUC1 Demethylmenaquinone methyltransferase OS=Be...    38   0.13 
+sp|B0T7D0|UBIE_CAUSK Ubiquinone/menaquinone biosynthesis C-methy...    38   0.13 
+sp|P25813|RSMG_BACSU Ribosomal RNA small subunit methyltransfera...    38   0.13 
+sp|Q0T4L2|TAM_SHIF8 Trans-aconitate 2-methyltransferase OS=Shige...    38   0.14 
+sp|C4L001|RSMG_EXISA Ribosomal RNA small subunit methyltransfera...    38   0.14 
+sp|A0A482NB13|ICCD_TALVA S-adenosyl-L-methionine-dependent Diels...    38   0.14 
+sp|E5KIC0|CYPM_STRSQ Cypemycin N-terminal methyltransferase OS=S...    38   0.14 
+sp|Q8P8H2|UBIG_XANCP Ubiquinone biosynthesis O-methyltransferase...    37   0.15 
+sp|B0RS27|UBIG_XANCB Ubiquinone biosynthesis O-methyltransferase...    37   0.15 
+sp|Q4UVL4|UBIG_XANC8 Ubiquinone biosynthesis O-methyltransferase...    37   0.15 
+sp|Q9K2B6|MENG_CHLPN Demethylmenaquinone methyltransferase OS=Ch...    37   0.15 
+sp|A0A3B1EFP8|STR3_STRTC Methyltransferase str3 OS=Strobilurus t...    37   0.15 
+sp|Q9Y7L2|BIN3D_SCHPO Probable RNA methyltransferase C2A9.10 OS=...    37   0.16 
+sp|Q2YZC0|RSMG_STAAB Ribosomal RNA small subunit methyltransfera...    37   0.16 
+sp|Q8P9Y1|RLME_XANCP Ribosomal RNA large subunit methyltransfera...    37   0.17 
+sp|B0RTZ3|RLME_XANCB Ribosomal RNA large subunit methyltransfera...    37   0.17 
+sp|Q4UTQ4|RLME_XANC8 Ribosomal RNA large subunit methyltransfera...    37   0.17 
+sp|Q831F7|PRMC_ENTFA Release factor glutamine methyltransferase ...    37   0.18 
+sp|Q6GD94|RSMG_STAAR Ribosomal RNA small subunit methyltransfera...    37   0.18 
+sp|Q9L9F3|NOVO_STRNV 8-demethylnovobiocic acid C(8)-methyltransf...    37   0.18 
+sp|Q8Y4A9|PRMC_LISMO Release factor glutamine methyltransferase ...    37   0.19 
+sp|Q9BV86|NTM1A_HUMAN N-terminal Xaa-Pro-Lys N-methyltransferase...    37   0.19 
+sp|Q820Z6|RSMC_SHIFL Ribosomal RNA small subunit methyltransfera...    37   0.19 
+sp|Q0SX40|RSMC_SHIF8 Ribosomal RNA small subunit methyltransfera...    37   0.19 
+sp|B9MBN9|TAM_ACIET Trans-aconitate 2-methyltransferase OS=Acido...    37   0.19 
+sp|Q216J6|TAM_RHOPB Trans-aconitate 2-methyltransferase OS=Rhodo...    37   0.20 
+sp|Q1II29|PRMC_KORVE Release factor glutamine methyltransferase ...    37   0.20 
+sp|P76145|TAM_ECOLI Trans-aconitate 2-methyltransferase OS=Esche...    37   0.21 
+sp|B1IRU1|TAM_ECOLC Trans-aconitate 2-methyltransferase OS=Esche...    37   0.21 
+sp|B1XEA7|TAM_ECODH Trans-aconitate 2-methyltransferase OS=Esche...    37   0.21 
+sp|C4ZWT6|TAM_ECOBW Trans-aconitate 2-methyltransferase OS=Esche...    37   0.21 
+sp|Q2KDB0|UBIE_RHIEC Ubiquinone/menaquinone biosynthesis C-methy...    37   0.22 
+sp|Q9ZKH1|CMOB_HELPJ tRNA U34 carboxymethyltransferase OS=Helico...    37   0.22 
+sp|A7MGA7|RSMC_CROS8 Ribosomal RNA small subunit methyltransfera...    37   0.22 
+sp|B8HVV6|G6PI_CYAP4 Glucose-6-phosphate isomerase OS=Cyanothece...    37   0.23 
+sp|P13079|CARB_STRTH rRNA methyltransferase OS=Streptomyces ther...    37   0.23 
+sp|B1YKF9|TRMB_EXIS2 tRNA (guanine-N(7)-)-methyltransferase OS=E...    37   0.23 
+sp|Q609U9|BIOC_METCA Malonyl-[acyl-carrier protein] O-methyltran...    37   0.24 
+sp|Q97MK5|Y191_CLOAB Uncharacterized HTH-type transcriptional re...    37   0.24 
+sp|A0AMC5|RSMG_LISW6 Ribosomal RNA small subunit methyltransfera...    37   0.25 
+sp|B8JM82|NTM1B_DANRE N-terminal Xaa-Pro-Lys N-methyltransferase...    37   0.25 
+sp|Q82HD9|TAM_STRAW Trans-aconitate 2-methyltransferase OS=Strep...    37   0.25 
+sp|Q7MSS6|RSMH_WOLSU Ribosomal RNA small subunit methyltransfera...    37   0.25 
+sp|A6LRN8|PRMA_CLOB8 Ribosomal protein L11 methyltransferase OS=...    37   0.25 
+sp|B2IAI0|BIOC_XYLF2 Malonyl-[acyl-carrier protein] O-methyltran...    37   0.26 
+sp|Q748B2|PRMC_GEOSL Release factor glutamine methyltransferase ...    37   0.27 
+sp|B4T4F9|RSMC_SALNS Ribosomal RNA small subunit methyltransfera...    37   0.27 
+sp|Q7MNQ4|TRMN6_VIBVY tRNA1(Val) (adenine(37)-N6)-methyltransfer...    37   0.27 
+sp|S7Z800|OPDA_PENO1 Hybrid PKS-NRPs synthetase opdA OS=Penicill...    37   0.27 
+sp|B3QFV9|TAM_RHOPT Trans-aconitate 2-methyltransferase OS=Rhodo...    37   0.28 
+sp|Q6N3T8|TAM_RHOPA Trans-aconitate 2-methyltransferase OS=Rhodo...    37   0.28 
+sp|A4ITW9|RSMG_GEOTN Ribosomal RNA small subunit methyltransfera...    37   0.28 
+sp|B7L7L9|TAM_ECO55 Trans-aconitate 2-methyltransferase OS=Esche...    37   0.28 
+sp|A8ALZ1|RSMC_CITK8 Ribosomal RNA small subunit methyltransfera...    37   0.28 
+sp|Q9VNH1|BN3D2_DROME Probable RNA methyltransferase CG1239 OS=D...    37   0.28 
+sp|A3DBD7|BIOC_ACET2 Malonyl-[acyl-carrier protein] O-methyltran...    37   0.29 
+sp|Q8A9H7|TRMN6_BACTN tRNA1(Val) (adenine(37)-N6)-methyltransfer...    37   0.29 
+sp|Q8FMF7|SPEE_COREF Polyamine aminopropyltransferase OS=Coryneb...    37   0.29 
+sp|B0U1F2|RLME_XYLFM Ribosomal RNA large subunit methyltransfera...    37   0.30 
+sp|Q9PH52|RLME_XYLFA Ribosomal RNA large subunit methyltransfera...    37   0.30 
+sp|A2BUE8|RSMH_PROM5 Ribosomal RNA small subunit methyltransfera...    37   0.30 
+sp|A1B8Z4|BHCR_PARDP HTH-type transcriptional regulator BhcR OS=...    37   0.30 
+sp|B7LRD2|TAM_ESCF3 Trans-aconitate 2-methyltransferase OS=Esche...    37   0.32 
+sp|Q2JHU0|G6PI_SYNJB Glucose-6-phosphate isomerase OS=Synechococ...    36   0.33 
+sp|P25087|ERG6_YEAST Sterol 24-C-methyltransferase ERG6 OS=Sacch...    36   0.34 
+sp|A4J7F1|PRMA_DESRM Ribosomal protein L11 methyltransferase OS=...    36   0.34 
+sp|A1TP97|TAM_ACIAC Trans-aconitate 2-methyltransferase OS=Acido...    36   0.35 
+sp|Q1BF27|TAM_MYCSS Trans-aconitate 2-methyltransferase OS=Mycob...    36   0.36 
+sp|A1U9V4|TAM_MYCSK Trans-aconitate 2-methyltransferase OS=Mycob...    36   0.36 
+sp|A3PTG0|TAM_MYCSJ Trans-aconitate 2-methyltransferase OS=Mycob...    36   0.36 
+sp|Q8Z0V2|RSMC_SALTI Ribosomal RNA small subunit methyltransfera...    36   0.36 
+sp|B9DNV5|MENG_STACT Demethylmenaquinone methyltransferase OS=St...    36   0.37 
+sp|P54084|RNR_ACIFR Ribonuclease R (Fragment) OS=Acidithiobacill...    36   0.38 
+sp|A0A067XMV2|PTAH_PESFW Methyltransferase ptaH OS=Pestalotiopsi...    36   0.38 
+sp|Q0T8U3|RSMC_ECOL5 Ribosomal RNA small subunit methyltransfera...    36   0.40 
+sp|Q1R2D5|RSMC_ECOUT Ribosomal RNA small subunit methyltransfera...    36   0.40 
+sp|A1AJP2|RSMC_ECOK1 Ribosomal RNA small subunit methyltransfera...    36   0.40 
+sp|A6UFF7|UBIE_SINMW Ubiquinone/menaquinone biosynthesis C-methy...    36   0.41 
+sp|C1L0D6|RSMG_LISMC Ribosomal RNA small subunit methyltransfera...    36   0.41 
+sp|C6CWS7|BIOC_PAESJ Malonyl-[acyl-carrier protein] O-methyltran...    36   0.41 
+sp|Q89AI2|RSMC_BUCBP Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B2TZQ2|RSMC_SHIB3 Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B7NH38|RSMC_ECOLU Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B7LEL6|RSMC_ECO55 Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|Q327M6|RSMC_SHIDS Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|P39406|RSMC_ECOLI Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B1XFI0|RSMC_ECODH Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B7MTB6|RSMC_ECO81 Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B5Z4Q2|RSMC_ECO5E Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|Q8X510|RSMC_ECO57 Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B7MNC1|RSMC_ECO45 Ribosomal RNA small subunit methyltransfera...    36   0.42 
+sp|B1IS49|RSMC_ECOLC Ribosomal RNA small subunit methyltransfera...    36   0.43 
+sp|B8DD12|RSMG_LISMH Ribosomal RNA small subunit methyltransfera...    36   0.43 
+sp|B2VH94|RSMC_ERWT9 Ribosomal RNA small subunit methyltransfera...    36   0.43 
+sp|Q8TCB7|METL6_HUMAN tRNA N(3)-methylcytidine methyltransferase...    36   0.44 
+sp|B5Y286|RSMC_KLEP3 Ribosomal RNA small subunit methyltransfera...    36   0.45 
+sp|Q46HK1|RSMH_PROMT Ribosomal RNA small subunit methyltransfera...    36   0.45 
+sp|B2V2I9|PRMA_CLOBA Ribosomal protein L11 methyltransferase OS=...    36   0.46 
+sp|A7FGU8|TAM_YERP3 Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.46 
+sp|B1LEH4|RSMC_ECOSM Ribosomal RNA small subunit methyltransfera...    36   0.46 
+sp|Q057M1|RSMC_BUCCC Ribosomal RNA small subunit methyltransfera...    36   0.46 
+sp|Q8KCD5|PRMC_CHLTE Release factor glutamine methyltransferase ...    36   0.47 
+sp|Q16DL1|UBIE_ROSDO Ubiquinone/menaquinone biosynthesis C-methy...    36   0.47 
+sp|Q8Y3N3|RSMG_LISMO Ribosomal RNA small subunit methyltransfera...    36   0.47 
+sp|Q926V6|RSMG_LISIN Ribosomal RNA small subunit methyltransfera...    36   0.48 
+sp|A8F2G9|UBIE_RICM5 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.48 
+sp|B5R9T9|RSMC_SALG2 Ribosomal RNA small subunit methyltransfera...    36   0.50 
+sp|B5BL07|RSMC_SALPK Ribosomal RNA small subunit methyltransfera...    36   0.50 
+sp|Q5PK16|RSMC_SALPA Ribosomal RNA small subunit methyltransfera...    36   0.50 
+sp|B4TU29|RSMC_SALSV Ribosomal RNA small subunit methyltransfera...    36   0.51 
+sp|B5F512|RSMC_SALA4 Ribosomal RNA small subunit methyltransfera...    36   0.51 
+sp|A6Q3V1|CMOB_NITSB tRNA U34 carboxymethyltransferase OS=Nitrat...    36   0.51 
+sp|Q83E64|BIOC1_COXBU Malonyl-[acyl-carrier protein] O-methyltra...    36   0.51 
+sp|Q3YVD2|UBIE_SHISS Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|P0A889|UBIE_SHIFL Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|Q0SZ25|UBIE_SHIF8 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|Q32A11|UBIE_SHIDS Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|Q31UF3|UBIE_SHIBS Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B2TVI4|UBIE_SHIB3 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B1LM21|UBIE_ECOSM Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B6I4H5|UBIE_ECOSE Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B7NFD6|UBIE_ECOLU Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|P0A887|UBIE_ECOLI Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B1IW72|UBIE_ECOLC Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|A8A6U0|UBIE_ECOHS Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B1XAJ7|UBIE_ECODH Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|C5A009|UBIE_ECOBW Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B7M638|UBIE_ECO8A Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B7NV33|UBIE_ECO7I Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B5YY82|UBIE_ECO5E Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|P0A888|UBIE_ECO57 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B7L996|UBIE_ECO55 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B7UNG3|UBIE_ECO27 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|A7ZU40|UBIE_ECO24 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.52 
+sp|B7LNK6|RSMC_ESCF3 Ribosomal RNA small subunit methyltransfera...    36   0.52 
+sp|A2C000|RSMH_PROM1 Ribosomal RNA small subunit methyltransfera...    36   0.53 
+sp|Q7W022|PRMC_BORPE Release factor glutamine methyltransferase ...    36   0.53 
+sp|Q8ZJW6|RSMC_SALTY Ribosomal RNA small subunit methyltransfera...    36   0.53 
+sp|B5R2I6|RSMC_SALEP Ribosomal RNA small subunit methyltransfera...    36   0.53 
+sp|B5FTB3|RSMC_SALDC Ribosomal RNA small subunit methyltransfera...    36   0.53 
+sp|Q820A9|PRMA_ENTFA Ribosomal protein L11 methyltransferase OS=...    36   0.53 
+sp|Q7MQ33|UBIE_VIBVY Ubiquinone/menaquinone biosynthesis C-methy...    36   0.54 
+sp|Q8DDP9|UBIE_VIBVU Ubiquinone/menaquinone biosynthesis C-methy...    36   0.54 
+sp|A3DF23|PRMA_ACET2 Ribosomal protein L11 methyltransferase OS=...    36   0.54 
+sp|Q9WZL2|MENG_THEMA Demethylmenaquinone methyltransferase OS=Th...    36   0.54 
+sp|P23525|IN37_SPIOL 2-methyl-6-phytyl-1,4-hydroquinone methyltr...    36   0.54 
+sp|A9N7C4|RSMC_SALPB Ribosomal RNA small subunit methyltransfera...    36   0.55 
+sp|B4TGY8|RSMC_SALHS Ribosomal RNA small subunit methyltransfera...    36   0.55 
+sp|Q5QVT9|PRMA_IDILO Ribosomal protein L11 methyltransferase OS=...    36   0.55 
+sp|Q87SB8|TRMN6_VIBPA tRNA1(Val) (adenine(37)-N6)-methyltransfer...    36   0.56 
+sp|A1JJ89|RSMC_YERE8 Ribosomal RNA small subunit methyltransfera...    36   0.57 
+sp|A3PSZ4|Y208_MYCSJ Uncharacterized methyltransferase Mjls_0208...    36   0.58 
+sp|Q5BA83|EASB_EMENI Highly reducing polyketide synthase easB OS...    36   0.58 
+sp|B1JHA2|TAM_YERPY Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|Q669E2|TAM_YERPS Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|A4TLZ2|TAM_YERPP Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|Q1CHU7|TAM_YERPN Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|A9R6H5|TAM_YERPG Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|Q8ZDP7|TAM_YERPE Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|B2K7X9|TAM_YERPB Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|Q1C6F5|TAM_YERPA Trans-aconitate 2-methyltransferase OS=Yersi...    36   0.60 
+sp|B9L8G5|CMOB_NAUPA tRNA U34 carboxymethyltransferase OS=Nautil...    36   0.61 
+sp|C3MCY6|UBIE_SINFN Ubiquinone/menaquinone biosynthesis C-methy...    36   0.61 
+sp|A4WHN0|SPEE_PYRAR Polyamine aminopropyltransferase OS=Pyrobac...    36   0.62 
+sp|Q1MME0|UBIE_RHIL3 Ubiquinone/menaquinone biosynthesis C-methy...    36   0.63 
+sp|A1S8P4|RLMG_SHEAM Ribosomal RNA large subunit methyltransfera...    36   0.63 
+sp|P0DD19|PRMA_STRPQ Ribosomal protein L11 methyltransferase OS=...    36   0.65 
+sp|P0DD18|PRMA_STRP3 Ribosomal protein L11 methyltransferase OS=...    36   0.65 
+sp|Q8DEQ3|TRMN6_VIBVU tRNA1(Val) (adenine(37)-N6)-methyltransfer...    36   0.65 
+sp|C4K8X0|RSMC_HAMD5 Ribosomal RNA small subunit methyltransfera...    36   0.65 
+sp|C3M8G8|TAM_SINFN Trans-aconitate 2-methyltransferase OS=Sinor...    36   0.66 
+sp|Q0C9L6|CTVB_ASPTN Methyltransferase ctvB OS=Aspergillus terre...    36   0.66 
+sp|Q2J4A4|RSMG_FRACC Ribosomal RNA small subunit methyltransfera...    36   0.68 
+sp|A9VTL8|RSMG_BACMK Ribosomal RNA small subunit methyltransfera...    36   0.69 
+sp|Q0C9L7|CTVA_ASPTN Highly reducing polyketide synthase ctvA OS...    36   0.69 
+sp|B0S3V0|RSMG_FINM2 Ribosomal RNA small subunit methyltransfera...    36   0.70 
+sp|A4YVM6|TIG_BRASO Trigger factor OS=Bradyrhizobium sp. (strain...    36   0.71 
+sp|P45558|PRMA_CLOAB Ribosomal protein L11 methyltransferase OS=...    36   0.71 
+sp|A8EUD5|CMOB_ALIB4 tRNA U34 carboxymethyltransferase OS=Aliarc...    36   0.71 
+sp|B7NVD9|RSMC_ECO7I Ribosomal RNA small subunit methyltransfera...    36   0.72 
+sp|A9WBM9|PRMC_CHLAA Release factor glutamine methyltransferase ...    36   0.72 
+sp|A7GXW7|CMOB_CAMC5 tRNA U34 carboxymethyltransferase OS=Campyl...    36   0.72 
+sp|Q8FA64|RSMC_ECOL6 Ribosomal RNA small subunit methyltransfera...    36   0.72 
+sp|A1RN54|TRMN6_SHESW tRNA1(Val) (adenine(37)-N6)-methyltransfer...    36   0.73 
+sp|A1AB99|TAM_ECOK1 Trans-aconitate 2-methyltransferase OS=Esche...    36   0.73 
+sp|Q3BSF8|UBIG_XANC5 Ubiquinone biosynthesis O-methyltransferase...    35   0.75 
+sp|Q72HI4|MENG_THET2 Demethylmenaquinone methyltransferase OS=Th...    35   0.75 
+sp|Q8FHF2|TAM_ECOL6 Trans-aconitate 2-methyltransferase OS=Esche...    35   0.76 
+sp|B8E004|PRMC_DICTD Release factor glutamine methyltransferase ...    35   0.76 
+sp|Q1R477|UBIE_ECOUT Ubiquinone/menaquinone biosynthesis C-methy...    35   0.77 
+sp|Q8FBJ0|UBIE_ECOL6 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.77 
+sp|Q0TAM1|UBIE_ECOL5 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.77 
+sp|A1AI22|UBIE_ECOK1 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.77 
+sp|B7N2E1|UBIE_ECO81 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.77 
+sp|B7MHC0|UBIE_ECO45 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.77 
+sp|Q82YY1|RSMG_ENTFA Ribosomal RNA small subunit methyltransfera...    35   0.77 
+sp|B7URP6|TAM_ECO27 Trans-aconitate 2-methyltransferase OS=Esche...    35   0.79 
+sp|A4Y3T4|TRMN6_SHEPC tRNA1(Val) (adenine(37)-N6)-methyltransfer...    35   0.80 
+sp|Q7NJS7|PRMC_GLOVI Release factor glutamine methyltransferase ...    35   0.80 
+sp|A1T273|TAM_MYCVP Trans-aconitate 2-methyltransferase OS=Mycol...    35   0.81 
+sp|A8GT99|UBIE_RICRS Ubiquinone/menaquinone biosynthesis C-methy...    35   0.86 
+sp|B0BUT9|UBIE_RICRO Ubiquinone/menaquinone biosynthesis C-methy...    35   0.86 
+sp|Q92GT5|UBIE_RICCN Ubiquinone/menaquinone biosynthesis C-methy...    35   0.86 
+sp|C3PLF4|UBIE_RICAE Ubiquinone/menaquinone biosynthesis C-methy...    35   0.86 
+sp|A7MXM2|TRMN6_VIBC1 tRNA1(Val) (adenine(37)-N6)-methyltransfer...    35   0.86 
+sp|Q98GV1|UBIE_RHILO Ubiquinone/menaquinone biosynthesis C-methy...    35   0.87 
+sp|Q03DH7|RSMG_PEDPA Ribosomal RNA small subunit methyltransfera...    35   0.87 
+sp|Q9S1M6|RLMA2_STRFR 23S rRNA (guanine(748)-N(1))-methyltransfe...    35   0.88 
+sp|B2UUE3|CMOB_HELPS tRNA U34 carboxymethyltransferase OS=Helico...    35   0.88 
+sp|O68025|Y2142_RHOCB Putative HTH-type transcriptional regulato...    35   0.90 
+sp|Q2NJ22|RSMG_AYWBP Ribosomal RNA small subunit methyltransfera...    35   0.92 
+sp|C4L8Y1|RLME_TOLAT Ribosomal RNA large subunit methyltransfera...    35   0.92 
+sp|Q5KU59|RSMG_GEOKA Ribosomal RNA small subunit methyltransfera...    35   0.93 
+sp|B5XYI1|UBIE_KLEP3 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.93 
+sp|Q57G51|RSMC_SALCH Ribosomal RNA small subunit methyltransfera...    35   0.95 
+sp|Q2FWE1|PRMC_STAA8 Release factor glutamine methyltransferase ...    35   0.96 
+sp|M1W268|PIG2_CLAP2 Methyltransferase CPUR_05424 OS=Claviceps p...    35   0.96 
+sp|Q7TX91|FTSX_MYCBO Cell division protein FtsX OS=Mycobacterium...    35   0.96 
+sp|Q5X9S8|PRMA_STRP6 Ribosomal protein L11 methyltransferase OS=...    35   0.97 
+sp|B1J2S8|UBIE_PSEPW Ubiquinone/menaquinone biosynthesis C-methy...    35   0.98 
+sp|Q8YDE4|UBIE_BRUME Ubiquinone/menaquinone biosynthesis C-methy...    35   0.98 
+sp|C0RMK3|UBIE_BRUMB Ubiquinone/menaquinone biosynthesis C-methy...    35   0.98 
+sp|Q576Q0|UBIE_BRUAB Ubiquinone/menaquinone biosynthesis C-methy...    35   0.98 
+sp|Q2YJM4|UBIE_BRUA2 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.98 
+sp|B2SC50|UBIE_BRUA1 Ubiquinone/menaquinone biosynthesis C-methy...    35   0.98 
+sp|Q6CYB3|ERG6_KLULA Sterol 24-C-methyltransferase OS=Kluyveromy...    35   0.99 
+sp|C5D4V7|Y2453_GEOSW Putative methyltransferase GWCH70_2453 OS=...    35   1.00 
+sp|A0QUV5|Y2350_MYCS2 Probable S-adenosylmethionine-dependent me...    35   1.00 
+sp|B5ZYK8|UBIE_RHILW Ubiquinone/menaquinone biosynthesis C-methy...    35   1.00 
+sp|B3PZ92|UBIE_RHIE6 Ubiquinone/menaquinone biosynthesis C-methy...    35   1.0  
+sp|C3K8U4|UBIE_PSEFS Ubiquinone/menaquinone biosynthesis C-methy...    35   1.0  
+sp|Q1JJU1|PRMA_STRPC Ribosomal protein L11 methyltransferase OS=...    35   1.0  
+sp|Q1J9P3|PRMA_STRPB Ribosomal protein L11 methyltransferase OS=...    35   1.0  
+sp|A6TGL3|UBIE_KLEP7 Ubiquinone/menaquinone biosynthesis C-methy...    35   1.0  
+sp|Q1I3T0|UBIE_PSEE4 Ubiquinone/menaquinone biosynthesis C-methy...    35   1.0  
+sp|Q3YU23|RSMC_SHISS Ribosomal RNA small subunit methyltransfera...    35   1.0  
+sp|Q31SW8|RSMC_SHIBS Ribosomal RNA small subunit methyltransfera...    35   1.0  
+sp|B6I2Q2|RSMC_ECOSE Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|A8A899|RSMC_ECOHS Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|B7LXT2|RSMC_ECO8A Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|A7ZVR0|RSMC_ECO24 Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q82N59|RLMG_STRAW Ribosomal RNA large subunit methyltransfera...    35   1.1  
+sp|B1ZUS4|PRMA_OPITP Ribosomal protein L11 methyltransferase OS=...    35   1.1  
+sp|A0A167LUQ4|FUMOS_CORFA Fumosorinone synthetase OS=Cordyceps f...    35   1.1  
+sp|Q21H69|UBIE_SACD2 Ubiquinone/menaquinone biosynthesis C-methy...    35   1.1  
+sp|A5IZB9|TRMB_MYCAP tRNA (guanine-N(7)-)-methyltransferase OS=M...    35   1.1  
+sp|B1JL46|RSMC_YERPY Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|A4TQK1|RSMC_YERPP Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q1CN00|RSMC_YERPN Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|A9R058|RSMC_YERPG Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q7CG56|RSMC_YERPE Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q1C153|RSMC_YERPA Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|A7FMI4|RSMC_YERP3 Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q30WH3|AHBB_OLEA2 Siroheme decarboxylase beta subunit OS=Olei...    35   1.1  
+sp|Q66EW9|RSMC_YERPS Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|B2K3H9|RSMC_YERPB Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|Q88D17|UBIE_PSEPK Ubiquinone/menaquinone biosynthesis C-methy...    35   1.1  
+sp|B0KM36|UBIE_PSEPG Ubiquinone/menaquinone biosynthesis C-methy...    35   1.1  
+sp|A5WA45|UBIE_PSEP1 Ubiquinone/menaquinone biosynthesis C-methy...    35   1.1  
+sp|B7N4U4|TAM_ECOLU Trans-aconitate 2-methyltransferase OS=Esche...    35   1.1  
+sp|Q0BNB8|RLME_FRATO Ribosomal RNA large subunit methyltransfera...    35   1.1  
+sp|Q2A4Z7|RLME_FRATH Ribosomal RNA large subunit methyltransfera...    35   1.1  
+sp|A7NAC9|RLME_FRATF Ribosomal RNA large subunit methyltransfera...    35   1.1  
+sp|Q92SK7|UBIE_RHIME Ubiquinone/menaquinone biosynthesis C-methy...    35   1.1  
+sp|A4W687|RSMC_ENT38 Ribosomal RNA small subunit methyltransfera...    35   1.1  
+sp|B0U3W1|UBIG_XYLFM Ubiquinone biosynthesis O-methyltransferase...    35   1.2  
+sp|Q2YY85|MENG_STAAB Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|Q5QZ53|UBIG_IDILO Ubiquinone biosynthesis O-methyltransferase...    35   1.2  
+sp|P65347|Y092_MYCBO Uncharacterized methyltransferase Mb0092 OS...    35   1.2  
+sp|P9WK03|Y089_MYCTU Uncharacterized methyltransferase Rv0089 OS...    35   1.2  
+sp|P9WK02|Y089_MYCTO Uncharacterized methyltransferase MT0098 OS...    35   1.2  
+sp|Q1RBP8|TAM_ECOUT Trans-aconitate 2-methyltransferase OS=Esche...    35   1.2  
+sp|B7MMY3|TAM_ECO45 Trans-aconitate 2-methyltransferase OS=Esche...    35   1.2  
+sp|A4VGE5|UBIE_STUS1 Ubiquinone/menaquinone biosynthesis C-methy...    35   1.2  
+sp|C4L4Q4|TRMB_EXISA tRNA (guanine-N(7)-)-methyltransferase OS=E...    35   1.2  
+sp|P67063|MENG_STAAW Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|A8Z450|MENG_STAAT Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|Q6G992|MENG_STAAS Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|P67062|MENG_STAAN Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|P67061|MENG_STAAM Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|A6QH20|MENG_STAAE Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|Q5HFV2|MENG_STAAC Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|A5ISZ9|MENG_STAA9 Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|A6U1T9|MENG_STAA2 Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|A7X2H6|MENG_STAA1 Demethylmenaquinone methyltransferase OS=St...    35   1.2  
+sp|A1U9D7|Y228_MYCSK Uncharacterized methyltransferase Mkms_0228...    35   1.2  
+sp|Q1BFJ5|Y218_MYCSS Uncharacterized methyltransferase Mmcs_0218...    35   1.2  
+sp|A1WXX3|RLME_HALHL Ribosomal RNA large subunit methyltransfera...    34   1.3  
+sp|Q3A209|UBIE_SYNC1 Ubiquinone/menaquinone biosynthesis C-methy...    34   1.3  
+sp|A8FJF8|RSMG_BACP2 Ribosomal RNA small subunit methyltransfera...    34   1.3  
+sp|A3QAZ2|TRMN6_SHELP tRNA1(Val) (adenine(37)-N6)-methyltransfer...    34   1.3  
+sp|Q041S2|TRMB_LACGA tRNA (guanine-N(7)-)-methyltransferase OS=L...    34   1.3  
+sp|A4SQM2|RLMG_AERS4 Ribosomal RNA large subunit methyltransfera...    34   1.3  
+sp|D5DIV9|BIOC_PRIM3 Malonyl-[acyl-carrier protein] O-methyltran...    34   1.3  
+sp|Q8Z5M9|CBIT_SALTI Cobalt-precorrin-6B C(15)-methyltransferase...    34   1.3  
+sp|Q5FI43|RSMG_LACAC Ribosomal RNA small subunit methyltransfera...    34   1.3  
+sp|B9LSX2|RLME_HALLT Ribosomal RNA large subunit methyltransfera...    34   1.3  
+sp|Q05632|CBIT_SALTY Cobalt-precorrin-6B C(15)-methyltransferase...    34   1.4  
+sp|Q2J2H9|UBIE_RHOP2 Ubiquinone/menaquinone biosynthesis C-methy...    34   1.4  
+sp|C4K2K3|UBIE_RICPU Ubiquinone/menaquinone biosynthesis C-methy...    34   1.4  
+sp|O25173|CMOB_HELPY tRNA U34 carboxymethyltransferase OS=Helico...    34   1.4  
+sp|Q1CSN0|CMOB_HELPH tRNA U34 carboxymethyltransferase OS=Helico...    34   1.4  
+sp|A6TCI9|TRMN6_KLEP7 tRNA1(Val) (adenine(37)-N6)-methyltransfer...    34   1.4  
+sp|C1CG04|PRMA_STRZJ Ribosomal protein L11 methyltransferase OS=...    34   1.4  
+sp|Q3IHQ6|RLMG_PSET1 Ribosomal RNA large subunit methyltransfera...    34   1.4  
+sp|Q71VW1|RSMG_LISMF Ribosomal RNA small subunit methyltransfera...    34   1.5  
+sp|P9WG19|FTSX_MYCTU Cell division protein FtsX OS=Mycobacterium...    34   1.5  
+sp|P9WG18|FTSX_MYCTO Cell division protein FtsX OS=Mycobacterium...    34   1.5  
+sp|A5U7B6|FTSX_MYCTA Cell division protein FtsX OS=Mycobacterium...    34   1.5  
+sp|Q9Z439|UBIE_PSEPU Ubiquinone/menaquinone biosynthesis C-methy...    34   1.5  
+sp|B2ISD7|PRMA_STRPS Ribosomal protein L11 methyltransferase OS=...    34   1.5  
+sp|Q87BG5|UBIG_XYLFT Ubiquinone biosynthesis O-methyltransferase...    34   1.5  
+sp|B2I705|UBIG_XYLF2 Ubiquinone biosynthesis O-methyltransferase...    34   1.5  
+sp|Q3JYX9|PRMA_STRA1 Ribosomal protein L11 methyltransferase OS=...    34   1.5  
+sp|Q1JET3|PRMA_STRPD Ribosomal protein L11 methyltransferase OS=...    34   1.5  
+sp|B8GVY5|UBIE_CAUVN Ubiquinone/menaquinone biosynthesis C-methy...    34   1.6  
+sp|Q9A258|UBIE_CAUVC Ubiquinone/menaquinone biosynthesis C-methy...    34   1.6  
+sp|Q9CNJ3|RLME_PASMU Ribosomal RNA large subunit methyltransfera...    34   1.6  
+sp|B8ZMW2|PRMA_STRPJ Ribosomal protein L11 methyltransferase OS=...    34   1.6  
+sp|A0QMC8|Y4945_MYCA1 Uncharacterized methyltransferase MAV_4945...    34   1.6  
+sp|Q0VMV2|RSMA_ALCBS Ribosomal RNA small subunit methyltransfera...    34   1.6  
+sp|B2TM01|PRMA_CLOBB Ribosomal protein L11 methyltransferase OS=...    34   1.6  
+sp|Q74LY0|MENG_LACJO Demethylmenaquinone methyltransferase OS=La...    34   1.6  
+sp|C6X2D2|TRMN6_FLAB3 tRNA1(Val) (adenine(37)-N6)-methyltransfer...    34   1.6  
+sp|Q57060|Y095_HAEIN Uncharacterized protein HI_0095 OS=Haemophi...    34   1.7  
+sp|Q9PAM5|UBIG_XYLFA Ubiquinone biosynthesis O-methyltransferase...    34   1.7  
+sp|Q9CLW2|PRMA_PASMU Ribosomal protein L11 methyltransferase OS=...    34   1.7  
+sp|Q0K846|SAUR_CUPNH Probable transcriptional regulator SauR OS=...    34   1.7  
+sp|Q7U4Z9|SDMT_PARMW Dimethylglycine N-methyltransferase OS=Para...    34   1.7  
+sp|P52983|G6PI_SYNY3 Glucose-6-phosphate isomerase OS=Synechocys...    34   1.7  
+sp|Q253I8|MENG_CHLFF Demethylmenaquinone methyltransferase OS=Ch...    34   1.7  
+sp|A0A0E4AZP0|FSA1_FUSSF Hybrid PKS-NRPS synthetase fsa1 OS=Fusa...    34   1.7  
+sp|Q9HUC0|UBIE_PSEAE Ubiquinone/menaquinone biosynthesis C-methy...    34   1.7  
+sp|Q02EV4|UBIE_PSEAB Ubiquinone/menaquinone biosynthesis C-methy...    34   1.7  
+sp|B7V3F6|UBIE_PSEA8 Ubiquinone/menaquinone biosynthesis C-methy...    34   1.7  
+sp|Q8T199|OMT3_DICDI O-methyltransferase 3 OS=Dictyostelium disc...    34   1.8  
+sp|Q8DNP4|PRMA_STRR6 Ribosomal protein L11 methyltransferase OS=...    34   1.8  
+sp|B1I7P5|PRMA_STRPI Ribosomal protein L11 methyltransferase OS=...    34   1.8  
+sp|Q04J12|PRMA_STRP2 Ribosomal protein L11 methyltransferase OS=...    34   1.8  
+sp|O69711|NMTR_MYCTU HTH-type transcriptional regulator NmtR OS=...    34   1.8  
+sp|Q97P62|PRMA_STRPN Ribosomal protein L11 methyltransferase OS=...    34   1.8  
+sp|B5XIN3|PRMA_STRPZ Ribosomal protein L11 methyltransferase OS=...    34   1.9  
+sp|P54458|YQEM_BACSU Putative methyltransferase YqeM OS=Bacillus...    34   1.9  
+sp|Q2SN12|UBIE_HAHCH Ubiquinone/menaquinone biosynthesis C-methy...    34   1.9  
+sp|Q3SGF7|RSMA_THIDA Ribosomal RNA small subunit methyltransfera...    34   1.9  
+sp|P39200|PRMB_VIBA7 50S ribosomal protein L3 glutamine methyltr...    34   1.9  
+sp|A2RGK2|PRMA_STRPG Ribosomal protein L11 methyltransferase OS=...    34   1.9  
+sp|Q759U5|LCMT1_ASHGO Leucine carboxyl methyltransferase 1 OS=As...    34   1.9  
+sp|A4T3V1|Y427_MYCGI Uncharacterized methyltransferase Mflv_0427...    34   2.0  
+sp|Q9P7L6|TR140_SCHPO tRNA N(3)-methylcytidine methyltransferase...    34   2.0  
+sp|Q07PZ6|TAM_RHOP5 Trans-aconitate 2-methyltransferase OS=Rhodo...    34   2.0  
+sp|Q1J4K0|PRMA_STRPF Ribosomal protein L11 methyltransferase OS=...    34   2.0  
+sp|Q8NZ98|PRMA_STRP8 Ribosomal protein L11 methyltransferase OS=...    34   2.0  
+sp|Q99XW8|PRMA_STRP1 Ribosomal protein L11 methyltransferase OS=...    34   2.1  
+sp|A2RHI1|PRMA_LACLM Ribosomal protein L11 methyltransferase OS=...    34   2.1  
+sp|Q0THR9|TAM_ECOL5 Trans-aconitate 2-methyltransferase OS=Esche...    34   2.1  
+sp|A6Q3T0|RSMH_NITSB Ribosomal RNA small subunit methyltransfera...    34   2.1  
+sp|Q48R70|PRMA_STRPM Ribosomal protein L11 methyltransferase OS=...    34   2.1  
+sp|Q0AKX2|OBG_MARMM GTPase Obg OS=Maricaulis maris (strain MCS10...    34   2.1  
+sp|B7GHW9|BIOC_ANOFW Malonyl-[acyl-carrier protein] O-methyltran...    34   2.1  
+sp|Q54VA8|TRM7_DICDI Putative tRNA (cytidine(32)/guanosine(34)-2...    34   2.1  
+sp|Q033A6|PRMA_LACLS Ribosomal protein L11 methyltransferase OS=...    34   2.1  
+sp|Q2YBT1|RLME_NITMU Ribosomal RNA large subunit methyltransfera...    34   2.2  
+sp|A4IYP4|RLME_FRATW Ribosomal RNA large subunit methyltransfera...    34   2.2  
+sp|Q5NGD3|RLME_FRATT Ribosomal RNA large subunit methyltransfera...    34   2.2  
+sp|B2SF85|RLME_FRATM Ribosomal RNA large subunit methyltransfera...    34   2.2  
+sp|Q14HT5|RLME_FRAT1 Ribosomal RNA large subunit methyltransfera...    34   2.2  
+sp|Q21DG3|RSMG_SACD2 Ribosomal RNA small subunit methyltransfera...    34   2.2  
+sp|Q92RC5|TAM_RHIME Trans-aconitate 2-methyltransferase OS=Rhizo...    34   2.2  
+sp|Q9K3T2|TAM_STRCO Trans-aconitate 2-methyltransferase OS=Strep...    34   2.3  
+sp|O94559|LES1_SCHPO Nuclear bridge Ish domain protein les1 OS=S...    34   2.3  
+sp|Q1H387|RLME_METFK Ribosomal RNA large subunit methyltransfera...    34   2.3  
+sp|Q5WHF9|PRMA_ALKCK Ribosomal protein L11 methyltransferase OS=...    34   2.3  
+sp|P20187|YT37_STRFR Uncharacterized 37.1 kDa protein in transpo...    34   2.4  
+sp|Q5FIS5|TRMB_LACAC tRNA (guanine-N(7)-)-methyltransferase OS=L...    34   2.4  
+sp|C1CMA0|PRMA_STRZP Ribosomal protein L11 methyltransferase OS=...    34   2.4  
+sp|C0MF82|PRMA_STRS7 Ribosomal protein L11 methyltransferase OS=...    34   2.4  
+sp|A0PMY7|Y1123_MYCUA Uncharacterized methyltransferase MUL_1123...    34   2.5  
+sp|Q8FUZ3|UBIE_BRUSU Ubiquinone/menaquinone biosynthesis C-methy...    34   2.5  
+sp|Q133R5|TAM_RHOPS Trans-aconitate 2-methyltransferase OS=Rhodo...    34   2.5  
+sp|C5BMZ8|BIOHC_TERTT Biotin biosynthesis bifunctional protein B...    34   2.5  
+sp|B2HMZ9|Y473_MYCMM Uncharacterized methyltransferase MMAR_0473...    34   2.5  
+sp|A0A455LLX1|ATNH_ARTSZ Highly reducing polyketide synthase atn...    34   2.5  
+sp|B4U5A5|PRMA_STREM Ribosomal protein L11 methyltransferase OS=...    34   2.5  
+sp|C0M9U4|PRMA_STRE4 Ribosomal protein L11 methyltransferase OS=...    34   2.5  
+sp|C1C922|PRMA_STRP7 Ribosomal protein L11 methyltransferase OS=...    34   2.6  
+sp|B3Q619|UBIE_RHOPT Ubiquinone/menaquinone biosynthesis C-methy...    34   2.6  
+sp|Q6NDM2|UBIE_RHOPA Ubiquinone/menaquinone biosynthesis C-methy...    34   2.6  
+sp|Q23552|PMT1_CAEEL Phosphoethanolamine N-methyltransferase 1 O...    34   2.7  
+sp|Q4ZXT0|RSMC_PSEU2 Ribosomal RNA small subunit methyltransfera...    34   2.7  
+sp|P45873|PRMC_BACSU Release factor glutamine methyltransferase ...    34   2.7  
+sp|A6UYW3|BIOC_PSEA7 Malonyl-[acyl-carrier protein] O-methyltran...    34   2.7  
+sp|A9KBS7|RSMG_COXBN Ribosomal RNA small subunit methyltransfera...    34   2.8  
+sp|A0R213|PRMC_MYCS2 Release factor glutamine methyltransferase ...    33   2.8  
+sp|Q82XD4|SPEE_NITEU Polyamine aminopropyltransferase OS=Nitroso...    33   2.8  
+sp|Q4K6D2|RSMC_PSEF5 Ribosomal RNA small subunit methyltransfera...    33   2.8  
+sp|Q74I98|TRMB_LACJO tRNA (guanine-N(7)-)-methyltransferase OS=L...    33   2.9  
+sp|Q19905|UGDH_CAEEL UDP-glucose 6-dehydrogenase OS=Caenorhabdit...    33   2.9  
+sp|Q59447|CYSK_FLAS3 Cysteine synthase OS=Flavobacterium sp. (st...    33   2.9  
+sp|Q3K705|RSMC_PSEPF Ribosomal RNA small subunit methyltransfera...    33   2.9  
+sp|A9MCZ2|UBIE_BRUC2 Ubiquinone/menaquinone biosynthesis C-methy...    33   3.0  
+sp|A6WYI0|UBIE_BRUA4 Ubiquinone/menaquinone biosynthesis C-methy...    33   3.0  
+sp|Q8DS02|PRMA_STRMU Ribosomal protein L11 methyltransferase OS=...    33   3.0  
+sp|Q5VVY1|NTM1B_HUMAN N-terminal Xaa-Pro-Lys N-methyltransferase...    33   3.0  
+sp|A9WW74|UBIE_BRUSI Ubiquinone/menaquinone biosynthesis C-methy...    33   3.1  
+sp|B5XNG1|TRMN6_KLEP3 tRNA1(Val) (adenine(37)-N6)-methyltransfer...    33   3.1  
+sp|Q87WA9|RLMG_PSESM Ribosomal RNA large subunit methyltransfera...    33   3.1  
+sp|Q037Y3|TRMB_LACP3 tRNA (guanine-N(7)-)-methyltransferase OS=L...    33   3.1  
+sp|B3WF63|TRMB_LACCB tRNA (guanine-N(7)-)-methyltransferase OS=L...    33   3.1  
+sp|Q8EP25|TRMB_OCEIH tRNA (guanine-N(7)-)-methyltransferase OS=O...    33   3.2  
+sp|P78527|PRKDC_HUMAN DNA-dependent protein kinase catalytic sub...    33   3.2  
+sp|P9WGE5|SPEE_MYCTU Polyamine aminopropyltransferase OS=Mycobac...    33   3.2  
+sp|P9WGE4|SPEE_MYCTO Polyamine aminopropyltransferase OS=Mycobac...    33   3.2  
+sp|Q7TY95|SPEE_MYCBO Polyamine aminopropyltransferase OS=Mycobac...    33   3.2  
+sp|A5EKB0|TIG_BRASB Trigger factor OS=Bradyrhizobium sp. (strain...    33   3.3  
+sp|A8A072|TAM_ECOHS Trans-aconitate 2-methyltransferase OS=Esche...    33   3.3  
+sp|Q03CJ9|RSMG_LACP3 Ribosomal RNA small subunit methyltransfera...    33   3.3  
+sp|B9KAS1|RSMG_THENN Ribosomal RNA small subunit methyltransfera...    33   3.3  
+sp|Q5NEL0|PRMB_FRATT 50S ribosomal protein L3 glutamine methyltr...    33   3.4  
+sp|Q9KQ83|PRMB_VIBCH 50S ribosomal protein L3 glutamine methyltr...    33   3.4  
+sp|Q9CJ97|PRMA_LACLA Ribosomal protein L11 methyltransferase OS=...    33   3.4  
+sp|Q48EV8|CMOA_PSE14 Carboxy-S-adenosyl-L-methionine synthase OS...    33   3.4  
+sp|L0D9B6|OLSG_SINAD Ornithine lipid N-methyltransferase OS=Sing...    33   3.5  
+sp|Q39D96|SUCC_BURL3 Succinate--CoA ligase [ADP-forming] subunit...    33   3.5  
+sp|O67680|RSMA_AQUAE Ribosomal RNA small subunit methyltransfera...    33   3.6  
+sp|Q8XJL6|RLMN_CLOPE Probable dual-specificity RNA methyltransfe...    33   3.6  
+sp|Q0TPL4|RLMN_CLOP1 Probable dual-specificity RNA methyltransfe...    33   3.6  
+sp|Q0AHC6|RLME_NITEC Ribosomal RNA large subunit methyltransfera...    33   3.6  
+sp|Q73TQ5|Y3663_MYCPA Uncharacterized methyltransferase MAP_3663...    33   3.7  
+sp|D9SJ16|BIOC_GALCS Malonyl-[acyl-carrier protein] O-methyltran...    33   3.7  
+sp|B9DI97|RSMG_STACT Ribosomal RNA small subunit methyltransfera...    33   3.8  
+sp|P36999|RLMA_ECOLI 23S rRNA (guanine(745)-N(1))-methyltransfer...    33   3.8  
+sp|D3ZVR1|NTM1B_RAT N-terminal Xaa-Pro-Lys N-methyltransferase 2...    33   3.8  
+sp|A1KF44|Y261_MYCBP Uncharacterized methyltransferase BCG_0261c...    33   3.9  
+sp|A5TYU9|Y232_MYCTA Uncharacterized methyltransferase MRA_0232 ...    33   3.9  
+sp|Q7U2J0|Y229_MYCBO Uncharacterized methyltransferase Mb0229c O...    33   3.9  
+sp|P9WJZ9|Y224_MYCTU Uncharacterized methyltransferase Rv0224c O...    33   3.9  
+sp|P9WJZ8|Y224_MYCTO Uncharacterized methyltransferase MT0234 OS...    33   3.9  
+sp|Q0W1F9|RLME_METAR Ribosomal RNA large subunit methyltransfera...    33   3.9  
+sp|Q0SHR3|RSMH_RHOJR Ribosomal RNA small subunit methyltransfera...    33   3.9  
+sp|Q9PJW4|MENG_CHLMU Demethylmenaquinone methyltransferase OS=Ch...    33   4.0  
+sp|B2RK25|TRMN6_PORG3 tRNA1(Val) (adenine(37)-N6)-methyltransfer...    33   4.1  
+sp|Q03QE7|TRMB_LEVBA tRNA (guanine-N(7)-)-methyltransferase OS=L...    33   4.1  
+sp|P76092|YNBC_ECOLI Uncharacterized protein YnbC OS=Escherichia...    33   4.2  
+sp|P78007|LDH_MYCPN L-lactate dehydrogenase OS=Mycoplasma pneumo...    33   4.2  
+sp|B2RXM4|NTM1B_MOUSE N-terminal Xaa-Pro-Lys N-methyltransferase...    33   4.2  
+sp|C0SPB8|YVAV_BACSU Putative HTH-type transcriptional regulator...    33   4.3  
+sp|Q0S679|TRMB_RHOJR tRNA (guanine-N(7)-)-methyltransferase OS=R...    33   4.3  
+sp|Q88PT7|RSMC_PSEPK Ribosomal RNA small subunit methyltransfera...    33   4.3  
+sp|Q9KD70|PRMA_HALH5 Ribosomal protein L11 methyltransferase OS=...    33   4.3  
+sp|Q9RXR2|PRMC_DEIRA Release factor glutamine methyltransferase ...    33   4.4  
+sp|A6VDI6|UBIE_PSEA7 Ubiquinone/menaquinone biosynthesis C-methy...    33   4.5  
+sp|Q88T09|RSMG_LACPL Ribosomal RNA small subunit methyltransfera...    33   4.5  
+sp|B1LXF6|TAM_METRJ Trans-aconitate 2-methyltransferase OS=Methy...    33   4.5  
+sp|Q7Q2B7|CARM1_ANOGA Histone-arginine methyltransferase CARMER ...    33   4.6  
+sp|Q5GZB5|UBIG_XANOR Ubiquinone biosynthesis O-methyltransferase...    33   4.6  
+sp|B2SHS9|UBIG_XANOP Ubiquinone biosynthesis O-methyltransferase...    33   4.6  
+sp|Q2P2C4|UBIG_XANOM Ubiquinone biosynthesis O-methyltransferase...    33   4.6  
+sp|Q1IEU2|RSMC_PSEE4 Ribosomal RNA small subunit methyltransfera...    33   4.6  
+sp|Q32GZ5|PRMC_SHIDS Release factor glutamine methyltransferase ...    33   4.6  
+sp|P0A293|PRMB_SALTY 50S ribosomal protein L3 glutamine methyltr...    33   4.6  
+sp|P0A294|PRMB_SALTI 50S ribosomal protein L3 glutamine methyltr...    33   4.6  
+sp|E4QJB8|BIOC_METS6 Malonyl-[acyl-carrier protein] O-methyltran...    33   4.6  
+sp|A8G9G5|RSMC_SERP5 Ribosomal RNA small subunit methyltransfera...    33   4.6  
+sp|Q1QS47|UBIE_NITHX Ubiquinone/menaquinone biosynthesis C-methy...    33   4.7  
+sp|Q48MR4|RSMC_PSE14 Ribosomal RNA small subunit methyltransfera...    33   4.7  
+sp|P9WEV0|VALA_ASPTE Highly reducing polyketide synthase valA OS...    32   4.8  
+sp|A6WCY2|RSMH_KINRD Ribosomal RNA small subunit methyltransfera...    32   4.8  
+sp|A5VYJ3|RSMC_PSEP1 Ribosomal RNA small subunit methyltransfera...    32   4.8  
+sp|Q727D9|PRMC_DESVH Release factor glutamine methyltransferase ...    32   4.8  
+sp|Q9KQ26|PRMC_VIBCH Release factor glutamine methyltransferase ...    32   4.9  
+sp|B2G582|RSMG_LIMRJ Ribosomal RNA small subunit methyltransfera...    32   5.0  
+sp|A5VHQ2|RSMG_LIMRD Ribosomal RNA small subunit methyltransfera...    32   5.0  
+sp|Q0WDE1|PRMB_YERPE 50S ribosomal protein L3 glutamine methyltr...    32   5.0  
+sp|Q2RFW1|PRMC_MOOTA Release factor glutamine methyltransferase ...    32   5.0  
+sp|B2G8C8|TRMB_LIMRJ tRNA (guanine-N(7)-)-methyltransferase OS=L...    32   5.0  
+sp|A5VKZ3|TRMB_LIMRD tRNA (guanine-N(7)-)-methyltransferase OS=L...    32   5.0  
+sp|Q0BC71|SUCC_BURCM Succinate--CoA ligase [ADP-forming] subunit...    32   5.1  
+sp|B1YVY6|SUCC_BURA4 Succinate--CoA ligase [ADP-forming] subunit...    32   5.1  
+sp|P19086|GNAZ_HUMAN Guanine nucleotide-binding protein G(z) sub...    32   5.1  
+sp|P19627|GNAZ_RAT Guanine nucleotide-binding protein G(z) subun...    32   5.2  
+sp|O70443|GNAZ_MOUSE Guanine nucleotide-binding protein G(z) sub...    32   5.2  
+sp|O34709|OPCR_BACSU HTH-type transcriptional repressor OpcR OS=...    32   5.3  
+sp|B1L800|RSMG_THESQ Ribosomal RNA small subunit methyltransfera...    32   5.3  
+sp|A1T1P0|Y241_MYCVP Uncharacterized methyltransferase Mvan_0241...    32   5.4  
+sp|A4XYJ7|RSMC_PSEMY Ribosomal RNA small subunit methyltransfera...    32   5.4  
+sp|Q4ZPE6|CMOA_PSEU2 Carboxy-S-adenosyl-L-methionine synthase OS...    32   5.4  
+sp|B7V0H2|RSMC_PSEA8 Ribosomal RNA small subunit methyltransfera...    32   5.5  
+sp|Q5KW28|TRMB_GEOKA tRNA (guanine-N(7)-)-methyltransferase OS=G...    32   5.6  
+sp|Q4L792|TRMB_STAHJ tRNA (guanine-N(7)-)-methyltransferase OS=S...    32   5.8  
+sp|P0ACC2|PRMC_SHIFL Release factor glutamine methyltransferase ...    32   5.8  
+sp|P0ACC1|PRMC_ECOLI Release factor glutamine methyltransferase ...    32   5.8  
+sp|A6Q1S1|ACCA_NITSB Acetyl-coenzyme A carboxylase carboxyl tran...    32   5.8  
+sp|C5CSI6|TAM_VARPS Trans-aconitate 2-methyltransferase OS=Vario...    32   5.9  
+sp|A0Q526|RLME_FRATN Ribosomal RNA large subunit methyltransfera...    32   5.9  
+sp|A0A3G9H990|ALT1_ALTAL Highly reducing polyketide synthase ALT...    32   5.9  
+sp|Q0RAP0|RSMG_FRAAA Ribosomal RNA small subunit methyltransfera...    32   6.0  
+sp|Q7MVG0|TRMN6_PORGI tRNA1(Val) (adenine(37)-N6)-methyltransfer...    32   6.1  
+sp|B0KNH3|RSMC_PSEPG Ribosomal RNA small subunit methyltransfera...    32   6.2  
+sp|Q814U1|PRMC_BACCR Release factor glutamine methyltransferase ...    32   6.2  
+sp|Q65TZ0|RLME_MANSM Ribosomal RNA large subunit methyltransfera...    32   6.3  
+sp|Q7MIC5|RLMG_VIBVY Ribosomal RNA large subunit methyltransfera...    32   6.3  
+sp|Q8DBJ8|RLMG_VIBVU Ribosomal RNA large subunit methyltransfera...    32   6.3  
+sp|Q4ZQ90|UBIG_PSEU2 Ubiquinone biosynthesis O-methyltransferase...    32   6.4  
+sp|Q48FM4|UBIG_PSE14 Ubiquinone biosynthesis O-methyltransferase...    32   6.4  
+sp|Q1IVQ3|RSMG_KORVE Ribosomal RNA small subunit methyltransfera...    32   6.4  
+sp|Q49YH9|TRMB_STAS1 tRNA (guanine-N(7)-)-methyltransferase OS=S...    32   6.5  
+sp|Q1H4T5|TRMB_METFK tRNA (guanine-N(7)-)-methyltransferase OS=M...    32   6.6  
+sp|Q1WRS8|RSMG_LIGS1 Ribosomal RNA small subunit methyltransfera...    32   6.7  
+sp|Q8PK00|UBIG_XANAC Ubiquinone biosynthesis O-methyltransferase...    32   7.0  
+sp|A0A2L0P0K3|TWMB_TALWO Polyketide synthase-nonribosomal peptid...    32   7.2  
+sp|C1AU63|RSMH_RHOOB Ribosomal RNA small subunit methyltransfera...    32   7.3  
+sp|Q5UYP9|RLME_HALMA Ribosomal RNA large subunit methyltransfera...    32   7.5  
+sp|Q9HN40|RLME_HALSA Ribosomal RNA large subunit methyltransfera...    32   7.7  
+sp|B0R7G3|RLME_HALS3 Ribosomal RNA large subunit methyltransfera...    32   7.7  
+sp|B5ZUL2|TAM_RHILW Trans-aconitate 2-methyltransferase OS=Rhizo...    32   7.9  
+sp|Q3AGW9|RSMH_SYNSC Ribosomal RNA small subunit methyltransfera...    32   7.9  
+sp|Q9Y5R4|HEMK1_HUMAN MTRF1L release factor glutamine methyltran...    32   8.3  
+sp|A4SGV9|BIOC_CHLPM Malonyl-[acyl-carrier protein] O-methyltran...    32   8.3  
+sp|A1KB33|RPOC_AZOSB DNA-directed RNA polymerase subunit beta' O...    32   8.4  
+sp|A7Z627|MENG_BACVZ Demethylmenaquinone methyltransferase OS=Ba...    32   8.7  
+sp|Q2KAZ5|TAM_RHIEC Trans-aconitate 2-methyltransferase OS=Rhizo...    32   9.7  
+sp|Q0A769|RLME_ALKEH Ribosomal RNA large subunit methyltransfera...    32   9.7  
+sp|Q2IYT0|TAM_RHOP2 Trans-aconitate 2-methyltransferase OS=Rhodo...    32   10.0 
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.313    0.159    0.458 
+
+Lambda     K      H
+   0.267   0.0487    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 467,722,504
+Number of Sequences: 569516
+Number of extensions: 22014497
+Number of successful extensions: 77397
+Number of sequences better than 10.0: 1014
+Number of HSP's better than 10.0 without gapping: 986
+Number of HSP's successfully gapped in prelim test: 930
+Number of HSP's that attempted gapping in prelim test: 72997
+Number of HSP's gapped (non-prelim): 2056
+length of query: 353
+length of database: 205,866,895
+effective HSP length: 119
+effective length of query: 234
+effective length of database: 138,094,491
+effective search space: 32314110894
+effective search space used: 32314110894
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.2 bits)
+S2: 71 (31.7 bits)

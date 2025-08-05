@@ -1,0 +1,949 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (309 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P53361|TBP_SPOFR TATA-box-binding protein OS=Spodoptera frugi...   537   e-152
+sp|O45211|TBP_BOMMO TATA-box-binding protein OS=Bombyx mori OX=7...   522   e-147
+sp|P20227|TBP_DROME TATA-box-binding protein OS=Drosophila melan...   413   e-114
+sp|O17488|TBP_ARTSF TATA-box-binding protein OS=Artemia francisc...   390   e-108
+sp|Q9NHP5|TBP_DROVI TATA-box-binding protein OS=Drosophila viril...   372   e-102
+sp|P91809|TBP_STRPU TATA-box-binding protein OS=Strongylocentrot...   365   e-100
+sp|A6H907|TBPL2_PANTR TATA box-binding protein-like 2 OS=Pan tro...   363   e-100
+sp|Q6SJ96|TBPL2_HUMAN TATA box-binding protein-like 2 OS=Homo sa...   360   6e-99
+sp|Q92146|TBP_TRIGA TATA-box-binding protein OS=Trimeresurus gra...   360   7e-99
+sp|Q92117|TBP_PROFL TATA-box-binding protein OS=Protobothrops fl...   360   7e-99
+sp|P53360|TBP_MESAU TATA-box-binding protein OS=Mesocricetus aur...   360   1e-98
+sp|P29037|TBP_MOUSE TATA-box-binding protein OS=Mus musculus OX=...   359   1e-98
+sp|O13270|TBP_CHICK TATA-box-binding protein OS=Gallus gallus OX...   358   2e-98
+sp|Q2HJ52|TBP_BOVIN TATA-box-binding protein OS=Bos taurus OX=99...   358   2e-98
+sp|P20226|TBP_HUMAN TATA-box-binding protein OS=Homo sapiens OX=...   357   9e-98
+sp|Q28GG8|TBP_XENTR TATA-box-binding protein OS=Xenopus tropical...   356   2e-97
+sp|P27633|TBP_XENLA TATA-box-binding protein OS=Xenopus laevis O...   355   2e-97
+sp|Q7SXL3|TBP_DANRE TATA-box-binding protein OS=Danio rerio OX=7...   355   2e-97
+sp|Q4R4F5|TBP_MACFA TATA-box-binding protein OS=Macaca fascicula...   354   4e-97
+sp|Q28DH2|TBPL2_XENTR TATA box-binding protein-like 2 OS=Xenopus...   348   2e-95
+sp|Q5UE94|TBPL2_XENLA TATA box-binding protein-like 2 OS=Xenopus...   348   2e-95
+sp|Q1JPY4|TBPL2_DANRE TATA box-binding protein-like 2 OS=Danio r...   341   3e-93
+sp|Q6SJ94|TBPL2_TAKRU TATA box-binding protein-like 2 OS=Takifug...   332   2e-90
+sp|P26354|TBP_ACACA TATA-box-binding protein OS=Acanthamoeba cas...   328   4e-89
+sp|A6H909|TBPL2_RAT TATA box-binding protein-like 2 OS=Rattus no...   325   2e-88
+sp|P32085|TBP_CAEEL TATA-box-binding protein OS=Caenorhabditis e...   320   6e-87
+sp|P13393|TBP_YEAST TATA-box-binding protein OS=Saccharomyces ce...   320   7e-87
+sp|Q6SJ95|TBPL2_MOUSE TATA box-binding protein-like 2 OS=Mus mus...   320   8e-87
+sp|Q12731|TBP_EMENI TATA-box-binding protein OS=Emericella nidul...   320   1e-86
+sp|P17871|TBP_SCHPO TATA-box-binding protein OS=Schizosaccharomy...   318   2e-86
+sp|P48511|TBP_MESCR TATA-box-binding protein OS=Mesembryanthemum...   318   3e-86
+sp|P93348|TBP_TOBAC TATA-box-binding protein OS=Nicotiana tabacu...   317   6e-86
+sp|P50158|TBP1_MAIZE TATA-box-binding protein 1 OS=Zea mays OX=4...   317   1e-85
+sp|P50159|TBP2_MAIZE TATA-box-binding protein 2 OS=Zea mays OX=4...   317   1e-85
+sp|Q02879|TBP2_WHEAT TATA-box-binding protein 2 OS=Triticum aest...   315   2e-85
+sp|Q8W0W4|TBP2_ORYSJ TATA-binding protein 2 OS=Oryza sativa subs...   315   3e-85
+sp|P26357|TBP_SOLTU TATA-box-binding protein OS=Solanum tuberosu...   315   4e-85
+sp|Q42808|TBP_SOYBN TATA-box-binding protein OS=Glycine max OX=3...   314   4e-85
+sp|P26356|TBP1_WHEAT TATA-box-binding protein 1 OS=Triticum aest...   311   5e-84
+sp|O43133|TBP_CANAL TATA-box-binding protein OS=Candida albicans...   310   7e-84
+sp|P28148|TBP2_ARATH TATA-box-binding protein 2 OS=Arabidopsis t...   310   1e-83
+sp|P28147|TBP1_ARATH TATA-box-binding protein 1 OS=Arabidopsis t...   309   2e-83
+sp|P46272|TBP_ACEPE TATA-box-binding protein OS=Acetabularia pen...   297   6e-80
+sp|P26355|TBP_DICDI TATA-box-binding protein OS=Dictyostelium di...   297   9e-80
+sp|Q27850|TBP_TETTH TATA-box-binding protein OS=Tetrahymena ther...   265   3e-70
+sp|Q27896|TRF_DROME TBP-related factor OS=Drosophila melanogaste...   241   4e-63
+sp|A7UFC2|TBPL1_ENTH1 TATA-box-binding protein-like 1 OS=Entamoe...   213   1e-54
+sp|P52653|TBP1_ENTH1 TATA-box-binding protein 1 OS=Entamoeba his...   199   2e-50
+sp|C4M7H7|TBP2_ENTH1 TATA-box-binding protein 2 OS=Entamoeba his...   198   4e-50
+sp|A1RSQ1|TBP_PYRIL TATA-box-binding protein OS=Pyrobaculum isla...   155   3e-37
+sp|B1Y949|TBP_PYRNV TATA-box-binding protein OS=Pyrobaculum neut...   154   6e-37
+sp|Q8ZVR0|TBP_PYRAE TATA-box-binding protein OS=Pyrobaculum aero...   153   2e-36
+sp|P58177|TBP_PYROC TATA-box-binding protein OS=Pyrodictium occu...   150   1e-35
+sp|A3MV36|TBP_PYRCJ TATA-box-binding protein OS=Pyrobaculum cali...   150   2e-35
+sp|P32086|TBP_PLAFA TATA-box-binding protein OS=Plasmodium falci...   147   1e-34
+sp|Q5U385|TBPL1_DANRE TATA box-binding protein-like 1 OS=Danio r...   144   7e-34
+sp|Q9W6Z2|TBPL1_XENLA TATA box-binding protein-like 1 OS=Xenopus...   142   2e-33
+sp|Q6DIY4|TBPL1_XENTR TATA box-binding protein-like 1 OS=Xenopus...   142   5e-33
+sp|Q5R7U8|TBPL1_PONAB TATA box-binding protein-like 1 OS=Pongo a...   141   6e-33
+sp|Q9YGV8|TBPL1_CHICK TATA box-binding protein-like 1 OS=Gallus ...   141   6e-33
+sp|O29874|TBP_ARCFU TATA-box-binding protein OS=Archaeoglobus fu...   141   6e-33
+sp|P62340|TBPL1_MOUSE TATA box-binding protein-like 1 OS=Mus mus...   141   6e-33
+sp|Q4R848|TBPL1_MACFA TATA box-binding protein-like 1 OS=Macaca ...   141   6e-33
+sp|P62380|TBPL1_HUMAN TATA box-binding protein-like 1 OS=Homo sa...   141   6e-33
+sp|Q32LB1|TBPL1_BOVIN TATA box-binding protein-like 1 OS=Bos tau...   141   6e-33
+sp|A0B5H8|TBP_METTP TATA-box-binding protein OS=Methanothrix the...   134   1e-30
+sp|Q9P9I9|TBP_METTL TATA-box-binding protein OS=Methanothermococ...   133   2e-30
+sp|Q9YAT1|TBP_AERPE TATA-box-binding protein OS=Aeropyrum pernix...   132   3e-30
+sp|A6URP5|TBP_METVS TATA-box-binding protein OS=Methanococcus va...   132   4e-30
+sp|B6YXI6|TBP_THEON TATA-box-binding protein OS=Thermococcus onn...   130   9e-30
+sp|Q6M0L3|TBP_METMP TATA-box-binding protein OS=Methanococcus ma...   130   1e-29
+sp|O27664|TBP_METTH TATA-box-binding protein OS=Methanothermobac...   130   1e-29
+sp|A9A840|TBP_METM6 TATA-box-binding protein OS=Methanococcus ma...   129   2e-29
+sp|Q971V3|TBP_SULTO TATA-box-binding protein OS=Sulfurisphaera t...   129   2e-29
+sp|Q9UWN7|TBP_SULAC TATA-box-binding protein OS=Sulfolobus acido...   129   3e-29
+sp|C6A0R1|TBP_THESM TATA-box-binding protein OS=Thermococcus sib...   129   4e-29
+sp|Q56253|TBP_THECE TATA-box-binding protein OS=Thermococcus cel...   129   4e-29
+sp|Q52366|TBP_THEKO TATA-box-binding protein OS=Thermococcus kod...   128   5e-29
+sp|Q55031|TBP_SACSH TATA-box-binding protein OS=Saccharolobus sh...   128   5e-29
+sp|O58737|TBP_PYRHO TATA-box-binding protein OS=Pyrococcus horik...   128   6e-29
+sp|P58178|TBP_SACS2 TATA-box-binding protein OS=Saccharolobus so...   128   7e-29
+sp|A5UL47|TBP_METS3 TATA-box-binding protein OS=Methanobrevibact...   128   7e-29
+sp|Q5V470|TBP_HALMA TATA-box-binding protein OS=Haloarcula maris...   127   9e-29
+sp|A6UTF6|TBP_META3 TATA-box-binding protein OS=Methanococcus ae...   127   1e-28
+sp|Q57930|TBP_METJA TATA-box-binding protein OS=Methanocaldococc...   126   2e-28
+sp|Q9V024|TBP_PYRAB TATA-box-binding protein OS=Pyrococcus abyss...   126   2e-28
+sp|Q2NFC3|TBP_METST TATA-box-binding protein OS=Methanosphaera s...   126   3e-28
+sp|Q3ITB1|TBP_NATPD TATA-box-binding protein OS=Natronomonas pha...   125   4e-28
+sp|Q978J5|TBP_THEVO TATA-box-binding protein OS=Thermoplasma vol...   125   4e-28
+sp|A6VIP7|TBP_METM7 TATA-box-binding protein OS=Methanococcus ma...   125   5e-28
+sp|Q9HLM8|TBP_THEAC TATA-box-binding protein OS=Thermoplasma aci...   125   6e-28
+sp|Q6L1R1|TBP_PICTO TATA-box-binding protein OS=Picrophilus torr...   124   9e-28
+sp|Q9HN56|TBPE_HALSA TATA-box-binding protein E OS=Halobacterium...   124   1e-27
+sp|P62001|TBP_PYRWO TATA-box-binding protein OS=Pyrococcus woese...   122   3e-27
+sp|P62000|TBP_PYRFU TATA-box-binding protein OS=Pyrococcus furio...   122   3e-27
+sp|D4GZA2|TBP1_HALVD TATA-box-binding protein 1 OS=Haloferax vol...   119   2e-26
+sp|Q8TU94|TBP2_METAC TATA-box-binding protein 2 OS=Methanosarcin...   119   2e-26
+sp|D4H071|TBP2_HALVD TATA-box-binding protein 2 OS=Haloferax vol...   119   3e-26
+sp|Q8TTZ7|TBP3_METAC TATA-box-binding protein 3 OS=Methanosarcin...   118   5e-26
+sp|B2D6P4|TBPL1_CAEEL TATA box-binding protein-like 1 OS=Caenorh...   117   9e-26
+sp|Q9HHE9|TBPF_HALSA TATA-box-binding protein F OS=Halobacterium...   116   2e-25
+sp|Q8PUZ4|TBP3_METMA TATA-box-binding protein 3 OS=Methanosarcin...   115   4e-25
+sp|Q48325|TBPB_HALSA TATA-box-binding protein B OS=Halobacterium...   115   5e-25
+sp|O52018|TBPD_HALSA TATA-box-binding protein D OS=Halobacterium...   115   5e-25
+sp|Q8PY36|TBP2_METMA TATA-box-binding protein 2 OS=Methanosarcin...   112   3e-24
+sp|Q8TI26|TBP1_METAC TATA-box-binding protein 1 OS=Methanosarcin...   112   4e-24
+sp|Q8PY37|TBP1_METMA TATA-box-binding protein 1 OS=Methanosarcin...   108   4e-23
+sp|Q8TX38|TBP_METKA TATA-box-binding protein OS=Methanopyrus kan...   104   7e-22
+sp|O52004|TBPC_HALSA TATA-box-binding protein C OS=Halobacterium...    84   1e-15
+sp|O74045|TBP_CENSY TATA-box-binding protein OS=Cenarchaeum symb...    48   8e-05
+sp|O25424|ASPG_HELPY Probable L-asparaginase OS=Helicobacter pyl...    33   2.5  
+sp|B4TR32|EUTC_SALSV Ethanolamine ammonia-lyase small subunit OS...    33   2.8  
+sp|Q8Z4U3|EUTC_SALTI Ethanolamine ammonia-lyase small subunit OS...    33   3.5  
+sp|A9N329|EUTC_SALPB Ethanolamine ammonia-lyase small subunit OS...    33   3.8  
+sp|B4T0I5|EUTC_SALNS Ethanolamine ammonia-lyase small subunit OS...    33   3.8  
+sp|B5RCS8|EUTC_SALG2 Ethanolamine ammonia-lyase small subunit OS...    33   3.8  
+sp|B5R4G5|EUTC_SALEP Ethanolamine ammonia-lyase small subunit OS...    33   3.8  
+sp|B5FQF0|EUTC_SALDC Ethanolamine ammonia-lyase small subunit OS...    33   3.8  
+sp|Q6P5P3|TTC9C_RAT Tetratricopeptide repeat protein 9C OS=Rattu...    32   6.6  
+sp|B9EUM5|KN14A_ORYSJ Kinesin-like protein KIN-14A OS=Oryza sati...    32   7.6  
+sp|B4U8X0|DNLJ_HYDS0 DNA ligase OS=Hydrogenobaculum sp. (strain ...    32   8.2  
+
+Searching..................................................Selenocysteine (U) at position 690 replaced by X
+done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P53361|TBP_SPOFR TATA-box-binding protein OS=Spodoptera frugi...   458   e-128
+sp|O45211|TBP_BOMMO TATA-box-binding protein OS=Bombyx mori OX=7...   453   e-127
+sp|P20227|TBP_DROME TATA-box-binding protein OS=Drosophila melan...   414   e-115
+sp|Q9NHP5|TBP_DROVI TATA-box-binding protein OS=Drosophila viril...   387   e-107
+sp|O17488|TBP_ARTSF TATA-box-binding protein OS=Artemia francisc...   384   e-106
+sp|P32085|TBP_CAEEL TATA-box-binding protein OS=Caenorhabditis e...   350   1e-95
+sp|Q92146|TBP_TRIGA TATA-box-binding protein OS=Trimeresurus gra...   342   2e-93
+sp|Q92117|TBP_PROFL TATA-box-binding protein OS=Protobothrops fl...   342   3e-93
+sp|P29037|TBP_MOUSE TATA-box-binding protein OS=Mus musculus OX=...   340   7e-93
+sp|P53360|TBP_MESAU TATA-box-binding protein OS=Mesocricetus aur...   339   2e-92
+sp|P27633|TBP_XENLA TATA-box-binding protein OS=Xenopus laevis O...   337   5e-92
+sp|O13270|TBP_CHICK TATA-box-binding protein OS=Gallus gallus OX...   337   1e-91
+sp|Q28GG8|TBP_XENTR TATA-box-binding protein OS=Xenopus tropical...   337   1e-91
+sp|Q2HJ52|TBP_BOVIN TATA-box-binding protein OS=Bos taurus OX=99...   336   1e-91
+sp|P20226|TBP_HUMAN TATA-box-binding protein OS=Homo sapiens OX=...   335   3e-91
+sp|Q4R4F5|TBP_MACFA TATA-box-binding protein OS=Macaca fascicula...   332   2e-90
+sp|Q5UE94|TBPL2_XENLA TATA box-binding protein-like 2 OS=Xenopus...   331   5e-90
+sp|Q7SXL3|TBP_DANRE TATA-box-binding protein OS=Danio rerio OX=7...   329   2e-89
+sp|A6H907|TBPL2_PANTR TATA box-binding protein-like 2 OS=Pan tro...   328   2e-89
+sp|Q6SJ96|TBPL2_HUMAN TATA box-binding protein-like 2 OS=Homo sa...   327   6e-89
+sp|Q28DH2|TBPL2_XENTR TATA box-binding protein-like 2 OS=Xenopus...   325   2e-88
+sp|Q6SJ94|TBPL2_TAKRU TATA box-binding protein-like 2 OS=Takifug...   325   2e-88
+sp|P13393|TBP_YEAST TATA-box-binding protein OS=Saccharomyces ce...   324   6e-88
+sp|P91809|TBP_STRPU TATA-box-binding protein OS=Strongylocentrot...   323   1e-87
+sp|P48511|TBP_MESCR TATA-box-binding protein OS=Mesembryanthemum...   322   2e-87
+sp|A6H909|TBPL2_RAT TATA box-binding protein-like 2 OS=Rattus no...   321   6e-87
+sp|P93348|TBP_TOBAC TATA-box-binding protein OS=Nicotiana tabacu...   320   6e-87
+sp|P26357|TBP_SOLTU TATA-box-binding protein OS=Solanum tuberosu...   320   1e-86
+sp|Q42808|TBP_SOYBN TATA-box-binding protein OS=Glycine max OX=3...   320   1e-86
+sp|P26354|TBP_ACACA TATA-box-binding protein OS=Acanthamoeba cas...   320   1e-86
+sp|Q8W0W4|TBP2_ORYSJ TATA-binding protein 2 OS=Oryza sativa subs...   319   2e-86
+sp|P17871|TBP_SCHPO TATA-box-binding protein OS=Schizosaccharomy...   319   2e-86
+sp|Q02879|TBP2_WHEAT TATA-box-binding protein 2 OS=Triticum aest...   318   3e-86
+sp|Q1JPY4|TBPL2_DANRE TATA box-binding protein-like 2 OS=Danio r...   317   8e-86
+sp|P50159|TBP2_MAIZE TATA-box-binding protein 2 OS=Zea mays OX=4...   317   8e-86
+sp|P50158|TBP1_MAIZE TATA-box-binding protein 1 OS=Zea mays OX=4...   316   1e-85
+sp|P26356|TBP1_WHEAT TATA-box-binding protein 1 OS=Triticum aest...   316   1e-85
+sp|P28147|TBP1_ARATH TATA-box-binding protein 1 OS=Arabidopsis t...   316   2e-85
+sp|Q12731|TBP_EMENI TATA-box-binding protein OS=Emericella nidul...   315   2e-85
+sp|P28148|TBP2_ARATH TATA-box-binding protein 2 OS=Arabidopsis t...   315   4e-85
+sp|Q6SJ95|TBPL2_MOUSE TATA box-binding protein-like 2 OS=Mus mus...   312   2e-84
+sp|P46272|TBP_ACEPE TATA-box-binding protein OS=Acetabularia pen...   310   1e-83
+sp|O43133|TBP_CANAL TATA-box-binding protein OS=Candida albicans...   309   1e-83
+sp|Q27850|TBP_TETTH TATA-box-binding protein OS=Tetrahymena ther...   304   7e-82
+sp|P26355|TBP_DICDI TATA-box-binding protein OS=Dictyostelium di...   299   2e-80
+sp|Q27896|TRF_DROME TBP-related factor OS=Drosophila melanogaste...   281   5e-75
+sp|P52653|TBP1_ENTH1 TATA-box-binding protein 1 OS=Entamoeba his...   271   7e-72
+sp|Q3ITB1|TBP_NATPD TATA-box-binding protein OS=Natronomonas pha...   264   8e-70
+sp|Q9HN56|TBPE_HALSA TATA-box-binding protein E OS=Halobacterium...   260   1e-68
+sp|Q5V470|TBP_HALMA TATA-box-binding protein OS=Haloarcula maris...   260   1e-68
+sp|C4M7H7|TBP2_ENTH1 TATA-box-binding protein 2 OS=Entamoeba his...   258   6e-68
+sp|A1RSQ1|TBP_PYRIL TATA-box-binding protein OS=Pyrobaculum isla...   258   6e-68
+sp|D4H071|TBP2_HALVD TATA-box-binding protein 2 OS=Haloferax vol...   256   2e-67
+sp|Q8ZVR0|TBP_PYRAE TATA-box-binding protein OS=Pyrobaculum aero...   255   4e-67
+sp|O29874|TBP_ARCFU TATA-box-binding protein OS=Archaeoglobus fu...   254   5e-67
+sp|A7UFC2|TBPL1_ENTH1 TATA-box-binding protein-like 1 OS=Entamoe...   254   5e-67
+sp|P58177|TBP_PYROC TATA-box-binding protein OS=Pyrodictium occu...   254   6e-67
+sp|B1Y949|TBP_PYRNV TATA-box-binding protein OS=Pyrobaculum neut...   254   7e-67
+sp|Q9P9I9|TBP_METTL TATA-box-binding protein OS=Methanothermococ...   254   8e-67
+sp|D4GZA2|TBP1_HALVD TATA-box-binding protein 1 OS=Haloferax vol...   253   1e-66
+sp|A3MV36|TBP_PYRCJ TATA-box-binding protein OS=Pyrobaculum cali...   252   3e-66
+sp|A9A840|TBP_METM6 TATA-box-binding protein OS=Methanococcus ma...   250   1e-65
+sp|A6VIP7|TBP_METM7 TATA-box-binding protein OS=Methanococcus ma...   250   1e-65
+sp|Q52366|TBP_THEKO TATA-box-binding protein OS=Thermococcus kod...   250   1e-65
+sp|A6UTF6|TBP_META3 TATA-box-binding protein OS=Methanococcus ae...   249   2e-65
+sp|Q6M0L3|TBP_METMP TATA-box-binding protein OS=Methanococcus ma...   249   2e-65
+sp|B6YXI6|TBP_THEON TATA-box-binding protein OS=Thermococcus onn...   248   3e-65
+sp|A6URP5|TBP_METVS TATA-box-binding protein OS=Methanococcus va...   248   4e-65
+sp|Q57930|TBP_METJA TATA-box-binding protein OS=Methanocaldococc...   248   4e-65
+sp|Q971V3|TBP_SULTO TATA-box-binding protein OS=Sulfurisphaera t...   248   6e-65
+sp|O27664|TBP_METTH TATA-box-binding protein OS=Methanothermobac...   248   6e-65
+sp|Q9UWN7|TBP_SULAC TATA-box-binding protein OS=Sulfolobus acido...   247   7e-65
+sp|Q56253|TBP_THECE TATA-box-binding protein OS=Thermococcus cel...   246   1e-64
+sp|Q9V024|TBP_PYRAB TATA-box-binding protein OS=Pyrococcus abyss...   246   2e-64
+sp|O58737|TBP_PYRHO TATA-box-binding protein OS=Pyrococcus horik...   245   3e-64
+sp|A0B5H8|TBP_METTP TATA-box-binding protein OS=Methanothrix the...   245   3e-64
+sp|A5UL47|TBP_METS3 TATA-box-binding protein OS=Methanobrevibact...   243   1e-63
+sp|C6A0R1|TBP_THESM TATA-box-binding protein OS=Thermococcus sib...   243   1e-63
+sp|P58178|TBP_SACS2 TATA-box-binding protein OS=Saccharolobus so...   243   1e-63
+sp|Q55031|TBP_SACSH TATA-box-binding protein OS=Saccharolobus sh...   243   1e-63
+sp|P62001|TBP_PYRWO TATA-box-binding protein OS=Pyrococcus woese...   243   2e-63
+sp|P62000|TBP_PYRFU TATA-box-binding protein OS=Pyrococcus furio...   243   2e-63
+sp|Q978J5|TBP_THEVO TATA-box-binding protein OS=Thermoplasma vol...   242   2e-63
+sp|Q9HHE9|TBPF_HALSA TATA-box-binding protein F OS=Halobacterium...   242   3e-63
+sp|Q48325|TBPB_HALSA TATA-box-binding protein B OS=Halobacterium...   241   5e-63
+sp|Q6L1R1|TBP_PICTO TATA-box-binding protein OS=Picrophilus torr...   241   6e-63
+sp|Q9HLM8|TBP_THEAC TATA-box-binding protein OS=Thermoplasma aci...   239   1e-62
+sp|Q5R7U8|TBPL1_PONAB TATA box-binding protein-like 1 OS=Pongo a...   239   2e-62
+sp|P62340|TBPL1_MOUSE TATA box-binding protein-like 1 OS=Mus mus...   239   2e-62
+sp|Q4R848|TBPL1_MACFA TATA box-binding protein-like 1 OS=Macaca ...   239   2e-62
+sp|P62380|TBPL1_HUMAN TATA box-binding protein-like 1 OS=Homo sa...   239   2e-62
+sp|Q32LB1|TBPL1_BOVIN TATA box-binding protein-like 1 OS=Bos tau...   239   2e-62
+sp|O52018|TBPD_HALSA TATA-box-binding protein D OS=Halobacterium...   239   2e-62
+sp|Q9YGV8|TBPL1_CHICK TATA box-binding protein-like 1 OS=Gallus ...   238   6e-62
+sp|Q2NFC3|TBP_METST TATA-box-binding protein OS=Methanosphaera s...   236   2e-61
+sp|Q9W6Z2|TBPL1_XENLA TATA box-binding protein-like 1 OS=Xenopus...   235   3e-61
+sp|Q8TI26|TBP1_METAC TATA-box-binding protein 1 OS=Methanosarcin...   234   9e-61
+sp|Q6DIY4|TBPL1_XENTR TATA box-binding protein-like 1 OS=Xenopus...   233   1e-60
+sp|Q8TTZ7|TBP3_METAC TATA-box-binding protein 3 OS=Methanosarcin...   233   2e-60
+sp|Q9YAT1|TBP_AERPE TATA-box-binding protein OS=Aeropyrum pernix...   233   2e-60
+sp|Q8PY36|TBP2_METMA TATA-box-binding protein 2 OS=Methanosarcin...   232   3e-60
+sp|Q8PUZ4|TBP3_METMA TATA-box-binding protein 3 OS=Methanosarcin...   231   5e-60
+sp|Q8PY37|TBP1_METMA TATA-box-binding protein 1 OS=Methanosarcin...   230   1e-59
+sp|Q5U385|TBPL1_DANRE TATA box-binding protein-like 1 OS=Danio r...   224   5e-58
+sp|Q8TU94|TBP2_METAC TATA-box-binding protein 2 OS=Methanosarcin...   224   6e-58
+sp|P32086|TBP_PLAFA TATA-box-binding protein OS=Plasmodium falci...   220   1e-56
+sp|B2D6P4|TBPL1_CAEEL TATA box-binding protein-like 1 OS=Caenorh...   214   6e-55
+sp|Q8TX38|TBP_METKA TATA-box-binding protein OS=Methanopyrus kan...   214   1e-54
+sp|O52004|TBPC_HALSA TATA-box-binding protein C OS=Halobacterium...   189   2e-47
+sp|O74045|TBP_CENSY TATA-box-binding protein OS=Cenarchaeum symb...   146   2e-34
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5UQP9|TBPL_MIMIV TATA-box-binding protein-like OS=Acanthamoe...    45   6e-04
+sp|Q8TDT2|GP152_HUMAN Probable G-protein coupled receptor 152 OS...    45   8e-04
+sp|Q3UH66|WNK2_MOUSE Serine/threonine-protein kinase WNK2 OS=Mus...    40   0.023
+sp|Q04859|MAK_MOUSE Serine/threonine-protein kinase MAK OS=Mus m...    40   0.032
+sp|Q9UKF5|ADA29_HUMAN Disintegrin and metalloproteinase domain-c...    39   0.043
+sp|P10210|SCAF_HHV11 Capsid scaffolding protein OS=Human herpesv...    38   0.063
+sp|P40568|DSN1_YEAST Kinetochore-associated protein DSN1 OS=Sacc...    38   0.065
+sp|P48562|CLA4_YEAST Serine/threonine-protein kinase CLA4 OS=Sac...    38   0.11 
+sp|Q07DX4|CTTB2_NOMLE Cortactin-binding protein 2 OS=Nomascus le...    38   0.11 
+sp|P83741|WNK1_MOUSE Serine/threonine-protein kinase WNK1 OS=Mus...    38   0.12 
+sp|Q53KK6|SWI3C_ORYSJ SWI/SNF complex subunit SWI3C homolog OS=O...    38   0.12 
+sp|Q5ZI08|SPT5H_CHICK Transcription elongation factor SPT5 OS=Ga...    37   0.15 
+sp|Q6PFM4|LNPB_DANRE Endoplasmic reticulum junction formation pr...    37   0.15 
+sp|Q9HFW2|CLA4_ASHGO Serine/threonine-protein kinase CLA4 OS=Ash...    37   0.16 
+sp|P70340|SMAD1_MOUSE Mothers against decapentaplegic homolog 1 ...    37   0.16 
+sp|Q92793|CBP_HUMAN CREB-binding protein OS=Homo sapiens OX=9606...    37   0.17 
+sp|Q8BRH4|KMT2C_MOUSE Histone-lysine N-methyltransferase 2C OS=M...    37   0.19 
+sp|Q0WPF2|PCFS4_ARATH Polyadenylation and cleavage factor homolo...    37   0.20 
+sp|Q0CA78|INO80_ASPTN Chromatin-remodeling ATPase INO80 OS=Asper...    37   0.21 
+sp|Q6P1E1|ZMIZ1_MOUSE Zinc finger MIZ domain-containing protein ...    37   0.21 
+sp|B8FHX0|SECA_DESAL Protein translocase subunit SecA OS=Desulfa...    37   0.21 
+sp|Q04205|TENS1_CHICK Tensin-1 OS=Gallus gallus OX=9031 GN=TNS1 ...    37   0.22 
+sp|Q9HBL0|TENS1_HUMAN Tensin-1 OS=Homo sapiens OX=9606 GN=TNS1 P...    37   0.22 
+sp|P20793|MAK_RAT Serine/threonine-protein kinase MAK OS=Rattus ...    37   0.23 
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    37   0.24 
+sp|A1DFN5|HSE1_NEOFI Class E vacuolar protein-sorting machinery ...    37   0.29 
+sp|O00267|SPT5H_HUMAN Transcription elongation factor SPT5 OS=Ho...    37   0.30 
+sp|A7EQA8|INO80_SCLS1 Chromatin-remodeling ATPase INO80 OS=Scler...    37   0.30 
+sp|O54951|SEM6B_MOUSE Semaphorin-6B OS=Mus musculus OX=10090 GN=...    36   0.31 
+sp|Q5R405|SPT5H_PONAB Transcription elongation factor SPT5 OS=Po...    36   0.31 
+sp|Q6K8Z4|FH7_ORYSJ Formin-like protein 7 OS=Oryza sativa subsp....    36   0.32 
+sp|O55201|SPT5H_MOUSE Transcription elongation factor SPT5 OS=Mu...    36   0.32 
+sp|Q80TM6|R3HD2_MOUSE R3H domain-containing protein 2 OS=Mus mus...    36   0.36 
+sp|P97588|SMAD1_RAT Mothers against decapentaplegic homolog 1 OS...    36   0.40 
+sp|D3ZGB1|NFAT5_RAT Nuclear factor of activated T-cells 5 OS=Rat...    36   0.40 
+sp|Q6JHU9|CBP_RAT Histone lysine acetyltransferase CREBBP OS=Rat...    36   0.42 
+sp|Q54QC0|MYBU_DICDI Myb-like protein U OS=Dictyostelium discoid...    36   0.44 
+sp|Q10124|PQE1_CAEEL Putative RNA exonuclease pqe-1 OS=Caenorhab...    35   0.55 
+sp|Q95XA8|CRTC1_CAEEL CREB-regulated transcription coactivator 1...    35   0.55 
+sp|Q2IBA2|CTTB2_CHLAE Cortactin-binding protein 2 OS=Chlorocebus...    35   0.57 
+sp|P36956|SRBP1_HUMAN Sterol regulatory element-binding protein ...    35   0.58 
+sp|Q9WV30|NFAT5_MOUSE Nuclear factor of activated T-cells 5 OS=M...    35   0.58 
+sp|P11137|MTAP2_HUMAN Microtubule-associated protein 2 OS=Homo s...    35   0.59 
+sp|Q9XUS2|MED29_CAEEL Mediator of RNA polymerase II transcriptio...    35   0.60 
+sp|O59780|YCN3_SCHPO Uncharacterized transcriptional regulatory ...    35   0.61 
+sp|A7RRJ0|FEN1_NEMVE Flap endonuclease 1 OS=Nematostella vectens...    35   0.61 
+sp|Q96PV7|F193B_HUMAN Protein FAM193B OS=Homo sapiens OX=9606 GN...    35   0.66 
+sp|Q80U62|RUBIC_MOUSE Run domain Beclin-1-interacting and cystei...    35   0.66 
+sp|B1HW99|RNH3_LYSSC Ribonuclease HIII OS=Lysinibacillus sphaeri...    35   0.67 
+sp|Q6GQ26|SRBP2_XENLA Sterol regulatory element-binding protein ...    35   0.72 
+sp|Q9QYX7|PCLO_MOUSE Protein piccolo OS=Mus musculus OX=10090 GN...    35   0.72 
+sp|Q5AYL5|SEC16_EMENI COPII coat assembly protein sec16 OS=Emeri...    35   0.73 
+sp|Q6UEG8|AFLR_ASPPU Aflatoxin biosynthesis regulatory protein O...    35   0.75 
+sp|P43651|AFLR_ASPPA Aflatoxin biosynthesis regulatory protein O...    35   0.75 
+sp|Q63155|DCC_RAT Netrin receptor DCC OS=Rattus norvegicus OX=10...    35   0.78 
+sp|A5DH19|SEC16_PICGU COPII coat assembly protein SEC16 OS=Meyer...    35   0.80 
+sp|A0M8S4|CTTB2_PAPAN Cortactin-binding protein 2 OS=Papio anubi...    35   0.81 
+sp|Q07DY4|CTTB2_COLGU Cortactin-binding protein 2 OS=Colobus gue...    35   0.84 
+sp|P21979|SPAA_STRDO Cell surface antigen I/II OS=Streptococcus ...    35   0.85 
+sp|Q07DV1|CTTB2_AOTNA Cortactin-binding protein 2 OS=Aotus nancy...    35   0.85 
+sp|P53836|CA120_YEAST CCR4-NOT transcriptional complex subunit C...    35   0.85 
+sp|P04052|RPB1_DROME DNA-directed RNA polymerase II subunit RPB1...    35   0.87 
+sp|A4QTV1|VPS27_MAGO7 Vacuolar protein sorting-associated protei...    35   0.89 
+sp|Q69ZA1|CDK13_MOUSE Cyclin-dependent kinase 13 OS=Mus musculus...    35   0.94 
+sp|P11531|DMD_MOUSE Dystrophin OS=Mus musculus OX=10090 GN=Dmd P...    35   1.00 
+sp|Q6GP15|MED25_XENLA Mediator of RNA polymerase II transcriptio...    35   1.0  
+sp|Q09YK4|CTTB2_ATEGE Cortactin-binding protein 2 OS=Ateles geof...    35   1.0  
+sp|Q2VPU4|MLXIP_MOUSE MLX-interacting protein OS=Mus musculus OX...    35   1.1  
+sp|Q39044|VPEB_ARATH Vacuolar-processing enzyme beta-isozyme OS=...    34   1.1  
+sp|Q63DQ8|RESA_BACCZ Thiol-disulfide oxidoreductase ResA OS=Baci...    34   1.2  
+sp|Q5B5B0|PAN1_EMENI Actin cytoskeleton-regulatory complex prote...    34   1.2  
+sp|Q06A37|CHD7_CHICK Chromodomain-helicase-DNA-binding protein 7...    34   1.2  
+sp|Q2GZN9|NST1_CHAGB Stress response protein NST1 OS=Chaetomium ...    34   1.3  
+sp|P34643|SC161_CAEEL Protein transport protein sec-16A.1 OS=Cae...    34   1.3  
+sp|A6ZRG7|CA120_YEAS7 CCR4-NOT transcriptional complex subunit C...    34   1.3  
+sp|A2AJK6|CHD7_MOUSE Chromodomain-helicase-DNA-binding protein 7...    34   1.3  
+sp|Q9ULJ6|ZMIZ1_HUMAN Zinc finger MIZ domain-containing protein ...    34   1.3  
+sp|Q96JK9|MAML3_HUMAN Mastermind-like protein 3 OS=Homo sapiens ...    34   1.5  
+sp|P41765|AFLR_ASPFN Aflatoxin biosynthesis regulatory protein O...    34   1.5  
+sp|Q4P1V3|SNX3_USTMA Sorting nexin-3 OS=Ustilago maydis (strain ...    34   1.5  
+sp|P0C090|RC3H2_MOUSE Roquin-2 OS=Mus musculus OX=10090 GN=Rc3h2...    34   1.6  
+sp|P40482|SEC24_YEAST Protein transport protein SEC24 OS=Sacchar...    34   1.6  
+sp|Q1DU75|KU70_COCIM ATP-dependent DNA helicase II subunit 1 OS=...    34   1.6  
+sp|Q05041|HNFAA_XENLA Hepatocyte nuclear factor 1-alpha-A OS=Xen...    34   1.6  
+sp|G4N2B2|TRF2_MAGO7 Pyriculol/pyriculariol biosynthesis cluster...    34   1.7  
+sp|Q09YG9|CTTB2_SAIBB Cortactin-binding protein 2 OS=Saimiri bol...    34   1.7  
+sp|Q99743|NPAS2_HUMAN Neuronal PAS domain-containing protein 2 O...    34   1.9  
+sp|Q6M2F0|FTSH_CORGL ATP-dependent zinc metalloprotease FtsH OS=...    34   1.9  
+sp|P40694|SMBP2_MOUSE DNA-binding protein SMUBP-2 OS=Mus musculu...    34   1.9  
+sp|Q9DCB4|ARP21_MOUSE cAMP-regulated phosphoprotein 21 OS=Mus mu...    34   1.9  
+sp|Q8WZ74|CTTB2_HUMAN Cortactin-binding protein 2 OS=Homo sapien...    34   1.9  
+sp|Q7YZH1|RNO_DROME PHD finger protein rhinoceros OS=Drosophila ...    33   2.0  
+sp|Q4WHP5|HSE1_ASPFU Class E vacuolar protein-sorting machinery ...    33   2.0  
+sp|P41846|WBS14_CAEEL Protein WBSCR14 homolog OS=Caenorhabditis ...    33   2.0  
+sp|Q1JQA2|SMAD1_BOVIN Mothers against decapentaplegic homolog 1 ...    33   2.1  
+sp|Q8WXD9|CSKI1_HUMAN Caskin-1 OS=Homo sapiens OX=9606 GN=CASKIN...    33   2.1  
+sp|Q61026|NCOA2_MOUSE Nuclear receptor coactivator 2 OS=Mus musc...    33   2.1  
+sp|Q4WVG0|PKCA_ASPFU Protein kinase C OS=Aspergillus fumigatus (...    33   2.2  
+sp|Q15797|SMAD1_HUMAN Mothers against decapentaplegic homolog 1 ...    33   2.2  
+sp|Q8R7B9|ARGJ_CALS4 Arginine biosynthesis bifunctional protein ...    33   2.2  
+sp|Q12830|BPTF_HUMAN Nucleosome-remodeling factor subunit BPTF O...    33   2.3  
+sp|Q9LU44|SF1_ARATH Splicing factor-like protein 1 OS=Arabidopsi...    33   2.3  
+sp|Q93W28|Y4554_ARATH Uncharacterized protein At4g15545 OS=Arabi...    33   2.3  
+sp|E9Q0S6|TENS1_MOUSE Tensin-1 OS=Mus musculus OX=10090 GN=Tns1 ...    33   2.4  
+sp|Q6CL75|SEC31_KLULA Protein transport protein SEC31 OS=Kluyver...    33   2.4  
+sp|Q9CXK9|RBM33_MOUSE RNA-binding protein 33 OS=Mus musculus OX=...    33   2.4  
+sp|A7TSV7|PAN1_VANPO Actin cytoskeleton-regulatory complex prote...    33   2.4  
+sp|G5EEL0|LIDB1_CAEEL LIM domain-binding protein 1 OS=Caenorhabd...    33   2.4  
+sp|Q9JIH7|WNK1_RAT Serine/threonine-protein kinase WNK1 OS=Rattu...    33   2.5  
+sp|Q5AAU3|SEC31_CANAL Protein transport protein SEC31 OS=Candida...    33   2.6  
+sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 GN=...    33   2.7  
+sp|Q9MZS1|HCN1_RABIT Potassium/sodium hyperpolarization-activate...    33   2.7  
+sp|Q9UPX0|TUTLB_HUMAN Protein turtle homolog B OS=Homo sapiens O...    33   2.7  
+sp|Q5SSM3|RHG44_MOUSE Rho GTPase-activating protein 44 OS=Mus mu...    33   2.7  
+sp|Q2IBB2|CTTB2_RHIFE Cortactin-binding protein 2 OS=Rhinolophus...    33   2.8  
+sp|Q60YF6|MED29_CAEBR Mediator of RNA polymerase II transcriptio...    33   2.9  
+sp|Q3SZL6|DCP1B_BOVIN mRNA-decapping enzyme 1B OS=Bos taurus OX=...    33   2.9  
+sp|Q32KG4|RTL9_MOUSE Retrotransposon Gag-like protein 9 OS=Mus m...    33   3.0  
+sp|P43146|DCC_HUMAN Netrin receptor DCC OS=Homo sapiens OX=9606 ...    33   3.0  
+sp|P48383|SAK1_SCHPO Protein sak1 OS=Schizosaccharomyces pombe (...    33   3.0  
+sp|Q9UKV0|HDAC9_HUMAN Histone deacetylase 9 OS=Homo sapiens OX=9...    33   3.0  
+sp|Q873Y3|PACC_CANDC pH-response transcription factor pacC/RIM10...    33   3.1  
+sp|Q8BQM9|MD12L_MOUSE Mediator of RNA polymerase II transcriptio...    33   3.1  
+sp|P74876|DPO3X_SALTY DNA polymerase III subunit tau OS=Salmonel...    33   3.2  
+sp|Q0U4Z8|VPS27_PHANO Vacuolar protein sorting-associated protei...    33   3.3  
+sp|B2J955|IF2_NOSP7 Translation initiation factor IF-2 OS=Nostoc...    33   3.3  
+sp|Q91820|AURAA_XENLA Aurora kinase A-A OS=Xenopus laevis OX=835...    33   3.3  
+sp|P21783|NOTC1_XENLA Neurogenic locus notch homolog protein 1 O...    33   3.3  
+sp|Q15596|NCOA2_HUMAN Nuclear receptor coactivator 2 OS=Homo sap...    33   3.3  
+sp|O55017|CAC1B_MOUSE Voltage-dependent N-type calcium channel s...    33   3.3  
+sp|P13622|NFIB_MESAU Nuclear factor 1 B-type OS=Mesocricetus aur...    33   3.4  
+sp|Q9HEC9|SEC16_NEUCR COPII coat assembly protein sec16 OS=Neuro...    33   3.4  
+sp|P97863|NFIB_MOUSE Nuclear factor 1 B-type OS=Mus musculus OX=...    33   3.4  
+sp|Q2QL82|CTTB2_MICMU Cortactin-binding protein 2 OS=Microcebus ...    33   3.5  
+sp|P45481|CBP_MOUSE Histone lysine acetyltransferase CREBBP OS=M...    33   3.5  
+sp|Q8SX83|SPEN_DROME Protein split ends OS=Drosophila melanogast...    33   3.5  
+sp|O94854|K0754_HUMAN Microtubule-actin cross-linking factor 1, ...    33   3.5  
+sp|A9XMT5|CCLOP_ORYSJ Protein CYCLOPS OS=Oryza sativa subsp. jap...    33   3.6  
+sp|B0R0W9|TBC8B_DANRE TBC1 domain family member 8B OS=Danio reri...    33   3.6  
+sp|A3DC27|RSGI2_ACET2 Anti-sigma-I factor RsgI2 OS=Acetivibrio t...    33   3.7  
+sp|F1LQX4|RHG44_RAT Rho GTPase-activating protein 44 OS=Rattus n...    33   3.7  
+sp|E1BB52|CDK13_BOVIN Cyclin-dependent kinase 13 OS=Bos taurus O...    33   3.8  
+sp|Q0PVD8|SEC24_PICPA Protein transport protein SEC24 OS=Komagat...    33   3.9  
+sp|A1CZE5|INO80_NEOFI Chromatin-remodeling ATPase INO80 OS=Neosa...    33   4.1  
+sp|Q01W31|IF2_SOLUE Translation initiation factor IF-2 OS=Soliba...    33   4.2  
+sp|O14686|KMT2D_HUMAN Histone-lysine N-methyltransferase 2D OS=H...    33   4.3  
+sp|Q750Z6|PFF1_ASHGO Vacuolar membrane protease OS=Ashbya gossyp...    33   4.3  
+sp|Q3LRZ1|CRTC2_RAT CREB-regulated transcription coactivator 2 O...    33   4.3  
+sp|Q3U182|CRTC2_MOUSE CREB-regulated transcription coactivator 2...    32   4.3  
+sp|O88898|P63_MOUSE Tumor protein 63 OS=Mus musculus OX=10090 GN...    32   4.4  
+sp|Q01804|OTUD4_HUMAN OTU domain-containing protein 4 OS=Homo sa...    32   4.4  
+sp|Q9JJP6|P63_RAT Tumor protein 63 OS=Rattus norvegicus OX=10116...    32   4.4  
+sp|Q767L8|MDC1_PIG Mediator of DNA damage checkpoint protein 1 O...    32   4.6  
+sp|O88737|BSN_MOUSE Protein bassoon OS=Mus musculus OX=10090 GN=...    32   4.8  
+sp|P84996|ALEX_HUMAN Protein ALEX OS=Homo sapiens OX=9606 GN=GNA...    32   5.0  
+sp|Q696W0|SPEG_DANRE Striated muscle preferentially expressed pr...    32   5.1  
+sp|Q2EG98|PK1L3_MOUSE Polycystic kidney disease protein 1-like 3...    32   5.1  
+sp|P61312|ADM2_RAT Protein ADM2 OS=Rattus norvegicus OX=10116 GN...    32   5.2  
+sp|Q08E26|CRTC2_BOVIN CREB-regulated transcription coactivator 2...    32   5.5  
+sp|P44415|OAPA_HAEIN Opacity-associated protein OapA OS=Haemophi...    32   5.5  
+sp|P70211|DCC_MOUSE Netrin receptor DCC OS=Mus musculus OX=10090...    32   5.6  
+sp|P47459|P65H_MYCGE Proline-rich P65 protein homolog OS=Mycopla...    32   5.7  
+sp|A8FG15|RNH3_BACP2 Ribonuclease HIII OS=Bacillus pumilus (stra...    32   5.8  
+sp|E9Q4N7|ARI1B_MOUSE AT-rich interactive domain-containing prot...    32   5.9  
+sp|Q9H4A3|WNK1_HUMAN Serine/threonine-protein kinase WNK1 OS=Hom...    32   6.0  
+sp|Q9V460|SPT5H_DROME Transcription elongation factor SPT5 OS=Dr...    32   6.3  
+sp|Q9JJ50|HGS_RAT Hepatocyte growth factor-regulated tyrosine ki...    32   6.3  
+sp|Q924H7|WAC_MOUSE WW domain-containing adapter protein with co...    32   6.4  
+sp|Q96KW2|P12L2_HUMAN POM121-like protein 2 OS=Homo sapiens OX=9...    32   6.5  
+sp|P63278|AMELX_RAT Amelogenin, X isoform OS=Rattus norvegicus O...    32   6.5  
+sp|P63277|AMELX_MOUSE Amelogenin, X isoform OS=Mus musculus OX=1...    32   6.5  
+sp|Q80XP9|WNK3_MOUSE Serine/threonine-protein kinase WNK3 OS=Mus...    32   6.5  
+sp|Q9BTA9|WAC_HUMAN WW domain-containing adapter protein with co...    32   6.9  
+sp|Q53ET0|CRTC2_HUMAN CREB-regulated transcription coactivator 2...    32   6.9  
+sp|A7MB40|F193B_BOVIN Protein FAM193B OS=Bos taurus OX=9913 GN=F...    32   6.9  
+sp|Q8N3J3|HROB_HUMAN Homologous recombination OB-fold protein OS...    32   7.0  
+sp|A1DFP5|VPS27_NEOFI Vacuolar protein sorting-associated protei...    32   7.2  
+sp|P42694|HELZ_HUMAN Probable helicase with zinc finger domain O...    32   7.2  
+sp|P15336|ATF2_HUMAN Cyclic AMP-dependent transcription factor A...    32   7.2  
+sp|Q6W4X9|MUC6_HUMAN Mucin-6 OS=Homo sapiens OX=9606 GN=MUC6 PE=...    32   7.3  
+sp|Q00969|ATF2_RAT Cyclic AMP-dependent transcription factor ATF...    32   7.4  
+sp|Q8IZD4|DCP1B_HUMAN mRNA-decapping enzyme 1B OS=Homo sapiens O...    32   7.5  
+sp|Q9SHV7|MD15C_ARATH Probable mediator of RNA polymerase II tra...    32   7.9  
+sp|A6QNT8|SC24A_BOVIN Protein transport protein Sec24A OS=Bos ta...    32   8.2  
+sp|Q2UDY8|PAN1_ASPOR Actin cytoskeleton-regulatory complex prote...    32   8.3  
+sp|Q9WUI9|NCOA2_RAT Nuclear receptor coactivator 2 OS=Rattus nor...    32   8.4  
+sp|B6H3B2|VEA_PENRW Developmental and secondary metabolism regul...    32   8.5  
+sp|P53814|SMTN_HUMAN Smoothelin OS=Homo sapiens OX=9606 GN=SMTN ...    32   8.5  
+sp|B6E107|BZP1B_WHEAT bZIP transcription factor 1-B OS=Triticum ...    32   8.5  
+sp|Q7SZK7|OFD1_DANRE Centriole and centriolar satellite protein ...    32   8.6  
+sp|A0A3B6MPP5|BZP1D_WHEAT bZIP transcription factor 1-D OS=Triti...    32   8.7  
+sp|Q10669|MED23_CAEEL Mediator of RNA polymerase II transcriptio...    32   8.9  
+sp|Q5F3X8|SC31A_CHICK Protein transport protein Sec31A OS=Gallus...    32   9.0  
+sp|P16951|ATF2_MOUSE Cyclic AMP-dependent transcription factor A...    32   9.0  
+sp|Q8NEZ4|KMT2C_HUMAN Histone-lysine N-methyltransferase 2C OS=H...    32   9.1  
+sp|A5DTX3|SEC31_LODEL Protein transport protein SEC31 OS=Loddero...    32   9.2  
+sp|P23759|PAX7_HUMAN Paired box protein Pax-7 OS=Homo sapiens OX...    32   9.2  
+sp|O15027|SC16A_HUMAN Protein transport protein Sec16A OS=Homo s...    32   9.3  
+sp|A0A3B6KF13|BZP1A_WHEAT bZIP transcription factor 1-A OS=Triti...    32   9.5  
+sp|A7MKW3|ZIPA_CROS8 Cell division protein ZipA OS=Cronobacter s...    32   9.6  
+sp|Q0V8R5|IL16_BOVIN Pro-interleukin-16 OS=Bos taurus OX=9913 GN...    31   9.7  
+sp|Q8JJ26|SEBOX_DANRE Homeobox protein SEBOX OS=Danio rerio OX=7...    31   9.9  
+sp|A6H7H1|F120A_BOVIN Constitutive coactivator of PPAR-gamma-lik...    31   9.9  
+
+Searching..................................................Selenocysteine (U) at position 690 replaced by X
+Selenocysteine (U) at position 59 replaced by X
+Selenocysteine (U) at position 297 replaced by X
+Selenocysteine (U) at position 307 replaced by X
+Selenocysteine (U) at position 338 replaced by X
+Selenocysteine (U) at position 350 replaced by X
+Selenocysteine (U) at position 363 replaced by X
+Selenocysteine (U) at position 365 replaced by X
+Selenocysteine (U) at position 372 replaced by X
+Selenocysteine (U) at position 388 replaced by X
+Selenocysteine (U) at position 390 replaced by X
+Selenocysteine (U) at position 397 replaced by X
+Selenocysteine (U) at position 399 replaced by X
+done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P53361|TBP_SPOFR TATA-box-binding protein OS=Spodoptera frugi...   420   e-117
+sp|O45211|TBP_BOMMO TATA-box-binding protein OS=Bombyx mori OX=7...   416   e-115
+sp|P20227|TBP_DROME TATA-box-binding protein OS=Drosophila melan...   386   e-106
+sp|P29037|TBP_MOUSE TATA-box-binding protein OS=Mus musculus OX=...   364   e-100
+sp|Q6SJ95|TBPL2_MOUSE TATA box-binding protein-like 2 OS=Mus mus...   363   1e-99
+sp|P53360|TBP_MESAU TATA-box-binding protein OS=Mesocricetus aur...   361   4e-99
+sp|O17488|TBP_ARTSF TATA-box-binding protein OS=Artemia francisc...   361   5e-99
+sp|Q92146|TBP_TRIGA TATA-box-binding protein OS=Trimeresurus gra...   360   1e-98
+sp|A6H909|TBPL2_RAT TATA box-binding protein-like 2 OS=Rattus no...   359   1e-98
+sp|Q92117|TBP_PROFL TATA-box-binding protein OS=Protobothrops fl...   359   2e-98
+sp|Q5UE94|TBPL2_XENLA TATA box-binding protein-like 2 OS=Xenopus...   359   2e-98
+sp|O13270|TBP_CHICK TATA-box-binding protein OS=Gallus gallus OX...   357   5e-98
+sp|Q2HJ52|TBP_BOVIN TATA-box-binding protein OS=Bos taurus OX=99...   357   1e-97
+sp|Q9NHP5|TBP_DROVI TATA-box-binding protein OS=Drosophila viril...   355   3e-97
+sp|P20226|TBP_HUMAN TATA-box-binding protein OS=Homo sapiens OX=...   349   2e-95
+sp|Q4R4F5|TBP_MACFA TATA-box-binding protein OS=Macaca fascicula...   349   2e-95
+sp|Q7SXL3|TBP_DANRE TATA-box-binding protein OS=Danio rerio OX=7...   348   2e-95
+sp|A6H907|TBPL2_PANTR TATA box-binding protein-like 2 OS=Pan tro...   348   4e-95
+sp|Q6SJ94|TBPL2_TAKRU TATA box-binding protein-like 2 OS=Takifug...   347   6e-95
+sp|Q6SJ96|TBPL2_HUMAN TATA box-binding protein-like 2 OS=Homo sa...   347   7e-95
+sp|Q28GG8|TBP_XENTR TATA-box-binding protein OS=Xenopus tropical...   347   8e-95
+sp|P27633|TBP_XENLA TATA-box-binding protein OS=Xenopus laevis O...   344   4e-94
+sp|Q28DH2|TBPL2_XENTR TATA box-binding protein-like 2 OS=Xenopus...   344   4e-94
+sp|Q12731|TBP_EMENI TATA-box-binding protein OS=Emericella nidul...   343   7e-94
+sp|P26354|TBP_ACACA TATA-box-binding protein OS=Acanthamoeba cas...   341   6e-93
+sp|P32085|TBP_CAEEL TATA-box-binding protein OS=Caenorhabditis e...   337   6e-92
+sp|P17871|TBP_SCHPO TATA-box-binding protein OS=Schizosaccharomy...   335   4e-91
+sp|P13393|TBP_YEAST TATA-box-binding protein OS=Saccharomyces ce...   326   2e-88
+sp|Q1JPY4|TBPL2_DANRE TATA box-binding protein-like 2 OS=Danio r...   321   4e-87
+sp|P48511|TBP_MESCR TATA-box-binding protein OS=Mesembryanthemum...   320   8e-87
+sp|P26357|TBP_SOLTU TATA-box-binding protein OS=Solanum tuberosu...   320   1e-86
+sp|P93348|TBP_TOBAC TATA-box-binding protein OS=Nicotiana tabacu...   320   1e-86
+sp|Q8W0W4|TBP2_ORYSJ TATA-binding protein 2 OS=Oryza sativa subs...   320   1e-86
+sp|Q02879|TBP2_WHEAT TATA-box-binding protein 2 OS=Triticum aest...   319   1e-86
+sp|P91809|TBP_STRPU TATA-box-binding protein OS=Strongylocentrot...   319   2e-86
+sp|P26356|TBP1_WHEAT TATA-box-binding protein 1 OS=Triticum aest...   318   2e-86
+sp|Q42808|TBP_SOYBN TATA-box-binding protein OS=Glycine max OX=3...   318   4e-86
+sp|P50159|TBP2_MAIZE TATA-box-binding protein 2 OS=Zea mays OX=4...   317   7e-86
+sp|P50158|TBP1_MAIZE TATA-box-binding protein 1 OS=Zea mays OX=4...   316   1e-85
+sp|P28147|TBP1_ARATH TATA-box-binding protein 1 OS=Arabidopsis t...   316   2e-85
+sp|P28148|TBP2_ARATH TATA-box-binding protein 2 OS=Arabidopsis t...   315   4e-85
+sp|P46272|TBP_ACEPE TATA-box-binding protein OS=Acetabularia pen...   311   6e-84
+sp|O43133|TBP_CANAL TATA-box-binding protein OS=Candida albicans...   310   9e-84
+sp|Q27850|TBP_TETTH TATA-box-binding protein OS=Tetrahymena ther...   300   8e-81
+sp|P26355|TBP_DICDI TATA-box-binding protein OS=Dictyostelium di...   298   3e-80
+sp|Q27896|TRF_DROME TBP-related factor OS=Drosophila melanogaste...   283   2e-75
+sp|A7UFC2|TBPL1_ENTH1 TATA-box-binding protein-like 1 OS=Entamoe...   269   2e-71
+sp|A1RSQ1|TBP_PYRIL TATA-box-binding protein OS=Pyrobaculum isla...   269   2e-71
+sp|Q3ITB1|TBP_NATPD TATA-box-binding protein OS=Natronomonas pha...   268   3e-71
+sp|Q8ZVR0|TBP_PYRAE TATA-box-binding protein OS=Pyrobaculum aero...   267   1e-70
+sp|Q9HN56|TBPE_HALSA TATA-box-binding protein E OS=Halobacterium...   266   2e-70
+sp|B1Y949|TBP_PYRNV TATA-box-binding protein OS=Pyrobaculum neut...   265   2e-70
+sp|A3MV36|TBP_PYRCJ TATA-box-binding protein OS=Pyrobaculum cali...   264   6e-70
+sp|Q5V470|TBP_HALMA TATA-box-binding protein OS=Haloarcula maris...   263   1e-69
+sp|D4H071|TBP2_HALVD TATA-box-binding protein 2 OS=Haloferax vol...   262   2e-69
+sp|P52653|TBP1_ENTH1 TATA-box-binding protein 1 OS=Entamoeba his...   262   2e-69
+sp|P58177|TBP_PYROC TATA-box-binding protein OS=Pyrodictium occu...   261   5e-69
+sp|Q52366|TBP_THEKO TATA-box-binding protein OS=Thermococcus kod...   260   1e-68
+sp|B6YXI6|TBP_THEON TATA-box-binding protein OS=Thermococcus onn...   260   1e-68
+sp|O29874|TBP_ARCFU TATA-box-binding protein OS=Archaeoglobus fu...   258   3e-68
+sp|Q56253|TBP_THECE TATA-box-binding protein OS=Thermococcus cel...   258   4e-68
+sp|D4GZA2|TBP1_HALVD TATA-box-binding protein 1 OS=Haloferax vol...   258   6e-68
+sp|Q9P9I9|TBP_METTL TATA-box-binding protein OS=Methanothermococ...   257   8e-68
+sp|Q9UWN7|TBP_SULAC TATA-box-binding protein OS=Sulfolobus acido...   257   1e-67
+sp|C4M7H7|TBP2_ENTH1 TATA-box-binding protein 2 OS=Entamoeba his...   256   1e-67
+sp|Q9V024|TBP_PYRAB TATA-box-binding protein OS=Pyrococcus abyss...   256   2e-67
+sp|O58737|TBP_PYRHO TATA-box-binding protein OS=Pyrococcus horik...   255   3e-67
+sp|C6A0R1|TBP_THESM TATA-box-binding protein OS=Thermococcus sib...   254   8e-67
+sp|A9A840|TBP_METM6 TATA-box-binding protein OS=Methanococcus ma...   253   1e-66
+sp|P62001|TBP_PYRWO TATA-box-binding protein OS=Pyrococcus woese...   253   1e-66
+sp|P62000|TBP_PYRFU TATA-box-binding protein OS=Pyrococcus furio...   253   1e-66
+sp|A0B5H8|TBP_METTP TATA-box-binding protein OS=Methanothrix the...   253   1e-66
+sp|A6VIP7|TBP_METM7 TATA-box-binding protein OS=Methanococcus ma...   252   2e-66
+sp|Q971V3|TBP_SULTO TATA-box-binding protein OS=Sulfurisphaera t...   252   2e-66
+sp|Q978J5|TBP_THEVO TATA-box-binding protein OS=Thermoplasma vol...   252   2e-66
+sp|O27664|TBP_METTH TATA-box-binding protein OS=Methanothermobac...   252   2e-66
+sp|Q57930|TBP_METJA TATA-box-binding protein OS=Methanocaldococc...   252   2e-66
+sp|P58178|TBP_SACS2 TATA-box-binding protein OS=Saccharolobus so...   251   4e-66
+sp|Q55031|TBP_SACSH TATA-box-binding protein OS=Saccharolobus sh...   251   4e-66
+sp|Q6M0L3|TBP_METMP TATA-box-binding protein OS=Methanococcus ma...   251   6e-66
+sp|A6UTF6|TBP_META3 TATA-box-binding protein OS=Methanococcus ae...   251   7e-66
+sp|A6URP5|TBP_METVS TATA-box-binding protein OS=Methanococcus va...   250   9e-66
+sp|Q9HLM8|TBP_THEAC TATA-box-binding protein OS=Thermoplasma aci...   250   1e-65
+sp|Q6L1R1|TBP_PICTO TATA-box-binding protein OS=Picrophilus torr...   249   2e-65
+sp|Q9HHE9|TBPF_HALSA TATA-box-binding protein F OS=Halobacterium...   248   6e-65
+sp|Q48325|TBPB_HALSA TATA-box-binding protein B OS=Halobacterium...   248   6e-65
+sp|O52018|TBPD_HALSA TATA-box-binding protein D OS=Halobacterium...   246   2e-64
+sp|Q8TI26|TBP1_METAC TATA-box-binding protein 1 OS=Methanosarcin...   244   8e-64
+sp|A5UL47|TBP_METS3 TATA-box-binding protein OS=Methanobrevibact...   244   9e-64
+sp|Q2NFC3|TBP_METST TATA-box-binding protein OS=Methanosphaera s...   242   3e-63
+sp|Q8PY36|TBP2_METMA TATA-box-binding protein 2 OS=Methanosarcin...   242   3e-63
+sp|Q8PY37|TBP1_METMA TATA-box-binding protein 1 OS=Methanosarcin...   241   7e-63
+sp|B2D6P4|TBPL1_CAEEL TATA box-binding protein-like 1 OS=Caenorh...   239   2e-62
+sp|Q9YAT1|TBP_AERPE TATA-box-binding protein OS=Aeropyrum pernix...   239   3e-62
+sp|Q8TTZ7|TBP3_METAC TATA-box-binding protein 3 OS=Methanosarcin...   237   1e-61
+sp|Q8PUZ4|TBP3_METMA TATA-box-binding protein 3 OS=Methanosarcin...   236   2e-61
+sp|Q5R7U8|TBPL1_PONAB TATA box-binding protein-like 1 OS=Pongo a...   234   8e-61
+sp|P62340|TBPL1_MOUSE TATA box-binding protein-like 1 OS=Mus mus...   234   8e-61
+sp|Q4R848|TBPL1_MACFA TATA box-binding protein-like 1 OS=Macaca ...   234   8e-61
+sp|P62380|TBPL1_HUMAN TATA box-binding protein-like 1 OS=Homo sa...   234   8e-61
+sp|Q32LB1|TBPL1_BOVIN TATA box-binding protein-like 1 OS=Bos tau...   234   8e-61
+sp|Q9YGV8|TBPL1_CHICK TATA box-binding protein-like 1 OS=Gallus ...   233   2e-60
+sp|Q8TU94|TBP2_METAC TATA-box-binding protein 2 OS=Methanosarcin...   231   4e-60
+sp|Q9W6Z2|TBPL1_XENLA TATA box-binding protein-like 1 OS=Xenopus...   231   6e-60
+sp|Q6DIY4|TBPL1_XENTR TATA box-binding protein-like 1 OS=Xenopus...   229   3e-59
+sp|Q8TX38|TBP_METKA TATA-box-binding protein OS=Methanopyrus kan...   221   4e-57
+sp|Q5U385|TBPL1_DANRE TATA box-binding protein-like 1 OS=Danio r...   221   7e-57
+sp|P32086|TBP_PLAFA TATA-box-binding protein OS=Plasmodium falci...   220   1e-56
+sp|O52004|TBPC_HALSA TATA-box-binding protein C OS=Halobacterium...   195   3e-49
+sp|O74045|TBP_CENSY TATA-box-binding protein OS=Cenarchaeum symb...   151   5e-36
+sp|Q5UQP9|TBPL_MIMIV TATA-box-binding protein-like OS=Acanthamoe...   115   4e-25
+sp|Q8TDT2|GP152_HUMAN Probable G-protein coupled receptor 152 OS...    88   7e-17
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9DDT5|SPT5H_DANRE Transcription elongation factor SPT5 OS=Da...    44   0.001
+sp|Q8BXS7|GP152_MOUSE Probable G-protein coupled receptor 152 OS...    43   0.003
+sp|Q10669|MED23_CAEEL Mediator of RNA polymerase II transcriptio...    43   0.003
+sp|Q4P5J4|HSE1_USTMA Class E vacuolar protein-sorting machinery ...    43   0.003
+sp|P40568|DSN1_YEAST Kinetochore-associated protein DSN1 OS=Sacc...    42   0.006
+sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 GN=...    42   0.006
+sp|E9Q4N7|ARI1B_MOUSE AT-rich interactive domain-containing prot...    42   0.008
+sp|F1MAD2|INADL_RAT InaD-like protein OS=Rattus norvegicus OX=10...    41   0.011
+sp|Q8BV57|SRCRL_MOUSE Soluble scavenger receptor cysteine-rich d...    41   0.012
+sp|Q16U49|MED14_AEDAE Mediator of RNA polymerase II transcriptio...    41   0.013
+sp|D3ZGB1|NFAT5_RAT Nuclear factor of activated T-cells 5 OS=Rat...    40   0.021
+sp|Q8NFD5|ARI1B_HUMAN AT-rich interactive domain-containing prot...    40   0.025
+sp|Q9QYX7|PCLO_MOUSE Protein piccolo OS=Mus musculus OX=10090 GN...    40   0.026
+sp|Q8CGB6|TENS2_MOUSE Tensin-2 OS=Mus musculus OX=10090 GN=Tns2 ...    40   0.027
+sp|Q8CJ12|AGRG2_MOUSE Adhesion G-protein coupled receptor G2 OS=...    40   0.031
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    39   0.035
+sp|Q9DC04|RGS3_MOUSE Regulator of G-protein signaling 3 OS=Mus m...    39   0.036
+sp|Q9WV30|NFAT5_MOUSE Nuclear factor of activated T-cells 5 OS=M...    39   0.036
+sp|P48562|CLA4_YEAST Serine/threonine-protein kinase CLA4 OS=Sac...    39   0.041
+sp|A4QTV1|VPS27_MAGO7 Vacuolar protein sorting-associated protei...    39   0.047
+sp|Q80UE6|WNK4_MOUSE Serine/threonine-protein kinase WNK4 OS=Mus...    39   0.055
+sp|Q62523|ZYX_MOUSE Zyxin OS=Mus musculus OX=10090 GN=Zyx PE=1 SV=2    39   0.066
+sp|Q70XJ9|LEVS_FRUSA Levansucrase OS=Fructilactobacillus sanfran...    39   0.075
+sp|Q9BX69|CARD6_HUMAN Caspase recruitment domain-containing prot...    38   0.080
+sp|A7RRJ0|FEN1_NEMVE Flap endonuclease 1 OS=Nematostella vectens...    38   0.082
+sp|G3MWR8|MICA3_BOVIN [F-actin]-monooxygenase MICAL3 OS=Bos taur...    38   0.11 
+sp|B8FHX0|SECA_DESAL Protein translocase subunit SecA OS=Desulfa...    38   0.11 
+sp|P49796|RGS3_HUMAN Regulator of G-protein signaling 3 OS=Homo ...    38   0.11 
+sp|A5DTX3|SEC31_LODEL Protein transport protein SEC31 OS=Loddero...    38   0.12 
+sp|Q8BU00|IKZF5_MOUSE Zinc finger protein Pegasus OS=Mus musculu...    38   0.13 
+sp|Q9XIB6|PLRX2_ARATH Pollen-specific leucine-rich repeat extens...    38   0.13 
+sp|P16356|RPB1_CAEEL DNA-directed RNA polymerase II subunit RPB1...    37   0.15 
+sp|Q0WPF2|PCFS4_ARATH Polyadenylation and cleavage factor homolo...    37   0.15 
+sp|Q7SYD5|SC31A_DANRE Protein transport protein Sec31A OS=Danio ...    37   0.15 
+sp|Q9UJ55|MAGL2_HUMAN MAGE-like protein 2 OS=Homo sapiens OX=960...    37   0.16 
+sp|A7TSV7|PAN1_VANPO Actin cytoskeleton-regulatory complex prote...    37   0.17 
+sp|Q62901|RERE_RAT Arginine-glutamic acid dipeptide repeats prot...    37   0.18 
+sp|Q9H0K1|SIK2_HUMAN Serine/threonine-protein kinase SIK2 OS=Hom...    37   0.19 
+sp|D3ZCM9|DAAF3_RAT Dynein axonemal assembly factor 3 OS=Rattus ...    37   0.19 
+sp|P13590|NCAM1_CHICK Neural cell adhesion molecule 1 OS=Gallus ...    37   0.19 
+sp|Q7TQH0|ATX2L_MOUSE Ataxin-2-like protein OS=Mus musculus OX=1...    37   0.20 
+sp|Q54QC0|MYBU_DICDI Myb-like protein U OS=Dictyostelium discoid...    37   0.21 
+sp|Q0P5J0|QRIC1_BOVIN Transcriptional regulator QRICH1 OS=Bos ta...    37   0.21 
+sp|Q12830|BPTF_HUMAN Nucleosome-remodeling factor subunit BPTF O...    37   0.21 
+sp|Q5REX1|SIK2_PONAB Serine/threonine-protein kinase SIK2 OS=Pon...    37   0.21 
+sp|A6NE01|F186A_HUMAN Protein FAM186A OS=Homo sapiens OX=9606 GN...    37   0.22 
+sp|Q3UH66|WNK2_MOUSE Serine/threonine-protein kinase WNK2 OS=Mus...    37   0.22 
+sp|Q80TZ9|RERE_MOUSE Arginine-glutamic acid dipeptide repeats pr...    37   0.22 
+sp|C0ZPK5|FTSH_RHOE4 ATP-dependent zinc metalloprotease FtsH OS=...    37   0.23 
+sp|G1UBC2|PGA47_CANAL Cell wall adhesin EAP1 OS=Candida albicans...    37   0.23 
+sp|S0E3H0|WOR1_GIBF5 Global transcription regulator sge1 OS=Gibb...    37   0.24 
+sp|P09279|SCP_VZVD Small capsomere-interacting protein OS=Varice...    37   0.25 
+sp|Q8STF6|DYC1_CAEEL Dystrophin-like protein 1 OS=Caenorhabditis...    37   0.26 
+sp|Q8WWM7|ATX2L_HUMAN Ataxin-2-like protein OS=Homo sapiens OX=9...    37   0.26 
+sp|Q8R7B9|ARGJ_CALS4 Arginine biosynthesis bifunctional protein ...    37   0.26 
+sp|P48383|SAK1_SCHPO Protein sak1 OS=Schizosaccharomyces pombe (...    37   0.27 
+sp|Q8L860|TOL9_ARATH TOM1-like protein 9 OS=Arabidopsis thaliana...    37   0.28 
+sp|B2W978|ACUK_PYRTR Transcription activator of gluconeogenesis ...    37   0.28 
+sp|O94855|SC24D_HUMAN Protein transport protein Sec24D OS=Homo s...    36   0.33 
+sp|Q9U2M8|C2D1_CAEEL Coiled-coil and C2 domain-containing protei...    36   0.33 
+sp|Q8CHC8|ADNP2_MOUSE Activity-dependent neuroprotector homeobox...    36   0.33 
+sp|Q5AAU3|SEC31_CANAL Protein transport protein SEC31 OS=Candida...    36   0.34 
+sp|Q4WHP5|HSE1_ASPFU Class E vacuolar protein-sorting machinery ...    36   0.34 
+sp|Q9H3S7|PTN23_HUMAN Tyrosine-protein phosphatase non-receptor ...    36   0.36 
+sp|Q3UG20|KMT2E_MOUSE Inactive histone-lysine N-methyltransferas...    36   0.36 
+sp|Q9H5V7|IKZF5_HUMAN Zinc finger protein Pegasus OS=Homo sapien...    36   0.36 
+sp|Q9BXF3|CECR2_HUMAN Chromatin remodeling regulator CECR2 OS=Ho...    36   0.36 
+sp|Q2TBX7|CCD86_BOVIN Coiled-coil domain-containing protein 86 O...    36   0.37 
+sp|Q3UR85|MYRF_MOUSE Myelin regulatory factor OS=Mus musculus OX...    36   0.40 
+sp|A1DFN5|HSE1_NEOFI Class E vacuolar protein-sorting machinery ...    36   0.40 
+sp|Q5F3X8|SC31A_CHICK Protein transport protein Sec31A OS=Gallus...    36   0.41 
+sp|Q6DFF2|BRD4B_XENLA Bromodomain-containing protein 4B OS=Xenop...    36   0.43 
+sp|A6R7X5|PAN1_AJECN Actin cytoskeleton-regulatory complex prote...    36   0.45 
+sp|Q92793|CBP_HUMAN CREB-binding protein OS=Homo sapiens OX=9606...    36   0.47 
+sp|P50901|HOX3_BRAFL Homeobox protein HOX3 OS=Branchiostoma flor...    36   0.48 
+sp|Q8K4P0|WDR33_MOUSE pre-mRNA 3' end processing protein WDR33 O...    35   0.52 
+sp|P43146|DCC_HUMAN Netrin receptor DCC OS=Homo sapiens OX=9606 ...    35   0.53 
+sp|Q6ZM86|GRD2I_DANRE Delphilin OS=Danio rerio OX=7955 GN=grid2i...    35   0.55 
+sp|Q74ZX0|CSF1_ASHGO Protein CSF1 OS=Ashbya gossypii (strain ATC...    35   0.56 
+sp|Q9JIH7|WNK1_RAT Serine/threonine-protein kinase WNK1 OS=Rattu...    35   0.57 
+sp|Q6YXY2|HACL1_ORYSJ Probable histone acetyltransferase HAC-lik...    35   0.58 
+sp|A0A087WPF7|AUTS2_MOUSE Autism susceptibility gene 2 protein h...    35   0.59 
+sp|P83741|WNK1_MOUSE Serine/threonine-protein kinase WNK1 OS=Mus...    35   0.60 
+sp|B0UYT5|MFD6B_DANRE Major facilitator superfamily domain-conta...    35   0.61 
+sp|Q9XUS2|MED29_CAEEL Mediator of RNA polymerase II transcriptio...    35   0.62 
+sp|F1QBY1|NIPLB_DANRE Nipped-B-like protein B OS=Danio rerio OX=...    35   0.62 
+sp|P15336|ATF2_HUMAN Cyclic AMP-dependent transcription factor A...    35   0.63 
+sp|P56720|SRBP1_RAT Sterol regulatory element-binding protein 1 ...    35   0.64 
+sp|Q5ZI08|SPT5H_CHICK Transcription elongation factor SPT5 OS=Ga...    35   0.66 
+sp|P51531|SMCA2_HUMAN Probable global transcription activator SN...    35   0.66 
+sp|B1HW99|RNH3_LYSSC Ribonuclease HIII OS=Lysinibacillus sphaeri...    35   0.73 
+sp|Q15797|SMAD1_HUMAN Mothers against decapentaplegic homolog 1 ...    35   0.73 
+sp|Q99743|NPAS2_HUMAN Neuronal PAS domain-containing protein 2 O...    35   0.73 
+sp|Q9I962|SMAD1_COTJA Mothers against decapentaplegic homolog 1 ...    35   0.74 
+sp|Q1JQA2|SMAD1_BOVIN Mothers against decapentaplegic homolog 1 ...    35   0.74 
+sp|O59780|YCN3_SCHPO Uncharacterized transcriptional regulatory ...    35   0.76 
+sp|Q00969|ATF2_RAT Cyclic AMP-dependent transcription factor ATF...    35   0.76 
+sp|Q7TSH6|SCAF4_MOUSE SR-related and CTD-associated factor 4 OS=...    35   0.80 
+sp|P49797|RGS3_RAT Regulator of G-protein signaling 3 OS=Rattus ...    35   0.80 
+sp|Q10156|LKH1_SCHPO Dual specificity protein kinase lkh1 OS=Sch...    35   0.82 
+sp|P16951|ATF2_MOUSE Cyclic AMP-dependent transcription factor A...    35   0.84 
+sp|Q63DQ8|RESA_BACCZ Thiol-disulfide oxidoreductase ResA OS=Baci...    35   0.92 
+sp|Q83470|P2A_SCPMV Polyprotein P2A OS=Southern cowpea mosaic vi...    35   0.93 
+sp|P15307|REL_MOUSE Proto-oncogene c-Rel OS=Mus musculus OX=1009...    35   0.93 
+sp|A5H447|ZYX_XENLA Zyxin OS=Xenopus laevis OX=8355 GN=zyx PE=1 ...    35   0.98 
+sp|B0G188|GTAP_DICDI GATA zinc finger domain-containing protein ...    35   0.99 
+sp|O35930|GP1BA_MOUSE Platelet glycoprotein Ib alpha chain OS=Mu...    35   1.0  
+sp|Q08D75|BRD4A_XENLA Bromodomain-containing protein 4A OS=Xenop...    35   1.0  
+sp|Q6GP15|MED25_XENLA Mediator of RNA polymerase II transcriptio...    35   1.0  
+sp|Q5R4F4|SC31A_PONAB Protein transport protein Sec31A OS=Pongo ...    35   1.0  
+sp|P35074|RPB1_CAEBR DNA-directed RNA polymerase II subunit RPB1...    35   1.0  
+sp|Q6ZRI0|OTOG_HUMAN Otogelin OS=Homo sapiens OX=9606 GN=OTOG PE...    35   1.1  
+sp|Q9P2R6|RERE_HUMAN Arginine-glutamic acid dipeptide repeats pr...    35   1.1  
+sp|Q6PDK2|KMT2D_MOUSE Histone-lysine N-methyltransferase 2D OS=M...    35   1.1  
+sp|Q8R5H6|WASF1_MOUSE Actin-binding protein WASF1 OS=Mus musculu...    34   1.1  
+sp|Q8IZD2|KMT2E_HUMAN Inactive histone-lysine N-methyltransferas...    34   1.2  
+sp|Q9UPA5|BSN_HUMAN Protein bassoon OS=Homo sapiens OX=9606 GN=B...    34   1.3  
+sp|Q09436|MEX6_CAEEL Zinc finger protein mex-6 OS=Caenorhabditis...    34   1.3  
+sp|Q6P1E1|ZMIZ1_MOUSE Zinc finger MIZ domain-containing protein ...    34   1.3  
+sp|Q8T3B9|SEM2_CAEEL Transcription factor sem-2 OS=Caenorhabditi...    34   1.3  
+sp|O88480|CABIN_RAT Calcineurin-binding protein cabin-1 OS=Rattu...    34   1.3  
+sp|P13622|NFIB_MESAU Nuclear factor 1 B-type OS=Mesocricetus aur...    34   1.3  
+sp|P97863|NFIB_MOUSE Nuclear factor 1 B-type OS=Mus musculus OX=...    34   1.4  
+sp|Q3L8U1|CHD9_HUMAN Chromodomain-helicase-DNA-binding protein 9...    34   1.4  
+sp|Q96J92|WNK4_HUMAN Serine/threonine-protein kinase WNK4 OS=Hom...    34   1.4  
+sp|P10210|SCAF_HHV11 Capsid scaffolding protein OS=Human herpesv...    34   1.4  
+sp|Q0CJU8|HSE1_ASPTN Class E vacuolar protein-sorting machinery ...    34   1.5  
+sp|Q5R405|SPT5H_PONAB Transcription elongation factor SPT5 OS=Po...    34   1.5  
+sp|P0CK31|RDRP_REOVD RNA-directed RNA polymerase lambda-3 OS=Reo...    34   1.5  
+sp|O13074|HXB4A_TAKRU Homeobox protein Hox-B4a OS=Takifugu rubri...    34   1.5  
+sp|P84996|ALEX_HUMAN Protein ALEX OS=Homo sapiens OX=9606 GN=GNA...    34   1.5  
+sp|O00267|SPT5H_HUMAN Transcription elongation factor SPT5 OS=Ho...    34   1.6  
+sp|Q7RTP6|MICA3_HUMAN [F-actin]-monooxygenase MICAL3 OS=Homo sap...    34   1.6  
+sp|Q6HL81|RESA_BACHK Thiol-disulfide oxidoreductase ResA OS=Baci...    34   1.6  
+sp|Q73B22|RESA_BACC1 Thiol-disulfide oxidoreductase ResA OS=Baci...    34   1.6  
+sp|O55201|SPT5H_MOUSE Transcription elongation factor SPT5 OS=Mu...    34   1.6  
+sp|Q9SIV5|C3H19_ARATH Zinc finger CCCH domain-containing protein...    34   1.6  
+sp|Q15772|SPEG_HUMAN Striated muscle preferentially expressed pr...    34   1.7  
+sp|P97588|SMAD1_RAT Mothers against decapentaplegic homolog 1 OS...    34   1.7  
+sp|O94602|YC8F_SCHPO Uncharacterized protein C622.15c OS=Schizos...    34   1.7  
+sp|A3DC27|RSGI2_ACET2 Anti-sigma-I factor RsgI2 OS=Acetivibrio t...    34   1.8  
+sp|Q62280|SSXT_MOUSE Protein SSXT OS=Mus musculus OX=10090 GN=Ss...    34   1.8  
+sp|B4QZU1|PDE6_DROSI cGMP-specific 3',5'-cyclic phosphodiesteras...    34   1.9  
+sp|O56860|GAG_FFV Gag polyprotein OS=Feline foamy virus OX=53182...    34   1.9  
+sp|A3KPW9|BAG6_DANRE Large proline-rich protein BAG6 OS=Danio re...    34   1.9  
+sp|Q15532|SSXT_HUMAN Protein SSXT OS=Homo sapiens OX=9606 GN=SS1...    34   1.9  
+sp|P0C656|MED12_CAEBR Mediator of RNA polymerase II transcriptio...    33   1.9  
+sp|Q8K3Q3|FOXN4_MOUSE Forkhead box protein N4 OS=Mus musculus OX...    33   1.9  
+sp|Q2GS33|VPS27_CHAGB Vacuolar protein sorting-associated protei...    33   2.0  
+sp|P34926|MAP1A_RAT Microtubule-associated protein 1A OS=Rattus ...    33   2.0  
+sp|Q9PU36|PCLO_CHICK Protein piccolo (Fragment) OS=Gallus gallus...    33   2.0  
+sp|Q6B4J5|EXSA_BACCE Spore coat assembly protein ExsA OS=Bacillu...    33   2.0  
+sp|O14994|SYN3_HUMAN Synapsin-3 OS=Homo sapiens OX=9606 GN=SYN3 ...    33   2.0  
+sp|P34266|PGL2_CAEEL P granule abnormality protein 2 OS=Caenorha...    33   2.0  
+sp|Q6GQ26|SRBP2_XENLA Sterol regulatory element-binding protein ...    33   2.1  
+sp|P70340|SMAD1_MOUSE Mothers against decapentaplegic homolog 1 ...    33   2.1  
+sp|A1DFP5|VPS27_NEOFI Vacuolar protein sorting-associated protei...    33   2.1  
+sp|P11137|MTAP2_HUMAN Microtubule-associated protein 2 OS=Homo s...    33   2.1  
+sp|Q5VT52|RPRD2_HUMAN Regulation of nuclear pre-mRNA domain-cont...    33   2.2  
+sp|Q3UTQ7|PRD10_MOUSE PR domain zinc finger protein 10 OS=Mus mu...    33   2.2  
+sp|A2R7P5|NST1_ASPNC Stress response protein nst1 OS=Aspergillus...    33   2.2  
+sp|Q0PVD8|SEC24_PICPA Protein transport protein SEC24 OS=Komagat...    33   2.2  
+sp|E7F1H9|YTHD2_DANRE YTH domain-containing family protein 2 OS=...    33   2.2  
+sp|Q767L8|MDC1_PIG Mediator of DNA damage checkpoint protein 1 O...    33   2.3  
+sp|O74423|ENT1_SCHPO Epsin-1 OS=Schizosaccharomyces pombe (strai...    33   2.3  
+sp|Q0IIJ3|WASF1_BOVIN Actin-binding protein WASF1 OS=Bos taurus ...    33   2.3  
+sp|O81765|PLRX4_ARATH Pollen-specific leucine-rich repeat extens...    33   2.5  
+sp|Q5A2K0|NST1_CANAL Stress response protein NST1 OS=Candida alb...    33   2.5  
+sp|Q75BK1|DCP2_ASHGO mRNA-decapping enzyme subunit 2 OS=Ashbya g...    33   2.6  
+sp|Q92558|WASF1_HUMAN Actin-binding protein WASF1 OS=Homo sapien...    33   2.6  
+sp|Q5NVG8|WASF1_PONAB Actin-binding protein WASF1 OS=Pongo abeli...    33   2.6  
+sp|Q1L8U8|STB1A_DANRE Histone-lysine N-methyltransferase SETDB1-...    33   2.7  
+sp|Q5RFQ1|SSXT_PONAB Protein SSXT OS=Pongo abelii OX=9601 GN=SS1...    33   2.7  
+sp|Q01443|SSP2_PLAYO Sporozoite surface protein 2 OS=Plasmodium ...    33   2.8  
+sp|Q84WV4|SC23A_ARATH Protein transport protein SEC23 A OS=Arabi...    33   2.8  
+sp|Q5BJU7|WASF1_RAT Actin-binding protein WASF1 OS=Rattus norveg...    33   2.9  
+sp|Q9LFT1|TBL21_ARATH Protein trichome birefringence-like 21 OS=...    33   3.0  
+sp|Q12778|FOXO1_HUMAN Forkhead box protein O1 OS=Homo sapiens OX...    33   3.0  
+sp|Q6DFV5|HELZ_MOUSE Probable helicase with zinc finger domain O...    33   3.1  
+sp|A8GHW6|RODZ_SERP5 Cytoskeleton protein RodZ OS=Serratia prote...    33   3.1  
+sp|Q86UU0|BCL9L_HUMAN B-cell CLL/lymphoma 9-like protein OS=Homo...    33   3.1  
+sp|Q6ZUB0|S31D4_HUMAN Spermatogenesis-associated protein 31D4 OS...    33   3.1  
+sp|P0C874|S31D3_HUMAN Spermatogenesis-associated protein 31D3 OS...    33   3.1  
+sp|W7LYY0|STUA_GIBM7 Cell pattern formation-associated protein S...    33   3.2  
+sp|Q0V8R5|IL16_BOVIN Pro-interleukin-16 OS=Bos taurus OX=9913 GN...    33   3.2  
+sp|O70441|SYN3_RAT Synapsin-3 OS=Rattus norvegicus OX=10116 GN=S...    33   3.2  
+sp|A0A1S3C4H6|IF4G_CUCME Eukaryotic translation initiation facto...    33   3.2  
+sp|Q9DF69|CSPG5_CHICK Chondroitin sulfate proteoglycan 5 OS=Gall...    33   3.3  
+sp|P97454|SMAD5_MOUSE Mothers against decapentaplegic homolog 5 ...    33   3.3  
+sp|P17599|SYN1_BOVIN Synapsin-1 OS=Bos taurus OX=9913 GN=SYN1 PE...    33   3.4  
+sp|Q752T7|MED3_ASHGO Mediator of RNA polymerase II transcription...    33   3.5  
+sp|A5D7L8|PERM1_BOVIN PGC-1 and ERR-induced regulator in muscle ...    33   3.7  
+sp|G4N5X8|VEA_MAGO7 Developmental and secondary metabolism regul...    33   3.8  
+sp|Q0VCL6|NFIB_BOVIN Nuclear factor 1 B-type OS=Bos taurus OX=99...    33   3.8  
+sp|Q8IZD4|DCP1B_HUMAN mRNA-decapping enzyme 1B OS=Homo sapiens O...    33   3.8  
+sp|O13736|SLA1_SCHPO Actin cytoskeleton-regulatory complex prote...    33   3.8  
+sp|Q8CFY5|COX10_MOUSE Protoheme IX farnesyltransferase, mitochon...    33   3.9  
+sp|Q8WXX7|AUTS2_HUMAN Autism susceptibility gene 2 protein OS=Ho...    33   3.9  
+sp|Q9Y2K5|R3HD2_HUMAN R3H domain-containing protein 2 OS=Homo sa...    33   4.0  
+sp|Q6IMN6|CAPR2_HUMAN Caprin-2 OS=Homo sapiens OX=9606 GN=CAPRIN...    33   4.0  
+sp|Q67FY2|BCL9L_MOUSE B-cell CLL/lymphoma 9-like protein OS=Mus ...    33   4.0  
+sp|Q17R89|RHG44_HUMAN Rho GTPase-activating protein 44 OS=Homo s...    33   4.1  
+sp|Q8JZM8|MUC4_MOUSE Mucin-4 OS=Mus musculus OX=10090 GN=Muc4 PE...    33   4.2  
+sp|Q9JKS4|LDB3_MOUSE LIM domain-binding protein 3 OS=Mus musculu...    33   4.2  
+sp|P22579|SIN3_YEAST Transcriptional regulatory protein SIN3 OS=...    33   4.2  
+sp|Q92954|PRG4_HUMAN Proteoglycan 4 OS=Homo sapiens OX=9606 GN=P...    33   4.2  
+sp|A4IFM7|MYLK2_BOVIN Myosin light chain kinase 2, skeletal/card...    33   4.2  
+sp|Q6E2N3|TRI33_DANRE E3 ubiquitin-protein ligase TRIM33 OS=Dani...    32   4.3  
+sp|A8FG15|RNH3_BACP2 Ribonuclease HIII OS=Bacillus pumilus (stra...    32   4.4  
+sp|Q9BX66|SRBS1_HUMAN Sorbin and SH3 domain-containing protein 1...    32   4.5  
+sp|Q8BJI4|PO6F2_MOUSE POU domain, class 6, transcription factor ...    32   4.6  
+sp|P45481|CBP_MOUSE Histone lysine acetyltransferase CREBBP OS=M...    32   4.6  
+sp|Q6JHU9|CBP_RAT Histone lysine acetyltransferase CREBBP OS=Rat...    32   4.6  
+sp|P0DW16|RBM20_PIG RNA-binding protein 20 OS=Sus scrofa OX=9823...    32   4.6  
+sp|Q8JZP2|SYN3_MOUSE Synapsin-3 OS=Mus musculus OX=10090 GN=Syn3...    32   4.7  
+sp|Q14686|NCOA6_HUMAN Nuclear receptor coactivator 6 OS=Homo sap...    32   4.7  
+sp|Q10124|PQE1_CAEEL Putative RNA exonuclease pqe-1 OS=Caenorhab...    32   5.0  
+sp|Q96JM3|CHAP1_HUMAN Chromosome alignment-maintaining phosphopr...    32   5.0  
+sp|P75330|P30_MYCPN P30 adhesin OS=Mycoplasma pneumoniae (strain...    32   5.1  
+sp|Q7S4N5|MCA1B_NEUCR Metacaspase-1B OS=Neurospora crassa (strai...    32   5.1  
+sp|O00712|NFIB_HUMAN Nuclear factor 1 B-type OS=Homo sapiens OX=...    32   5.1  
+sp|Q3SZL6|DCP1B_BOVIN mRNA-decapping enzyme 1B OS=Bos taurus OX=...    32   5.2  
+sp|A7EKZ0|PAN1_SCLS1 Actin cytoskeleton-regulatory complex prote...    32   5.2  
+sp|Q95QI7|DAF3_CAEEL Smad protein daf-3 OS=Caenorhabditis elegan...    32   5.2  
+sp|Q10109|LEM2_SCHPO Lap-Emerin-Man domain protein 2 OS=Schizosa...    32   5.3  
+sp|Q9P2D1|CHD7_HUMAN Chromodomain-helicase-DNA-binding protein 7...    32   5.3  
+sp|Q59QW5|FLO8_CANAL Transcriptional regulator of filamentous gr...    32   5.4  
+sp|Q9H4A3|WNK1_HUMAN Serine/threonine-protein kinase WNK1 OS=Hom...    32   5.5  
+sp|G4NEE4|VELC_MAGO7 Sexual development regulator VELC OS=Magnap...    32   5.5  
+sp|Q83QN9|ZIPA_SHIFL Cell division protein ZipA OS=Shigella flex...    32   5.5  
+sp|Q99PP7|TRI33_MOUSE E3 ubiquitin-protein ligase TRIM33 OS=Mus ...    32   5.6  
+sp|A7Z019|SMCA4_BOVIN Transcription activator BRG1 OS=Bos taurus...    32   5.6  
+sp|O60187|SID4_SCHPO Septation initiation protein sid4 OS=Schizo...    32   5.8  
+sp|Q49417|P32_MYCGE P32 adhesin OS=Mycoplasma genitalium (strain...    32   6.0  
+sp|Q8ZN53|RODZ_SALTY Cytoskeleton protein RodZ OS=Salmonella typ...    32   6.0  
+sp|B5BAY4|RODZ_SALPK Cytoskeleton protein RodZ OS=Salmonella par...    32   6.0  
+sp|A9N200|RODZ_SALPB Cytoskeleton protein RodZ OS=Salmonella par...    32   6.0  
+sp|Q5PNI3|RODZ_SALPA Cytoskeleton protein RodZ OS=Salmonella par...    32   6.0  
+sp|B5R583|RODZ_SALEP Cytoskeleton protein RodZ OS=Salmonella ent...    32   6.0  
+sp|B5FR64|RODZ_SALDC Cytoskeleton protein RodZ OS=Salmonella dub...    32   6.0  
+sp|B5F199|RODZ_SALA4 Cytoskeleton protein RodZ OS=Salmonella ago...    32   6.0  
+sp|P48681|NEST_HUMAN Nestin OS=Homo sapiens OX=9606 GN=NES PE=1 ...    32   6.1  
+sp|C0PYM9|RODZ_SALPC Cytoskeleton protein RodZ OS=Salmonella par...    32   6.2  
+sp|B4TD94|RODZ_SALHS Cytoskeleton protein RodZ OS=Salmonella hei...    32   6.2  
+sp|Q57LI5|RODZ_SALCH Cytoskeleton protein RodZ OS=Salmonella cho...    32   6.2  
+sp|Q60YF6|MED29_CAEBR Mediator of RNA polymerase II transcriptio...    32   6.3  
+sp|Q9AJ37|SCA4_RICFE Antigenic heat-stable 120 kDa protein OS=Ri...    32   6.3  
+sp|Q8CHI8|EP400_MOUSE E1A-binding protein p400 OS=Mus musculus O...    32   6.3  
+sp|Q108T9|CTTB2_LOXAF Cortactin-binding protein 2 OS=Loxodonta a...    32   6.3  
+sp|A3LYL7|MYO1_PICST Myosin-1 OS=Scheffersomyces stipitis (strai...    32   6.6  
+sp|Q5H9F3|BCORL_HUMAN BCL-6 corepressor-like protein 1 OS=Homo s...    32   6.6  
+sp|Q6NLP2|IF31_ARATH Translation initiation factor IF3-1, mitoch...    32   6.8  
+sp|Q9UM47|NOTC3_HUMAN Neurogenic locus notch homolog protein 3 O...    32   7.0  
+sp|A1CEK6|HSE1_ASPCL Class E vacuolar protein-sorting machinery ...    32   7.3  
+sp|Q8CHH5|BICRL_MOUSE BRD4-interacting chromatin-remodeling comp...    32   7.3  
+sp|Q6NYI0|HERP2_DANRE Homocysteine-responsive endoplasmic reticu...    32   7.4  
+sp|Q9C9Y1|TOL8_ARATH TOM1-like protein 8 OS=Arabidopsis thaliana...    32   7.5  
+sp|Q6CPW4|MSS11_KLULA Transcription activator MSS11 OS=Kluyverom...    32   7.5  
+sp|Q5AYL5|SEC16_EMENI COPII coat assembly protein sec16 OS=Emeri...    32   7.6  
+sp|Q149B8|PERM1_MOUSE PGC-1 and ERR-induced regulator in muscle ...    32   7.7  
+sp|F4JT98|SLK3_ARATH Probable transcriptional regulator SLK3 OS=...    32   7.8  
+sp|Q6PIJ4|NFRKB_MOUSE Nuclear factor related to kappa-B-binding ...    32   7.9  
+sp|Q4X0M4|SEC31_ASPFU Protein transport protein sec31 OS=Aspergi...    32   8.0  
+sp|Q6ZU69|S31F1_HUMAN Protein SPATA31F1 OS=Homo sapiens OX=9606 ...    32   8.2  
+sp|Q8NDX5|PHC3_HUMAN Polyhomeotic-like protein 3 OS=Homo sapiens...    32   8.2  
+sp|Q4R1B9|STUA_MAGOR Cell pattern formation-associated protein M...    32   8.4  
+sp|G4NF05|STUA_MAGO7 Cell pattern formation-associated protein S...    32   8.4  
+sp|Q8BJH1|ZC21A_MOUSE Zinc finger C2HC domain-containing protein...    32   8.5  
+sp|P39769|PHP_DROME Polyhomeotic-proximal chromatin protein OS=D...    32   8.5  
+sp|A3KNA7|SRBP2_DANRE Sterol regulatory element-binding protein ...    32   8.6  
+sp|B2RWS6|EP300_MOUSE Histone acetyltransferase p300 OS=Mus musc...    32   8.8  
+sp|B5RCZ3|RODZ_SALG2 Cytoskeleton protein RodZ OS=Salmonella gal...    32   8.9  
+sp|Q5A4X5|SKN7_CANAL Transcription factor SKN7 OS=Candida albica...    32   8.9  
+sp|Q5R413|DCP1B_PONAB mRNA-decapping enzyme 1B OS=Pongo abelii O...    32   8.9  
+sp|M2SQ20|VEA_COCH5 Developmental and secondary metabolism regul...    32   9.0  
+sp|Q6P539|F222B_MOUSE Protein FAM222B OS=Mus musculus OX=10090 G...    32   9.0  
+sp|J9VND4|PBP1_CRYNH PAB1-binding protein 1 OS=Cryptococcus neof...    32   9.1  
+sp|P03186|LTP_EBVB9 Large tegument protein deneddylase OS=Epstei...    32   9.2  
+sp|Q8IYB3|SRRM1_HUMAN Serine/arginine repetitive matrix protein ...    32   9.3  
+sp|Q14444|CAPR1_HUMAN Caprin-1 OS=Homo sapiens OX=9606 GN=CAPRIN...    32   9.3  
+sp|Q8TAQ2|SMRC2_HUMAN SWI/SNF complex subunit SMARCC2 OS=Homo sa...    31   9.6  
+sp|Q0U4Z8|VPS27_PHANO Vacuolar protein sorting-associated protei...    31   9.6  
+sp|A1A5R1|RFOX2_RAT RNA binding protein fox-1 homolog 2 OS=Rattu...    31   9.6  
+sp|O60244|MED14_HUMAN Mediator of RNA polymerase II transcriptio...    31   9.7  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.305    0.134    0.357 
+
+Lambda     K      H
+   0.267   0.0415    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 320,960,778
+Number of Sequences: 569516
+Number of extensions: 13185008
+Number of successful extensions: 125208
+Number of sequences better than 10.0: 2313
+Number of HSP's better than 10.0 without gapping: 2586
+Number of HSP's successfully gapped in prelim test: 2670
+Number of HSP's that attempted gapping in prelim test: 66476
+Number of HSP's gapped (non-prelim): 31877
+length of query: 309
+length of database: 205,866,895
+effective HSP length: 118
+effective length of query: 191
+effective length of database: 138,664,007
+effective search space: 26484825337
+effective search space used: 26484825337
+T: 11
+A: 40
+X1: 16 ( 7.0 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (20.9 bits)
+S2: 70 (31.6 bits)

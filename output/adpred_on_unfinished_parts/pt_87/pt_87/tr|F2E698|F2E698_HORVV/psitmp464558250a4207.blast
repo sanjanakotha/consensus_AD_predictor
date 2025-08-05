@@ -1,0 +1,558 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (832 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q8LGH4|CUL4_ARATH Cullin-4 OS=Arabidopsis thaliana OX=3702 GN...  1187   0.0  
+sp|A2A432|CUL4B_MOUSE Cullin-4B OS=Mus musculus OX=10090 GN=Cul4...   833   0.0  
+sp|Q13620|CUL4B_HUMAN Cullin-4B OS=Homo sapiens OX=9606 GN=CUL4B...   833   0.0  
+sp|Q13619|CUL4A_HUMAN Cullin-4A OS=Homo sapiens OX=9606 GN=CUL4A...   822   0.0  
+sp|Q3TCH7|CUL4A_MOUSE Cullin-4A OS=Mus musculus OX=10090 GN=Cul4...   807   0.0  
+sp|Q54CS2|CUL4_DICDI Cullin-4 OS=Dictyostelium discoideum OX=446...   677   0.0  
+sp|Q54NZ5|CUL3_DICDI Cullin-3 OS=Dictyostelium discoideum OX=446...   533   e-150
+sp|Q9C9L0|CUL3B_ARATH Cullin-3B OS=Arabidopsis thaliana OX=3702 ...   526   e-148
+sp|Q9ZVH4|CUL3A_ARATH Cullin-3A OS=Arabidopsis thaliana OX=3702 ...   526   e-148
+sp|Q6GPF3|CUL3B_XENLA Cullin-3-B OS=Xenopus laevis OX=8355 GN=cu...   491   e-137
+sp|A4IHP4|CUL3_XENTR Cullin-3 OS=Xenopus tropicalis OX=8364 GN=c...   489   e-137
+sp|Q6DE95|CUL3A_XENLA Cullin-3-A OS=Xenopus laevis OX=8355 GN=cu...   489   e-137
+sp|Q9JLV5|CUL3_MOUSE Cullin-3 OS=Mus musculus OX=10090 GN=Cul3 P...   488   e-136
+sp|B5DF89|CUL3_RAT Cullin-3 OS=Rattus norvegicus OX=10116 GN=Cul...   487   e-136
+sp|Q13618|CUL3_HUMAN Cullin-3 OS=Homo sapiens OX=9606 GN=CUL3 PE...   485   e-136
+sp|Q17391|CUL3_CAEEL Cullin-3 OS=Caenorhabditis elegans OX=6239 ...   401   e-110
+sp|Q5ZC88|CUL1_ORYSJ Cullin-1 OS=Oryza sativa subsp. japonica OX...   389   e-107
+sp|O14122|CUL4_SCHPO Cullin-4 OS=Schizosaccharomyces pombe (stra...   386   e-106
+sp|Q94AH6|CUL1_ARATH Cullin-1 OS=Arabidopsis thaliana OX=3702 GN...   380   e-104
+sp|Q09760|CUL3_SCHPO Cullin-3 OS=Schizosaccharomyces pombe (stra...   356   5e-97
+sp|Q17392|CUL4_CAEEL Cullin-4 OS=Caenorhabditis elegans OX=6239 ...   343   5e-93
+sp|Q9SRZ0|CUL2_ARATH Cullin-2 OS=Arabidopsis thaliana OX=3702 GN...   337   3e-91
+sp|O60999|CUL1_DICDI Cullin-1 OS=Dictyostelium discoideum OX=446...   318   1e-85
+sp|Q9WTX6|CUL1_MOUSE Cullin-1 OS=Mus musculus OX=10090 GN=Cul1 P...   310   3e-83
+sp|P0CH31|CLL1_ARATH Putative cullin-like protein 1 OS=Arabidops...   310   3e-83
+sp|Q5R4G6|CUL1_PONAB Cullin-1 OS=Pongo abelii OX=9601 GN=CUL1 PE...   310   4e-83
+sp|Q13616|CUL1_HUMAN Cullin-1 OS=Homo sapiens OX=9606 GN=CUL1 PE...   310   4e-83
+sp|O13790|CUL1_SCHPO Cullin-1 OS=Schizosaccharomyces pombe (stra...   285   9e-76
+sp|Q17389|CUL1_CAEEL Cullin-1 OS=Caenorhabditis elegans OX=6239 ...   285   1e-75
+sp|Q24311|CUL1_DROME Cullin homolog 1 OS=Drosophila melanogaster...   281   2e-74
+sp|Q9D4H8|CUL2_MOUSE Cullin-2 OS=Mus musculus OX=10090 GN=Cul2 P...   278   1e-73
+sp|Q5RCF3|CUL2_PONAB Cullin-2 OS=Pongo abelii OX=9601 GN=CUL2 PE...   275   1e-72
+sp|Q13617|CUL2_HUMAN Cullin-2 OS=Homo sapiens OX=9606 GN=CUL2 PE...   275   1e-72
+sp|Q9XZJ3|CUL2_DICDI Cullin-2 OS=Dictyostelium discoideum OX=446...   256   7e-67
+sp|Q54XF7|CUL5_DICDI Cullin-5 OS=Dictyostelium discoideum OX=446...   237   4e-61
+sp|Q17390|CUL2_CAEEL Cullin-2 OS=Caenorhabditis elegans OX=6239 ...   224   2e-57
+sp|Q93034|CUL5_HUMAN Cullin-5 OS=Homo sapiens OX=9606 GN=CUL5 PE...   222   1e-56
+sp|Q9JJ31|CUL5_RAT Cullin-5 OS=Rattus norvegicus OX=10116 GN=Cul...   221   2e-56
+sp|Q9D5V5|CUL5_MOUSE Cullin-5 OS=Mus musculus OX=10090 GN=Cul5 P...   221   2e-56
+sp|Q5RB36|CUL5_PONAB Cullin-5 OS=Pongo abelii OX=9601 GN=CUL5 PE...   220   3e-56
+sp|Q21346|CUL6_CAEEL Cullin-6 OS=Caenorhabditis elegans OX=6239 ...   220   4e-56
+sp|Q29425|CUL5_RABIT Cullin-5 OS=Oryctolagus cuniculus OX=9986 G...   216   4e-55
+sp|Q12018|CDC53_YEAST Cell division control protein 53 OS=Saccha...   205   1e-51
+sp|Q23639|CUL5_CAEEL Cullin-5 OS=Caenorhabditis elegans OX=6239 ...   197   4e-49
+sp|Q9SZ75|CLL5_ARATH Cullin-like protein 5 OS=Arabidopsis thalia...   174   2e-42
+sp|P53202|CUL3_YEAST Cullin-3 OS=Saccharomyces cerevisiae (strai...   154   4e-36
+sp|Q9STG3|CLL4_ARATH Putative cullin-like protein 4 OS=Arabidops...   112   2e-23
+sp|Q9XIE9|CLL2_ARATH Putative cullin-like protein 2 OS=Arabidops...    78   4e-13
+sp|Q8H1U5|APC2_ARATH Anaphase-promoting complex subunit 2 OS=Ara...    69   2e-10
+sp|Q8BZQ7|ANC2_MOUSE Anaphase-promoting complex subunit 2 OS=Mus...    67   6e-10
+sp|Q9UJX6|ANC2_HUMAN Anaphase-promoting complex subunit 2 OS=Hom...    66   1e-09
+sp|Q9XIE8|CLL3_ARATH Cullin-like protein 3 OS=Arabidopsis thalia...    64   7e-09
+sp|Q551S9|APC2_DICDI Anaphase-promoting complex subunit 2 OS=Dic...    50   9e-05
+sp|P47050|CUL8_YEAST Cullin-8 OS=Saccharomyces cerevisiae (strai...    47   5e-04
+sp|P34514|ANC2_CAEEL Anaphase-promoting complex subunit 2 OS=Cae...    45   0.002
+sp|Q5UQT0|YR337_MIMIV Uncharacterized cullin-like protein R337 O...    44   0.007
+sp|Q874R3|APC2_SCHPO Anaphase-promoting complex subunit 2 OS=Sch...    39   0.23 
+sp|Q8IZX4|TAF1L_HUMAN Transcription initiation factor TFIID subu...    38   0.34 
+sp|Q92805|GOGA1_HUMAN Golgin subfamily A member 1 OS=Homo sapien...    36   1.3  
+sp|O42365|HXA2B_DANRE Homeobox protein Hox-A2b OS=Danio rerio OX...    36   1.7  
+sp|Q9UT02|SEC7A_SCHPO Protein transport protein sec71 OS=Schizos...    34   4.9  
+sp|P0DMQ6|DHSO_CHICK Sorbitol dehydrogenase OS=Gallus gallus OX=...    33   7.1  
+sp|Q3A7Q8|SYS_SYNC1 Serine--tRNA ligase OS=Syntrophotalea carbin...    33   8.5  
+sp|Q9NJG9|SUZ12_DROME Polycomb protein Su(z)12 OS=Drosophila mel...    33   8.7  
+sp|Q6P752|TOIP2_RAT Torsin-1A-interacting protein 2 OS=Rattus no...    33   8.8  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q8LGH4|CUL4_ARATH Cullin-4 OS=Arabidopsis thaliana OX=3702 GN...   935   0.0  
+sp|Q3TCH7|CUL4A_MOUSE Cullin-4A OS=Mus musculus OX=10090 GN=Cul4...   935   0.0  
+sp|Q13619|CUL4A_HUMAN Cullin-4A OS=Homo sapiens OX=9606 GN=CUL4A...   935   0.0  
+sp|A2A432|CUL4B_MOUSE Cullin-4B OS=Mus musculus OX=10090 GN=Cul4...   915   0.0  
+sp|Q13620|CUL4B_HUMAN Cullin-4B OS=Homo sapiens OX=9606 GN=CUL4B...   915   0.0  
+sp|Q6DE95|CUL3A_XENLA Cullin-3-A OS=Xenopus laevis OX=8355 GN=cu...   835   0.0  
+sp|Q13618|CUL3_HUMAN Cullin-3 OS=Homo sapiens OX=9606 GN=CUL3 PE...   835   0.0  
+sp|B5DF89|CUL3_RAT Cullin-3 OS=Rattus norvegicus OX=10116 GN=Cul...   834   0.0  
+sp|Q6GPF3|CUL3B_XENLA Cullin-3-B OS=Xenopus laevis OX=8355 GN=cu...   834   0.0  
+sp|Q9JLV5|CUL3_MOUSE Cullin-3 OS=Mus musculus OX=10090 GN=Cul3 P...   834   0.0  
+sp|A4IHP4|CUL3_XENTR Cullin-3 OS=Xenopus tropicalis OX=8364 GN=c...   833   0.0  
+sp|Q9C9L0|CUL3B_ARATH Cullin-3B OS=Arabidopsis thaliana OX=3702 ...   830   0.0  
+sp|Q9ZVH4|CUL3A_ARATH Cullin-3A OS=Arabidopsis thaliana OX=3702 ...   828   0.0  
+sp|Q54NZ5|CUL3_DICDI Cullin-3 OS=Dictyostelium discoideum OX=446...   812   0.0  
+sp|Q94AH6|CUL1_ARATH Cullin-1 OS=Arabidopsis thaliana OX=3702 GN...   793   0.0  
+sp|Q5ZC88|CUL1_ORYSJ Cullin-1 OS=Oryza sativa subsp. japonica OX...   788   0.0  
+sp|Q54CS2|CUL4_DICDI Cullin-4 OS=Dictyostelium discoideum OX=446...   776   0.0  
+sp|Q17391|CUL3_CAEEL Cullin-3 OS=Caenorhabditis elegans OX=6239 ...   766   0.0  
+sp|Q5R4G6|CUL1_PONAB Cullin-1 OS=Pongo abelii OX=9601 GN=CUL1 PE...   764   0.0  
+sp|Q13616|CUL1_HUMAN Cullin-1 OS=Homo sapiens OX=9606 GN=CUL1 PE...   764   0.0  
+sp|Q9WTX6|CUL1_MOUSE Cullin-1 OS=Mus musculus OX=10090 GN=Cul1 P...   764   0.0  
+sp|Q9SRZ0|CUL2_ARATH Cullin-2 OS=Arabidopsis thaliana OX=3702 GN...   745   0.0  
+sp|O60999|CUL1_DICDI Cullin-1 OS=Dictyostelium discoideum OX=446...   739   0.0  
+sp|Q17392|CUL4_CAEEL Cullin-4 OS=Caenorhabditis elegans OX=6239 ...   729   0.0  
+sp|Q24311|CUL1_DROME Cullin homolog 1 OS=Drosophila melanogaster...   720   0.0  
+sp|P0CH31|CLL1_ARATH Putative cullin-like protein 1 OS=Arabidops...   719   0.0  
+sp|Q9D4H8|CUL2_MOUSE Cullin-2 OS=Mus musculus OX=10090 GN=Cul2 P...   700   0.0  
+sp|O13790|CUL1_SCHPO Cullin-1 OS=Schizosaccharomyces pombe (stra...   699   0.0  
+sp|Q17389|CUL1_CAEEL Cullin-1 OS=Caenorhabditis elegans OX=6239 ...   697   0.0  
+sp|Q5RCF3|CUL2_PONAB Cullin-2 OS=Pongo abelii OX=9601 GN=CUL2 PE...   690   0.0  
+sp|Q13617|CUL2_HUMAN Cullin-2 OS=Homo sapiens OX=9606 GN=CUL2 PE...   690   0.0  
+sp|Q09760|CUL3_SCHPO Cullin-3 OS=Schizosaccharomyces pombe (stra...   678   0.0  
+sp|Q9XZJ3|CUL2_DICDI Cullin-2 OS=Dictyostelium discoideum OX=446...   672   0.0  
+sp|Q17390|CUL2_CAEEL Cullin-2 OS=Caenorhabditis elegans OX=6239 ...   671   0.0  
+sp|O14122|CUL4_SCHPO Cullin-4 OS=Schizosaccharomyces pombe (stra...   645   0.0  
+sp|Q21346|CUL6_CAEEL Cullin-6 OS=Caenorhabditis elegans OX=6239 ...   642   0.0  
+sp|Q54XF7|CUL5_DICDI Cullin-5 OS=Dictyostelium discoideum OX=446...   583   e-165
+sp|Q12018|CDC53_YEAST Cell division control protein 53 OS=Saccha...   564   e-159
+sp|Q9JJ31|CUL5_RAT Cullin-5 OS=Rattus norvegicus OX=10116 GN=Cul...   556   e-157
+sp|Q93034|CUL5_HUMAN Cullin-5 OS=Homo sapiens OX=9606 GN=CUL5 PE...   556   e-157
+sp|Q5RB36|CUL5_PONAB Cullin-5 OS=Pongo abelii OX=9601 GN=CUL5 PE...   555   e-157
+sp|Q9D5V5|CUL5_MOUSE Cullin-5 OS=Mus musculus OX=10090 GN=Cul5 P...   553   e-156
+sp|Q29425|CUL5_RABIT Cullin-5 OS=Oryctolagus cuniculus OX=9986 G...   546   e-154
+sp|Q23639|CUL5_CAEEL Cullin-5 OS=Caenorhabditis elegans OX=6239 ...   523   e-147
+sp|P53202|CUL3_YEAST Cullin-3 OS=Saccharomyces cerevisiae (strai...   518   e-145
+sp|Q9SZ75|CLL5_ARATH Cullin-like protein 5 OS=Arabidopsis thalia...   303   4e-81
+sp|Q9XIE9|CLL2_ARATH Putative cullin-like protein 2 OS=Arabidops...   283   5e-75
+sp|Q9UJX6|ANC2_HUMAN Anaphase-promoting complex subunit 2 OS=Hom...   201   2e-50
+sp|Q9XIE8|CLL3_ARATH Cullin-like protein 3 OS=Arabidopsis thalia...   201   2e-50
+sp|Q8BZQ7|ANC2_MOUSE Anaphase-promoting complex subunit 2 OS=Mus...   200   5e-50
+sp|Q8H1U5|APC2_ARATH Anaphase-promoting complex subunit 2 OS=Ara...   193   7e-48
+sp|Q9STG3|CLL4_ARATH Putative cullin-like protein 4 OS=Arabidops...   182   1e-44
+sp|Q551S9|APC2_DICDI Anaphase-promoting complex subunit 2 OS=Dic...   158   1e-37
+sp|P47050|CUL8_YEAST Cullin-8 OS=Saccharomyces cerevisiae (strai...   135   1e-30
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8IWT3|CUL9_HUMAN Cullin-9 OS=Homo sapiens OX=9606 GN=CUL9 PE...   112   2e-23
+sp|P34514|ANC2_CAEEL Anaphase-promoting complex subunit 2 OS=Cae...   101   2e-20
+sp|Q80TT8|CUL9_MOUSE Cullin-9 OS=Mus musculus OX=10090 GN=Cul9 P...    99   2e-19
+sp|Q874R3|APC2_SCHPO Anaphase-promoting complex subunit 2 OS=Sch...    97   8e-19
+sp|Q14999|CUL7_HUMAN Cullin-7 OS=Homo sapiens OX=9606 GN=CUL7 PE...    86   2e-15
+sp|Q5RCJ3|CUL7_PONAB Cullin-7 OS=Pongo abelii OX=9601 GN=CUL7 PE...    85   2e-15
+sp|D3ZEF4|CUL7_RAT Cullin-7 OS=Rattus norvegicus OX=10116 GN=Cul...    77   4e-13
+sp|Q8VE73|CUL7_MOUSE Cullin-7 OS=Mus musculus OX=10090 GN=Cul7 P...    75   2e-12
+sp|Q8R0X2|CACL1_MOUSE CDK2-associated and cullin domain-containi...    63   1e-08
+sp|Q86Y37|CACL1_HUMAN CDK2-associated and cullin domain-containi...    62   2e-08
+sp|Q5XI53|CACL1_RAT CDK2-associated and cullin domain-containing...    61   3e-08
+sp|Q5UQT0|YR337_MIMIV Uncharacterized cullin-like protein R337 O...    58   4e-07
+sp|Q12440|APC2_YEAST Anaphase-promoting complex subunit 2 OS=Sac...    56   1e-06
+sp|Q92954|PRG4_HUMAN Proteoglycan 4 OS=Homo sapiens OX=9606 GN=P...    45   0.003
+sp|Q9TSV4|TCF19_PIG Transcription factor 19 OS=Sus scrofa OX=982...    45   0.003
+sp|Q2UMR9|IML1_ASPOR Vacuolar membrane-associated protein iml1 O...    44   0.004
+sp|A7EDF3|IRS4_SCLS1 Increased rDNA silencing protein 4 OS=Scler...    43   0.008
+sp|Q5BEN5|STU1_EMENI Protein stu1 OS=Emericella nidulans (strain...    43   0.009
+sp|O14273|YET4_SCHPO Meiotically up-regulated protein C8C9.04 OS...    43   0.012
+sp|Q06846|RP3A_BOVIN Rabphilin-3A OS=Bos taurus OX=9913 GN=RPH3A...    42   0.021
+sp|P59222|SREC2_MOUSE Scavenger receptor class F member 2 OS=Mus...    42   0.022
+sp|Q9Y2J0|RP3A_HUMAN Rabphilin-3A OS=Homo sapiens OX=9606 GN=RPH...    42   0.023
+sp|Q6B8L3|SECA_GRATL Protein translocase subunit SecA OS=Gracila...    42   0.029
+sp|Q6DFC2|CCD77_XENLA Coiled-coil domain-containing protein 77 O...    41   0.052
+sp|B4PIW8|UBP36_DROYA Ubiquitin carboxyl-terminal hydrolase 36 O...    41   0.055
+sp|A6QLF8|TM108_BOVIN Transmembrane protein 108 OS=Bos taurus OX...    40   0.067
+sp|Q8KIL1|SLDA_GLUTH Glycerol dehydrogenase large subunit OS=Glu...    40   0.078
+sp|O42365|HXA2B_DANRE Homeobox protein Hox-A2b OS=Danio rerio OX...    40   0.078
+sp|Q25490|APLP_MANSE Apolipophorins OS=Manduca sexta OX=7130 PE=...    40   0.089
+sp|Q5TM48|TCF19_MACMU Transcription factor 19 OS=Macaca mulatta ...    40   0.095
+sp|P36225|MAP4_BOVIN Microtubule-associated protein 4 OS=Bos tau...    40   0.10 
+sp|Q8IZC6|CORA1_HUMAN Collagen alpha-1(XXVII) chain OS=Homo sapi...    39   0.17 
+sp|B3NC86|UBP36_DROER Ubiquitin carboxyl-terminal hydrolase 36 O...    39   0.18 
+sp|C4P6S0|SHTAP_MOUSE Sperm head and tail associated protein OS=...    39   0.18 
+sp|Q9UF83|YM012_HUMAN Uncharacterized protein DKFZp434B061 OS=Ho...    39   0.19 
+sp|Q5PSV9|MDC1_MOUSE Mediator of DNA damage checkpoint protein 1...    39   0.20 
+sp|Q0UN57|PRP5_PHANO Pre-mRNA-processing ATP-dependent RNA helic...    39   0.21 
+sp|B4HUI5|UBP36_DROSE Ubiquitin carboxyl-terminal hydrolase 36 O...    39   0.21 
+sp|B4QIS3|UBP36_DROSI Ubiquitin carboxyl-terminal hydrolase 36 O...    38   0.23 
+sp|Q2RJM5|IF2_MOOTA Translation initiation factor IF-2 OS=Moorel...    38   0.24 
+sp|Q5TM68|MDC1_MACMU Mediator of DNA damage checkpoint protein 1...    38   0.28 
+sp|Q8L611|SC31B_ARATH Protein transport protein SEC31 homolog B ...    38   0.29 
+sp|Q9Y815|RSV2_SCHPO Zinc finger protein rsv2 OS=Schizosaccharom...    38   0.32 
+sp|B8HUA9|IF2_CYAP4 Translation initiation factor IF-2 OS=Cyanot...    38   0.33 
+sp|Q9VRP5|UBP36_DROME Ubiquitin carboxyl-terminal hydrolase 36 O...    38   0.35 
+sp|O13853|ITS3_SCHPO Phosphatidylinositol 4-phosphate 5-kinase i...    38   0.35 
+sp|Q5R5V7|ADDB_PONAB Beta-adducin OS=Pongo abelii OX=9601 GN=ADD...    38   0.37 
+sp|Q8K3Z9|PO121_MOUSE Nuclear envelope pore membrane protein POM...    38   0.37 
+sp|P35612|ADDB_HUMAN Beta-adducin OS=Homo sapiens OX=9606 GN=ADD...    38   0.37 
+sp|P35911|APCE_GALSU Phycobiliprotein ApcE OS=Galdieria sulphura...    38   0.38 
+sp|Q9KV38|COAA_VIBCH Pantothenate kinase OS=Vibrio cholerae sero...    38   0.39 
+sp|Q9H1K0|RBNS5_HUMAN Rabenosyn-5 OS=Homo sapiens OX=9606 GN=RBS...    38   0.42 
+sp|B2GUX4|UBP21_RAT Ubiquitin carboxyl-terminal hydrolase 21 OS=...    38   0.44 
+sp|B0USP0|SYV_HISS2 Valine--tRNA ligase OS=Histophilus somni (st...    38   0.45 
+sp|Q5U2M8|MDC1_RAT Mediator of DNA damage checkpoint protein 1 O...    38   0.47 
+sp|E9PAV3|NACAM_HUMAN Nascent polypeptide-associated complex sub...    38   0.48 
+sp|P17600|SYN1_HUMAN Synapsin-1 OS=Homo sapiens OX=9606 GN=SYN1 ...    37   0.49 
+sp|B7ECS8|BGL09_ORYSJ Putative beta-glucosidase 9 OS=Oryza sativ...    37   0.49 
+sp|O60244|MED14_HUMAN Mediator of RNA polymerase II transcriptio...    37   0.52 
+sp|Q6Y5D8|RHG10_MOUSE Rho GTPase-activating protein 10 OS=Mus mu...    37   0.53 
+sp|P40541|SCC3_YEAST Cohesin subunit SCC3 OS=Saccharomyces cerev...    37   0.59 
+sp|P25655|NOT1_YEAST General negative regulator of transcription...    37   0.67 
+sp|A1VKP8|HRCA_POLNA Heat-inducible transcription repressor HrcA...    37   0.68 
+sp|Q9NZT2|OGFR_HUMAN Opioid growth factor receptor OS=Homo sapie...    37   0.71 
+sp|A4VXE1|SECA_STRSY Protein translocase subunit SecA OS=Strepto...    37   0.73 
+sp|A4W3N7|SECA_STRS2 Protein translocase subunit SecA OS=Strepto...    37   0.73 
+sp|Q8XK30|GSHAB_CLOPE Glutathione biosynthesis bifunctional prot...    37   0.74 
+sp|Q9BX69|CARD6_HUMAN Caspase recruitment domain-containing prot...    37   0.76 
+sp|B9SCB6|TPS2_RICCO Probable terpene synthase 2 OS=Ricinus comm...    37   0.86 
+sp|Q12DY9|HRCA_POLSJ Heat-inducible transcription repressor HrcA...    37   0.92 
+sp|Q7V5M4|IF2_PROMM Translation initiation factor IF-2 OS=Prochl...    37   0.96 
+sp|O93602|ATF2_CHICK Cyclic AMP-dependent transcription factor A...    37   0.98 
+sp|Q8WXH0|SYNE2_HUMAN Nesprin-2 OS=Homo sapiens OX=9606 GN=SYNE2...    37   1.0  
+sp|O14019|HAL4_SCHPO Serine/threonine-protein kinase hal4 OS=Sch...    37   1.0  
+sp|O88282|BCL6B_MOUSE B-cell CLL/lymphoma 6 member B protein OS=...    37   1.1  
+sp|Q5JRC9|FA47A_HUMAN Protein FAM47A OS=Homo sapiens OX=9606 GN=...    36   1.1  
+sp|Q5ZLK6|KI18B_CHICK Kinesin-like protein KIF18B OS=Gallus gall...    36   1.2  
+sp|O14598|VCY1_HUMAN Testis-specific basic protein Y 1 OS=Homo s...    36   1.3  
+sp|P43247|MSH2_MOUSE DNA mismatch repair protein Msh2 OS=Mus mus...    36   1.4  
+sp|P78688|AREA_GIBFU Nitrogen regulatory protein areA OS=Gibbere...    36   1.4  
+sp|O15056|SYNJ2_HUMAN Synaptojanin-2 OS=Homo sapiens OX=9606 GN=...    36   1.5  
+sp|P33892|GCN1_YEAST eIF-2-alpha kinase activator GCN1 OS=Saccha...    36   1.6  
+sp|Q5FVR8|TBCC1_RAT TBCC domain-containing protein 1 OS=Rattus n...    36   1.7  
+sp|P02849|BAR1_CHITE Balbiani ring protein 1 (Fragment) OS=Chiro...    36   1.7  
+sp|P74876|DPO3X_SALTY DNA polymerase III subunit tau OS=Salmonel...    36   1.7  
+sp|P17599|SYN1_BOVIN Synapsin-1 OS=Bos taurus OX=9913 GN=SYN1 PE...    36   1.7  
+sp|P89474|ICP22_HHV2H E3 ubiquitin ligase ICP22 OS=Human herpesv...    36   1.8  
+sp|F1LMN3|E2F8_RAT Transcription factor E2F8 OS=Rattus norvegicu...    36   1.8  
+sp|Q1B4V6|KGD_MYCSS Multifunctional 2-oxoglutarate metabolism en...    36   1.8  
+sp|A1UK81|KGD_MYCSK Multifunctional 2-oxoglutarate metabolism en...    36   1.8  
+sp|O88935|SYN1_MOUSE Synapsin-1 OS=Mus musculus OX=10090 GN=Syn1...    36   1.8  
+sp|P46201|UTMP_BOVIN Uterine milk protein OS=Bos taurus OX=9913 ...    35   2.4  
+sp|P70670|NACAM_MOUSE Nascent polypeptide-associated complex sub...    35   2.4  
+sp|B1VYN5|IF2_STRGG Translation initiation factor IF-2 OS=Strept...    35   2.5  
+sp|A6LWI1|MIAB_CLOB8 tRNA-2-methylthio-N(6)-dimethylallyladenosi...    35   2.6  
+sp|O74526|KJ45_SCHPO Probable serine/threonine-protein kinase C7...    35   2.6  
+sp|A2ABV5|MED14_MOUSE Mediator of RNA polymerase II transcriptio...    35   2.9  
+sp|Q9UT02|SEC7A_SCHPO Protein transport protein sec71 OS=Schizos...    35   3.0  
+sp|P0DOD1|VE8E2_HPV63 Protein E8^E2C OS=Human papillomavirus typ...    35   3.1  
+sp|A4WH05|PSB1_PYRAR Proteasome subunit beta 1 OS=Pyrobaculum ar...    35   3.1  
+sp|Q9H6K5|PRR36_HUMAN Proline-rich protein 36 OS=Homo sapiens OX...    35   3.1  
+sp|Q8TE49|OTU7A_HUMAN OTU domain-containing protein 7A OS=Homo s...    35   3.2  
+sp|Q74H61|HRCA_GEOSL Heat-inducible transcription repressor HrcA...    35   3.2  
+sp|Q96T21|SEBP2_HUMAN Selenocysteine insertion sequence-binding ...    35   3.3  
+sp|Q9HAU5|RENT2_HUMAN Regulator of nonsense transcripts 2 OS=Hom...    35   3.5  
+sp|Q5JRA6|TGO1_HUMAN Transport and Golgi organization protein 1 ...    35   3.5  
+sp|Q9XYP7|GCP2_DROME Gamma-tubulin complex component 2 homolog O...    35   3.6  
+sp|Q9ESK9|RBCC1_MOUSE RB1-inducible coiled-coil protein 1 OS=Mus...    35   3.8  
+sp|P27546|MAP4_MOUSE Microtubule-associated protein 4 OS=Mus mus...    35   4.0  
+sp|Q07DW4|CTTB2_MUNRE Cortactin-binding protein 2 OS=Muntiacus r...    35   4.0  
+sp|Q09YJ3|CTTB2_MUNMU Cortactin-binding protein 2 OS=Muntiacus m...    35   4.0  
+sp|Q7Z2K8|GRIN1_HUMAN G protein-regulated inducer of neurite out...    34   4.2  
+sp|Q8WUA7|TB22A_HUMAN TBC1 domain family member 22A OS=Homo sapi...    34   4.3  
+sp|P47708|RP3A_MOUSE Rabphilin-3A OS=Mus musculus OX=10090 GN=Rp...    34   4.4  
+sp|Q6W4X9|MUC6_HUMAN Mucin-6 OS=Homo sapiens OX=9606 GN=MUC6 PE=...    34   4.4  
+sp|Q9FPR2|AGP18_ARATH Lysine-rich arabinogalactan protein 18 OS=...    34   4.7  
+sp|A7Z6W3|HRCA_BACVZ Heat-inducible transcription repressor HrcA...    34   4.8  
+sp|Q8FPA7|IF2_COREF Translation initiation factor IF-2 OS=Coryne...    34   5.7  
+sp|A8MGJ3|HTPG_ALKOO Chaperone protein HtpG OS=Alkaliphilus orem...    34   6.2  
+sp|O14994|SYN3_HUMAN Synapsin-3 OS=Homo sapiens OX=9606 GN=SYN3 ...    34   6.5  
+sp|Q4PBP6|NST1_USTMA Stress response protein NST1 OS=Ustilago ma...    33   7.2  
+sp|Q6AS54|NIKR_DESPS Putative nickel-responsive regulator OS=Des...    33   7.5  
+sp|P32844|SEC6_YEAST Exocyst complex component SEC6 OS=Saccharom...    33   7.6  
+sp|G3MWR8|MICA3_BOVIN [F-actin]-monooxygenase MICAL3 OS=Bos taur...    33   7.6  
+sp|Q2Q0I9|FNDC1_RAT Fibronectin type III domain-containing prote...    33   7.6  
+sp|P13290|GG_HHV2H Envelope glycoprotein G OS=Human herpesvirus ...    33   8.2  
+sp|Q67P86|IF2_SYMTH Translation initiation factor IF-2 OS=Symbio...    33   8.6  
+sp|P81780|GG_HHV2B Envelope glycoprotein G OS=Human herpesvirus ...    33   8.6  
+sp|Q6KI08|RPOC_MESM1 DNA-directed RNA polymerase subunit beta' O...    33   8.7  
+sp|Q8IYB3|SRRM1_HUMAN Serine/arginine repetitive matrix protein ...    33   8.9  
+sp|O94466|RGA7_SCHPO Probable Rho-GTPase-activating protein 7 OS...    33   8.9  
+sp|Q04118|PRB3_HUMAN Basic salivary proline-rich protein 3 OS=Ho...    33   8.9  
+sp|Q8I8V0|TAD2B_DROME Transcriptional adapter 2B OS=Drosophila m...    33   9.0  
+sp|A2AT37|RENT2_MOUSE Regulator of nonsense transcripts 2 OS=Mus...    33   9.0  
+sp|P90900|IFA4_CAEEL Intermediate filament protein ifa-4 OS=Caen...    33   9.1  
+sp|Q8CSH0|SCPA_STAES Segregation and condensation protein A OS=S...    33   9.2  
+sp|Q5HP55|SCPA_STAEQ Segregation and condensation protein A OS=S...    33   9.2  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q13620|CUL4B_HUMAN Cullin-4B OS=Homo sapiens OX=9606 GN=CUL4B...   969   0.0  
+sp|A2A432|CUL4B_MOUSE Cullin-4B OS=Mus musculus OX=10090 GN=Cul4...   959   0.0  
+sp|Q3TCH7|CUL4A_MOUSE Cullin-4A OS=Mus musculus OX=10090 GN=Cul4...   918   0.0  
+sp|Q13619|CUL4A_HUMAN Cullin-4A OS=Homo sapiens OX=9606 GN=CUL4A...   914   0.0  
+sp|Q8LGH4|CUL4_ARATH Cullin-4 OS=Arabidopsis thaliana OX=3702 GN...   896   0.0  
+sp|Q9ZVH4|CUL3A_ARATH Cullin-3A OS=Arabidopsis thaliana OX=3702 ...   823   0.0  
+sp|Q9C9L0|CUL3B_ARATH Cullin-3B OS=Arabidopsis thaliana OX=3702 ...   817   0.0  
+sp|Q13618|CUL3_HUMAN Cullin-3 OS=Homo sapiens OX=9606 GN=CUL3 PE...   814   0.0  
+sp|B5DF89|CUL3_RAT Cullin-3 OS=Rattus norvegicus OX=10116 GN=Cul...   814   0.0  
+sp|Q9JLV5|CUL3_MOUSE Cullin-3 OS=Mus musculus OX=10090 GN=Cul3 P...   813   0.0  
+sp|Q6DE95|CUL3A_XENLA Cullin-3-A OS=Xenopus laevis OX=8355 GN=cu...   812   0.0  
+sp|A4IHP4|CUL3_XENTR Cullin-3 OS=Xenopus tropicalis OX=8364 GN=c...   811   0.0  
+sp|Q6GPF3|CUL3B_XENLA Cullin-3-B OS=Xenopus laevis OX=8355 GN=cu...   811   0.0  
+sp|Q94AH6|CUL1_ARATH Cullin-1 OS=Arabidopsis thaliana OX=3702 GN...   799   0.0  
+sp|Q5ZC88|CUL1_ORYSJ Cullin-1 OS=Oryza sativa subsp. japonica OX...   794   0.0  
+sp|Q54NZ5|CUL3_DICDI Cullin-3 OS=Dictyostelium discoideum OX=446...   792   0.0  
+sp|Q5R4G6|CUL1_PONAB Cullin-1 OS=Pongo abelii OX=9601 GN=CUL1 PE...   776   0.0  
+sp|Q13616|CUL1_HUMAN Cullin-1 OS=Homo sapiens OX=9606 GN=CUL1 PE...   776   0.0  
+sp|Q9WTX6|CUL1_MOUSE Cullin-1 OS=Mus musculus OX=10090 GN=Cul1 P...   776   0.0  
+sp|Q9SRZ0|CUL2_ARATH Cullin-2 OS=Arabidopsis thaliana OX=3702 GN...   772   0.0  
+sp|Q54CS2|CUL4_DICDI Cullin-4 OS=Dictyostelium discoideum OX=446...   755   0.0  
+sp|O60999|CUL1_DICDI Cullin-1 OS=Dictyostelium discoideum OX=446...   749   0.0  
+sp|Q17391|CUL3_CAEEL Cullin-3 OS=Caenorhabditis elegans OX=6239 ...   740   0.0  
+sp|P0CH31|CLL1_ARATH Putative cullin-like protein 1 OS=Arabidops...   736   0.0  
+sp|Q24311|CUL1_DROME Cullin homolog 1 OS=Drosophila melanogaster...   721   0.0  
+sp|Q17389|CUL1_CAEEL Cullin-1 OS=Caenorhabditis elegans OX=6239 ...   716   0.0  
+sp|Q17392|CUL4_CAEEL Cullin-4 OS=Caenorhabditis elegans OX=6239 ...   699   0.0  
+sp|Q9D4H8|CUL2_MOUSE Cullin-2 OS=Mus musculus OX=10090 GN=Cul2 P...   697   0.0  
+sp|O13790|CUL1_SCHPO Cullin-1 OS=Schizosaccharomyces pombe (stra...   695   0.0  
+sp|Q5RCF3|CUL2_PONAB Cullin-2 OS=Pongo abelii OX=9601 GN=CUL2 PE...   687   0.0  
+sp|Q13617|CUL2_HUMAN Cullin-2 OS=Homo sapiens OX=9606 GN=CUL2 PE...   687   0.0  
+sp|Q9XZJ3|CUL2_DICDI Cullin-2 OS=Dictyostelium discoideum OX=446...   669   0.0  
+sp|Q17390|CUL2_CAEEL Cullin-2 OS=Caenorhabditis elegans OX=6239 ...   665   0.0  
+sp|Q09760|CUL3_SCHPO Cullin-3 OS=Schizosaccharomyces pombe (stra...   662   0.0  
+sp|Q21346|CUL6_CAEEL Cullin-6 OS=Caenorhabditis elegans OX=6239 ...   648   0.0  
+sp|O14122|CUL4_SCHPO Cullin-4 OS=Schizosaccharomyces pombe (stra...   648   0.0  
+sp|Q54XF7|CUL5_DICDI Cullin-5 OS=Dictyostelium discoideum OX=446...   613   e-174
+sp|Q9JJ31|CUL5_RAT Cullin-5 OS=Rattus norvegicus OX=10116 GN=Cul...   590   e-167
+sp|Q93034|CUL5_HUMAN Cullin-5 OS=Homo sapiens OX=9606 GN=CUL5 PE...   587   e-166
+sp|Q5RB36|CUL5_PONAB Cullin-5 OS=Pongo abelii OX=9601 GN=CUL5 PE...   586   e-166
+sp|Q9D5V5|CUL5_MOUSE Cullin-5 OS=Mus musculus OX=10090 GN=Cul5 P...   586   e-166
+sp|Q23639|CUL5_CAEEL Cullin-5 OS=Caenorhabditis elegans OX=6239 ...   582   e-165
+sp|Q12018|CDC53_YEAST Cell division control protein 53 OS=Saccha...   579   e-164
+sp|Q29425|CUL5_RABIT Cullin-5 OS=Oryctolagus cuniculus OX=9986 G...   579   e-164
+sp|P53202|CUL3_YEAST Cullin-3 OS=Saccharomyces cerevisiae (strai...   501   e-141
+sp|Q8IWT3|CUL9_HUMAN Cullin-9 OS=Homo sapiens OX=9606 GN=CUL9 PE...   378   e-104
+sp|Q80TT8|CUL9_MOUSE Cullin-9 OS=Mus musculus OX=10090 GN=Cul9 P...   348   2e-94
+sp|Q9XIE9|CLL2_ARATH Putative cullin-like protein 2 OS=Arabidops...   311   1e-83
+sp|Q9SZ75|CLL5_ARATH Cullin-like protein 5 OS=Arabidopsis thalia...   311   2e-83
+sp|Q9XIE8|CLL3_ARATH Cullin-like protein 3 OS=Arabidopsis thalia...   224   3e-57
+sp|Q5RCJ3|CUL7_PONAB Cullin-7 OS=Pongo abelii OX=9601 GN=CUL7 PE...   214   2e-54
+sp|Q14999|CUL7_HUMAN Cullin-7 OS=Homo sapiens OX=9606 GN=CUL7 PE...   214   3e-54
+sp|D3ZEF4|CUL7_RAT Cullin-7 OS=Rattus norvegicus OX=10116 GN=Cul...   212   7e-54
+sp|Q8VE73|CUL7_MOUSE Cullin-7 OS=Mus musculus OX=10090 GN=Cul7 P...   207   3e-52
+sp|Q9UJX6|ANC2_HUMAN Anaphase-promoting complex subunit 2 OS=Hom...   205   2e-51
+sp|Q8BZQ7|ANC2_MOUSE Anaphase-promoting complex subunit 2 OS=Mus...   202   1e-50
+sp|Q8H1U5|APC2_ARATH Anaphase-promoting complex subunit 2 OS=Ara...   194   4e-48
+sp|Q9STG3|CLL4_ARATH Putative cullin-like protein 4 OS=Arabidops...   180   4e-44
+sp|P34514|ANC2_CAEEL Anaphase-promoting complex subunit 2 OS=Cae...   171   2e-41
+sp|Q551S9|APC2_DICDI Anaphase-promoting complex subunit 2 OS=Dic...   162   1e-38
+sp|Q874R3|APC2_SCHPO Anaphase-promoting complex subunit 2 OS=Sch...   154   3e-36
+sp|P47050|CUL8_YEAST Cullin-8 OS=Saccharomyces cerevisiae (strai...   148   2e-34
+sp|Q12440|APC2_YEAST Anaphase-promoting complex subunit 2 OS=Sac...   120   5e-26
+sp|Q8R0X2|CACL1_MOUSE CDK2-associated and cullin domain-containi...   118   2e-25
+sp|Q86Y37|CACL1_HUMAN CDK2-associated and cullin domain-containi...   116   1e-24
+sp|Q5XI53|CACL1_RAT CDK2-associated and cullin domain-containing...   115   2e-24
+sp|Q5UQT0|YR337_MIMIV Uncharacterized cullin-like protein R337 O...    99   2e-19
+
+Sequences not found previously or not previously below threshold:
+
+sp|S7UQV8|UGO_TOXGG Unique GC organizer UGO OS=Toxoplasma gondii...    42   0.031
+sp|Q9P2K5|MYEF2_HUMAN Myelin expression factor 2 OS=Homo sapiens...    41   0.041
+sp|A7EDF3|IRS4_SCLS1 Increased rDNA silencing protein 4 OS=Scler...    41   0.048
+sp|Q25490|APLP_MANSE Apolipophorins OS=Manduca sexta OX=7130 PE=...    41   0.050
+sp|A4VXE1|SECA_STRSY Protein translocase subunit SecA OS=Strepto...    40   0.059
+sp|A4W3N7|SECA_STRS2 Protein translocase subunit SecA OS=Strepto...    40   0.059
+sp|Q1DY99|XPOT_COCIM Exportin-T OS=Coccidioides immitis (strain ...    40   0.072
+sp|Q9TSV4|TCF19_PIG Transcription factor 19 OS=Sus scrofa OX=982...    40   0.078
+sp|Q06846|RP3A_BOVIN Rabphilin-3A OS=Bos taurus OX=9913 GN=RPH3A...    40   0.078
+sp|Q6B8L3|SECA_GRATL Protein translocase subunit SecA OS=Gracila...    40   0.093
+sp|Q9QXE2|DPOLL_MOUSE DNA polymerase lambda OS=Mus musculus OX=1...    40   0.095
+sp|Q6DFC2|CCD77_XENLA Coiled-coil domain-containing protein 77 O...    39   0.20 
+sp|Q5ZMJ9|SRRM1_CHICK Serine/arginine repetitive matrix protein ...    39   0.22 
+sp|C4P6S0|SHTAP_MOUSE Sperm head and tail associated protein OS=...    38   0.22 
+sp|Q92793|CBP_HUMAN CREB-binding protein OS=Homo sapiens OX=9606...    38   0.24 
+sp|P42968|KIPR_BACSU HTH-type transcriptional regulator KipR OS=...    38   0.25 
+sp|Q9UQ35|SRRM2_HUMAN Serine/arginine repetitive matrix protein ...    38   0.27 
+sp|Q6ZRS2|SRCAP_HUMAN Helicase SRCAP OS=Homo sapiens OX=9606 GN=...    38   0.32 
+sp|Q9R187|EDAR_MOUSE Tumor necrosis factor receptor superfamily ...    38   0.32 
+sp|A6QLF8|TM108_BOVIN Transmembrane protein 108 OS=Bos taurus OX...    38   0.34 
+sp|Q2UMR9|IML1_ASPOR Vacuolar membrane-associated protein iml1 O...    38   0.37 
+sp|P35911|APCE_GALSU Phycobiliprotein ApcE OS=Galdieria sulphura...    38   0.37 
+sp|Q6H1V1|BEST3_MOUSE Bestrophin-3 OS=Mus musculus OX=10090 GN=B...    38   0.39 
+sp|P0CN24|DPB2_CRYNJ DNA polymerase epsilon subunit B OS=Cryptoc...    38   0.42 
+sp|P0CN25|DPB2_CRYNB DNA polymerase epsilon subunit B OS=Cryptoc...    38   0.42 
+sp|Q9UF83|YM012_HUMAN Uncharacterized protein DKFZp434B061 OS=Ho...    38   0.48 
+sp|Q2EG98|PK1L3_MOUSE Polycystic kidney disease protein 1-like 3...    37   0.55 
+sp|Q6UDF7|ORF2_PSHV1 Uncharacterized protein sORF2 OS=Psittacid ...    37   0.58 
+sp|Q9Y815|RSV2_SCHPO Zinc finger protein rsv2 OS=Schizosaccharom...    37   0.62 
+sp|A5D7K1|SARG_BOVIN Specifically androgen-regulated gene protei...    37   0.63 
+sp|O94466|RGA7_SCHPO Probable Rho-GTPase-activating protein 7 OS...    37   0.66 
+sp|P36225|MAP4_BOVIN Microtubule-associated protein 4 OS=Bos tau...    37   0.66 
+sp|Q5T0Z8|CF132_HUMAN Uncharacterized protein C6orf132 OS=Homo s...    37   0.69 
+sp|B0R7P9|Y4320_HALS3 UPF0148 protein OE_4320R OS=Halobacterium ...    37   0.70 
+sp|Q9HMV9|Y2366_HALSA UPF0148 protein VNG_2366C OS=Halobacterium...    37   0.70 
+sp|Q99Y96|SECA_STRP1 Protein translocase subunit SecA OS=Strepto...    37   0.70 
+sp|Q6PDJ6|FBX42_MOUSE F-box only protein 42 OS=Mus musculus OX=1...    37   0.72 
+sp|Q8XK30|GSHAB_CLOPE Glutathione biosynthesis bifunctional prot...    37   0.73 
+sp|Q5BEN5|STU1_EMENI Protein stu1 OS=Emericella nidulans (strain...    37   0.75 
+sp|Q0U7C8|ACUK_PHANO Transcription activator of gluconeogenesis ...    37   0.77 
+sp|J3KML8|GFY_MOUSE Golgi-associated olfactory signaling regulat...    37   0.80 
+sp|F1NPG5|CENPT_CHICK Centromere protein T OS=Gallus gallus OX=9...    37   0.83 
+sp|O13853|ITS3_SCHPO Phosphatidylinositol 4-phosphate 5-kinase i...    37   0.84 
+sp|O74547|BIT61_SCHPO Target of rapamycin complex 2 subunit bit6...    37   0.87 
+sp|Q96BN6|F149B_HUMAN Primary cilium assembly protein FAM149B1 O...    37   0.90 
+sp|B3QQI2|IF2_CHLP8 Translation initiation factor IF-2 OS=Chloro...    37   0.93 
+sp|Q10172|PAN1_SCHPO Actin cytoskeleton-regulatory complex prote...    37   1.00 
+sp|Q5RDG2|ARMX5_PONAB Armadillo repeat-containing X-linked prote...    37   1.0  
+sp|Q52KI8|SRRM1_MOUSE Serine/arginine repetitive matrix protein ...    36   1.1  
+sp|O00592|PODXL_HUMAN Podocalyxin OS=Homo sapiens OX=9606 GN=POD...    36   1.1  
+sp|B9DIS2|ADDA_STACT ATP-dependent helicase/nuclease subunit A O...    36   1.2  
+sp|P44038|TAMA_HAEIN Translocation and assembly module subunit T...    36   1.3  
+sp|A5GNJ0|IF2_SYNPW Translation initiation factor IF-2 OS=Synech...    36   1.3  
+sp|P45481|CBP_MOUSE Histone lysine acetyltransferase CREBBP OS=M...    36   1.3  
+sp|O32032|PBPI_BACSU Penicillin-binding protein 4B OS=Bacillus s...    36   1.4  
+sp|Q5FVR8|TBCC1_RAT TBCC domain-containing protein 1 OS=Rattus n...    36   1.4  
+sp|B3NC86|UBP36_DROER Ubiquitin carboxyl-terminal hydrolase 36 O...    36   1.4  
+sp|B0VXW0|OXLA_SISCA L-amino-acid oxidase OS=Sistrurus catenatus...    36   1.4  
+sp|Q5TIE3|VW5B1_HUMAN von Willebrand factor A domain-containing ...    36   1.4  
+sp|A7HKV1|SYC_FERNB Cysteine--tRNA ligase OS=Fervidobacterium no...    36   1.5  
+sp|B0RZW0|DNLJ_FINM2 DNA ligase OS=Finegoldia magna (strain ATCC...    36   1.5  
+sp|P43247|MSH2_MOUSE DNA mismatch repair protein Msh2 OS=Mus mus...    36   1.6  
+sp|Q5QNQ9|CORA1_MOUSE Collagen alpha-1(XXVII) chain OS=Mus muscu...    36   1.6  
+sp|Q8GXJ1|HDA15_ARATH Histone deacetylase 15 OS=Arabidopsis thal...    36   1.7  
+sp|Q5JRC9|FA47A_HUMAN Protein FAM47A OS=Homo sapiens OX=9606 GN=...    36   1.8  
+sp|B4U7X3|DABA_HYDS0 Probable inorganic carbon transporter subun...    36   1.8  
+sp|P47708|RP3A_MOUSE Rabphilin-3A OS=Mus musculus OX=10090 GN=Rp...    36   1.8  
+sp|Q80TZ9|RERE_MOUSE Arginine-glutamic acid dipeptide repeats pr...    36   1.9  
+sp|Q9KV38|COAA_VIBCH Pantothenate kinase OS=Vibrio cholerae sero...    35   1.9  
+sp|P59222|SREC2_MOUSE Scavenger receptor class F member 2 OS=Mus...    35   1.9  
+sp|Q1JF92|SECA_STRPD Protein translocase subunit SecA OS=Strepto...    35   2.0  
+sp|Q1JK98|SECA_STRPC Protein translocase subunit SecA OS=Strepto...    35   2.0  
+sp|Q1JA48|SECA_STRPB Protein translocase subunit SecA OS=Strepto...    35   2.0  
+sp|Q8NZK2|SECA_STRP8 Protein translocase subunit SecA OS=Strepto...    35   2.0  
+sp|Q5XAA2|SECA_STRP6 Protein translocase subunit SecA OS=Strepto...    35   2.0  
+sp|Q5R5Q2|SRRM1_PONAB Serine/arginine repetitive matrix protein ...    35   2.0  
+sp|P56645|PER3_HUMAN Period circadian protein homolog 3 OS=Homo ...    35   2.0  
+sp|Q48RM6|SECA_STRPM Protein translocase subunit SecA OS=Strepto...    35   2.0  
+sp|B5XI23|SECA_STRPZ Protein translocase subunit SecA OS=Strepto...    35   2.1  
+sp|P40541|SCC3_YEAST Cohesin subunit SCC3 OS=Saccharomyces cerev...    35   2.1  
+sp|Q9Y2J0|RP3A_HUMAN Rabphilin-3A OS=Homo sapiens OX=9606 GN=RPH...    35   2.2  
+sp|Q9ESK9|RBCC1_MOUSE RB1-inducible coiled-coil protein 1 OS=Mus...    35   2.3  
+sp|A8MGJ3|HTPG_ALKOO Chaperone protein HtpG OS=Alkaliphilus orem...    35   2.3  
+sp|Q8TE49|OTU7A_HUMAN OTU domain-containing protein 7A OS=Homo s...    35   2.3  
+sp|A1JL37|HEM6_YERE8 Oxygen-dependent coproporphyrinogen-III oxi...    35   2.3  
+sp|Q68WT1|UVRD_RICTY DNA helicase II OS=Rickettsia typhi (strain...    35   2.4  
+sp|Q54S08|DPOA2_DICDI DNA polymerase alpha subunit B OS=Dictyost...    35   2.5  
+sp|Q7V5M4|IF2_PROMM Translation initiation factor IF-2 OS=Prochl...    35   2.6  
+sp|Q9IA20|HXA2_HETFR Homeobox protein Hox-A2 OS=Heterodontus fra...    35   2.7  
+sp|Q8KIL1|SLDA_GLUTH Glycerol dehydrogenase large subunit OS=Glu...    35   2.7  
+sp|Q6INS1|FBXL5_XENLA F-box/LRR-repeat protein 5 OS=Xenopus laev...    35   2.7  
+sp|B0USP0|SYV_HISS2 Valine--tRNA ligase OS=Histophilus somni (st...    35   3.2  
+sp|Q6AS54|NIKR_DESPS Putative nickel-responsive regulator OS=Des...    35   3.2  
+sp|P46201|UTMP_BOVIN Uterine milk protein OS=Bos taurus OX=9913 ...    35   3.4  
+sp|P15387|KCNB1_RAT Potassium voltage-gated channel subfamily B ...    35   3.5  
+sp|O88282|BCL6B_MOUSE B-cell CLL/lymphoma 6 member B protein OS=...    35   3.6  
+sp|P25655|NOT1_YEAST General negative regulator of transcription...    35   3.7  
+sp|Q5ZK25|SZRD1_CHICK SUZ domain-containing protein 1 OS=Gallus ...    35   3.9  
+sp|Q8C0Y0|PP4R4_MOUSE Serine/threonine-protein phosphatase 4 reg...    35   4.0  
+sp|Q6JHU9|CBP_RAT Histone lysine acetyltransferase CREBBP OS=Rat...    35   4.0  
+sp|A0A125YS36|VTC2_TOXGM Vacuolar transporter chaperone complex ...    34   4.2  
+sp|Q99NB8|UBQL4_MOUSE Ubiquilin-4 OS=Mus musculus OX=10090 GN=Ub...    34   4.2  
+sp|O13168|TLE3B_DANRE Transducin-like enhancer protein 3-B OS=Da...    34   4.3  
+sp|Q9LZA5|NMAT3_ARATH Nuclear intron maturase 3, mitochondrial O...    34   4.6  
+sp|Q07889|SOS1_HUMAN Son of sevenless homolog 1 OS=Homo sapiens ...    34   4.8  
+sp|Q6P1M9|ARMX5_HUMAN Armadillo repeat-containing X-linked prote...    34   5.1  
+sp|Q96PP9|GBP4_HUMAN Guanylate-binding protein 4 OS=Homo sapiens...    34   5.3  
+sp|A7SPX9|EIF3M_NEMVE Eukaryotic translation initiation factor 3...    34   5.5  
+sp|A1CT57|MCES_ASPCL mRNA cap guanine-N7 methyltransferase OS=As...    34   5.5  
+sp|Q8IYB3|SRRM1_HUMAN Serine/arginine repetitive matrix protein ...    34   5.7  
+sp|B9DVI5|SECA_STRU0 Protein translocase subunit SecA OS=Strepto...    34   6.3  
+sp|E2RYF6|MUC22_HUMAN Mucin-22 OS=Homo sapiens OX=9606 GN=MUC22 ...    34   6.4  
+sp|P25054|APC_HUMAN Adenomatous polyposis coli protein OS=Homo s...    34   6.5  
+sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 GN=...    34   6.5  
+sp|A2C6Q5|IF2_PROM3 Translation initiation factor IF-2 OS=Prochl...    34   6.9  
+sp|Q86VP3|PACS2_HUMAN Phosphofurin acidic cluster sorting protei...    33   7.3  
+sp|B5E4P4|ADDB_STRP4 ATP-dependent helicase/deoxyribonuclease su...    33   7.5  
+sp|Q02496|MUC1_MOUSE Mucin-1 OS=Mus musculus OX=10090 GN=Muc1 PE...    33   7.7  
+sp|Q8DY07|SECA1_STRA5 Protein translocase subunit SecA 1 OS=Stre...    33   7.7  
+sp|Q8E3M6|SECA1_STRA3 Protein translocase subunit SecA 1 OS=Stre...    33   7.7  
+sp|Q3JZK2|SECA1_STRA1 Protein translocase subunit SecA 1 OS=Stre...    33   7.7  
+sp|Q18919|RCORB_CAEEL REST corepressor spr-1 OS=Caenorhabditis e...    33   7.7  
+sp|P70670|NACAM_MOUSE Nascent polypeptide-associated complex sub...    33   7.7  
+sp|Q8ILP3|P113_PLAF7 Surface protein P113 OS=Plasmodium falcipar...    33   8.0  
+sp|Q872I5|INO80_NEUCR Chromatin-remodeling ATPase INO80 OS=Neuro...    33   8.0  
+sp|Q9CZH8|CCD77_MOUSE Coiled-coil domain-containing protein 77 O...    33   8.5  
+sp|Q97EX9|GATB2_CLOAB Aspartyl/glutamyl-tRNA(Asn/Gln) amidotrans...    33   9.6  
+sp|Q74H61|HRCA_GEOSL Heat-inducible transcription repressor HrcA...    33   9.7  
+sp|Q9PP85|SYM_CAMJE Methionine--tRNA ligase OS=Campylobacter jej...    33   9.8  
+sp|Q9HAU5|RENT2_HUMAN Regulator of nonsense transcripts 2 OS=Hom...    33   9.9  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.308    0.139    0.372 
+
+Lambda     K      H
+   0.267   0.0427    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 907,669,701
+Number of Sequences: 569516
+Number of extensions: 37599558
+Number of successful extensions: 181372
+Number of sequences better than 10.0: 568
+Number of HSP's better than 10.0 without gapping: 328
+Number of HSP's successfully gapped in prelim test: 1099
+Number of HSP's that attempted gapping in prelim test: 174044
+Number of HSP's gapped (non-prelim): 5815
+length of query: 832
+length of database: 205,866,895
+effective HSP length: 127
+effective length of query: 705
+effective length of database: 133,538,363
+effective search space: 94144545915
+effective search space used: 94144545915
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.1 bits)
+S2: 75 (33.4 bits)

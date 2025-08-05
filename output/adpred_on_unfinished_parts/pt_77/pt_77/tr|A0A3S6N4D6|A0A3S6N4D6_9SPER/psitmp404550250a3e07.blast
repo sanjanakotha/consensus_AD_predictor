@@ -1,0 +1,991 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (848 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9LDK9|APBLA_ARATH Beta-adaptin-like protein A OS=Arabidopsis...  1289   0.0  
+sp|Q54R84|AP4B_DICDI AP-4 complex subunit beta OS=Dictyostelium ...   389   e-107
+sp|Q9DBG3|AP2B1_MOUSE AP-2 complex subunit beta OS=Mus musculus ...   370   e-101
+sp|Q08DS7|AP1B1_BOVIN AP-1 complex subunit beta-1 OS=Bos taurus ...   370   e-101
+sp|P63009|AP2B1_BOVIN AP-2 complex subunit beta OS=Bos taurus OX...   370   e-101
+sp|P62944|AP2B1_RAT AP-2 complex subunit beta OS=Rattus norvegic...   370   e-101
+sp|P63010|AP2B1_HUMAN AP-2 complex subunit beta OS=Homo sapiens ...   370   e-101
+sp|Q54X82|AP1B_DICDI AP-1 complex subunit beta OS=Dictyostelium ...   363   3e-99
+sp|Q9WV76|AP4B1_MOUSE AP-4 complex subunit beta-1 OS=Mus musculu...   362   5e-99
+sp|O81742|APBLC_ARATH Beta-adaptin-like protein C OS=Arabidopsis...   354   2e-96
+sp|P52303|AP1B1_RAT AP-1 complex subunit beta-1 OS=Rattus norveg...   351   2e-95
+sp|Q10567|AP1B1_HUMAN AP-1 complex subunit beta-1 OS=Homo sapien...   350   2e-95
+sp|O35643|AP1B1_MOUSE AP-1 complex subunit beta-1 OS=Mus musculu...   350   2e-95
+sp|Q9SUS3|APBLB_ARATH Beta-adaptin-like protein B OS=Arabidopsis...   348   1e-94
+sp|Q9Y6B7|AP4B1_HUMAN AP-4 complex subunit beta-1 OS=Homo sapien...   347   3e-94
+sp|O43005|AP2B_SCHPO AP-2 complex subunit beta OS=Schizosaccharo...   288   1e-76
+sp|O43079|AP1B1_SCHPO AP-1 complex subunit beta-1 OS=Schizosacch...   286   7e-76
+sp|P36000|AP1B1_YEAST AP-1 complex subunit beta-1 OS=Saccharomyc...   241   2e-62
+sp|Q9JME5|AP3B2_MOUSE AP-3 complex subunit beta-2 OS=Mus musculu...   174   4e-42
+sp|Q13367|AP3B2_HUMAN AP-3 complex subunit beta-2 OS=Homo sapien...   173   5e-42
+sp|O00203|AP3B1_HUMAN AP-3 complex subunit beta-1 OS=Homo sapien...   168   2e-40
+sp|Q9Z1T1|AP3B1_MOUSE AP-3 complex subunit beta-1 OS=Mus musculu...   164   2e-39
+sp|Q32PG1|AP3B1_BOVIN AP-3 complex subunit beta-1 OS=Bos taurus ...   162   8e-39
+sp|Q7YRF1|AP3B1_CANLF AP-3 complex subunit beta-1 OS=Canis lupus...   159   1e-37
+sp|P27351|AP2B_YEAST AP-2 complex subunit beta OS=Saccharomyces ...   153   5e-36
+sp|Q759E2|AP3B_ASHGO AP-3 complex subunit beta OS=Ashbya gossypi...   114   4e-24
+sp|P46682|AP3B_YEAST AP-3 complex subunit beta OS=Saccharomyces ...   100   9e-20
+sp|Q556J8|AP3B_DICDI AP-3 complex subunit beta OS=Dictyostelium ...    97   4e-19
+sp|O13939|AP3B_SCHPO AP-3 complex subunit beta OS=Schizosaccharo...    91   5e-17
+sp|Q9M2T1|AP3BA_ARATH AP3-complex subunit beta-A OS=Arabidopsis ...    76   1e-12
+sp|O94973|AP2A2_HUMAN AP-2 complex subunit alpha-2 OS=Homo sapie...    65   2e-09
+sp|P18484|AP2A2_RAT AP-2 complex subunit alpha-2 OS=Rattus norve...    65   3e-09
+sp|P17427|AP2A2_MOUSE AP-2 complex subunit alpha-2 OS=Mus muscul...    65   3e-09
+sp|O95782|AP2A1_HUMAN AP-2 complex subunit alpha-1 OS=Homo sapie...    62   2e-08
+sp|P17426|AP2A1_MOUSE AP-2 complex subunit alpha-1 OS=Mus muscul...    62   2e-08
+sp|Q29G21|COPB_DROPS Coatomer subunit beta OS=Drosophila pseudoo...    61   5e-08
+sp|Q0VCK5|AP2A2_BOVIN AP-2 complex subunit alpha-2 OS=Bos taurus...    60   6e-08
+sp|Q5ZIA5|COPB_CHICK Coatomer subunit beta OS=Gallus gallus OX=9...    57   7e-07
+sp|Q23924|COPB_DICDI Coatomer subunit beta OS=Dictyostelium disc...    55   2e-06
+sp|P45437|COPB_DROME Coatomer subunit beta OS=Drosophila melanog...    55   2e-06
+sp|Q66HV4|COPB_DANRE Coatomer subunit beta OS=Danio rerio OX=795...    55   3e-06
+sp|Q7QG73|AP2A_ANOGA AP-2 complex subunit alpha OS=Anopheles gam...    54   4e-06
+sp|Q29N38|AP2A_DROPS AP-2 complex subunit alpha OS=Drosophila ps...    54   5e-06
+sp|P91926|AP2A_DROME AP-2 complex subunit alpha OS=Drosophila me...    54   5e-06
+sp|P53618|COPB_HUMAN Coatomer subunit beta OS=Homo sapiens OX=96...    53   1e-05
+sp|P41810|COPB_YEAST Coatomer subunit beta OS=Saccharomyces cere...    52   1e-05
+sp|D2SW95|COPB_PIG Coatomer subunit beta OS=Sus scrofa OX=9823 G...    52   1e-05
+sp|A0JN39|COPB_BOVIN Coatomer subunit beta OS=Bos taurus OX=9913...    52   2e-05
+sp|Q9JIF7|COPB_MOUSE Coatomer subunit beta OS=Mus musculus OX=10...    52   2e-05
+sp|Q5R922|COPB_PONAB Coatomer subunit beta OS=Pongo abelii OX=96...    52   3e-05
+sp|Q6FM46|COPB_CANGA Coatomer subunit beta OS=Candida glabrata (...    50   8e-05
+sp|Q86KI1|AP2A2_DICDI AP-2 complex subunit alpha-2 OS=Dictyostel...    50   1e-04
+sp|P23514|COPB_RAT Coatomer subunit beta OS=Rattus norvegicus OX...    50   1e-04
+sp|Q9UUF7|COPB_SCHPO Coatomer subunit beta OS=Schizosaccharomyce...    48   4e-04
+sp|Q8I0G5|COPG_DROME Coatomer subunit gamma OS=Drosophila melano...    47   8e-04
+sp|Q9SV21|COPB1_ARATH Coatomer subunit beta-1 OS=Arabidopsis tha...    46   0.001
+sp|Q29AE5|COPG_DROPS Coatomer subunit gamma OS=Drosophila pseudo...    46   0.001
+sp|Q9SV20|COPB2_ARATH Coatomer subunit beta-2 OS=Arabidopsis tha...    46   0.001
+sp|Q9NFU6|COPB_TRYBB Coatomer subunit beta OS=Trypanosoma brucei...    44   0.009
+sp|Q53PC7|COPB1_ORYSJ Coatomer subunit beta-1 OS=Oryza sativa su...    42   0.021
+sp|Q7PVF6|COPG_ANOGA Coatomer subunit gamma OS=Anopheles gambiae...    41   0.037
+sp|Q5NKU6|ICAM3_PANTR Intercellular adhesion molecule 3 OS=Pan t...    41   0.045
+sp|Q66JI9|COPG2_XENTR Coatomer subunit gamma-2 OS=Xenopus tropic...    41   0.046
+sp|Q6DKD7|COPG2_XENLA Coatomer subunit gamma-2 OS=Xenopus laevis...    41   0.051
+sp|P32942|ICAM3_HUMAN Intercellular adhesion molecule 3 OS=Homo ...    41   0.055
+sp|P54362|AP3D_DROME AP-3 complex subunit delta OS=Drosophila me...    40   0.060
+sp|Q9I8E6|COPG2_TAKRU Coatomer subunit gamma-2 OS=Takifugu rubri...    40   0.062
+sp|Q9U4N3|COPB_TOXGO Coatomer subunit beta OS=Toxoplasma gondii ...    40   0.063
+sp|Q9PUE4|COPG2_DANRE Coatomer subunit gamma-2 OS=Danio rerio OX...    40   0.069
+sp|Q9QXK3|COPG2_MOUSE Coatomer subunit gamma-2 OS=Mus musculus O...    40   0.071
+sp|D4ABY2|COPG2_RAT Coatomer subunit gamma-2 OS=Rattus norvegicu...    40   0.075
+sp|A2VE21|COPG2_BOVIN Coatomer subunit gamma-2 OS=Bos taurus OX=...    40   0.083
+sp|Q8L7A9|AP4E_ARATH AP-4 complex subunit epsilon OS=Arabidopsis...    40   0.085
+sp|Q9UBF2|COPG2_HUMAN Coatomer subunit gamma-2 OS=Homo sapiens O...    40   0.086
+sp|Q9UU81|AP1G1_SCHPO AP-1 complex subunit gamma-1 OS=Schizosacc...    40   0.11 
+sp|Q54HL0|COPG_DICDI Coatomer subunit gamma OS=Dictyostelium dis...    40   0.12 
+sp|Q9UTL8|AP3D_SCHPO AP-3 complex subunit delta OS=Schizosacchar...    39   0.15 
+sp|Q22498|COPG_CAEEL Probable coatomer subunit gamma OS=Caenorha...    39   0.16 
+sp|Q6Z382|COPG2_ORYSJ Coatomer subunit gamma-2 OS=Oryza sativa s...    39   0.21 
+sp|Q865S1|AP3D1_BOVIN AP-3 complex subunit delta-1 OS=Bos taurus...    39   0.21 
+sp|O54774|AP3D1_MOUSE AP-3 complex subunit delta-1 OS=Mus muscul...    38   0.30 
+sp|O14617|AP3D1_HUMAN AP-3 complex subunit delta-1 OS=Homo sapie...    38   0.31 
+sp|Q0WW26|COPG_ARATH Coatomer subunit gamma OS=Arabidopsis thali...    37   0.48 
+sp|O43747|AP1G1_HUMAN AP-1 complex subunit gamma-1 OS=Homo sapie...    37   0.66 
+sp|P22892|AP1G1_MOUSE AP-1 complex subunit gamma-1 OS=Mus muscul...    37   0.69 
+sp|Q5R5M2|AP1G1_PONAB AP-1 complex subunit gamma-1 OS=Pongo abel...    37   0.69 
+sp|Q8H852|COPG1_ORYSJ Coatomer subunit gamma-1 OS=Oryza sativa s...    36   1.2  
+sp|Q80V94|AP4E1_MOUSE AP-4 complex subunit epsilon-1 OS=Mus musc...    36   1.2  
+sp|Q9C0W7|AP2A_SCHPO AP-2 complex subunit alpha OS=Schizosacchar...    36   1.4  
+sp|P0C9M5|3603L_ASFK5 Protein MGF 360-3L OS=African swine fever ...    35   2.2  
+sp|Q0JNK5|COPB2_ORYSJ Coatomer subunit beta-2 OS=Oryza sativa su...    35   2.4  
+sp|Q99128|AP1G1_USTMA AP-1 complex subunit gamma-1 OS=Ustilago m...    35   3.2  
+sp|Q9V431|API5_DROME Apoptosis inhibitor 5 homolog OS=Drosophila...    35   3.5  
+sp|Q08951|AP3D_YEAST AP-3 complex subunit delta OS=Saccharomyces...    35   3.7  
+sp|Q67WM9|OS9_ORYSJ Protein OS-9 homolog OS=Oryza sativa subsp. ...    34   6.3  
+sp|P0C9M7|3603L_ASFM2 Protein MGF 360-3L OS=African swine fever ...    33   9.3  
+sp|P87140|COPG_SCHPO Probable coatomer subunit gamma OS=Schizosa...    33   9.9  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q9LDK9|APBLA_ARATH Beta-adaptin-like protein A OS=Arabidopsis...  1044   0.0  
+sp|Q9DBG3|AP2B1_MOUSE AP-2 complex subunit beta OS=Mus musculus ...   650   0.0  
+sp|P63009|AP2B1_BOVIN AP-2 complex subunit beta OS=Bos taurus OX...   649   0.0  
+sp|P62944|AP2B1_RAT AP-2 complex subunit beta OS=Rattus norvegic...   649   0.0  
+sp|P63010|AP2B1_HUMAN AP-2 complex subunit beta OS=Homo sapiens ...   649   0.0  
+sp|Q08DS7|AP1B1_BOVIN AP-1 complex subunit beta-1 OS=Bos taurus ...   647   0.0  
+sp|Q10567|AP1B1_HUMAN AP-1 complex subunit beta-1 OS=Homo sapien...   615   e-175
+sp|O35643|AP1B1_MOUSE AP-1 complex subunit beta-1 OS=Mus musculu...   611   e-174
+sp|Q54X82|AP1B_DICDI AP-1 complex subunit beta OS=Dictyostelium ...   609   e-173
+sp|P52303|AP1B1_RAT AP-1 complex subunit beta-1 OS=Rattus norveg...   605   e-172
+sp|O81742|APBLC_ARATH Beta-adaptin-like protein C OS=Arabidopsis...   600   e-170
+sp|Q9SUS3|APBLB_ARATH Beta-adaptin-like protein B OS=Arabidopsis...   592   e-168
+sp|O43005|AP2B_SCHPO AP-2 complex subunit beta OS=Schizosaccharo...   529   e-149
+sp|Q9WV76|AP4B1_MOUSE AP-4 complex subunit beta-1 OS=Mus musculu...   528   e-149
+sp|O43079|AP1B1_SCHPO AP-1 complex subunit beta-1 OS=Schizosacch...   517   e-145
+sp|Q9Y6B7|AP4B1_HUMAN AP-4 complex subunit beta-1 OS=Homo sapien...   507   e-142
+sp|O00203|AP3B1_HUMAN AP-3 complex subunit beta-1 OS=Homo sapien...   499   e-140
+sp|Q32PG1|AP3B1_BOVIN AP-3 complex subunit beta-1 OS=Bos taurus ...   494   e-138
+sp|Q9Z1T1|AP3B1_MOUSE AP-3 complex subunit beta-1 OS=Mus musculu...   490   e-137
+sp|Q7YRF1|AP3B1_CANLF AP-3 complex subunit beta-1 OS=Canis lupus...   490   e-137
+sp|P36000|AP1B1_YEAST AP-1 complex subunit beta-1 OS=Saccharomyc...   490   e-137
+sp|Q54R84|AP4B_DICDI AP-4 complex subunit beta OS=Dictyostelium ...   477   e-133
+sp|Q13367|AP3B2_HUMAN AP-3 complex subunit beta-2 OS=Homo sapien...   468   e-131
+sp|Q9JME5|AP3B2_MOUSE AP-3 complex subunit beta-2 OS=Mus musculu...   468   e-130
+sp|O95782|AP2A1_HUMAN AP-2 complex subunit alpha-1 OS=Homo sapie...   401   e-110
+sp|P17426|AP2A1_MOUSE AP-2 complex subunit alpha-1 OS=Mus muscul...   400   e-110
+sp|O94973|AP2A2_HUMAN AP-2 complex subunit alpha-2 OS=Homo sapie...   399   e-110
+sp|P17427|AP2A2_MOUSE AP-2 complex subunit alpha-2 OS=Mus muscul...   398   e-109
+sp|P18484|AP2A2_RAT AP-2 complex subunit alpha-2 OS=Rattus norve...   398   e-109
+sp|P27351|AP2B_YEAST AP-2 complex subunit beta OS=Saccharomyces ...   398   e-109
+sp|Q7QG73|AP2A_ANOGA AP-2 complex subunit alpha OS=Anopheles gam...   397   e-109
+sp|Q29N38|AP2A_DROPS AP-2 complex subunit alpha OS=Drosophila ps...   392   e-108
+sp|P91926|AP2A_DROME AP-2 complex subunit alpha OS=Drosophila me...   392   e-108
+sp|Q0VCK5|AP2A2_BOVIN AP-2 complex subunit alpha-2 OS=Bos taurus...   389   e-107
+sp|Q556J8|AP3B_DICDI AP-3 complex subunit beta OS=Dictyostelium ...   376   e-103
+sp|O13939|AP3B_SCHPO AP-3 complex subunit beta OS=Schizosaccharo...   362   8e-99
+sp|P46682|AP3B_YEAST AP-3 complex subunit beta OS=Saccharomyces ...   354   2e-96
+sp|Q759E2|AP3B_ASHGO AP-3 complex subunit beta OS=Ashbya gossypi...   348   1e-94
+sp|P53618|COPB_HUMAN Coatomer subunit beta OS=Homo sapiens OX=96...   325   9e-88
+sp|D2SW95|COPB_PIG Coatomer subunit beta OS=Sus scrofa OX=9823 G...   325   1e-87
+sp|Q5ZIA5|COPB_CHICK Coatomer subunit beta OS=Gallus gallus OX=9...   325   1e-87
+sp|Q9JIF7|COPB_MOUSE Coatomer subunit beta OS=Mus musculus OX=10...   325   1e-87
+sp|A0JN39|COPB_BOVIN Coatomer subunit beta OS=Bos taurus OX=9913...   324   2e-87
+sp|P23514|COPB_RAT Coatomer subunit beta OS=Rattus norvegicus OX...   324   2e-87
+sp|Q66HV4|COPB_DANRE Coatomer subunit beta OS=Danio rerio OX=795...   323   4e-87
+sp|Q5R922|COPB_PONAB Coatomer subunit beta OS=Pongo abelii OX=96...   323   5e-87
+sp|Q86KI1|AP2A2_DICDI AP-2 complex subunit alpha-2 OS=Dictyostel...   322   1e-86
+sp|Q9M2T1|AP3BA_ARATH AP3-complex subunit beta-A OS=Arabidopsis ...   320   3e-86
+sp|Q29G21|COPB_DROPS Coatomer subunit beta OS=Drosophila pseudoo...   307   2e-82
+sp|P45437|COPB_DROME Coatomer subunit beta OS=Drosophila melanog...   306   4e-82
+sp|P41810|COPB_YEAST Coatomer subunit beta OS=Saccharomyces cere...   290   3e-77
+sp|Q6FM46|COPB_CANGA Coatomer subunit beta OS=Candida glabrata (...   286   7e-76
+sp|Q23924|COPB_DICDI Coatomer subunit beta OS=Dictyostelium disc...   243   4e-63
+sp|Q9UUF7|COPB_SCHPO Coatomer subunit beta OS=Schizosaccharomyce...   228   2e-58
+sp|Q8I0G5|COPG_DROME Coatomer subunit gamma OS=Drosophila melano...   158   3e-37
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8LPL6|AP2A1_ARATH AP-2 complex subunit alpha-1 OS=Arabidopsi...   261   2e-68
+sp|Q8LPK4|AP2A2_ARATH AP-2 complex subunit alpha-2 OS=Arabidopsi...   260   5e-68
+sp|Q9C0W7|AP2A_SCHPO AP-2 complex subunit alpha OS=Schizosacchar...   216   5e-55
+sp|Q9SV20|COPB2_ARATH Coatomer subunit beta-2 OS=Arabidopsis tha...   213   6e-54
+sp|Q9SV21|COPB1_ARATH Coatomer subunit beta-1 OS=Arabidopsis tha...   211   2e-53
+sp|Q53PC7|COPB1_ORYSJ Coatomer subunit beta-1 OS=Oryza sativa su...   199   1e-49
+sp|Q0JNK5|COPB2_ORYSJ Coatomer subunit beta-2 OS=Oryza sativa su...   195   2e-48
+sp|Q99128|AP1G1_USTMA AP-1 complex subunit gamma-1 OS=Ustilago m...   194   3e-48
+sp|Q9ZUI6|AP1G2_ARATH AP-1 complex subunit gamma-2 OS=Arabidopsi...   189   6e-47
+sp|P22892|AP1G1_MOUSE AP-1 complex subunit gamma-1 OS=Mus muscul...   184   2e-45
+sp|Q9NFU6|COPB_TRYBB Coatomer subunit beta OS=Trypanosoma brucei...   184   3e-45
+sp|Q5R5M2|AP1G1_PONAB AP-1 complex subunit gamma-1 OS=Pongo abel...   184   4e-45
+sp|O43747|AP1G1_HUMAN AP-1 complex subunit gamma-1 OS=Homo sapie...   183   4e-45
+sp|Q9U4N3|COPB_TOXGO Coatomer subunit beta OS=Toxoplasma gondii ...   178   2e-43
+sp|Q80V94|AP4E1_MOUSE AP-4 complex subunit epsilon-1 OS=Mus musc...   177   4e-43
+sp|Q9UPM8|AP4E1_HUMAN AP-4 complex subunit epsilon-1 OS=Homo sap...   174   2e-42
+sp|Q8I8U2|AP1G_DICDI AP-1 complex subunit gamma OS=Dictyostelium...   174   3e-42
+sp|Q9UU81|AP1G1_SCHPO AP-1 complex subunit gamma-1 OS=Schizosacc...   173   6e-42
+sp|O88512|AP1G2_MOUSE AP-1 complex subunit gamma-like 2 OS=Mus m...   170   6e-41
+sp|Q84K16|AP1G1_ARATH AP-1 complex subunit gamma-1 OS=Arabidopsi...   169   9e-41
+sp|O75843|AP1G2_HUMAN AP-1 complex subunit gamma-like 2 OS=Homo ...   168   2e-40
+sp|O54774|AP3D1_MOUSE AP-3 complex subunit delta-1 OS=Mus muscul...   162   1e-38
+sp|Q865S1|AP3D1_BOVIN AP-3 complex subunit delta-1 OS=Bos taurus...   159   6e-38
+sp|O14617|AP3D1_HUMAN AP-3 complex subunit delta-1 OS=Homo sapie...   158   1e-37
+sp|Q8L7A9|AP4E_ARATH AP-4 complex subunit epsilon OS=Arabidopsis...   156   7e-37
+sp|Q54HL0|COPG_DICDI Coatomer subunit gamma OS=Dictyostelium dis...   151   2e-35
+sp|Q29AE5|COPG_DROPS Coatomer subunit gamma OS=Drosophila pseudo...   149   7e-35
+sp|P54362|AP3D_DROME AP-3 complex subunit delta OS=Drosophila me...   148   3e-34
+sp|Q22498|COPG_CAEEL Probable coatomer subunit gamma OS=Caenorha...   147   3e-34
+sp|Q0WW26|COPG_ARATH Coatomer subunit gamma OS=Arabidopsis thali...   146   1e-33
+sp|Q9I8E6|COPG2_TAKRU Coatomer subunit gamma-2 OS=Takifugu rubri...   141   2e-32
+sp|A2VE21|COPG2_BOVIN Coatomer subunit gamma-2 OS=Bos taurus OX=...   141   3e-32
+sp|Q54WN0|AP3D_DICDI AP-3 complex subunit delta OS=Dictyostelium...   140   4e-32
+sp|Q9QXK3|COPG2_MOUSE Coatomer subunit gamma-2 OS=Mus musculus O...   140   6e-32
+sp|Q9UBF2|COPG2_HUMAN Coatomer subunit gamma-2 OS=Homo sapiens O...   139   8e-32
+sp|Q8H852|COPG1_ORYSJ Coatomer subunit gamma-1 OS=Oryza sativa s...   139   1e-31
+sp|Q08951|AP3D_YEAST AP-3 complex subunit delta OS=Saccharomyces...   137   3e-31
+sp|Q9PUE4|COPG2_DANRE Coatomer subunit gamma-2 OS=Danio rerio OX...   137   3e-31
+sp|Q6DKD7|COPG2_XENLA Coatomer subunit gamma-2 OS=Xenopus laevis...   137   3e-31
+sp|Q66JI9|COPG2_XENTR Coatomer subunit gamma-2 OS=Xenopus tropic...   137   3e-31
+sp|Q6Z382|COPG2_ORYSJ Coatomer subunit gamma-2 OS=Oryza sativa s...   136   6e-31
+sp|D4ABY2|COPG2_RAT Coatomer subunit gamma-2 OS=Rattus norvegicu...   136   7e-31
+sp|Q54VE0|AP4E_DICDI AP-4 complex subunit epsilon OS=Dictyosteli...   133   5e-30
+sp|P53620|COPG1_BOVIN Coatomer subunit gamma-1 OS=Bos taurus OX=...   130   6e-29
+sp|Q7PVF6|COPG_ANOGA Coatomer subunit gamma OS=Anopheles gambiae...   129   8e-29
+sp|Q755A1|AP3D_ASHGO AP-3 complex subunit delta OS=Ashbya gossyp...   129   1e-28
+sp|Q9Y678|COPG1_HUMAN Coatomer subunit gamma-1 OS=Homo sapiens O...   129   1e-28
+sp|Q9QZE5|COPG1_MOUSE Coatomer subunit gamma-1 OS=Mus musculus O...   129   1e-28
+sp|Q4AEF8|COPG1_RAT Coatomer subunit gamma-1 OS=Rattus norvegicu...   129   1e-28
+sp|Q9C744|AP3D_ARATH AP-3 complex subunit delta OS=Arabidopsis t...   126   9e-28
+sp|Q9UTL8|AP3D_SCHPO AP-3 complex subunit delta OS=Schizosacchar...   125   2e-27
+sp|P38065|AP2A_YEAST AP-2 complex subunit alpha OS=Saccharomyces...   121   4e-26
+sp|P87140|COPG_SCHPO Probable coatomer subunit gamma OS=Schizosa...   109   9e-23
+sp|Q12028|AP1G1_YEAST AP-1 complex subunit gamma-1 OS=Saccharomy...   105   1e-21
+sp|P32074|COPG_YEAST Coatomer subunit gamma OS=Saccharomyces cer...    94   4e-18
+sp|Q7RXW1|VAC8_NEUCR Vacuolar protein 8 OS=Neurospora crassa (st...    60   9e-08
+sp|Q6C5Y8|VAC8_YARLI Vacuolar protein 8 OS=Yarrowia lipolytica (...    58   4e-07
+sp|Q4WVW4|VAC8_ASPFU Vacuolar protein 8 OS=Aspergillus fumigatus...    56   1e-06
+sp|Q4I1B1|VAC8_GIBZE Vacuolar protein 8 OS=Gibberella zeae (stra...    56   1e-06
+sp|O94679|CND1_SCHPO Condensin complex subunit 1 OS=Schizosaccha...    56   1e-06
+sp|Q54NU8|TSTA_DICDI TSET complex member tstA OS=Dictyostelium d...    56   2e-06
+sp|Q2U5T5|VAC8_ASPOR Vacuolar protein 8 OS=Aspergillus oryzae (s...    55   3e-06
+sp|Q6CX49|VAC8_KLULA Vacuolar protein 8 OS=Kluyveromyces lactis ...    51   5e-05
+sp|Q86C65|TOR_DICDI Serine/threonine-protein kinase tor OS=Dicty...    51   6e-05
+sp|Q5EFZ4|VAC8_PICPA Vacuolar protein 8 OS=Komagataella pastoris...    50   9e-05
+sp|B0R4J2|HTAXP_HALS3 HEAT repeat-containing taxis protein OE_24...    48   4e-04
+sp|F4I893|ILA_ARATH Protein ILITYHIA OS=Arabidopsis thaliana OX=...    47   5e-04
+sp|Q2KI54|ARMC8_BOVIN Armadillo repeat-containing protein 8 OS=B...    45   0.002
+sp|P35169|TOR1_YEAST Serine/threonine-protein kinase TOR1 OS=Sac...    45   0.003
+sp|P39968|VAC8_YEAST Vacuolar protein 8 OS=Saccharomyces cerevis...    45   0.003
+sp|Q6FJV1|VAC8_CANGA Vacuolar protein 8 OS=Candida glabrata (str...    45   0.003
+sp|Q9DBR3|ARMC8_MOUSE Armadillo repeat-containing protein 8 OS=M...    44   0.004
+sp|Q68FK4|ARMC8_XENLA Armadillo repeat-containing protein 8 OS=X...    44   0.005
+sp|F4IIM1|CSI1_ARATH Protein CELLULOSE SYNTHASE INTERACTIVE 1 OS...    44   0.005
+sp|Q6ZQK0|CNDD3_MOUSE Condensin-2 complex subunit D3 OS=Mus musc...    44   0.008
+sp|P33892|GCN1_YEAST eIF-2-alpha kinase activator GCN1 OS=Saccha...    44   0.008
+sp|Q9JLI7|SPAG6_MOUSE Sperm-associated antigen 6 OS=Mus musculus...    43   0.011
+sp|Q59MN0|VAC8_CANAL Vacuolar protein 8 OS=Candida albicans (str...    43   0.011
+sp|Q06156|CND1_YEAST Condensin complex subunit 1 OS=Saccharomyce...    43   0.013
+sp|Q9Y7K2|TOR2_SCHPO Serine/threonine-protein kinase tor2 OS=Sch...    43   0.013
+sp|Q15021|CND1_HUMAN Condensin complex subunit 1 OS=Homo sapiens...    42   0.015
+sp|Q10105|GCN1_SCHPO eIF-2-alpha kinase activator gcn1 OS=Schizo...    42   0.016
+sp|Q0DJS1|TOR_ORYSJ Serine/threonine-protein kinase TOR OS=Oryza...    42   0.016
+sp|Q757R0|VAC8_ASHGO Vacuolar protein 8 OS=Ashbya gossypii (stra...    42   0.016
+sp|Q8IUR7|ARMC8_HUMAN Armadillo repeat-containing protein 8 OS=H...    42   0.018
+sp|P42695|CNDD3_HUMAN Condensin-2 complex subunit D3 OS=Homo sap...    42   0.019
+sp|Q4QQT4|2AAB_RAT Serine/threonine-protein phosphatase 2A 65 kD...    42   0.026
+sp|F4IK92|TORL2_ARATH TORTIFOLIA1-like protein 2 OS=Arabidopsis ...    42   0.026
+sp|D3ZMK9|PRAG1_RAT Inactive tyrosine-protein kinase PRAG1 OS=Ra...    42   0.029
+sp|P29300|YCPZ_PSETP Uncharacterized phycocyanin operon protein ...    41   0.036
+sp|Q5R6S3|ARMC8_PONAB Armadillo repeat-containing protein 8 OS=P...    41   0.043
+sp|Q9D3W1|RSP14_MOUSE Radial spoke head 14 homolog OS=Mus muscul...    41   0.048
+sp|Q7TNP2|2AAB_MOUSE Serine/threonine-protein phosphatase 2A 65 ...    41   0.052
+sp|Q14974|IMB1_HUMAN Importin subunit beta-1 OS=Homo sapiens OX=...    41   0.053
+sp|Q8IWA4|MFN1_HUMAN Mitofusin-1 OS=Homo sapiens OX=9606 GN=MFN1...    41   0.054
+sp|P54613|2AAB_PIG Serine/threonine-protein phosphatase 2A 65 kD...    40   0.076
+sp|Q05AL1|ARMC8_DANRE Armadillo repeat-containing protein 8 OS=D...    40   0.11 
+sp|Q18GW3|SYI_HALWD Isoleucine--tRNA ligase OS=Haloquadratum wal...    40   0.11 
+sp|Q6P1G0|HEAT6_MOUSE HEAT repeat-containing protein 6 OS=Mus mu...    39   0.13 
+sp|A1EC95|HEAT6_RAT HEAT repeat-containing protein 6 OS=Rattus n...    39   0.14 
+sp|Q5R5R2|HEAT6_PONAB HEAT repeat-containing protein 6 OS=Pongo ...    39   0.15 
+sp|P29299|YCPY_PSETP Uncharacterized phycocyanin operon protein ...    39   0.15 
+sp|Q5NKU6|ICAM3_PANTR Intercellular adhesion molecule 3 OS=Pan t...    39   0.16 
+sp|Q6AI08|HEAT6_HUMAN HEAT repeat-containing protein 6 OS=Homo s...    39   0.18 
+sp|Q4KLU7|PD5AB_XENLA Sister chromatid cohesion protein PDS5 hom...    39   0.19 
+sp|Q4QXM3|PD5AA_XENLA Sister chromatid cohesion protein PDS5 hom...    39   0.19 
+sp|Q9YHY6|CND1_XENLA Condensin complex subunit 1 OS=Xenopus laev...    39   0.19 
+sp|Q99LG2|TNPO2_MOUSE Transportin-2 OS=Mus musculus OX=10090 GN=...    39   0.19 
+sp|Q99KY4|GAK_MOUSE Cyclin-G-associated kinase OS=Mus musculus O...    39   0.20 
+sp|O14787|TNPO2_HUMAN Transportin-2 OS=Homo sapiens OX=9606 GN=T...    39   0.21 
+sp|P30154|2AAB_HUMAN Serine/threonine-protein phosphatase 2A 65 ...    39   0.22 
+sp|Q63376|NRX2B_RAT Neurexin-2-beta OS=Rattus norvegicus OX=1011...    39   0.22 
+sp|Q63374|NRX2A_RAT Neurexin-2 OS=Rattus norvegicus OX=10116 GN=...    39   0.22 
+sp|Q5F3V3|PDS5A_CHICK Sister chromatid cohesion protein PDS5 hom...    39   0.22 
+sp|Q6BZF6|SSN2_DEBHA Mediator of RNA polymerase II transcription...    39   0.22 
+sp|Q0UVC3|TRM5_PHANO tRNA (guanine(37)-N1)-methyltransferase OS=...    39   0.26 
+sp|O75602|SPAG6_HUMAN Sperm-associated antigen 6 OS=Homo sapiens...    39   0.26 
+sp|P54169|YPGR_BACSU Uncharacterized protein YpgR OS=Bacillus su...    39   0.26 
+sp|P32942|ICAM3_HUMAN Intercellular adhesion molecule 3 OS=Homo ...    38   0.27 
+sp|Q5W041|ARMC3_HUMAN Armadillo repeat-containing protein 3 OS=H...    38   0.27 
+sp|Q02453|ARM_MUSDO Armadillo segment polarity protein OS=Musca ...    38   0.30 
+sp|P94017|CAP9_ARATH Putative clathrin assembly protein At1g1491...    38   0.35 
+sp|Q02185|RPCF_SYNPY Bilin biosynthesis protein RpcF OS=Synechoc...    38   0.38 
+sp|Q86XI2|CNDG2_HUMAN Condensin-2 complex subunit G2 OS=Homo sap...    38   0.42 
+sp|Q8C8V1|ZXDC_MOUSE Zinc finger protein ZXDC OS=Mus musculus OX...    38   0.44 
+sp|Q9BQG0|MBB1A_HUMAN Myb-binding protein 1A OS=Homo sapiens OX=...    38   0.44 
+sp|Q2TAW0|CNDG2_XENLA Condensin-2 complex subunit G2 OS=Xenopus ...    37   0.46 
+sp|O04294|IMPA3_ARATH Importin subunit alpha-3 OS=Arabidopsis th...    37   0.49 
+sp|P18824|ARM_DROME Armadillo segment polarity protein OS=Drosop...    37   0.53 
+sp|P97874|GAK_RAT Cyclin-G-associated kinase OS=Rattus norvegicu...    37   0.60 
+sp|P03317|POLN_SINDV Polyprotein P1234 OS=Sindbis virus OX=11034...    37   0.61 
+sp|P54612|2AAA_PIG Serine/threonine-protein phosphatase 2A 65 kD...    37   0.63 
+sp|Q76MZ3|2AAA_MOUSE Serine/threonine-protein phosphatase 2A 65 ...    37   0.63 
+sp|Q02177|MPEU_SYNPY Bilin biosynthesis protein MpeU OS=Synechoc...    37   0.65 
+sp|O15131|IMA6_HUMAN Importin subunit alpha-6 OS=Homo sapiens OX...    37   0.70 
+sp|A5HEI1|SCC2_ARATH Sister chromatid cohesion protein SCC2 OS=A...    37   0.71 
+sp|Q6ZQ73|CAND2_MOUSE Cullin-associated NEDD8-dissociated protei...    37   0.71 
+sp|P30153|2AAA_HUMAN Serine/threonine-protein phosphatase 2A 65 ...    37   0.72 
+sp|Q9VGP4|IPO9_DROME Importin-9 OS=Drosophila melanogaster OX=72...    37   0.73 
+sp|O28385|EF2_ARCFU Elongation factor 2 OS=Archaeoglobus fulgidu...    37   0.85 
+sp|Q68F64|UN45B_XENLA Protein unc-45 homolog B OS=Xenopus laevis...    37   0.90 
+sp|Q54WR2|GCN1_DICDI eIF-2-alpha kinase activator GCN1 OS=Dictyo...    37   0.90 
+sp|E7DNB6|TMP_BPDP1 Tape measure protein OS=Pneumococcus phage D...    37   0.91 
+sp|P29985|CPCF_NOSS1 Phycocyanobilin lyase subunit beta OS=Nosto...    37   0.98 
+sp|Q03169|TNAP2_HUMAN Tumor necrosis factor alpha-induced protei...    36   1.0  
+sp|O68007|BACB_BACLI Bacitracin synthase 2 OS=Bacillus lichenifo...    36   1.1  
+sp|Q9R0L4|CAND2_RAT Cullin-associated NEDD8-dissociated protein ...    36   1.1  
+sp|Q9YHB5|CND3_XENLA Condensin complex subunit 3 OS=Xenopus laev...    36   1.1  
+sp|Q09543|2AAA_CAEEL Probable serine/threonine-protein phosphata...    36   1.1  
+sp|Q72QT1|SYC_LEPIC Cysteine--tRNA ligase OS=Leptospira interrog...    36   1.1  
+sp|P31383|2AAA_YEAST Protein phosphatase PP2A regulatory subunit...    36   1.2  
+sp|Q8F525|SYC_LEPIN Cysteine--tRNA ligase OS=Leptospira interrog...    36   1.2  
+sp|Q3V129|ULK4_MOUSE Serine/threonine-protein kinase ULK4 OS=Mus...    36   1.3  
+sp|Q29478|CP2CV_CAPHE Cytochrome P450 2C31 (Fragment) OS=Capra h...    36   1.4  
+sp|Q91V10|VSX1_MOUSE Visual system homeobox 1 OS=Mus musculus OX...    36   1.5  
+sp|O82265|SCC3_ARATH Sister-chromatid cohesion protein 3 OS=Arab...    36   1.6  
+sp|Q54ZY3|SYCM_DICDI Probable cysteine--tRNA ligase, mitochondri...    36   2.0  
+sp|P50037|CPCE_THEVB Phycocyanobilin lyase subunit alpha OS=Ther...    36   2.1  
+sp|Q9P3A8|CAND1_SCHPO Cullin-associated NEDD8-dissociated protei...    35   2.4  
+sp|Q49XP0|CVFC_STAS1 Conserved virulence factor C OS=Staphylococ...    35   2.5  
+sp|P36179|2AAA_DROME Serine/threonine-protein phosphatase PP2A 6...    35   2.5  
+sp|Q9SV09|C3H46_ARATH Zinc finger CCCH domain-containing protein...    35   2.6  
+sp|P35526|CLIC5_BOVIN Chloride intracellular channel protein 5 O...    35   2.6  
+sp|Q95XZ5|NIPBL_CAEEL Nipped-B-like protein scc-2 OS=Caenorhabdi...    35   2.7  
+sp|Q04002|SCC2_YEAST Sister chromatid cohesion protein 2 OS=Sacc...    35   2.8  
+sp|P38339|RGD1_YEAST RHO GTPase-activating protein RGD1 OS=Sacch...    35   2.9  
+sp|Q8WXI7|MUC16_HUMAN Mucin-16 OS=Homo sapiens OX=9606 GN=MUC16 ...    35   3.0  
+sp|G3V893|ZN335_RAT Zinc finger protein 335 OS=Rattus norvegicus...    35   3.5  
+sp|Q7M732|RTL1_MOUSE Retrotransposon-like protein 1 OS=Mus muscu...    35   3.8  
+sp|B7ZWR6|OEP61_ARATH Outer envelope protein 61 OS=Arabidopsis t...    34   4.0  
+sp|O70576|STAG3_MOUSE Cohesin subunit SA-3 OS=Mus musculus OX=10...    34   4.3  
+sp|Q9NBD7|CLASP_DROME CLIP-associating protein OS=Drosophila mel...    34   4.6  
+sp|P58401|NRX2B_HUMAN Neurexin-2-beta OS=Homo sapiens OX=9606 GN...    34   4.8  
+sp|Q2NI31|SYM_METST Methionine--tRNA ligase OS=Methanosphaera st...    34   5.2  
+sp|A4ILZ9|BSHC_GEOTN Putative cysteine ligase BshC OS=Geobacillu...    34   5.3  
+sp|Q7ZYV9|SYMPK_XENLA Symplekin OS=Xenopus laevis OX=8355 GN=sym...    34   5.4  
+sp|Q8K4Q0|RPTOR_MOUSE Regulatory-associated protein of mTOR OS=M...    34   5.6  
+sp|Q9P2S2|NRX2A_HUMAN Neurexin-2 OS=Homo sapiens OX=9606 GN=NRXN...    34   5.7  
+sp|P0A2L9|SIRB1_SALTY Protein SirB1 OS=Salmonella typhimurium (s...    34   6.6  
+sp|P0A2M0|SIRB1_SALTI Protein SirB1 OS=Salmonella typhi OX=90370...    34   6.6  
+sp|P33265|CP2CS_MESAU Cytochrome P450 2C28 OS=Mesocricetus aurat...    34   6.6  
+sp|Q1L8U8|STB1A_DANRE Histone-lysine N-methyltransferase SETDB1-...    34   6.7  
+sp|Q9Z1R2|BAG6_MOUSE Large proline-rich protein BAG6 OS=Mus musc...    34   7.7  
+sp|A5D9M6|BAG6_PIG Large proline-rich protein BAG6 OS=Sus scrofa...    34   8.0  
+sp|Q7ZY56|HEAT6_XENLA HEAT repeat-containing protein 6 OS=Xenopu...    33   8.5  
+sp|P70325|TBX4_MOUSE T-box transcription factor TBX4 OS=Mus musc...    33   8.6  
+sp|B7ZRU9|EVI1A_XENLA MDS1 and EVI1 complex locus protein EVI1-A...    33   9.5  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q9LDK9|APBLA_ARATH Beta-adaptin-like protein A OS=Arabidopsis...   816   0.0  
+sp|O81742|APBLC_ARATH Beta-adaptin-like protein C OS=Arabidopsis...   607   e-172
+sp|Q10567|AP1B1_HUMAN AP-1 complex subunit beta-1 OS=Homo sapien...   599   e-170
+sp|O35643|AP1B1_MOUSE AP-1 complex subunit beta-1 OS=Mus musculu...   592   e-168
+sp|Q9SUS3|APBLB_ARATH Beta-adaptin-like protein B OS=Arabidopsis...   592   e-168
+sp|Q9DBG3|AP2B1_MOUSE AP-2 complex subunit beta OS=Mus musculus ...   587   e-166
+sp|P62944|AP2B1_RAT AP-2 complex subunit beta OS=Rattus norvegic...   587   e-166
+sp|P63010|AP2B1_HUMAN AP-2 complex subunit beta OS=Homo sapiens ...   587   e-166
+sp|P63009|AP2B1_BOVIN AP-2 complex subunit beta OS=Bos taurus OX...   587   e-166
+sp|Q08DS7|AP1B1_BOVIN AP-1 complex subunit beta-1 OS=Bos taurus ...   584   e-165
+sp|P52303|AP1B1_RAT AP-1 complex subunit beta-1 OS=Rattus norveg...   580   e-164
+sp|Q54X82|AP1B_DICDI AP-1 complex subunit beta OS=Dictyostelium ...   539   e-152
+sp|Q9ZUI6|AP1G2_ARATH AP-1 complex subunit gamma-2 OS=Arabidopsi...   494   e-138
+sp|P22892|AP1G1_MOUSE AP-1 complex subunit gamma-1 OS=Mus muscul...   490   e-137
+sp|O43747|AP1G1_HUMAN AP-1 complex subunit gamma-1 OS=Homo sapie...   486   e-136
+sp|Q5R5M2|AP1G1_PONAB AP-1 complex subunit gamma-1 OS=Pongo abel...   485   e-136
+sp|Q9WV76|AP4B1_MOUSE AP-4 complex subunit beta-1 OS=Mus musculu...   485   e-136
+sp|Q84K16|AP1G1_ARATH AP-1 complex subunit gamma-1 OS=Arabidopsi...   483   e-135
+sp|O43005|AP2B_SCHPO AP-2 complex subunit beta OS=Schizosaccharo...   479   e-134
+sp|O43079|AP1B1_SCHPO AP-1 complex subunit beta-1 OS=Schizosacch...   475   e-133
+sp|Q9Y6B7|AP4B1_HUMAN AP-4 complex subunit beta-1 OS=Homo sapien...   469   e-131
+sp|Q8LPL6|AP2A1_ARATH AP-2 complex subunit alpha-1 OS=Arabidopsi...   462   e-129
+sp|Q8LPK4|AP2A2_ARATH AP-2 complex subunit alpha-2 OS=Arabidopsi...   461   e-128
+sp|A2VE21|COPG2_BOVIN Coatomer subunit gamma-2 OS=Bos taurus OX=...   447   e-124
+sp|Q9QXK3|COPG2_MOUSE Coatomer subunit gamma-2 OS=Mus musculus O...   447   e-124
+sp|Q9UBF2|COPG2_HUMAN Coatomer subunit gamma-2 OS=Homo sapiens O...   446   e-124
+sp|P36000|AP1B1_YEAST AP-1 complex subunit beta-1 OS=Saccharomyc...   442   e-123
+sp|Q99128|AP1G1_USTMA AP-1 complex subunit gamma-1 OS=Ustilago m...   438   e-121
+sp|D4ABY2|COPG2_RAT Coatomer subunit gamma-2 OS=Rattus norvegicu...   438   e-121
+sp|Q9I8E6|COPG2_TAKRU Coatomer subunit gamma-2 OS=Takifugu rubri...   437   e-121
+sp|Q9PUE4|COPG2_DANRE Coatomer subunit gamma-2 OS=Danio rerio OX...   437   e-121
+sp|O88512|AP1G2_MOUSE AP-1 complex subunit gamma-like 2 OS=Mus m...   435   e-121
+sp|O75843|AP1G2_HUMAN AP-1 complex subunit gamma-like 2 OS=Homo ...   434   e-120
+sp|P17426|AP2A1_MOUSE AP-2 complex subunit alpha-1 OS=Mus muscul...   431   e-119
+sp|Q66JI9|COPG2_XENTR Coatomer subunit gamma-2 OS=Xenopus tropic...   431   e-119
+sp|O95782|AP2A1_HUMAN AP-2 complex subunit alpha-1 OS=Homo sapie...   431   e-119
+sp|Q8I0G5|COPG_DROME Coatomer subunit gamma OS=Drosophila melano...   429   e-119
+sp|Q80V94|AP4E1_MOUSE AP-4 complex subunit epsilon-1 OS=Mus musc...   429   e-119
+sp|Q6DKD7|COPG2_XENLA Coatomer subunit gamma-2 OS=Xenopus laevis...   429   e-119
+sp|Q9C0W7|AP2A_SCHPO AP-2 complex subunit alpha OS=Schizosacchar...   429   e-119
+sp|P17427|AP2A2_MOUSE AP-2 complex subunit alpha-2 OS=Mus muscul...   429   e-119
+sp|P18484|AP2A2_RAT AP-2 complex subunit alpha-2 OS=Rattus norve...   428   e-119
+sp|Q7QG73|AP2A_ANOGA AP-2 complex subunit alpha OS=Anopheles gam...   427   e-118
+sp|O94973|AP2A2_HUMAN AP-2 complex subunit alpha-2 OS=Homo sapie...   424   e-117
+sp|Q29N38|AP2A_DROPS AP-2 complex subunit alpha OS=Drosophila ps...   423   e-117
+sp|P91926|AP2A_DROME AP-2 complex subunit alpha OS=Drosophila me...   421   e-116
+sp|Q9Y678|COPG1_HUMAN Coatomer subunit gamma-1 OS=Homo sapiens O...   420   e-116
+sp|P53620|COPG1_BOVIN Coatomer subunit gamma-1 OS=Bos taurus OX=...   418   e-116
+sp|O54774|AP3D1_MOUSE AP-3 complex subunit delta-1 OS=Mus muscul...   418   e-116
+sp|Q29AE5|COPG_DROPS Coatomer subunit gamma OS=Drosophila pseudo...   417   e-115
+sp|Q0VCK5|AP2A2_BOVIN AP-2 complex subunit alpha-2 OS=Bos taurus...   417   e-115
+sp|Q9QZE5|COPG1_MOUSE Coatomer subunit gamma-1 OS=Mus musculus O...   416   e-115
+sp|Q4AEF8|COPG1_RAT Coatomer subunit gamma-1 OS=Rattus norvegicu...   416   e-115
+sp|Q9UPM8|AP4E1_HUMAN AP-4 complex subunit epsilon-1 OS=Homo sap...   415   e-115
+sp|Q9UU81|AP1G1_SCHPO AP-1 complex subunit gamma-1 OS=Schizosacc...   413   e-114
+sp|O14617|AP3D1_HUMAN AP-3 complex subunit delta-1 OS=Homo sapie...   412   e-114
+sp|Q8I8U2|AP1G_DICDI AP-1 complex subunit gamma OS=Dictyostelium...   410   e-113
+sp|Q865S1|AP3D1_BOVIN AP-3 complex subunit delta-1 OS=Bos taurus...   408   e-113
+sp|O00203|AP3B1_HUMAN AP-3 complex subunit beta-1 OS=Homo sapien...   408   e-112
+sp|Q13367|AP3B2_HUMAN AP-3 complex subunit beta-2 OS=Homo sapien...   405   e-111
+sp|Q9JME5|AP3B2_MOUSE AP-3 complex subunit beta-2 OS=Mus musculu...   404   e-111
+sp|Q32PG1|AP3B1_BOVIN AP-3 complex subunit beta-1 OS=Bos taurus ...   403   e-111
+sp|Q7YRF1|AP3B1_CANLF AP-3 complex subunit beta-1 OS=Canis lupus...   402   e-111
+sp|Q0WW26|COPG_ARATH Coatomer subunit gamma OS=Arabidopsis thali...   402   e-111
+sp|Q9Z1T1|AP3B1_MOUSE AP-3 complex subunit beta-1 OS=Mus musculu...   400   e-110
+sp|Q54R84|AP4B_DICDI AP-4 complex subunit beta OS=Dictyostelium ...   398   e-109
+sp|Q86KI1|AP2A2_DICDI AP-2 complex subunit alpha-2 OS=Dictyostel...   396   e-109
+sp|Q22498|COPG_CAEEL Probable coatomer subunit gamma OS=Caenorha...   391   e-107
+sp|Q6Z382|COPG2_ORYSJ Coatomer subunit gamma-2 OS=Oryza sativa s...   389   e-107
+sp|Q7PVF6|COPG_ANOGA Coatomer subunit gamma OS=Anopheles gambiae...   382   e-105
+sp|Q8H852|COPG1_ORYSJ Coatomer subunit gamma-1 OS=Oryza sativa s...   382   e-105
+sp|Q9UTL8|AP3D_SCHPO AP-3 complex subunit delta OS=Schizosacchar...   376   e-103
+sp|P54362|AP3D_DROME AP-3 complex subunit delta OS=Drosophila me...   364   2e-99
+sp|Q54HL0|COPG_DICDI Coatomer subunit gamma OS=Dictyostelium dis...   357   2e-97
+sp|Q54WN0|AP3D_DICDI AP-3 complex subunit delta OS=Dictyostelium...   354   1e-96
+sp|Q8L7A9|AP4E_ARATH AP-4 complex subunit epsilon OS=Arabidopsis...   352   9e-96
+sp|Q08951|AP3D_YEAST AP-3 complex subunit delta OS=Saccharomyces...   346   4e-94
+sp|Q556J8|AP3B_DICDI AP-3 complex subunit beta OS=Dictyostelium ...   342   9e-93
+sp|Q755A1|AP3D_ASHGO AP-3 complex subunit delta OS=Ashbya gossyp...   335   1e-90
+sp|P27351|AP2B_YEAST AP-2 complex subunit beta OS=Saccharomyces ...   326   4e-88
+sp|P87140|COPG_SCHPO Probable coatomer subunit gamma OS=Schizosa...   324   2e-87
+sp|Q9SV20|COPB2_ARATH Coatomer subunit beta-2 OS=Arabidopsis tha...   315   1e-84
+sp|D2SW95|COPB_PIG Coatomer subunit beta OS=Sus scrofa OX=9823 G...   313   4e-84
+sp|Q23924|COPB_DICDI Coatomer subunit beta OS=Dictyostelium disc...   313   5e-84
+sp|Q9SV21|COPB1_ARATH Coatomer subunit beta-1 OS=Arabidopsis tha...   312   6e-84
+sp|O13939|AP3B_SCHPO AP-3 complex subunit beta OS=Schizosaccharo...   311   1e-83
+sp|Q9JIF7|COPB_MOUSE Coatomer subunit beta OS=Mus musculus OX=10...   310   2e-83
+sp|P53618|COPB_HUMAN Coatomer subunit beta OS=Homo sapiens OX=96...   310   3e-83
+sp|P23514|COPB_RAT Coatomer subunit beta OS=Rattus norvegicus OX...   310   3e-83
+sp|A0JN39|COPB_BOVIN Coatomer subunit beta OS=Bos taurus OX=9913...   310   3e-83
+sp|Q5R922|COPB_PONAB Coatomer subunit beta OS=Pongo abelii OX=96...   309   8e-83
+sp|Q5ZIA5|COPB_CHICK Coatomer subunit beta OS=Gallus gallus OX=9...   308   2e-82
+sp|Q66HV4|COPB_DANRE Coatomer subunit beta OS=Danio rerio OX=795...   307   2e-82
+sp|Q29G21|COPB_DROPS Coatomer subunit beta OS=Drosophila pseudoo...   302   1e-80
+sp|Q53PC7|COPB1_ORYSJ Coatomer subunit beta-1 OS=Oryza sativa su...   299   5e-80
+sp|Q0JNK5|COPB2_ORYSJ Coatomer subunit beta-2 OS=Oryza sativa su...   299   9e-80
+sp|Q6FM46|COPB_CANGA Coatomer subunit beta OS=Candida glabrata (...   296   5e-79
+sp|P45437|COPB_DROME Coatomer subunit beta OS=Drosophila melanog...   296   7e-79
+sp|Q9C744|AP3D_ARATH AP-3 complex subunit delta OS=Arabidopsis t...   295   7e-79
+sp|P41810|COPB_YEAST Coatomer subunit beta OS=Saccharomyces cere...   294   2e-78
+sp|Q9UUF7|COPB_SCHPO Coatomer subunit beta OS=Schizosaccharomyce...   292   6e-78
+sp|P46682|AP3B_YEAST AP-3 complex subunit beta OS=Saccharomyces ...   291   2e-77
+sp|P32074|COPG_YEAST Coatomer subunit gamma OS=Saccharomyces cer...   290   3e-77
+sp|Q759E2|AP3B_ASHGO AP-3 complex subunit beta OS=Ashbya gossypi...   290   4e-77
+sp|P38065|AP2A_YEAST AP-2 complex subunit alpha OS=Saccharomyces...   283   5e-75
+sp|Q54VE0|AP4E_DICDI AP-4 complex subunit epsilon OS=Dictyosteli...   277   2e-73
+sp|Q9NFU6|COPB_TRYBB Coatomer subunit beta OS=Trypanosoma brucei...   276   7e-73
+sp|Q12028|AP1G1_YEAST AP-1 complex subunit gamma-1 OS=Saccharomy...   265   9e-70
+sp|Q9U4N3|COPB_TOXGO Coatomer subunit beta OS=Toxoplasma gondii ...   262   1e-68
+sp|Q9M2T1|AP3BA_ARATH AP3-complex subunit beta-A OS=Arabidopsis ...   245   2e-63
+sp|Q6C5Y8|VAC8_YARLI Vacuolar protein 8 OS=Yarrowia lipolytica (...   190   5e-47
+sp|Q4I1B1|VAC8_GIBZE Vacuolar protein 8 OS=Gibberella zeae (stra...   184   2e-45
+sp|Q7RXW1|VAC8_NEUCR Vacuolar protein 8 OS=Neurospora crassa (st...   183   6e-45
+sp|Q4WVW4|VAC8_ASPFU Vacuolar protein 8 OS=Aspergillus fumigatus...   181   3e-44
+sp|Q2U5T5|VAC8_ASPOR Vacuolar protein 8 OS=Aspergillus oryzae (s...   179   1e-43
+sp|Q6CX49|VAC8_KLULA Vacuolar protein 8 OS=Kluyveromyces lactis ...   173   6e-42
+sp|F4I893|ILA_ARATH Protein ILITYHIA OS=Arabidopsis thaliana OX=...   164   2e-39
+sp|Q86C65|TOR_DICDI Serine/threonine-protein kinase tor OS=Dicty...   156   5e-37
+sp|Q5EFZ4|VAC8_PICPA Vacuolar protein 8 OS=Komagataella pastoris...   154   2e-36
+sp|Q54NU8|TSTA_DICDI TSET complex member tstA OS=Dictyostelium d...   112   9e-24
+sp|O94679|CND1_SCHPO Condensin complex subunit 1 OS=Schizosaccha...   109   2e-22
+sp|B0R4J2|HTAXP_HALS3 HEAT repeat-containing taxis protein OE_24...    86   1e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q2GW27|VAC8_CHAGB Vacuolar protein 8 OS=Chaetomium globosum (...   167   3e-40
+sp|P0CM60|VAC8_CRYNJ Vacuolar protein 8 OS=Cryptococcus neoforma...   158   3e-37
+sp|P0CM61|VAC8_CRYNB Vacuolar protein 8 OS=Cryptococcus neoforma...   158   3e-37
+sp|O43028|VAC8_SCHPO Vacuolar protein 8 OS=Schizosaccharomyces p...   153   5e-36
+sp|Q59MN0|VAC8_CANAL Vacuolar protein 8 OS=Candida albicans (str...   153   7e-36
+sp|P39968|VAC8_YEAST Vacuolar protein 8 OS=Saccharomyces cerevis...   152   1e-35
+sp|Q6FJV1|VAC8_CANGA Vacuolar protein 8 OS=Candida glabrata (str...   149   1e-34
+sp|Q6BTZ4|VAC8_DEBHA Vacuolar protein 8 OS=Debaryomyces hansenii...   149   1e-34
+sp|Q757R0|VAC8_ASHGO Vacuolar protein 8 OS=Ashbya gossypii (stra...   145   2e-33
+sp|Q9Y7K2|TOR2_SCHPO Serine/threonine-protein kinase tor2 OS=Sch...    81   4e-14
+sp|P35169|TOR1_YEAST Serine/threonine-protein kinase TOR1 OS=Sac...    70   6e-11
+sp|Q6ZQK0|CNDD3_MOUSE Condensin-2 complex subunit D3 OS=Mus musc...    69   2e-10
+sp|O44326|HMP2_CAEEL Beta-catenin-like protein hmp-2 OS=Caenorha...    67   6e-10
+sp|Q9ZU97|VAC14_ARATH Protein VAC14 homolog OS=Arabidopsis thali...    66   1e-09
+sp|P32600|TOR2_YEAST Serine/threonine-protein kinase TOR2 OS=Sac...    66   1e-09
+sp|P33892|GCN1_YEAST eIF-2-alpha kinase activator GCN1 OS=Saccha...    63   1e-08
+sp|Q9VK45|TOR_DROME Serine/threonine-protein kinase Tor OS=Droso...    63   1e-08
+sp|O75602|SPAG6_HUMAN Sperm-associated antigen 6 OS=Homo sapiens...    62   3e-08
+sp|Q17GS9|ARM_AEDAE Armadillo segment polarity protein OS=Aedes ...    61   5e-08
+sp|P42695|CNDD3_HUMAN Condensin-2 complex subunit D3 OS=Homo sap...    61   6e-08
+sp|Q54WR2|GCN1_DICDI eIF-2-alpha kinase activator GCN1 OS=Dictyo...    59   1e-07
+sp|P18824|ARM_DROME Armadillo segment polarity protein OS=Drosop...    59   1e-07
+sp|Q9JLI7|SPAG6_MOUSE Sperm-associated antigen 6 OS=Mus musculus...    59   1e-07
+sp|Q02453|ARM_MUSDO Armadillo segment polarity protein OS=Musca ...    58   3e-07
+sp|Q29I35|ARM_DROPS Armadillo segment polarity protein OS=Drosop...    58   3e-07
+sp|Q9D3W1|RSP14_MOUSE Radial spoke head 14 homolog OS=Mus muscul...    58   4e-07
+sp|Q503E9|IMA6_DANRE Importin subunit alpha-6 OS=Danio rerio OX=...    57   4e-07
+sp|E9PVA8|GCN1_MOUSE eIF-2-alpha kinase activator GCN1 OS=Mus mu...    57   7e-07
+sp|Q8BFY9|TNPO1_MOUSE Transportin-1 OS=Mus musculus OX=10090 GN=...    57   8e-07
+sp|Q9C6Y4|CSI2_ARATH Protein CELLULOSE SYNTHASE INTERACTIVE 2 OS...    57   8e-07
+sp|Q92973|TNPO1_HUMAN Transportin-1 OS=Homo sapiens OX=9606 GN=T...    57   9e-07
+sp|Q3SYU7|TNPO1_BOVIN Transportin-1 OS=Bos taurus OX=9913 GN=TNP...    57   9e-07
+sp|C0LLJ0|IMA8_MOUSE Importin subunit alpha-8 OS=Mus musculus OX...    56   2e-06
+sp|Q06156|CND1_YEAST Condensin complex subunit 1 OS=Saccharomyce...    55   3e-06
+sp|P87145|VAC14_SCHPO Protein VAC14 homolog OS=Schizosaccharomyc...    55   3e-06
+sp|Q9SFX2|PUB43_ARATH U-box domain-containing protein 43 OS=Arab...    55   3e-06
+sp|Q99LG2|TNPO2_MOUSE Transportin-2 OS=Mus musculus OX=10090 GN=...    55   3e-06
+sp|O14787|TNPO2_HUMAN Transportin-2 OS=Homo sapiens OX=9606 GN=T...    55   3e-06
+sp|Q8SPJ1|PLAK_BOVIN Junction plakoglobin OS=Bos taurus OX=9913 ...    54   4e-06
+sp|P35224|CTNB_URECA Catenin beta OS=Urechis caupo OX=6431 PE=2 ...    54   4e-06
+sp|P14923|PLAK_HUMAN Junction plakoglobin OS=Homo sapiens OX=960...    54   4e-06
+sp|Q9FWY7|IMPA6_ARATH Importin subunit alpha-6 OS=Arabidopsis th...    54   6e-06
+sp|Q8WNW3|PLAK_PIG Junction plakoglobin OS=Sus scrofa OX=9823 GN...    54   6e-06
+sp|Q8TEX9|IPO4_HUMAN Importin-4 OS=Homo sapiens OX=9606 GN=IPO4 ...    54   6e-06
+sp|Q92616|GCN1_HUMAN eIF-2-alpha kinase activator GCN1 OS=Homo s...    54   6e-06
+sp|Q02257|PLAK_MOUSE Junction plakoglobin OS=Mus musculus OX=100...    54   8e-06
+sp|Q9FJ09|IMPA5_ARATH Importin subunit alpha-5 OS=Arabidopsis th...    53   9e-06
+sp|Q55BR7|RPTOR_DICDI Protein raptor homolog OS=Dictyostelium di...    53   1e-05
+sp|Q6P0K8|PLAK_RAT Junction plakoglobin OS=Rattus norvegicus OX=...    53   1e-05
+sp|E9Q912|GDS1_MOUSE Rap1 GTPase-GDP dissociation stimulator 1 O...    53   1e-05
+sp|Q5W041|ARMC3_HUMAN Armadillo repeat-containing protein 3 OS=H...    52   1e-05
+sp|Q8H0U4|TNPO1_ARATH Transportin-1 OS=Arabidopsis thaliana OX=3...    52   2e-05
+sp|P35223|CTNB_TRIGR Catenin beta OS=Tripneustes gratilla OX=767...    52   2e-05
+sp|Q05AL1|ARMC8_DANRE Armadillo repeat-containing protein 8 OS=D...    52   2e-05
+sp|Q7QHW5|ARM_ANOGA Armadillo segment polarity protein OS=Anophe...    52   2e-05
+sp|Q76P29|IMAB_DICDI Importin subunit alpha-B OS=Dictyostelium d...    51   3e-05
+sp|Q8CIM8|INT4_MOUSE Integrator complex subunit 4 OS=Mus musculu...    51   4e-05
+sp|Q8VI75|IPO4_MOUSE Importin-4 OS=Mus musculus OX=10090 GN=Ipo4...    51   4e-05
+sp|P29300|YCPZ_PSETP Uncharacterized phycocyanin operon protein ...    51   4e-05
+sp|P31383|2AAA_YEAST Protein phosphatase PP2A regulatory subunit...    51   4e-05
+sp|Q5PPZ9|GDS1B_XENLA Rap1 GTPase-GDP dissociation stimulator 1-...    51   4e-05
+sp|O14134|ELF1_SCHPO mRNA export factor elf1 OS=Schizosaccharomy...    51   5e-05
+sp|P30998|PLAK_XENLA Junction plakoglobin OS=Xenopus laevis OX=8...    51   6e-05
+sp|Q5T2S8|ODAD2_HUMAN Outer dynein arm-docking complex subunit 2...    50   8e-05
+sp|Q95XZ5|NIPBL_CAEEL Nipped-B-like protein scc-2 OS=Caenorhabdi...    50   8e-05
+sp|O93614|GDS1A_XENLA Rap1 GTPase-GDP dissociation stimulator 1-...    50   9e-05
+sp|Q0DJS1|TOR_ORYSJ Serine/threonine-protein kinase TOR OS=Oryza...    50   9e-05
+sp|Q9SLX0|IMA1B_ORYSJ Importin subunit alpha-1b OS=Oryza sativa ...    50   9e-05
+sp|Q4QQT4|2AAB_RAT Serine/threonine-protein phosphatase 2A 65 kD...    50   1e-04
+sp|Q54VU5|Y0038_DICDI Probable inactive serine/threonine-protein...    49   1e-04
+sp|P52306|GDS1_HUMAN Rap1 GTPase-GDP dissociation stimulator 1 O...    49   2e-04
+sp|Q9UHP6|RSP14_HUMAN Radial spoke head 14 homolog OS=Homo sapie...    49   2e-04
+sp|P54613|2AAB_PIG Serine/threonine-protein phosphatase 2A 65 kD...    49   2e-04
+sp|O75155|CAND2_HUMAN Cullin-associated NEDD8-dissociated protei...    48   3e-04
+sp|Q7TNP2|2AAB_MOUSE Serine/threonine-protein phosphatase 2A 65 ...    48   3e-04
+sp|F4JL11|IMPA2_ARATH Importin subunit alpha-2 OS=Arabidopsis th...    48   3e-04
+sp|E1B8W3|ODAD2_BOVIN Outer dynein arm-docking complex subunit 2...    48   4e-04
+sp|Q8L5Y6|CAND1_ARATH Cullin-associated NEDD8-dissociated protei...    48   4e-04
+sp|Q04173|GDS1_BOVIN Rap1 GTPase-GDP dissociation stimulator 1 O...    48   4e-04
+sp|P54169|YPGR_BACSU Uncharacterized protein YpgR OS=Bacillus su...    47   6e-04
+sp|O14089|IMB2_SCHPO Importin subunit beta-2 OS=Schizosaccharomy...    47   6e-04
+sp|F4IK92|TORL2_ARATH TORTIFOLIA1-like protein 2 OS=Arabidopsis ...    47   6e-04
+sp|Q9FR53|TOR_ARATH Serine/threonine-protein kinase TOR OS=Arabi...    47   6e-04
+sp|O74476|IMB3_SCHPO Importin subunit beta-3 OS=Schizosaccharomy...    47   6e-04
+sp|B9DHT4|ARIA_ARATH ARM REPEAT PROTEIN INTERACTING WITH ABF2 OS...    47   6e-04
+sp|Q86XA9|HTR5A_HUMAN HEAT repeat-containing protein 5A OS=Homo ...    47   6e-04
+sp|P30154|2AAB_HUMAN Serine/threonine-protein phosphatase 2A 65 ...    47   6e-04
+sp|O14356|TOR1_SCHPO Serine/threonine-protein kinase tor1 OS=Sch...    47   6e-04
+sp|Q9NBD7|CLASP_DROME CLIP-associating protein OS=Drosophila mel...    47   7e-04
+sp|Q10105|GCN1_SCHPO eIF-2-alpha kinase activator gcn1 OS=Schizo...    47   7e-04
+sp|B2RY50|ODAD2_MOUSE Outer dynein arm-docking complex subunit 2...    47   0.001
+sp|Q6ZQ38|CAND1_MOUSE Cullin-associated NEDD8-dissociated protei...    47   0.001
+sp|F4IIM1|CSI1_ARATH Protein CELLULOSE SYNTHASE INTERACTIVE 1 OS...    47   0.001
+sp|Q55CQ7|TNPO_DICDI Transportin OS=Dictyostelium discoideum OX=...    47   0.001
+sp|Q9FJ92|IMPA8_ARATH Importin subunit alpha-8 OS=Arabidopsis th...    46   0.001
+sp|Q5R6L5|CAND1_PONAB Cullin-associated NEDD8-dissociated protei...    46   0.001
+sp|F1QGH7|CTNB1_DANRE Catenin beta-1 OS=Danio rerio OX=7955 GN=c...    46   0.001
+sp|Q6ZQ73|CAND2_MOUSE Cullin-associated NEDD8-dissociated protei...    46   0.001
+sp|G5EB89|KAPA_EMENI Importin subunit alpha OS=Emericella nidula...    46   0.001
+sp|Q9UT08|2AAA_SCHPO Protein phosphatase PP2A regulatory subunit...    46   0.001
+sp|Q86VP6|CAND1_HUMAN Cullin-associated NEDD8-dissociated protei...    46   0.002
+sp|A7MBJ5|CAND1_BOVIN Cullin-associated NEDD8-dissociated protei...    46   0.002
+sp|A2AU72|ARMC3_MOUSE Armadillo repeat-containing protein 3 OS=M...    46   0.002
+sp|P97536|CAND1_RAT Cullin-associated NEDD8-dissociated protein ...    46   0.002
+sp|Q9WU82|CTNB1_RAT Catenin beta-1 OS=Rattus norvegicus OX=10116...    46   0.002
+sp|B6V8E6|CTNB1_CANLF Catenin beta-1 OS=Canis lupus familiaris O...    46   0.002
+sp|Q0VCX4|CTNB1_BOVIN Catenin beta-1 OS=Bos taurus OX=9913 GN=CT...    46   0.002
+sp|Q02248|CTNB1_MOUSE Catenin beta-1 OS=Mus musculus OX=10090 GN...    46   0.002
+sp|P35222|CTNB1_HUMAN Catenin beta-1 OS=Homo sapiens OX=9606 GN=...    46   0.002
+sp|Q38951|2AAG_ARATH Serine/threonine-protein phosphatase 2A 65 ...    46   0.002
+sp|P26233|CTNB1_XENLA Catenin beta-1 OS=Xenopus laevis OX=8355 G...    46   0.002
+sp|P30153|2AAA_HUMAN Serine/threonine-protein phosphatase 2A 65 ...    46   0.002
+sp|F4I735|PDS5B_ARATH Sister chromatid cohesion protein PDS5 hom...    46   0.002
+sp|Q9JLN9|MTOR_MOUSE Serine/threonine-protein kinase mTOR OS=Mus...    46   0.002
+sp|Q96HW7|INT4_HUMAN Integrator complex subunit 4 OS=Homo sapien...    45   0.002
+sp|Q32PI5|2AAA_BOVIN Serine/threonine-protein phosphatase 2A 65 ...    45   0.003
+sp|P54612|2AAA_PIG Serine/threonine-protein phosphatase 2A 65 kD...    45   0.003
+sp|Q76MZ3|2AAA_MOUSE Serine/threonine-protein phosphatase 2A 65 ...    45   0.003
+sp|P42346|MTOR_RAT Serine/threonine-protein kinase mTOR OS=Rattu...    45   0.003
+sp|Q68F70|INT4_XENLA Integrator complex subunit 4 OS=Xenopus lae...    45   0.003
+sp|Q9R0L4|CAND2_RAT Cullin-associated NEDD8-dissociated protein ...    45   0.003
+sp|O22478|IMA_SOLLC Importin subunit alpha OS=Solanum lycopersic...    45   0.004
+sp|Q86KD1|CAND1_DICDI Cullin-associated NEDD8-dissociated protei...    44   0.004
+sp|Q9M0E5|VPS15_ARATH Serine/threonine-protein kinase VPS15 OS=A...    44   0.004
+sp|Q9T041|TOR1_ARATH Microtubule-associated protein TORTIFOLIA1 ...    44   0.005
+sp|Q9P225|DYH2_HUMAN Dynein axonemal heavy chain 2 OS=Homo sapie...    44   0.005
+sp|Q02185|RPCF_SYNPY Bilin biosynthesis protein RpcF OS=Synechoc...    44   0.005
+sp|Q66L58|VAC14_DANRE Protein VAC14 homolog OS=Danio rerio OX=79...    44   0.006
+sp|Q8K4Q0|RPTOR_MOUSE Regulatory-associated protein of mTOR OS=M...    44   0.007
+sp|Q9YHY6|CND1_XENLA Condensin complex subunit 1 OS=Xenopus laev...    44   0.007
+sp|Q38845|2AAA_ARATH Serine/threonine-protein phosphatase 2A 65 ...    44   0.007
+sp|Q56R16|IMA6_RAT Importin subunit alpha-6 OS=Rattus norvegicus...    44   0.007
+sp|P42345|MTOR_HUMAN Serine/threonine-protein kinase mTOR OS=Hom...    44   0.008
+sp|P0C6F1|DYH2_MOUSE Dynein axonemal heavy chain 2 OS=Mus muscul...    44   0.008
+sp|Q8K2Z4|CND1_MOUSE Condensin complex subunit 1 OS=Mus musculus...    44   0.008
+sp|A5HEI1|SCC2_ARATH Sister chromatid cohesion protein SCC2 OS=A...    43   0.008
+sp|Q7Z5J8|ANKAR_HUMAN Ankyrin and armadillo repeat-containing pr...    43   0.009
+sp|P52292|IMA1_HUMAN Importin subunit alpha-1 OS=Homo sapiens OX...    43   0.009
+sp|P49955|SF3B1_YEAST U2 snRNP component HSH155 OS=Saccharomyces...    43   0.009
+sp|P29985|CPCF_NOSS1 Phycocyanobilin lyase subunit beta OS=Nosto...    43   0.009
+sp|P07126|CPCE_MICDP Phycocyanobilin lyase subunit alpha OS=Micr...    43   0.009
+sp|Q5R9J3|ARMX3_PONAB Armadillo repeat-containing X-linked prote...    43   0.011
+sp|Q9VS24|MELT_DROME Protein melted OS=Drosophila melanogaster O...    43   0.011
+sp|Q8N122|RPTOR_HUMAN Regulatory-associated protein of mTOR OS=H...    43   0.011
+sp|O00410|IPO5_HUMAN Importin-5 OS=Homo sapiens OX=9606 GN=IPO5 ...    43   0.011
+sp|O60518|RNBP6_HUMAN Ran-binding protein 6 OS=Homo sapiens OX=9...    43   0.012
+sp|Q9ESE1|LRBA_MOUSE Lipopolysaccharide-responsive and beige-lik...    43   0.012
+sp|Q67FY2|BCL9L_MOUSE B-cell CLL/lymphoma 9-like protein OS=Mus ...    43   0.012
+sp|Q8BKC5|IPO5_MOUSE Importin-5 OS=Mus musculus OX=10090 GN=Ipo5...    43   0.012
+sp|Q7X9H9|AGL93_ARATH Agamous-like MADS-box protein AGL93 OS=Ara...    43   0.012
+sp|Q08AM6|VAC14_HUMAN Protein VAC14 homolog OS=Homo sapiens OX=9...    43   0.014
+sp|Q8JFV4|HTR5A_DANRE HEAT repeat-containing protein 5A OS=Danio...    42   0.014
+sp|Q9YHB5|CND3_XENLA Condensin complex subunit 3 OS=Xenopus laev...    42   0.015
+sp|Q14644|RASA3_HUMAN Ras GTPase-activating protein 3 OS=Homo sa...    42   0.016
+sp|A2RT91|ANKAR_MOUSE Ankyrin and armadillo repeat-containing pr...    42   0.016
+sp|Q9UVG6|VPS15_PICPA Putative serine/threonine-protein kinase V...    42   0.017
+sp|Q9VKY2|CAND1_DROME Cullin-associated NEDD8-dissociated protei...    42   0.017
+sp|Q38950|2AAB_ARATH Serine/threonine-protein phosphatase 2A 65 ...    42   0.017
+sp|F4HX15|LPAI_ARATH Phospholipase A I OS=Arabidopsis thaliana O...    42   0.020
+sp|Q6PDI5|ECM29_MOUSE Proteasome adapter and scaffold protein EC...    42   0.021
+sp|Q02177|MPEU_SYNPY Bilin biosynthesis protein MpeU OS=Synechoc...    42   0.021
+sp|O15016|TRI66_HUMAN Tripartite motif-containing protein 66 OS=...    42   0.022
+sp|Q6GGX8|CVFC_STAAR Conserved virulence factor C OS=Staphylococ...    42   0.022
+sp|F4I718|CSI3_ARATH Protein CELLULOSE SYNTHASE INTERACTIVE 3 OS...    42   0.022
+sp|Q2FH09|CVFC_STAA3 Conserved virulence factor C OS=Staphylococ...    42   0.024
+sp|Q931R7|CVFC_STAAM Conserved virulence factor C OS=Staphylococ...    42   0.026
+sp|Q6A058|ARMX2_MOUSE Armadillo repeat-containing X-linked prote...    42   0.026
+sp|Q9U308|JAC1_CAEEL Juxtamembrane domain-associated catenin OS=...    42   0.027
+sp|Q7A0W1|CVFC_STAAW Conserved virulence factor C OS=Staphylococ...    42   0.027
+sp|Q6G9D2|CVFC_STAAS Conserved virulence factor C OS=Staphylococ...    42   0.027
+sp|Q99U59|CVFC_STAAN Conserved virulence factor C OS=Staphylococ...    42   0.027
+sp|Q5HFZ4|CVFC_STAAC Conserved virulence factor C OS=Staphylococ...    42   0.027
+sp|Q2FYK3|CVFC_STAA8 Conserved virulence factor C OS=Staphylococ...    42   0.027
+sp|Q8C547|HTR5B_MOUSE HEAT repeat-containing protein 5B OS=Mus m...    42   0.028
+sp|A0JMW2|DAAF5_XENLA Dynein axonemal assembly factor 5 OS=Xenop...    42   0.030
+sp|Q9UH62|ARMX3_HUMAN Armadillo repeat-containing X-linked prote...    42   0.031
+sp|Q2YY38|CVFC_STAAB Conserved virulence factor C OS=Staphylococ...    41   0.032
+sp|Q5R6J0|ECM29_PONAB Proteasome adapter and scaffold protein EC...    41   0.033
+sp|Q5NKU6|ICAM3_PANTR Intercellular adhesion molecule 3 OS=Pan t...    41   0.033
+sp|B7U179|ABAP1_ARATH ARMADILLO BTB ARABIDOPSIS PROTEIN 1 OS=Ara...    41   0.035
+sp|P52293|IMA1_MOUSE Importin subunit alpha-1 OS=Mus musculus OX...    41   0.035
+sp|P53978|EF3B_YEAST Elongation factor 3B OS=Saccharomyces cerev...    41   0.036
+sp|Q8BHS6|ARMX3_MOUSE Armadillo repeat-containing X-linked prote...    41   0.044
+sp|Q8VZA0|SIEL_ARATH Protein SIEL OS=Arabidopsis thaliana OX=370...    41   0.049
+sp|Q9H6L4|ARMC7_HUMAN Armadillo repeat-containing protein 7 OS=H...    41   0.049
+sp|Q5XID7|ARMX3_RAT Armadillo repeat-containing X-linked protein...    41   0.053
+sp|Q2TAW0|CNDG2_XENLA Condensin-2 complex subunit G2 OS=Xenopus ...    41   0.059
+sp|Q7L311|ARMX2_HUMAN Armadillo repeat-containing X-linked prote...    41   0.063
+sp|Q4VA53|PDS5B_MOUSE Sister chromatid cohesion protein PDS5 hom...    41   0.065
+sp|A1A5F2|HTR5B_XENTR HEAT repeat-containing protein 5B OS=Xenop...    40   0.073
+sp|Q8BIV3|RNBP6_MOUSE Ran-binding protein 6 OS=Mus musculus OX=1...    40   0.077
+sp|Q5VYK3|ECM29_HUMAN Proteasome adapter and scaffold protein EC...    40   0.078
+sp|O01763|NCBP1_CAEEL Nuclear cap-binding protein subunit 1 OS=C...    40   0.080
+sp|Q9P2D3|HTR5B_HUMAN HEAT repeat-containing protein 5B OS=Homo ...    40   0.080
+sp|Q06708|VAC14_YEAST Vacuole morphology and inheritance protein...    40   0.080
+sp|Q86W24|NAL14_HUMAN NACHT, LRR and PYD domains-containing prot...    40   0.083
+sp|O15131|IMA6_HUMAN Importin subunit alpha-6 OS=Homo sapiens OX...    40   0.086
+sp|O35927|CTND2_MOUSE Catenin delta-2 OS=Mus musculus OX=10090 G...    40   0.088
+sp|Q9UQB3|CTND2_HUMAN Catenin delta-2 OS=Homo sapiens OX=9606 GN...    40   0.088
+sp|Q6TRW4|PDS5B_RAT Sister chromatid cohesion protein PDS5 homol...    40   0.093
+sp|P36179|2AAA_DROME Serine/threonine-protein phosphatase PP2A 6...    40   0.094
+sp|Q9VI82|NOC3L_DROME Nucleolar complex protein 3 homolog OS=Dro...    40   0.095
+sp|O13986|YEG4_SCHPO Uncharacterized protein C26H5.04 OS=Schizos...    40   0.096
+sp|P78813|YCTB_SCHPO ENTH domain-containing protein C794.11c OS=...    40   0.098
+sp|A9QM74|IMA8_HUMAN Importin subunit alpha-8 OS=Homo sapiens OX...    40   0.10 
+sp|Q80WQ2|VAC14_MOUSE Protein VAC14 homolog OS=Mus musculus OX=1...    40   0.10 
+sp|Q6ZUA9|MROH5_HUMAN Maestro heat-like repeat family member 5 O...    40   0.10 
+sp|A8XG63|NCBP1_CAEBR Nuclear cap-binding protein subunit 1 OS=C...    40   0.11 
+sp|Q9VT41|INT7_DROME Integrator complex subunit 7 OS=Drosophila ...    40   0.11 
+sp|Q15021|CND1_HUMAN Condensin complex subunit 1 OS=Homo sapiens...    40   0.11 
+sp|B4M709|SWS_DROVI Neuropathy target esterase sws OS=Drosophila...    39   0.12 
+sp|Q28013|RASA3_BOVIN Ras GTPase-activating protein 3 OS=Bos tau...    39   0.13 
+sp|Q7ZY79|API5B_XENLA Apoptosis inhibitor 5-B OS=Xenopus laevis ...    39   0.13 
+sp|P52170|IMA5_XENLA Importin subunit alpha-5 OS=Xenopus laevis ...    39   0.13 
+sp|Q7PLI2|NIPB_DROME Nipped-B protein OS=Drosophila melanogaster...    39   0.13 
+sp|Q9NRP7|STK36_HUMAN Serine/threonine-protein kinase 36 OS=Homo...    39   0.14 
+sp|Q9FWS3|C3H16_ARATH Zinc finger CCCH domain-containing protein...    39   0.15 
+sp|P36875|2AAA_PEA Protein phosphatase PP2A regulatory subunit A...    39   0.15 
+sp|Q9NTI5|PDS5B_HUMAN Sister chromatid cohesion protein PDS5 hom...    39   0.15 
+sp|Q5PRF0|HTR5A_MOUSE HEAT repeat-containing protein 5A OS=Mus m...    39   0.16 
+sp|Q5ZIW5|VAC14_CHICK Protein VAC14 homolog OS=Gallus gallus OX=...    39   0.16 
+sp|O82265|SCC3_ARATH Sister-chromatid cohesion protein 3 OS=Arab...    39   0.17 
+sp|Q8VD65|PI3R4_MOUSE Phosphoinositide 3-kinase regulatory subun...    39   0.17 
+sp|Q9M3B7|FBL54_ARATH Putative F-box/LRR-repeat protein At3g4915...    39   0.18 
+sp|Q5F3V3|PDS5A_CHICK Sister chromatid cohesion protein PDS5 hom...    39   0.18 
+sp|Q68F38|VAC14_XENLA Protein VAC14 homolog OS=Xenopus laevis OX...    39   0.18 
+sp|P38217|IMB2_YEAST Importin subunit beta-2 OS=Saccharomyces ce...    39   0.18 
+sp|Q80W92|VAC14_RAT Protein VAC14 homolog OS=Rattus norvegicus O...    39   0.18 
+sp|A1L1F4|PDS5A_DANRE Sister chromatid cohesion protein PDS5 hom...    39   0.18 
+sp|Q8L5R3|TBCD_ARATH Tubulin-folding cofactor D OS=Arabidopsis t...    39   0.19 
+sp|P32942|ICAM3_HUMAN Intercellular adhesion molecule 3 OS=Homo ...    39   0.19 
+sp|A2VE70|VAC14_BOVIN Protein VAC14 homolog OS=Bos taurus OX=991...    39   0.20 
+sp|Q4QXM3|PD5AA_XENLA Sister chromatid cohesion protein PDS5 hom...    39   0.20 
+sp|P49797|RGS3_RAT Regulator of G-protein signaling 3 OS=Rattus ...    39   0.21 
+sp|Q4KLU7|PD5AB_XENLA Sister chromatid cohesion protein PDS5 hom...    39   0.21 
+sp|C1JZ66|IMA8_BOVIN Importin subunit alpha-8 OS=Bos taurus OX=9...    39   0.21 
+sp|O94374|IMA2_SCHPO Importin subunit alpha-2 OS=Schizosaccharom...    39   0.21 
+sp|Q6A026|PDS5A_MOUSE Sister chromatid cohesion protein PDS5 hom...    39   0.22 
+sp|Q68F64|UN45B_XENLA Protein unc-45 homolog B OS=Xenopus laevis...    39   0.22 
+sp|Q6DDM4|API5A_XENLA Apoptosis inhibitor 5-A OS=Xenopus laevis ...    39   0.23 
+sp|Q7ZY56|HEAT6_XENLA HEAT repeat-containing protein 6 OS=Xenopu...    39   0.24 
+sp|Q04264|PDS5_YEAST Sister chromatid cohesion protein PDS5 OS=S...    39   0.25 
+sp|O93655|TRF3_THEAC Tricorn protease-interacting factor F3 OS=T...    39   0.26 
+sp|A9JRI0|HEAT6_DANRE HEAT repeat-containing protein 6 OS=Danio ...    39   0.26 
+sp|G5ED41|CAND1_CAEEL Cullin-associated NEDD8-dissociated protei...    39   0.26 
+sp|Q96321|IMPA1_ARATH Importin subunit alpha-1 OS=Arabidopsis th...    38   0.27 
+sp|Q6DGE9|UN45B_DANRE Protein unc-45 homolog B OS=Danio rerio OX...    38   0.28 
+sp|Q9XUS2|MED29_CAEEL Mediator of RNA polymerase II transcriptio...    38   0.28 
+sp|Q8RHK0|LON_FUSNN Lon protease OS=Fusobacterium nucleatum subs...    38   0.28 
+sp|Q02178|MPEV_SYNPY Bilin biosynthesis protein MpeV OS=Synechoc...    38   0.29 
+sp|Q29RF7|PDS5A_HUMAN Sister chromatid cohesion protein PDS5 hom...    38   0.29 
+sp|A4L9P7|PDS5A_RAT Sister chromatid cohesion protein PDS5 homol...    38   0.29 
+sp|Q99570|PI3R4_HUMAN Phosphoinositide 3-kinase regulatory subun...    38   0.31 
+sp|Q8RWH9|NUP58_ARATH Nuclear pore complex protein NUP58 OS=Arab...    38   0.32 
+sp|Q49XP0|CVFC_STAS1 Conserved virulence factor C OS=Staphylococ...    38   0.32 
+sp|Q86UU0|BCL9L_HUMAN B-cell CLL/lymphoma 9-like protein OS=Homo...    38   0.33 
+sp|Q5ZMW3|API5_CHICK Apoptosis inhibitor 5 OS=Gallus gallus OX=9...    38   0.34 
+sp|P02845|VIT2_CHICK Vitellogenin-2 OS=Gallus gallus OX=9031 GN=...    38   0.34 
+sp|D3Z4R1|HFM1_MOUSE Probable ATP-dependent DNA helicase HFM1 OS...    38   0.36 
+sp|Q86XI2|CNDG2_HUMAN Condensin-2 complex subunit G2 OS=Homo sap...    38   0.37 
+sp|B9FDR3|TNPO1_ORYSJ Transportin-1 OS=Oryza sativa subsp. japon...    38   0.37 
+sp|Q5N749|MOR1_ORYSJ Protein MOR1 OS=Oryza sativa subsp. japonic...    38   0.38 
+sp|B8ARW2|TNPO1_ORYSI Transportin-1 OS=Oryza sativa subsp. indic...    38   0.39 
+sp|A0JP94|HTR5A_XENTR HEAT repeat-containing protein 5A OS=Xenop...    38   0.43 
+sp|P94017|CAP9_ARATH Putative clathrin assembly protein At1g1491...    38   0.44 
+sp|Q557F4|IMA1A_DICDI Probable importin subunit alpha-A OS=Dicty...    37   0.47 
+sp|E1JH25|TEA_DROME Protein telomere ends associated OS=Drosophi...    37   0.49 
+sp|P0C0R5|PI3R4_RAT Phosphoinositide 3-kinase regulatory subunit...    37   0.50 
+sp|Q5R9I3|PI3R4_PONAB Phosphoinositide 3-kinase regulatory subun...    37   0.51 
+sp|Q54EW3|IPO5_DICDI Probable importin-5 homolog OS=Dictyosteliu...    37   0.53 
+sp|F4IRR2|SAD2_ARATH Importin beta-like SAD2 OS=Arabidopsis thal...    37   0.56 
+sp|Q4R744|HEAT9_MACFA Protein HEATR9 OS=Macaca fascicularis OX=9...    37   0.56 
+sp|O14526|FCHO1_HUMAN F-BAR domain only protein 1 OS=Homo sapien...    37   0.56 
+sp|Q8INF7|DAAF5_DROME Dynein axonemal assembly factor 5 OS=Droso...    37   0.57 
+sp|Q9HFF5|PDS5_SCHPO Sister chromatid cohesion protein pds5 OS=S...    37   0.58 
+sp|A8YVK0|ADDA_LACH4 ATP-dependent helicase/nuclease subunit A O...    37   0.60 
+sp|O24610|CNDD3_ARATH Condensin-2 complex subunit CAP-D3 OS=Arab...    37   0.63 
+sp|E7FH61|CNDG2_DANRE Condensin-2 complex subunit G2 OS=Danio re...    37   0.64 
+sp|Q71VM4|IMA1A_ORYSJ Importin subunit alpha-1a OS=Oryza sativa ...    37   0.67 
+sp|Q02276|VL2_PCPV1 Minor capsid protein L2 OS=Pygmy chimpanzee ...    37   0.68 
+sp|Q9Y6D5|BIG2_HUMAN Brefeldin A-inhibited guanine nucleotide-ex...    37   0.68 
+sp|A0A1I9LM04|CNDD2_ARATH Condensin-1 complex subunit CAP-D2 OS=...    37   0.69 
+sp|Q52449|CPCF_PSETP Phycocyanobilin lyase subunit beta OS=Pseud...    37   0.70 
+sp|Q9C0X8|RRP12_SCHPO Putative ribosomal RNA-processing protein ...    37   0.70 
+sp|Q9H583|HEAT1_HUMAN HEAT repeat-containing protein 1 OS=Homo s...    37   0.70 
+sp|Q6ZP82|CC141_HUMAN Coiled-coil domain-containing protein 141 ...    37   0.72 
+sp|F4J8D3|TPLAT_ARATH Protein TPLATE OS=Arabidopsis thaliana OX=...    37   0.73 
+sp|A4QTQ9|UTP10_MAGO7 U3 small nucleolar RNA-associated protein ...    37   0.75 
+sp|Q58556|Y1156_METJA Cell division cycle protein 48 homolog MJ1...    37   0.80 
+sp|Q5K2K3|L_ISFV RNA-directed RNA polymerase L OS=Isfahan virus ...    37   0.81 
+sp|Q9W3E1|INT4_DROME Integrator complex subunit 4 OS=Drosophila ...    37   0.82 
+sp|P52171|IMA1_XENLA Importin subunit alpha-1 OS=Xenopus laevis ...    37   0.82 
+sp|Q80TM6|R3HD2_MOUSE R3H domain-containing protein 2 OS=Mus mus...    37   0.82 
+sp|Q8NDA8|MROH1_HUMAN Maestro heat-like repeat-containing protei...    37   0.82 
+sp|P35658|NU214_HUMAN Nuclear pore complex protein Nup214 OS=Hom...    37   0.84 
+sp|O35343|IMA3_MOUSE Importin subunit alpha-3 OS=Mus musculus OX...    37   0.85 
+sp|A2ALV5|SHOC1_MOUSE Protein shortage in chiasmata 1 ortholog O...    37   0.89 
+sp|Q19969|IMA3_CAEEL Importin subunit alpha-3 OS=Caenorhabditis ...    37   0.89 
+sp|B6HJ92|KAPA_PENRW Importin subunit alpha OS=Penicillium ruben...    37   0.92 
+sp|Q6P1G0|HEAT6_MOUSE HEAT repeat-containing protein 6 OS=Mus mu...    37   0.92 
+sp|Q06680|CND3_YEAST Condensin complex subunit 3 OS=Saccharomyce...    37   0.92 
+sp|Q9XZI6|PICAL_CAEEL Phosphatidylinositol-binding clathrin asse...    37   0.95 
+sp|Q32PZ3|UN45A_RAT Protein unc-45 homolog A OS=Rattus norvegicu...    37   0.96 
+sp|Q498H0|PD5BA_XENLA Sister chromatid cohesion protein PDS5 hom...    37   0.96 
+sp|Q2VPU4|MLXIP_MOUSE MLX-interacting protein OS=Mus musculus OX...    37   0.96 
+sp|O35345|IMA7_MOUSE Importin subunit alpha-7 OS=Mus musculus OX...    37   0.97 
+sp|Q02821|IMA1_YEAST Importin subunit alpha OS=Saccharomyces cer...    36   1.0  
+sp|A7TJY3|SEY1_VANPO Protein SEY1 OS=Vanderwaltozyma polyspora (...    36   1.0  
+sp|Q5RBV0|IMA7_PONAB Importin subunit alpha-7 OS=Pongo abelii OX...    36   1.1  
+sp|O60684|IMA7_HUMAN Importin subunit alpha-7 OS=Homo sapiens OX...    36   1.1  
+sp|Q54LH5|INT4_DICDI Integrator complex subunit 4 homolog OS=Dic...    36   1.1  
+sp|Q8JIS6|TBX6_DANRE T-box transcription factor TBX6 OS=Danio re...    36   1.1  
+sp|Q0V7M0|IMA7_BOVIN Importin subunit alpha-7 OS=Bos taurus OX=9...    36   1.1  
+sp|Q96KW2|P12L2_HUMAN POM121-like protein 2 OS=Homo sapiens OX=9...    36   1.1  
+sp|Q54QR9|2AAA_DICDI Protein phosphatase 2A scaffold subunit OS=...    36   1.1  
+sp|O00629|IMA3_HUMAN Importin subunit alpha-3 OS=Homo sapiens OX...    36   1.2  
+sp|P40069|IMB4_YEAST Importin subunit beta-4 OS=Saccharomyces ce...    36   1.2  
+sp|Q4L6D9|CVFC_STAHJ Conserved virulence factor C OS=Staphylococ...    36   1.2  
+sp|Q8C3R1|BRAT1_MOUSE BRCA1-associated ATM activator 1 OS=Mus mu...    36   1.3  
+sp|F4IP13|SHGR6_ARATH Protein SHOOT GRAVITROPISM 6 OS=Arabidopsi...    36   1.3  
+sp|Q924W6|TRI66_MOUSE Tripartite motif-containing protein 66 OS=...    36   1.3  
+sp|P73638|CPCE_SYNY3 Phycocyanobilin lyase subunit alpha OS=Syne...    36   1.4  
+sp|Q95Y84|CND_CAEEL Condensin-2 complex subunit hcp-6 OS=Caenorh...    36   1.4  
+sp|A7H552|DXS_CAMJD 1-deoxy-D-xylulose-5-phosphate synthase OS=C...    36   1.5  
+sp|Q6NYW6|CLAP2_DANRE CLIP-associating protein 2 OS=Danio rerio ...    36   1.5  
+sp|Q6PJG6|BRAT1_HUMAN BRCA1-associated ATM activator 1 OS=Homo s...    36   1.5  
+sp|Q9VYG1|PSMD5_DROME 26S proteasome non-ATPase regulatory subun...    36   1.5  
+sp|Q92845|KIFA3_HUMAN Kinesin-associated protein 3 OS=Homo sapie...    36   1.6  
+sp|Q14008|CKAP5_HUMAN Cytoskeleton-associated protein 5 OS=Homo ...    36   1.6  
+sp|O68007|BACB_BACLI Bacitracin synthase 2 OS=Bacillus lichenifo...    36   1.6  
+sp|Q9UKN1|MUC12_HUMAN Mucin-12 OS=Homo sapiens OX=9606 GN=MUC12 ...    36   1.6  
+sp|O04294|IMPA3_ARATH Importin subunit alpha-3 OS=Arabidopsis th...    36   1.7  
+sp|Q9M9X7|IMPA7_ARATH Importin subunit alpha-7 OS=Arabidopsis th...    36   1.7  
+sp|O35841|API5_MOUSE Apoptosis inhibitor 5 OS=Mus musculus OX=10...    36   1.7  
+sp|B4F7F3|ARVC_RAT Splicing regulator ARVCF OS=Rattus norvegicus...    36   1.7  
+sp|Q8C3S2|TNG6_MOUSE Transport and Golgi organization protein 6 ...    36   1.7  
+sp|A3LWY2|GSM1_PICST Glucose starvation modulator protein 1 OS=S...    36   1.8  
+sp|A2AGT5|CKAP5_MOUSE Cytoskeleton-associated protein 5 OS=Mus m...    36   1.8  
+sp|P98203|ARVC_MOUSE Splicing regulator ARVCF OS=Mus musculus OX...    36   1.8  
+sp|P0A2L9|SIRB1_SALTY Protein SirB1 OS=Salmonella typhimurium (s...    36   1.8  
+sp|P0A2M0|SIRB1_SALTI Protein SirB1 OS=Salmonella typhi OX=90370...    36   1.8  
+sp|Q5RAJ5|STK36_PONAB Serine/threonine-protein kinase 36 OS=Pong...    36   1.9  
+sp|Q5U241|PD5BB_XENLA Sister chromatid cohesion protein PDS5 hom...    36   1.9  
+sp|Q5AYL5|SEC16_EMENI COPII coat assembly protein sec16 OS=Emeri...    36   2.0  
+sp|Q09259|YQB6_CAEEL Uncharacterized protein C30G12.6 OS=Caenorh...    36   2.1  
+sp|B3PN08|LON_META1 Lon protease OS=Metamycoplasma arthritidis (...    36   2.1  
+sp|Q06142|IMB1_YEAST Importin subunit beta-1 OS=Saccharomyces ce...    36   2.1  
+sp|Q9VEZ3|MSPS_DROME Protein mini spindles OS=Drosophila melanog...    36   2.1  
+sp|Q9JVW4|PILQ_NEIMA Type IV pilus biogenesis and competence pro...    36   2.2  
+sp|O42900|PPK19_SCHPO Serine/threonine-protein kinase ppk19 OS=S...    35   2.2  
+sp|Q9ZHF3|PILQ_NEIMH Type IV pilus biogenesis and competence pro...    35   2.3  
+sp|Q70M91|PILQ_NEIMB Type IV pilus biogenesis and competence pro...    35   2.3  
+sp|G5EFF7|UBQL_CAEEL Ubiquilin OS=Caenorhabditis elegans OX=6239...    35   2.3  
+sp|O00192|ARVC_HUMAN Splicing regulator ARVCF OS=Homo sapiens OX...    35   2.3  
+sp|P0AGM5|SIRB1_ECOLI UPF0162 protein YchA OS=Escherichia coli (...    35   2.4  
+sp|P0AGM6|SIRB1_ECO57 UPF0162 protein YchA OS=Escherichia coli O...    35   2.4  
+sp|Q54EQ8|NUP98_DICDI Nuclear pore complex protein Nup98-Nup96 O...    35   2.4  
+sp|Q86WZ0|HEAT4_HUMAN HEAT repeat-containing protein 4 OS=Homo s...    35   2.4  
+sp|P40469|MET18_YEAST DNA repair/transcription protein MET18/MMS...    35   2.5  
+sp|Q6FUV3|DOHH_CANGA Deoxyhypusine hydroxylase OS=Candida glabra...    35   2.5  
+sp|Q19338|MON2_CAEEL Monensin-resistant homolog 2 OS=Caenorhabdi...    35   2.5  
+sp|Q9BPS0|VIT2_PERAM Vitellogenin-2 OS=Periplaneta americana OX=...    35   2.6  
+sp|Q60416|SRBP1_CRIGR Sterol regulatory element-binding protein ...    35   2.8  
+sp|Q69ZM6|STK36_MOUSE Serine/threonine-protein kinase 36 OS=Mus ...    35   2.9  
+sp|Q2GXM1|SEC16_CHAGB COPII coat assembly protein SEC16 OS=Chaet...    35   2.9  
+sp|Q02175|CPEZ_SYNPY Bilin biosynthesis protein CpeZ OS=Synechoc...    35   2.9  
+sp|O43065|BTAF1_SCHPO TATA-binding protein-associated factor mot...    35   2.9  
+sp|Q5F3U9|PDS5B_CHICK Sister chromatid cohesion protein PDS5 hom...    35   3.0  
+sp|P70188|KIFA3_MOUSE Kinesin-associated protein 3 OS=Mus muscul...    35   3.0  
+sp|P16521|EF3A_YEAST Elongation factor 3A OS=Saccharomyces cerev...    35   3.0  
+sp|A8WSQ9|PATR1_CAEBR Protein PAT1 homolog 1 OS=Caenorhabditis b...    35   3.1  
+sp|O43299|AP5Z1_HUMAN AP-5 complex subunit zeta-1 OS=Homo sapien...    35   3.1  
+sp|Q9BZZ5|API5_HUMAN Apoptosis inhibitor 5 OS=Homo sapiens OX=96...    35   3.1  
+sp|Q1ZXQ8|MTAA_DICDI Centrosomal protein 224 OS=Dictyostelium di...    35   3.2  
+sp|F8VPN2|TEX15_MOUSE Testis-expressed protein 15 OS=Mus musculu...    35   3.3  
+sp|Q9QXK7|CPSF3_MOUSE Cleavage and polyadenylation specificity f...    35   3.3  
+sp|Q5R644|API5_PONAB Apoptosis inhibitor 5 OS=Pongo abelii OX=96...    35   3.3  
+sp|C5J7W8|SMG1_DANRE Serine/threonine-protein kinase SMG1 OS=Dan...    35   3.3  
+sp|Q13261|I15RA_HUMAN Interleukin-15 receptor subunit alpha OS=H...    35   3.4  
+sp|Q8MSU4|SYMPK_DROME Symplekin OS=Drosophila melanogaster OX=72...    35   3.4  
+sp|P52437|ITP_HHV6U Inner tegument protein OS=Human herpesvirus ...    35   3.5  
+sp|Q12039|HMI1_YEAST ATP-dependent DNA helicase HMI1, mitochondr...    35   3.6  
+sp|Q86UU1|PHLB1_HUMAN Pleckstrin homology-like domain family B m...    35   3.6  
+sp|Q03001|DYST_HUMAN Dystonin OS=Homo sapiens OX=9606 GN=DST PE=...    35   3.6  
+sp|Q72GW4|EFTU_THET2 Elongation factor Tu OS=Thermus thermophilu...    35   3.7  
+sp|P60339|EFTU2_THET8 Elongation factor Tu-B OS=Thermus thermoph...    35   3.7  
+sp|P60338|EFTU1_THETH Elongation factor Tu-A OS=Thermus thermoph...    35   3.7  
+sp|Q5SHN6|EFTU1_THET8 Elongation factor Tu-A OS=Thermus thermoph...    35   3.7  
+sp|Q55CX9|IPO7_DICDI Probable importin-7 homolog OS=Dictyosteliu...    35   3.8  
+sp|Q09543|2AAA_CAEEL Probable serine/threonine-protein phosphata...    35   3.8  
+sp|Q5ZKD5|RRP12_CHICK RRP12-like protein OS=Gallus gallus OX=903...    34   4.0  
+sp|Q3U829|AP5Z1_MOUSE AP-5 complex subunit zeta-1 OS=Mus musculu...    34   4.0  
+sp|Q75CF3|RPN2_ASHGO 26S proteasome regulatory subunit RPN2 OS=A...    34   4.1  
+sp|Q61SD1|MON2_CAEBR Protein MON2 homolog OS=Caenorhabditis brig...    34   4.1  
+sp|P38873|KOG1_YEAST Target of rapamycin complex 1 subunit KOG1 ...    34   4.2  
+sp|O14063|IMA1_SCHPO Importin subunit alpha-1 OS=Schizosaccharom...    34   4.4  
+sp|Q6DFV1|CNDG2_MOUSE Condensin-2 complex subunit G2 OS=Mus musc...    34   4.5  
+sp|A2VE08|IMA5_BOVIN Importin subunit alpha-5 OS=Bos taurus OX=9...    34   4.6  
+sp|Q9EPL8|IPO7_MOUSE Importin-7 OS=Mus musculus OX=10090 GN=Ipo7...    34   4.8  
+sp|P32333|BTAF1_YEAST TATA-binding protein-associated factor MOT...    34   4.8  
+sp|O95373|IPO7_HUMAN Importin-7 OS=Homo sapiens OX=9606 GN=IPO7 ...    34   5.0  
+sp|O57263|VB18_VACCA Ankyrin repeat protein B18 OS=Vaccinia viru...    34   5.0  
+sp|Q96T76|MMS19_HUMAN MMS19 nucleotide excision repair protein h...    34   5.0  
+sp|P38811|TRA1_YEAST Transcription-associated protein 1 OS=Sacch...    34   5.2  
+sp|Q8RHT2|RNY_FUSNN Ribonuclease Y OS=Fusobacterium nucleatum su...    34   5.2  
+sp|Q8MM62|PDE6_DICDI cAMP/cGMP-dependent 3',5'-cAMP/cGMP phospho...    34   5.3  
+sp|Q97VF1|APE1_SACS2 Probable aminopeptidase 1 OS=Saccharolobus ...    34   5.4  
+sp|Q5R909|IMA5_PONAB Importin subunit alpha-5 OS=Pongo abelii OX...    34   5.4  
+sp|O42874|STU1_SCHPO Protein peg1 OS=Schizosaccharomyces pombe (...    34   5.8  
+sp|P52294|IMA5_HUMAN Importin subunit alpha-5 OS=Homo sapiens OX...    34   5.9  
+sp|Q10429|CND3_SCHPO Condensin complex subunit 3 OS=Schizosaccha...    34   5.9  
+sp|F4KF65|IMPA9_ARATH Importin subunit alpha-9 OS=Arabidopsis th...    34   5.9  
+sp|P29299|YCPY_PSETP Uncharacterized phycocyanin operon protein ...    34   6.2  
+sp|Q6AI08|HEAT6_HUMAN HEAT repeat-containing protein 6 OS=Homo s...    34   6.3  
+sp|Q1DHH9|UTP10_COCIM U3 small nucleolar RNA-associated protein ...    34   6.3  
+sp|Q54S77|VPS15_DICDI Probable serine/threonine-protein kinase v...    34   6.6  
+sp|Q9UU99|YJX4_SCHPO CRAL-TRIO domain-containing protein C23B6.0...    34   7.5  
+sp|Q8BH53|CFA69_MOUSE Cilia- and flagella-associated protein 69 ...    34   7.5  
+sp|Q5ADW3|CAND1_CANAL Cullin-associated NEDD8-dissociated protei...    34   8.0  
+sp|Q9C8Z4|HEAT1_ARATH Uncharacterized protein At3g06530 OS=Arabi...    34   8.2  
+sp|Q9BPX3|CND3_HUMAN Condensin complex subunit 3 OS=Homo sapiens...    34   8.2  
+sp|Q59Z14|DOHH_CANAL Deoxyhypusine hydroxylase OS=Candida albica...    33   8.9  
+sp|Q9U5N0|VATH_MANSE V-type proton ATPase subunit H OS=Manduca s...    33   9.1  
+sp|Q80X82|SYMPK_MOUSE Symplekin OS=Mus musculus OX=10090 GN=Symp...    33   9.5  
+sp|A7MBF6|ARMD1_BOVIN Armadillo-like helical domain containing p...    33   9.6  
+sp|Q5PNY6|PUB21_ARATH U-box domain-containing protein 21 OS=Arab...    33   9.7  
+sp|Q92797|SYMPK_HUMAN Symplekin OS=Homo sapiens OX=9606 GN=SYMPK...    33   10.0 
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.308    0.125    0.280 
+
+Lambda     K      H
+   0.267   0.0385    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 667,824,426
+Number of Sequences: 569516
+Number of extensions: 23658534
+Number of successful extensions: 104917
+Number of sequences better than 10.0: 911
+Number of HSP's better than 10.0 without gapping: 406
+Number of HSP's successfully gapped in prelim test: 1181
+Number of HSP's that attempted gapping in prelim test: 99312
+Number of HSP's gapped (non-prelim): 4101
+length of query: 848
+length of database: 205,866,895
+effective HSP length: 127
+effective length of query: 721
+effective length of database: 133,538,363
+effective search space: 96281159723
+effective search space used: 96281159723
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.2 bits)
+S2: 74 (33.2 bits)

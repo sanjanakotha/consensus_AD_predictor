@@ -1,0 +1,309 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (316 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q03164|KMT2A_HUMAN Histone-lysine N-methyltransferase 2A OS=H...   568   e-161
+sp|P55200|KMT2A_MOUSE Histone-lysine N-methyltransferase 2A OS=M...   540   e-153
+sp|O08550|KMT2B_MOUSE Histone-lysine N-methyltransferase 2B OS=M...   121   6e-27
+sp|Q9UMN6|KMT2B_HUMAN Histone-lysine N-methyltransferase 2B OS=H...   120   1e-26
+sp|Q27746|DNMT1_PARLI DNA (cytosine-5)-methyltransferase PliMCI ...    57   2e-07
+sp|Q9Z2E2|MBD1_MOUSE Methyl-CpG-binding domain protein 1 OS=Mus ...    57   3e-07
+sp|Q9UIS9|MBD1_HUMAN Methyl-CpG-binding domain protein 1 OS=Homo...    55   6e-07
+sp|Q5EA28|CXXC1_BOVIN CXXC-type zinc finger protein 1 OS=Bos tau...    54   2e-06
+sp|Q9CWW7|CXXC1_MOUSE CXXC-type zinc finger protein 1 OS=Mus mus...    54   2e-06
+sp|Q9P0U4|CXXC1_HUMAN CXXC-type zinc finger protein 1 OS=Homo sa...    54   2e-06
+sp|P26358|DNMT1_HUMAN DNA (cytosine-5)-methyltransferase 1 OS=Ho...    52   9e-06
+sp|Q24K09|DNMT1_BOVIN DNA (cytosine-5)-methyltransferase 1 OS=Bo...    51   1e-05
+sp|P13864|DNMT1_MOUSE DNA (cytosine-5)-methyltransferase 1 OS=Mu...    51   1e-05
+sp|Q9Z330|DNMT1_RAT DNA (cytosine-5)-methyltransferase 1 OS=Ratt...    51   1e-05
+sp|Q9VHH9|JHD1_DROME JmjC domain-containing histone demethylatio...    50   2e-05
+sp|Q92072|DNMT1_CHICK DNA (cytosine-5)-methyltransferase 1 OS=Ga...    50   2e-05
+sp|A0A1L8GSA2|TET3A_XENLA Methylcytosine dioxygenase tet3-A OS=X...    47   2e-04
+sp|A0JP82|TET3_XENTR Methylcytosine dioxygenase tet3 OS=Xenopus ...    47   2e-04
+sp|K9JHZ4|TET3B_XENLA Methylcytosine dioxygenase tet3-B OS=Xenop...    45   0.001
+sp|Q3URK3|TET1_MOUSE Methylcytosine dioxygenase TET1 OS=Mus musc...    44   0.002
+sp|Q8NFU7|TET1_HUMAN Methylcytosine dioxygenase TET1 OS=Homo sap...    43   0.003
+sp|O43151|TET3_HUMAN Methylcytosine dioxygenase TET3 OS=Homo sap...    43   0.004
+sp|M9NEY8|TET_DROME Methylcytosine dioxygenase TET OS=Drosophila...    42   0.005
+sp|Q32LB3|CXXC5_BOVIN CXXC-type zinc finger protein 5 OS=Bos tau...    42   0.007
+sp|Q8BG87|TET3_MOUSE Methylcytosine dioxygenase TET3 OS=Mus musc...    42   0.008
+sp|Q5XIQ3|CXXC5_RAT CXXC-type zinc finger protein 5 OS=Rattus no...    41   0.010
+sp|Q91WA4|CXXC5_MOUSE CXXC-type zinc finger protein 5 OS=Mus mus...    41   0.013
+sp|Q5R7N4|CXXC5_PONAB CXXC-type zinc finger protein 5 OS=Pongo a...    41   0.014
+sp|Q7LFL8|CXXC5_HUMAN CXXC-type zinc finger protein 5 OS=Homo sa...    40   0.019
+sp|P20659|TRX_DROME Histone-lysine N-methyltransferase trithorax...    40   0.034
+sp|Q0VFP6|CXXC4_XENTR CXXC-type zinc finger protein 4 OS=Xenopus...    39   0.048
+sp|Q24742|TRX_DROVI Histone-lysine N-methyltransferase trithorax...    39   0.055
+sp|Q800L6|CXXC4_XENLA CXXC-type zinc finger protein 4 OS=Xenopus...    39   0.060
+sp|Q9EQC9|CXXC4_RAT CXXC-type zinc finger protein 4 OS=Rattus no...    39   0.065
+sp|Q6NXI8|CXXC4_MOUSE CXXC-type zinc finger protein 4 OS=Mus mus...    39   0.065
+sp|Q9H2H0|CXXC4_HUMAN CXXC-type zinc finger protein 4 OS=Homo sa...    39   0.065
+sp|P59997|KDM2A_MOUSE Lysine-specific demethylase 2A OS=Mus musc...    37   0.14 
+sp|Q9Y2K7|KDM2A_HUMAN Lysine-specific demethylase 2A OS=Homo sap...    37   0.15 
+sp|Q5U263|KDM2A_XENTR Lysine-specific demethylase 2A OS=Xenopus ...    37   0.16 
+sp|Q8TE82|S3TC1_HUMAN SH3 domain and tetratricopeptide repeat-co...    37   0.25 
+sp|Q8NHM5|KDM2B_HUMAN Lysine-specific demethylase 2B OS=Homo sap...    36   0.47 
+sp|Q6P1G2|KDM2B_MOUSE Lysine-specific demethylase 2B OS=Mus musc...    36   0.48 
+sp|Q640I9|KDM2B_XENLA Lysine-specific demethylase 2B OS=Xenopus ...    35   0.54 
+sp|Q6PCT2|FXL19_HUMAN F-box/LRR-repeat protein 19 OS=Homo sapien...    33   2.6  
+sp|Q6PB97|FXL19_MOUSE F-box/LRR-repeat protein 19 OS=Mus musculu...    33   2.7  
+sp|P12762|ALDH2_HORSE Aldehyde dehydrogenase, mitochondrial OS=E...    32   4.5  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q03164|KMT2A_HUMAN Histone-lysine N-methyltransferase 2A OS=H...   471   e-132
+sp|P55200|KMT2A_MOUSE Histone-lysine N-methyltransferase 2A OS=M...   448   e-125
+sp|Q9UMN6|KMT2B_HUMAN Histone-lysine N-methyltransferase 2B OS=H...   241   5e-63
+sp|O08550|KMT2B_MOUSE Histone-lysine N-methyltransferase 2B OS=M...   237   1e-61
+sp|Q92072|DNMT1_CHICK DNA (cytosine-5)-methyltransferase 1 OS=Ga...   106   2e-22
+sp|Q27746|DNMT1_PARLI DNA (cytosine-5)-methyltransferase PliMCI ...   103   2e-21
+sp|P26358|DNMT1_HUMAN DNA (cytosine-5)-methyltransferase 1 OS=Ho...    99   4e-20
+sp|Q24K09|DNMT1_BOVIN DNA (cytosine-5)-methyltransferase 1 OS=Bo...    99   5e-20
+sp|P13864|DNMT1_MOUSE DNA (cytosine-5)-methyltransferase 1 OS=Mu...    98   1e-19
+sp|Q9Z330|DNMT1_RAT DNA (cytosine-5)-methyltransferase 1 OS=Ratt...    96   4e-19
+sp|Q9Z2E2|MBD1_MOUSE Methyl-CpG-binding domain protein 1 OS=Mus ...    93   2e-18
+sp|Q9UIS9|MBD1_HUMAN Methyl-CpG-binding domain protein 1 OS=Homo...    90   2e-17
+sp|Q9CWW7|CXXC1_MOUSE CXXC-type zinc finger protein 1 OS=Mus mus...    87   1e-16
+sp|Q5EA28|CXXC1_BOVIN CXXC-type zinc finger protein 1 OS=Bos tau...    87   2e-16
+sp|Q9P0U4|CXXC1_HUMAN CXXC-type zinc finger protein 1 OS=Homo sa...    87   2e-16
+sp|Q9VHH9|JHD1_DROME JmjC domain-containing histone demethylatio...    84   2e-15
+sp|A0A1L8GSA2|TET3A_XENLA Methylcytosine dioxygenase tet3-A OS=X...    82   6e-15
+sp|A0JP82|TET3_XENTR Methylcytosine dioxygenase tet3 OS=Xenopus ...    81   1e-14
+sp|K9JHZ4|TET3B_XENLA Methylcytosine dioxygenase tet3-B OS=Xenop...    78   7e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q640I9|KDM2B_XENLA Lysine-specific demethylase 2B OS=Xenopus ...    75   8e-13
+sp|M9NEY8|TET_DROME Methylcytosine dioxygenase TET OS=Drosophila...    67   1e-10
+sp|Q8NFU7|TET1_HUMAN Methylcytosine dioxygenase TET1 OS=Homo sap...    67   2e-10
+sp|Q8NHM5|KDM2B_HUMAN Lysine-specific demethylase 2B OS=Homo sap...    66   4e-10
+sp|Q6P1G2|KDM2B_MOUSE Lysine-specific demethylase 2B OS=Mus musc...    65   9e-10
+sp|Q0VFP6|CXXC4_XENTR CXXC-type zinc finger protein 4 OS=Xenopus...    64   1e-09
+sp|Q3URK3|TET1_MOUSE Methylcytosine dioxygenase TET1 OS=Mus musc...    64   2e-09
+sp|Q32LB3|CXXC5_BOVIN CXXC-type zinc finger protein 5 OS=Bos tau...    64   2e-09
+sp|Q800L6|CXXC4_XENLA CXXC-type zinc finger protein 4 OS=Xenopus...    63   2e-09
+sp|Q5U263|KDM2A_XENTR Lysine-specific demethylase 2A OS=Xenopus ...    63   3e-09
+sp|Q91WA4|CXXC5_MOUSE CXXC-type zinc finger protein 5 OS=Mus mus...    62   4e-09
+sp|Q7LFL8|CXXC5_HUMAN CXXC-type zinc finger protein 5 OS=Homo sa...    62   7e-09
+sp|Q5XIQ3|CXXC5_RAT CXXC-type zinc finger protein 5 OS=Rattus no...    61   9e-09
+sp|Q5R7N4|CXXC5_PONAB CXXC-type zinc finger protein 5 OS=Pongo a...    61   1e-08
+sp|Q9EQC9|CXXC4_RAT CXXC-type zinc finger protein 4 OS=Rattus no...    61   1e-08
+sp|Q6NXI8|CXXC4_MOUSE CXXC-type zinc finger protein 4 OS=Mus mus...    61   1e-08
+sp|Q9H2H0|CXXC4_HUMAN CXXC-type zinc finger protein 4 OS=Homo sa...    61   1e-08
+sp|O43151|TET3_HUMAN Methylcytosine dioxygenase TET3 OS=Homo sap...    59   4e-08
+sp|Q8BG87|TET3_MOUSE Methylcytosine dioxygenase TET3 OS=Mus musc...    58   9e-08
+sp|P59997|KDM2A_MOUSE Lysine-specific demethylase 2A OS=Mus musc...    56   5e-07
+sp|Q9Y2K7|KDM2A_HUMAN Lysine-specific demethylase 2A OS=Homo sap...    56   5e-07
+sp|Q6PCT2|FXL19_HUMAN F-box/LRR-repeat protein 19 OS=Homo sapien...    51   1e-05
+sp|Q6PB97|FXL19_MOUSE F-box/LRR-repeat protein 19 OS=Mus musculu...    51   1e-05
+sp|Q9W352|CXXC1_DROME CXXC-type zinc finger protein 1 OS=Drosoph...    42   0.005
+sp|P20659|TRX_DROME Histone-lysine N-methyltransferase trithorax...    41   0.019
+sp|Q24742|TRX_DROVI Histone-lysine N-methyltransferase trithorax...    40   0.023
+sp|O01761|UNC89_CAEEL Muscle M-line assembly protein unc-89 OS=C...    39   0.061
+sp|Q5RAJ5|STK36_PONAB Serine/threonine-protein kinase 36 OS=Pong...    37   0.27 
+sp|Q75BQ6|GLYC_ASHGO Serine hydroxymethyltransferase, cytosolic ...    36   0.30 
+sp|D4A4K3|BAKOR_RAT Beclin 1-associated autophagy-related key re...    36   0.34 
+sp|P12762|ALDH2_HORSE Aldehyde dehydrogenase, mitochondrial OS=E...    36   0.47 
+sp|Q9XUE7|CFP1_CAEEL CXXC-type zinc finger protein 1 OS=Caenorha...    36   0.51 
+sp|Q5T1M5|FKB15_HUMAN FK506-binding protein 15 OS=Homo sapiens O...    36   0.57 
+sp|Q22366|RIM_CAEEL Rab-3-interacting molecule unc-10 OS=Caenorh...    35   0.72 
+sp|Q02Q74|MINC_PSEAB Probable septum site-determining protein Mi...    35   1.1  
+sp|Q9SHI1|IF2C_ARATH Translation initiation factor IF-2, chlorop...    34   1.2  
+sp|P08157|ALDH_EMENI Aldehyde dehydrogenase OS=Emericella nidula...    34   1.5  
+sp|Q5ZIB8|PIRK5_CHICK Phosphoinositide 3-kinase regulatory subun...    34   1.8  
+sp|O14293|YF19_SCHPO Putative aldehyde dehydrogenase-like protei...    34   2.1  
+sp|Q7TMY8|HUWE1_MOUSE E3 ubiquitin-protein ligase HUWE1 OS=Mus m...    33   3.2  
+sp|Q7Z6Z7|HUWE1_HUMAN E3 ubiquitin-protein ligase HUWE1 OS=Homo ...    33   4.1  
+sp|Q8BR92|PALM2_MOUSE Paralemmin-2 OS=Mus musculus OX=10090 GN=P...    32   4.9  
+sp|P51593|HUWE1_RAT E3 ubiquitin-protein ligase HUWE1 OS=Rattus ...    32   5.2  
+sp|B8FCY5|IF2_DESAL Translation initiation factor IF-2 OS=Desulf...    32   5.8  
+sp|D4A0X3|BTBD8_RAT BTB/POZ domain-containing protein 8 OS=Rattu...    32   6.3  
+sp|O43083|HPC2_SCHPO Histone promoter control protein 2 OS=Schiz...    32   7.2  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q03164|KMT2A_HUMAN Histone-lysine N-methyltransferase 2A OS=H...   387   e-107
+sp|P55200|KMT2A_MOUSE Histone-lysine N-methyltransferase 2A OS=M...   363   e-99 
+sp|Q9UMN6|KMT2B_HUMAN Histone-lysine N-methyltransferase 2B OS=H...   179   3e-44
+sp|O08550|KMT2B_MOUSE Histone-lysine N-methyltransferase 2B OS=M...   175   6e-43
+sp|Q91WA4|CXXC5_MOUSE CXXC-type zinc finger protein 5 OS=Mus mus...   174   8e-43
+sp|Q7LFL8|CXXC5_HUMAN CXXC-type zinc finger protein 5 OS=Homo sa...   172   2e-42
+sp|Q32LB3|CXXC5_BOVIN CXXC-type zinc finger protein 5 OS=Bos tau...   172   4e-42
+sp|Q5R7N4|CXXC5_PONAB CXXC-type zinc finger protein 5 OS=Pongo a...   171   6e-42
+sp|Q5XIQ3|CXXC5_RAT CXXC-type zinc finger protein 5 OS=Rattus no...   171   6e-42
+sp|Q92072|DNMT1_CHICK DNA (cytosine-5)-methyltransferase 1 OS=Ga...   153   1e-36
+sp|Q24K09|DNMT1_BOVIN DNA (cytosine-5)-methyltransferase 1 OS=Bo...   145   4e-34
+sp|P26358|DNMT1_HUMAN DNA (cytosine-5)-methyltransferase 1 OS=Ho...   145   6e-34
+sp|Q640I9|KDM2B_XENLA Lysine-specific demethylase 2B OS=Xenopus ...   144   9e-34
+sp|Q8NHM5|KDM2B_HUMAN Lysine-specific demethylase 2B OS=Homo sap...   141   5e-33
+sp|Q9Z330|DNMT1_RAT DNA (cytosine-5)-methyltransferase 1 OS=Ratt...   139   2e-32
+sp|P13864|DNMT1_MOUSE DNA (cytosine-5)-methyltransferase 1 OS=Mu...   139   3e-32
+sp|Q6P1G2|KDM2B_MOUSE Lysine-specific demethylase 2B OS=Mus musc...   134   7e-31
+sp|Q0VFP6|CXXC4_XENTR CXXC-type zinc finger protein 4 OS=Xenopus...   123   3e-27
+sp|Q27746|DNMT1_PARLI DNA (cytosine-5)-methyltransferase PliMCI ...   118   6e-26
+sp|Q9EQC9|CXXC4_RAT CXXC-type zinc finger protein 4 OS=Rattus no...   114   8e-25
+sp|Q6NXI8|CXXC4_MOUSE CXXC-type zinc finger protein 4 OS=Mus mus...   114   8e-25
+sp|Q9H2H0|CXXC4_HUMAN CXXC-type zinc finger protein 4 OS=Homo sa...   114   8e-25
+sp|Q800L6|CXXC4_XENLA CXXC-type zinc finger protein 4 OS=Xenopus...   113   2e-24
+sp|M9NEY8|TET_DROME Methylcytosine dioxygenase TET OS=Drosophila...    94   1e-18
+sp|Q9UIS9|MBD1_HUMAN Methyl-CpG-binding domain protein 1 OS=Homo...    94   1e-18
+sp|Q5EA28|CXXC1_BOVIN CXXC-type zinc finger protein 1 OS=Bos tau...    93   2e-18
+sp|Q9CWW7|CXXC1_MOUSE CXXC-type zinc finger protein 1 OS=Mus mus...    93   2e-18
+sp|A0JP82|TET3_XENTR Methylcytosine dioxygenase tet3 OS=Xenopus ...    93   2e-18
+sp|Q9P0U4|CXXC1_HUMAN CXXC-type zinc finger protein 1 OS=Homo sa...    93   3e-18
+sp|Q9Z2E2|MBD1_MOUSE Methyl-CpG-binding domain protein 1 OS=Mus ...    91   9e-18
+sp|Q3URK3|TET1_MOUSE Methylcytosine dioxygenase TET1 OS=Mus musc...    88   6e-17
+sp|A0A1L8GSA2|TET3A_XENLA Methylcytosine dioxygenase tet3-A OS=X...    87   2e-16
+sp|Q9VHH9|JHD1_DROME JmjC domain-containing histone demethylatio...    87   2e-16
+sp|Q8NFU7|TET1_HUMAN Methylcytosine dioxygenase TET1 OS=Homo sap...    85   1e-15
+sp|Q8BG87|TET3_MOUSE Methylcytosine dioxygenase TET3 OS=Mus musc...    84   2e-15
+sp|K9JHZ4|TET3B_XENLA Methylcytosine dioxygenase tet3-B OS=Xenop...    84   2e-15
+sp|Q5U263|KDM2A_XENTR Lysine-specific demethylase 2A OS=Xenopus ...    82   5e-15
+sp|O43151|TET3_HUMAN Methylcytosine dioxygenase TET3 OS=Homo sap...    81   9e-15
+sp|P59997|KDM2A_MOUSE Lysine-specific demethylase 2A OS=Mus musc...    70   3e-11
+sp|Q9Y2K7|KDM2A_HUMAN Lysine-specific demethylase 2A OS=Homo sap...    70   3e-11
+sp|Q6PCT2|FXL19_HUMAN F-box/LRR-repeat protein 19 OS=Homo sapien...    56   5e-07
+sp|Q6PB97|FXL19_MOUSE F-box/LRR-repeat protein 19 OS=Mus musculu...    56   5e-07
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9W352|CXXC1_DROME CXXC-type zinc finger protein 1 OS=Drosoph...    46   4e-04
+sp|Q5REL6|RXRG_PONAB Retinoic acid receptor RXR-gamma OS=Pongo a...    44   0.001
+sp|P48443|RXRG_HUMAN Retinoic acid receptor RXR-gamma OS=Homo sa...    44   0.001
+sp|P28705|RXRG_MOUSE Retinoic acid receptor RXR-gamma OS=Mus mus...    44   0.001
+sp|Q5BJR8|RXRG_RAT Retinoic acid receptor RXR-gamma OS=Rattus no...    44   0.002
+sp|Q0VC20|RXRG_BOVIN Retinoic acid receptor RXR-gamma OS=Bos tau...    43   0.002
+sp|Q0GFF6|RXRG_PIG Retinoic acid receptor RXR-gamma OS=Sus scrof...    41   0.009
+sp|Q750N3|RGT1_ASHGO Glucose transport transcription regulator R...    41   0.012
+sp|Q9XUE7|CFP1_CAEEL CXXC-type zinc finger protein 1 OS=Caenorha...    41   0.017
+sp|Q20374|PATR1_CAEEL Protein PAT1 homolog 1 OS=Caenorhabditis e...    40   0.030
+sp|D4A4K3|BAKOR_RAT Beclin 1-associated autophagy-related key re...    39   0.041
+sp|O65312|MEDEA_ARATH Histone-lysine N-methyltransferase MEDEA O...    38   0.091
+sp|Q9ZSM8|EZA1_ARATH Histone-lysine N-methyltransferase EZA1 OS=...    37   0.22 
+sp|Q8CDJ3|BAKOR_MOUSE Beclin 1-associated autophagy-related key ...    36   0.27 
+sp|P20659|TRX_DROME Histone-lysine N-methyltransferase trithorax...    36   0.28 
+sp|Q9HCJ3|RAVR2_HUMAN Ribonucleoprotein PTB-binding 2 OS=Homo sa...    36   0.31 
+sp|Q13263|TIF1B_HUMAN Transcription intermediary factor 1-beta O...    36   0.45 
+sp|Q9VW97|LSDA_DROME Possible lysine-specific histone demethylas...    36   0.52 
+sp|P39720|OAF1_YEAST Oleate-activated transcription factor 1 OS=...    36   0.52 
+sp|P9WMQ9|PRIA_MYCTU Probable primosomal protein N' OS=Mycobacte...    36   0.52 
+sp|P0A5A6|PRIA_MYCBO Probable primosomal protein N' OS=Mycobacte...    36   0.52 
+sp|P26019|DPOLA_DROME DNA polymerase alpha catalytic subunit OS=...    35   0.93 
+sp|Q5SMU7|ORC1_ORYSJ Origin of replication complex subunit 1 OS=...    35   1.0  
+sp|Q63374|NRX2A_RAT Neurexin-2 OS=Rattus norvegicus OX=10116 GN=...    35   1.1  
+sp|E9Q7X7|NRX2A_MOUSE Neurexin-2 OS=Mus musculus OX=10090 GN=Nrx...    35   1.1  
+sp|Q9PVE2|ESR2_STUVU Estrogen receptor beta OS=Sturnus vulgaris ...    34   1.4  
+sp|F1SRY5|UBP37_PIG Ubiquitin carboxyl-terminal hydrolase 37 OS=...    34   1.5  
+sp|Q6ZNE5|BAKOR_HUMAN Beclin 1-associated autophagy-related key ...    34   1.6  
+sp|Q8CGU1|CACO1_MOUSE Calcium-binding and coiled-coil domain-con...    34   1.8  
+sp|O43157|PLXB1_HUMAN Plexin-B1 OS=Homo sapiens OX=9606 GN=PLXNB...    34   2.0  
+sp|Q6FN53|STE20_CANGA Serine/threonine-protein kinase STE20 OS=C...    34   2.1  
+sp|Q9H788|SH24A_HUMAN SH2 domain-containing protein 4A OS=Homo s...    33   2.2  
+sp|Q9BXM0|PRAX_HUMAN Periaxin OS=Homo sapiens OX=9606 GN=PRX PE=...    33   2.2  
+sp|Q24742|TRX_DROVI Histone-lysine N-methyltransferase trithorax...    33   2.3  
+sp|H2KYJ8|NHR66_CAEEL Nuclear hormone receptor family member nhr...    33   3.1  
+sp|Q6A025|PPR26_MOUSE Protein phosphatase 1 regulatory subunit 2...    33   3.6  
+sp|Q8VYD8|ORLIK_ARATH Protein ORANGE-LIKE, chloroplastic OS=Arab...    33   4.0  
+sp|Q0CHR0|ACUK_ASPTN Transcription activator of gluconeogenesis ...    33   4.0  
+sp|P0DOV1|IFI5B_MOUSE Interferon-activable protein 205-B OS=Mus ...    33   4.0  
+sp|Q7V6G0|CSOS2_PROMM Carboxysome assembly protein CsoS2 OS=Proc...    33   4.4  
+sp|B8NSV5|CREB_ASPFN Probable ubiquitin carboxyl-terminal hydrol...    32   4.9  
+sp|Q2UUG8|CREB_ASPOR Probable ubiquitin carboxyl-terminal hydrol...    32   4.9  
+sp|C5JT39|ACUK_BLAGS Transcription activator of gluconeogenesis ...    32   5.4  
+sp|E9PUN2|NRX2B_MOUSE Neurexin-2-beta OS=Mus musculus OX=10090 G...    32   5.6  
+sp|P23327|SRCH_HUMAN Sarcoplasmic reticulum histidine-rich calci...    32   5.9  
+sp|B0D0T8|ERT1_LACBS Transcription activator of gluconeogenesis ...    32   6.1  
+sp|Q63376|NRX2B_RAT Neurexin-2-beta OS=Rattus norvegicus OX=1011...    32   6.2  
+sp|Q9H9D4|ZN408_HUMAN Zinc finger protein 408 OS=Homo sapiens OX...    32   6.2  
+sp|A5WUN7|CAM1B_DANRE Calmodulin-regulated spectrin-associated p...    32   6.8  
+sp|Q3UE17|MEX3D_MOUSE RNA-binding protein MEX3D OS=Mus musculus ...    32   6.9  
+sp|Q8CIN9|RFFL_RAT E3 ubiquitin-protein ligase rififylin OS=Ratt...    32   7.0  
+sp|Q96PE2|ARHGH_HUMAN Rho guanine nucleotide exchange factor 17 ...    32   7.0  
+sp|O00499|BIN1_HUMAN Myc box-dependent-interacting protein 1 OS=...    31   9.5  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.299    0.112    0.291 
+
+Lambda     K      H
+   0.267   0.0337    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 295,648,374
+Number of Sequences: 569516
+Number of extensions: 10635897
+Number of successful extensions: 39185
+Number of sequences better than 10.0: 303
+Number of HSP's better than 10.0 without gapping: 151
+Number of HSP's successfully gapped in prelim test: 479
+Number of HSP's that attempted gapping in prelim test: 38128
+Number of HSP's gapped (non-prelim): 1226
+length of query: 316
+length of database: 205,866,895
+effective HSP length: 118
+effective length of query: 198
+effective length of database: 138,664,007
+effective search space: 27455473386
+effective search space used: 27455473386
+T: 11
+A: 40
+X1: 16 ( 6.9 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.3 bits)
+S2: 69 (31.5 bits)

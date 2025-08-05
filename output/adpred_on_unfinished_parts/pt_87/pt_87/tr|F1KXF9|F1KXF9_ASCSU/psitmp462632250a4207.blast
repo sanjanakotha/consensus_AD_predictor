@@ -1,0 +1,724 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (583 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P49809|EGL10_CAEEL Regulator of G-protein signaling egl-10 OS...   871   0.0  
+sp|Q9Z2H2|RGS6_MOUSE Regulator of G-protein signaling 6 OS=Mus m...   465   e-130
+sp|P49758|RGS6_HUMAN Regulator of G-protein signaling 6 OS=Homo ...   456   e-127
+sp|O46470|RGS7_BOVIN Regulator of G-protein signaling 7 OS=Bos t...   340   2e-92
+sp|O54829|RGS7_MOUSE Regulator of G-protein signaling 7 OS=Mus m...   340   2e-92
+sp|P49802|RGS7_HUMAN Regulator of G-protein signaling 7 OS=Homo ...   339   3e-92
+sp|P49803|RGS7_RAT Regulator of G-protein signaling 7 OS=Rattus ...   339   4e-92
+sp|P49805|RGS9_RAT Regulator of G-protein signaling 9 OS=Rattus ...   170   4e-41
+sp|O75916|RGS9_HUMAN Regulator of G-protein signaling 9 OS=Homo ...   169   6e-41
+sp|O54828|RGS9_MOUSE Regulator of G-protein signaling 9 OS=Mus m...   167   2e-40
+sp|Q80ZD1|RGS9_TAMST Regulator of G-protein signaling 9 OS=Tamia...   164   2e-39
+sp|O46469|RGS9_BOVIN Regulator of G-protein signaling 9 OS=Bos t...   162   8e-39
+sp|Q9Z2H1|RGS11_MOUSE Regulator of G-protein signaling 11 OS=Mus...   147   2e-34
+sp|O94810|RGS11_HUMAN Regulator of G-protein signaling 11 OS=Hom...   145   7e-34
+sp|Q08116|RGS1_HUMAN Regulator of G-protein signaling 1 OS=Homo ...   106   6e-22
+sp|P97844|RGS1_RAT Regulator of G-protein signaling 1 OS=Rattus ...   101   2e-20
+sp|P49797|RGS3_RAT Regulator of G-protein signaling 3 OS=Rattus ...   101   2e-20
+sp|Q9DC04|RGS3_MOUSE Regulator of G-protein signaling 3 OS=Mus m...   100   2e-20
+sp|Q9JL25|RGS1_MOUSE Regulator of G-protein signaling 1 OS=Mus m...   100   3e-20
+sp|P49796|RGS3_HUMAN Regulator of G-protein signaling 3 OS=Homo ...    99   1e-19
+sp|Q8BXT1|RGS8_MOUSE Regulator of G-protein signaling 8 OS=Mus m...    99   1e-19
+sp|Q6RG78|RGS1_HORSE Regulator of G-protein signaling 1 OS=Equus...    99   1e-19
+sp|P49804|RGS8_RAT Regulator of G-protein signaling 8 OS=Rattus ...    97   4e-19
+sp|Q4R525|RGS4_MACFA Regulator of G-protein signaling 4 OS=Macac...    97   4e-19
+sp|P49798|RGS4_HUMAN Regulator of G-protein signaling 4 OS=Homo ...    97   4e-19
+sp|P57771|RGS8_HUMAN Regulator of G-protein signaling 8 OS=Homo ...    96   6e-19
+sp|Q5R747|RGS4_PONAB Regulator of G-protein signaling 4 OS=Pongo...    96   1e-18
+sp|Q95K68|RGS8_MACFA Regulator of G-protein signaling 8 OS=Macac...    96   1e-18
+sp|O08899|RGS4_MOUSE Regulator of G-protein signaling 4 OS=Mus m...    96   1e-18
+sp|Q9VCX1|RGS_DROME Regulator of G-protein signaling loco OS=Dro...    95   1e-18
+sp|P49799|RGS4_RAT Regulator of G-protein signaling 4 OS=Rattus ...    95   2e-18
+sp|Q29RM9|RGS4_BOVIN Regulator of G-protein signaling 4 OS=Bos t...    94   2e-18
+sp|Q0R4E4|RGS4_RABIT Regulator of G-protein signaling 4 OS=Oryct...    93   7e-18
+sp|Q2M5E4|RGS21_HUMAN Regulator of G-protein signaling 21 OS=Hom...    89   2e-16
+sp|Q6DGI0|RGS8_DANRE Regulator of G-protein signaling 8 OS=Danio...    88   2e-16
+sp|O76081|RGS20_HUMAN Regulator of G-protein signaling 20 OS=Hom...    87   3e-16
+sp|Q9NS28|RGS18_HUMAN Regulator of G-protein signaling 18 OS=Hom...    87   3e-16
+sp|Q99PG4|RGS18_MOUSE Regulator of G-protein signaling 18 OS=Mus...    87   5e-16
+sp|P79348|RGS20_BOVIN Regulator of G-protein signaling 20 OS=Bos...    86   1e-15
+sp|Q4L0E8|RGS18_RAT Regulator of G-protein signaling 18 OS=Rattu...    85   1e-15
+sp|Q7SZC6|RGS4_CHICK Regulator of G-protein signaling 4 OS=Gallu...    85   2e-15
+sp|Q9QZB1|RGS20_MOUSE Regulator of G-protein signaling 20 OS=Mus...    85   2e-15
+sp|Q9PWA1|RGS20_CHICK Regulator of G-protein signaling 20 OS=Gal...    84   4e-15
+sp|P97428|RGS16_MOUSE Regulator of G-protein signaling 16 OS=Mus...    84   5e-15
+sp|P49800|RGS5_RAT Regulator of G-protein signaling 5 OS=Rattus ...    83   5e-15
+sp|O43566|RGS14_HUMAN Regulator of G-protein signaling 14 OS=Hom...    83   8e-15
+sp|O70521|RGS19_RAT Regulator of G-protein signaling 19 OS=Rattu...    82   9e-15
+sp|Q9CX84|RGS19_MOUSE Regulator of G-protein signaling 19 OS=Mus...    82   1e-14
+sp|O14924|RGS12_HUMAN Regulator of G-protein signaling 12 OS=Hom...    82   1e-14
+sp|Q864Z2|RGS5_PIG Regulator of G-protein signaling 5 OS=Sus scr...    82   1e-14
+sp|P49795|RGS19_HUMAN Regulator of G-protein signaling 19 OS=Hom...    82   1e-14
+sp|O08850|RGS5_MOUSE Regulator of G-protein signaling 5 OS=Mus m...    81   2e-14
+sp|Q8CGE9|RGS12_MOUSE Regulator of G-protein signaling 12 OS=Mus...    81   2e-14
+sp|O08774|RGS12_RAT Regulator of G-protein signaling 12 OS=Rattu...    81   2e-14
+sp|Q3S853|RGS2_PIG Regulator of G-protein signaling 2 OS=Sus scr...    81   2e-14
+sp|O08773|RGS14_RAT Regulator of G-protein signaling 14 OS=Rattu...    81   3e-14
+sp|P49808|RGS2_CAEEL Regulator of G-protein signaling rgs-2 OS=C...    81   3e-14
+sp|P97492|RGS14_MOUSE Regulator of G-protein signaling 14 OS=Mus...    80   4e-14
+sp|Q08DC7|RGS19_BOVIN Regulator of G-protein signaling 19 OS=Bos...    80   5e-14
+sp|Q0P5H5|RGS2_BOVIN Regulator of G-protein signaling 2 OS=Bos t...    80   7e-14
+sp|Q9CQE5|RGS10_MOUSE Regulator of G-protein signaling 10 OS=Mus...    79   8e-14
+sp|P41220|RGS2_HUMAN Regulator of G-protein signaling 2 OS=Homo ...    79   1e-13
+sp|O08849|RGS2_MOUSE Regulator of G-protein signaling 2 OS=Mus m...    79   1e-13
+sp|P56700|RGS16_RAT Regulator of G-protein signaling 16 OS=Rattu...    79   1e-13
+sp|Q9JHX0|RGS2_RAT Regulator of G-protein signaling 2 OS=Rattus ...    79   1e-13
+sp|O15492|RGS16_HUMAN Regulator of G-protein signaling 16 OS=Hom...    79   2e-13
+sp|Q3T0T8|RGS5_BOVIN Regulator of G-protein signaling 5 OS=Bos t...    78   2e-13
+sp|O46471|RGS16_BOVIN Regulator of G-protein signaling 16 OS=Bos...    78   2e-13
+sp|F1S668|RGS16_PIG Regulator of G-protein signaling 16 OS=Sus s...    78   2e-13
+sp|P34295|RGS1_CAEEL Regulator of G-protein signaling rgs-1 OS=C...    77   3e-13
+sp|O15539|RGS5_HUMAN Regulator of G-protein signaling 5 OS=Homo ...    77   4e-13
+sp|Q9UGC6|RGS17_HUMAN Regulator of G-protein signaling 17 OS=Hom...    77   5e-13
+sp|Q2KHW7|RGS10_BOVIN Regulator of G-protein signaling 10 OS=Bos...    77   6e-13
+sp|P49806|RGS10_RAT Regulator of G-protein signaling 10 OS=Rattu...    76   7e-13
+sp|Q9PWA0|RGS17_CHICK Regulator of G-protein signaling 17 OS=Gal...    75   1e-12
+sp|O43665|RGS10_HUMAN Regulator of G-protein signaling 10 OS=Hom...    75   2e-12
+sp|A1A643|RGS1_XENLA Regulator of G-protein signaling 1 OS=Xenop...    74   3e-12
+sp|Q5M8L6|RGS1_XENTR Regulator of G-protein signaling 1 OS=Xenop...    74   4e-12
+sp|O14921|RGS13_HUMAN Regulator of G-protein signaling 13 OS=Hom...    74   5e-12
+sp|Q9QZB0|RGS17_MOUSE Regulator of G-protein signaling 17 OS=Mus...    72   2e-11
+sp|Q8K443|RGS13_MOUSE Regulator of G-protein signaling 13 OS=Mus...    71   2e-11
+sp|Q18312|RGS3_CAEEL Regulator of G-protein signaling rgs-3 OS=C...    63   9e-09
+sp|Q8WQC0|RGS7_CAEEL Regulator of G-protein signaling rgs-7 OS=C...    57   4e-07
+sp|O88566|AXIN2_MOUSE Axin-2 OS=Mus musculus OX=10090 GN=Axin2 P...    57   5e-07
+sp|O70240|AXIN2_RAT Axin-2 OS=Rattus norvegicus OX=10116 GN=Axin...    57   5e-07
+sp|Q9Y2T1|AXIN2_HUMAN Axin-2 OS=Homo sapiens OX=9606 GN=AXIN2 PE...    55   1e-06
+sp|Q18563|RGS6_CAEEL Regulator of G-protein signaling rgs-6 OS=C...    54   3e-06
+sp|P57095|AXIN2_DANRE Axin-2 OS=Danio rerio OX=7955 GN=axin2 PE=...    51   3e-05
+sp|O42400|AXIN1_CHICK Axin-1 OS=Gallus gallus OX=9031 GN=AXIN1 P...    50   5e-05
+sp|P49807|RGS11_RAT Regulator of G-protein signaling 11 (Fragmen...    49   1e-04
+sp|Q9YGY0|AXIN1_XENLA Axin-1 OS=Xenopus laevis OX=8355 GN=axin1 ...    49   1e-04
+sp|O70239|AXIN1_RAT Axin-1 OS=Rattus norvegicus OX=10116 GN=Axin...    47   3e-04
+sp|O35625|AXIN1_MOUSE Axin-1 OS=Mus musculus OX=10090 GN=Axin1 P...    47   4e-04
+sp|P57094|AXIN1_DANRE Axin-1 OS=Danio rerio OX=7955 GN=axin1 PE=...    47   4e-04
+sp|Q8TCU6|PREX1_HUMAN Phosphatidylinositol 3,4,5-trisphosphate-d...    46   8e-04
+sp|P49801|RGS6_RAT Regulator of G-protein signaling 6 (Fragment)...    46   0.001
+sp|Q69ZK0|PREX1_MOUSE Phosphatidylinositol 3,4,5-trisphosphate-d...    45   0.001
+sp|O15169|AXIN1_HUMAN Axin-1 OS=Homo sapiens OX=9606 GN=AXIN1 PE...    44   0.003
+sp|O45524|RGS11_CAEEL Regulator of G-protein signaling rgs-11 OS...    42   0.020
+sp|Q9USN1|SNX12_SCHPO Sorting nexin-12 OS=Schizosaccharomyces po...    42   0.021
+sp|Q8TB45|DPTOR_HUMAN DEP domain-containing mTOR-interacting pro...    40   0.038
+sp|Q570Y9|DPTOR_MOUSE DEP domain-containing mTOR-interacting pro...    40   0.049
+sp|Q9PTP2|AXNR_XENLA Axin-related protein OS=Xenopus laevis OX=8...    40   0.066
+sp|Q54XQ2|RCKA_DICDI RGS domain-containing serine/threonine-prot...    39   0.10 
+sp|Q70Z35|PREX2_HUMAN Phosphatidylinositol 3,4,5-trisphosphate-d...    39   0.10 
+sp|Q9H3E2|SNX25_HUMAN Sorting nexin-25 OS=Homo sapiens OX=9606 G...    39   0.10 
+sp|Q61062|DVL3_MOUSE Segment polarity protein dishevelled homolo...    39   0.16 
+sp|O45523|RGS10_CAEEL Regulator of G-protein signaling rgs-10 OS...    39   0.16 
+sp|Q92997|DVL3_HUMAN Segment polarity protein dishevelled homolo...    39   0.17 
+sp|B1WAP7|DVL3_XENTR Segment polarity protein dishevelled homolo...    38   0.26 
+sp|Q3LAC4|PREX2_MOUSE Phosphatidylinositol 3,4,5-trisphosphate-d...    38   0.30 
+sp|Q22227|MIG5_CAEEL Segment polarity protein dishevelled homolo...    37   0.32 
+sp|Q10955|RGS5_CAEEL Regulator of G-protein signaling rgs-5 OS=C...    36   0.97 
+sp|P51140|DSH_DROME Segment polarity protein dishevelled OS=Dros...    35   2.2  
+sp|A0A144KPJ6|TES_ALTAL Nonribosomal peptide synthetase TES OS=A...    35   2.4  
+sp|P02698|GBG1_BOVIN Guanine nucleotide-binding protein G(T) sub...    34   2.9  
+sp|Q6DKE2|DVL3_XENLA Segment polarity protein dishevelled homolo...    34   4.2  
+sp|Q4KM33|PLEK_RAT Pleckstrin OS=Rattus norvegicus OX=10116 GN=P...    33   4.6  
+sp|P11972|SST2_YEAST Protein SST2 OS=Saccharomyces cerevisiae (s...    33   5.1  
+sp|Q9SMH5|DYHC2_CHLRE Cytoplasmic dynein 2 heavy chain 1 OS=Chla...    33   6.1  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P49809|EGL10_CAEEL Regulator of G-protein signaling egl-10 OS...   746   0.0  
+sp|P49758|RGS6_HUMAN Regulator of G-protein signaling 6 OS=Homo ...   631   e-180
+sp|Q9Z2H2|RGS6_MOUSE Regulator of G-protein signaling 6 OS=Mus m...   630   e-180
+sp|P49802|RGS7_HUMAN Regulator of G-protein signaling 7 OS=Homo ...   567   e-161
+sp|P49803|RGS7_RAT Regulator of G-protein signaling 7 OS=Rattus ...   557   e-158
+sp|O46470|RGS7_BOVIN Regulator of G-protein signaling 7 OS=Bos t...   552   e-156
+sp|O54829|RGS7_MOUSE Regulator of G-protein signaling 7 OS=Mus m...   551   e-156
+sp|P49805|RGS9_RAT Regulator of G-protein signaling 9 OS=Rattus ...   377   e-103
+sp|Q80ZD1|RGS9_TAMST Regulator of G-protein signaling 9 OS=Tamia...   377   e-103
+sp|O54828|RGS9_MOUSE Regulator of G-protein signaling 9 OS=Mus m...   373   e-102
+sp|O75916|RGS9_HUMAN Regulator of G-protein signaling 9 OS=Homo ...   372   e-102
+sp|O46469|RGS9_BOVIN Regulator of G-protein signaling 9 OS=Bos t...   369   e-101
+sp|O94810|RGS11_HUMAN Regulator of G-protein signaling 11 OS=Hom...   305   8e-82
+sp|Q9Z2H1|RGS11_MOUSE Regulator of G-protein signaling 11 OS=Mus...   295   9e-79
+sp|Q4R525|RGS4_MACFA Regulator of G-protein signaling 4 OS=Macac...   220   3e-56
+sp|P49798|RGS4_HUMAN Regulator of G-protein signaling 4 OS=Homo ...   220   3e-56
+sp|P34295|RGS1_CAEEL Regulator of G-protein signaling rgs-1 OS=C...   218   9e-56
+sp|Q5R747|RGS4_PONAB Regulator of G-protein signaling 4 OS=Pongo...   218   9e-56
+sp|Q29RM9|RGS4_BOVIN Regulator of G-protein signaling 4 OS=Bos t...   218   1e-55
+sp|O08899|RGS4_MOUSE Regulator of G-protein signaling 4 OS=Mus m...   217   3e-55
+sp|P49799|RGS4_RAT Regulator of G-protein signaling 4 OS=Rattus ...   216   4e-55
+sp|Q0R4E4|RGS4_RABIT Regulator of G-protein signaling 4 OS=Oryct...   216   4e-55
+sp|Q8BXT1|RGS8_MOUSE Regulator of G-protein signaling 8 OS=Mus m...   215   8e-55
+sp|P49804|RGS8_RAT Regulator of G-protein signaling 8 OS=Rattus ...   214   1e-54
+sp|P57771|RGS8_HUMAN Regulator of G-protein signaling 8 OS=Homo ...   214   2e-54
+sp|P49796|RGS3_HUMAN Regulator of G-protein signaling 3 OS=Homo ...   212   6e-54
+sp|Q95K68|RGS8_MACFA Regulator of G-protein signaling 8 OS=Macac...   211   1e-53
+sp|Q08116|RGS1_HUMAN Regulator of G-protein signaling 1 OS=Homo ...   210   3e-53
+sp|Q7SZC6|RGS4_CHICK Regulator of G-protein signaling 4 OS=Gallu...   209   7e-53
+sp|Q9DC04|RGS3_MOUSE Regulator of G-protein signaling 3 OS=Mus m...   208   9e-53
+sp|P49797|RGS3_RAT Regulator of G-protein signaling 3 OS=Rattus ...   208   2e-52
+sp|Q6RG78|RGS1_HORSE Regulator of G-protein signaling 1 OS=Equus...   207   2e-52
+sp|P97844|RGS1_RAT Regulator of G-protein signaling 1 OS=Rattus ...   206   3e-52
+sp|Q9PWA1|RGS20_CHICK Regulator of G-protein signaling 20 OS=Gal...   206   4e-52
+sp|O76081|RGS20_HUMAN Regulator of G-protein signaling 20 OS=Hom...   206   4e-52
+sp|Q9QZB1|RGS20_MOUSE Regulator of G-protein signaling 20 OS=Mus...   205   7e-52
+sp|Q9PWA0|RGS17_CHICK Regulator of G-protein signaling 17 OS=Gal...   204   2e-51
+sp|Q6DGI0|RGS8_DANRE Regulator of G-protein signaling 8 OS=Danio...   204   2e-51
+sp|Q9JL25|RGS1_MOUSE Regulator of G-protein signaling 1 OS=Mus m...   203   3e-51
+sp|Q4L0E8|RGS18_RAT Regulator of G-protein signaling 18 OS=Rattu...   202   8e-51
+sp|Q3S853|RGS2_PIG Regulator of G-protein signaling 2 OS=Sus scr...   202   8e-51
+sp|O14924|RGS12_HUMAN Regulator of G-protein signaling 12 OS=Hom...   202   8e-51
+sp|Q9UGC6|RGS17_HUMAN Regulator of G-protein signaling 17 OS=Hom...   201   1e-50
+sp|P79348|RGS20_BOVIN Regulator of G-protein signaling 20 OS=Bos...   201   1e-50
+sp|P49800|RGS5_RAT Regulator of G-protein signaling 5 OS=Rattus ...   201   1e-50
+sp|Q99PG4|RGS18_MOUSE Regulator of G-protein signaling 18 OS=Mus...   201   1e-50
+sp|Q2M5E4|RGS21_HUMAN Regulator of G-protein signaling 21 OS=Hom...   201   1e-50
+sp|O46471|RGS16_BOVIN Regulator of G-protein signaling 16 OS=Bos...   201   2e-50
+sp|P97428|RGS16_MOUSE Regulator of G-protein signaling 16 OS=Mus...   201   2e-50
+sp|Q9NS28|RGS18_HUMAN Regulator of G-protein signaling 18 OS=Hom...   200   3e-50
+sp|Q864Z2|RGS5_PIG Regulator of G-protein signaling 5 OS=Sus scr...   200   3e-50
+sp|O15492|RGS16_HUMAN Regulator of G-protein signaling 16 OS=Hom...   200   3e-50
+sp|Q8CGE9|RGS12_MOUSE Regulator of G-protein signaling 12 OS=Mus...   200   4e-50
+sp|O08774|RGS12_RAT Regulator of G-protein signaling 12 OS=Rattu...   199   7e-50
+sp|Q9CX84|RGS19_MOUSE Regulator of G-protein signaling 19 OS=Mus...   198   8e-50
+sp|O70521|RGS19_RAT Regulator of G-protein signaling 19 OS=Rattu...   198   8e-50
+sp|P49795|RGS19_HUMAN Regulator of G-protein signaling 19 OS=Hom...   198   8e-50
+sp|Q9QZB0|RGS17_MOUSE Regulator of G-protein signaling 17 OS=Mus...   198   9e-50
+sp|Q9JHX0|RGS2_RAT Regulator of G-protein signaling 2 OS=Rattus ...   198   9e-50
+sp|O08850|RGS5_MOUSE Regulator of G-protein signaling 5 OS=Mus m...   198   1e-49
+sp|O08849|RGS2_MOUSE Regulator of G-protein signaling 2 OS=Mus m...   198   1e-49
+sp|F1S668|RGS16_PIG Regulator of G-protein signaling 16 OS=Sus s...   198   2e-49
+sp|Q0P5H5|RGS2_BOVIN Regulator of G-protein signaling 2 OS=Bos t...   197   2e-49
+sp|Q3T0T8|RGS5_BOVIN Regulator of G-protein signaling 5 OS=Bos t...   197   3e-49
+sp|P41220|RGS2_HUMAN Regulator of G-protein signaling 2 OS=Homo ...   196   6e-49
+sp|O15539|RGS5_HUMAN Regulator of G-protein signaling 5 OS=Homo ...   196   6e-49
+sp|P56700|RGS16_RAT Regulator of G-protein signaling 16 OS=Rattu...   195   7e-49
+sp|O14921|RGS13_HUMAN Regulator of G-protein signaling 13 OS=Hom...   194   1e-48
+sp|Q08DC7|RGS19_BOVIN Regulator of G-protein signaling 19 OS=Bos...   193   4e-48
+sp|Q9CQE5|RGS10_MOUSE Regulator of G-protein signaling 10 OS=Mus...   192   6e-48
+sp|Q8K443|RGS13_MOUSE Regulator of G-protein signaling 13 OS=Mus...   190   2e-47
+sp|Q5M8L6|RGS1_XENTR Regulator of G-protein signaling 1 OS=Xenop...   190   2e-47
+sp|P49806|RGS10_RAT Regulator of G-protein signaling 10 OS=Rattu...   188   1e-46
+sp|O08773|RGS14_RAT Regulator of G-protein signaling 14 OS=Rattu...   186   3e-46
+sp|P97492|RGS14_MOUSE Regulator of G-protein signaling 14 OS=Mus...   186   3e-46
+sp|P49808|RGS2_CAEEL Regulator of G-protein signaling rgs-2 OS=C...   186   4e-46
+sp|Q2KHW7|RGS10_BOVIN Regulator of G-protein signaling 10 OS=Bos...   185   1e-45
+sp|O43566|RGS14_HUMAN Regulator of G-protein signaling 14 OS=Hom...   184   1e-45
+sp|A1A643|RGS1_XENLA Regulator of G-protein signaling 1 OS=Xenop...   183   3e-45
+sp|O43665|RGS10_HUMAN Regulator of G-protein signaling 10 OS=Hom...   183   4e-45
+sp|Q9VCX1|RGS_DROME Regulator of G-protein signaling loco OS=Dro...   180   2e-44
+sp|P57094|AXIN1_DANRE Axin-1 OS=Danio rerio OX=7955 GN=axin1 PE=...   160   3e-38
+sp|Q9Y2T1|AXIN2_HUMAN Axin-2 OS=Homo sapiens OX=9606 GN=AXIN2 PE...   159   8e-38
+sp|O88566|AXIN2_MOUSE Axin-2 OS=Mus musculus OX=10090 GN=Axin2 P...   158   1e-37
+sp|O70240|AXIN2_RAT Axin-2 OS=Rattus norvegicus OX=10116 GN=Axin...   157   2e-37
+sp|O35625|AXIN1_MOUSE Axin-1 OS=Mus musculus OX=10090 GN=Axin1 P...   157   3e-37
+sp|O70239|AXIN1_RAT Axin-1 OS=Rattus norvegicus OX=10116 GN=Axin...   156   5e-37
+sp|Q8WQC0|RGS7_CAEEL Regulator of G-protein signaling rgs-7 OS=C...   154   2e-36
+sp|Q9YGY0|AXIN1_XENLA Axin-1 OS=Xenopus laevis OX=8355 GN=axin1 ...   154   2e-36
+sp|O42400|AXIN1_CHICK Axin-1 OS=Gallus gallus OX=9031 GN=AXIN1 P...   154   2e-36
+sp|P57095|AXIN2_DANRE Axin-2 OS=Danio rerio OX=7955 GN=axin2 PE=...   152   6e-36
+sp|Q18312|RGS3_CAEEL Regulator of G-protein signaling rgs-3 OS=C...   145   1e-33
+sp|Q18563|RGS6_CAEEL Regulator of G-protein signaling rgs-6 OS=C...   131   2e-29
+sp|Q8TCU6|PREX1_HUMAN Phosphatidylinositol 3,4,5-trisphosphate-d...   116   6e-25
+sp|P49807|RGS11_RAT Regulator of G-protein signaling 11 (Fragmen...    94   3e-18
+
+Sequences not found previously or not previously below threshold:
+
+sp|O15169|AXIN1_HUMAN Axin-1 OS=Homo sapiens OX=9606 GN=AXIN1 PE...   148   1e-34
+sp|Q69ZK0|PREX1_MOUSE Phosphatidylinositol 3,4,5-trisphosphate-d...   114   2e-24
+sp|Q9PTP2|AXNR_XENLA Axin-related protein OS=Xenopus laevis OX=8...   106   8e-22
+sp|O45523|RGS10_CAEEL Regulator of G-protein signaling rgs-10 OS...   103   4e-21
+sp|Q3LAC4|PREX2_MOUSE Phosphatidylinositol 3,4,5-trisphosphate-d...   101   3e-20
+sp|Q70Z35|PREX2_HUMAN Phosphatidylinositol 3,4,5-trisphosphate-d...   100   4e-20
+sp|P38093|FLBA_EMENI Developmental regulator flbA OS=Emericella ...    91   3e-17
+sp|O45524|RGS11_CAEEL Regulator of G-protein signaling rgs-11 OS...    89   1e-16
+sp|P49801|RGS6_RAT Regulator of G-protein signaling 6 (Fragment)...    87   5e-16
+sp|Q9V407|AXN_DROME Axin OS=Drosophila melanogaster OX=7227 GN=A...    76   7e-13
+sp|Q10955|RGS5_CAEEL Regulator of G-protein signaling rgs-5 OS=C...    76   8e-13
+sp|Q23376|RGS9_CAEEL Regulator of G-protein signaling rgs-9 OS=C...    74   4e-12
+sp|Q6PHS6|SNX13_MOUSE Sorting nexin-13 OS=Mus musculus OX=10090 ...    71   3e-11
+sp|Q09777|RGS1_SCHPO Regulator of G-protein signaling 1 OS=Schiz...    71   3e-11
+sp|Q9Y5W8|SNX13_HUMAN Sorting nexin-13 OS=Homo sapiens OX=9606 G...    71   3e-11
+sp|Q9H3E2|SNX25_HUMAN Sorting nexin-25 OS=Homo sapiens OX=9606 G...    69   1e-10
+sp|Q6CAP3|IML1_YARLI Vacuolar membrane-associated protein IML1 O...    67   5e-10
+sp|Q3ZT31|SNX25_MOUSE Sorting nexin-25 OS=Mus musculus OX=10090 ...    66   8e-10
+sp|Q6XHA6|ROC10_DICDI Probable inactive serine/threonine-protein...    65   2e-09
+sp|Q99188|RGS2_YEAST Regulator of G-protein signaling 2 OS=Sacch...    64   3e-09
+sp|Q8H1F2|RGS1_ARATH Regulator of G-protein signaling 1 OS=Arabi...    62   9e-09
+sp|O43572|AKA10_HUMAN A-kinase anchor protein 10, mitochondrial ...    62   1e-08
+sp|O88845|AKA10_MOUSE A-kinase anchor protein 10, mitochondrial ...    62   1e-08
+sp|Q8TB45|DPTOR_HUMAN DEP domain-containing mTOR-interacting pro...    62   1e-08
+sp|Q570Y9|DPTOR_MOUSE DEP domain-containing mTOR-interacting pro...    62   1e-08
+sp|Q54XQ2|RCKA_DICDI RGS domain-containing serine/threonine-prot...    61   3e-08
+sp|Q9USN1|SNX12_SCHPO Sorting nexin-12 OS=Schizosaccharomyces po...    60   5e-08
+sp|Q5PNP1|SNX14_DANRE Sorting nexin-14 OS=Danio rerio OX=7955 GN...    57   4e-07
+sp|P57770|AKA10_PIG A-kinase anchor protein 10, mitochondrial (F...    56   6e-07
+sp|Q9Z1T6|FYV1_MOUSE 1-phosphatidylinositol 3-phosphate 5-kinase...    56   1e-06
+sp|Q92997|DVL3_HUMAN Segment polarity protein dishevelled homolo...    56   1e-06
+sp|Q61062|DVL3_MOUSE Segment polarity protein dishevelled homolo...    55   1e-06
+sp|Q9Y2I7|FYV1_HUMAN 1-phosphatidylinositol 3-phosphate 5-kinase...    55   2e-06
+sp|P51140|DSH_DROME Segment polarity protein dishevelled OS=Dros...    54   3e-06
+sp|Q8NE09|RGS22_HUMAN Regulator of G-protein signaling 22 OS=Hom...    53   6e-06
+sp|B1WAP7|DVL3_XENTR Segment polarity protein dishevelled homolo...    53   6e-06
+sp|Q4KM33|PLEK_RAT Pleckstrin OS=Rattus norvegicus OX=10116 GN=P...    52   1e-05
+sp|Q8BHY8|SNX14_MOUSE Sorting nexin-14 OS=Mus musculus OX=10090 ...    51   2e-05
+sp|Q6BN00|IML1_DEBHA Vacuolar membrane-associated protein IML1 O...    51   3e-05
+sp|P11972|SST2_YEAST Protein SST2 OS=Saccharomyces cerevisiae (s...    51   3e-05
+sp|G3UYX5|RGS22_MOUSE Regulator of G-protein signaling 22 OS=Mus...    51   3e-05
+sp|A3LRB2|IML1_PICST Vacuolar membrane-associated protein IML1 O...    50   4e-05
+sp|Q6DKE2|DVL3_XENLA Segment polarity protein dishevelled homolo...    50   6e-05
+sp|Q75DV2|IML1_ASHGO Vacuolar membrane-associated protein IML1 O...    50   6e-05
+sp|P51142|DVL2_XENLA Segment polarity protein dishevelled homolo...    50   6e-05
+sp|Q9Y5W7|SNX14_HUMAN Sorting nexin-14 OS=Homo sapiens OX=9606 G...    49   1e-04
+sp|Q9JHK5|PLEK_MOUSE Pleckstrin OS=Mus musculus OX=10090 GN=Plek...    49   1e-04
+sp|Q5R903|SNX14_PONAB Sorting nexin-14 OS=Pongo abelii OX=9601 G...    49   1e-04
+sp|Q9WVL4|GRK1_MOUSE Rhodopsin kinase GRK1 OS=Mus musculus OX=10...    49   1e-04
+sp|P47170|IML1_YEAST Vacuolar membrane-associated protein IML1 O...    48   2e-04
+sp|P08567|PLEK_HUMAN Pleckstrin OS=Homo sapiens OX=9606 GN=PLEK ...    48   2e-04
+sp|O14640|DVL1_HUMAN Segment polarity protein dishevelled homolo...    48   2e-04
+sp|Q5IS48|DVL1_PANTR Segment polarity protein dishevelled homolo...    48   2e-04
+sp|Q9NYT0|PLEK2_HUMAN Pleckstrin-2 OS=Homo sapiens OX=9606 GN=PL...    48   2e-04
+sp|P51141|DVL1_MOUSE Segment polarity protein dishevelled homolo...    48   2e-04
+sp|Q9WVB9|DVL1_RAT Segment polarity protein dishevelled homolog ...    48   3e-04
+sp|O62090|PRY1_CAEEL Axin-like protein pry-1 OS=Caenorhabditis e...    48   3e-04
+sp|Q5AIA4|IML1_CANAL Vacuolar membrane-associated protein IML1 O...    47   3e-04
+sp|Q4WHH4|IML1_ASPFU Vacuolar membrane-associated protein iml1 O...    47   3e-04
+sp|A1DFV9|IML1_NEOFI Vacuolar membrane-associated protein iml1 O...    47   3e-04
+sp|Q1E9Q9|IML1_COCIM Vacuolar membrane-associated protein IML1 O...    47   4e-04
+sp|Q2UMR9|IML1_ASPOR Vacuolar membrane-associated protein iml1 O...    47   5e-04
+sp|P54792|DVLP1_HUMAN Putative segment polarity protein dishevel...    47   5e-04
+sp|O14641|DVL2_HUMAN Segment polarity protein dishevelled homolo...    47   6e-04
+sp|Q60838|DVL2_MOUSE Segment polarity protein dishevelled homolo...    46   6e-04
+sp|Q0CHV5|IML1_ASPTN Vacuolar membrane-associated protein iml1 O...    46   7e-04
+sp|Q05AS8|DVL2_XENTR Segment polarity protein dishevelled homolo...    46   0.001
+sp|Q6Q308|PLEK_CANLF Pleckstrin OS=Canis lupus familiaris OX=961...    46   0.001
+sp|Q22227|MIG5_CAEEL Segment polarity protein dishevelled homolo...    46   0.001
+sp|A1CEE0|IML1_ASPCL Vacuolar membrane-associated protein iml1 O...    45   0.002
+sp|Q63651|GRK1_RAT Rhodopsin kinase GRK1 OS=Rattus norvegicus OX...    45   0.002
+sp|Q5AW24|IML1_EMENI Vacuolar membrane-associated protein iml1 O...    45   0.002
+sp|O60262|GBG7_HUMAN Guanine nucleotide-binding protein G(I)/G(S...    45   0.002
+sp|Q54M77|ROCO8_DICDI Probable serine/threonine-protein kinase r...    44   0.003
+sp|Q7Z3F1|GP155_HUMAN Integral membrane protein GPR155 OS=Homo s...    44   0.003
+sp|O15085|ARHGB_HUMAN Rho guanine nucleotide exchange factor 11 ...    44   0.003
+sp|Q7S9J6|IML1_NEUCR Vacuolar membrane-associated protein iml1 O...    44   0.003
+sp|Q5R9A7|GP155_PONAB Integral membrane protein GPR155 OS=Pongo ...    44   0.004
+sp|Q15835|GRK1_HUMAN Rhodopsin kinase GRK1 OS=Homo sapiens OX=96...    44   0.005
+sp|Q9ES67|ARHGB_RAT Rho guanine nucleotide exchange factor 11 OS...    44   0.005
+sp|P43425|GBG7_RAT Guanine nucleotide-binding protein G(I)/G(S)/...    43   0.005
+sp|P30671|GBG7_BOVIN Guanine nucleotide-binding protein G(I)/G(S...    43   0.007
+sp|Q2H0S0|IML1_CHAGB Vacuolar membrane-associated protein IML1 O...    43   0.007
+sp|Q61016|GBG7_MOUSE Guanine nucleotide-binding protein G(I)/G(S...    43   0.007
+sp|O97627|ARBK1_DIDVI Beta-adrenergic receptor kinase 1 OS=Didel...    43   0.008
+sp|P32865|GPRK1_DROME G protein-coupled receptor kinase 1 OS=Dro...    43   0.009
+sp|Q9WV52|PLEK2_MOUSE Pleckstrin-2 OS=Mus musculus OX=10090 GN=P...    42   0.013
+sp|Q09639|GRK2_CAEEL G protein-coupled receptor kinase 2 OS=Caen...    42   0.013
+sp|A4R596|IML1_MAGO7 Vacuolar membrane-associated protein IML1 O...    41   0.029
+sp|A0A364LXP7|RT109_ASPFL Histone acetyltransferase rtt109 OS=As...    41   0.038
+sp|P63219|GBG5_RAT Guanine nucleotide-binding protein G(I)/G(S)/...    41   0.040
+sp|Q5REH7|GBG5_PONAB Guanine nucleotide-binding protein G(I)/G(S...    41   0.040
+sp|Q80SZ7|GBG5_MOUSE Guanine nucleotide-binding protein G(I)/G(S...    41   0.040
+sp|P63218|GBG5_HUMAN Guanine nucleotide-binding protein G(I)/G(S...    41   0.040
+sp|P63217|GBG5_BOVIN Guanine nucleotide-binding protein G(I)/G(S...    41   0.040
+sp|P43249|GRK5_BOVIN G protein-coupled receptor kinase 5 OS=Bos ...    40   0.047
+sp|A8XU52|PRY1_CAEBR Axin-like protein pry-1 OS=Caenorhabditis b...    40   0.065
+sp|P70507|GRK4_RAT G protein-coupled receptor kinase 4 OS=Rattus...    40   0.066
+sp|O74788|IML1_SCHPO Vacuolar membrane-associated protein iml1 O...    40   0.071
+sp|Q5R7U4|GBG2_PONAB Guanine nucleotide-binding protein G(I)/G(S...    40   0.073
+sp|P63213|GBG2_MOUSE Guanine nucleotide-binding protein G(I)/G(S...    40   0.073
+sp|P59768|GBG2_HUMAN Guanine nucleotide-binding protein G(I)/G(S...    40   0.073
+sp|P63212|GBG2_BOVIN Guanine nucleotide-binding protein G(I)/G(S...    40   0.073
+sp|Q86G47|GEFQ_DICDI Ras guanine nucleotide exchange factor Q OS...    39   0.077
+sp|P28327|GRK1_BOVIN Rhodopsin kinase GRK1 OS=Bos taurus OX=9913...    39   0.079
+sp|Q54XA2|Y9099_DICDI DEP domain-containing protein DDB_G0279099...    39   0.080
+sp|P50153|GBG4_MOUSE Guanine nucleotide-binding protein G(I)/G(S...    39   0.11 
+sp|Q6FK84|IML1_CANGA Vacuolar membrane-associated protein IML1 O...    39   0.11 
+sp|Q5R639|GBG4_PONAB Guanine nucleotide-binding protein G(I)/G(S...    39   0.11 
+sp|P50150|GBG4_HUMAN Guanine nucleotide-binding protein G(I)/G(S...    39   0.11 
+sp|Q28024|GBG12_BOVIN Guanine nucleotide-binding protein G(I)/G(...    39   0.12 
+sp|Q62833|GRK5_RAT G protein-coupled receptor kinase 5 OS=Rattus...    39   0.12 
+sp|Q6FPE6|LONM_CANGA Lon protease homolog, mitochondrial OS=Cand...    39   0.12 
+sp|P63216|GBG3_MOUSE Guanine nucleotide-binding protein G(I)/G(S...    39   0.14 
+sp|P63215|GBG3_HUMAN Guanine nucleotide-binding protein G(I)/G(S...    39   0.14 
+sp|P63214|GBG3_BOVIN Guanine nucleotide-binding protein G(I)/G(S...    39   0.14 
+sp|P34947|GRK5_HUMAN G protein-coupled receptor kinase 5 OS=Homo...    39   0.15 
+sp|Q9UK08|GBG8_HUMAN Guanine nucleotide-binding protein G(I)/G(S...    39   0.15 
+sp|P63077|GBG8_RAT Guanine nucleotide-binding protein G(I)/G(S)/...    39   0.16 
+sp|P63078|GBG8_MOUSE Guanine nucleotide-binding protein G(I)/G(S...    39   0.16 
+sp|Q9DAS9|GBG12_MOUSE Guanine nucleotide-binding protein G(I)/G(...    38   0.21 
+sp|P02698|GBG1_BOVIN Guanine nucleotide-binding protein G(T) sub...    38   0.26 
+sp|Q5RBQ0|GBG12_PONAB Guanine nucleotide-binding protein G(I)/G(...    38   0.27 
+sp|Q9UBI6|GBG12_HUMAN Guanine nucleotide-binding protein G(I)/G(...    38   0.27 
+sp|Q8VEB1|GRK5_MOUSE G protein-coupled receptor kinase 5 OS=Mus ...    37   0.29 
+sp|Q61012|GBG1_MOUSE Guanine nucleotide-binding protein G(T) sub...    37   0.30 
+sp|P63211|GBG1_HUMAN Guanine nucleotide-binding protein G(T) sub...    37   0.37 
+sp|P63210|GBG1_CANLF Guanine nucleotide-binding protein G(T) sub...    37   0.37 
+sp|P0CS46|PFS2_CRYNJ Polyadenylation factor subunit 2 OS=Cryptoc...    37   0.51 
+sp|P0CS47|PFS2_CRYNB Polyadenylation factor subunit 2 OS=Cryptoc...    37   0.51 
+sp|Q9Y7X6|ISH1_SCHPO Stress response protein ish1 OS=Schizosacch...    36   0.68 
+sp|Q8G3Q1|XYLA_BIFLO Xylose isomerase OS=Bifidobacterium longum ...    36   0.92 
+sp|B3DR33|XYLA_BIFLD Xylose isomerase OS=Bifidobacterium longum ...    36   0.92 
+sp|Q55GG4|Y9847_DICDI Probable serine/threonine-protein kinase D...    36   1.0  
+sp|P61954|GBG11_RAT Guanine nucleotide-binding protein G(I)/G(S)...    36   1.0  
+sp|P61953|GBG11_MOUSE Guanine nucleotide-binding protein G(I)/G(...    36   1.0  
+sp|P61952|GBG11_HUMAN Guanine nucleotide-binding protein G(I)/G(...    36   1.0  
+sp|Q5E9F0|GBG11_BOVIN Guanine nucleotide-binding protein G(I)/G(...    36   1.1  
+sp|Q6IRN6|CAMP1_XENLA Calmodulin-regulated spectrin-associated p...    36   1.2  
+sp|O14610|GBGT2_HUMAN Guanine nucleotide-binding protein G(I)/G(...    36   1.3  
+sp|Q8N2C3|DEPD4_HUMAN DEP domain-containing protein 4 OS=Homo sa...    35   1.7  
+sp|Q9M2V5|AB18G_ARATH ABC transporter G family member 18 OS=Arab...    34   4.0  
+sp|O42632|KPC1_COCHE Protein kinase C-like OS=Cochliobolus heter...    34   4.1  
+sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116...    34   4.4  
+sp|P98091|MUC19_BOVIN Mucin-19 OS=Bos taurus OX=9913 GN=MUC19 PE...    33   5.9  
+sp|Q9UW13|PALF_CANAL pH-response regulator protein palF/RIM8 OS=...    33   7.6  
+sp|A3KMV2|RD23A_BOVIN UV excision repair protein RAD23 homolog A...    33   8.8  
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P49809|EGL10_CAEEL Regulator of G-protein signaling egl-10 OS...   623   e-177
+sp|P49803|RGS7_RAT Regulator of G-protein signaling 7 OS=Rattus ...   540   e-152
+sp|P49802|RGS7_HUMAN Regulator of G-protein signaling 7 OS=Homo ...   539   e-152
+sp|O46470|RGS7_BOVIN Regulator of G-protein signaling 7 OS=Bos t...   533   e-150
+sp|O54829|RGS7_MOUSE Regulator of G-protein signaling 7 OS=Mus m...   533   e-150
+sp|P49758|RGS6_HUMAN Regulator of G-protein signaling 6 OS=Homo ...   532   e-150
+sp|Q9Z2H2|RGS6_MOUSE Regulator of G-protein signaling 6 OS=Mus m...   521   e-147
+sp|O94810|RGS11_HUMAN Regulator of G-protein signaling 11 OS=Hom...   335   5e-91
+sp|Q8WQC0|RGS7_CAEEL Regulator of G-protein signaling rgs-7 OS=C...   333   2e-90
+sp|O46469|RGS9_BOVIN Regulator of G-protein signaling 9 OS=Bos t...   332   4e-90
+sp|Q9Z2H1|RGS11_MOUSE Regulator of G-protein signaling 11 OS=Mus...   332   6e-90
+sp|P49805|RGS9_RAT Regulator of G-protein signaling 9 OS=Rattus ...   332   7e-90
+sp|O54828|RGS9_MOUSE Regulator of G-protein signaling 9 OS=Mus m...   326   4e-88
+sp|Q80ZD1|RGS9_TAMST Regulator of G-protein signaling 9 OS=Tamia...   325   7e-88
+sp|O75916|RGS9_HUMAN Regulator of G-protein signaling 9 OS=Homo ...   324   2e-87
+sp|P49796|RGS3_HUMAN Regulator of G-protein signaling 3 OS=Homo ...   204   2e-51
+sp|Q9DC04|RGS3_MOUSE Regulator of G-protein signaling 3 OS=Mus m...   197   2e-49
+sp|P49797|RGS3_RAT Regulator of G-protein signaling 3 OS=Rattus ...   197   2e-49
+sp|O35625|AXIN1_MOUSE Axin-1 OS=Mus musculus OX=10090 GN=Axin1 P...   197   3e-49
+sp|O46471|RGS16_BOVIN Regulator of G-protein signaling 16 OS=Bos...   197   3e-49
+sp|Q99PG4|RGS18_MOUSE Regulator of G-protein signaling 18 OS=Mus...   196   4e-49
+sp|Q4L0E8|RGS18_RAT Regulator of G-protein signaling 18 OS=Rattu...   194   2e-48
+sp|Q08116|RGS1_HUMAN Regulator of G-protein signaling 1 OS=Homo ...   194   2e-48
+sp|Q4R525|RGS4_MACFA Regulator of G-protein signaling 4 OS=Macac...   194   2e-48
+sp|P49798|RGS4_HUMAN Regulator of G-protein signaling 4 OS=Homo ...   194   2e-48
+sp|O70239|AXIN1_RAT Axin-1 OS=Rattus norvegicus OX=10116 GN=Axin...   194   2e-48
+sp|Q9NS28|RGS18_HUMAN Regulator of G-protein signaling 18 OS=Hom...   193   3e-48
+sp|Q8BXT1|RGS8_MOUSE Regulator of G-protein signaling 8 OS=Mus m...   193   3e-48
+sp|P49804|RGS8_RAT Regulator of G-protein signaling 8 OS=Rattus ...   193   5e-48
+sp|O42400|AXIN1_CHICK Axin-1 OS=Gallus gallus OX=9031 GN=AXIN1 P...   193   5e-48
+sp|P57771|RGS8_HUMAN Regulator of G-protein signaling 8 OS=Homo ...   193   5e-48
+sp|Q5R747|RGS4_PONAB Regulator of G-protein signaling 4 OS=Pongo...   192   6e-48
+sp|Q29RM9|RGS4_BOVIN Regulator of G-protein signaling 4 OS=Bos t...   192   6e-48
+sp|Q6RG78|RGS1_HORSE Regulator of G-protein signaling 1 OS=Equus...   192   6e-48
+sp|P97844|RGS1_RAT Regulator of G-protein signaling 1 OS=Rattus ...   192   9e-48
+sp|F1S668|RGS16_PIG Regulator of G-protein signaling 16 OS=Sus s...   191   9e-48
+sp|Q95K68|RGS8_MACFA Regulator of G-protein signaling 8 OS=Macac...   191   1e-47
+sp|Q0R4E4|RGS4_RABIT Regulator of G-protein signaling 4 OS=Oryct...   191   1e-47
+sp|Q864Z2|RGS5_PIG Regulator of G-protein signaling 5 OS=Sus scr...   191   2e-47
+sp|O15169|AXIN1_HUMAN Axin-1 OS=Homo sapiens OX=9606 GN=AXIN1 PE...   191   2e-47
+sp|P79348|RGS20_BOVIN Regulator of G-protein signaling 20 OS=Bos...   191   2e-47
+sp|O15492|RGS16_HUMAN Regulator of G-protein signaling 16 OS=Hom...   190   2e-47
+sp|P49800|RGS5_RAT Regulator of G-protein signaling 5 OS=Rattus ...   190   3e-47
+sp|P34295|RGS1_CAEEL Regulator of G-protein signaling rgs-1 OS=C...   190   3e-47
+sp|P97428|RGS16_MOUSE Regulator of G-protein signaling 16 OS=Mus...   190   4e-47
+sp|P49799|RGS4_RAT Regulator of G-protein signaling 4 OS=Rattus ...   190   4e-47
+sp|O76081|RGS20_HUMAN Regulator of G-protein signaling 20 OS=Hom...   189   4e-47
+sp|Q3S853|RGS2_PIG Regulator of G-protein signaling 2 OS=Sus scr...   189   5e-47
+sp|O14924|RGS12_HUMAN Regulator of G-protein signaling 12 OS=Hom...   189   6e-47
+sp|Q3T0T8|RGS5_BOVIN Regulator of G-protein signaling 5 OS=Bos t...   189   7e-47
+sp|Q7SZC6|RGS4_CHICK Regulator of G-protein signaling 4 OS=Gallu...   189   7e-47
+sp|Q9QZB1|RGS20_MOUSE Regulator of G-protein signaling 20 OS=Mus...   189   7e-47
+sp|O14921|RGS13_HUMAN Regulator of G-protein signaling 13 OS=Hom...   188   9e-47
+sp|Q9JHX0|RGS2_RAT Regulator of G-protein signaling 2 OS=Rattus ...   188   1e-46
+sp|O08899|RGS4_MOUSE Regulator of G-protein signaling 4 OS=Mus m...   188   1e-46
+sp|Q2M5E4|RGS21_HUMAN Regulator of G-protein signaling 21 OS=Hom...   188   1e-46
+sp|Q6DGI0|RGS8_DANRE Regulator of G-protein signaling 8 OS=Danio...   188   2e-46
+sp|Q9JL25|RGS1_MOUSE Regulator of G-protein signaling 1 OS=Mus m...   187   2e-46
+sp|O08850|RGS5_MOUSE Regulator of G-protein signaling 5 OS=Mus m...   187   2e-46
+sp|Q9PWA0|RGS17_CHICK Regulator of G-protein signaling 17 OS=Gal...   187   2e-46
+sp|O08849|RGS2_MOUSE Regulator of G-protein signaling 2 OS=Mus m...   187   3e-46
+sp|Q9PWA1|RGS20_CHICK Regulator of G-protein signaling 20 OS=Gal...   187   3e-46
+sp|P56700|RGS16_RAT Regulator of G-protein signaling 16 OS=Rattu...   186   6e-46
+sp|O15539|RGS5_HUMAN Regulator of G-protein signaling 5 OS=Homo ...   185   7e-46
+sp|P57094|AXIN1_DANRE Axin-1 OS=Danio rerio OX=7955 GN=axin1 PE=...   185   7e-46
+sp|Q0P5H5|RGS2_BOVIN Regulator of G-protein signaling 2 OS=Bos t...   185   9e-46
+sp|P41220|RGS2_HUMAN Regulator of G-protein signaling 2 OS=Homo ...   184   2e-45
+sp|Q9UGC6|RGS17_HUMAN Regulator of G-protein signaling 17 OS=Hom...   183   3e-45
+sp|Q9QZB0|RGS17_MOUSE Regulator of G-protein signaling 17 OS=Mus...   183   5e-45
+sp|Q8CGE9|RGS12_MOUSE Regulator of G-protein signaling 12 OS=Mus...   182   8e-45
+sp|Q8K443|RGS13_MOUSE Regulator of G-protein signaling 13 OS=Mus...   181   1e-44
+sp|O08774|RGS12_RAT Regulator of G-protein signaling 12 OS=Rattu...   181   2e-44
+sp|Q9CX84|RGS19_MOUSE Regulator of G-protein signaling 19 OS=Mus...   181   2e-44
+sp|O70521|RGS19_RAT Regulator of G-protein signaling 19 OS=Rattu...   180   3e-44
+sp|P49795|RGS19_HUMAN Regulator of G-protein signaling 19 OS=Hom...   180   3e-44
+sp|Q5M8L6|RGS1_XENTR Regulator of G-protein signaling 1 OS=Xenop...   180   4e-44
+sp|Q9YGY0|AXIN1_XENLA Axin-1 OS=Xenopus laevis OX=8355 GN=axin1 ...   178   9e-44
+sp|Q9CQE5|RGS10_MOUSE Regulator of G-protein signaling 10 OS=Mus...   176   3e-43
+sp|P49808|RGS2_CAEEL Regulator of G-protein signaling rgs-2 OS=C...   176   5e-43
+sp|O08773|RGS14_RAT Regulator of G-protein signaling 14 OS=Rattu...   176   6e-43
+sp|P97492|RGS14_MOUSE Regulator of G-protein signaling 14 OS=Mus...   175   1e-42
+sp|Q08DC7|RGS19_BOVIN Regulator of G-protein signaling 19 OS=Bos...   175   1e-42
+sp|P49806|RGS10_RAT Regulator of G-protein signaling 10 OS=Rattu...   173   3e-42
+sp|O43566|RGS14_HUMAN Regulator of G-protein signaling 14 OS=Hom...   173   4e-42
+sp|A1A643|RGS1_XENLA Regulator of G-protein signaling 1 OS=Xenop...   173   5e-42
+sp|Q18563|RGS6_CAEEL Regulator of G-protein signaling rgs-6 OS=C...   168   1e-40
+sp|Q2KHW7|RGS10_BOVIN Regulator of G-protein signaling 10 OS=Bos...   168   2e-40
+sp|O43665|RGS10_HUMAN Regulator of G-protein signaling 10 OS=Hom...   166   4e-40
+sp|Q9VCX1|RGS_DROME Regulator of G-protein signaling loco OS=Dro...   163   5e-39
+sp|Q9Y2T1|AXIN2_HUMAN Axin-2 OS=Homo sapiens OX=9606 GN=AXIN2 PE...   161   1e-38
+sp|O88566|AXIN2_MOUSE Axin-2 OS=Mus musculus OX=10090 GN=Axin2 P...   157   2e-37
+sp|O70240|AXIN2_RAT Axin-2 OS=Rattus norvegicus OX=10116 GN=Axin...   156   4e-37
+sp|P57095|AXIN2_DANRE Axin-2 OS=Danio rerio OX=7955 GN=axin2 PE=...   154   1e-36
+sp|Q6CAP3|IML1_YARLI Vacuolar membrane-associated protein IML1 O...   146   5e-34
+sp|Q6BN00|IML1_DEBHA Vacuolar membrane-associated protein IML1 O...   144   1e-33
+sp|P47170|IML1_YEAST Vacuolar membrane-associated protein IML1 O...   144   2e-33
+sp|O45523|RGS10_CAEEL Regulator of G-protein signaling rgs-10 OS...   141   1e-32
+sp|Q8NE09|RGS22_HUMAN Regulator of G-protein signaling 22 OS=Hom...   135   1e-30
+sp|Q9PTP2|AXNR_XENLA Axin-related protein OS=Xenopus laevis OX=8...   135   1e-30
+sp|Q18312|RGS3_CAEEL Regulator of G-protein signaling rgs-3 OS=C...   132   6e-30
+sp|Q5PNP1|SNX14_DANRE Sorting nexin-14 OS=Danio rerio OX=7955 GN...   131   2e-29
+sp|O45524|RGS11_CAEEL Regulator of G-protein signaling rgs-11 OS...   128   1e-28
+sp|A3LRB2|IML1_PICST Vacuolar membrane-associated protein IML1 O...   127   2e-28
+sp|Q9Z1T6|FYV1_MOUSE 1-phosphatidylinositol 3-phosphate 5-kinase...   124   1e-27
+sp|Q3ZT31|SNX25_MOUSE Sorting nexin-25 OS=Mus musculus OX=10090 ...   124   3e-27
+sp|Q9Y2I7|FYV1_HUMAN 1-phosphatidylinositol 3-phosphate 5-kinase...   124   3e-27
+sp|Q70Z35|PREX2_HUMAN Phosphatidylinositol 3,4,5-trisphosphate-d...   123   6e-27
+sp|Q23376|RGS9_CAEEL Regulator of G-protein signaling rgs-9 OS=C...   122   7e-27
+sp|Q3LAC4|PREX2_MOUSE Phosphatidylinositol 3,4,5-trisphosphate-d...   122   8e-27
+sp|Q9NYT0|PLEK2_HUMAN Pleckstrin-2 OS=Homo sapiens OX=9606 GN=PL...   121   2e-26
+sp|Q8BHY8|SNX14_MOUSE Sorting nexin-14 OS=Mus musculus OX=10090 ...   121   2e-26
+sp|Q9H3E2|SNX25_HUMAN Sorting nexin-25 OS=Homo sapiens OX=9606 G...   120   3e-26
+sp|Q5AIA4|IML1_CANAL Vacuolar membrane-associated protein IML1 O...   120   3e-26
+sp|Q92997|DVL3_HUMAN Segment polarity protein dishevelled homolo...   119   5e-26
+sp|Q61062|DVL3_MOUSE Segment polarity protein dishevelled homolo...   119   5e-26
+sp|P57770|AKA10_PIG A-kinase anchor protein 10, mitochondrial (F...   119   6e-26
+sp|Q0CHV5|IML1_ASPTN Vacuolar membrane-associated protein iml1 O...   119   8e-26
+sp|Q75DV2|IML1_ASHGO Vacuolar membrane-associated protein IML1 O...   118   1e-25
+sp|B1WAP7|DVL3_XENTR Segment polarity protein dishevelled homolo...   118   1e-25
+sp|G3UYX5|RGS22_MOUSE Regulator of G-protein signaling 22 OS=Mus...   118   2e-25
+sp|Q9Y5W7|SNX14_HUMAN Sorting nexin-14 OS=Homo sapiens OX=9606 G...   117   4e-25
+sp|Q8TCU6|PREX1_HUMAN Phosphatidylinositol 3,4,5-trisphosphate-d...   116   4e-25
+sp|Q5R903|SNX14_PONAB Sorting nexin-14 OS=Pongo abelii OX=9601 G...   116   4e-25
+sp|Q6DKE2|DVL3_XENLA Segment polarity protein dishevelled homolo...   116   5e-25
+sp|Q69ZK0|PREX1_MOUSE Phosphatidylinositol 3,4,5-trisphosphate-d...   116   6e-25
+sp|P38093|FLBA_EMENI Developmental regulator flbA OS=Emericella ...   115   1e-24
+sp|Q2UMR9|IML1_ASPOR Vacuolar membrane-associated protein iml1 O...   113   4e-24
+sp|A1DFV9|IML1_NEOFI Vacuolar membrane-associated protein iml1 O...   113   4e-24
+sp|Q4WHH4|IML1_ASPFU Vacuolar membrane-associated protein iml1 O...   112   7e-24
+sp|Q8TB45|DPTOR_HUMAN DEP domain-containing mTOR-interacting pro...   112   9e-24
+sp|Q570Y9|DPTOR_MOUSE DEP domain-containing mTOR-interacting pro...   112   9e-24
+sp|Q9V407|AXN_DROME Axin OS=Drosophila melanogaster OX=7227 GN=A...   112   1e-23
+sp|O88845|AKA10_MOUSE A-kinase anchor protein 10, mitochondrial ...   111   1e-23
+sp|O62090|PRY1_CAEEL Axin-like protein pry-1 OS=Caenorhabditis e...   111   2e-23
+sp|Q1E9Q9|IML1_COCIM Vacuolar membrane-associated protein IML1 O...   111   2e-23
+sp|P51142|DVL2_XENLA Segment polarity protein dishevelled homolo...   110   3e-23
+sp|O43572|AKA10_HUMAN A-kinase anchor protein 10, mitochondrial ...   110   4e-23
+sp|O14641|DVL2_HUMAN Segment polarity protein dishevelled homolo...   109   8e-23
+sp|Q60838|DVL2_MOUSE Segment polarity protein dishevelled homolo...   107   2e-22
+sp|Q9WVL4|GRK1_MOUSE Rhodopsin kinase GRK1 OS=Mus musculus OX=10...   107   3e-22
+sp|Q9Y5W8|SNX13_HUMAN Sorting nexin-13 OS=Homo sapiens OX=9606 G...   106   5e-22
+sp|Q5IS48|DVL1_PANTR Segment polarity protein dishevelled homolo...   106   6e-22
+sp|Q8H1F2|RGS1_ARATH Regulator of G-protein signaling 1 OS=Arabi...   105   9e-22
+sp|O14640|DVL1_HUMAN Segment polarity protein dishevelled homolo...   105   1e-21
+sp|Q10955|RGS5_CAEEL Regulator of G-protein signaling rgs-5 OS=C...   104   1e-21
+sp|P51141|DVL1_MOUSE Segment polarity protein dishevelled homolo...   104   2e-21
+sp|Q9WVB9|DVL1_RAT Segment polarity protein dishevelled homolog ...   104   2e-21
+sp|Q6PHS6|SNX13_MOUSE Sorting nexin-13 OS=Mus musculus OX=10090 ...   104   2e-21
+sp|P54792|DVLP1_HUMAN Putative segment polarity protein dishevel...   104   3e-21
+sp|Q09777|RGS1_SCHPO Regulator of G-protein signaling 1 OS=Schiz...   103   4e-21
+sp|Q9USN1|SNX12_SCHPO Sorting nexin-12 OS=Schizosaccharomyces po...   101   1e-20
+sp|P51140|DSH_DROME Segment polarity protein dishevelled OS=Dros...   101   2e-20
+sp|Q4KM33|PLEK_RAT Pleckstrin OS=Rattus norvegicus OX=10116 GN=P...    95   2e-18
+sp|Q54XQ2|RCKA_DICDI RGS domain-containing serine/threonine-prot...    95   2e-18
+sp|P08567|PLEK_HUMAN Pleckstrin OS=Homo sapiens OX=9606 GN=PLEK ...    94   3e-18
+sp|Q99188|RGS2_YEAST Regulator of G-protein signaling 2 OS=Sacch...    93   7e-18
+sp|Q9JHK5|PLEK_MOUSE Pleckstrin OS=Mus musculus OX=10090 GN=Plek...    92   2e-17
+sp|Q6XHA6|ROC10_DICDI Probable inactive serine/threonine-protein...    86   8e-16
+sp|P49801|RGS6_RAT Regulator of G-protein signaling 6 (Fragment)...    84   2e-15
+sp|P49807|RGS11_RAT Regulator of G-protein signaling 11 (Fragmen...    84   4e-15
+sp|P11972|SST2_YEAST Protein SST2 OS=Saccharomyces cerevisiae (s...    73   5e-12
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5AW24|IML1_EMENI Vacuolar membrane-associated protein iml1 O...   116   4e-25
+sp|A1CEE0|IML1_ASPCL Vacuolar membrane-associated protein iml1 O...   116   6e-25
+sp|Q9WV52|PLEK2_MOUSE Pleckstrin-2 OS=Mus musculus OX=10090 GN=P...   111   1e-23
+sp|Q6FK84|IML1_CANGA Vacuolar membrane-associated protein IML1 O...   111   2e-23
+sp|Q6CWI2|IML1_KLULA Vacuolar membrane-associated protein IML1 O...   109   8e-23
+sp|Q05AS8|DVL2_XENTR Segment polarity protein dishevelled homolo...   108   1e-22
+sp|Q63651|GRK1_RAT Rhodopsin kinase GRK1 OS=Rattus norvegicus OX...   101   1e-20
+sp|Q2H0S0|IML1_CHAGB Vacuolar membrane-associated protein IML1 O...    99   5e-20
+sp|Q7S9J6|IML1_NEUCR Vacuolar membrane-associated protein iml1 O...   100   8e-20
+sp|O74788|IML1_SCHPO Vacuolar membrane-associated protein iml1 O...    93   9e-18
+sp|Q6Q308|PLEK_CANLF Pleckstrin OS=Canis lupus familiaris OX=961...    92   1e-17
+sp|A4R596|IML1_MAGO7 Vacuolar membrane-associated protein IML1 O...    90   5e-17
+sp|Q15835|GRK1_HUMAN Rhodopsin kinase GRK1 OS=Homo sapiens OX=96...    88   2e-16
+sp|Q22227|MIG5_CAEEL Segment polarity protein dishevelled homolo...    87   4e-16
+sp|Q4PE51|IML1_USTMA Vacuolar membrane-associated protein IML1 O...    85   1e-15
+sp|P28327|GRK1_BOVIN Rhodopsin kinase GRK1 OS=Bos taurus OX=9913...    82   2e-14
+sp|A8XU52|PRY1_CAEBR Axin-like protein pry-1 OS=Caenorhabditis b...    78   2e-13
+sp|Q54M77|ROCO8_DICDI Probable serine/threonine-protein kinase r...    76   6e-13
+sp|P0CO32|IML1_CRYNJ Vacuolar membrane-associated protein IML1 O...    76   1e-12
+sp|P0CO33|IML1_CRYNB Vacuolar membrane-associated protein IML1 O...    76   1e-12
+sp|Q54XA2|Y9099_DICDI DEP domain-containing protein DDB_G0279099...    72   2e-11
+sp|Q8WZA2|RPGF4_HUMAN Rap guanine nucleotide exchange factor 4 O...    71   3e-11
+sp|Q9EQZ6|RPGF4_MOUSE Rap guanine nucleotide exchange factor 4 O...    70   4e-11
+sp|Q5R9A7|GP155_PONAB Integral membrane protein GPR155 OS=Pongo ...    67   4e-10
+sp|Q7Z3F1|GP155_HUMAN Integral membrane protein GPR155 OS=Homo s...    66   6e-10
+sp|Q8VCC8|RPGF3_MOUSE Rap guanine nucleotide exchange factor 3 O...    59   9e-08
+sp|P70507|GRK4_RAT G protein-coupled receptor kinase 4 OS=Rattus...    59   1e-07
+sp|P32865|GPRK1_DROME G protein-coupled receptor kinase 1 OS=Dro...    58   3e-07
+sp|P35626|ARBK2_HUMAN Beta-adrenergic receptor kinase 2 OS=Homo ...    57   4e-07
+sp|P21146|ARBK1_BOVIN Beta-adrenergic receptor kinase 1 OS=Bos t...    57   4e-07
+sp|Q9Z1C8|RPGF3_RAT Rap guanine nucleotide exchange factor 3 OS=...    57   5e-07
+sp|P26817|ARBK1_RAT Beta-adrenergic receptor kinase 1 OS=Rattus ...    57   5e-07
+sp|O75140|DEPD5_HUMAN GATOR complex protein DEPDC5 OS=Homo sapie...    56   6e-07
+sp|P43249|GRK5_BOVIN G protein-coupled receptor kinase 5 OS=Bos ...    56   8e-07
+sp|Q3UYH7|ARBK2_MOUSE Beta-adrenergic receptor kinase 2 OS=Mus m...    56   1e-06
+sp|P25098|ARBK1_HUMAN Beta-adrenergic receptor kinase 1 OS=Homo ...    55   1e-06
+sp|P61460|DEPD5_MOUSE GATOR complex protein DEPDC5 OS=Mus muscul...    55   1e-06
+sp|P34947|GRK5_HUMAN G protein-coupled receptor kinase 5 OS=Homo...    55   1e-06
+sp|Q99MK8|ARBK1_MOUSE Beta-adrenergic receptor kinase 1 OS=Mus m...    55   2e-06
+sp|Q64682|ARBK1_MESAU Beta-adrenergic receptor kinase 1 OS=Mesoc...    55   2e-06
+sp|Q62833|GRK5_RAT G protein-coupled receptor kinase 5 OS=Rattus...    55   2e-06
+sp|P26818|ARBK2_BOVIN Beta-adrenergic receptor kinase 2 OS=Bos t...    55   2e-06
+sp|Q09639|GRK2_CAEEL G protein-coupled receptor kinase 2 OS=Caen...    54   3e-06
+sp|Q9ES67|ARHGB_RAT Rho guanine nucleotide exchange factor 11 OS...    54   4e-06
+sp|Q86G47|GEFQ_DICDI Ras guanine nucleotide exchange factor Q OS...    54   4e-06
+sp|O97627|ARBK1_DIDVI Beta-adrenergic receptor kinase 1 OS=Didel...    54   4e-06
+sp|Q55GG4|Y9847_DICDI Probable serine/threonine-protein kinase D...    53   5e-06
+sp|Q8VEB1|GRK5_MOUSE G protein-coupled receptor kinase 5 OS=Mus ...    53   7e-06
+sp|O95398|RPGF3_HUMAN Rap guanine nucleotide exchange factor 3 O...    52   1e-05
+sp|O15085|ARHGB_HUMAN Rho guanine nucleotide exchange factor 11 ...    52   2e-05
+sp|O70291|GRK4_MOUSE G protein-coupled receptor kinase 4 OS=Mus ...    50   6e-05
+sp|P34578|RPGF1_CAEEL Rap guanine nucleotide exchange factor 1 O...    49   8e-05
+sp|Q09697|RGA8_SCHPO Rho-GTPase-activating protein 8 OS=Schizosa...    49   8e-05
+sp|Q8C0Q9|RPGF5_MOUSE Rap guanine nucleotide exchange factor 5 O...    49   1e-04
+sp|Q91WS7|DEPD7_MOUSE DEP domain-containing protein 7 OS=Mus mus...    48   3e-04
+sp|Q8N2C3|DEPD4_HUMAN DEP domain-containing protein 4 OS=Homo sa...    47   4e-04
+sp|Q6ING4|DEP1A_XENLA DEP domain-containing protein 1A OS=Xenopu...    47   4e-04
+sp|Q4QR86|DEPD7_RAT DEP domain-containing protein 7 OS=Rattus no...    47   5e-04
+sp|Q8CIG0|DEP1A_MOUSE DEP domain-containing protein 1A OS=Mus mu...    46   9e-04
+sp|Q5R8B7|DEPD7_PONAB DEP domain-containing protein 7 OS=Pongo a...    46   0.001
+sp|Q96QD5|DEPD7_HUMAN DEP domain-containing protein 7 OS=Homo sa...    46   0.001
+sp|Q95JW3|DEPD7_MACFA DEP domain-containing protein 7 OS=Macaca ...    46   0.001
+sp|Q1JQ19|DEPD7_DANRE DEP domain-containing protein 7 OS=Danio r...    44   0.004
+sp|Q9P7S8|RAX1_SCHPO Protein rax1 OS=Schizosaccharomyces pombe (...    44   0.004
+sp|Q0VGW0|DEPD7_XENTR DEP domain-containing protein 7 OS=Xenopus...    43   0.006
+sp|Q803Q4|DEP1A_DANRE DEP domain-containing protein 1A OS=Danio ...    43   0.009
+sp|Q8MVR1|GBPC_DICDI Cyclic GMP-binding protein C OS=Dictyosteli...    43   0.010
+sp|Q6AZT6|DEPD7_XENLA DEP domain-containing protein 7 OS=Xenopus...    43   0.010
+sp|Q5TB30|DEP1A_HUMAN DEP domain-containing protein 1A OS=Homo s...    43   0.011
+sp|Q8BH88|DEP1B_MOUSE DEP domain-containing protein 1B OS=Mus mu...    41   0.023
+sp|A0A364LXP7|RT109_ASPFL Histone acetyltransferase rtt109 OS=As...    41   0.023
+sp|Q8WUY9|DEP1B_HUMAN DEP domain-containing protein 1B OS=Homo s...    41   0.024
+sp|Q4R623|DEP1B_MACFA DEP domain-containing protein 1B OS=Macaca...    41   0.025
+sp|Q9UTR5|RGF2_SCHPO Rho1 guanine nucleotide exchange factor 2 O...    41   0.030
+sp|A5PLK6|RGSL_HUMAN Regulator of G-protein signaling protein-li...    39   0.074
+sp|Q10MN8|C3H21_ORYSJ Putative zinc finger CCCH domain-containin...    39   0.077
+sp|P0CS47|PFS2_CRYNB Polyadenylation factor subunit 2 OS=Cryptoc...    39   0.11 
+sp|Q9Z2G7|GRK7_ICTTR Rhodopsin kinase GRK7 OS=Ictidomys tridecem...    39   0.11 
+sp|P0CS46|PFS2_CRYNJ Polyadenylation factor subunit 2 OS=Cryptoc...    39   0.11 
+sp|Q5ZHT1|ACD11_CHICK Acyl-CoA dehydrogenase family member 11 OS...    39   0.12 
+sp|Q9Y3R4|NEUR2_HUMAN Sialidase-2 OS=Homo sapiens OX=9606 GN=NEU...    39   0.15 
+sp|B2TNG3|PYRB_CLOBB Aspartate carbamoyltransferase OS=Clostridi...    38   0.24 
+sp|B2UW93|PYRB_CLOBA Aspartate carbamoyltransferase OS=Clostridi...    38   0.24 
+sp|Q5ZLD2|DEP1B_CHICK DEP domain-containing protein 1B OS=Gallus...    37   0.47 
+sp|P38970|HAL5_YEAST Serine/threonine-protein kinase HAL5 OS=Sac...    37   0.54 
+sp|A6ZQG7|HAL5_YEAS7 Serine/threonine-protein kinase HAL5 OS=Sac...    37   0.56 
+sp|Q07DZ8|WNT2_ORNAN Protein Wnt-2 OS=Ornithorhynchus anatinus O...    36   0.69 
+sp|A6SEV8|PRM1_BOTFB Plasma membrane fusion protein prm1 OS=Botr...    36   1.1  
+sp|Q9NZN5|ARHGC_HUMAN Rho guanine nucleotide exchange factor 12 ...    35   1.5  
+sp|P61954|GBG11_RAT Guanine nucleotide-binding protein G(I)/G(S)...    35   1.8  
+sp|P61953|GBG11_MOUSE Guanine nucleotide-binding protein G(I)/G(...    35   1.8  
+sp|P61952|GBG11_HUMAN Guanine nucleotide-binding protein G(I)/G(...    35   1.8  
+sp|Q5E9F0|GBG11_BOVIN Guanine nucleotide-binding protein G(I)/G(...    34   2.4  
+sp|A0A0G2JUG7|IQEC1_RAT IQ motif and SEC7 domain-containing prot...    34   3.4  
+sp|Q80UW5|MRCKG_MOUSE Serine/threonine-protein kinase MRCK gamma...    34   4.1  
+sp|Q5RKH1|PRP4B_RAT Serine/threonine-protein kinase PRP4 homolog...    34   4.2  
+sp|O17894|HM35_CAEEL Homeobox protein unc-39 OS=Caenorhabditis e...    34   4.5  
+sp|A1D373|PRP5_NEOFI Pre-mRNA-processing ATP-dependent RNA helic...    34   4.9  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.302    0.121    0.302 
+
+Lambda     K      H
+   0.267   0.0368    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 540,106,299
+Number of Sequences: 569516
+Number of extensions: 20149614
+Number of successful extensions: 75855
+Number of sequences better than 10.0: 294
+Number of HSP's better than 10.0 without gapping: 529
+Number of HSP's successfully gapped in prelim test: 283
+Number of HSP's that attempted gapping in prelim test: 73056
+Number of HSP's gapped (non-prelim): 2116
+length of query: 583
+length of database: 205,866,895
+effective HSP length: 124
+effective length of query: 459
+effective length of database: 135,246,911
+effective search space: 62078332149
+effective search space used: 62078332149
+T: 11
+A: 40
+X1: 16 ( 7.0 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (20.9 bits)
+S2: 73 (32.9 bits)

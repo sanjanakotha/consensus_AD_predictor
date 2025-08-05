@@ -1,0 +1,403 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (466 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9TYU5|TIP60_CAEEL Histone acetyltransferase Tip60 homolog OS...   535   e-151
+sp|Q5RBG4|KAT5_PONAB Histone acetyltransferase KAT5 OS=Pongo abe...   496   e-139
+sp|Q99MK2|KAT5_RAT Histone acetyltransferase KAT5 OS=Rattus norv...   488   e-137
+sp|Q8CHK4|KAT5_MOUSE Histone acetyltransferase KAT5 OS=Mus muscu...   488   e-137
+sp|Q92993|KAT5_HUMAN Histone acetyltransferase KAT5 OS=Homo sapi...   486   e-136
+sp|Q960X4|TIP60_DROME Histone acetyltransferase Tip60 OS=Drosoph...   467   e-130
+sp|Q2UMQ5|ESA1_ASPOR Histone acetyltransferase ESA1 OS=Aspergill...   375   e-103
+sp|Q6FPH9|ESA1_CANGA Histone acetyltransferase ESA1 OS=Candida g...   367   e-100
+sp|Q08649|ESA1_YEAST Histone acetyltransferase ESA1 OS=Saccharom...   365   e-100
+sp|C8VBH4|ESA1_EMENI Histone acetyltransferase esa1 OS=Emericell...   364   e-100
+sp|Q8LI34|MYST1_ORYSJ Putative MYST-like histone acetyltransfera...   364   e-100
+sp|Q4WHG1|ESA1_ASPFU Histone acetyltransferase esa1 OS=Aspergill...   362   5e-99
+sp|Q7S9B6|ESA1_NEUCR Histone acetyltransferase esa-1 OS=Neurospo...   362   5e-99
+sp|Q9LXD7|MYST2_ARATH Histone acetyltransferase of the MYST fami...   358   7e-98
+sp|Q6CKE9|ESA1_KLULA Histone acetyltransferase ESA1 OS=Kluyverom...   357   1e-97
+sp|Q9FLF7|MYST1_ARATH Histone acetyltransferase of the MYST fami...   357   2e-97
+sp|Q75BY2|ESA1_ASHGO Histone acetyltransferase ESA1 OS=Ashbya go...   356   3e-97
+sp|Q6C710|ESA1_YARLI Histone acetyltransferase ESA1 OS=Yarrowia ...   355   7e-97
+sp|O94446|ESA1_SCHPO Histone acetyltransferase mst1 OS=Schizosac...   352   5e-96
+sp|Q4IEV4|ESA1_GIBZE Histone acetyltransferase ESA1 OS=Gibberell...   344   8e-94
+sp|Q9H7Z6|KAT8_HUMAN Histone acetyltransferase KAT8 OS=Homo sapi...   342   5e-93
+sp|Q5XI06|KAT8_RAT Histone acetyltransferase KAT8 OS=Rattus norv...   341   9e-93
+sp|Q9D1P2|KAT8_MOUSE Histone acetyltransferase KAT8 OS=Mus muscu...   341   9e-93
+sp|P0CP02|ESA1_CRYNJ Histone acetyltransferase ESA1 OS=Cryptococ...   340   1e-92
+sp|P0CP03|ESA1_CRYNB Histone acetyltransferase ESA1 OS=Cryptococ...   340   1e-92
+sp|Q6BU95|ESA1_DEBHA Histone acetyltransferase ESA1 OS=Debaryomy...   338   6e-92
+sp|Q5A7Q2|ESA1_CANAL Histone acetyltransferase ESA1 OS=Candida a...   337   1e-91
+sp|Q4P3S3|ESA1_USTMA Histone acetyltransferase ESA1 OS=Ustilago ...   325   5e-88
+sp|O95251|KAT7_HUMAN Histone acetyltransferase KAT7 OS=Homo sapi...   320   2e-86
+sp|Q810T5|KAT7_RAT Histone acetyltransferase KAT7 OS=Rattus norv...   320   2e-86
+sp|Q5SVQ0|KAT7_MOUSE Histone acetyltransferase KAT7 OS=Mus muscu...   320   2e-86
+sp|Q92794|KAT6A_HUMAN Histone acetyltransferase KAT6A OS=Homo sa...   318   6e-86
+sp|Q8BZ21|KAT6A_MOUSE Histone acetyltransferase KAT6A OS=Mus mus...   318   8e-86
+sp|Q5TKR9|KAT6A_RAT Histone acetyltransferase KAT6A OS=Rattus no...   317   9e-86
+sp|Q8BRB7|KAT6B_MOUSE Histone acetyltransferase KAT6B OS=Mus mus...   305   5e-82
+sp|Q8WYB5|KAT6B_HUMAN Histone acetyltransferase KAT6B OS=Homo sa...   305   6e-82
+sp|Q8WML3|KAT6B_MACFA Histone acetyltransferase KAT6B OS=Macaca ...   303   2e-81
+sp|O02193|MOF_DROME Males-absent on the first protein OS=Drosoph...   301   9e-81
+sp|Q10325|MST2_SCHPO Histone acetyltransferase mst2 OS=Schizosac...   275   5e-73
+sp|P34218|SAS3_YEAST Histone acetyltransferase SAS3 OS=Saccharom...   252   4e-66
+sp|K8ERR8|LSY12_CAEEL Histone acetyltransferase lsy-12 OS=Caenor...   213   3e-54
+sp|P40963|SAS2_YEAST Histone acetyltransferase SAS2 OS=Saccharom...   152   5e-36
+sp|Q02084|A33_PLEWA Zinc-binding protein A33 OS=Pleurodeles walt...    45   0.001
+sp|Q92021|NF7B_XENLA Nuclear factor 7, brain OS=Xenopus laevis O...    39   0.085
+sp|Q4V3E2|MRG2_ARATH Protein MRG2 OS=Arabidopsis thaliana OX=370...    36   0.66 
+sp|Q94C32|MRG1_ARATH Protein MRG1 OS=Arabidopsis thaliana OX=370...    35   0.91 
+sp|Q91431|NF7O_XENLA Nuclear factor 7, ovary OS=Xenopus laevis O...    35   1.8  
+sp|Q6ES10|HAT1_ORYSJ Probable histone acetyltransferase type B c...    35   1.9  
+sp|Q6AYU1|MO4L1_RAT Mortality factor 4-like protein 1 OS=Rattus ...    33   4.5  
+sp|Q52NW7|PYRHY_KLESP Pyrethroid hydrolase OS=Klebsiella sp. OX=...    33   5.7  
+sp|Q869X7|HAT12_DICDI Histone acetyltransferase type B catalytic...    32   8.5  
+sp|Q86J12|HAT11_DICDI Histone acetyltransferase type B catalytic...    32   9.9  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q5RBG4|KAT5_PONAB Histone acetyltransferase KAT5 OS=Pongo abe...   614   e-175
+sp|Q6FPH9|ESA1_CANGA Histone acetyltransferase ESA1 OS=Candida g...   602   e-171
+sp|Q08649|ESA1_YEAST Histone acetyltransferase ESA1 OS=Saccharom...   601   e-171
+sp|Q6C710|ESA1_YARLI Histone acetyltransferase ESA1 OS=Yarrowia ...   593   e-168
+sp|Q75BY2|ESA1_ASHGO Histone acetyltransferase ESA1 OS=Ashbya go...   590   e-168
+sp|Q6BU95|ESA1_DEBHA Histone acetyltransferase ESA1 OS=Debaryomy...   589   e-167
+sp|Q6CKE9|ESA1_KLULA Histone acetyltransferase ESA1 OS=Kluyverom...   587   e-167
+sp|Q2UMQ5|ESA1_ASPOR Histone acetyltransferase ESA1 OS=Aspergill...   583   e-165
+sp|C8VBH4|ESA1_EMENI Histone acetyltransferase esa1 OS=Emericell...   580   e-165
+sp|Q9TYU5|TIP60_CAEEL Histone acetyltransferase Tip60 homolog OS...   577   e-164
+sp|Q5A7Q2|ESA1_CANAL Histone acetyltransferase ESA1 OS=Candida a...   571   e-162
+sp|Q4WHG1|ESA1_ASPFU Histone acetyltransferase esa1 OS=Aspergill...   570   e-162
+sp|O94446|ESA1_SCHPO Histone acetyltransferase mst1 OS=Schizosac...   560   e-159
+sp|Q4IEV4|ESA1_GIBZE Histone acetyltransferase ESA1 OS=Gibberell...   557   e-158
+sp|Q7S9B6|ESA1_NEUCR Histone acetyltransferase esa-1 OS=Neurospo...   555   e-157
+sp|Q960X4|TIP60_DROME Histone acetyltransferase Tip60 OS=Drosoph...   526   e-148
+sp|Q92993|KAT5_HUMAN Histone acetyltransferase KAT5 OS=Homo sapi...   519   e-146
+sp|Q99MK2|KAT5_RAT Histone acetyltransferase KAT5 OS=Rattus norv...   519   e-146
+sp|Q8CHK4|KAT5_MOUSE Histone acetyltransferase KAT5 OS=Mus muscu...   519   e-146
+sp|Q9H7Z6|KAT8_HUMAN Histone acetyltransferase KAT8 OS=Homo sapi...   519   e-146
+sp|Q9D1P2|KAT8_MOUSE Histone acetyltransferase KAT8 OS=Mus muscu...   518   e-146
+sp|Q5XI06|KAT8_RAT Histone acetyltransferase KAT8 OS=Rattus norv...   517   e-146
+sp|Q9LXD7|MYST2_ARATH Histone acetyltransferase of the MYST fami...   512   e-144
+sp|Q9FLF7|MYST1_ARATH Histone acetyltransferase of the MYST fami...   510   e-144
+sp|Q8LI34|MYST1_ORYSJ Putative MYST-like histone acetyltransfera...   503   e-141
+sp|P0CP02|ESA1_CRYNJ Histone acetyltransferase ESA1 OS=Cryptococ...   495   e-139
+sp|P0CP03|ESA1_CRYNB Histone acetyltransferase ESA1 OS=Cryptococ...   495   e-139
+sp|Q4P3S3|ESA1_USTMA Histone acetyltransferase ESA1 OS=Ustilago ...   483   e-135
+sp|O02193|MOF_DROME Males-absent on the first protein OS=Drosoph...   474   e-132
+sp|Q5TKR9|KAT6A_RAT Histone acetyltransferase KAT6A OS=Rattus no...   469   e-131
+sp|Q8BZ21|KAT6A_MOUSE Histone acetyltransferase KAT6A OS=Mus mus...   468   e-131
+sp|Q92794|KAT6A_HUMAN Histone acetyltransferase KAT6A OS=Homo sa...   466   e-130
+sp|Q8BRB7|KAT6B_MOUSE Histone acetyltransferase KAT6B OS=Mus mus...   447   e-124
+sp|Q8WYB5|KAT6B_HUMAN Histone acetyltransferase KAT6B OS=Homo sa...   441   e-123
+sp|Q8WML3|KAT6B_MACFA Histone acetyltransferase KAT6B OS=Macaca ...   440   e-122
+sp|Q5SVQ0|KAT7_MOUSE Histone acetyltransferase KAT7 OS=Mus muscu...   440   e-122
+sp|Q810T5|KAT7_RAT Histone acetyltransferase KAT7 OS=Rattus norv...   439   e-122
+sp|O95251|KAT7_HUMAN Histone acetyltransferase KAT7 OS=Homo sapi...   437   e-122
+sp|Q10325|MST2_SCHPO Histone acetyltransferase mst2 OS=Schizosac...   410   e-113
+sp|P34218|SAS3_YEAST Histone acetyltransferase SAS3 OS=Saccharom...   378   e-104
+sp|K8ERR8|LSY12_CAEEL Histone acetyltransferase lsy-12 OS=Caenor...   377   e-103
+sp|P40963|SAS2_YEAST Histone acetyltransferase SAS2 OS=Saccharom...   287   2e-76
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q92021|NF7B_XENLA Nuclear factor 7, brain OS=Xenopus laevis O...    60   3e-08
+sp|Q91431|NF7O_XENLA Nuclear factor 7, ovary OS=Xenopus laevis O...    59   1e-07
+sp|Q02084|A33_PLEWA Zinc-binding protein A33 OS=Pleurodeles walt...    57   3e-07
+sp|Q94C32|MRG1_ARATH Protein MRG1 OS=Arabidopsis thaliana OX=370...    49   1e-04
+sp|Q6AYU1|MO4L1_RAT Mortality factor 4-like protein 1 OS=Rattus ...    48   1e-04
+sp|F8VPQ2|ARI4A_MOUSE AT-rich interactive domain-containing prot...    47   4e-04
+sp|Q5NVP9|MO4L1_PONAB Mortality factor 4-like protein 1 OS=Pongo...    45   0.001
+sp|Q4LE39|ARI4B_HUMAN AT-rich interactive domain-containing prot...    45   0.001
+sp|Q4V3E2|MRG2_ARATH Protein MRG2 OS=Arabidopsis thaliana OX=370...    44   0.002
+sp|P29374|ARI4A_HUMAN AT-rich interactive domain-containing prot...    44   0.003
+sp|A2CG63|ARI4B_MOUSE AT-rich interactive domain-containing prot...    44   0.003
+sp|A7DTF0|MRG1_CAEEL Mortality factor related protein 1 OS=Caeno...    40   0.043
+sp|Q9Y0I1|EAF3_DROME NuA4 complex subunit EAF3 homolog OS=Drosop...    40   0.057
+sp|Q6C9M9|EAF3_YARLI Chromatin modification-related protein EAF3...    39   0.13 
+sp|Q6BT38|EAF3_DEBHA Chromatin modification-related protein EAF3...    38   0.19 
+sp|Q9P243|ZFAT_HUMAN Zinc finger protein ZFAT OS=Homo sapiens OX...    38   0.19 
+sp|Q4PBE6|HAT1_USTMA Histone acetyltransferase type B catalytic ...    37   0.24 
+sp|Q6FN68|EAF3_CANGA Chromatin modification-related protein EAF3...    37   0.26 
+sp|O60016|CLR4_SCHPO Histone-lysine N-methyltransferase, H3 lysi...    37   0.26 
+sp|Q59K07|EAF3_CANAL Chromatin modification-related protein EAF3...    37   0.32 
+sp|B1AWL2|ZN462_MOUSE Zinc finger protein 462 OS=Mus musculus OX...    37   0.45 
+sp|Q6ES10|HAT1_ORYSJ Probable histone acetyltransferase type B c...    36   0.84 
+sp|Q6CND0|EAF3_KLULA Chromatin modification-related protein EAF3...    36   0.86 
+sp|G5EGQ6|TEN1_CAEEL Teneurin-1 OS=Caenorhabditis elegans OX=623...    35   1.2  
+sp|P0CX73|YP11A_YEAST Transposon Ty1-PL Gag polyprotein OS=Sacch...    35   1.2  
+sp|P0CX76|YM12A_YEAST Transposon Ty1-ML2 Gag polyprotein OS=Sacc...    35   1.2  
+sp|P0CX75|YL13A_YEAST Transposon Ty1-LR3 Gag polyprotein OS=Sacc...    35   1.2  
+sp|P0CX72|YL12A_YEAST Transposon Ty1-LR2 Gag polyprotein OS=Sacc...    35   1.2  
+sp|P0CX74|YJ11A_YEAST Transposon Ty1-JR1 Gag polyprotein OS=Sacc...    35   1.2  
+sp|P0CX71|YE11A_YEAST Transposon Ty1-ER1 Gag polyprotein OS=Sacc...    35   1.2  
+sp|P0CX70|YD15A_YEAST Transposon Ty1-DR6 Gag polyprotein OS=Sacc...    35   1.2  
+sp|Q92392|YO11A_YEAST Transposon Ty1-OL Gag polyprotein OS=Sacch...    35   1.3  
+sp|P0C2I8|YL14A_YEAST Transposon Ty1-LR4 Gag polyprotein OS=Sacc...    35   1.3  
+sp|Q6Q5H1|YP14A_YEAST Transposon Ty1-PR3 Gag polyprotein OS=Sacc...    35   1.3  
+sp|O74302|YD13A_YEAST Transposon Ty1-DR4 Gag polyprotein OS=Sacc...    35   1.3  
+sp|P08405|TY1A_YEASX Transposon TyH3 Gag polyprotein OS=Saccharo...    35   1.3  
+sp|P10925|ZFY1_MOUSE Zinc finger Y-chromosomal protein 1 OS=Mus ...    35   1.5  
+sp|P0C2I6|YL13B_YEAST Transposon Ty1-LR3 Gag-Pol polyprotein OS=...    35   1.5  
+sp|P0C2J1|YP14B_YEAST Transposon Ty1-PR3 Gag-Pol polyprotein OS=...    35   1.5  
+sp|P0C2I7|YL14B_YEAST Transposon Ty1-LR4 Gag-Pol polyprotein OS=...    35   1.5  
+sp|P0C2I3|YD15B_YEAST Transposon Ty1-DR6 Gag-Pol polyprotein OS=...    35   1.5  
+sp|P47098|YJ11B_YEAST Transposon Ty1-JR1 Gag-Pol polyprotein OS=...    35   1.5  
+sp|Q12414|YP11B_YEAST Transposon Ty1-PL Gag-Pol polyprotein OS=S...    35   1.5  
+sp|Q12273|YO11B_YEAST Transposon Ty1-OL Gag-Pol polyprotein OS=S...    35   1.5  
+sp|P0C2I5|YL12B_YEAST Transposon Ty1-LR2 Gag-Pol polyprotein OS=...    35   1.5  
+sp|Q03612|YE11B_YEAST Transposon Ty1-ER1 Gag-Pol polyprotein OS=...    35   1.5  
+sp|Q12432|EAF3_YEAST Chromatin modification-related protein EAF3...    35   1.5  
+sp|Q03434|YM12B_YEAST Transposon Ty1-ML2 Gag-Pol polyprotein OS=...    35   1.6  
+sp|Q07793|YD13B_YEAST Transposon Ty1-DR4 Gag-Pol polyprotein OS=...    35   1.6  
+sp|Q07163|TY1AB_YEASX Transposon TyH3 Gag-Pol polyprotein OS=Sac...    35   1.6  
+sp|A2C4P1|IF2_PROM1 Translation initiation factor IF-2 OS=Prochl...    35   1.6  
+sp|Q9VHM6|OUIB_DROME Transcription factor Ouib OS=Drosophila mel...    35   1.9  
+sp|P20662|ZFY2_MOUSE Zinc finger Y-chromosomal protein 2 OS=Mus ...    34   2.1  
+sp|Q4WPW2|EAF3_ASPFU Chromatin modification-related protein eaf3...    34   2.1  
+sp|Q9Z1W6|LYRIC_RAT Protein LYRIC OS=Rattus norvegicus OX=10116 ...    34   2.4  
+sp|Q80WJ7|LYRIC_MOUSE Protein LYRIC OS=Mus musculus OX=10090 GN=...    34   2.5  
+sp|Q4P827|EAF3_USTMA Chromatin modification-related protein EAF3...    34   2.6  
+sp|O13953|EAF3_SCHPO Chromatin modification-related protein eaf3...    34   3.0  
+sp|Q7TS63|ZFAT_MOUSE Zinc finger protein ZFAT OS=Mus musculus OX...    33   3.6  
+sp|Q6A098|SBP2L_MOUSE Selenocysteine insertion sequence-binding ...    33   3.6  
+sp|Q63755|PRDM2_RAT PR domain zinc finger protein 2 OS=Rattus no...    33   3.6  
+sp|Q86J12|HAT11_DICDI Histone acetyltransferase type B catalytic...    33   3.7  
+sp|Q62806|ZN148_RAT Zinc finger protein 148 OS=Rattus norvegicus...    33   4.1  
+sp|Q5BBV4|EAF3_EMENI Chromatin modification-related protein eaf3...    33   4.1  
+sp|Q61624|ZN148_MOUSE Zinc finger protein 148 OS=Mus musculus OX...    33   4.3  
+sp|P39956|RPH1_YEAST DNA damage-responsive transcriptional repre...    33   4.3  
+sp|Q5R782|ZN148_PONAB Zinc finger protein 148 OS=Pongo abelii OX...    33   4.3  
+sp|Q3Y4E1|ZN148_BOVIN Zinc finger protein 148 OS=Bos taurus OX=9...    33   4.4  
+sp|Q9UQR1|ZN148_HUMAN Zinc finger protein 148 OS=Homo sapiens OX...    33   4.4  
+sp|Q96T92|INSM2_HUMAN Insulinoma-associated protein 2 OS=Homo sa...    33   5.3  
+sp|Q8NAP3|ZBT38_HUMAN Zinc finger and BTB domain-containing prot...    33   5.6  
+sp|Q869X7|HAT12_DICDI Histone acetyltransferase type B catalytic...    33   5.6  
+sp|P0CO06|HAT1_CRYNJ Histone acetyltransferase type B catalytic ...    33   6.1  
+sp|P0CO07|HAT1_CRYNB Histone acetyltransferase type B catalytic ...    33   6.1  
+sp|Q12485|YG12A_YEAST Transposon Ty1-GR2 Gag polyprotein OS=Sacc...    33   6.2  
+sp|A8FCW9|Y1403_BACP2 Uncharacterized N-acetyltransferase BPUM_1...    33   6.2  
+sp|Q03856|YD11A_YEAST Transposon Ty1-DR1 Gag polyprotein OS=Sacc...    33   6.2  
+sp|Q12217|YB12A_YEAST Transposon Ty1-BR Gag polyprotein OS=Sacch...    33   6.3  
+sp|P0CX60|YP13A_YEAST Transposon Ty1-PR2 Gag polyprotein OS=Sacc...    33   6.4  
+sp|P0CX59|YO12A_YEAST Transposon Ty1-OR Gag polyprotein OS=Sacch...    33   6.4  
+sp|P0CX69|YM14A_YEAST Transposon Ty1-MR2 Gag polyprotein OS=Sacc...    33   6.4  
+sp|P0CX68|YL11A_YEAST Transposon Ty1-LR1 Gag polyprotein OS=Sacc...    33   6.4  
+sp|P0CX67|YG13A_YEAST Transposon Ty1-GR3 Gag polyprotein OS=Sacc...    33   6.4  
+sp|P0CX66|YE12A_YEAST Transposon Ty1-ER2 Gag polyprotein OS=Sacc...    33   6.4  
+sp|P0CX65|YD14A_YEAST Transposon Ty1-DR5 Gag polyprotein OS=Sacc...    33   6.4  
+sp|Q12441|YD12A_YEAST Transposon Ty1-DR3 Gag polyprotein OS=Sacc...    33   6.5  
+sp|Q12269|YG12B_YEAST Transposon Ty1-GR2 Gag-Pol polyprotein OS=...    33   7.3  
+sp|P0C2I2|YD14B_YEAST Transposon Ty1-DR5 Gag-Pol polyprotein OS=...    33   7.4  
+sp|Q03855|YD11B_YEAST Transposon Ty1-DR1 Gag-Pol polyprotein OS=...    33   7.4  
+sp|P0C2J0|YP13B_YEAST Transposon Ty1-PR2 Gag-Pol polyprotein OS=...    33   7.4  
+sp|Q92393|YO12B_YEAST Transposon Ty1-OR Gag-Pol polyprotein OS=S...    33   7.4  
+sp|Q04670|YM14B_YEAST Transposon Ty1-MR2 Gag-Pol polyprotein OS=...    33   7.4  
+sp|Q12088|YL11B_YEAST Transposon Ty1-LR1 Gag-Pol polyprotein OS=...    33   7.4  
+sp|Q12316|YG13B_YEAST Transposon Ty1-GR3 Gag-Pol polyprotein OS=...    33   7.4  
+sp|Q03619|YE12B_YEAST Transposon Ty1-ER2 Gag-Pol polyprotein OS=...    33   7.4  
+sp|Q12193|YB12B_YEAST Transposon Ty1-BR Gag-Pol polyprotein OS=S...    33   7.4  
+sp|Q99231|YD12B_YEAST Transposon Ty1-DR3 Gag-Pol polyprotein OS=...    33   7.6  
+sp|Q13029|PRDM2_HUMAN PR domain zinc finger protein 2 OS=Homo sa...    32   9.7  
+sp|C5YUK3|FEN11_SORBI Flap endonuclease 1-A OS=Sorghum bicolor O...    32   9.9  
+sp|Q499E4|DZI1L_MOUSE Cilium assembly protein DZIP1L OS=Mus musc...    32   10.0 
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|Q6C710|ESA1_YARLI Histone acetyltransferase ESA1 OS=Yarrowia ...   617   e-176
+sp|Q6FPH9|ESA1_CANGA Histone acetyltransferase ESA1 OS=Candida g...   612   e-174
+sp|Q08649|ESA1_YEAST Histone acetyltransferase ESA1 OS=Saccharom...   610   e-174
+sp|Q75BY2|ESA1_ASHGO Histone acetyltransferase ESA1 OS=Ashbya go...   604   e-172
+sp|Q6CKE9|ESA1_KLULA Histone acetyltransferase ESA1 OS=Kluyverom...   597   e-170
+sp|Q2UMQ5|ESA1_ASPOR Histone acetyltransferase ESA1 OS=Aspergill...   592   e-168
+sp|C8VBH4|ESA1_EMENI Histone acetyltransferase esa1 OS=Emericell...   588   e-167
+sp|Q6BU95|ESA1_DEBHA Histone acetyltransferase ESA1 OS=Debaryomy...   586   e-166
+sp|Q5RBG4|KAT5_PONAB Histone acetyltransferase KAT5 OS=Pongo abe...   582   e-165
+sp|Q4WHG1|ESA1_ASPFU Histone acetyltransferase esa1 OS=Aspergill...   580   e-165
+sp|Q5A7Q2|ESA1_CANAL Histone acetyltransferase ESA1 OS=Candida a...   578   e-164
+sp|Q7S9B6|ESA1_NEUCR Histone acetyltransferase esa-1 OS=Neurospo...   573   e-163
+sp|Q4IEV4|ESA1_GIBZE Histone acetyltransferase ESA1 OS=Gibberell...   569   e-161
+sp|O94446|ESA1_SCHPO Histone acetyltransferase mst1 OS=Schizosac...   568   e-161
+sp|Q9TYU5|TIP60_CAEEL Histone acetyltransferase Tip60 homolog OS...   565   e-160
+sp|Q9H7Z6|KAT8_HUMAN Histone acetyltransferase KAT8 OS=Homo sapi...   558   e-158
+sp|Q9D1P2|KAT8_MOUSE Histone acetyltransferase KAT8 OS=Mus muscu...   553   e-156
+sp|Q5XI06|KAT8_RAT Histone acetyltransferase KAT8 OS=Rattus norv...   552   e-156
+sp|Q92993|KAT5_HUMAN Histone acetyltransferase KAT5 OS=Homo sapi...   536   e-151
+sp|Q99MK2|KAT5_RAT Histone acetyltransferase KAT5 OS=Rattus norv...   536   e-151
+sp|Q8CHK4|KAT5_MOUSE Histone acetyltransferase KAT5 OS=Mus muscu...   536   e-151
+sp|Q8BZ21|KAT6A_MOUSE Histone acetyltransferase KAT6A OS=Mus mus...   526   e-148
+sp|Q5TKR9|KAT6A_RAT Histone acetyltransferase KAT6A OS=Rattus no...   524   e-148
+sp|Q92794|KAT6A_HUMAN Histone acetyltransferase KAT6A OS=Homo sa...   523   e-147
+sp|Q960X4|TIP60_DROME Histone acetyltransferase Tip60 OS=Drosoph...   519   e-146
+sp|O02193|MOF_DROME Males-absent on the first protein OS=Drosoph...   516   e-145
+sp|Q9FLF7|MYST1_ARATH Histone acetyltransferase of the MYST fami...   513   e-144
+sp|Q8BRB7|KAT6B_MOUSE Histone acetyltransferase KAT6B OS=Mus mus...   512   e-144
+sp|Q8LI34|MYST1_ORYSJ Putative MYST-like histone acetyltransfera...   508   e-143
+sp|Q9LXD7|MYST2_ARATH Histone acetyltransferase of the MYST fami...   508   e-143
+sp|P0CP02|ESA1_CRYNJ Histone acetyltransferase ESA1 OS=Cryptococ...   504   e-142
+sp|P0CP03|ESA1_CRYNB Histone acetyltransferase ESA1 OS=Cryptococ...   504   e-142
+sp|Q8WYB5|KAT6B_HUMAN Histone acetyltransferase KAT6B OS=Homo sa...   503   e-141
+sp|Q8WML3|KAT6B_MACFA Histone acetyltransferase KAT6B OS=Macaca ...   496   e-139
+sp|Q4P3S3|ESA1_USTMA Histone acetyltransferase ESA1 OS=Ustilago ...   489   e-137
+sp|Q5SVQ0|KAT7_MOUSE Histone acetyltransferase KAT7 OS=Mus muscu...   464   e-130
+sp|Q810T5|KAT7_RAT Histone acetyltransferase KAT7 OS=Rattus norv...   464   e-130
+sp|O95251|KAT7_HUMAN Histone acetyltransferase KAT7 OS=Homo sapi...   462   e-129
+sp|P34218|SAS3_YEAST Histone acetyltransferase SAS3 OS=Saccharom...   458   e-128
+sp|K8ERR8|LSY12_CAEEL Histone acetyltransferase lsy-12 OS=Caenor...   424   e-118
+sp|Q10325|MST2_SCHPO Histone acetyltransferase mst2 OS=Schizosac...   412   e-114
+sp|P40963|SAS2_YEAST Histone acetyltransferase SAS2 OS=Saccharom...   297   1e-79
+sp|Q94C32|MRG1_ARATH Protein MRG1 OS=Arabidopsis thaliana OX=370...   104   2e-21
+sp|Q91431|NF7O_XENLA Nuclear factor 7, ovary OS=Xenopus laevis O...    92   1e-17
+sp|Q92021|NF7B_XENLA Nuclear factor 7, brain OS=Xenopus laevis O...    91   2e-17
+sp|Q6AYU1|MO4L1_RAT Mortality factor 4-like protein 1 OS=Rattus ...    90   5e-17
+sp|Q02084|A33_PLEWA Zinc-binding protein A33 OS=Pleurodeles walt...    87   4e-16
+sp|F8VPQ2|ARI4A_MOUSE AT-rich interactive domain-containing prot...    86   6e-16
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5NVP9|MO4L1_PONAB Mortality factor 4-like protein 1 OS=Pongo...    86   5e-16
+sp|Q9UBU8|MO4L1_HUMAN Mortality factor 4-like protein 1 OS=Homo ...    72   1e-11
+sp|P60762|MO4L1_MOUSE Mortality factor 4-like protein 1 OS=Mus m...    72   1e-11
+sp|P29374|ARI4A_HUMAN AT-rich interactive domain-containing prot...    70   4e-11
+sp|Q4V3E2|MRG2_ARATH Protein MRG2 OS=Arabidopsis thaliana OX=370...    58   2e-07
+sp|Q4LE39|ARI4B_HUMAN AT-rich interactive domain-containing prot...    58   2e-07
+sp|A2CG63|ARI4B_MOUSE AT-rich interactive domain-containing prot...    55   1e-06
+sp|Q9Y0I1|EAF3_DROME NuA4 complex subunit EAF3 homolog OS=Drosop...    54   3e-06
+sp|Q4P827|EAF3_USTMA Chromatin modification-related protein EAF3...    47   3e-04
+sp|Q6BT38|EAF3_DEBHA Chromatin modification-related protein EAF3...    47   4e-04
+sp|Q4WPW2|EAF3_ASPFU Chromatin modification-related protein eaf3...    46   8e-04
+sp|A7DTF0|MRG1_CAEEL Mortality factor related protein 1 OS=Caeno...    46   9e-04
+sp|Q59K07|EAF3_CANAL Chromatin modification-related protein EAF3...    45   0.001
+sp|Q6C9M9|EAF3_YARLI Chromatin modification-related protein EAF3...    44   0.002
+sp|Q6CND0|EAF3_KLULA Chromatin modification-related protein EAF3...    44   0.003
+sp|Q12432|EAF3_YEAST Chromatin modification-related protein EAF3...    43   0.004
+sp|O13953|EAF3_SCHPO Chromatin modification-related protein eaf3...    43   0.007
+sp|Q5R6Y9|MS3L1_PONAB Male-specific lethal 3 homolog OS=Pongo ab...    42   0.011
+sp|Q8N5Y2|MS3L1_HUMAN Male-specific lethal 3 homolog OS=Homo sap...    42   0.011
+sp|Q6FN68|EAF3_CANGA Chromatin modification-related protein EAF3...    42   0.011
+sp|Q5BBV4|EAF3_EMENI Chromatin modification-related protein eaf3...    41   0.020
+sp|Q9XYD3|HBL1_CAEEL Hunchback-like protein OS=Caenorhabditis el...    39   0.068
+sp|Q75AH9|EAF3_ASHGO Chromatin modification-related protein EAF3...    39   0.094
+sp|Q54RM0|EAF3_DICDI NuA4 complex subunit EAF3 homolog OS=Dictyo...    38   0.15 
+sp|Q6ES10|HAT1_ORYSJ Probable histone acetyltransferase type B c...    38   0.16 
+sp|Q9WVG9|MS3L1_MOUSE Male-specific lethal 3 homolog OS=Mus musc...    38   0.16 
+sp|Q4PBE6|HAT1_USTMA Histone acetyltransferase type B catalytic ...    37   0.30 
+sp|P0CO86|EAF3_CRYNJ Chromatin modification-related protein EAF3...    37   0.38 
+sp|P0CO87|EAF3_CRYNB Chromatin modification-related protein EAF3...    37   0.38 
+sp|Q5T890|ER6L2_HUMAN DNA excision repair protein ERCC-6-like 2 ...    37   0.47 
+sp|Q06355|PPOB_SOLTU Catechol oxidase B, chloroplastic (Fragment...    37   0.48 
+sp|Q9P243|ZFAT_HUMAN Zinc finger protein ZFAT OS=Homo sapiens OX...    37   0.52 
+sp|Q91FD3|VF391_IIV6 Uncharacterized protein 391R OS=Invertebrat...    36   0.57 
+sp|J9VQZ0|SWI6_CRYNH Chromatin-associated protein SWI6 OS=Crypto...    36   0.87 
+sp|P39956|RPH1_YEAST DNA damage-responsive transcriptional repre...    36   0.87 
+sp|Q7TS63|ZFAT_MOUSE Zinc finger protein ZFAT OS=Mus musculus OX...    36   0.91 
+sp|Q6DDV0|MYNN_XENLA Myoneurin OS=Xenopus laevis OX=8355 GN=mynn...    35   1.2  
+sp|A1Z7A8|COIL_DROME Coilin OS=Drosophila melanogaster OX=7227 G...    35   1.3  
+sp|Q63755|PRDM2_RAT PR domain zinc finger protein 2 OS=Rattus no...    35   1.5  
+sp|Q4WPF5|SEBA_ASPFU C2H2 finger domain transcription factor seb...    35   1.6  
+sp|Q9VHM6|OUIB_DROME Transcription factor Ouib OS=Drosophila mel...    35   1.8  
+sp|P0C199|KES1_USTMA Protein KES1 OS=Ustilago maydis (strain 521...    34   2.5  
+sp|O75131|CPNE3_HUMAN Copine-3 OS=Homo sapiens OX=9606 GN=CPNE3 ...    34   2.7  
+sp|Q62806|ZN148_RAT Zinc finger protein 148 OS=Rattus norvegicus...    33   3.7  
+sp|Q61624|ZN148_MOUSE Zinc finger protein 148 OS=Mus musculus OX...    33   3.7  
+sp|Q5R782|ZN148_PONAB Zinc finger protein 148 OS=Pongo abelii OX...    33   3.8  
+sp|Q9UQR1|ZN148_HUMAN Zinc finger protein 148 OS=Homo sapiens OX...    33   3.8  
+sp|Q3Y4E1|ZN148_BOVIN Zinc finger protein 148 OS=Bos taurus OX=9...    33   3.8  
+sp|P29227|HP1_DROVI Heterochromatin protein 1 OS=Drosophila viri...    33   3.8  
+sp|A6NJL1|ZSA5B_HUMAN Zinc finger and SCAN domain-containing pro...    33   5.1  
+sp|Q8NEP9|ZN555_HUMAN Zinc finger protein 555 OS=Homo sapiens OX...    33   5.5  
+sp|Q86J12|HAT11_DICDI Histone acetyltransferase type B catalytic...    33   5.5  
+sp|Q6XDT4|IKZF_OIKDI Ikaros family zinc finger protein OS=Oikopl...    33   7.2  
+sp|A8FCW9|Y1403_BACP2 Uncharacterized N-acetyltransferase BPUM_1...    33   7.3  
+sp|Q869X7|HAT12_DICDI Histone acetyltransferase type B catalytic...    32   8.1  
+sp|P0CO06|HAT1_CRYNJ Histone acetyltransferase type B catalytic ...    32   8.8  
+sp|P0CO07|HAT1_CRYNB Histone acetyltransferase type B catalytic ...    32   8.8  
+sp|Q9CWH1|ZBT8A_MOUSE Zinc finger and BTB domain-containing prot...    32   9.7  
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.310    0.137    0.416 
+
+Lambda     K      H
+   0.267   0.0419    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 531,958,467
+Number of Sequences: 569516
+Number of extensions: 23785298
+Number of successful extensions: 63956
+Number of sequences better than 10.0: 175
+Number of HSP's better than 10.0 without gapping: 219
+Number of HSP's successfully gapped in prelim test: 241
+Number of HSP's that attempted gapping in prelim test: 63173
+Number of HSP's gapped (non-prelim): 659
+length of query: 466
+length of database: 205,866,895
+effective HSP length: 122
+effective length of query: 344
+effective length of database: 136,385,943
+effective search space: 46916764392
+effective search space used: 46916764392
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.2 bits)
+S2: 72 (32.3 bits)

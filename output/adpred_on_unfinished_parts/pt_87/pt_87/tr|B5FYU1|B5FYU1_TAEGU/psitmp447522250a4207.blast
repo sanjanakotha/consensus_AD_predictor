@@ -1,0 +1,277 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 
+         (145 letters)
+
+Database: uniprot_sprot.fasta 
+           569,516 sequences; 205,866,895 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P17074|RS19_RAT 40S ribosomal protein S19 OS=Rattus norvegicu...   279   4e-75
+sp|Q9CZX8|RS19_MOUSE 40S ribosomal protein S19 OS=Mus musculus O...   279   4e-75
+sp|Q5R8M9|RS19_PONAB 40S ribosomal protein S19 OS=Pongo abelii O...   276   2e-74
+sp|P39019|RS19_HUMAN 40S ribosomal protein S19 OS=Homo sapiens O...   276   2e-74
+sp|Q32PD5|RS19_BOVIN 40S ribosomal protein S19 OS=Bos taurus OX=...   276   2e-74
+sp|Q29308|RS19_PIG 40S ribosomal protein S19 (Fragment) OS=Sus s...   259   4e-69
+sp|Q90YQ4|RS19_ICTPU 40S ribosomal protein S19 OS=Ictalurus punc...   247   2e-65
+sp|Q9DFR5|RS19_GILMI 40S ribosomal protein S19 OS=Gillichthys mi...   245   6e-65
+sp|P61155|RS19_PAGMA 40S ribosomal protein S19 OS=Pagrus major O...   243   4e-64
+sp|Q9Y0H3|RS19_MYXGL 40S ribosomal protein S19 OS=Myxine glutino...   233   4e-61
+sp|Q8T5Z4|RS19_BRABE 40S ribosomal protein S19 OS=Branchiostoma ...   216   3e-56
+sp|Q8ITC3|RS19_ARGIR 40S ribosomal protein S19 OS=Argopecten irr...   204   2e-52
+sp|Q94613|RS19_MYAAR 40S ribosomal protein S19 OS=Mya arenaria O...   196   6e-50
+sp|P39018|RS19A_DROME 40S ribosomal protein S19a OS=Drosophila m...   187   2e-47
+sp|P79016|RS19B_SCHPO 40S ribosomal protein S19-B OS=Schizosacch...   177   2e-44
+sp|P58234|RS19A_SCHPO 40S ribosomal protein S19-A OS=Schizosacch...   176   3e-44
+sp|Q7KS38|RS19B_DROME 40S ribosomal protein S19b OS=Drosophila m...   176   4e-44
+sp|Q9FNP8|RS193_ARATH 40S ribosomal protein S19-3 OS=Arabidopsis...   174   1e-43
+sp|Q9LF30|RS192_ARATH 40S ribosomal protein S19-2 OS=Arabidopsis...   173   4e-43
+sp|P40978|RS19_ORYSJ 40S ribosomal protein S19 OS=Oryza sativa s...   173   4e-43
+sp|Q9SGA6|RS191_ARATH 40S ribosomal protein S19-1 OS=Arabidopsis...   172   7e-43
+sp|P39698|RS19S_ASCSU 40S ribosomal protein S19S OS=Ascaris suum...   172   8e-43
+sp|P24494|RS19G_ASCSU 40S ribosomal protein S19G OS=Ascaris suum...   158   1e-38
+sp|O18650|RS19_CAEEL 40S ribosomal protein S19 OS=Caenorhabditis...   158   1e-38
+sp|P27073|RS19_EMENI 40S ribosomal protein S19 OS=Emericella nid...   157   2e-38
+sp|P07280|RS19A_YEAST 40S ribosomal protein S19-A OS=Saccharomyc...   152   6e-37
+sp|P07281|RS19B_YEAST 40S ribosomal protein S19-B OS=Saccharomyc...   149   6e-36
+sp|A0A1D8PK61|RS19A_CANAL 40S ribosomal protein S19A OS=Candida ...   144   2e-34
+sp|Q54X51|RS19_DICDI 40S ribosomal protein S19 OS=Dictyostelium ...   141   2e-33
+sp|O15631|RS19_ENTH1 40S ribosomal protein S19 OS=Entamoeba hist...   130   2e-30
+sp|O27653|RS19E_METTH 30S ribosomal protein S19e OS=Methanotherm...   110   2e-24
+sp|P54057|RS19E_METJA 30S ribosomal protein S19e OS=Methanocaldo...   106   5e-23
+sp|Q9V0G8|RS19E_PYRAB 30S ribosomal protein S19e OS=Pyrococcus a...   105   7e-23
+sp|O59041|RS19E_PYRHO 30S ribosomal protein S19e OS=Pyrococcus h...   104   2e-22
+sp|O28210|RS19E_ARCFU 30S ribosomal protein S19e OS=Archaeoglobu...    99   9e-21
+sp|Q9YD22|RS19E_AERPE 30S ribosomal protein S19e OS=Aeropyrum pe...    91   4e-18
+sp|P19952|RS19E_HALMA 30S ribosomal protein S19e OS=Haloarcula m...    85   2e-16
+sp|Q9HM21|RS19E_THEAC 30S ribosomal protein S19e OS=Thermoplasma...    84   2e-16
+sp|Q97CU4|RS19E_THEVO 30S ribosomal protein S19e OS=Thermoplasma...    84   4e-16
+sp|Q8SQS8|RS19_ENCCU 40S ribosomal protein S19 OS=Encephalitozoo...    64   2e-10
+sp|Q3K8T8|MTNA_PSEPF Methylthioribose-1-phosphate isomerase OS=P...    34   0.32 
+sp|Q885T7|MTNA_PSESM Methylthioribose-1-phosphate isomerase OS=P...    31   2.2  
+sp|Q5KUG0|ICMF_GEOKA Fused isobutyryl-CoA mutase OS=Geobacillus ...    31   3.0  
+sp|B0TL07|MNMC_SHEHH tRNA 5-methylaminomethyl-2-thiouridine bios...    30   5.8  
+sp|Q48FM6|MTNA_PSE14 Methylthioribose-1-phosphate isomerase OS=P...    30   6.2  
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+sp|P17074|RS19_RAT 40S ribosomal protein S19 OS=Rattus norvegicu...   237   2e-62
+sp|Q9CZX8|RS19_MOUSE 40S ribosomal protein S19 OS=Mus musculus O...   237   2e-62
+sp|Q5R8M9|RS19_PONAB 40S ribosomal protein S19 OS=Pongo abelii O...   237   3e-62
+sp|P39019|RS19_HUMAN 40S ribosomal protein S19 OS=Homo sapiens O...   237   3e-62
+sp|Q32PD5|RS19_BOVIN 40S ribosomal protein S19 OS=Bos taurus OX=...   237   3e-62
+sp|Q90YQ4|RS19_ICTPU 40S ribosomal protein S19 OS=Ictalurus punc...   232   5e-61
+sp|Q9DFR5|RS19_GILMI 40S ribosomal protein S19 OS=Gillichthys mi...   232   6e-61
+sp|P61155|RS19_PAGMA 40S ribosomal protein S19 OS=Pagrus major O...   229   4e-60
+sp|Q9Y0H3|RS19_MYXGL 40S ribosomal protein S19 OS=Myxine glutino...   229   6e-60
+sp|Q94613|RS19_MYAAR 40S ribosomal protein S19 OS=Mya arenaria O...   225   8e-59
+sp|Q29308|RS19_PIG 40S ribosomal protein S19 (Fragment) OS=Sus s...   224   1e-58
+sp|Q8T5Z4|RS19_BRABE 40S ribosomal protein S19 OS=Branchiostoma ...   223   3e-58
+sp|Q9LF30|RS192_ARATH 40S ribosomal protein S19-2 OS=Arabidopsis...   218   9e-57
+sp|Q8ITC3|RS19_ARGIR 40S ribosomal protein S19 OS=Argopecten irr...   218   9e-57
+sp|P79016|RS19B_SCHPO 40S ribosomal protein S19-B OS=Schizosacch...   217   2e-56
+sp|Q9SGA6|RS191_ARATH 40S ribosomal protein S19-1 OS=Arabidopsis...   217   2e-56
+sp|P39018|RS19A_DROME 40S ribosomal protein S19a OS=Drosophila m...   216   3e-56
+sp|Q7KS38|RS19B_DROME 40S ribosomal protein S19b OS=Drosophila m...   216   5e-56
+sp|Q9FNP8|RS193_ARATH 40S ribosomal protein S19-3 OS=Arabidopsis...   215   5e-56
+sp|P58234|RS19A_SCHPO 40S ribosomal protein S19-A OS=Schizosacch...   215   7e-56
+sp|P40978|RS19_ORYSJ 40S ribosomal protein S19 OS=Oryza sativa s...   215   8e-56
+sp|P39698|RS19S_ASCSU 40S ribosomal protein S19S OS=Ascaris suum...   208   8e-54
+sp|A0A1D8PK61|RS19A_CANAL 40S ribosomal protein S19A OS=Candida ...   204   1e-52
+sp|P24494|RS19G_ASCSU 40S ribosomal protein S19G OS=Ascaris suum...   202   5e-52
+sp|P07280|RS19A_YEAST 40S ribosomal protein S19-A OS=Saccharomyc...   202   9e-52
+sp|P07281|RS19B_YEAST 40S ribosomal protein S19-B OS=Saccharomyc...   199   6e-51
+sp|O18650|RS19_CAEEL 40S ribosomal protein S19 OS=Caenorhabditis...   197   2e-50
+sp|P27073|RS19_EMENI 40S ribosomal protein S19 OS=Emericella nid...   197   3e-50
+sp|P54057|RS19E_METJA 30S ribosomal protein S19e OS=Methanocaldo...   196   3e-50
+sp|Q9V0G8|RS19E_PYRAB 30S ribosomal protein S19e OS=Pyrococcus a...   193   3e-49
+sp|O59041|RS19E_PYRHO 30S ribosomal protein S19e OS=Pyrococcus h...   192   7e-49
+sp|Q54X51|RS19_DICDI 40S ribosomal protein S19 OS=Dictyostelium ...   192   1e-48
+sp|O15631|RS19_ENTH1 40S ribosomal protein S19 OS=Entamoeba hist...   189   5e-48
+sp|O27653|RS19E_METTH 30S ribosomal protein S19e OS=Methanotherm...   188   7e-48
+sp|O28210|RS19E_ARCFU 30S ribosomal protein S19e OS=Archaeoglobu...   181   1e-45
+sp|Q9YD22|RS19E_AERPE 30S ribosomal protein S19e OS=Aeropyrum pe...   173   4e-43
+sp|P19952|RS19E_HALMA 30S ribosomal protein S19e OS=Haloarcula m...   172   6e-43
+sp|Q9HM21|RS19E_THEAC 30S ribosomal protein S19e OS=Thermoplasma...   169   4e-42
+sp|Q97CU4|RS19E_THEVO 30S ribosomal protein S19e OS=Thermoplasma...   161   2e-39
+sp|Q8SQS8|RS19_ENCCU 40S ribosomal protein S19 OS=Encephalitozoo...   141   1e-33
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q4L6T2|HRCA_STAHJ Heat-inducible transcription repressor HrcA...    39   0.012
+sp|Q4QQS8|NUP85_RAT Nuclear pore complex protein Nup85 OS=Rattus...    36   0.071
+sp|B0SHT3|HRCA_LEPBA Heat-inducible transcription repressor HrcA...    36   0.11 
+sp|Q8CP15|HRCA_STAES Heat-inducible transcription repressor HrcA...    35   0.12 
+sp|Q5HNW4|HRCA_STAEQ Heat-inducible transcription repressor HrcA...    35   0.12 
+sp|Q8R480|NUP85_MOUSE Nuclear pore complex protein Nup85 OS=Mus ...    35   0.20 
+sp|Q8XW26|HRCA_RALSO Heat-inducible transcription repressor HrcA...    34   0.27 
+sp|Q9BW27|NUP85_HUMAN Nuclear pore complex protein Nup85 OS=Homo...    33   0.59 
+sp|Q3SHA4|HRCA_THIDA Heat-inducible transcription repressor HrcA...    33   0.65 
+sp|Q7VVX7|HRCA_BORPE Heat-inducible transcription repressor HrcA...    33   0.67 
+sp|Q7W514|HRCA_BORPA Heat-inducible transcription repressor HrcA...    33   0.67 
+sp|Q7WGH9|HRCA_BORBR Heat-inducible transcription repressor HrcA...    33   0.67 
+sp|B8DUG2|HRCA_BIFA0 Heat-inducible transcription repressor HrcA...    33   0.85 
+sp|Q9YFV8|Y142_AERPE Uncharacterized HTH-type transcriptional re...    33   0.93 
+sp|A5GP57|HRCA_SYNPW Heat-inducible transcription repressor HrcA...    33   0.98 
+sp|Q2Y6A9|HRCA_NITMU Heat-inducible transcription repressor HrcA...    32   1.1  
+sp|Q1BYY0|HRCA_BURO1 Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|B1JW13|HRCA_BURO0 Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|A0K4S1|HRCA_BURCH Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|Q2SZ00|HRCA_BURTA Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|Q63R42|HRCA_BURPS Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|A3ND74|HRCA_BURP6 Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|Q3JP05|HRCA_BURP1 Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|A3NYY3|HRCA_BURP0 Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|Q62HD0|HRCA_BURMA Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|A3MNA5|HRCA_BURM7 Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|Q0BI25|HRCA_BURCM Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|B1YTJ4|HRCA_BURA4 Heat-inducible transcription repressor HrcA...    32   1.2  
+sp|A4JBR5|HRCA_BURVG Heat-inducible transcription repressor HrcA...    32   1.3  
+sp|A9AGC4|HRCA_BURM1 Heat-inducible transcription repressor HrcA...    32   1.3  
+sp|A0LSZ6|HRCA_ACIC1 Heat-inducible transcription repressor HrcA...    32   1.4  
+sp|Q5RCA5|NXPE3_PONAB NXPE family member 3 OS=Pongo abelii OX=96...    32   1.4  
+sp|Q969Y0|NXPE3_HUMAN NXPE family member 3 OS=Homo sapiens OX=96...    32   1.4  
+sp|A2VDP6|NXPE3_BOVIN NXPE family member 3 OS=Bos taurus OX=9913...    32   1.5  
+sp|B4EDZ7|HRCA_BURCJ Heat-inducible transcription repressor HrcA...    32   1.6  
+sp|B0RZU0|RL3_FINM2 50S ribosomal protein L3 OS=Finegoldia magna...    32   1.7  
+sp|B2JGE8|HRCA_PARP8 Heat-inducible transcription repressor HrcA...    32   1.7  
+sp|Q145F6|HRCA_PARXL Heat-inducible transcription repressor HrcA...    32   1.7  
+sp|B2SXB7|HRCA_PARPJ Heat-inducible transcription repressor HrcA...    32   1.7  
+sp|A7MB27|RHG36_BOVIN Rho GTPase-activating protein 36 OS=Bos ta...    31   1.8  
+sp|Q8NWA8|HRCA_STAAW Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|P68794|HRCA_STAAU Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|A8Z4C1|HRCA_STAAT Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|Q6G8Y5|HRCA_STAAS Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|Q6GGB8|HRCA_STAAR Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|P68793|HRCA_STAAN Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|P68792|HRCA_STAAM Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|A6QHC5|HRCA_STAAE Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|Q5HFH8|HRCA_STAAC Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|Q2YT45|HRCA_STAAB Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|A5ITB0|HRCA_STAA9 Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|Q2FXZ0|HRCA_STAA8 Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|Q2FGE1|HRCA_STAA3 Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|A6U254|HRCA_STAA2 Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|A7X2Y4|HRCA_STAA1 Heat-inducible transcription repressor HrcA...    31   1.8  
+sp|B9DNK2|HRCA_STACT Heat-inducible transcription repressor HrcA...    31   2.7  
+sp|Q49Y24|HRCA_STAS1 Heat-inducible transcription repressor HrcA...    31   2.9  
+sp|B2A1M7|HRCA_NATTJ Heat-inducible transcription repressor HrcA...    31   3.1  
+sp|B4UJT7|HRCA_ANASK Heat-inducible transcription repressor HrcA...    31   3.2  
+sp|B8JCT2|HRCA_ANAD2 Heat-inducible transcription repressor HrcA...    31   3.2  
+sp|O05494|YDHC_BACSU Uncharacterized HTH-type transcriptional re...    31   3.4  
+sp|Q2IHN8|HRCA_ANADE Heat-inducible transcription repressor HrcA...    31   3.7  
+sp|A1WGR9|HRCA_VEREI Heat-inducible transcription repressor HrcA...    31   3.8  
+sp|Q1GWJ6|HRCA_SPHAL Heat-inducible transcription repressor HrcA...    30   4.2  
+sp|Q9F1W4|HRCA_PARTM Heat-inducible transcription repressor HrcA...    30   4.3  
+sp|Q6G1E5|HRCA_BARQU Heat-inducible transcription repressor HrcA...    30   4.3  
+sp|B1I6D9|HRCA_DESAP Heat-inducible transcription repressor HrcA...    30   4.5  
+sp|Q8RH08|HRCA_FUSNN Heat-inducible transcription repressor HrcA...    30   4.6  
+sp|C0JB11|A312_LOXS4 Dermonecrotic toxin Ls4SicTox-alphaIII1ii (...    30   4.7  
+sp|Q9MAM4|IQD18_ARATH Protein IQ-DOMAIN 18 OS=Arabidopsis thalia...    30   4.8  
+sp|A9VHU3|HRCA_BACMK Heat-inducible transcription repressor HrcA...    30   4.9  
+sp|Q4AAT9|HRCA_MESHJ Heat-inducible transcription repressor HrcA...    30   4.9  
+sp|Q4A902|HRCA_MESH7 Heat-inducible transcription repressor HrcA...    30   4.9  
+sp|Q602E0|HRCA_MESH2 Heat-inducible transcription repressor HrcA...    30   4.9  
+sp|Q2RKX6|HRCA_MOOTA Heat-inducible transcription repressor HrcA...    30   5.1  
+sp|C1D6U0|HRCA_LARHH Heat-inducible transcription repressor HrcA...    30   5.1  
+sp|A7F8V8|DBP7_SCLS1 ATP-dependent RNA helicase dbp7 OS=Scleroti...    30   5.6  
+sp|O69266|HRCA_LYSSH Heat-inducible transcription repressor HrcA...    30   5.6  
+sp|A4X692|DER_SALTO GTPase Der OS=Salinispora tropica (strain AT...    30   6.0  
+sp|Q5WHG3|HRCA_ALKCK Heat-inducible transcription repressor HrcA...    30   6.1  
+sp|Q6G564|HRCA_BARHE Heat-inducible transcription repressor HrcA...    30   6.4  
+sp|A6RSH5|DBP7_BOTFB ATP-dependent RNA helicase dbp7 OS=Botryoti...    30   6.5  
+sp|P0DB67|HRCA_STRPQ Heat-inducible transcription repressor hrcA...    29   6.7  
+sp|Q48RR1|HRCA_STRPM Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|A2RCW4|HRCA_STRPG Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q1J576|HRCA_STRPF Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q1JFC6|HRCA_STRPD Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q1JKD4|HRCA_STRPC Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q1JA81|HRCA_STRPB Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q8NZM6|HRCA_STRP8 Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q5XAD4|HRCA_STRP6 Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|P0DB66|HRCA_STRP3 Heat-inducible transcription repressor hrcA...    29   6.7  
+sp|Q99YC7|HRCA_STRP1 Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q8E2A0|HRCA_STRA5 Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q3K3T4|HRCA_STRA1 Heat-inducible transcription repressor HrcA...    29   6.7  
+sp|Q7NXL8|HRCA_CHRVO Heat-inducible transcription repressor HrcA...    29   7.0  
+sp|D4GYE7|GLPR_HALVD HTH-type transcriptional regulator GlpR OS=...    29   7.3  
+sp|P62290|ASPM_HYLLA Abnormal spindle-like microcephaly-associat...    29   7.5  
+sp|Q3ZC98|NUP85_BOVIN Nuclear pore complex protein Nup85 OS=Bos ...    29   7.8  
+sp|B3PN01|HRCA_META1 Heat-inducible transcription repressor HrcA...    29   9.3  
+sp|O06940|HRCA_STRMU Heat-inducible transcription repressor HrcA...    29   9.3  
+
+
+CONVERGED!
+  Database: uniprot_sprot.fasta
+    Posted date:  Jun 21, 2023  2:16 PM
+  Number of letters in database: 205,866,895
+  Number of sequences in database:  569,516
+  
+Lambda     K      H
+   0.311    0.150    0.450 
+
+Lambda     K      H
+   0.267   0.0459    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 126,469,914
+Number of Sequences: 569516
+Number of extensions: 5529058
+Number of successful extensions: 16907
+Number of sequences better than 10.0: 155
+Number of HSP's better than 10.0 without gapping: 88
+Number of HSP's successfully gapped in prelim test: 115
+Number of HSP's that attempted gapping in prelim test: 16781
+Number of HSP's gapped (non-prelim): 206
+length of query: 145
+length of database: 205,866,895
+effective HSP length: 106
+effective length of query: 39
+effective length of database: 145,498,199
+effective search space: 5674429761
+effective search space used: 5674429761
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.1 bits)
+S2: 64 (29.1 bits)

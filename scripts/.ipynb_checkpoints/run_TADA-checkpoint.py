@@ -1,12 +1,10 @@
 # Load necessary modules
 import numpy as np
 import pandas as pd
-import tensorflow as tf
 from Bio import SeqIO
 import glob, pickle, os, re, subprocess, csv, sys
 os.chdir("/global/scratch/projects/fc_mvslab/predictors/TADA/")
 from uuid import uuid4
-import ipyparallel as ipp
 sys.path.append(os.path.abspath('..'))
 from TADA.src.Preprocessing_FIXED import scale_features_predict
 from TADA.src.Preprocessing import create_features
@@ -23,7 +21,7 @@ args = parser.parse_args()
 
 # Input/output handling
 fasta_name = args.input
-tmp_output = args.output
+output_dir = args.output
 
 # # INPUT PATH TO FASTA FILE HERE
 # fasta_name = '/global/scratch/projects/fc_mvslab/predictors/all_predictors/example/example.fasta'
@@ -32,9 +30,10 @@ tmp_output = args.output
 aa_lst = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
 
 # Set up SeqRecord objects and check that sequences are valid
-#fasta_name_tmp = fasta_name.split('/')[-1].strip('.fasta').strip('.fa')
-output_dir = tmp_output #+ '/' + fasta_name_tmp
-subprocess.run(['mkdir', output_dir])
+fasta_name_tmp = fasta_name.split('/')[-1].removesuffix('.fasta').removesuffix('.fa')
+
+os.makedirs(output_dir, exist_ok=True)
+
 recs = list(SeqIO.parse(fasta_name, 'fasta'))
 #fasta_name = fasta_name_tmp
 for r in recs:
@@ -72,7 +71,6 @@ assert seqs_idx == len(seqs_40)
 #Calculate features on 40-mer tiles
 features = create_features(seqs_40, SEQUENCE_WINDOW, STEPS)
 features_scaled = scale_features_predict(features)
-pickle.dump(features_scaled, open(output_dir + '/features_scaled.pkl', 'wb'))
     
 # Make TADA classification predictions
 tada_preds = tada_predict(loaded_features=features_scaled)
@@ -97,4 +95,4 @@ data.columns = ["sequence", "tada_centers", "tada_preds"]
 data["tada_centers"] = data["tada_centers"].apply(lambda x: ','.join(map(str, x)))
 data["tada_preds"] = data["tada_preds"].apply(lambda x: ','.join(map(str, x)))
 
-data.to_csv(output_dir + "/TADA_preds.csv")
+data.to_csv(f"{output_dir}/{fasta_name_tmp}_tada_preds.csv", encoding='utf-8')
