@@ -23,9 +23,13 @@
 #SBATCH --export=ALL
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=sanjana.kotha@berkeley.edu
-#SBATCH --array=77,87
+#SBATCH --array=1,2
 #SBATCH --output=../logs/array_adpred_dask_130k_1_2_%A_task_%a.out## Command(s) to run:
 ## Command(s) to run:
+
+unset SLURM_MEM_PER_CPU
+unset SLURM_MEM_PER_GPU
+unset SLURM_MEM_PER_NODE
 
 echo "Starting job on $(hostname)"
 echo "Loading modules..."
@@ -37,7 +41,7 @@ source activate /global/scratch/projects/fc_mvslab/OpenProjects/Sanjana/conda/ne
 echo "Python path: $(which python)"
 echo "Python version: $(python --version)"
 
-in_file="/global/scratch/projects/fc_mvslab/OpenProjects/Sanjana/consensus_AD_predictor/data/interpro_uniprot_evid_1_2_split/pt_$SLURM_ARRAY_TASK_ID.fasta"
+in_file="/global/scratch/projects/fc_mvslab/OpenProjects/Sanjana/consensus_AD_predictor/data/interpro_uniprot_evid_1_2_split/pt_87_$SLURM_ARRAY_TASK_ID.fasta"
 out_dir="/global/scratch/projects/fc_mvslab/OpenProjects/Sanjana/consensus_AD_predictor/output/interpro_uniprot_evid_1_2_dask"
 script="/global/scratch/projects/fc_mvslab/predictors/adpred/run_w_dask/run_adpred_dask.py"
 
